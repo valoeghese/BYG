@@ -1,4 +1,4 @@
-package sporeaoc.byg.blocks;
+package sporeaoc.byg.block;
 
 import net.minecraft.block.Block;
 

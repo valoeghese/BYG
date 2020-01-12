@@ -3,19 +3,23 @@ package sporeaoc.byg;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import sporeaoc.byg.blocks.*;
+import sporeaoc.byg.block.*;
+import sporeaoc.byg.items.LeaveItems;
 
 @Mod.EventBusSubscriber(modid = BYG.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BlockItemRegistry {
 
     @SubscribeEvent
-    public static void bygRegisterBlocks(final RegistryEvent.Register<Block> event) {
+    public static void bygRegisterBlocks(final RegistryEvent.Register<Block> event)
+    {
         event.getRegistry().registerAll();
 
         //LeaveBlocks
@@ -167,7 +171,8 @@ public class BlockItemRegistry {
     @SubscribeEvent
     public static void bygRegisterItems(final RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll();
-
+        LeaveItems.APPLE_SKYRIS_LEAVES = new BlockItem(LeaveBlocks.APPLE_SKYRIS_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.APPLE_SKYRIS_LEAVES.getRegistryName());
+        LeaveItems.BAOBAB_LEAVES = new BlockItem(LeaveBlocks.BAOBAB_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.BAOBAB_LEAVES.getRegistryName());
     }
     private static ResourceLocation location(String name)
     {
