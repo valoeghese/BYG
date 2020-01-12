@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_column",
   "textures": {
-    "down": "byg:blocks/cypress_log_top",
-    "up": "byg:blocks/cypress_log_top",
-    "north": "byg:blocks/cypress_log",
-    "east": "byg:blocks/cypress_log",
-    "south": "byg:blocks/cypress_log",
-    "west": "byg:blocks/cypress_log",
-    "particle": "byg:blocks/cypress_log_top"
+    "end": "byg:blocks/cypress_log_top",
+    "side": "byg:blocks/cypress_log"
   }
 }

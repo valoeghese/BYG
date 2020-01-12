@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_column",
   "textures": {
-    "down": "byg:blocks/green_enchanted_log_top",
-    "up": "byg:blocks/green_enchanted_log_top",
-    "north": "byg:blocks/green_enchanted_log",
-    "east": "byg:blocks/green_enchanted_log",
-    "south": "byg:blocks/green_enchanted_log",
-    "west": "byg:blocks/green_enchanted_log",
-    "particle": "byg:blocks/green_enchanted_log_top"
+    "end": "byg:blocks/green_enchanted_log_top",
+    "side": "byg:blocks/green_enchanted_log"
   }
 }

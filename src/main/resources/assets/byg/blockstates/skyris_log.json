@@ -1,28 +1,17 @@
 {
   "variants": {
-    "facing=south": {
+    "axis=y": {
       "model": "byg:block/skyris_log"
     },
-    "facing=north": {
-      "model": "byg:block/skyris_log"
-    },
-    "facing=east": {
+    "axis=z": {
       "model": "byg:block/skyris_log",
       "x": 90
     },
-    "facing=west": {
-      "model": "byg:block/skyris_log",
-      "x": 90
-    },
-    "facing=up": {
-      "model": "byg:block/skyris_log",
-      "x": 90,
-      "y": 90
-    },
-    "facing=down": {
+    "axis=x": {
       "model": "byg:block/skyris_log",
       "x": 90,
       "y": 90
     }
   }
 }
+

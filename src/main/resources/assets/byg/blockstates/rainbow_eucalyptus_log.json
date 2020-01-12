@@ -1,28 +1,17 @@
 {
   "variants": {
-    "facing=south": {
+    "axis=y": {
       "model": "byg:block/rainbow_eucalyptus_log"
     },
-    "facing=north": {
-      "model": "byg:block/rainbow_eucalyptus_log"
-    },
-    "facing=east": {
+    "axis=z": {
       "model": "byg:block/rainbow_eucalyptus_log",
       "x": 90
     },
-    "facing=west": {
-      "model": "byg:block/rainbow_eucalyptus_log",
-      "x": 90
-    },
-    "facing=up": {
-      "model": "byg:block/rainbow_eucalyptus_log",
-      "x": 90,
-      "y": 90
-    },
-    "facing=down": {
+    "axis=x": {
       "model": "byg:block/rainbow_eucalyptus_log",
       "x": 90,
       "y": 90
     }
   }
 }
+

@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_column",
   "textures": {
-    "down": "byg:blocks/ebony_log_top",
-    "up": "byg:blocks/ebony_log_top",
-    "north": "byg:blocks/ebony_log",
-    "east": "byg:blocks/ebony_log",
-    "south": "byg:blocks/ebony_log",
-    "west": "byg:blocks/ebony_log",
-    "particle": "byg:blocks/ebony_log_top"
+    "end": "byg:blocks/ebony_log_top",
+    "side": "byg:blocks/ebony_log"
   }
 }

@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_column",
   "textures": {
-    "down": "byg:blocks/willow_log_top",
-    "up": "byg:blocks/willow_log_top",
-    "north": "byg:blocks/willow_log_side",
-    "east": "byg:blocks/willow_log_side",
-    "south": "byg:blocks/willow_log_side",
-    "west": "byg:blocks/willow_log_side",
-    "particle": "byg:blocks/willow_log_top"
+    "end": "byg:blocks/willow_log_top",
+    "side": "byg:blocks/willow_log"
   }
 }
