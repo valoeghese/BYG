@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/cherry_log_top",
+    "up": "byg:blocks/cherry_log_top",
+    "north": "byg:blocks/cherry_log_side",
+    "east": "byg:blocks/cherry_log_side",
+    "south": "byg:blocks/cherry_log_side",
+    "west": "byg:blocks/cherry_log_side",
+    "particle": "byg:blocks/cherry_log_top"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "byg:block/stripped_witch_hazel_wood"
+    },
+    "facing=north": {
+      "model": "byg:block/stripped_witch_hazel_wood"
+    },
+    "facing=east": {
+      "model": "byg:block/stripped_witch_hazel_wood",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:block/stripped_witch_hazel_wood",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:block/stripped_witch_hazel_wood",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:block/stripped_witch_hazel_wood",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

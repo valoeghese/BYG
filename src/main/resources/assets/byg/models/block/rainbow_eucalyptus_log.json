@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/rainbow_eucalyptus_log_top",
+    "up": "byg:blocks/rainbow_eucalyptus_log_top",
+    "north": "byg:blocks/rainbow_eucalyptus_log_side",
+    "east": "byg:blocks/rainbow_eucalyptus_log_side",
+    "south": "byg:blocks/rainbow_eucalyptus_log_side",
+    "west": "byg:blocks/rainbow_eucalyptus_log_side",
+    "particle": "byg:blocks/rainbow_eucalyptus_log_top"
+  }
+}

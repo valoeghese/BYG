@@ -1,0 +1,11 @@
+{
+  "parent": "byg:custom/reed_model",
+  "textures": {
+    "all": "byg:blocks/cattail_top",
+    "particle": "byg:blocks/cattail_top",
+    "reed_top2": "byg:blocks/cattail_top",
+    "reed_top1": "byg:blocks/cattail_top",
+    "reed_bottom1": "byg:blocks/cattail_bottom",
+    "reed_bottom2": "byg:blocks/cattail_bottom"
+  }
+}

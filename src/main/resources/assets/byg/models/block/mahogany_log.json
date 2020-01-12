@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/mahogany_log_top",
+    "up": "byg:blocks/mahogany_log_top",
+    "north": "byg:blocks/mahogany_log",
+    "east": "byg:blocks/mahogany_log",
+    "south": "byg:blocks/mahogany_log",
+    "west": "byg:blocks/mahogany_log",
+    "particle": "byg:blocks/mahogany_log_top"
+  }
+}

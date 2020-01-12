@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "byg:block/stripped_maple_log"
+    },
+    "facing=north": {
+      "model": "byg:block/stripped_maple_log"
+    },
+    "facing=east": {
+      "model": "byg:block/stripped_maple_log",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "byg:block/stripped_maple_log",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "byg:block/stripped_maple_log",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "byg:block/stripped_maple_log",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

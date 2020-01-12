@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "byg:block/ivy_patch"
+    },
+    "facing=east": {
+      "model": "byg:block/ivy_patch",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "byg:block/ivy_patch",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "byg:block/ivy_patch",
+      "y": 270
+    }
+  }
+}

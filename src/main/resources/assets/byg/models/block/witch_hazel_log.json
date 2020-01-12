@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/witch_hazel_log_top",
+    "up": "byg:blocks/witch_hazel_log_top",
+    "north": "byg:blocks/witch_hazel_log_side",
+    "east": "byg:blocks/witch_hazel_log_side",
+    "south": "byg:blocks/witch_hazel_log_side",
+    "west": "byg:blocks/witch_hazel_log_side",
+    "particle": "byg:blocks/witch_hazel_log_top"
+  }
+}
