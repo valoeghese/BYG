@@ -15,11 +15,14 @@ import sporeaoc.byg.block.*;
 import sporeaoc.byg.items.LeaveItems;
 
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BlockItemRegistry {
+    @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
+    public static class RegistryEvents {
 
     @SubscribeEvent
     public static void bygRegisterBlocks(final RegistryEvent.Register<Block> event) {
+
+
         event.getRegistry().registerAll(),
                 (
                         //LeaveBlocks
@@ -174,5 +177,6 @@ public class BlockItemRegistry {
     private static ResourceLocation location(String name) {
         return new ResourceLocation(BYG.MODID, name);
     }
+}
 }
 
