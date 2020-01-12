@@ -11,32 +11,59 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import sporeaoc.byg.ModSetup.ModSetup;
 import sporeaoc.byg.block.*;
 import sporeaoc.byg.items.LeaveItems;
 
-import java.util.Objects;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BlockItemRegistry {
+    @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
+    public static class RegistryEvents {
+
     @SubscribeEvent
-    public void bygRegisterBlocks(final RegistryEvent.Register<Block> event) {
-        event.getRegistry().registerAll(
-                // Leave Blocks
-                new LeaveBlocks.BaobabLeaves(), new LeaveBlocks.BloomingWitchHazelLeaves(), new LeaveBlocks.BlueEnchantedLeaves(),
-                new LeaveBlocks.BlueSpruceLeaves(), new LeaveBlocks.BrownBirchLeaves(), new LeaveBlocks.BrownOakLeaves(),
-                new LeaveBlocks.CikaLeaves(), new LeaveBlocks.CypressLeaves(), new LeaveBlocks.EbonyLeaves(),
-                new LeaveBlocks.FirLeaves(), new LeaveBlocks.FloweringOrchardLeaves(), new LeaveBlocks.FloweringPaloVerdeLeaves(),
-                new LeaveBlocks.AppleSkyrisLeaves(), new LeaveBlocks.GreenEnchantedLeaves(), new LeaveBlocks.HollyBetterLeaves(),
-                new LeaveBlocks.HollyLeaves(), new LeaveBlocks.JacarandaLeaves(), new LeaveBlocks.MahognyLeaves(),
-                new LeaveBlocks.MangroveLeaves(), new LeaveBlocks.OrangeBirchLeaves(), new LeaveBlocks.OrangeOakLeaves(),
-                new LeaveBlocks.OrangeSpruceLeaves(), new LeaveBlocks.OrchardLeaves(), new LeaveBlocks.PaloVerdeLeaves(),
-                new LeaveBlocks.PineLeaves(), new LeaveBlocks.PineLeaves(), new LeaveBlocks.PinkCherryLeaves(),
-                new LeaveBlocks.RainbowEucalyptusLeaves(), new LeaveBlocks.RedBirchLeaves(), new LeaveBlocks.RedMapleLeaves(),
-                new LeaveBlocks.RedOakLeaves(), new LeaveBlocks.RedSpruceLeaves(), new LeaveBlocks.RedwoodLeaves(),
-                new LeaveBlocks.RipeOrchardLeaves(), new LeaveBlocks.SilverMapleLeaves(), new LeaveBlocks.SkyrisLeaves(),
-                new LeaveBlocks.WhiteCherryLeaves(), new LeaveBlocks.WillowLeaves(), new LeaveBlocks.WitchHazelLeaves(),
-                new LeaveBlocks.YellowBirchLeaves(),
+    public static void bygRegisterBlocks(final RegistryEvent.Register<Block> event) {
+
+
+        event.getRegistry().registerAll
+                (
+                        //LeaveBlocks
+                        LeaveBlocks.APPLE_SKYRIS_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("apple_skyris_leaves")),
+                LeaveBlocks.BAOBAB_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("baobab_leaves")), LeaveBlocks.BLOOMING_WITCH_HAZEL_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("blooming_witch_hazel_leaves")),
+                LeaveBlocks.BLUE_ENCHANTED_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("blue_enchanted_leaves")),
+                LeaveBlocks.BLUE_SPRUCE_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("blue_spruce_leaves")),
+                LeaveBlocks.BROWN_BIRCH_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("brown_birch_leaves")),
+                LeaveBlocks.BROWN_OAK_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("brown_oak_leaves")),
+                LeaveBlocks.CIKA_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("cika_leaves")),
+                LeaveBlocks.CYPRESS_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("cypress_leaves")),
+                LeaveBlocks.EBONY_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("ebony_leaves")),
+                LeaveBlocks.FIR_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("fir_leaves")),
+                LeaveBlocks.FLOWERING_ORCHARD_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("flowering_orchard_leaves")),
+                LeaveBlocks.FLOWERING_PALO_VERDE_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("flowering_palo_verde_leaves")),
+                LeaveBlocks.GREEN_ENCHANTED_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("green_enchanted_leaves")),
+                LeaveBlocks.HOLLY_BETTER_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("holly_better_leaves")),
+                LeaveBlocks.HOLLY_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("holly_leaves")),
+                LeaveBlocks.JACARANDA_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("jacaranda_leaves")),
+                LeaveBlocks.MAHOGNY_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("mahogny_leaves")),
+                LeaveBlocks.MANGROVE_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("mangrove_leaves")),
+                LeaveBlocks.ORANGE_BIRCH_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("orange_birch_leaves")),
+                LeaveBlocks.ORANGE_OAK_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("orange_oak_leaves")),
+                LeaveBlocks.ORANGE_SPRUCE_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("orange_spruce_leaves")),
+                LeaveBlocks.ORCHARD_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("orchard_leaves")),
+                LeaveBlocks.PALO_VERDE_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("palo_verde_leaves")),
+                LeaveBlocks.PINE_lEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("pine_leaves")),
+                LeaveBlocks.PINK_CHERRY_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("pink_cherry_leaves")),
+                LeaveBlocks.RAINBOW_EUCALYPTUS_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("rainbow_eucalyptus_leaves")),
+                LeaveBlocks.RED_BIRCH_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("red_birch_leaves")),
+                LeaveBlocks.RED_MAPLE_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("red_maple_leaves")),
+                LeaveBlocks.RED_OAK_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("red_oak_leaves")),
+                LeaveBlocks.RED_SPRUCE_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("red_spruce_leaves")),
+                LeaveBlocks.REDWOOD_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("redwood_leaves")),
+                LeaveBlocks.RIPE_ORCHARD_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("ripe_orchard_leaves")),
+                LeaveBlocks.SILVER_MAPLE_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("silver_maple_leaves")),
+                LeaveBlocks.SKYRIS_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("skyris_leaves")),
+                LeaveBlocks.WHITE_CHERRY_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("white_cherry_leaves")),
+                LeaveBlocks.WILLOW_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("willow_leaves")),
+                LeaveBlocks.WITCH_HAZEL_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("witch_hazel_leaves")),
+                LeaveBlocks.YELLOW_BIRCH_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("yellow_birch_leaves")),
 
                 //LogBlocks
                 LogBlocks.ASPEN_LOG = new LogBlock(MaterialColor.WOOD, Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(location("aspen_log")),
@@ -136,19 +163,22 @@ public class BlockItemRegistry {
                 FlowerBlocks.WINTER_SCILLA = new FlowerBlock(Effects.SATURATION, 7, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("winter_scilla")),
                 FlowerBlocks.YELLOW_DAFFODIL = new FlowerBlock(Effects.SATURATION, 7, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("yellow_daffodil")),
                 FlowerBlocks.YELLOW_TULIP = new FlowerBlock(Effects.SATURATION, 7, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("yellow_tulip"))
-        );
+                );
         BYG.LOGGER.info("Load");
     }
 
     @SubscribeEvent
-    public void bygRegisterItems(final RegistryEvent.Register<Item> event) {
-        event.getRegistry().registerAll(
-                new LeaveItems.AppleSkyrisLeaves(),
-                new LeaveItems.BaobaLeaves()
-        );
+    public static void bygRegisterItems(final RegistryEvent.Register<Item> event) {
+        event.getRegistry().registerAll
+                (
+                LeaveItems.APPLE_SKYRIS_LEAVES = new BlockItem(LeaveBlocks.APPLE_SKYRIS_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.APPLE_SKYRIS_LEAVES.getRegistryName()),
+        LeaveItems.BAOBAB_LEAVES = new BlockItem(LeaveBlocks.BAOBAB_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.BAOBAB_LEAVES.getRegistryName())
+                        );
     }
 
-    private ResourceLocation location(String name) {
+    private static ResourceLocation location(String name) {
         return new ResourceLocation(BYG.MODID, name);
     }
 }
+}
+

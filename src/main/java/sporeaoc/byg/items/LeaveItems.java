@@ -1,12 +1,6 @@
 package sporeaoc.byg.items;
 
 import net.minecraft.item.Item;
-import net.minecraftforge.registries.ObjectHolder;
-import sporeaoc.byg.BYG;
-import sporeaoc.byg.ModSetup.ModSetup;
-import sporeaoc.byg.block.LeaveBlocks;
-
-import java.util.Objects;
 
 public class LeaveItems {
     public static Item BAOBAB_LEAVES;
@@ -48,22 +42,4 @@ public class LeaveItems {
     public static Item WILLOW_LEAVES;
     public static Item WITCH_HAZEL_LEAVES;
     public static Item YELLOW_BIRCH_LEAVES;
-
-    public static class AppleSkyrisLeaves extends Item {
-        public AppleSkyrisLeaves() {
-            super(new Item.Properties()
-                    .group(ModSetup.itemGroup)
-            );
-            setRegistryName(Objects.requireNonNull(LeaveBlocks.APPLE_SKYRIS_LEAVES.getRegistryName()));
-        }
-    }
-
-    public static class BaobaLeaves extends Item {
-        public BaobaLeaves() {
-            super(new Item.Properties()
-                    .group(ModSetup.itemGroup)
-            );
-            setRegistryName(Objects.requireNonNull(LeaveBlocks.BAOBAB_LEAVES.getRegistryName()));
-        }
-    }
 }
