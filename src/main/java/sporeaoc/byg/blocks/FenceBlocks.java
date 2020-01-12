@@ -1,27 +1,27 @@
 package sporeaoc.byg.blocks;
 
-import net.minecraft.item.Item;
+import net.minecraft.block.Block;
 
 public class FenceBlocks {
-    public static Item ASPEN_FENCE;
-    public static Item BAOBAB_FENCE;
-    public static Item BLUE_ENCHANTED_FENCE;
-    public static Item CHERRY_FENCE;
-    public static Item CIKA_FENCE;
-    public static Item CYPRESS_FENCE;
-    public static Item EBONY_FENCE;
-    public static Item FIR_FENCE;
-    public static Item GREEN_ENCHANTED_FENCE;
-    public static Item HOLLY_FENCE;
-    public static Item JACARANDA_FENCE;
-    public static Item MAHOGONY_FENCE;
-    public static Item MANGROVE_FENCE;
-    public static Item MAPLE_FENCE;
-    public static Item PINE_FENCE;
-    public static Item RAINBOW_EUCALYPTUS_FENCE;
-    public static Item REDWOOD_FENCE;
-    public static Item SKYRIS_FENCE;
-    public static Item WILLOW_FENCE;
-    public static Item WITCH_HAZEL_FENCE;
-    public static Item ZELKOVA_FENCE;
+    public static Block ASPEN_FENCE;
+    public static Block BAOBAB_FENCE;
+    public static Block BLUE_ENCHANTED_FENCE;
+    public static Block CHERRY_FENCE;
+    public static Block CIKA_FENCE;
+    public static Block CYPRESS_FENCE;
+    public static Block EBONY_FENCE;
+    public static Block FIR_FENCE;
+    public static Block GREEN_ENCHANTED_FENCE;
+    public static Block HOLLY_FENCE;
+    public static Block JACARANDA_FENCE;
+    public static Block MAHOGONY_FENCE;
+    public static Block MANGROVE_FENCE;
+    public static Block MAPLE_FENCE;
+    public static Block PINE_FENCE;
+    public static Block RAINBOW_EUCALYPTUS_FENCE;
+    public static Block REDWOOD_FENCE;
+    public static Block SKYRIS_FENCE;
+    public static Block WILLOW_FENCE;
+    public static Block WITCH_HAZEL_FENCE;
+    public static Block ZELKOVA_FENCE;
 }

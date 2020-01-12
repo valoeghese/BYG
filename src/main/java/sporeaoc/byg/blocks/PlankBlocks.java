@@ -1,27 +1,27 @@
 package sporeaoc.byg.blocks;
 
-import net.minecraft.item.Item;
+import net.minecraft.block.Block;
 
 public class PlankBlocks {
-    public static Item ASPEN_PLANKS;
-    public static Item BAOBAB_PLANKS;
-    public static Item BLUE_ENCHANTED_PLANKS;
-    public static Item CHERRY_PLANKS;
-    public static Item CIKA_PLANKS;
-    public static Item CYPRESS_PLANKS;
-    public static Item EBONY_PLANKS;
-    public static Item FIR_PLANKS;
-    public static Item GREEN_ENCHANTED_PLANKS;
-    public static Item HOLLY_PLANKS;
-    public static Item JACARANDA_PLANKS;
-    public static Item MAHOGONY_PLANKS;
-    public static Item MANGROVE_PLANKS;
-    public static Item MAPLE_PLANKS;
-    public static Item PINE_PLANKS;
-    public static Item RAINBOW_EUCALYPTUS_PLANKS;
-    public static Item REDWOOD_PLANKS;
-    public static Item SKYRIS_PLANKS;
-    public static Item WILLOW_PLANKS;
-    public static Item WITCH_HAZEL_PLANKS;
-    public static Item ZELKOVA_PLANKS;
+    public static Block ASPEN_PLANKS;
+    public static Block BAOBAB_PLANKS;
+    public static Block BLUE_ENCHANTED_PLANKS;
+    public static Block CHERRY_PLANKS;
+    public static Block CIKA_PLANKS;
+    public static Block CYPRESS_PLANKS;
+    public static Block EBONY_PLANKS;
+    public static Block FIR_PLANKS;
+    public static Block GREEN_ENCHANTED_PLANKS;
+    public static Block HOLLY_PLANKS;
+    public static Block JACARANDA_PLANKS;
+    public static Block MAHOGONY_PLANKS;
+    public static Block MANGROVE_PLANKS;
+    public static Block MAPLE_PLANKS;
+    public static Block PINE_PLANKS;
+    public static Block RAINBOW_EUCALYPTUS_PLANKS;
+    public static Block REDWOOD_PLANKS;
+    public static Block SKYRIS_PLANKS;
+    public static Block WILLOW_PLANKS;
+    public static Block WITCH_HAZEL_PLANKS;
+    public static Block ZELKOVA_PLANKS;
 }

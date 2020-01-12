@@ -1,9 +1,9 @@
 package sporeaoc.byg.blocks;
 
-import net.minecraft.item.Item;
+import net.minecraft.block.Block;
 
 public class MushroomBlocks {
-    public static Item BLACK_PUFF;
-    public static Item WEEPING_MILKCAP;
-    public static Item WOOD_BLEWIT;
+    public static Block BLACK_PUFF;
+    public static Block WEEPING_MILKCAP;
+    public static Block WOOD_BLEWIT;
 }
