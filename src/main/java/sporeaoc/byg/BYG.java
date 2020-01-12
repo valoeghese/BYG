@@ -5,7 +5,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import sporeaoc.byg.ModSetup.ModSetup;
+import sporeaoc.byg.modSetup.ModSetup;
 import sporeaoc.byg.config.ConfigManager;
 
 @Mod("byg")
