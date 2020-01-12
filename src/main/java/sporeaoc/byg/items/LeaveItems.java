@@ -1,8 +1,8 @@
-package sporeaoc.byg.blocks;
+package sporeaoc.byg.items;
 
 import net.minecraft.item.Item;
 
-public class LeaveBlocks {
+public class LeaveItems {
     public static Item BAOBAB_LEAVES;
     public static Item BLOOMING_WITCH_HAZEL_LEAVES;
     public static Item BLUE_ENCHANTED_LEAVES;

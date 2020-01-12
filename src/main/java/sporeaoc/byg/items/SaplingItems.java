@@ -1,8 +1,8 @@
-package sporeaoc.byg.blocks;
+package sporeaoc.byg.items;
 
 import net.minecraft.item.Item;
 
-public class SaplingBlocks {
+public class SaplingItems {
     public static Item BAOBAB_SAPLING;
     public static Item BLOOMING_WITCH_HAZEL_SAPLING;
     public static Item BLUE_ENCHANTED_SAPLING;

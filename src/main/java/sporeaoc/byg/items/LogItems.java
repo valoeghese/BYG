@@ -1,8 +1,8 @@
-package sporeaoc.byg.blocks;
+package sporeaoc.byg.items;
 
 import net.minecraft.item.Item;
 
-public class LogBlocks {
+public class LogItems {
     public static Item ASPEN_LOG;
     public static Item BAOBAB_LOG;
     public static Item BLUE_ENCHANTED_LOG;

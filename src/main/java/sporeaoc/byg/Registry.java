@@ -1,7 +1,5 @@
 package sporeaoc.byg;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeManager;
@@ -13,16 +11,6 @@ import net.minecraftforge.registries.IForgeRegistry;
 @Mod.EventBusSubscriber(modid = BYG.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Registry {
 
-    @SubscribeEvent
-    public static void bygRegisterBlocks(RegistryEvent.Register<Block> event) {
-        Itemlist
-
-    }
-
-    @SubscribeEvent
-    public static void bygRegisterItems(RegistryEvent.Register<Item> event) {
-
-    }
 
     @SubscribeEvent
     public static void registerBiomes(RegistryEvent.Register<Biome> event) {

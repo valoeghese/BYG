@@ -1,8 +1,8 @@
-package sporeaoc.byg.blocks;
+package sporeaoc.byg.items;
 
 import net.minecraft.item.Item;
 
-public class StrippedLogBlocks {
+public class StrippedLogItems {
     public static Item STRIPPED_BAOBAB_LOG;
     public static Item STRIPPED_BLUE_ENCHANTED_LOG;
     public static Item STRIPPED_CHERRY_LOG;
