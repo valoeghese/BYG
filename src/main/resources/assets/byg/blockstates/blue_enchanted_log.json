@@ -1,28 +1,17 @@
 {
   "variants": {
-    "facing=south": {
+    "axis=y": {
       "model": "byg:block/blue_enchanted_log"
     },
-    "facing=north": {
-      "model": "byg:block/blue_enchanted_log"
-    },
-    "facing=east": {
+    "axis=z": {
       "model": "byg:block/blue_enchanted_log",
       "x": 90
     },
-    "facing=west": {
-      "model": "byg:block/blue_enchanted_log",
-      "x": 90
-    },
-    "facing=up": {
-      "model": "byg:block/blue_enchanted_log",
-      "x": 90,
-      "y": 90
-    },
-    "facing=down": {
+    "axis=x": {
       "model": "byg:block/blue_enchanted_log",
       "x": 90,
       "y": 90
     }
   }
 }
+

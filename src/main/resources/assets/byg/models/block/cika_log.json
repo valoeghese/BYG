@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_column",
   "textures": {
-    "down": "byg:blocks/cika_log_top",
-    "up": "byg:blocks/cika_log_top",
-    "north": "byg:blocks/cika_log_side",
-    "east": "byg:blocks/cika_log_side",
-    "south": "byg:blocks/cika_log_side",
-    "west": "byg:blocks/cika_log_side",
-    "particle": "byg:blocks/cika_log_top"
+    "end": "byg:blocks/cika_log_top",
+    "side": "byg:blocks/cika_log"
   }
 }

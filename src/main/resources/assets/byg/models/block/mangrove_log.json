@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_column",
   "textures": {
-    "down": "byg:blocks/mangrove_log_top",
-    "up": "byg:blocks/mangrove_log_top",
-    "north": "byg:blocks/mangrove_log_side",
-    "east": "byg:blocks/mangrove_log_side",
-    "south": "byg:blocks/mangrove_log_side",
-    "west": "byg:blocks/mangrove_log_side",
-    "particle": "byg:blocks/mangrove_log_top"
+    "end": "byg:blocks/mangrove_log_top",
+    "side": "byg:blocks/mangrove_log"
   }
 }

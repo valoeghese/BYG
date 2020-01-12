@@ -1,28 +1,17 @@
 {
   "variants": {
-    "facing=south": {
+    "axis=y": {
       "model": "byg:block/holly_log"
     },
-    "facing=north": {
-      "model": "byg:block/holly_log"
-    },
-    "facing=east": {
+    "axis=z": {
       "model": "byg:block/holly_log",
       "x": 90
     },
-    "facing=west": {
-      "model": "byg:block/holly_log",
-      "x": 90
-    },
-    "facing=up": {
-      "model": "byg:block/holly_log",
-      "x": 90,
-      "y": 90
-    },
-    "facing=down": {
+    "axis=x": {
       "model": "byg:block/holly_log",
       "x": 90,
       "y": 90
     }
   }
 }
+
