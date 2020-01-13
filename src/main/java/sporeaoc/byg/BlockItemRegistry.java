@@ -238,7 +238,7 @@ public class BlockItemRegistry {
                         LogItems.WITCH_HAZEL_LOG = new BlockItem(LogBlocks.WITCH_HAZEL_LOG , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks.WITCH_HAZEL_LOG.getRegistryName()),
                         LogItems.ZELKOVA_LOG = new BlockItem(LogBlocks.ZELKOVA_LOG , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks.ZELKOVA_LOG.getRegistryName()),
 
-                                        // Capital Letters only for FLOWER_NAME
+                                        // Capital Letters only for FLOWER_NAME  ////
                         //Flower   FlowerItems.<FLOWER_NAME>= new BlockItem(FlowerBlocks.<FLOWER_NAME>, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(.setRegistryName(FlowerBlocks.<FLOWER_NAME>.getRegistryName()),
                         FlowerItems.ALLIUM_FLOWER_BUSH = new BlockItem(FlowerBlocks.ALLIUM_FLOWER_BUSH, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FlowerBlocks.ALLIUM_FLOWER_BUSH.getRegistryName()),
                         FlowerItems. = new BlockItem(FlowerBlocks., new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(.setRegistryName(FlowerBlocks..getRegistryName()),
