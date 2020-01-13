@@ -1,5 +1,5 @@
 {
-  "parent": "byg:block/pink_cherry_leaves",
+  "parent": "byg:blocks/pink_cherry_leaves",
   "display": {
     "thirdperson": {
       "rotation": [
