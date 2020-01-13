@@ -14,7 +14,7 @@ public class LogItems {
     public static Item GREEN_ENCHANTED_LOG;
     public static Item HOLLY_LOG;
     public static Item JACARANDA_LOG;
-    public static Item MAHOGONY_LOG;
+    public static Item MAHOGANY_LOG;
     public static Item MANGROVE_LOG;
     public static Item MAPLE_LOG;
     public static Item PALO_VERDE_LOG;

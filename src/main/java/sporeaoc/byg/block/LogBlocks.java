@@ -4,7 +4,7 @@ import net.minecraft.block.Block;
 
 public class LogBlocks {
     public static Block ASPEN_LOG;
-    public static Block BAOBAB_LOG;
+    public static Block BOABAB_LOG;
     public static Block BLUE_ENCHANTED_LOG;
     public static Block CHERRY_LOG;
     public static Block CIKA_LOG;
@@ -14,7 +14,7 @@ public class LogBlocks {
     public static Block GREEN_ENCHANTED_LOG;
     public static Block HOLLY_LOG;
     public static Block JACARANDA_LOG;
-    public static Block MAHOGONY_LOG;
+    public static Block MAHOGANY_LOG;
     public static Block MANGROVE_LOG;
     public static Block MAPLE_LOG;
     public static Block PALO_VERDE_LOG;

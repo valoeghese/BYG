@@ -3,7 +3,7 @@ package sporeaoc.byg.items;
 import net.minecraft.item.Item;
 
 public class LeaveItems {
-    public static Item BAOBAB_LEAVES;
+    public static Item BOABAB_LEAVES;
     public static Item BLOOMING_WITCH_HAZEL_LEAVES;
     public static Item BLUE_ENCHANTED_LEAVES;
     public static Item BLUE_SPRUCE_LEAVES;
@@ -20,7 +20,7 @@ public class LeaveItems {
     public static Item HOLLY_BETTER_LEAVES;
     public static Item HOLLY_LEAVES;
     public static Item JACARANDA_LEAVES;
-    public static Item MAHOGNY_LEAVES;
+    public static Item MAHOGANY_LEAVES;
     public static Item MANGROVE_LEAVES;
     public static Item ORANGE_BIRCH_LEAVES;
     public static Item ORANGE_OAK_LEAVES;
