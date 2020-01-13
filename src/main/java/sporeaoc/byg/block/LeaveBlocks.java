@@ -3,7 +3,7 @@ package sporeaoc.byg.block;
 import net.minecraft.block.Block;
 
 public class LeaveBlocks {
-    public static Block BOABAB_LEAVES;
+    public static Block BAOBAB_LEAVES;
     public static Block BLOOMING_WITCH_HAZEL_LEAVES;
     public static Block BLUE_ENCHANTED_LEAVES;
     public static Block BLUE_SPRUCE_LEAVES;
@@ -37,7 +37,7 @@ public class LeaveBlocks {
     public static Block REDWOOD_LEAVES;
     public static Block RIPE_ORCHARD_LEAVES;
     public static Block SILVER_MAPLE_LEAVES;
-    public static Block SKYRIS_LEAVES;
+    public static Block SKYRIS_LEAVES_GREEN_APPLE;
     public static Block WHITE_CHERRY_LEAVES;
     public static Block WILLOW_LEAVES;
     public static Block WITCH_HAZEL_LEAVES;

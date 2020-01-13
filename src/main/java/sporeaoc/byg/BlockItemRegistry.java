@@ -13,6 +13,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.block.*;
 import sporeaoc.byg.items.LeaveItems;
+import sporeaoc.byg.items.LogItems;
 
 
 public class BlockItemRegistry {
@@ -60,7 +61,7 @@ public class BlockItemRegistry {
                 LeaveBlocks.REDWOOD_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("redwood_leaves")),
                 LeaveBlocks.RIPE_ORCHARD_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("ripe_orchard_leaves")),
                 LeaveBlocks.SILVER_MAPLE_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("silver_maple_leaves")),
-                LeaveBlocks.SKYRIS_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("skyris_leaves")),
+                LeaveBlocks.SKYRIS_LEAVES_GREEN_APPLE = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("green_apple_skyris_leaves")),
                 LeaveBlocks.WHITE_CHERRY_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("white_cherry_leaves")),
                 LeaveBlocks.WILLOW_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("willow_leaves")),
                 LeaveBlocks.WITCH_HAZEL_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("witch_hazel_leaves")),
@@ -172,8 +173,8 @@ public class BlockItemRegistry {
     public static void bygRegisterItems(final RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll
                 (
-                LeaveItems.APPLE_SKYRIS_LEAVES = new BlockItem(LeaveBlocks.APPLE_SKYRIS_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.APPLE_SKYRIS_LEAVES.getRegistryName()),
-                LeaveItems.BOABAB_LEAVES = new BlockItem(LeaveBlocks.BOABAB_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.BOABAB_LEAVES.getRegistryName()),
+                        LeaveItems.APPLE_SKYRIS_LEAVES = new BlockItem(LeaveBlocks.APPLE_SKYRIS_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.APPLE_SKYRIS_LEAVES.getRegistryName()),
+                LeaveItems.BAOBAB_LEAVES = new BlockItem(LeaveBlocks.BAOBAB_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.BAOBAB_LEAVES.getRegistryName()),
                 LeaveItems.BLOOMING_WITCH_HAZEL_LEAVES = new BlockItem(LeaveBlocks.BLOOMING_WITCH_HAZEL_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.BLOOMING_WITCH_HAZEL_LEAVES.getRegistryName()),
                 LeaveItems.BLUE_ENCHANTED_LEAVES = new BlockItem(LeaveBlocks.BLUE_ENCHANTED_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.BLUE_ENCHANTED_LEAVES.getRegistryName()),
                 LeaveItems.BLUE_SPRUCE_LEAVES = new BlockItem(LeaveBlocks.BLUE_SPRUCE_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.BLUE_SPRUCE_LEAVES.getRegistryName()),
@@ -206,13 +207,48 @@ public class BlockItemRegistry {
                         LeaveItems.REDWOOD_LEAVES = new BlockItem(LeaveBlocks.REDWOOD_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.REDWOOD_LEAVES.getRegistryName()),
                         LeaveItems.RIPE_ORCHARD_LEAVES = new BlockItem(LeaveBlocks.RIPE_ORCHARD_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.RIPE_ORCHARD_LEAVES.getRegistryName()),
                         LeaveItems.SILVER_MAPLE_LEAVES = new BlockItem(LeaveBlocks.SILVER_MAPLE_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.SILVER_MAPLE_LEAVES.getRegistryName()),
-                        LeaveItems.SKYRIS_LEAVES = new BlockItem(LeaveBlocks.SKYRIS_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.SKYRIS_LEAVES.getRegistryName()),
+                        LeaveItems.SKYRIS_LEAVES_GREEN_APPLE = new BlockItem(LeaveBlocks.SKYRIS_LEAVES_GREEN_APPLE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.SKYRIS_LEAVES_GREEN_APPLE.getRegistryName()),
                         LeaveItems.WHITE_CHERRY_LEAVES = new BlockItem(LeaveBlocks.WHITE_CHERRY_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.WHITE_CHERRY_LEAVES.getRegistryName()),
                         LeaveItems.WILLOW_LEAVES = new BlockItem(LeaveBlocks.WILLOW_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.WILLOW_LEAVES.getRegistryName()),
                         LeaveItems.WITCH_HAZEL_LEAVES = new BlockItem(LeaveBlocks.WITCH_HAZEL_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.WITCH_HAZEL_LEAVES.getRegistryName()),
-                        LeaveItems.YELLOW_BIRCH_LEAVES = new BlockItem(LeaveBlocks.YELLOW_BIRCH_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.YELLOW_BIRCH_LEAVES.getRegistryName())
+                        LeaveItems.YELLOW_BIRCH_LEAVES = new BlockItem(LeaveBlocks.YELLOW_BIRCH_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.YELLOW_BIRCH_LEAVES.getRegistryName()),
 
-
+                        //Logs
+                        LogItems.ASPEN_LOG = new BlockItem(LogBlocks.ASPEN_LOG, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks.ASPEN_LOG.getRegistryName()),
+                        LogItems.BAOBAB_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.BLUE_ENCHANTED_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.CHERRY_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.CIKA_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.CYPRESS_LOG= new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.EBONY_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.EBONY_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.FIR_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.GREEN_ENCHANTED_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.HOLLY_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.JACARANDA_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.JACARANDA_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems.MAHOGANY_LOG = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
+                        LogItems = new BlockItem(LogBlocks , new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LogBlocks),
 
                         );
     }
