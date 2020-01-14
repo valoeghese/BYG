@@ -12,10 +12,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.block.*;
-import sporeaoc.byg.items.FlowerItems;
-import sporeaoc.byg.items.LeaveItems;
-import sporeaoc.byg.items.LogItems;
-import sporeaoc.byg.items.PlankItems;
+import sporeaoc.byg.items.*;
 
 
 public class BlockItemRegistry {
@@ -221,6 +218,11 @@ public class BlockItemRegistry {
                 PlankItems.WILLOW_PLANKS = new BlockItem(PlankBlocks.WILLOW_PLANKS, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(PlankBlocks.WILLOW_PLANKS.getRegistryName()),
                 PlankItems.WITCH_HAZEL_PLANKS = new BlockItem(PlankBlocks.WITCH_HAZEL_PLANKS, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(PlankBlocks.WITCH_HAZEL_PLANKS.getRegistryName()),
                 PlankItems.ZELKOVA_PLANKS = new BlockItem(PlankBlocks.ZELKOVA_PLANKS, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(PlankBlocks.ZELKOVA_PLANKS.getRegistryName()),
+
+                //OreItems
+                        OreItems.LATHARIUM_ORE = new BlockItem(OreBlocks.LATHARIUM_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(OreBlocks.LATHARIUM_ORE.getRegistryName()),
+                        OreItems.PENDORITE_ORE = new BlockItem(OreBlocks.PENDORITE_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(OreBlocks.PENDORITE_ORE.getRegistryName()),
+                        OreItems.TAMRELITE_ORE = new BlockItem(OreBlocks.TAMRELITE_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(OreBlocks.TAMRELITE_ORE.getRegistryName()),
 
 
                 LeaveItems.APPLE_SKYRIS_LEAVES = new BlockItem(LeaveBlocks.APPLE_SKYRIS_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.APPLE_SKYRIS_LEAVES.getRegistryName()),
