@@ -50,7 +50,6 @@ public class BlockItemRegistry {
                 //FenceBlocks
                 //FenceBlocks.ASPEN_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD, OAK))
                 //LeaveBlocks
-                LeaveBlocks.APPLE_SKYRIS_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("apple_skyris_leaves")),
                 LeaveBlocks.BAOBAB_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("baobab_leaves")),
                 LeaveBlocks.BLOOMING_WITCH_HAZEL_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("blooming_witch_hazel_leaves")),
                 LeaveBlocks.BLUE_ENCHANTED_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("blue_enchanted_leaves")),
@@ -122,7 +121,9 @@ public class BlockItemRegistry {
                 //StoneBlocks
                 StoneBlocks.DACITE_STONE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName(location("dacite_stone")),
                 StoneBlocks.MOSSY_STONE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName(location("mossy_stone")),
+
                 StoneBlocks.OVERGROWN_STONE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName(location("overgrown_stone")),
+                StoneBlocks.ROCKY_STONE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName(location("rocky_stone")),
                 StoneBlocks.SCORIA_STONE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName(location("scoria_stone")),
                 StoneBlocks.SOAPSTONE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName(location("soapstone")),
                 StoneBlocks.SODALITE = new Block(Block.Properties.create(Material.ROCK, MaterialColor.STONE).hardnessAndResistance(1.5F, 6.0F)).setRegistryName(location("sodalite")),
@@ -220,12 +221,19 @@ public class BlockItemRegistry {
                 PlankItems.ZELKOVA_PLANKS = new BlockItem(PlankBlocks.ZELKOVA_PLANKS, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(PlankBlocks.ZELKOVA_PLANKS.getRegistryName()),
 
                 //OreItems
-                        OreItems.LATHARIUM_ORE = new BlockItem(OreBlocks.LATHARIUM_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(OreBlocks.LATHARIUM_ORE.getRegistryName()),
-                        OreItems.PENDORITE_ORE = new BlockItem(OreBlocks.PENDORITE_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(OreBlocks.PENDORITE_ORE.getRegistryName()),
-                        OreItems.TAMRELITE_ORE = new BlockItem(OreBlocks.TAMRELITE_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(OreBlocks.TAMRELITE_ORE.getRegistryName()),
+                OreItems.LATHARIUM_ORE = new BlockItem(OreBlocks.LATHARIUM_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(OreBlocks.LATHARIUM_ORE.getRegistryName()),
+                OreItems.PENDORITE_ORE = new BlockItem(OreBlocks.PENDORITE_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(OreBlocks.PENDORITE_ORE.getRegistryName()),
+                OreItems.TAMRELITE_ORE = new BlockItem(OreBlocks.TAMRELITE_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(OreBlocks.TAMRELITE_ORE.getRegistryName()),
 
+                //StoneItems
+               // StoneItems.DACITE_STONE = new BlockItem(StoneBlocks.DACITE_STONE, new  Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(StoneBlocks.DACITE_STONE.getRegistryName()),
+                StoneItems.MOSSY_STONE = new BlockItem(StoneBlocks.MOSSY_STONE, new  Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(StoneBlocks.MOSSY_STONE.getRegistryName()),
+                StoneItems.OVERGROWN_STONE = new BlockItem(StoneBlocks.OVERGROWN_STONE, new  Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(StoneBlocks.OVERGROWN_STONE.getRegistryName()),
+               // StoneItems.ROCKY_STONE = new BlockItem(StoneBlocks.ROCKY_STONE, new  Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(StoneBlocks.ROCKY_STONE.getRegistryName()),
+                StoneItems.SCORIA_STONE = new BlockItem(StoneBlocks.SCORIA_STONE, new  Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(StoneBlocks.SCORIA_STONE.getRegistryName()),
+                StoneItems.SOAPSTONE = new BlockItem(StoneBlocks.SOAPSTONE, new  Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(StoneBlocks.SOAPSTONE.getRegistryName()),
+                StoneItems.SODALITE = new BlockItem(StoneBlocks.SODALITE, new  Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(StoneBlocks.SODALITE.getRegistryName()),
 
-                LeaveItems.APPLE_SKYRIS_LEAVES = new BlockItem(LeaveBlocks.APPLE_SKYRIS_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.APPLE_SKYRIS_LEAVES.getRegistryName()),
                 LeaveItems.BAOBAB_LEAVES = new BlockItem(LeaveBlocks.BAOBAB_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.BAOBAB_LEAVES.getRegistryName()),
                 LeaveItems.BLOOMING_WITCH_HAZEL_LEAVES = new BlockItem(LeaveBlocks.BLOOMING_WITCH_HAZEL_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.BLOOMING_WITCH_HAZEL_LEAVES.getRegistryName()),
                 LeaveItems.BLUE_ENCHANTED_LEAVES = new BlockItem(LeaveBlocks.BLUE_ENCHANTED_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(LeaveBlocks.BLUE_ENCHANTED_LEAVES.getRegistryName()),
