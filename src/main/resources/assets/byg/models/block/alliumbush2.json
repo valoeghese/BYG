@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "byg:blocks/allium_bush",
-    "particle": "byg:blocks/allium_bush"
-  }
-}

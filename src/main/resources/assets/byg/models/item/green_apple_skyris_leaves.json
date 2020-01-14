@@ -1,5 +1,5 @@
 {
-  "parent": "byg:blocks/green_apple_skyris_leaves",
+  "parent": "byg:block/green_apple_skyris_leaves",
   "display": {
     "thirdperson": {
       "rotation": [

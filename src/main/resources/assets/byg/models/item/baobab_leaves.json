@@ -1,5 +1,5 @@
 {
-  "parent": "byg:blocks/baobab_leaves",
+  "parent": "byg:block/baobab_leaves",
   "display": {
     "thirdperson": {
       "rotation": [

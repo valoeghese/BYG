@@ -1,5 +1,5 @@
 {
-  "parent": "byg:block/aspenlog",
+  "parent": "byg:block/aspen_log",
   "display": {
     "thirdperson": {
       "rotation": [

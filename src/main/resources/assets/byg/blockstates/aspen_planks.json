@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "byg:block/aspenplanks"
+      "model": "byg:block/aspen_planks"
     }
   }
 }
