@@ -48,7 +48,30 @@ public class BlockItemRegistry {
                 PlankBlocks.ZELKOVA_PLANKS = new Block(Block.Properties.create(Material.WOOD,MaterialColor.BROWN).hardnessAndResistance(2.0F,3.0F).sound(SoundType.WOOD)).setRegistryName("zelkova_planks"),
 
                 //FenceBlocks
-                //FenceBlocks.ASPEN_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD, OAK))
+                FenceBlocks.ASPEN_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("aspen_fence"),
+                FenceBlocks.BAOBAB_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("baobab_fence"),
+                FenceBlocks.BLUE_ENCHANTED_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("blue_enchanted_fence"),
+                FenceBlocks.CHERRY_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("cherry_fence"),
+                FenceBlocks.CIKA_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("cika_fence"),
+                FenceBlocks.CYPRESS_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("cypress_fence"),
+                FenceBlocks.EBONY_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("ebony_fence"),
+                FenceBlocks.FIR_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("fir_fence"),
+                FenceBlocks.GREEN_ENCHANTED_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("green_enchanted_fence"),
+                FenceBlocks.HOLLY_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("holly_fence"),
+                FenceBlocks.JACARANDA_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("jacaranda_fence"),
+                FenceBlocks.MAHOGONY_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("mahogony_fence"),
+                FenceBlocks.MANGROVE_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("mangrove_fence"),
+                FenceBlocks.MAPLE_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("maple_fence"),
+                FenceBlocks.PINE_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("pine_fence"),
+                FenceBlocks.RAINBOW_EUCALYPTUS_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("rainbow_eucalyptus_fence"),
+                FenceBlocks.REDWOOD_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("redwood_fence"),
+                FenceBlocks.SKYRIS_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("skyris_fence"),
+                FenceBlocks.WILLOW_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("willow_fence"),
+                FenceBlocks.WITCH_HAZEL_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("witch_hazel_fence"),
+                FenceBlocks.ZELKOVA_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("zelkova_fence"),
+
+
+
                 //LeaveBlocks
                 LeaveBlocks.BAOBAB_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("baobab_leaves")),
                 LeaveBlocks.BLOOMING_WITCH_HAZEL_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("blooming_witch_hazel_leaves")),
@@ -219,6 +242,30 @@ public class BlockItemRegistry {
                 PlankItems.WILLOW_PLANKS = new BlockItem(PlankBlocks.WILLOW_PLANKS, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(PlankBlocks.WILLOW_PLANKS.getRegistryName()),
                 PlankItems.WITCH_HAZEL_PLANKS = new BlockItem(PlankBlocks.WITCH_HAZEL_PLANKS, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(PlankBlocks.WITCH_HAZEL_PLANKS.getRegistryName()),
                 PlankItems.ZELKOVA_PLANKS = new BlockItem(PlankBlocks.ZELKOVA_PLANKS, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(PlankBlocks.ZELKOVA_PLANKS.getRegistryName()),
+
+                //FenceItems
+                        FenceItems.ASPEN_FENCE = new BlockItem(FenceBlocks.ASPEN_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.ASPEN_FENCE.getRegistryName()),
+                        FenceItems.BAOBAB_FENCE = new BlockItem(FenceBlocks.BAOBAB_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.BAOBAB_FENCE.getRegistryName()),
+                        FenceItems.BLUE_ENCHANTED_FENCE = new BlockItem(FenceBlocks.BLUE_ENCHANTED_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.BLUE_ENCHANTED_FENCE.getRegistryName()),
+                        FenceItems.CHERRY_FENCE = new BlockItem(FenceBlocks.CHERRY_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.CHERRY_FENCE.getRegistryName()),
+                        FenceItems.CIKA_FENCE = new BlockItem(FenceBlocks.CIKA_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.CIKA_FENCE.getRegistryName()),
+                        FenceItems.CYPRESS_FENCE = new BlockItem(FenceBlocks.CYPRESS_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.CYPRESS_FENCE.getRegistryName()),
+                        FenceItems.EBONY_FENCE = new BlockItem(FenceBlocks.EBONY_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.EBONY_FENCE.getRegistryName()),
+                        FenceItems.FIR_FENCE = new BlockItem(FenceBlocks.FIR_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.FIR_FENCE.getRegistryName()),
+                        FenceItems.GREEN_ENCHANTED_FENCE = new BlockItem(FenceBlocks.GREEN_ENCHANTED_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.GREEN_ENCHANTED_FENCE.getRegistryName()),
+                        FenceItems.HOLLY_FENCE = new BlockItem(FenceBlocks.HOLLY_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.HOLLY_FENCE.getRegistryName()),
+                        FenceItems.JACARANDA_FENCE = new BlockItem(FenceBlocks.JACARANDA_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.JACARANDA_FENCE.getRegistryName()),
+                        FenceItems.MAHOGONY_FENCE = new BlockItem(FenceBlocks.MAHOGONY_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.MAHOGONY_FENCE.getRegistryName()),
+                        FenceItems.MANGROVE_FENCE = new BlockItem(FenceBlocks.MANGROVE_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.MANGROVE_FENCE.getRegistryName()),
+                        FenceItems.MAPLE_FENCE = new BlockItem(FenceBlocks.MAPLE_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.MAPLE_FENCE.getRegistryName()),
+                        FenceItems.PINE_FENCE = new BlockItem(FenceBlocks.PINE_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.PINE_FENCE.getRegistryName()),
+                        FenceItems.RAINBOW_EUCALYPTUS_FENCE = new BlockItem(FenceBlocks.RAINBOW_EUCALYPTUS_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.RAINBOW_EUCALYPTUS_FENCE.getRegistryName()),
+                        FenceItems.REDWOOD_FENCE = new BlockItem(FenceBlocks.REDWOOD_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.REDWOOD_FENCE.getRegistryName()),
+                        FenceItems.SKYRIS_FENCE = new BlockItem(FenceBlocks.SKYRIS_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.SKYRIS_FENCE.getRegistryName()),
+                        FenceItems.WILLOW_FENCE = new BlockItem(FenceBlocks.WILLOW_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.WILLOW_FENCE.getRegistryName()),
+                        FenceItems.WITCH_HAZEL_FENCE = new BlockItem(FenceBlocks.WITCH_HAZEL_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.WITCH_HAZEL_FENCE.getRegistryName()),
+                        FenceItems.ZELKOVA_FENCE = new BlockItem(FenceBlocks.ZELKOVA_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(FenceBlocks.ZELKOVA_FENCE.getRegistryName()),
+
 
                 //OreItems
                 OreItems.LATHARIUM_ORE = new BlockItem(OreBlocks.LATHARIUM_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(OreBlocks.LATHARIUM_ORE.getRegistryName()),
