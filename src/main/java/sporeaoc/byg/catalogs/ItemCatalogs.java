@@ -186,7 +186,7 @@ public class ItemCatalogs {
     public static Item WITCH_HAZEL_PLANKS;
     public static Item ZELKOVA_PLANKS;
 
-    //PlaintItems
+    //PlantItems
     public static Item CATTAIL;
     public static Item REEDS;
     public static Item HORSEWEED;
