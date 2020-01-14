@@ -153,7 +153,7 @@ public class ItemCatalogs {
     public static Item WITCH_HAZEL_LOG;
     public static Item ZELKOVA_LOG;
 
-    //LogItems
+    //MushroomItems
     public static Item BLACK_PUFF;
     public static Item WEEPING_MILKCAP;
     public static Item WOOD_BLEWIT;

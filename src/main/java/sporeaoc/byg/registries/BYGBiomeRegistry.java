@@ -1,4 +1,4 @@
-package sporeaoc.byg;
+package sporeaoc.byg.registries;
 
 /*@Mod.EventBusSubscriber(modid = BYG.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Registry {

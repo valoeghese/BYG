@@ -64,6 +64,11 @@ public class BYGItemRegistry {
                             ItemCatalogs.WITCH_HAZEL_FENCE = new BlockItem(BlockCatalogs.WITCH_HAZEL_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.WITCH_HAZEL_FENCE.getRegistryName()),
                             ItemCatalogs.ZELKOVA_FENCE = new BlockItem(BlockCatalogs.ZELKOVA_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.ZELKOVA_FENCE.getRegistryName()),
 
+                            //MushroomItems
+                            ItemCatalogs.BLACK_PUFF = new BlockItem(BlockCatalogs.BLACK_PUFF, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.BLACK_PUFF.getRegistryName()),
+                            ItemCatalogs.WEEPING_MILKCAP = new BlockItem(BlockCatalogs.WEEPING_MILKCAP, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.WEEPING_MILKCAP.getRegistryName()),
+                            ItemCatalogs.WOOD_BLEWIT = new BlockItem(BlockCatalogs.WOOD_BLEWIT, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.WOOD_BLEWIT.getRegistryName()),
+
                             //OreItems
                             ItemCatalogs.LATHARIUM_ORE = new BlockItem(BlockCatalogs.LATHARIUM_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.LATHARIUM_ORE.getRegistryName()),
                             ItemCatalogs.PENDORITE_ORE = new BlockItem(BlockCatalogs.PENDORITE_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.PENDORITE_ORE.getRegistryName()),
