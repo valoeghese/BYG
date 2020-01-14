@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "byg:blocks/overgrown_stone_bottom",
+    "up": "byg:blocks/overgrown_stone_top",
+    "north": "byg:blocks/overgrown_stone_side",
+    "east": "byg:blocks/overgrown_stone_side",
+    "south": "byg:blocks/overgrown_stone_side",
+    "west": "byg:blocks/overgrown_stone_side",
+    "particle": "byg:blocks/overgrown_stone_side"
+  }
+}

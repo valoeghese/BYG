@@ -1,5 +1,5 @@
 {
-  "parent": "byg:block/scoria",
+  "parent": "byg:block/overgrown_stone",
   "display": {
     "thirdperson": {
       "rotation": [

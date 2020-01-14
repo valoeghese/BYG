@@ -293,10 +293,9 @@ public static Block WITCH_HAZEL_STAIRS;
 public static Block ZELKOVA_STAIRS;
 
 //StoneBlocks
-public static Block DACITE_STONE;
+public static Block DACITE;
 public static Block SOAPSTONE;
 public static Block SCORIA_STONE;
-public static Block SODALITE;
 public static Block MOSSY_STONE;
 public static Block ROCKY_STONE;
 public static Block OVERGROWN_STONE;

@@ -70,13 +70,12 @@ public class BYGItemRegistry {
                             ItemCatalogs.TAMRELITE_ORE = new BlockItem(BlockCatalogs.TAMRELITE_ORE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.TAMRELITE_ORE.getRegistryName()),
 
                             //StoneItems
-                            ItemCatalogs.DACITE_STONE = new BlockItem(BlockCatalogs.DACITE_STONE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.DACITE_STONE.getRegistryName()),
+                            ItemCatalogs.DACITE = new BlockItem(BlockCatalogs.DACITE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.DACITE.getRegistryName()),
                             ItemCatalogs.MOSSY_STONE = new BlockItem(BlockCatalogs.MOSSY_STONE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.MOSSY_STONE.getRegistryName()),
                             ItemCatalogs.OVERGROWN_STONE = new BlockItem(BlockCatalogs.OVERGROWN_STONE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.OVERGROWN_STONE.getRegistryName()),
                             ItemCatalogs.ROCKY_STONE = new BlockItem(BlockCatalogs.ROCKY_STONE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.ROCKY_STONE.getRegistryName()),
                             ItemCatalogs.SCORIA_STONE = new BlockItem(BlockCatalogs.SCORIA_STONE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.SCORIA_STONE.getRegistryName()),
                             ItemCatalogs.SOAPSTONE = new BlockItem(BlockCatalogs.SOAPSTONE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.SOAPSTONE.getRegistryName()),
-                            ItemCatalogs.SODALITE = new BlockItem(BlockCatalogs.SODALITE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.SODALITE.getRegistryName()),
 
                             //LeaveItems
                             ItemCatalogs.BAOBAB_LEAVES = new BlockItem(BlockCatalogs.BAOBAB_LEAVES, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BlockCatalogs.BAOBAB_LEAVES.getRegistryName()),

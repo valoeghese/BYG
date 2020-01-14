@@ -293,10 +293,9 @@ public class ItemCatalogs {
     public static Item ZELKOVA_STAIRS;
 
     //StoneItems
-    public static Item DACITE_STONE;
+    public static Item DACITE;
     public static Item SOAPSTONE;
     public static Item SCORIA_STONE;
-    public static Item SODALITE;
     public static Item MOSSY_STONE;
     public static Item ROCKY_STONE;
     public static Item OVERGROWN_STONE;
