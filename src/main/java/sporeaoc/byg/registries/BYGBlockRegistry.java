@@ -45,6 +45,26 @@ public class BYGBlockRegistry {
                 BlockCatalogs.WITCH_HAZEL_PLANKS = new Block(Block.Properties.create(Material.WOOD,MaterialColor.BROWN).hardnessAndResistance(2.0F,3.0F).sound(SoundType.WOOD)).setRegistryName("witch_hazel_planks"),
                 BlockCatalogs.ZELKOVA_PLANKS = new Block(Block.Properties.create(Material.WOOD,MaterialColor.BROWN).hardnessAndResistance(2.0F,3.0F).sound(SoundType.WOOD)).setRegistryName("zelkova_planks"),
 
+                //Stair Blocks
+                        /*BlockCatalogs.ASPEN_STAIRS = new BYGStairBlocks(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs.BAOBAB_STAIRS = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+                        BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
+*/
+
                 //FenceBlocks
                 BlockCatalogs.ASPEN_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("aspen_fence"),
                 BlockCatalogs.BAOBAB_FENCE = new FenceBlock(Block.Properties.create(Material.WOOD).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("baobab_fence"),
@@ -108,6 +128,12 @@ public class BYGBlockRegistry {
                 BlockCatalogs.WITCH_HAZEL_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("witch_hazel_leaves")),
                 BlockCatalogs.YELLOW_BIRCH_LEAVES = new LeavesBlock(Block.Properties.create(Material.LEAVES).hardnessAndResistance(0.2F).tickRandomly().sound(SoundType.PLANT)).setRegistryName(location("yellow_birch_leaves")),
 
+                //PlantBlocks
+                //BlockCatalogs = new Reed
+
+                //SaplingBlocks
+                //BlockCatalogs = new SaplingBlock()
+
                 //LogBlocks
                 BlockCatalogs.ASPEN_LOG = new LogBlock(MaterialColor.WOOD, Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(location("aspen_log")),
                 BlockCatalogs.BAOBAB_LOG = new LogBlock(MaterialColor.WOOD, Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(location("baobab_log")),
@@ -133,9 +159,9 @@ public class BYGBlockRegistry {
                 BlockCatalogs.ZELKOVA_LOG = new LogBlock(MaterialColor.WOOD, Block.Properties.create(Material.WOOD, MaterialColor.WOOD).hardnessAndResistance(2.0F).sound(SoundType.WOOD)).setRegistryName(location("zelkova_log")),
 
                 //MushroomBlocks
-                BlockCatalogs.BLACK_PUFF = new MushroomBlock(Block.Properties.create(Material.WOOD, MaterialColor.DIRT).hardnessAndResistance(0.2F).sound(SoundType.WOOD)).setRegistryName("black_puff"),
-                BlockCatalogs.WEEPING_MILKCAP = new MushroomBlock(Block.Properties.create(Material.WOOD, MaterialColor.DIRT).hardnessAndResistance(0.2F).sound(SoundType.WOOD)).setRegistryName("weeping_milkcap"),
-                BlockCatalogs.WOOD_BLEWIT = new MushroomBlock(Block.Properties.create(Material.WOOD, MaterialColor.DIRT).hardnessAndResistance(0.2F).sound(SoundType.WOOD)).setRegistryName("wood_blewit"),
+                BlockCatalogs.BLACK_PUFF = new MushroomBlock(Block.Properties.create(Material.PLANTS, MaterialColor.DIRT).doesNotBlockMovement().hardnessAndResistance(0.2F).sound(SoundType.WOOD)).setRegistryName("black_puff"),
+                BlockCatalogs.WEEPING_MILKCAP = new MushroomBlock(Block.Properties.create(Material.PLANTS, MaterialColor.DIRT).doesNotBlockMovement().hardnessAndResistance(0.2F).sound(SoundType.WOOD)).setRegistryName("weeping_milkcap"),
+                BlockCatalogs.WOOD_BLEWIT = new MushroomBlock(Block.Properties.create(Material.PLANTS, MaterialColor.DIRT).doesNotBlockMovement().hardnessAndResistance(0.2F).sound(SoundType.WOOD)).setRegistryName("wood_blewit"),
 
                 //OreBlocks
                 BlockCatalogs.LATHARIUM_ORE = new OreBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F)).setRegistryName(location("latharium_ore")),
