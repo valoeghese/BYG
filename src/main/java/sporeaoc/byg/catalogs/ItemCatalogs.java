@@ -311,12 +311,12 @@ public class ItemCatalogs {
     public static Item STRIPPED_GREEN_ENCHANTED_LOG;
     public static Item STRIPPED_HOLLY_LOG;
     public static Item STRIPPED_JACARANDA_LOG;
-    public static Item STRIPPED_MAHOGONY_LOG;
+    public static Item STRIPPED_MAHOGANY_LOG;
     public static Item STRIPPED_MANGROVE_LOG;
     public static Item STRIPPED_MAPLE_LOG;
     public static Item STRIPPED_PALO_VERDE_LOG;
     public static Item STRIPPED_PINE_LOG;
-    public static Item STRIPPED_RAINBOW_LOG;
+    public static Item STRIPPED_RAINBOW_EUCALYPTUS_LOG;
     public static Item STRIPPED_SKYRIS_LOG;
     public static Item STRIPPED_WILLOW_LOG;
     public static Item STRIPPED_REDWOOD_LOG;
