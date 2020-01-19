@@ -106,19 +106,19 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                             int i5 = rand.nextInt(3) + 2;
 
                             for(int l2 = 0; l2 < i5; ++l2) {
-                                this.func_214616_a(changedBlocks, worldIn, new BlockPos(j + l3, i2 - l2 - 1, l + k4), p_208519_5_);
+                                this.func_214616_a(changedBlocks, worldIn, new BlockPos(j + l3, i2 - l2 - 2, l + k4), p_208519_5_); //creates roots, number value of 2 or lower does nothing 5 seems to be a good value
                             }
 
-                            for(int j5 = -1; j5 <= 1; ++j5) {
-                                for(int i3 = -1; i3 <= 1; ++i3) {
+                            for(int j5 = -1; j5 <= 1; ++j5) { //changes the x width of the leaves on row 3
+                                for(int i3 = -1; i3 <= 1; ++i3) { //changes the z width of the leaves on row 3
                                     this.func_214617_a(worldIn, k1 + l3 + j5, i2, l1 + k4 + i3, p_208519_5_, changedBlocks);
                                 }
                             }
 
-                            for(int k5 = -2; k5 <= 2; ++k5) {
-                                for(int l5 = -2; l5 <= 2; ++l5) {
-                                    if (Math.abs(k5) != 2 || Math.abs(l5) != 2) {
-                                        this.func_214617_a(worldIn, k1 + l3 + k5, i2 - 1, l1 + k4 + l5, p_208519_5_, changedBlocks);
+                            for(int k5 = -2; k5 <= 2; ++k5) { //changes the X width of the leaves on row 4
+                                for(int l5 = -2; l5 <= 2; ++l5) { //changes the Z width of the leaves on row 4
+                                    if (Math.abs(k5) != 2 || Math.abs(l5) != 2) { //does nothing
+                                        this.func_214617_a(worldIn, k1 + l3 + k5, i2 - 1, l1 + k4 + l5, p_208519_5_, changedBlocks); //i2 -1 apears to have no change on the tree
                                     }
                                 }
                             }
@@ -140,13 +140,13 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
         BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos();
 
         for(int l = 0; l <= p_214615_3_ + 1; ++l) {
-            int i1 = 1;
-            if (l == 0) {
-                i1 = 0;
+            int i1 = 1; //higher the value, lower the density of trees?
+            if (l == 0) { //does nothing?
+                i1 = 0; //higher the value, lower the density of trees?
             }
 
             if (l >= p_214615_3_ - 1) {
-                i1 = 2;
+                i1 = 1; //higher the value, lower the density of trees?
             }
 
             for(int j1 = -i1; j1 <= i1; ++j1) {
