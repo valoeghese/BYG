@@ -2,6 +2,7 @@ package sporeaoc.byg.world.tree;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MutableBoundingBox;
@@ -21,15 +22,15 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
 
     public CypressTree2(Function<Dynamic<?>, ? extends NoFeatureConfig> p_i49895_1_, boolean p_i49895_2_) {
         super(p_i49895_1_, p_i49895_2_);
-        //setSapling((net.minecraftforge.common.IPlantable)Blocks.DARK_OAK_SAPLING);
+        setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
     public CypressTree2() {
         super(null, true);
-    }
+    } //
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox p_208519_5_) {
-        int i = rand.nextInt(3) + rand.nextInt(2) + 6;
+        int i = rand.nextInt(10) + rand.nextInt(2) + 6; //First value changes height of the trunk.
         int j = position.getX();
         int k = position.getY();
         int l = position.getZ();
@@ -45,14 +46,14 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                 this.setDirtAt(worldIn, blockpos.south(), position);
                 this.setDirtAt(worldIn, blockpos.south().east(), position);
                 Direction direction = Direction.Plane.HORIZONTAL.random(rand);
-                int i1 = i - rand.nextInt(4);
-                int j1 = 2 - rand.nextInt(3);
+                int i1 = i - rand.nextInt(1);//Crashes on 0. Unknown use.
+                int j1 = 2 - rand.nextInt(1);//Crashes on 0. Unknown Use
                 int k1 = j;
                 int l1 = l;
                 int i2 = k + i - 1;
 
-                for(int j2 = 0; j2 < i; ++j2) {
-                    if (j2 >= i1 && j1 > 0) {
+                for(int j2 = 0; j2 < i; ++j2) {//raising this value will remove log blocks from the ground up.
+                    if (j2 >= i1 && j1 > 0) { //Unknown
                         k1 += direction.getXOffset();
                         l1 += direction.getZOffset();
                         --j1;
