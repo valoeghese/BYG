@@ -9,7 +9,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import sporeaoc.byg.catalogs.ItemCatalogs;
 import sporeaoc.byg.config.ConfigManager;
-import sporeaoc.byg.modSetup.ModSetup;
+import sporeaoc.byg.modsetup.ModSetup;
 
 @Mod("byg")
 public class BYG {

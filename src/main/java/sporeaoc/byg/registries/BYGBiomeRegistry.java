@@ -1,13 +1,24 @@
 package sporeaoc.byg.registries;
 
-/*@Mod.EventBusSubscriber(modid = BYG.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class Registry {
+import net.minecraft.world.biome.Biome;
+import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.IForgeRegistry;
+import sporeaoc.byg.BYG;
+import sporeaoc.byg.biomes.AmplifiedBambooJungle;
+import sporeaoc.byg.config.ConfigManager;
+
+@Mod.EventBusSubscriber(modid = BYG.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+public class BYGBiomeRegistry {
 
 
     @SubscribeEvent
     public static void registerBiomes(RegistryEvent.Register<Biome> event) {
         IForgeRegistry<Biome> registry = event.getRegistry();
-        //registerBiome(registry, new AmplifiedBambooJungle(), "amplifiedbamboojungle", ConfigManager.amplifiedbamboojungle.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.JUNGLE, BiomeDictionary.Type.HOT, BiomeDictionary.Type.WET, BiomeDictionary.Type.DENSE);
+        registerBiome(registry, new AmplifiedBambooJungle(), "amplifiedbamboojungle", ConfigManager.amplifiedbamboojungle.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.JUNGLE, BiomeDictionary.Type.HOT, BiomeDictionary.Type.WET, BiomeDictionary.Type.DENSE);
     }
 
     private static void registerBiome(IForgeRegistry<Biome> registry, Biome biome, String name, int weight, boolean spawn, BiomeManager.BiomeType type, BiomeDictionary.Type... types) {
@@ -20,4 +31,4 @@ public class Registry {
             BiomeDictionary.addTypes(biome, types);
         }
     }
-}*/
+}

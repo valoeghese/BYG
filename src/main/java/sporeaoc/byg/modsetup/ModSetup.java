@@ -1,4 +1,4 @@
-package sporeaoc.byg.modSetup;
+package sporeaoc.byg.modsetup;
 
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 

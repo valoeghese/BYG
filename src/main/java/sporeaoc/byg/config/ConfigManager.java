@@ -15,7 +15,7 @@ public class ConfigManager {
     private static ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
 
 
-    //public static Config amplifiedbadlands = new Config("amplifiedbadlands", 3); /*, 2.3D, 1.9D);*/
+    public static Config amplifiedbamboojungle = new Config("amplifiedbamboojungle", 3); /*, 2.3D, 1.9D);*/
 
     public static ForgeConfigSpec COMMON_CONFIG;
 
