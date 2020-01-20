@@ -15,17 +15,19 @@ import java.util.Random;
 import java.util.Set;
 import java.util.function.Function;
 
+import static net.minecraft.util.math.BlockPos.*;
+
 //Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
-public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
+public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LOG = BlockCatalogs.CYPRESS_LOG.getDefaultState();
     private static final BlockState LEAVES = BlockCatalogs.CYPRESS_LEAVES.getDefaultState();
 
-    public CypressTree2(Function<Dynamic<?>, ? extends NoFeatureConfig> p_i49895_1_, boolean p_i49895_2_) {
+    public RealCypressTree(Function<Dynamic<?>, ? extends NoFeatureConfig> p_i49895_1_, boolean p_i49895_2_) {
         super(p_i49895_1_, p_i49895_2_);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public CypressTree2() {
+    public RealCypressTree() {
         super(null, true);
     } //
 
@@ -52,6 +54,10 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                 int l1 = l;
                 int i2 = k + i - 1;
 
+                int z1 = j;
+                int z2 = k;
+                int z3 = l;
+
                 for(int j2 = 3; j2 < i; ++j2) {//raising this value will remove log blocks from the ground up.
                     if (j2 >= i1 && j1 > 0) { //Unknown
                         k1 += direction.getXOffset();
@@ -67,8 +73,23 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                         this.func_214616_a(changedBlocks, worldIn, blockpos1.west(), p_208519_5_);
                         this.func_214616_a(changedBlocks, worldIn, blockpos1.north(), p_208519_5_);
                     }
+
                 }
 
+                /*&BlockPos pos1;
+                for (int z = 0; i < 5; z++) {
+                    pos1 = new BlockPos(z1, z2 - 1, z3);
+                    z = (int) (z1 / 2.5);
+                    this.setBlockState(worldIn, pos1.add(-z1, 0, 0), LOG);
+                    this.setBlockState(worldIn, pos1.add(-z1, 0, -z3), LOG);
+                    this.setBlockState(worldIn, pos1.add(z1, 0, -z3), LOG);
+                    this.setBlockState(worldIn, pos1.add(z1, 0, -z3), LOG);
+                    this.setBlockState(worldIn, pos1.add(z1, 0, 0), LOG);
+                    this.setBlockState(worldIn, pos1.add(z1, 0, z3), LOG);
+                    this.setBlockState(worldIn, pos1.add(0, 0, z3), LOG);
+                    this.setBlockState(worldIn, pos1.add(-z1, 0, z3), LOG);
+                }
+                */
                 for(int j3 = -2; j3 <= 0; ++j3) {//has to do with leaves
                     for(int i4 = -2; i4 <= 0; ++i4) {
                         int l4 = -100;//Unknown
@@ -151,7 +172,7 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
         int i = p_214615_2_.getX();
         int j = p_214615_2_.getY();
         int k = p_214615_2_.getZ();
-        BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos();
+        MutableBlockPos blockpos$mutableblockpos = new MutableBlockPos();
 
         for(int l = 0; l <= p_214615_3_ + 1; ++l) {
             int i1 = 1; //higher the value, lower the density of trees?
