@@ -52,7 +52,7 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                 int l1 = l;
                 int i2 = k + i - 1;
 
-                for(int j2 = 0; j2 < i; ++j2) {//raising this value will remove log blocks from the ground up.
+                for(int j2 = 3; j2 < i; ++j2) {//raising this value will remove log blocks from the ground up.
                     if (j2 >= i1 && j1 > 0) { //Unknown
                         k1 += direction.getXOffset();
                         l1 += direction.getZOffset();
@@ -65,7 +65,13 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                         this.func_214616_a(changedBlocks, worldIn, blockpos1, p_208519_5_);
                         this.func_214616_a(changedBlocks, worldIn, blockpos1.east(), p_208519_5_);
                         this.func_214616_a(changedBlocks, worldIn, blockpos1.south(), p_208519_5_);
-                        this.func_214616_a(changedBlocks, worldIn, blockpos1.east().south(), p_208519_5_);
+                        this.func_214616_a(changedBlocks, worldIn, blockpos1.west(), p_208519_5_);
+                        this.func_214616_a(changedBlocks, worldIn, blockpos1.north(), p_208519_5_);
+
+
+
+
+
                     }
                 }
 
@@ -116,9 +122,12 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                         if ((l3 < 0 || l3 > 1 || k4 < 0 || k4 > 1) && rand.nextInt(3) <= 0) { //makes the tree increase upwards
                             int i5 = rand.nextInt(3) + 2; //makes the tree increase both upwards and downwards
 
-                            for(int l2 = 0; l2 < i5; ++l2) { //does nothing
-                                this.func_214616_a(changedBlocks, worldIn, new BlockPos(j + l3, i2 - l2 - 2, l + k4), p_208519_5_); //creates roots, number value of 2 or lower does nothing 5 seems to be a good value
-                            }
+                            /*for(int l2 = 0; l2 < i5; ++l2) { //does nothing
+                                this.func_214616_a(changedBlocks, worldIn, new BlockPos(j + l3, i2 - l2 - 2, l + k4), p_208519_5_); //creates Branches, number value of 2 or lower does nothing 5 seems to be a good value
+                            }*/
+
+                            for (int z2 = 5; z2 < i5;)
+                                this.func_214616_a(changedBlocks, worldIn, new BlockPos(j + l3, i2 - z2 , l + k4), p_208519_5_); //creates Base, number value of 2 or lower does nothing 5 seems to be a good value
 //LAYER 3
                             for(int j5 = -1; j5 <= 1; ++j5) { //changes the x width of the leaves on row 3
                                 for(int i3 = -1; i3 <= 1; ++i3) { //changes the z width of the leaves on row 3
