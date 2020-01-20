@@ -2,7 +2,6 @@ package sporeaoc.byg.world.tree;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MutableBoundingBox;
@@ -16,13 +15,14 @@ import java.util.Random;
 import java.util.Set;
 import java.util.function.Function;
 
+//Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
 public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LOG = BlockCatalogs.CYPRESS_LOG.getDefaultState();
     private static final BlockState LEAVES = BlockCatalogs.CYPRESS_LEAVES.getDefaultState();
 
     public CypressTree2(Function<Dynamic<?>, ? extends NoFeatureConfig> p_i49895_1_, boolean p_i49895_2_) {
         super(p_i49895_1_, p_i49895_2_);
-        setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
+        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
     public CypressTree2() {
@@ -76,12 +76,22 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                         this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
                         this.func_214617_a(worldIn, k1 + j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
                         this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
+                        this.func_214617_a(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+                        this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+
+
                         if ((j3 > -2 || i4 > -1) && (j3 != -1 || i4 != -2)) {
                             l4 = 1;//sets leave height?
                             this.func_214617_a(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
                             this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
                             this.func_214617_a(worldIn, k1 + j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
                             this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
+                            this.func_214617_a(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+                            this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+
+
+
+
                         }
                     }
                 }
