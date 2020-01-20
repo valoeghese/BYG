@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:jungle_log",
+    "minecraft:jungle_wood",
+    "minecraft:stripped_jungle_log",
+    "minecraft:stripped_jungle_wood",
+    "byg:mahogany_log",
+    "byg:stripped_mahogany_log"
+  ]
+}

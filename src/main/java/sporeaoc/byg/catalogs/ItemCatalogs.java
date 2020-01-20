@@ -103,7 +103,7 @@ public class ItemCatalogs {
     public static Item FLOWERING_PALO_VERDE_LEAVES;
     public static Item APPLE_SKYRIS_LEAVES;
     public static Item GREEN_ENCHANTED_LEAVES;
-    public static Item HOLLY_BETTER_LEAVES;
+    public static Item HOLLY_BERRY_LEAVES;
     public static Item HOLLY_LEAVES;
     public static Item JACARANDA_LEAVES;
     public static Item MAHOGANY_LEAVES;
@@ -220,7 +220,7 @@ public class ItemCatalogs {
     public static Item FLOWERING_PALO_VERDE_SAPLING;
     public static Item APPLE_SKYRIS_SAPLING;
     public static Item GREEN_ENCHANTED_SAPLING;
-    public static Item HOLLY_BETTER_SAPLING;
+    public static Item HOLLY_BERRY_SAPLING;
     public static Item HOLLY_SAPLING;
     public static Item JACARANDA_SAPLING;
     public static Item MAHOGNY_SAPLING;
