@@ -69,15 +69,15 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                     }
                 }
 
-                for(int j3 = -2; j3 <= 0; ++j3) {
+                for(int j3 = -2; j3 <= 0; ++j3) {//has to do with leaves
                     for(int i4 = -2; i4 <= 0; ++i4) {
-                        int l4 = -1;
+                        int l4 = -100;//Unknown
                         this.func_214617_a(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
                         this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
                         this.func_214617_a(worldIn, k1 + j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
                         this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
                         if ((j3 > -2 || i4 > -1) && (j3 != -1 || i4 != -2)) {
-                            l4 = 1;
+                            l4 = 1;//sets leave height?
                             this.func_214617_a(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
                             this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
                             this.func_214617_a(worldIn, k1 + j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
