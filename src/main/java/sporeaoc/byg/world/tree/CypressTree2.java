@@ -95,22 +95,22 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                         }
                     }
                 }
-//LAYER 1
+                //Layer1
                 if (rand.nextBoolean()) { //these are for the top 4 leaves on the top layer of the tree. these values change the x, y, and z values on them
                     this.func_214617_a(worldIn, k1, i2 + 2, l1, p_208519_5_, changedBlocks);
                     this.func_214617_a(worldIn, k1 + 1, i2 + 2, l1, p_208519_5_, changedBlocks);
                     this.func_214617_a(worldIn, k1 + 1, i2 + 2, l1 + 1, p_208519_5_, changedBlocks);
                     this.func_214617_a(worldIn, k1, i2 + 2, l1 + 1, p_208519_5_, changedBlocks);
                 }
-
-                for(int k3 = -3; k3 <= 4; ++k3) {
-                    for(int j4 = -3; j4 <= 4; ++j4) {
+                    //Layer2
+                for(int k3 = -1; k3 <= 4; ++k3) { //Changes X
+                    for(int j4 = -3; j4 <= 4; ++j4) { //Changes Z
                         if ((k3 != -3 || j4 != -3) && (k3 != -3 || j4 != 4) && (k3 != 4 || j4 != -3) && (k3 != 4 || j4 != 4) && (Math.abs(k3) < 3 || Math.abs(j4) < 3)) {
                             this.func_214617_a(worldIn, k1 + k3, i2, l1 + j4, p_208519_5_, changedBlocks);
                         }
                     }
                 }
-
+                //Layer
                 for(int l3 = -1; l3 <= 2; ++l3) { //changes the X width of the top tree area
                     for(int k4 = -1; k4 <= 2; ++k4) { //changes the Z width of the top tree area
                         if ((l3 < 0 || l3 > 1 || k4 < 0 || k4 > 1) && rand.nextInt(3) <= 0) { //makes the tree increase upwards
@@ -143,7 +143,7 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
             return false;
         }
     }
-
+        //Tree Height Maybe?
     private boolean func_214615_a(IWorldGenerationBaseReader p_214615_1_, BlockPos p_214615_2_, int p_214615_3_) {
         int i = p_214615_2_.getX();
         int j = p_214615_2_.getY();
@@ -171,14 +171,14 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
 
         return true;
     }
-
+    //Log Placement
     private void func_214616_a(Set<BlockPos> p_214616_1_, IWorldGenerationReader p_214616_2_, BlockPos p_214616_3_, MutableBoundingBox p_214616_4_) {
         if (func_214587_a(p_214616_2_, p_214616_3_)) {
             this.setLogState(p_214616_1_, p_214616_2_, p_214616_3_, LOG, p_214616_4_);
         }
 
     }
-
+    //Leaves Placement
     private void func_214617_a(IWorldGenerationReader p_214617_1_, int p_214617_2_, int p_214617_3_, int p_214617_4_, MutableBoundingBox p_214617_5_, Set<BlockPos> p_214617_6_) {
         BlockPos blockpos = new BlockPos(p_214617_2_, p_214617_3_, p_214617_4_);
         if (isAir(p_214617_1_, blockpos)) {
