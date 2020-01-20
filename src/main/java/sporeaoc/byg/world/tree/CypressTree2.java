@@ -85,8 +85,8 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                         }
                     }
                 }
-
-                if (rand.nextBoolean()) {
+//LAYER 1
+                if (rand.nextBoolean()) { //these are for the top 4 leaves on the top layer of the tree. these values change the x, y, and z values on them
                     this.func_214617_a(worldIn, k1, i2 + 2, l1, p_208519_5_, changedBlocks);
                     this.func_214617_a(worldIn, k1 + 1, i2 + 2, l1, p_208519_5_, changedBlocks);
                     this.func_214617_a(worldIn, k1 + 1, i2 + 2, l1 + 1, p_208519_5_, changedBlocks);
@@ -101,21 +101,21 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                     }
                 }
 
-                for(int l3 = -1; l3 <= 2; ++l3) {
-                    for(int k4 = -1; k4 <= 2; ++k4) {
-                        if ((l3 < 0 || l3 > 1 || k4 < 0 || k4 > 1) && rand.nextInt(3) <= 0) {
-                            int i5 = rand.nextInt(3) + 2;
+                for(int l3 = -1; l3 <= 2; ++l3) { //changes the X width of the top tree area
+                    for(int k4 = -1; k4 <= 2; ++k4) { //changes the Z width of the top tree area
+                        if ((l3 < 0 || l3 > 1 || k4 < 0 || k4 > 1) && rand.nextInt(3) <= 0) { //makes the tree increase upwards
+                            int i5 = rand.nextInt(3) + 2; //makes the tree increase both upwards and downwards
 
-                            for(int l2 = 0; l2 < i5; ++l2) {
+                            for(int l2 = 0; l2 < i5; ++l2) { //does nothing
                                 this.func_214616_a(changedBlocks, worldIn, new BlockPos(j + l3, i2 - l2 - 2, l + k4), p_208519_5_); //creates roots, number value of 2 or lower does nothing 5 seems to be a good value
                             }
-
+//LAYER 3
                             for(int j5 = -1; j5 <= 1; ++j5) { //changes the x width of the leaves on row 3
                                 for(int i3 = -1; i3 <= 1; ++i3) { //changes the z width of the leaves on row 3
                                     this.func_214617_a(worldIn, k1 + l3 + j5, i2, l1 + k4 + i3, p_208519_5_, changedBlocks);
                                 }
                             }
-
+//LAYER 4
                             for(int k5 = -2; k5 <= 2; ++k5) { //changes the X width of the leaves on row 4
                                 for(int l5 = -2; l5 <= 2; ++l5) { //changes the Z width of the leaves on row 4
                                     if (Math.abs(k5) != 2 || Math.abs(l5) != 2) { //does nothing
