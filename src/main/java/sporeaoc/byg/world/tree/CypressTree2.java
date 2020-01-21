@@ -1,21 +1,6 @@
 package sporeaoc.byg.world.tree;
 
-import com.mojang.datafixers.Dynamic;
-import net.minecraft.block.BlockState;
-import net.minecraft.util.Direction;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MutableBoundingBox;
-import net.minecraft.world.gen.IWorldGenerationBaseReader;
-import net.minecraft.world.gen.IWorldGenerationReader;
-import net.minecraft.world.gen.feature.AbstractTreeFeature;
-import net.minecraft.world.gen.feature.NoFeatureConfig;
-import sporeaoc.byg.catalogs.BlockCatalogs;
-
-import java.util.Random;
-import java.util.Set;
-import java.util.function.Function;
-
-//Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
+/*//Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
 public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LOG = BlockCatalogs.CYPRESS_LOG.getDefaultState();
     private static final BlockState LEAVES = BlockCatalogs.CYPRESS_LEAVES.getDefaultState();
@@ -123,7 +108,7 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
                             /*for (int z2 = 5; z2 < i5;)
                                 this.func_214616_a(changedBlocks, worldIn, new BlockPos(j2 + l3, i2 - z2 , l + k4), p_208519_5_); //creates Base, number value of 2 or lower does nothing 5 seems to be a good value
 //LAYER 3 */
-                            for(int j5 = -1; j5 <= 1; ++j5) { //changes the x width of the leaves on row 3
+                         /*   for(int j5 = -1; j5 <= 1; ++j5) { //changes the x width of the leaves on row 3
                                 for(int i3 = -1; i3 <= 1; ++i3) { //changes the z width of the leaves on row 3
                                     this.func_214617_a(worldIn, k1 + l3 + j5, i2, l1 + k4 + i3, p_208519_5_, changedBlocks);
                                 }
@@ -189,4 +174,4 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
         }
 
     }
-}
+}*/

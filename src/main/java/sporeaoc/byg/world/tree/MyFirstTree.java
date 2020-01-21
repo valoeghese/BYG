@@ -1,18 +1,6 @@
 package sporeaoc.byg.world.tree;
 
-import com.mojang.datafixers.Dynamic;
-import net.minecraft.block.BlockState;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MutableBoundingBox;
-import net.minecraft.world.gen.IWorldGenerationReader;
-import net.minecraft.world.gen.feature.AbstractTreeFeature;
-import net.minecraft.world.gen.feature.NoFeatureConfig;
-import sporeaoc.byg.catalogs.BlockCatalogs;
-
-import java.util.Random;
-import java.util.Set;
-import java.util.function.Function;
-
+/*
 //Copied and pasted traverse(MIT Licenses) tree to understand tree creation logic. Will not use in final code. May use the layout.
 public class MyFirstTree extends AbstractTreeFeature<NoFeatureConfig> {
     private int minHeight;
@@ -128,3 +116,4 @@ public class MyFirstTree extends AbstractTreeFeature<NoFeatureConfig> {
 
 
 }
+*/
