@@ -1,14 +1,13 @@
 package sporeaoc.byg.catalogs;
 
-import net.minecraft.block.trees.Tree;
-import net.minecraft.world.gen.feature.*;
-import sporeaoc.byg.world.tree.BaobabTree;
-import sporeaoc.byg.world.tree.RealCypressTree;
+import net.minecraft.world.gen.feature.AbstractTreeFeature;
+import net.minecraft.world.gen.feature.NoFeatureConfig;
 import sporeaoc.byg.world.tree.BaobabTreeFeature;
+import sporeaoc.byg.world.tree.RealCypressTree;
 
 public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> CYPRESS_TREE = new RealCypressTree();
-
+    public static final AbstractTreeFeature<NoFeatureConfig> BAOBAB_TREE = new BaobabTreeFeature(null, true, false);
     /*
      * TODO: Implement methods
      */
