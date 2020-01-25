@@ -18,10 +18,10 @@ public class BYGBiomeRegistry {
     @SubscribeEvent
     public static void registerBiomes(RegistryEvent.Register<Biome> event) {
         IForgeRegistry<Biome> registry = event.getRegistry();
-        registerBiome(registry, new Alps(), "alps", ConfigManager.alps.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.JUNGLE, BiomeDictionary.Type.HOT, BiomeDictionary.Type.WET, BiomeDictionary.Type.DENSE);
-        registerBiome(registry, new BlueTaiga(), "bluetaiga", ConfigManager.bluetaiga.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.JUNGLE, BiomeDictionary.Type.HOT, BiomeDictionary.Type.WET, BiomeDictionary.Type.DENSE);
+        registerBiome(registry, new Alps(), "alps", ConfigManager.alps.getWeight(), true, BiomeManager.BiomeType.ICY, BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.COLD, BiomeDictionary.Type.SNOWY, BiomeDictionary.Type.OVERWORLD);
+        registerBiome(registry, new BlueTaiga(), "bluetaiga", ConfigManager.bluetaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.CONIFEROUS, BiomeDictionary.Type.COLD, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.OVERWORLD);
         //registerBiome(registry, new Canyons(), "canyons", ConfigManager.canyons.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.JUNGLE);
-        registerBiome(registry, new Dunes(), "dunes", ConfigManager.dunes.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.JUNGLE, BiomeDictionary.Type.HOT, BiomeDictionary.Type.WET, BiomeDictionary.Type.DENSE);
+        registerBiome(registry, new Dunes(), "dunes", ConfigManager.dunes.getWeight(), true, BiomeManager.BiomeType.DESERT, BiomeDictionary.Type.HOT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.SANDY);
         //registerBiome(registry, new GiantBlueSpruceTaiga(), "giantbluesprucetaiga", ConfigManager.giantbluesprucetaiga.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.JUNGLE, BiomeDictionary.Type.HOT, BiomeDictionary.Type.WET, BiomeDictionary.Type.DENSE);
         //registerBiome(registry, new GiantSeasonalSpruceTaiga(), "giantseasonalsprucetaiga", ConfigManager.giantseasonalsprucetaiga.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.JUNGLE, BiomeDictionary.Type.HOT, BiomeDictionary.Type.WET, BiomeDictionary.Type.DENSE);
         //registerBiome(registry, new JacarandaForest(), "jacarandaforest", ConfigManager.jacarandaforest.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.JUNGLE, BiomeDictionary.Type.HOT, BiomeDictionary.Type.WET, BiomeDictionary.Type.DENSE);
