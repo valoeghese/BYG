@@ -10,6 +10,8 @@ public class ItemCatalogs {
      * to use { new BlockItem(BLOCK, tab).setRegistryName(Objects.requireNonNull(BLOCK.getRegistryName())) }
      */
 
+    //BYG LOGO
+    public static Item BYG_LOGO;
     //FenceItems
     public static Item ASPEN_FENCE;
     public static Item BAOBAB_FENCE;

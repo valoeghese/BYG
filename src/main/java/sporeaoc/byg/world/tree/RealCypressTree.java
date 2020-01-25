@@ -72,52 +72,41 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
                         this.treelog(changedBlocks, worldIn, blockpos1.south(), boundsIn);
                         this.treelog(changedBlocks, worldIn, blockpos1.west(), boundsIn);
                         this.treelog(changedBlocks, worldIn, blockpos1.north(), boundsIn);
+                        //this.treelog(changedBlocks, worldIn, blockpos1.north(2), boundsIn);
                     }
 
                 }
 
-                /*&BlockPos pos1;
-                for (int z = 0; randTreeHeight < 5; z++) {
-                    pos1 = new BlockPos(z1, z2 - 1, z3);
-                    z = (int) (z1 / 2.5);
-                    this.setBlockState(worldIn, pos1.add(-z1, 0, 0), LOG);
-                    this.setBlockState(worldIn, pos1.add(-z1, 0, -z3), LOG);
-                    this.setBlockState(worldIn, pos1.add(z1, 0, -z3), LOG);
-                    this.setBlockState(worldIn, pos1.add(z1, 0, -z3), LOG);
-                    this.setBlockState(worldIn, pos1.add(z1, 0, 0), LOG);
-                    this.setBlockState(worldIn, pos1.add(z1, 0, z3), LOG);
-                    this.setBlockState(worldIn, pos1.add(0, 0, z3), LOG);
-                    this.setBlockState(worldIn, pos1.add(-z1, 0, z3), LOG);
-                }
-                */
-                for(int posXLeafWidth = -2; posXLeafWidth <= 0; ++posXLeafWidth) {//has to do with leaves
-                    for(int posZLeafWidth = -2; posZLeafWidth <= 0; ++posZLeafWidth) {
-                        int l4 = -100;//Unknown
-                        this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
-                        this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
-                        this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, 1 + posZ1 - posZLeafWidth, boundsIn, changedBlocks);
-                        this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, 1 + posZ1 - posZLeafWidth, boundsIn, changedBlocks);
-                        this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
-                        this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+
+                for(int posXLeafWidth = -5; posXLeafWidth <= 5; ++posXLeafWidth) {//has to do with leaves
+                    for(int posZLeafWidth = -5; posZLeafWidth <= 5; ++posZLeafWidth) {
+                        int leaveheight = 1;//0 lines it up with top log
+                        //this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + leaveheight, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                        //this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + leaveheight, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                        this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + 1, 1 + posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                        //this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + leaveheight - 1, 1 + posZ1 - posZLeafWidth , boundsIn, changedBlocks);
+                        //this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + leaveheight, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                        //this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + leaveheight, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                        //this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + leaveheight, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
 
 
-                        if ((posXLeafWidth > -2 || posZLeafWidth > -1) && (posXLeafWidth != -1 || posZLeafWidth != -2)) {
-                            l4 = 1;//sets leave height?
-                            this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
-                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, 1 + posZ1 - posZLeafWidth, boundsIn, changedBlocks);
-                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, 1 + posZ1 - posZLeafWidth, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
-                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                        /*if ((posXLeafWidth > -2 || posZLeafWidth > -1) && (posXLeafWidth != -1 || posZLeafWidth != -2)) {
+                            leaveheight = 1;//sets leave height?
+                            this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + leaveheight, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + leaveheight, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                            this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + leaveheight, 1 + posZ1 - posZLeafWidth, boundsIn, changedBlocks);
+                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + leaveheight, 1 + posZ1 - posZLeafWidth, boundsIn, changedBlocks);
+                            this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + leaveheight, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + leaveheight, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
 
 
 
 
-                        }
+                        }*/
                     }
                 }
                 //Layer1
-                if (rand.nextBoolean()) { //these are for the top 4 leaves on the top layer of the tree. these values change the x, y, and z values on them
+                /*if (rand.nextBoolean()) { //these are for the top 4 leaves on the top layer of the tree. these values change the x, y, and z values on them
                     this.leafs(worldIn, posX1, posy2 + 2, posZ1, boundsIn, changedBlocks);
                     this.leafs(worldIn, posX1 + 1, posy2 + 2, posZ1, boundsIn, changedBlocks);
                     this.leafs(worldIn, posX1 + 1, posy2 + 2, posZ1 + 1, boundsIn, changedBlocks);
@@ -130,39 +119,38 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
                             this.leafs(worldIn, posX1 + k3, posy2, posZ1 + j4, boundsIn, changedBlocks);
                         }
                     }
-                }
+                }*/
                 //Layer
-                for(int l3 = -1; l3 <= 2; ++l3) { //changes the X width of the top tree area
-                    for(int k4 = -1; k4 <= 2; ++k4) { //changes the Z width of the top tree area
-                        if ((l3 < 0 || l3 > 1 || k4 < 0 || k4 > 1) && rand.nextInt(3) <= 0) { //makes the tree increase upwards
+                /*for(int l3 = -1; l3 <= 2; ++l3) {
+                    for(int k4 = -1; k4 <= 2; ++k4) {
+                        if ((l3 < 0 || l3 > 1 || k4 < 0 || k4 > 1) && rand.nextInt(3) <= 0) {
                             int i5 = rand.nextInt(3) + 2; //makes the tree increase both upwards and downwards
 
-                            /*for(int l2 = 0; l2 < i5; ++l2) { //does nothing
-                                this.treelog(changedBlocks, worldIn, new BlockPos(posX + l3, posy2 - l2 - 2, posZ + k4), boundsIn); //creates Branches, number value of 2 or lower does nothing 5 seems to be a good value
+                            for(int l2 = 0; l2 < i5; ++l2) { //does nothing
+                                this.treelog(changedBlocks, worldIn, new BlockPos(posX , posy2, posZ + 1), boundsIn); //creates Branches, number value of 2 or lower does nothing 5 seems to be a good value
                             }*/
 
-                            /*for (int z2 = 5; z2 < i5;)
-                                this.treelog(changedBlocks, worldIn, new BlockPos(j2 + l3, posy2 - z2 , posZ + k4), boundsIn); //creates Base, number value of 2 or lower does nothing 5 seems to be a good value
-//LAYER 3 */
-                            for(int j5 = -1; j5 <= 1; ++j5) { //changes the x width of the leaves on row 3
+
+                            //LAYER 3
+                            /*for(int j5 = -1; j5 <= 1; ++j5) { //changes the x width of the leaves on row 3
                                 for(int i3 = -1; i3 <= 1; ++i3) { //changes the z width of the leaves on row 3
                                     this.leafs(worldIn, posX1 + l3 + j5, posy2, posZ1 + k4 + i3, boundsIn, changedBlocks);
                                 }
-                            }
+                            }*/
 //LAYER 4
-                            for(int k5 = -2; k5 <= 2; ++k5) { //changes the X width of the leaves on row 4
+                            /*for(int k5 = -2; k5 <= 2; ++k5) { //changes the X width of the leaves on row 4
                                 for(int l5 = -2; l5 <= 2; ++l5) { //changes the Z width of the leaves on row 4
                                     if (Math.abs(k5) != 2 || Math.abs(l5) != 2) { //does nothing
                                         this.leafs(worldIn, posX1 + l3 + k5, posy2 - 1, posZ1 + k4 + l5, boundsIn, changedBlocks); //posy2 -1 apears to have no change on the tree
                                     }
                                 }
-                            }
-                        }
-                    }
+                           // }*/
+                       // }
+                    //}
                 }
 
                 return true;
-            }
+            //}
         } else {
             return false;
         }

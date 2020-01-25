@@ -1,22 +1,33 @@
 package sporeaoc.byg.biomes;
 
-/*public class RedOakForest extends Biome {
+import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.EntityType;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.IFeatureConfig;
+import net.minecraft.world.gen.feature.structure.MineshaftConfig;
+import net.minecraft.world.gen.feature.structure.MineshaftStructure;
+import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
+import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
+import sporeaoc.byg.world.BYGBiomeFeatures;
+public class BlueTaiga extends Biome {
         static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
         static final RainType PRECIPATATION = RainType.RAIN;
-        static final Category CATEGORY = Category.FOREST;
-        static final double DEPTH = 0.35F;
-        static final double SCALE = 0.02F;
-        static final float TEMPERATURE = 0.8F;
+        static final Category CATEGORY = Category.TAIGA;
+        static final double DEPTH = 0.8F;
+        static final double SCALE = 0.15F;
+        static final float TEMPERATURE = 0.25F;
         static final float DOWNFALL = 0.9F;
         static final int WATER_COLOR = 4159204;
         static final int WATER_FOG_COLOR = 329011;
         static final String PARENT = null;
 
-        public RedOakForest() {
+        public BlueTaiga() {
             super(new Builder().surfaceBuilder(SURFACE_BUILDER).precipitation(PRECIPATATION).category(CATEGORY).depth((float) DEPTH).waterColor(WATER_COLOR).scale((float) SCALE).temperature(TEMPERATURE).downfall(DOWNFALL).waterFogColor(WATER_FOG_COLOR).parent(PARENT));
             this.addStructure(Feature.JUNGLE_TEMPLE, IFeatureConfig.NO_FEATURE_CONFIG);
             this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
             this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
+            BYGBiomeFeatures.addCypressTrees(this);
             //BYGBiomeFeatures.addCypressTrees(this);
             //BYGBiomeFeatures.addBaobabTrees(this);
 
@@ -38,4 +49,4 @@ package sporeaoc.byg.biomes;
             this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.WITCH, 5, 1, 1));
             this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.OCELOT, 2, 1, 1));
         }
-    }*/
+    }

@@ -256,5 +256,6 @@ public class BYGItemRegistry {
                 ItemCatalogs.MAGENTA_AMARANTH = new BlockItem(BlockCatalogs.MAGENTA_AMARANTH, new Item.Properties().group(Init.creativeTab)).setRegistryName(BlockCatalogs.MAGENTA_AMARANTH.getRegistryName()),
                 ItemCatalogs.PURPLE_AMARANTH = new BlockItem(BlockCatalogs.PURPLE_AMARANTH, new Item.Properties().group(Init.creativeTab)).setRegistryName(BlockCatalogs.PURPLE_AMARANTH.getRegistryName())
         );
+
     }
 }

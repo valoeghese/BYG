@@ -1,6 +1,6 @@
 package sporeaoc.byg.biomes;
 
-/*public class RedOakForest extends Biome {
+/*public class RedOakForestHills extends Biome {
         static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
         static final RainType PRECIPATATION = RainType.RAIN;
         static final Category CATEGORY = Category.FOREST;
@@ -12,7 +12,7 @@ package sporeaoc.byg.biomes;
         static final int WATER_FOG_COLOR = 329011;
         static final String PARENT = null;
 
-        public RedOakForest() {
+        public RedOakForestHills() {
             super(new Builder().surfaceBuilder(SURFACE_BUILDER).precipitation(PRECIPATATION).category(CATEGORY).depth((float) DEPTH).waterColor(WATER_COLOR).scale((float) SCALE).temperature(TEMPERATURE).downfall(DOWNFALL).waterFogColor(WATER_FOG_COLOR).parent(PARENT));
             this.addStructure(Feature.JUNGLE_TEMPLE, IFeatureConfig.NO_FEATURE_CONFIG);
             this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
@@ -38,4 +38,5 @@ package sporeaoc.byg.biomes;
             this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.WITCH, 5, 1, 1));
             this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.OCELOT, 2, 1, 1));
         }
-    }*/
+    }
+*/

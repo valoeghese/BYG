@@ -1,20 +1,12 @@
 package sporeaoc.byg.registries;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.FlowerBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.potion.Effects;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.block.*;
 import sporeaoc.byg.catalogs.BlockCatalogs;
-import sporeaoc.byg.catalogs.FeatureCatalog;
-import sporeaoc.byg.world.tree.BaobabSapling;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BYGBlockRegistry {
@@ -165,6 +157,7 @@ public class BYGBlockRegistry {
     // Plant Blocks
     @SubscribeEvent
     public static void registerPlantBlocks(final RegistryEvent.Register<Block> event) {
+        BlockCatalogs.PRAIRIE_GRASS = new Prairieplant("prarie_grass");
 
         /*
          * TODO: Add Plant Blocks

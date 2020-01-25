@@ -409,5 +409,7 @@
   "block.byg.black_puff": "Black Puff",
   "block.byg.fir_log": "Fir Log",
   "biome.byg.alps": "Alps",
-  "block.byg.jacaranda_leaves": "Jacaranda Leaves"
+  "block.byg.jacaranda_leaves": "Jacaranda Leaves",
+  "biome.byg.dunes": "Dunes",
+  "itemGroup.byg": "BYG"
 }
