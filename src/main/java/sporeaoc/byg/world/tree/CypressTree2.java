@@ -1,7 +1,13 @@
 package sporeaoc.byg.world.tree;
 
-/*//Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
-public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
+//Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
+public class CypressTree2  {
+
+    /*
+    * TODO: Implement methods
+     */
+
+/* class >> extends AbstractTreeFeature<NoFeatureConfig>
     private static final BlockState LOG = BlockCatalogs.CYPRESS_LOG.getDefaultState();
     private static final BlockState LEAVES = BlockCatalogs.CYPRESS_LEAVES.getDefaultState();
 
@@ -174,4 +180,5 @@ public class CypressTree2 extends AbstractTreeFeature<NoFeatureConfig> {
         }
 
     }
-}*/
+   */
+}

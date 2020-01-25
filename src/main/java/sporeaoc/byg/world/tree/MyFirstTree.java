@@ -1,8 +1,15 @@
 package sporeaoc.byg.world.tree;
 
-/*
+
 //Copied and pasted traverse(MIT Licenses) tree to understand tree creation logic. Will not use in final code. May use the layout.
-public class MyFirstTree extends AbstractTreeFeature<NoFeatureConfig> {
+public class MyFirstTree {
+
+    /*
+     * TODO: Implement methods
+     */
+
+    /* class >> extends AbstractTreeFeature<NoFeatureConfig>
+
     private int minHeight;
     private static BlockState LOG = BlockCatalogs.FIR_LOG.getDefaultState();
     private static BlockState LEAVES = BlockCatalogs.FIR_LEAVES.getDefaultState();
@@ -113,7 +120,5 @@ public class MyFirstTree extends AbstractTreeFeature<NoFeatureConfig> {
     public MyFirstTree() {
         super(null, true);
     }
-
-
+   */
 }
-*/

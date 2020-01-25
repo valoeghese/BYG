@@ -67,11 +67,11 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
                     int k2 = k + j2;
                     BlockPos blockpos1 = new BlockPos(k1, k2, l1);
                     if (isAirOrLeaves(worldIn, blockpos1)) {
-                        this.func_214616_a(changedBlocks, worldIn, blockpos1, p_208519_5_);
-                        this.func_214616_a(changedBlocks, worldIn, blockpos1.east(), p_208519_5_);
-                        this.func_214616_a(changedBlocks, worldIn, blockpos1.south(), p_208519_5_);
-                        this.func_214616_a(changedBlocks, worldIn, blockpos1.west(), p_208519_5_);
-                        this.func_214616_a(changedBlocks, worldIn, blockpos1.north(), p_208519_5_);
+                        this.treelog(changedBlocks, worldIn, blockpos1, p_208519_5_);
+                        this.treelog(changedBlocks, worldIn, blockpos1.east(), p_208519_5_);
+                        this.treelog(changedBlocks, worldIn, blockpos1.south(), p_208519_5_);
+                        this.treelog(changedBlocks, worldIn, blockpos1.west(), p_208519_5_);
+                        this.treelog(changedBlocks, worldIn, blockpos1.north(), p_208519_5_);
                     }
 
                 }
@@ -93,22 +93,22 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
                 for(int j3 = -2; j3 <= 0; ++j3) {//has to do with leaves
                     for(int i4 = -2; i4 <= 0; ++i4) {
                         int l4 = -100;//Unknown
-                        this.func_214617_a(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
-                        this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
-                        this.func_214617_a(worldIn, k1 + j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
-                        this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
-                        this.func_214617_a(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
-                        this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+                        this.leafs(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+                        this.leafs(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+                        this.leafs(worldIn, k1 + j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
+                        this.leafs(worldIn, 1 + k1 - j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
+                        this.leafs(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+                        this.leafs(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
 
 
                         if ((j3 > -2 || i4 > -1) && (j3 != -1 || i4 != -2)) {
                             l4 = 1;//sets leave height?
-                            this.func_214617_a(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
-                            this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
-                            this.func_214617_a(worldIn, k1 + j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
-                            this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
-                            this.func_214617_a(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
-                            this.func_214617_a(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+                            this.leafs(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+                            this.leafs(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+                            this.leafs(worldIn, k1 + j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
+                            this.leafs(worldIn, 1 + k1 - j3, i2 + l4, 1 + l1 - i4, p_208519_5_, changedBlocks);
+                            this.leafs(worldIn, k1 + j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
+                            this.leafs(worldIn, 1 + k1 - j3, i2 + l4, l1 + i4, p_208519_5_, changedBlocks);
 
 
 
@@ -118,16 +118,16 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
                 }
                 //Layer1
                 if (rand.nextBoolean()) { //these are for the top 4 leaves on the top layer of the tree. these values change the x, y, and z values on them
-                    this.func_214617_a(worldIn, k1, i2 + 2, l1, p_208519_5_, changedBlocks);
-                    this.func_214617_a(worldIn, k1 + 1, i2 + 2, l1, p_208519_5_, changedBlocks);
-                    this.func_214617_a(worldIn, k1 + 1, i2 + 2, l1 + 1, p_208519_5_, changedBlocks);
-                    this.func_214617_a(worldIn, k1, i2 + 2, l1 + 1, p_208519_5_, changedBlocks);
+                    this.leafs(worldIn, k1, i2 + 2, l1, p_208519_5_, changedBlocks);
+                    this.leafs(worldIn, k1 + 1, i2 + 2, l1, p_208519_5_, changedBlocks);
+                    this.leafs(worldIn, k1 + 1, i2 + 2, l1 + 1, p_208519_5_, changedBlocks);
+                    this.leafs(worldIn, k1, i2 + 2, l1 + 1, p_208519_5_, changedBlocks);
                 }
                     //Layer2
                 for(int k3 = -1; k3 <= 4; ++k3) { //Changes X
                     for(int j4 = -3; j4 <= 4; ++j4) { //Changes Z
                         if ((k3 != -3 || j4 != -3) && (k3 != -3 || j4 != 4) && (k3 != 4 || j4 != -3) && (k3 != 4 || j4 != 4) && (Math.abs(k3) < 3 || Math.abs(j4) < 3)) {
-                            this.func_214617_a(worldIn, k1 + k3, i2, l1 + j4, p_208519_5_, changedBlocks);
+                            this.leafs(worldIn, k1 + k3, i2, l1 + j4, p_208519_5_, changedBlocks);
                         }
                     }
                 }
@@ -138,22 +138,22 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
                             int i5 = rand.nextInt(3) + 2; //makes the tree increase both upwards and downwards
 
                             /*for(int l2 = 0; l2 < i5; ++l2) { //does nothing
-                                this.func_214616_a(changedBlocks, worldIn, new BlockPos(j + l3, i2 - l2 - 2, l + k4), p_208519_5_); //creates Branches, number value of 2 or lower does nothing 5 seems to be a good value
+                                this.treelog(changedBlocks, worldIn, new BlockPos(j + l3, i2 - l2 - 2, l + k4), p_208519_5_); //creates Branches, number value of 2 or lower does nothing 5 seems to be a good value
                             }*/
 
                             /*for (int z2 = 5; z2 < i5;)
-                                this.func_214616_a(changedBlocks, worldIn, new BlockPos(j2 + l3, i2 - z2 , l + k4), p_208519_5_); //creates Base, number value of 2 or lower does nothing 5 seems to be a good value
+                                this.treelog(changedBlocks, worldIn, new BlockPos(j2 + l3, i2 - z2 , l + k4), p_208519_5_); //creates Base, number value of 2 or lower does nothing 5 seems to be a good value
 //LAYER 3 */
                             for(int j5 = -1; j5 <= 1; ++j5) { //changes the x width of the leaves on row 3
                                 for(int i3 = -1; i3 <= 1; ++i3) { //changes the z width of the leaves on row 3
-                                    this.func_214617_a(worldIn, k1 + l3 + j5, i2, l1 + k4 + i3, p_208519_5_, changedBlocks);
+                                    this.leafs(worldIn, k1 + l3 + j5, i2, l1 + k4 + i3, p_208519_5_, changedBlocks);
                                 }
                             }
 //LAYER 4
                             for(int k5 = -2; k5 <= 2; ++k5) { //changes the X width of the leaves on row 4
                                 for(int l5 = -2; l5 <= 2; ++l5) { //changes the Z width of the leaves on row 4
                                     if (Math.abs(k5) != 2 || Math.abs(l5) != 2) { //does nothing
-                                        this.func_214617_a(worldIn, k1 + l3 + k5, i2 - 1, l1 + k4 + l5, p_208519_5_, changedBlocks); //i2 -1 apears to have no change on the tree
+                                        this.leafs(worldIn, k1 + l3 + k5, i2 - 1, l1 + k4 + l5, p_208519_5_, changedBlocks); //i2 -1 apears to have no change on the tree
                                     }
                                 }
                             }
@@ -196,14 +196,14 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
         return true;
     }
     //Log Placement
-    private void func_214616_a(Set<BlockPos> p_214616_1_, IWorldGenerationReader p_214616_2_, BlockPos p_214616_3_, MutableBoundingBox p_214616_4_) {
-        if (func_214587_a(p_214616_2_, p_214616_3_)) {
-            this.setLogState(p_214616_1_, p_214616_2_, p_214616_3_, LOG, p_214616_4_);
+    private void treelog(Set<BlockPos> setlogblock, IWorldGenerationReader reader, BlockPos pos, MutableBoundingBox boundingBox) {
+        if (func_214587_a(reader, pos)) {
+            this.setLogState(setlogblock, reader, pos, LOG, boundingBox);
         }
 
     }
     //Leaves Placement
-    private void func_214617_a(IWorldGenerationReader p_214617_1_, int p_214617_2_, int p_214617_3_, int p_214617_4_, MutableBoundingBox p_214617_5_, Set<BlockPos> p_214617_6_) {
+    private void leafs(IWorldGenerationReader p_214617_1_, int p_214617_2_, int p_214617_3_, int p_214617_4_, MutableBoundingBox p_214617_5_, Set<BlockPos> p_214617_6_) {
         BlockPos blockpos = new BlockPos(p_214617_2_, p_214617_3_, p_214617_4_);
         if (isAir(p_214617_1_, blockpos)) {
             this.setLogState(p_214617_6_, p_214617_1_, blockpos, LEAVES, p_214617_5_);
