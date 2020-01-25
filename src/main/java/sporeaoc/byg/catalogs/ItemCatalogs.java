@@ -4,6 +4,12 @@ import net.minecraft.item.Item;
 
 public class ItemCatalogs {
 
+    /**
+     * TODO: Remove this redundant class and change
+     * @see sporeaoc.byg.registries.BYGItemRegistry#bygRegisterItems
+     * to use { new BlockItem(BLOCK, tab).setRegistryName(Objects.requireNonNull(BLOCK.getRegistryName())) }
+     */
+
     //FenceItems
     public static Item ASPEN_FENCE;
     public static Item BAOBAB_FENCE;

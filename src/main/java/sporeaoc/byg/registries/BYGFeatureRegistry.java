@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.catalogs.FeatureCatalog;
 
-@Mod.EventBusSubscriber(modid = BYG.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = BYG.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BYGFeatureRegistry {
 
 
@@ -15,10 +15,9 @@ public class BYGFeatureRegistry {
     public static void bygRegisterFeatures(final RegistryEvent.Register<Feature<?>> event) {
 
 
-        event.getRegistry().registerAll
-                (
-                        FeatureCatalog.CYPRESS_TREE.setRegistryName("cypress_tree"),
-                        FeatureCatalog.MYT.setRegistryName("myt")
+        event.getRegistry().registerAll (
+                        FeatureCatalog.CYPRESS_TREE.setRegistryName("cypress_tree")
+                        //FeatureCatalog.MYT.setRegistryName("myt")
                 );
     }
 

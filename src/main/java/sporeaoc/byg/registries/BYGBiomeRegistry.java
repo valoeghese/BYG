@@ -11,7 +11,7 @@ import sporeaoc.byg.BYG;
 import sporeaoc.byg.biomes.AmplifiedBambooJungle;
 import sporeaoc.byg.config.ConfigManager;
 
-@Mod.EventBusSubscriber(modid = BYG.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = BYG.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BYGBiomeRegistry {
 
 
@@ -22,7 +22,7 @@ public class BYGBiomeRegistry {
     }
 
     private static void registerBiome(IForgeRegistry<Biome> registry, Biome biome, String name, int weight, boolean spawn, BiomeManager.BiomeType type, BiomeDictionary.Type... types) {
-        registry.register(biome.setRegistryName(BYG.MODID, name));
+        registry.register(biome.setRegistryName(BYG.MOD_ID, name));
         if (weight > 0) {
             BiomeManager.addBiome(type, new BiomeManager.BiomeEntry(biome, weight));
             if (spawn) {

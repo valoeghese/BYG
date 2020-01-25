@@ -10,7 +10,7 @@ import net.minecraft.world.gen.feature.structure.MineshaftStructure;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import sporeaoc.byg.world.BYGBiomeFeatures;
-//import sporeaoc.byg.world.BYGBiomeFeatures;
+import sporeaoc.byg.world.BYGBiomeFeatures;
 
 public class AmplifiedBambooJungle extends Biome {
     static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);

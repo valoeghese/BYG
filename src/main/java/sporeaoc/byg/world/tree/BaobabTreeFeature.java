@@ -1,38 +1,40 @@
 package sporeaoc.byg.world.tree;
 
+import com.mojang.datafixers.Dynamic;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MutableBoundingBox;
+import net.minecraft.world.gen.IWorldGenerationReader;
+import net.minecraft.world.gen.feature.AbstractTreeFeature;
+import net.minecraft.world.gen.feature.NoFeatureConfig;
+import sporeaoc.byg.catalogs.BlockCatalogs;
 
-//Copy and pasted Birch Tree to try and understand tree creation logic
-public class FirTree {
+import java.util.Random;
+import java.util.Set;
+import java.util.function.Function;
 
-    /*
-     * TODO: Implement methods
-     */
+public class BaobabTreeFeature extends AbstractTreeFeature<NoFeatureConfig> {
+    private static final BlockState LOG = BlockCatalogs.BAOBAB_LOG.getDefaultState();
+    private static final BlockState LEAF = BlockCatalogs.BAOBAB_LEAVES.getDefaultState();
+    private final boolean useExtraRandomHeight;
 
-    /* class >> extends AbstractTreeFeature<NoFeatureConfig>
-
-    private static final BlockState LOG = BlockCatalogs.FIR_LOG.getDefaultState();
-    private static final BlockState LEAF = BlockCatalogs.FIR_LEAVES.getDefaultState();
-    private boolean useExtraRandomHeight;
-
-    public FirTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, boolean extraRandomHeightIn) {
+    public BaobabTreeFeature(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, boolean extraRandomHeightIn) {
         super(configIn, doBlockNotifyIn);
         this.useExtraRandomHeight = extraRandomHeightIn;
-        //this.setSapling((net.minecraftforge.common.IPlantable)Blocks.BIRCH_SAPLING);
+        // this.setSapling(BlockCatalogs.BAOBAB_SAPLING); -> requires IPlantable
     }
 
-    public FirTree() {
-        super(null, true);
-    }
-
-    public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox p_208519_5_) {
+    public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         int i = rand.nextInt(3) + 5;
         if (this.useExtraRandomHeight) {
             i += rand.nextInt(7);
         }
 
+        // check if tree can be placed at position ???
         boolean flag = true;
         if (position.getY() >= 1 && position.getY() + i + 1 <= worldIn.getMaxHeight()) {
-            for (int j = position.getY(); j <= position.getY() + 1 + i; ++j) {
+            for(int j = position.getY(); j <= position.getY() + 1 + i; ++j) {
                 int k = 1;
                 if (j == position.getY()) {
                     k = 0;
@@ -42,7 +44,7 @@ public class FirTree {
                     k = 2;
                 }
 
-            /*    BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos();
+                BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos();
 
                 for(int l = position.getX() - k; l <= position.getX() + k && flag; ++l) {
                     for(int i1 = position.getZ() - k; i1 <= position.getZ() + k && flag; ++i1) {
@@ -74,7 +76,7 @@ public class FirTree {
                             if (Math.abs(i3) != k2 || Math.abs(k1) != k2 || rand.nextInt(2) != 0 && j2 != 0) {
                                 BlockPos blockpos = new BlockPos(l2, l1, j1);
                                 if (isAirOrLeaves(worldIn, blockpos)) {
-                                    this.setLogState(changedBlocks, worldIn, blockpos, LEAF, p_208519_5_);
+                                    this.setLogState(changedBlocks, worldIn, blockpos, LEAF, boundsIn);
                                 }
                             }
                         }
@@ -83,7 +85,7 @@ public class FirTree {
 
                 for(int i2 = 0; i2 < i; ++i2) {
                     if (isAirOrLeaves(worldIn, position.up(i2))) {
-                        this.setLogState(changedBlocks, worldIn, position.up(i2), LOG, p_208519_5_);
+                        this.setLogState(changedBlocks, worldIn, position.up(i2), LOG, boundsIn);
                     }
                 }
 
@@ -95,5 +97,4 @@ public class FirTree {
             return false;
         }
     }
-    */
 }

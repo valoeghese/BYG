@@ -1,8 +1,15 @@
 package sporeaoc.byg.biomes;
 
-/*import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 
 public class Meadow extends Biome {
-    static final ConfiguredSurfaceBuilder
-*/
+
+    /*
+     * TODO: Implement methods
+     */
+
+    protected Meadow(Builder biomeBuilder) {
+        super(biomeBuilder);
+    }
+}

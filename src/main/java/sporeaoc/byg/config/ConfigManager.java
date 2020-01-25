@@ -11,13 +11,9 @@ import java.util.List;
 public class ConfigManager {
 
     public static List<Config> BIOMES = new ArrayList<>();
-
-    private static ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
-
-
     public static Config amplifiedbamboojungle = new Config("amplifiedbamboojungle", 3); /*, 2.3D, 1.9D);*/
-
     public static ForgeConfigSpec COMMON_CONFIG;
+    private static ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
 
     static {
         BIOMES.forEach(o -> o.apply(COMMON_BUILDER));

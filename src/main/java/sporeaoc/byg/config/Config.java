@@ -6,21 +6,21 @@ import net.minecraftforge.common.ForgeConfigSpec;
 public class Config {
     private String name;
     private int weight;
-   // public double scale;
+    // public double scale;
     //public double depth;
     private BiomeDictionary.Type[] types;
 
     private ForgeConfigSpec.IntValue configWeight;
 
-   // public ForgeConfigSpec.DoubleValue configScale;
+    // public ForgeConfigSpec.DoubleValue configScale;
 
 //    public ForgeConfigSpec.DoubleValue configDepth;
 
     public Config(String name, int weight) /*double scale, double depth)*/ {
         this.name = name;
         this.weight = weight;
-    //    this.scale = scale;
-    //    this.depth = depth;
+        //    this.scale = scale;
+        //    this.depth = depth;
         //this.types = types;
         ConfigManager.BIOMES.add(this);
     }
