@@ -64,8 +64,8 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
                         posZ1 += direction.getZOffset();
                         --posY1;
                     }
-                    int k2 = posY + posX2;
-                    BlockPos blockpos1 = new BlockPos(posX1, k2, posZ1);
+                    int logplacer = posY + posX2;
+                    BlockPos blockpos1 = new BlockPos(posX1, logplacer, posZ1);
                     if (isAirOrLeaves(worldIn, blockpos1)) {
                         this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
                         this.treelog(changedBlocks, worldIn, blockpos1.east(), boundsIn);
@@ -90,25 +90,25 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
                     this.setBlockState(worldIn, pos1.add(-z1, 0, z3), LOG);
                 }
                 */
-                for(int j3 = -2; j3 <= 0; ++j3) {//has to do with leaves
-                    for(int i4 = -2; i4 <= 0; ++i4) {
+                for(int posXLeafWidth = -2; posXLeafWidth <= 0; ++posXLeafWidth) {//has to do with leaves
+                    for(int posZLeafWidth = -2; posZLeafWidth <= 0; ++posZLeafWidth) {
                         int l4 = -100;//Unknown
-                        this.leafs(worldIn, posX1 + j3, posy2 + l4, posZ1 + i4, boundsIn, changedBlocks);
-                        this.leafs(worldIn, 1 + posX1 - j3, posy2 + l4, posZ1 + i4, boundsIn, changedBlocks);
-                        this.leafs(worldIn, posX1 + j3, posy2 + l4, 1 + posZ1 - i4, boundsIn, changedBlocks);
-                        this.leafs(worldIn, 1 + posX1 - j3, posy2 + l4, 1 + posZ1 - i4, boundsIn, changedBlocks);
-                        this.leafs(worldIn, posX1 + j3, posy2 + l4, posZ1 + i4, boundsIn, changedBlocks);
-                        this.leafs(worldIn, 1 + posX1 - j3, posy2 + l4, posZ1 + i4, boundsIn, changedBlocks);
+                        this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                        this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                        this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, 1 + posZ1 - posZLeafWidth, boundsIn, changedBlocks);
+                        this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, 1 + posZ1 - posZLeafWidth, boundsIn, changedBlocks);
+                        this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                        this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
 
 
-                        if ((j3 > -2 || i4 > -1) && (j3 != -1 || i4 != -2)) {
+                        if ((posXLeafWidth > -2 || posZLeafWidth > -1) && (posXLeafWidth != -1 || posZLeafWidth != -2)) {
                             l4 = 1;//sets leave height?
-                            this.leafs(worldIn, posX1 + j3, posy2 + l4, posZ1 + i4, boundsIn, changedBlocks);
-                            this.leafs(worldIn, 1 + posX1 - j3, posy2 + l4, posZ1 + i4, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 + j3, posy2 + l4, 1 + posZ1 - i4, boundsIn, changedBlocks);
-                            this.leafs(worldIn, 1 + posX1 - j3, posy2 + l4, 1 + posZ1 - i4, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 + j3, posy2 + l4, posZ1 + i4, boundsIn, changedBlocks);
-                            this.leafs(worldIn, 1 + posX1 - j3, posy2 + l4, posZ1 + i4, boundsIn, changedBlocks);
+                            this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                            this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, 1 + posZ1 - posZLeafWidth, boundsIn, changedBlocks);
+                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, 1 + posZ1 - posZLeafWidth, boundsIn, changedBlocks);
+                            this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
+                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + l4, posZ1 + posZLeafWidth, boundsIn, changedBlocks);
 
 
 
