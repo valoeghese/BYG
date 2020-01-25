@@ -1,6 +1,6 @@
 {
   "values": [
-    "byg:cypress_log",
-    "byg:stripped_cypress_log"
+    "byg:zelkova_log",
+    "byg:stripped_zelkova_log"
   ]
 }

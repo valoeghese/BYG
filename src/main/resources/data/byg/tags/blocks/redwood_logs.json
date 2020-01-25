@@ -1,6 +1,6 @@
 {
   "values": [
-    "byg:cypress_log",
-    "byg:stripped_cypress_log"
+    "byg:redwood_log",
+    "byg:stripped_redwood_log"
   ]
 }
