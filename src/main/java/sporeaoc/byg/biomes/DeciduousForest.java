@@ -21,7 +21,7 @@ public class DeciduousForest extends Biome {
         static final RainType PRECIPATATION = RainType.RAIN;
         static final Category CATEGORY = Category.FOREST;
         static final double DEPTH = 0.35F;
-        static final double SCALE = 0.02F;
+        static final double SCALE = 0.1F;
         static final float TEMPERATURE = 0.7F;
         static final float DOWNFALL = 0.5F;
         static final int WATER_COLOR = 0xFF6F8A31;
