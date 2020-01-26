@@ -17,7 +17,7 @@ package sporeaoc.byg.biomes;
             this.addStructure(Feature.JUNGLE_TEMPLE, IFeatureConfig.NO_FEATURE_CONFIG);
             this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
             this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
-            //BYGBiomeFeatures.addCypressTrees(this);
+            //BYGBiomeFeatures.addDeciduousTrees(this);
             //BYGBiomeFeatures.addBaobabTrees(this);
             DefaultBiomeFeatures.func_222316_G(this);
 

@@ -215,7 +215,7 @@ public class TightTrees extends AbstractTreeFeature<NoFeatureConfig> {
         MutableBlockPos blockpos$mutableblockpos = new MutableBlockPos();
 
         for(int l = 0; l <= p_214615_3_ + 1; ++l) {
-            int i1 = 20; //higher the value, lower the density of trees?
+            int i1 = 0; //higher the value, lower the density of trees?
             if (l == 0) { //does nothing?
                 i1 = 20; //higher the value, lower the density of trees?
             }

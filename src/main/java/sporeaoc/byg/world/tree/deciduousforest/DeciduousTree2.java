@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree;
+package sporeaoc.byg.world.tree.deciduousforest;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
@@ -18,16 +18,16 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
-public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
+public class DeciduousTree2 extends AbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LOG = BlockCatalogs.CYPRESS_LOG.getDefaultState();
     private static final BlockState LEAVES = BlockCatalogs.CYPRESS_LEAVES.getDefaultState();
 
-    public RealCypressTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public DeciduousTree2(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public RealCypressTree() {
+    public DeciduousTree2() {
         super(null, true);
     } //
 
@@ -40,7 +40,7 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
             BlockPos blockpos = position.down();
             if (!isSoil(worldIn, blockpos, getSapling())) {
                 return false;
-            } else if (!this.func_214615_a(worldIn, position, randTreeHeight)) {
+            } else if (!this.doesTreeFit(worldIn, position, randTreeHeight)) {
                 return false;
             } else {
                 this.setDirtAt(worldIn, blockpos, position);
@@ -59,8 +59,8 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
                 int z3 = posZ;*/
 
 
-                for (int posX2LogRemover = 0; posX2LogRemover < randTreeHeight; ++posX2LogRemover) {//raising this value will remove log blocks from the ground up.
-                    if (posX2LogRemover >= random1 && posY1 > 0) { //Unknown
+                for (int posX2LogRemover = 6; posX2LogRemover < randTreeHeight; ++posX2LogRemover) {//raising this value will remove log blocks from the ground up.
+                    if (posX2LogRemover >= random1 && posY1 > 6) { //Unknown
                         posX1 += direction.getXOffset();
                         posZ1 += direction.getZOffset();
                         ++posY1;
@@ -208,25 +208,25 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
     }
 
     //Tree Height Maybe?
-    private boolean func_214615_a(IWorldGenerationBaseReader p_214615_1_, BlockPos p_214615_2_, int p_214615_3_) {
-        int i = p_214615_2_.getX();
-        int j = p_214615_2_.getY();
-        int k = p_214615_2_.getZ();
-        MutableBlockPos blockpos$mutableblockpos = new MutableBlockPos();
+    private boolean doesTreeFit(IWorldGenerationBaseReader reader, BlockPos blockPos, int height) {
+        int x = blockPos.getX();
+        int y = blockPos.getY();
+        int z = blockPos.getZ();
+        MutableBlockPos position = new MutableBlockPos();
 
-        for (int l = 0; l <= p_214615_3_ + 1; ++l) {
-            int i1 = 20; //higher the value, lower the density of trees?
-            if (l == 0) { //does nothing?
-                i1 = 20; //higher the value, lower the density of trees?
+        for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
+            int distance = -10; //higher the value, lower the density of trees?
+            if (yOffset == -5) { //does nothing?
+                distance = 0; //higher the value, lower the density of trees?
             }
 
-            if (l >= p_214615_3_ - 1) {
-                i1 = 1; //higher the value, lower the density of trees?
+            if (yOffset >= height - 1) {
+                distance = 1; //higher the value, lower the density of trees?
             }
 
-            for (int j1 = -i1; j1 <= i1; ++j1) {
-                for (int k1 = -i1; k1 <= i1; ++k1) {
-                    if (!func_214587_a(p_214615_1_, blockpos$mutableblockpos.setPos(i + j1, j + l, k + k1))) {
+            for (int xOffset = -distance; xOffset <= distance; ++xOffset) {
+                for (int zOffset = -distance; zOffset <= distance; ++zOffset) {
+                    if (!func_214587_a(reader, position.setPos(x + xOffset, y + yOffset, z + zOffset))) {
                         return false;
                     }
                 }
@@ -238,17 +238,17 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
 
     //Log Placement
     private void treelog(Set<BlockPos> setlogblock, IWorldGenerationReader reader, BlockPos pos, MutableBoundingBox boundingBox) {
-        if (func_214587_a(reader, pos)) {
+        if (canTreeReplace(reader, pos)) {
             this.setLogState(setlogblock, reader, pos, LOG, boundingBox);
         }
 
     }
 
     //Leaves Placement
-    private void leafs(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox p_214617_5_, Set<BlockPos> p_214617_6_) {
+    private void leafs(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
         BlockPos blockpos = new BlockPos(x, y, z);
         if (isAir(reader, blockpos)) {
-            this.setLogState(p_214617_6_, reader, blockpos, LEAVES, p_214617_5_);
+            this.setLogState(blockPos, reader, blockpos, LEAVES, boundingBox);
         }
 
     }
@@ -257,9 +257,6 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
         return func_214587_a(
                 p_214587_0_, p_214587_1_
         );
-
-
     }
-
-    }
+}
 //

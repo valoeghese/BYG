@@ -1,18 +1,17 @@
 package sporeaoc.byg.catalogs;
 
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
-import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
-import sporeaoc.byg.world.features.DeadSeaSpires;
-import sporeaoc.byg.world.features.DeadSeaSpires2;
-import sporeaoc.byg.world.tree.BaobabTreeFeature;
 import sporeaoc.byg.world.tree.TightTrees;
+import sporeaoc.byg.world.tree.deciduousforest.DeciduousTree1;
+import sporeaoc.byg.world.tree.deciduousforest.DeciduousTree2;
 
 public class FeatureCatalog {
-    public static final AbstractTreeFeature<NoFeatureConfig> CYPRESS_TREE = new TightTrees();
-    public static final AbstractTreeFeature<NoFeatureConfig> BAOBAB_TREE = new BaobabTreeFeature(null, true, false);
-    public static final Feature<NoFeatureConfig> DEADSEA_SPIRE = new DeadSeaSpires(null);
-    public static final Feature<NoFeatureConfig> DEADSEA_SPIRE2 = new DeadSeaSpires2(null);
+    public static final AbstractTreeFeature<NoFeatureConfig> DECIDUOUS_TREE = new DeciduousTree1();
+    public static final AbstractTreeFeature<NoFeatureConfig> DECIDUOUS_TREE2 = new DeciduousTree2();
+    public static final AbstractTreeFeature<NoFeatureConfig> TIGHT_TREE = new TightTrees();
+    //public static final Feature<NoFeatureConfig> DEADSEA_SPIRE = new DeadSeaSpires(null);
+    //public static final Feature<NoFeatureConfig> DEADSEA_SPIRE2 = new DeadSeaSpires2(null);
     /*
      * TODO: Implement methods
      */

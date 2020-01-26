@@ -17,7 +17,7 @@ package sporeaoc.byg.biomes;
             this.addStructure(Feature.JUNGLE_TEMPLE, IFeatureConfig.NO_FEATURE_CONFIG);
             this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
             this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
-            //BYGBiomeFeatures.addCypressTrees(this);
+            //BYGBiomeFeatures.addDeciduousTrees(this);
             //BYGBiomeFeatures.addBaobabTrees(this);
 
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));

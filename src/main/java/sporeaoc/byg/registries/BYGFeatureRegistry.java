@@ -16,8 +16,8 @@ public class BYGFeatureRegistry {
 
 
         event.getRegistry().registerAll (
-                        FeatureCatalog.CYPRESS_TREE.setRegistryName("cypress_tree"),
-                        FeatureCatalog.BAOBAB_TREE.setRegistryName("baobab_tree")
+                        FeatureCatalog.DECIDUOUS_TREE.setRegistryName("deciduous_tree"),
+                        FeatureCatalog.TIGHT_TREE.setRegistryName("baobab_tree")
                         //FeatureCatalog.MYT.setRegistryName("myt")
                 );
     }

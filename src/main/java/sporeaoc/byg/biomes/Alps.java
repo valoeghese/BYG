@@ -35,7 +35,7 @@ public class Alps extends Biome {
             this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
             this.addStructure(Feature.PILLAGER_OUTPOST, new PillagerOutpostConfig(0.004D));
             DefaultBiomeFeatures.addCarvers(this);
-            //BYGBiomeFeatures.addCypressTrees(this);
+            //BYGBiomeFeatures.addDeciduousTrees(this);
             //BYGBiomeFeatures.addBaobabTrees(this);
 
             this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.STRAY, 160, 10, 10));

@@ -52,7 +52,7 @@ public class Canyons extends Biome {
         BYGBiomeFeatures.bygAddCanyons(this);
         BYGBiomeFeatures.bygAddCanyons(this);
 
-        //BYGBiomeFeatures.addCypressTrees(this);
+        //BYGBiomeFeatures.addDeciduousTrees(this);
         //BYGBiomeFeatures.addBaobabTrees(this);
 
         this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.STRAY, 160, 10, 10));
