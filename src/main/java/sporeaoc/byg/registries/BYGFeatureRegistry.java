@@ -17,15 +17,15 @@ public class BYGFeatureRegistry {
 
         event.getRegistry().registerAll (
                         FeatureCatalog.DECIDUOUS_TREE.setRegistryName("deciduous_tree"),
-                        FeatureCatalog.TIGHT_TREE.setRegistryName("baobab_tree")
-                        //FeatureCatalog.MYT.setRegistryName("myt")
+                        FeatureCatalog.TIGHT_TREE.setRegistryName("baobab_tree"),
+                        FeatureCatalog.TREE_TEMPLATE.setRegistryName("tree_template"),
+                        FeatureCatalog.SDECIDUOUS_TREE1.setRegistryName("sdeciduous_tree1"),
+                        FeatureCatalog.SDECIDUOUS_TREE2.setRegistryName("sdeciduous_tree2"),
+                        FeatureCatalog.SDECIDUOUS_TREE3.setRegistryName("sdeciduous_tree3"),
+                        FeatureCatalog.SDECIDUOUS_TREE4.setRegistryName("sdeciduous_tree4")
+
+
+                //FeatureCatalog.MYT.setRegistryName("myt")
                 );
     }
-
-/*    @SubscribeEvent
-    public static void registerFeatures(IForgeRegistry<Feature<?>> event) {
-       event.registerAll(
-               FeatureCatalog.CYPRESS_TREE.setRegistryName("cypress_tree")
-       );
-    }*/
 }

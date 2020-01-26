@@ -13,8 +13,12 @@ public class ConfigManager {
     public static List<Config> BIOMES = new ArrayList<>();
     //public static Config amplifiedbamboojungle = new Config("amplifiedbamboojungle", 3);
     public static Config alps = new Config("alps", 3);
-    public static Config bluetaiga = new Config("amplifiedbamboojungle", 3);
+    //public static Config bluetaiga = new Config("amplifiedbamboojungle", 3);
     //public static Config canyons = new Config("canyons", 3);
+    public static Config deciduousforest = new Config("deciduousforest", 3);
+    public static Config seasonaldeciduousforest = new Config("seasonsaldeciduousforest", 3);
+
+
     public static Config dunes = new Config("dunes", 3);
     /*public static Config giantbluesprucetaiga = new Config("amplifiedbamboojungle", 3);
     public static Config giantseasonalsprucetaiga = new Config("amplifiedbamboojungle", 3);

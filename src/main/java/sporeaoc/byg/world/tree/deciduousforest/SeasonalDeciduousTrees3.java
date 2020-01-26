@@ -10,6 +10,7 @@ import net.minecraft.world.gen.IWorldGenerationBaseReader;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
+import sporeaoc.byg.catalogs.BlockCatalogs;
 
 import java.util.Random;
 import java.util.Set;
@@ -18,16 +19,16 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
-public class DeciduousTree1 extends AbstractTreeFeature<NoFeatureConfig> {
-    private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
-    private static final BlockState LEAVES = Blocks.OAK_LEAVES.getDefaultState();
+public class SeasonalDeciduousTrees3 extends AbstractTreeFeature<NoFeatureConfig> {
+    private static final BlockState LOG = Blocks.BIRCH_LOG.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.YELLOW_BIRCH_LEAVES.getDefaultState();
 
-    public DeciduousTree1(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public SeasonalDeciduousTrees3(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public DeciduousTree1() {
+    public SeasonalDeciduousTrees3() {
         super(null, true);
     } //
 
@@ -613,7 +614,7 @@ public class DeciduousTree1 extends AbstractTreeFeature<NoFeatureConfig> {
         MutableBlockPos position = new MutableBlockPos();
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
-            int distance = 2; //higher the value, lower the density of trees?
+            int distance = 25; //higher the value, lower the density of trees?
             if (yOffset == -5) { //does nothing?
                 distance = 0; //higher the value, lower the density of trees?
             }
