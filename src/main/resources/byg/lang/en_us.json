@@ -411,5 +411,7 @@
   "biome.byg.alps": "Alps",
   "block.byg.jacaranda_leaves": "Jacaranda Leaves",
   "biome.byg.dunes": "Dunes",
-  "itemGroup.byg": "BYG"
+  "itemGroup.byg": "BYG",
+  "biome.byg.deciduousforest": "Deciduous Forest",
+  "biome.byg.seasonaldeciduousforest": "Seasonal Deciduous Forest"
 }

@@ -19,16 +19,16 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
-public class SeasonalDeciduousTrees4 extends AbstractTreeFeature<NoFeatureConfig> {
-    private static final BlockState LOG = Blocks.BIRCH_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.ORANGE_BIRCH_LEAVES.getDefaultState();
+public class SDeciduousTrees2 extends AbstractTreeFeature<NoFeatureConfig> {
+    private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.ORANGE_OAK_LEAVES.getDefaultState();
 
-    public SeasonalDeciduousTrees4(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public SDeciduousTrees2(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public SeasonalDeciduousTrees4() {
+    public SDeciduousTrees2() {
         super(null, true);
     } //
 
@@ -376,9 +376,9 @@ public class SeasonalDeciduousTrees4 extends AbstractTreeFeature<NoFeatureConfig
                                     this.leafs(worldIn, posX1 - 2, topTrunkHeight - 2, posZ1 - 1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1 - 2, topTrunkHeight - 2, posZ1 + 1, boundsIn, changedBlocks);
 
-                                    int leaveyroundness = rand.nextInt(3) + 1;
+                                    int leaveyroundness = rand.nextInt(15) + 1;
                                     {
-                                        if (leaveyroundness == 1) {
+                                        if (leaveyroundness == 5) {
                                             this.leafs(worldIn, posX1 + 2, topTrunkHeight -3, posZ1, boundsIn, changedBlocks);
                                             this.leafs(worldIn, posX1 - 2, topTrunkHeight -3, posZ1, boundsIn, changedBlocks);
                                             this.leafs(worldIn, posX1, topTrunkHeight -3, posZ1 - 2, boundsIn, changedBlocks);
@@ -395,7 +395,7 @@ public class SeasonalDeciduousTrees4 extends AbstractTreeFeature<NoFeatureConfig
                                             this.leafs(worldIn, posX1 - 2, topTrunkHeight - 3, posZ1 - 1, boundsIn, changedBlocks);
                                             this.leafs(worldIn, posX1 - 2, topTrunkHeight - 3, posZ1 + 1, boundsIn, changedBlocks);
                                         }
-                                        else if (leaveyroundness == 2) {
+                                        else if (leaveyroundness == 10) {
                                             this.leafs(worldIn, posX1 + 2, topTrunkHeight -3, posZ1, boundsIn, changedBlocks);
                                             this.leafs(worldIn, posX1 - 2, topTrunkHeight -3, posZ1, boundsIn, changedBlocks);
                                             this.leafs(worldIn, posX1, topTrunkHeight -3, posZ1 - 2, boundsIn, changedBlocks);
@@ -428,7 +428,7 @@ public class SeasonalDeciduousTrees4 extends AbstractTreeFeature<NoFeatureConfig
                                             this.leafs(worldIn, posX1 - 2, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
                                             this.leafs(worldIn, posX1 - 2, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
                                         }
-                                        else if (leaveyroundness == 3) {
+                                        else if (leaveyroundness == 15) {
                                             this.leafs(worldIn, posX1 + 2, topTrunkHeight -3, posZ1, boundsIn, changedBlocks);
                                             this.leafs(worldIn, posX1 - 2, topTrunkHeight -3, posZ1, boundsIn, changedBlocks);
                                             this.leafs(worldIn, posX1, topTrunkHeight -3, posZ1 - 2, boundsIn, changedBlocks);

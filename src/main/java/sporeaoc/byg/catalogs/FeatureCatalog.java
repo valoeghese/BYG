@@ -11,12 +11,14 @@ public class FeatureCatalog {
     //public static final AbstractTreeFeature<NoFeatureConfig> DECIDUOUS_TREE2 = new DeciduousTree2();
     public static final AbstractTreeFeature<NoFeatureConfig> TIGHT_TREE = new TightTrees();
     public static final AbstractTreeFeature<NoFeatureConfig> TREE_TEMPLATE = new TreeTemplate();
-    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE1 = new SeasonalDeciduousTrees();
-    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE2 = new SeasonalDeciduousTrees2();
-    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE3 = new SeasonalDeciduousTrees3();
-    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE4 = new SeasonalDeciduousTrees4();
-    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE5 = new SeasonalDeciduousTrees5();
+    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE1 = new SDeciduousTrees();
+    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE2 = new SDeciduousTrees2();
+    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE3 = new SDeciduousTrees3();
+    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_BIRCH = new SDeciduousBirch();
+    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE5 = new SDeciduousTrees5();
     public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_SHRUBS = new SDeciduousShrub();
+    public static final AbstractTreeFeature<NoFeatureConfig> DECIDUOUS_SHRUBS = new DeciduousShrub();
+
 
 
 

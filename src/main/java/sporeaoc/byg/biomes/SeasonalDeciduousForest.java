@@ -38,11 +38,11 @@ public class SeasonalDeciduousForest extends Biome {
             DefaultBiomeFeatures.addCarvers(this);
             DefaultBiomeFeatures.addStructures(this);
             DefaultBiomeFeatures.addMonsterRooms(this);
-            DefaultBiomeFeatures.addDoubleFlowers(this);
+            //DefaultBiomeFeatures.addDoubleFlowers(this);
             DefaultBiomeFeatures.addStoneVariants(this);
             DefaultBiomeFeatures.addOres(this);
             DefaultBiomeFeatures.addSedimentDisks(this);
-            DefaultBiomeFeatures.addDefaultFlowers(this);
+            //DefaultBiomeFeatures.addDefaultFlowers(this);
             DefaultBiomeFeatures.addGrass(this);
             DefaultBiomeFeatures.addMushrooms(this);
             DefaultBiomeFeatures.addReedsAndPumpkins(this);

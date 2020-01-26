@@ -29,7 +29,7 @@ credits="AOCAWOL & FoundSporeYT" #optional
 authors="AOCAWOL & FoundSporeYT" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-A biome mod ;)
+A biome mod ;) DO NOT REPORT ALPHA BUILD BUGS! USE AT YOUR OWN RISK!
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.examplemod]] #optional

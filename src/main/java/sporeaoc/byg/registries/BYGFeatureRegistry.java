@@ -22,9 +22,11 @@ public class BYGFeatureRegistry {
                         FeatureCatalog.SDECIDUOUS_TREE1.setRegistryName("sdeciduous_tree1"),
                         FeatureCatalog.SDECIDUOUS_TREE2.setRegistryName("sdeciduous_tree2"),
                         FeatureCatalog.SDECIDUOUS_TREE3.setRegistryName("sdeciduous_tree3"),
-                        FeatureCatalog.SDECIDUOUS_TREE4.setRegistryName("sdeciduous_tree4"),
+                        FeatureCatalog.SDECIDUOUS_BIRCH.setRegistryName("sdeciduous_birch"),
                         FeatureCatalog.SDECIDUOUS_TREE5.setRegistryName("sdeciduous_tree5"),
-                        FeatureCatalog.SDECIDUOUS_SHRUBS.setRegistryName("sdeciduous_shrubs")
+                        FeatureCatalog.SDECIDUOUS_SHRUBS.setRegistryName("sdeciduous_shrubs"),
+                        FeatureCatalog.DECIDUOUS_SHRUBS.setRegistryName("deciduous_shrubs")
+
 
 
 

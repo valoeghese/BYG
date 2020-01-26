@@ -19,16 +19,16 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
-public class SeasonalDeciduousTrees3 extends AbstractTreeFeature<NoFeatureConfig> {
-    private static final BlockState LOG = Blocks.BIRCH_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.YELLOW_BIRCH_LEAVES.getDefaultState();
+public class SDeciduousTrees5 extends AbstractTreeFeature<NoFeatureConfig> {
+    private static final BlockState LOG = Blocks.DARK_OAK_LOG.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.BROWN_OAK_LEAVES.getDefaultState();
 
-    public SeasonalDeciduousTrees3(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public SDeciduousTrees5(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public SeasonalDeciduousTrees3() {
+    public SDeciduousTrees5() {
         super(null, true);
     } //
 
