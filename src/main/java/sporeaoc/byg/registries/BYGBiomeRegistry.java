@@ -19,9 +19,9 @@ public class BYGBiomeRegistry {
     public static void registerBiomes(RegistryEvent.Register<Biome> event) {
         IForgeRegistry<Biome> registry = event.getRegistry();
         registerBiome(registry, new Alps(), "alps", ConfigManager.alps.getWeight(), true, BiomeManager.BiomeType.ICY, BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.COLD, BiomeDictionary.Type.SNOWY);
-        //registerBiome(registry, new BlueTaiga(), "bluetaiga", ConfigManager.bluetaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.CONIFEROUS, BiomeDictionary.Type.COLD, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.OVERWORLD);
+        //registerBiome(registry, new BlueTaiga(), "bluetaiga", ConfigManager.bluetaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.CONIFEROUS, BiomeDictionary.Type.COLD, BiomeDictionary.Type.FOREST);
         //registerBiome(registry, new Canyons(), "canyons", ConfigManager.canyons.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.JUNGLE);
-        registerBiome(registry, new DeciduousForest(), "deciduousforest", ConfigManager.deciduousforest.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.OVERWORLD);
+        registerBiome(registry, new DeciduousForest(), "deciduousforest", ConfigManager.deciduousforest.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.FOREST);
         registerBiome(registry, new SeasonalDeciduousForest(), "seasonaldeciduousforest", ConfigManager.seasonaldeciduousforest.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST);
         registerBiome(registry, new Dunes(), "dunes", ConfigManager.dunes.getWeight(), true, BiomeManager.BiomeType.DESERT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.HOT, BiomeDictionary.Type.SANDY);
 
