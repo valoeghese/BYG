@@ -18,16 +18,16 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
-public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
-    private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
-    private static final BlockState LEAVES = Blocks.OAK_LEAVES.getDefaultState();
+public class StoneCanyons extends AbstractTreeFeature<NoFeatureConfig> {
+    private static final BlockState LOG = Blocks.STONE.getDefaultState();
+    private static final BlockState LEAVES = Blocks.STONE.getDefaultState();
 
-    public RealCypressTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public StoneCanyons(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public RealCypressTree() {
+    public StoneCanyons() {
         super(null, true);
     } //
 

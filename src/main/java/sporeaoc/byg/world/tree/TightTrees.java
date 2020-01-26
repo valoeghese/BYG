@@ -18,16 +18,16 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
-public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
+public class TightTrees extends AbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
     private static final BlockState LEAVES = Blocks.OAK_LEAVES.getDefaultState();
 
-    public RealCypressTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public TightTrees(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public RealCypressTree() {
+    public TightTrees() {
         super(null, true);
     } //
 
@@ -97,7 +97,7 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
                             int leaveheight = 0;//0 lines it up with top log
                         //this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + leaveheight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
                         //this.leafs(worldIn, 1 + posX1 - posXLeafWidth, posy2 + leaveheight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-                        //this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + leaveheight - 4, 1 + posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
+                        this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + leaveheight - 4, 1 + posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
                         this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + leaveheight - 3, 1 + posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
                         this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + leaveheight - 2, 1 + posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
                         this.leafs(worldIn, posX1 + posXLeafWidth, posy2 + leaveheight - 1, 1 + posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
@@ -158,6 +158,7 @@ public class RealCypressTree extends AbstractTreeFeature<NoFeatureConfig> {
                     this.leafs(worldIn, posX1, posy2 + 2, posZ1 + 1, boundsIn, changedBlocks);
 
                     //Leave Layer Trunk Y-4
+                    this.leafs(worldIn, posX1, posy2 - 4, posZ1, boundsIn, changedBlocks);
                     this.leafs(worldIn, posX1 - 1, posy2 - 4, posZ1, boundsIn, changedBlocks);
                     this.leafs(worldIn, posX1 + 1, posy2 - 4, posZ1 , boundsIn, changedBlocks);
                     this.leafs(worldIn, posX1, posy2 - 4, posZ1 - 1, boundsIn, changedBlocks);
