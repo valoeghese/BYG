@@ -10,6 +10,7 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftStructure;
+import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +34,7 @@ public class DeciduousForest extends Biome {
             this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
             this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
             this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
+            this.addStructure(Feature.VILLAGE, new VillageConfig("village/plains/town_centers", 6));
             DefaultBiomeFeatures.addCarvers(this);
             DefaultBiomeFeatures.addStructures(this);
             DefaultBiomeFeatures.addMonsterRooms(this);
@@ -67,12 +69,12 @@ public class DeciduousForest extends Biome {
 
     @OnlyIn(Dist.CLIENT)
     public int getFoliageColor(BlockPos pos) {
-        return 10387789;
+        return 6589494;
     }
 
     @OnlyIn(Dist.CLIENT)
     public int getGrassColor(BlockPos pos) {
-        return 9470285;
+        return 5406525;
     }
 }
 

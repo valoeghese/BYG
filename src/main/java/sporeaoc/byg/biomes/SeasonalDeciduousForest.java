@@ -2,6 +2,7 @@ package sporeaoc.byg.biomes;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -9,8 +10,11 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftStructure;
+import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import sporeaoc.byg.world.BYGBiomeFeatures;
 
 public class SeasonalDeciduousForest extends Biome {
@@ -19,7 +23,7 @@ public class SeasonalDeciduousForest extends Biome {
         static final Category CATEGORY = Category.FOREST;
         static final double DEPTH = 0.35F;
         static final double SCALE = 0.1F;
-        static final float TEMPERATURE = 0.7F;
+        static final float TEMPERATURE = 0.8F;
         static final float DOWNFALL = 0.5F;
         static final int WATER_COLOR = 0xFF6F8A31;
         static final int WATER_FOG_COLOR = 329011;
@@ -30,6 +34,7 @@ public class SeasonalDeciduousForest extends Biome {
             this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
             this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
             this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
+            this.addStructure(Feature.VILLAGE, new VillageConfig("village/plains/town_centers", 6));
             DefaultBiomeFeatures.addCarvers(this);
             DefaultBiomeFeatures.addStructures(this);
             DefaultBiomeFeatures.addMonsterRooms(this);
@@ -61,5 +66,15 @@ public class SeasonalDeciduousForest extends Biome {
     @Override
     public Biome getRiver() {
         return Biomes.RIVER;
+    }
+
+    @OnlyIn(Dist.CLIENT)
+    public int getFoliageColor(BlockPos pos) {
+        return 9862973;
+    }
+
+    @OnlyIn(Dist.CLIENT)
+    public int getGrassColor(BlockPos pos) {
+        return 11697214;
     }
 }
