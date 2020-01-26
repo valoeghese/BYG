@@ -15,7 +15,7 @@ public class ConfigManager {
     public static Config alps = new Config("alps", 3);
     //public static Config bluetaiga = new Config("amplifiedbamboojungle", 3);
     //public static Config canyons = new Config("canyons", 3);
-    public static Config deciduousforest = new Config("deciduousforest", 3);
+    public static Config deciduousforest = new Config("deciduousforest", 100);
     public static Config seasonaldeciduousforest = new Config("seasonsaldeciduousforest", 3);
 
 
