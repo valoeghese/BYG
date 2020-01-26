@@ -19,16 +19,16 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
-public class SeasonalDeciduousTrees extends AbstractTreeFeature<NoFeatureConfig> {
-    private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.RED_OAK_LEAVES.getDefaultState();
+public class SeasonalDeciduousTrees5 extends AbstractTreeFeature<NoFeatureConfig> {
+    private static final BlockState LOG = Blocks.DARK_OAK_LOG.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.BROWN_OAK_LEAVES.getDefaultState();
 
-    public SeasonalDeciduousTrees(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public SeasonalDeciduousTrees5(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public SeasonalDeciduousTrees() {
+    public SeasonalDeciduousTrees5() {
         super(null, true);
     } //
 
@@ -614,7 +614,7 @@ public class SeasonalDeciduousTrees extends AbstractTreeFeature<NoFeatureConfig>
         MutableBlockPos position = new MutableBlockPos();
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
-            int distance = 2; //higher the value, lower the density of trees?
+            int distance = 1; //higher the value, lower the density of trees?
             if (yOffset == -5) { //does nothing?
                 distance = 0; //higher the value, lower the density of trees?
             }

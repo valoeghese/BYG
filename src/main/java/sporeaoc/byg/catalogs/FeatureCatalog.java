@@ -15,6 +15,10 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE2 = new SeasonalDeciduousTrees2();
     public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE3 = new SeasonalDeciduousTrees3();
     public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE4 = new SeasonalDeciduousTrees4();
+    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_TREE5 = new SeasonalDeciduousTrees5();
+    public static final AbstractTreeFeature<NoFeatureConfig> SDECIDUOUS_SHRUBS = new SDeciduousShrub();
+
+
 
 
     //public static final Feature<NoFeatureConfig> DEADSEA_SPIRE = new DeadSeaSpires(null);

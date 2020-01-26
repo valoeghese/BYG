@@ -614,7 +614,7 @@ public class SeasonalDeciduousTrees3 extends AbstractTreeFeature<NoFeatureConfig
         MutableBlockPos position = new MutableBlockPos();
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
-            int distance = 25; //higher the value, lower the density of trees?
+            int distance = 1; //higher the value, lower the density of trees?
             if (yOffset == -5) { //does nothing?
                 distance = 0; //higher the value, lower the density of trees?
             }
