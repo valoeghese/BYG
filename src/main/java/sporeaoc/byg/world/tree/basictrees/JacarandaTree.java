@@ -74,9 +74,9 @@ public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
                     }
                 }
                 //This allows a random rotation between 3 differently leave Presets in the same class. Optimizes Performance instead of the loading of several classes.
-                int leavePreset = rand.nextInt(6) + 1;
+                int leavePreset = rand.nextInt(4) + 1;
                 {
-                    if (leavePreset == 1) {
+                    /*if (leavePreset == 1) {
                         //This randomizer allows you to have randomly generating sized leave widths(X & Z). You can remove the randomizer and set your own value instead.
                         int leavessquarespos = 2;
                         //This loads leaves in squares. Manually placing the squares can allow you to load in perfect squares.
@@ -106,6 +106,7 @@ public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
                                 this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
                                 this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
                                 this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1-1, boundsIn, changedBlocks);
+
                                 this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
                                 this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
                                 this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
@@ -217,8 +218,9 @@ public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
 
                             }
                         }
-                    }
-                    else if (leavePreset == 4) {
+                    }*/
+
+                     if (leavePreset == 1) {
                         int leavessquarespos = 2;
                         for (int posXLeafWidth = -leavessquarespos; posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
                             for (int posZLeafWidthL0 = -leavessquarespos; posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
@@ -244,7 +246,7 @@ public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
                             }
                         }
                     }
-                    else if (leavePreset == 5) {
+                    else if (leavePreset == 2) {
                         int leavessquarespos = 2;
                         for (int posXLeafWidth = -leavessquarespos; posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
                             for (int posZLeafWidthL0 = -leavessquarespos; posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
@@ -284,7 +286,7 @@ public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
                             }
                         }
                     }
-                    else if (leavePreset == 6) {
+                    else if (leavePreset == 3) {
                         int leavessquarespos = 2;
                         for (int posXLeafWidth = -leavessquarespos; posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
                             for (int posZLeafWidthL0 = -leavessquarespos; posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
@@ -311,6 +313,49 @@ public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
                             }
                         }
                     }
+                     else if (leavePreset == 4) {
+                         int leavessquarespos = 2;
+                         for (int posXLeafWidth = -leavessquarespos; posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
+                             for (int posZLeafWidthL0 = -leavessquarespos; posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
+
+                                 this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight - 1, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight - 2, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
+
+                                 this.leafs(worldIn, posX1 + 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 - 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 + 1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 + 1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 - 1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 - 1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
+
+                                 this.leafs(worldIn, posX1 + 1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 - 1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1, topTrunkHeight + 1, posZ1 + 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1, topTrunkHeight + 1, posZ1 - 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
+
+                                 this.leafs(worldIn, posX1 + 1, topTrunkHeight - 3 , posZ1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 - 1, topTrunkHeight - 3, posZ1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1, topTrunkHeight - 3, posZ1 + 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1, topTrunkHeight - 3, posZ1-1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 + 1, topTrunkHeight - 3, posZ1 + 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 + 1, topTrunkHeight - 3, posZ1 - 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 - 1, topTrunkHeight - 3, posZ1 + 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 - 1, topTrunkHeight - 3, posZ1 - 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 + 2, topTrunkHeight - 3, posZ1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 - 2, topTrunkHeight - 3, posZ1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1, topTrunkHeight - 3, posZ1 + 2, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1, topTrunkHeight - 3, posZ1 - 2, boundsIn, changedBlocks);
+
+                                 this.leafs(worldIn, posX1 + 1, topTrunkHeight -4, posZ1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1, topTrunkHeight -4 , posZ1 + 1, boundsIn, changedBlocks);
+                                 this.leafs(worldIn, posX1, topTrunkHeight- 4, posZ1-1, boundsIn, changedBlocks);
+                             }
+                         }
+                     }
                 }
             }
 
@@ -329,7 +374,7 @@ public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
-            int distance = 2;
+            int distance = 1;
             if (yOffset == -5) {
                 distance = 0;
             }
