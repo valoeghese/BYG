@@ -12,13 +12,6 @@ public class Init {
         }
     };
 
-    // choose one of those methods.
-
     public void init() {
     }
-
-    /*
-    public void init(FMLCommonSetupEvent event) {
-    }
-     */
 }
