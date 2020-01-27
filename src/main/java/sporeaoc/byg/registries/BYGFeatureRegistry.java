@@ -32,7 +32,9 @@ public class BYGFeatureRegistry {
                         FeatureCatalog.BROWNBIRCH_TREE.setRegistryName("brownbirch_tree"),
                         FeatureCatalog.ORANGEBIRCH_TREE.setRegistryName("orangebirch_tree"),
                         FeatureCatalog.REDBIRCH_TREE.setRegistryName("redbirch_tree"),
-                        FeatureCatalog.YELLOWBIRCH_TREE.setRegistryName("yellow_birch")
+                        FeatureCatalog.YELLOWBIRCH_TREE.setRegistryName("yellow_birch"),
+                        FeatureCatalog.TREE1.setRegistryName("tree1")
+
 
 
 

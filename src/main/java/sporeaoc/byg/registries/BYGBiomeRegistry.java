@@ -26,6 +26,8 @@ public class BYGBiomeRegistry {
         registerBiome(registry, new SeasonalDeciduousForest(), "seasonaldeciduousforest", ConfigManager.seasonaldeciduousforest.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST);
         registerBiome(registry, new SeasonalForest(), "seasonalforest", ConfigManager.seasonalforest.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD);
         registerBiome(registry, new SeasonalBirchForest(), "seasonalbirchforest", ConfigManager.seasonalbirchforest.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD);
+        registerBiome(registry, new TestBiome(), "testbiome", ConfigManager.testbiome.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD);
+
     }
 
     private static void registerBiome(IForgeRegistry<Biome> registry, Biome biome, String name, int weight, boolean spawn, BiomeManager.BiomeType type, BiomeDictionary.Type... types) {

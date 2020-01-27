@@ -19,6 +19,7 @@ public class ConfigManager {
     public static Config seasonaldeciduousforest = new Config("seasonsaldeciduousforest", 10);
     public static Config seasonalforest = new Config("seasonalforest", 10);
     public static Config seasonalbirchforest = new Config("seasonalbirchforest", 10);
+    public static Config testbiome = new Config("testbiome", 10);
 
     public static ForgeConfigSpec COMMON_CONFIG;
     private static ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();

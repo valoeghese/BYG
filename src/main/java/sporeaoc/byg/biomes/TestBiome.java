@@ -11,7 +11,7 @@ import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import sporeaoc.byg.world.BYGBiomeFeatures;
 
-public class BlueTaiga extends Biome {
+public class TestBiome extends Biome {
         static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
         static final RainType PRECIPATATION = RainType.RAIN;
         static final Category CATEGORY = Category.TAIGA;
@@ -23,7 +23,7 @@ public class BlueTaiga extends Biome {
         static final int WATER_FOG_COLOR = 329011;
         static final String PARENT = null;
 
-        public BlueTaiga() {
+        public TestBiome() {
             super(new Builder().surfaceBuilder(SURFACE_BUILDER).precipitation(PRECIPATATION).category(CATEGORY).depth((float) DEPTH).waterColor(WATER_COLOR).scale((float) SCALE).temperature(TEMPERATURE).downfall(DOWNFALL).waterFogColor(WATER_FOG_COLOR).parent(PARENT));
             this.addStructure(Feature.JUNGLE_TEMPLE, IFeatureConfig.NO_FEATURE_CONFIG);
             this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
@@ -31,8 +31,7 @@ public class BlueTaiga extends Biome {
             //BYGBiomeFeatures.addDeciduousTrees(this);
             //BYGBiomeFeatures.addDeciduousTrees(this);
             //BYGBiomeFeatures.addTightTrees(this);
-            BYGBiomeFeatures.addTreeTemplate(this);
-
+            BYGBiomeFeatures.addTree1(this);
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));
