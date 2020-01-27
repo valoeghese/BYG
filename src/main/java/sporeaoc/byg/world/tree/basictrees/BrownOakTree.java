@@ -21,7 +21,7 @@ import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
 public class BrownOakTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
-    private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
+    private static final BlockState LOG = Blocks.DARK_OAK_LOG.getDefaultState();
     private static final BlockState LEAVES = BlockCatalogs.BROWN_OAK_LEAVES.getDefaultState();
 
     public BrownOakTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {

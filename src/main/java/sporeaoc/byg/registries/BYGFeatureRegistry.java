@@ -26,8 +26,13 @@ public class BYGFeatureRegistry {
                         FeatureCatalog.SDECIDUOUS_TREE5.setRegistryName("sdeciduous_tree5"),
                         FeatureCatalog.SDECIDUOUS_SHRUBS.setRegistryName("sdeciduous_shrubs"),
                         FeatureCatalog.DECIDUOUS_SHRUBS.setRegistryName("deciduous_shrubs"),
-                        FeatureCatalog.JACARANDA_TREE.setRegistryName("jacaranda_tree")
-
+                        FeatureCatalog.BROWNOAK_TREE.setRegistryName("brownoak_tree"),
+                        FeatureCatalog.ORANGEOAK_TREE.setRegistryName("orangeoak_tree"),
+                        FeatureCatalog.REDOAK_TREE.setRegistryName("redoak_tree"),
+                        FeatureCatalog.BROWNBIRCH_TREE.setRegistryName("brownbirch_tree"),
+                        FeatureCatalog.ORANGEBIRCH_TREE.setRegistryName("orangebirch_tree"),
+                        FeatureCatalog.REDBIRCH_TREE.setRegistryName("redbirch_tree"),
+                        FeatureCatalog.YELLOWBIRCH_TREE.setRegistryName("yellow_birch")
 
 
 
