@@ -157,7 +157,6 @@ public class BYGBlockRegistry {
     // Plant Blocks
     @SubscribeEvent
     public static void registerPlantBlocks(final RegistryEvent.Register<Block> event) {
-        BlockCatalogs.PRAIRIE_GRASS = new Prairieplant("prarie_grass");
 
         /*
          * TODO: Add Plant Blocks
