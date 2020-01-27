@@ -28,7 +28,7 @@ public class SeasonalForest extends Biome {
         static final int WATER_COLOR = 4159204;
         static final int WATER_FOG_COLOR = 329011;
         static final String PARENT = null;
-
+//
         public SeasonalForest() {
             super(new Builder().surfaceBuilder(SURFACE_BUILDER).precipitation(PRECIPATATION).category(CATEGORY).depth((float) DEPTH).waterColor(WATER_COLOR).scale((float) SCALE).temperature(TEMPERATURE).downfall(DOWNFALL).waterFogColor(WATER_FOG_COLOR).parent(PARENT));
             this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
