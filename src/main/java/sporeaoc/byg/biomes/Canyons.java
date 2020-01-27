@@ -18,8 +18,8 @@ public class Canyons extends Biome {
     static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.BADLANDS, SurfaceBuilder.RED_SAND_WHITE_TERRACOTTA_GRAVEL_CONFIG);
     static final RainType PRECIPATATION = RainType.SNOW;
     static final Biome.Category CATEGORY = Category.ICY;
-    static final double DEPTH = 0.7F;
-    static final double SCALE = -0.01F;
+    static final double DEPTH = 0.0F;
+    static final double SCALE = 0.01F;
     static final float TEMPERATURE = -0.5F;
     static final float DOWNFALL = 0.9F;
     static final int WATER_COLOR = 4159204;
@@ -33,6 +33,12 @@ public class Canyons extends Biome {
         this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.008D, MineshaftStructure.Type.NORMAL));
         this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
         this.addStructure(Feature.PILLAGER_OUTPOST, new PillagerOutpostConfig(0.004D));
+        DefaultBiomeFeatures.addIcebergs(this);
+        DefaultBiomeFeatures.addIcebergs(this);
+        DefaultBiomeFeatures.addIcebergs(this);
+        DefaultBiomeFeatures.addIcebergs(this);
+        DefaultBiomeFeatures.addIcebergs(this);
+        DefaultBiomeFeatures.addIcebergs(this);
         DefaultBiomeFeatures.addCarvers(this);
         BYGBiomeFeatures.bygAddCanyons(this);
         BYGBiomeFeatures.bygAddCanyons(this);
@@ -49,8 +55,8 @@ public class Canyons extends Biome {
         BYGBiomeFeatures.bygAddCanyons(this);
         BYGBiomeFeatures.bygAddCanyons(this);
         BYGBiomeFeatures.bygAddCanyons(this);
-        BYGBiomeFeatures.bygAddCanyons(this);
-        BYGBiomeFeatures.bygAddCanyons(this);
+
+
 
         //BYGBiomeFeatures.addDeciduousTrees(this);
         //BYGBiomeFeatures.addBaobabTrees(this);
