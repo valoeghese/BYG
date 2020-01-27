@@ -18,10 +18,10 @@ public class ConfigManager {
     public static Config deciduousforest = new Config("deciduousforest", 10);
     public static Config seasonaldeciduousforest = new Config("seasonsaldeciduousforest", 10);
     public static Config dunes = new Config("dunes", 10);
-    /*public static Config giantbluesprucetaiga = new Config("amplifiedbamboojungle", 3);
-    public static Config giantseasonalsprucetaiga = new Config("amplifiedbamboojungle", 3);
+    //public static Config giantbluesprucetaiga = new Config("amplifiedbamboojungle", 3);
+    //public static Config giantseasonalsprucetaiga = new Config("amplifiedbamboojungle", 3);
     public static Config jacarandaforest = new Config("amplifiedbamboojungle", 3);
-    public static Config jacarandaforesthills = new Config("amplifiedbamboojungle", 3);*/
+    //public static Config jacarandaforesthills = new Config("amplifiedbamboojungle", 3);*/
    // public static Config prairie = new Config("amplifiedbamboojungle", 3);
     /*public static Config redoakforest = new Config("amplifiedbamboojungle", 3);
     public static Config redoakforesthills = new Config("amplifiedbamboojungle", 3);
