@@ -1,11 +1,13 @@
 package sporeaoc.byg;
 
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import sporeaoc.byg.init.Init;
+import sporeaoc.byg.catalogs.ItemCatalogs;
 
 @Mod("byg")
 public class BYG {
@@ -17,6 +19,17 @@ public class BYG {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
         // ConfigManager.LoadConfig(ConfigManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MODID + "-common.toml"));
+    }
+    public static class Init {
+        public static ItemGroup creativeTab = new ItemGroup("byg") {
+            @Override
+            public ItemStack createIcon() {
+                return new ItemStack(ItemCatalogs.BLACK_PUFF);
+            }
+        };
+
+        public void init() {
+        }
     }
 
     private void setup(final FMLCommonSetupEvent event) {
