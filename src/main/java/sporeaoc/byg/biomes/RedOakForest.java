@@ -43,6 +43,9 @@ public class RedOakForest extends Biome {
             DefaultBiomeFeatures.addMushrooms(this);
             DefaultBiomeFeatures.addReedsAndPumpkins(this);
             BYGBiomeFeatures.addRedOakForestTrees(this);
+            DefaultBiomeFeatures.addForestTrees(this);
+            DefaultBiomeFeatures.addForestTrees(this);
+
             this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.PIG, 10, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));
