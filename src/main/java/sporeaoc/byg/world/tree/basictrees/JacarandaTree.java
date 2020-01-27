@@ -74,11 +74,11 @@ public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
                     }
                 }
                 //This allows a random rotation between 3 differently leave Presets in the same class. Optimizes Performance instead of the loading of several classes.
-                int leavePreset = rand.nextInt(1) + 1;
+                int leavePreset = rand.nextInt(3) + 1;
                 {
                     if (leavePreset == 1) {
                         //This randomizer allows you to have randomly generating sized leave widths(X & Z). You can remove the randomizer and set your own value instead.
-                        int leavessquarespos = 1;
+                        int leavessquarespos = 2;
                         //This loads leaves in squares. Manually placing the squares can allow you to load in perfect squares.
                         for (int posXLeafWidth = -leavessquarespos; posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
                             for (int posZLeafWidthL0 = -leavessquarespos; posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
@@ -102,41 +102,36 @@ public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
                                 this.leafs(worldIn, posX1, topTrunkHeight+ 1, posZ1-1, boundsIn, changedBlocks);
                                 this.leafs(worldIn, posX1, topTrunkHeight+ 1, posZ1, boundsIn, changedBlocks);
 
-
-                                if(leavessquarespos == 2) {
-
-                                    this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1-1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1-1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
 
 
-                                    this.leafs(worldIn, posX1 + 2, topTrunkHeight, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 2, topTrunkHeight, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight, posZ1 + 2, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight, posZ1 - 2, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 2, topTrunkHeight, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 2, topTrunkHeight, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight, posZ1 + 2, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight, posZ1 - 2, boundsIn, changedBlocks);
 
-                                    this.leafs(worldIn, posX1 + 2, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 2, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 2, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 - 2, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 2, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 2, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 2, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 - 2, boundsIn, changedBlocks);
 
-                                    this.leafs(worldIn, posX1 + 1, topTrunkHeight -5 , posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 1, topTrunkHeight - 5, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight -5 , posZ1 + 1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight- 5, posZ1-1, boundsIn, changedBlocks);
-                                }
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight -5 , posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight - 5, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight -5 , posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight- 5, posZ1-1, boundsIn, changedBlocks);
                             }
                         }
                     } else if (leavePreset == 2) {
-                        int leavessquarespos = rand.nextInt(1) + 1;
+                        int leavessquarespos = 2;
                         for (int posXLeafWidth = (leavessquarespos * -1); posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
                             for (int posZLeafWidthL0 = (leavessquarespos * -1); posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
-                                //int leaveheight = 0;//0 lines it up with top log
                                 this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight - 1, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
                                 this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight - 2, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
                                 this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight - 3, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
@@ -156,65 +151,73 @@ public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
                                 this.leafs(worldIn, posX1, topTrunkHeight+ 1, posZ1-1, boundsIn, changedBlocks);
                                 this.leafs(worldIn, posX1, topTrunkHeight+ 1, posZ1, boundsIn, changedBlocks);
 
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1-1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
 
-                                if(leavessquarespos == 2) {
+                                //Leave Widener
+                                this.leafs(worldIn, posX1 + 2, topTrunkHeight, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 2, topTrunkHeight, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight, posZ1 + 2, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight, posZ1 - 2, boundsIn, changedBlocks);
 
-                                    this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1-1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 2, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 2, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 2, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 - 2, boundsIn, changedBlocks);
 
 
-                                    this.leafs(worldIn, posX1 + 2, topTrunkHeight, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 2, topTrunkHeight, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight, posZ1 + 2, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight, posZ1 - 2, boundsIn, changedBlocks);
-
-                                    this.leafs(worldIn, posX1 + 2, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 2, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 2, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 - 2, boundsIn, changedBlocks);
-
-                                    this.leafs(worldIn, posX1 + 1, topTrunkHeight -5 , posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1 - 1, topTrunkHeight - 5, posZ1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight -5 , posZ1 + 1, boundsIn, changedBlocks);
-                                    this.leafs(worldIn, posX1, topTrunkHeight- 5, posZ1-1, boundsIn, changedBlocks);
-                                }
                             }
                         }
                     }
                     //This is the Tree Maker in action. This would be tree leave Preset 3. I'd suggest commenting this out! SHOULD BE USED ONLY ON 1x1 TREE TRUNKS!
-                    /*else if (leavePreset == 3) {
-                        int leavessquarespos = rand.nextInt(1) + 1;
+                    else if (leavePreset == 3) {
+                        int leavessquarespos = 2;
                         for (int posXLeafWidth = -leavessquarespos; posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
                             for (int posZLeafWidthL0 = -leavessquarespos; posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
 
-                                //Leave Layer On Top of Top Trunk Block Y + 1
-                                this.leafs(worldIn, posX1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
-                                this.leafs(worldIn, posX1 - 1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight - 1, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight - 2, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight - 3, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
+
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight, posZ1-1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
+
                                 this.leafs(worldIn, posX1 + 1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
-                                this.leafs(worldIn, posX1, topTrunkHeight + 1, posZ1 - 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
                                 this.leafs(worldIn, posX1, topTrunkHeight + 1, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight+ 1, posZ1-1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight+ 1, posZ1, boundsIn, changedBlocks);
 
-                                //Leave Layer Trunk Y+2
-                                this.leafs(worldIn, posX1, topTrunkHeight + 2, posZ1, boundsIn, changedBlocks);
-                                this.leafs(worldIn, posX1 - 1, topTrunkHeight + 2, posZ1, boundsIn, changedBlocks);
-                                this.leafs(worldIn, posX1 + 1, topTrunkHeight + 2, posZ1, boundsIn, changedBlocks);
-                                this.leafs(worldIn, posX1, topTrunkHeight + 2, posZ1 - 1, boundsIn, changedBlocks);
-                                this.leafs(worldIn, posX1, topTrunkHeight + 2, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1-1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
 
-                                //Leave Layer Trunk Y-4
-                                this.leafs(worldIn, posX1 - 1, topTrunkHeight - 7, posZ1, boundsIn, changedBlocks);
-                                this.leafs(worldIn, posX1 + 1, topTrunkHeight - 7, posZ1, boundsIn, changedBlocks);
-                                this.leafs(worldIn, posX1, topTrunkHeight - 7, posZ1 - 1, boundsIn, changedBlocks);
-                                this.leafs(worldIn, posX1, topTrunkHeight - 7, posZ1 + 1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 + 2, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1 - 2, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 2, boundsIn, changedBlocks);
+                                this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 - 2, boundsIn, changedBlocks);
+
+
                             }
                         }
-                    }*/
+                    }
                 }
             }
 

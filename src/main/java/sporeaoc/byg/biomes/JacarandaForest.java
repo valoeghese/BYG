@@ -2,7 +2,6 @@ package sporeaoc.byg.biomes;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -13,8 +12,6 @@ import net.minecraft.world.gen.feature.structure.MineshaftStructure;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 import sporeaoc.byg.world.BYGBiomeFeatures;
 
 public class JacarandaForest extends Biome {
@@ -65,16 +62,6 @@ public class JacarandaForest extends Biome {
     @Override
     public Biome getRiver() {
         return Biomes.RIVER;
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    public int getFoliageColor(BlockPos pos) {
-        return 6589494;
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    public int getGrassColor(BlockPos pos) {
-        return 5406525;
     }
 }
 

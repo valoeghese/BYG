@@ -30,7 +30,7 @@ public class TreeTemplate extends AbstractTreeFeature<NoFeatureConfig> {
 
     public TreeTemplate() {
         super(null, true);
-    } //
+    }
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
