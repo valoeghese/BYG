@@ -50,7 +50,7 @@ public class Config {
         builder.comment(name + " biome generation").push(name + "_biome");
         //configScale = builder.comment("scale is height variation. \ndefault is 2.3").defineInRange("scale", scale, 1, 10);
         //configDepth = builder.comment("depth describes the height of the biome. \ndefault is 1.9").defineInRange("depth", depth, 1, 10);
-        configWeight = builder.comment("weight of the biome (set to 0 to disable generation). \ndefault is 3").defineInRange("weight", weight, 0, 256);
+        configWeight = builder.comment("weight of the biome (set to 0 to disable generation). \ndefault is 10").defineInRange("weight", weight, 0, 256);
         builder.pop();
     }
 }
