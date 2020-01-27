@@ -5,9 +5,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import sporeaoc.byg.catalogs.ItemCatalogs;
+import sporeaoc.byg.config.ConfigManager;
 
 @Mod("byg")
 public class BYG {
@@ -18,7 +20,7 @@ public class BYG {
     public BYG() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
-        // ConfigManager.LoadConfig(ConfigManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MODID + "-common.toml"));
+        ConfigManager.LoadConfig(ConfigManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-common.toml"));
     }
     public static class Init {
         public static ItemGroup creativeTab = new ItemGroup("byg") {
