@@ -13,7 +13,8 @@ import sporeaoc.byg.config.ConfigManager;
 
 @Mod("byg")
 public class BYG {
-    public static final Logger LOGGER = LogManager.getLogger();
+    public static Logger LOGGER = LogManager.getLogger();
+
     public static final String MOD_ID = "byg";
     public static final Init setup = new Init();
 
@@ -37,4 +38,5 @@ public class BYG {
     private void setup(final FMLCommonSetupEvent event) {
         setup.init();
     }
+
 }

@@ -501,30 +501,6 @@ public class SDeciduousTrees extends AbstractTreeFeature<NoFeatureConfig> {
                                     this.leafs(worldIn, posX1, topTrunkHeight - 7, posZ1 + 1, boundsIn, changedBlocks);
                                 }
                             }
-                        //this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight + leaveheight, 1 + posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-                        //this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight + leaveheight + 1, 1 + posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-                        //this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight + leaveheight + 2, 1 + posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-                        //this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight + leaveheight + 2, 1 + posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-                        //this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight + leaveheight + 3, 1 + posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-                        //this.leafs(worldIn, 1 + posX1 - posXLeafWidth, topTrunkHeight + leaveheight - 1, 1 + posZ1 - posZLeafWidthL0 , boundsIn, changedBlocks);
-                        //this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight + leaveheight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-                        //this.leafs(worldIn, 1 + posX1 - posXLeafWidth, topTrunkHeight + leaveheight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-                        //this.leafs(worldIn, 1 + posX1 - posXLeafWidth, topTrunkHeight + leaveheight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-
-
-                        /*if ((posXLeafWidth > -2 || posZLeafWidthL0 > -1) && (posXLeafWidth != -1 || posZLeafWidthL0 != -2)) {
-                            leaveheight = 1;//sets leave height?
-                            this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight + leaveheight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, topTrunkHeight + leaveheight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight + leaveheight, 1 + posZ1 - posZLeafWidthL0, boundsIn, changedBlocks);
-                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, topTrunkHeight + leaveheight, 1 + posZ1 - posZLeafWidthL0, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight + leaveheight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-                            this.leafs(worldIn, 1 + posX1 - posXLeafWidth, topTrunkHeight + leaveheight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
-
-
-
-
-                        }*/
                     }
                 }
                 //Layer1
@@ -560,43 +536,6 @@ public class SDeciduousTrees extends AbstractTreeFeature<NoFeatureConfig> {
                     this.leafs(worldIn, posX1 + 1, topTrunkHeight - 4, posZ1, boundsIn, changedBlocks);
                     this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 - 1, boundsIn, changedBlocks);
                     this.leafs(worldIn, posX1, topTrunkHeight - 4, posZ1 + 1, boundsIn, changedBlocks);
-                //}
-
-                //Layer2
-                /*for(int k3 = -1; k3 <= 4; ++k3) { //Changes X
-                    for(int j4 = -3; j4 <= 4; ++j4) { //Changes Z
-                        if ((k3 != -3 || j4 != -3) && (k3 != -3 || j4 != 4) && (k3 != 4 || j4 != -3) && (k3 != 4 || j4 != 4) && (Math.abs(k3) < 3 || Math.abs(j4) < 3)) {
-                            this.leafs(worldIn, posX1 + k3, topTrunkHeight, posZ1 + j4, boundsIn, changedBlocks);
-                        }
-                    }
-                }*/
-                //Layer
-                /*for(int l3 = -1; l3 <= 2; ++l3) {
-                    for(int k4 = -1; k4 <= 2; ++k4) {
-                        if ((l3 < 0 || l3 > 1 || k4 < 0 || k4 > 1) && rand.nextInt(3) <= 0) {
-                            int i5 = rand.nextInt(3) + 2; //makes the tree increase both upwards and downwards
-
-                            for(int l2 = 0; l2 < i5; ++l2) { //does nothing
-                                this.treelog(changedBlocks, worldIn, new BlockPos(posX , topTrunkHeight, posZ + 1), boundsIn); //creates Branches, number value of 2 or lower does nothing 5 seems to be a good value
-                            }*/
-
-
-                //LAYER 3
-                            /*for(int j5 = -1; j5 <= 1; ++j5) { //changes the x width of the leaves on row 3
-                                for(int i3 = -1; i3 <= 1; ++i3) { //changes the z width of the leaves on row 3
-                                    this.leafs(worldIn, posX1 + l3 + j5, topTrunkHeight, posZ1 + k4 + i3, boundsIn, changedBlocks);
-                                }
-                            }*/
-//LAYER 4
-                            /*for(int k5 = -2; k5 <= 2; ++k5) { //changes the X width of the leaves on row 4
-                                for(int l5 = -2; l5 <= 2; ++l5) { //changes the Z width of the leaves on row 4
-                                    if (Math.abs(k5) != 2 || Math.abs(l5) != 2) { //does nothing
-                                        this.leafs(worldIn, posX1 + l3 + k5, topTrunkHeight - 1, posZ1 + k4 + l5, boundsIn, changedBlocks); //topTrunkHeight -1 apears to have no change on the tree
-                                    }
-                                }
-                           // }*/
-                // }
-                //}
             }
 
             return true;
@@ -658,4 +597,3 @@ public class SDeciduousTrees extends AbstractTreeFeature<NoFeatureConfig> {
         );
     }
 }
-//
