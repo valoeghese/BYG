@@ -3,9 +3,9 @@ package sporeaoc.byg.catalogs;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import sporeaoc.byg.world.tree.TightTrees;
-import sporeaoc.byg.world.tree.Tree1;
 import sporeaoc.byg.world.tree.TreeTemplate;
 import sporeaoc.byg.world.tree.basictrees.*;
+import sporeaoc.byg.world.tree.cypresstrees.HugeCypressTree;
 import sporeaoc.byg.world.tree.deciduousforest.*;
 
 public class FeatureCatalog {
@@ -28,7 +28,7 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> REDBIRCH_TREE = new RedBirch();
     public static final AbstractTreeFeature<NoFeatureConfig> YELLOWBIRCH_TREE = new YellowBirch();
     public static final AbstractTreeFeature<NoFeatureConfig> JACARANDA_TREE = new JacarandaTree();
-    public static final AbstractTreeFeature<NoFeatureConfig> TREE1 = new Tree1();
+    public static final AbstractTreeFeature<NoFeatureConfig> HUGECYPRESS_TREE = new HugeCypressTree();
 
 
 

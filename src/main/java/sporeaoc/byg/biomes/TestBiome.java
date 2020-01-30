@@ -31,7 +31,7 @@ public class TestBiome extends Biome {
             //BYGBiomeFeatures.addDeciduousTrees(this);
             //BYGBiomeFeatures.addDeciduousTrees(this);
             //BYGBiomeFeatures.addTightTrees(this);
-            BYGBiomeFeatures.addTree1(this);
+            BYGBiomeFeatures.addCypressTreeVegetation(this);
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));
