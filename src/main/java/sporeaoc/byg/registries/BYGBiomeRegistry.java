@@ -26,7 +26,12 @@ public class BYGBiomeRegistry {
         registerBiome(registry, new SeasonalDeciduousForest(), "seasonaldeciduousforest", ConfigManager.seasonaldeciduousforest.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST);
         registerBiome(registry, new SeasonalForest(), "seasonalforest", ConfigManager.seasonalforest.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD);
         registerBiome(registry, new SeasonalBirchForest(), "seasonalbirchforest", ConfigManager.seasonalbirchforest.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD);
-        registerBiome(registry, new TestBiome(), "testbiome", ConfigManager.testbiome.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD);
+        //registerBiome(registry, new TestBiome(), "testbiome", ConfigManager.testbiome.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD);
+        registerBiome(registry, new SeasonalTaiga(), "seasonaltaiga", ConfigManager.seasonaltaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS);
+        registerBiome(registry, new BlueTaiga(), "bluetaiga", ConfigManager.bluetaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS);
+
+
+        BYG.LOGGER.info("All BYG biomes registered!");
 
     }
 
@@ -40,4 +45,5 @@ public class BYGBiomeRegistry {
             BiomeDictionary.addTypes(biome, types);
         }
     }
+
 }

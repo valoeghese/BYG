@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree.basictrees;
+package sporeaoc.byg.world.tree.oakandbirch;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
@@ -19,17 +19,17 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class OrangeOakTree extends AbstractTreeFeature<NoFeatureConfig> {
+public class RedOakTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.ORANGE_OAK_LEAVES.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.RED_OAK_LEAVES.getDefaultState();
 
-    public OrangeOakTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public RedOakTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public OrangeOakTree() {
+    public RedOakTree() {
         super(null, true);
     } //
 

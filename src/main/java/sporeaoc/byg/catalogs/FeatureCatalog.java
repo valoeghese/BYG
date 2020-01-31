@@ -4,9 +4,10 @@ import net.minecraft.world.gen.feature.AbstractTreeFeature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import sporeaoc.byg.world.tree.TightTrees;
 import sporeaoc.byg.world.tree.TreeTemplate;
-import sporeaoc.byg.world.tree.basictrees.*;
-import sporeaoc.byg.world.tree.cypresstrees.HugeCypressTree;
+import sporeaoc.byg.world.tree.oakandbirch.*;
+import sporeaoc.byg.world.tree.cypressswamplands.HugeCypressTree;
 import sporeaoc.byg.world.tree.deciduousforest.*;
+import sporeaoc.byg.world.tree.taiga.*;
 
 public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> DECIDUOUS_TREE = new DeciduousTree1();
@@ -29,6 +30,12 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> YELLOWBIRCH_TREE = new YellowBirch();
     public static final AbstractTreeFeature<NoFeatureConfig> JACARANDA_TREE = new JacarandaTree();
     public static final AbstractTreeFeature<NoFeatureConfig> HUGECYPRESS_TREE = new HugeCypressTree();
+    public static final AbstractTreeFeature<NoFeatureConfig> SEASONALTAIGA_TREE = new SeasonalTaigaTree();
+    public static final AbstractTreeFeature<NoFeatureConfig> SEASONALSMALLTAIGA_TREE = new SeasonalSmallTaigaTree();
+    public static final AbstractTreeFeature<NoFeatureConfig> SEASONALTALLTAIGA_TREE = new SeasonalTallTaigaTree();
+    public static final AbstractTreeFeature<NoFeatureConfig> BlUETAIGA_TREE = new BlueTaigaTree();
+    public static final AbstractTreeFeature<NoFeatureConfig> BLUESMALLTAIGA_TREE = new BlueSmallTaigaTree();
+    public static final AbstractTreeFeature<NoFeatureConfig> BLUETALLTAIGA_TREE = new BlueTallTaigaTree();
 
 
 

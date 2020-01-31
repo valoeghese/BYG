@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree.basictrees;
+package sporeaoc.byg.world.tree.oakandbirch;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;

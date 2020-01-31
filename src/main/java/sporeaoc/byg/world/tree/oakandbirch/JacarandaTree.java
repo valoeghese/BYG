@@ -1,8 +1,7 @@
-package sporeaoc.byg.world.tree.basictrees;
+package sporeaoc.byg.world.tree.oakandbirch;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MutableBoundingBox;
@@ -19,17 +18,17 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class RedBirch extends AbstractTreeFeature<NoFeatureConfig> {
+public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
-    private static final BlockState LOG = Blocks.BIRCH_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.RED_BIRCH_LEAVES.getDefaultState();
+    private static final BlockState LOG = BlockCatalogs.JACARANDA_LOG.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.JACARANDA_LEAVES.getDefaultState();
 
-    public RedBirch(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public JacarandaTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public RedBirch() {
+    public JacarandaTree() {
         super(null, true);
     } //
 

@@ -402,7 +402,6 @@
   "biome.byg.alps": "Alps",
   "biome.byg.alliumfields": "Allium Fields",
   "biome.byg.alpine_foothills": "Alpine Foothills",
-  "biome.byg.cika_woods": "Cika Woods",
   "biome.byg.cika_wooded_mountains": "Cika Wooded Mountains",
   "biome.byg.deciduousforest": "Deciduous Forest",
   "biome.byg.dunes": "Dunes",
@@ -410,8 +409,8 @@
   "biome.byg.seasonalbirchforest": "Seasonal Birch Forest",
   "biome.byg.seasonaldeciduousforest": "Seasonal Deciduous Forest",
   "biome.byg.seasonalforest": "Seasonal Forest",
-  "biome.byg.jacarandaforest": "Jacaranda Forest",
-  "biome.byg.jacaranda_forest_hills": "Jacaranda Forest Hills",
+  "biome.byg.bluetaiga": "Blue Taiga",
+  "biome.byg.seasonaltaiga": "Seasonal Taiga",
 
   "item.byg.mud": "Mud",
   "item.byg.byglogo": "Byg Logo",

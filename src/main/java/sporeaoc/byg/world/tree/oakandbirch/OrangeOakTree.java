@@ -1,7 +1,8 @@
-package sporeaoc.byg.world.tree.basictrees;
+package sporeaoc.byg.world.tree.oakandbirch;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MutableBoundingBox;
@@ -18,23 +19,23 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class JacarandaTree extends AbstractTreeFeature<NoFeatureConfig> {
+public class OrangeOakTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
-    private static final BlockState LOG = BlockCatalogs.JACARANDA_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.JACARANDA_LEAVES.getDefaultState();
+    private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.ORANGE_OAK_LEAVES.getDefaultState();
 
-    public JacarandaTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public OrangeOakTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public JacarandaTree() {
+    public OrangeOakTree() {
         super(null, true);
     } //
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
-        int randTreeHeight = rand.nextInt(3) + rand.nextInt(2) + 8;
+        int randTreeHeight = rand.nextInt(3) + rand.nextInt(2) + 6;
         //Positions
         int posX = position.getX();
         int posY = position.getY();
