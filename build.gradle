@@ -14,7 +14,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 // change "version" whenever you release a new version !!
-version = '0.0.4'
+version = '0.0.5'
 group = 'sporeaoc.byg' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'Biomes_You_Go'
 

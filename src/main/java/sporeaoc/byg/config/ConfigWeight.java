@@ -3,7 +3,7 @@ package sporeaoc.byg.config;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.ForgeConfigSpec;
 
-public class Config {
+public class ConfigWeight {
     private String name;
     private int weight;
     // public double scale;
@@ -16,13 +16,13 @@ public class Config {
 
 //    public ForgeConfigSpec.DoubleValue configDepth;
 
-    public Config(String name, int weight) /*double scale, double depth)*/ {
+    public ConfigWeight(String name, int weight) /*double scale, double depth)*/ {
         this.name = name;
         this.weight = weight;
         //    this.scale = scale;
         //    this.depth = depth;
         //this.types = types;
-        ConfigManager.BIOMES.add(this);
+        ConfigWeightManager.BIOMES.add(this);
     }
 
     public String getName() {

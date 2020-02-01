@@ -9,7 +9,7 @@ import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import sporeaoc.byg.catalogs.ItemCatalogs;
-import sporeaoc.byg.config.ConfigManager;
+import sporeaoc.byg.config.ConfigWeightManager;
 
 @Mod("byg")
 public class BYG {
@@ -21,7 +21,9 @@ public class BYG {
     public BYG() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
-        ConfigManager.LoadConfig(ConfigManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-common.toml"));
+        ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "weights-common.toml"));
+        //ConfigBiomeColorsManager.LoadConfig(ConfigBiomeColorsManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "biomecolors-common.toml"));
+
     }
     public static class Init {
         public static ItemGroup creativeTab = new ItemGroup("byg") {

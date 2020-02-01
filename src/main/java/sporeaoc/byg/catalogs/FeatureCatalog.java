@@ -36,7 +36,8 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> BlUETAIGA_TREE = new BlueTaigaTree();
     public static final AbstractTreeFeature<NoFeatureConfig> BLUESMALLTAIGA_TREE = new BlueSmallTaigaTree();
     public static final AbstractTreeFeature<NoFeatureConfig> BLUETALLTAIGA_TREE = new BlueTallTaigaTree();
-
+    public static final AbstractTreeFeature<NoFeatureConfig> SEASONALGIANTTAIGA_TREE = new SeasonalGiantTaigaTree();
+    public static final AbstractTreeFeature<NoFeatureConfig> BLUEGIANTTAIGA_TREE = new BlueGiantTaigaTree();
 
 
 
