@@ -11,10 +11,14 @@ import java.util.List;
 public class ConfigWeightManager {
 
     public static List<ConfigWeight> BIOMES = new ArrayList<>();
+    public static ConfigWeight allliumfields = new ConfigWeight("allliumfields", 10);
     public static ConfigWeight alps = new ConfigWeight("alps", 10);
+    public static ConfigWeight amaranthfields = new ConfigWeight("amaranthfields", 10);
     public static ConfigWeight deciduousforest = new ConfigWeight("deciduousforest", 10);
     public static ConfigWeight dunes = new ConfigWeight("dunes", 10);
     public static ConfigWeight jacarandaforest = new ConfigWeight("jacarandaforest", 10);
+    public static ConfigWeight reddesert = new ConfigWeight("reddesert", 10);
+    public static ConfigWeight reddesertdunes = new ConfigWeight("reddesertdunes", 10);
     public static ConfigWeight redoakforest = new ConfigWeight("redoakforest", 10);
     public static ConfigWeight seasonaldeciduousforest = new ConfigWeight("seasonsaldeciduousforest", 10);
     public static ConfigWeight seasonalforest = new ConfigWeight("seasonalforest", 10);

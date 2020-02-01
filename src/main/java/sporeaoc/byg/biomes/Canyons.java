@@ -12,7 +12,6 @@ import net.minecraft.world.gen.feature.structure.PillagerOutpostConfig;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import sporeaoc.byg.world.BYGBiomeFeatures;
 
 public class Canyons extends Biome {
     static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.BADLANDS, SurfaceBuilder.RED_SAND_WHITE_TERRACOTTA_GRAVEL_CONFIG);
@@ -40,6 +39,7 @@ public class Canyons extends Biome {
         DefaultBiomeFeatures.addIcebergs(this);
         DefaultBiomeFeatures.addIcebergs(this);
         DefaultBiomeFeatures.addCarvers(this);
+        /*BYGBiomeFeatures.bygAddCanyons(this);
         BYGBiomeFeatures.bygAddCanyons(this);
         BYGBiomeFeatures.bygAddCanyons(this);
         BYGBiomeFeatures.bygAddCanyons(this);
@@ -53,8 +53,7 @@ public class Canyons extends Biome {
         BYGBiomeFeatures.bygAddCanyons(this);
         BYGBiomeFeatures.bygAddCanyons(this);
         BYGBiomeFeatures.bygAddCanyons(this);
-        BYGBiomeFeatures.bygAddCanyons(this);
-        BYGBiomeFeatures.bygAddCanyons(this);
+        BYGBiomeFeatures.bygAddCanyons(this);*/
 
 
 

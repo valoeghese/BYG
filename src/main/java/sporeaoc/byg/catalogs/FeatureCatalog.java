@@ -1,12 +1,17 @@
 package sporeaoc.byg.catalogs;
 
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
+import net.minecraft.world.gen.feature.FlowersFeature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
+import net.minecraft.world.gen.feature.structure.Structure;
+import sporeaoc.byg.world.features.flowers.AlliumFieldFlowers;
+import sporeaoc.byg.world.features.flowers.AmaranthFieldFlowers;
+import sporeaoc.byg.world.structures.RedDesertPyramidStructure;
 import sporeaoc.byg.world.tree.TightTrees;
 import sporeaoc.byg.world.tree.TreeTemplate;
-import sporeaoc.byg.world.tree.oakandbirch.*;
 import sporeaoc.byg.world.tree.cypressswamplands.HugeCypressTree;
 import sporeaoc.byg.world.tree.deciduousforest.*;
+import sporeaoc.byg.world.tree.oakandbirch.*;
 import sporeaoc.byg.world.tree.taiga.*;
 
 public class FeatureCatalog {
@@ -38,6 +43,23 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> BLUETALLTAIGA_TREE = new BlueTallTaigaTree();
     public static final AbstractTreeFeature<NoFeatureConfig> SEASONALGIANTTAIGA_TREE = new SeasonalGiantTaigaTree();
     public static final AbstractTreeFeature<NoFeatureConfig> BLUEGIANTTAIGA_TREE = new BlueGiantTaigaTree();
+    public static final FlowersFeature ALLIUMFLOWERS = new AlliumFieldFlowers(NoFeatureConfig::deserialize);
+    public static final FlowersFeature AMARANTHFLOWERS = new AmaranthFieldFlowers(NoFeatureConfig::deserialize);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static final Structure<NoFeatureConfig> REDDESERTPYRAMID = new RedDesertPyramidStructure(NoFeatureConfig::deserialize);
 
 
 
