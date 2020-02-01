@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.features.flowers;
+package sporeaoc.byg.world.flowers;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;

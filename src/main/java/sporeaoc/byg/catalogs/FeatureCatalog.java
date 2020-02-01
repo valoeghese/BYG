@@ -4,8 +4,9 @@ import net.minecraft.world.gen.feature.AbstractTreeFeature;
 import net.minecraft.world.gen.feature.FlowersFeature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import net.minecraft.world.gen.feature.structure.Structure;
-import sporeaoc.byg.world.features.flowers.AlliumFieldFlowers;
-import sporeaoc.byg.world.features.flowers.AmaranthFieldFlowers;
+import sporeaoc.byg.world.flowers.AlliumFieldFlowers;
+import sporeaoc.byg.world.flowers.AmaranthFieldFlowers;
+import sporeaoc.byg.world.flowers.PrairieGrass;
 import sporeaoc.byg.world.structures.RedDesertPyramidStructure;
 import sporeaoc.byg.world.tree.TightTrees;
 import sporeaoc.byg.world.tree.TreeTemplate;
@@ -45,6 +46,7 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> BLUEGIANTTAIGA_TREE = new BlueGiantTaigaTree();
     public static final FlowersFeature ALLIUMFLOWERS = new AlliumFieldFlowers(NoFeatureConfig::deserialize);
     public static final FlowersFeature AMARANTHFLOWERS = new AmaranthFieldFlowers(NoFeatureConfig::deserialize);
+    public static final FlowersFeature PRAIRIEGRASS = new PrairieGrass(NoFeatureConfig::deserialize);
 
 
 
