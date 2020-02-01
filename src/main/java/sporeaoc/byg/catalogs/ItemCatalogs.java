@@ -136,6 +136,7 @@ public class ItemCatalogs {
     public static Item WILLOW_LEAVES;
     public static Item WITCH_HAZEL_LEAVES;
     public static Item YELLOW_BIRCH_LEAVES;
+    public static Item YELLOW_SPRUCE_LEAVES;
 
     //LogItems
     public static Item ASPEN_LOG;

@@ -12,6 +12,7 @@ import net.minecraft.world.gen.feature.structure.PillagerOutpostConfig;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
+import sporeaoc.byg.world.BYGBiomeFeatures;
 
 public class BlueTaiga extends Biome {
         static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
@@ -31,7 +32,7 @@ public class BlueTaiga extends Biome {
             this.addStructure(Feature.PILLAGER_OUTPOST, new PillagerOutpostConfig(0.004D));
             this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
             this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
-           // BYGBiomeFeatures.addBlueTaigaTrees(this);
+            BYGBiomeFeatures.addBlueTaigaTrees(this);
             DefaultBiomeFeatures.addTaigaLargeFerns(this);
             DefaultBiomeFeatures.addCarvers(this);
             DefaultBiomeFeatures.addStructures(this);

@@ -170,6 +170,7 @@ public class BYGItemRegistry {
                 ItemCatalogs.WILLOW_LEAVES = new BlockItem(BlockCatalogs.WILLOW_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WILLOW_LEAVES.getRegistryName()),
                 ItemCatalogs.WITCH_HAZEL_LEAVES = new BlockItem(BlockCatalogs.WITCH_HAZEL_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WITCH_HAZEL_LEAVES.getRegistryName()),
                 ItemCatalogs.YELLOW_BIRCH_LEAVES = new BlockItem(BlockCatalogs.YELLOW_BIRCH_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.YELLOW_BIRCH_LEAVES.getRegistryName()),
+                ItemCatalogs.YELLOW_SPRUCE_LEAVES = new BlockItem(BlockCatalogs.YELLOW_SPRUCE_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.YELLOW_SPRUCE_LEAVES.getRegistryName()),
 
                 //LogItems
                 ItemCatalogs.ASPEN_LOG = new BlockItem(BlockCatalogs.ASPEN_LOG, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_LOG.getRegistryName()),

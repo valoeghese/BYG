@@ -150,7 +150,9 @@ public class BYGBlockRegistry {
                 BlockCatalogs.WHITE_CHERRY_LEAVES = new BlockProperties.BlockLeave("white_cherry_leaves"),
                 BlockCatalogs.WILLOW_LEAVES = new BlockProperties.BlockLeave("willow_leaves"),
                 BlockCatalogs.WITCH_HAZEL_LEAVES = new BlockProperties.BlockLeave("witch_hazel_leaves"),
-                BlockCatalogs.YELLOW_BIRCH_LEAVES = new BlockProperties.BlockLeave("yellow_birch_leaves")
+                BlockCatalogs.YELLOW_BIRCH_LEAVES = new BlockProperties.BlockLeave("yellow_birch_leaves"),
+                BlockCatalogs.YELLOW_SPRUCE_LEAVES = new BlockProperties.BlockLeave("yellow_spruce_leaves")
+
         );
     }
 

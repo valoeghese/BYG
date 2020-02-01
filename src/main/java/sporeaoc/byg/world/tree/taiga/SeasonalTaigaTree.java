@@ -22,7 +22,7 @@ import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 public class SeasonalTaigaTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = Blocks.SPRUCE_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.ORANGE_SPRUCE_LEAVES.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.YELLOW_SPRUCE_LEAVES.getDefaultState();
     private static final BlockState LEAVES3 = BlockCatalogs.RED_SPRUCE_LEAVES.getDefaultState();
 
 
@@ -139,6 +139,7 @@ public class SeasonalTaigaTree extends AbstractTreeFeature<NoFeatureConfig> {
                                             this.leafs(worldIn, posX1 + 1, topTrunkHeight - 5, posZ1, boundsIn, changedBlocks);
                                             this.leafs(worldIn, posX1, topTrunkHeight - 5, posZ1 + 1, boundsIn, changedBlocks);
                                             this.leafs(worldIn, posX1, topTrunkHeight - 5, posZ1 - 1, boundsIn, changedBlocks);
+
                                         } else if (leavesAdder == 2) {
                                             this.leafs(worldIn, posX1 + posXLeafWidth2, topTrunkHeight - 5, posZ1 + posZLeafWidthL2, boundsIn, changedBlocks);
                                             this.leafs(worldIn, posX1 - 1, topTrunkHeight - 6, posZ1, boundsIn, changedBlocks);

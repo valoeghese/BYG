@@ -129,6 +129,7 @@ public class BlockCatalogs {
     public static Block WILLOW_LEAVES;
     public static Block WITCH_HAZEL_LEAVES;
     public static Block YELLOW_BIRCH_LEAVES;
+    public static Block YELLOW_SPRUCE_LEAVES;
 
     //LogBlocks
     public static Block ASPEN_LOG;
