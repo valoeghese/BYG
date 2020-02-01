@@ -25,6 +25,7 @@ public class ConfigWeightManager {
     public static ConfigWeight seasonaldeciduousforest = new ConfigWeight("seasonsaldeciduousforest", 10);
     public static ConfigWeight seasonalforest = new ConfigWeight("seasonalforest", 10);
     public static ConfigWeight seasonalbirchforest = new ConfigWeight("seasonalbirchforest", 10);
+    public static ConfigWeight shrublands = new ConfigWeight("shrublands", 10);
     //public static ConfigBiomeColors testbiome = new ConfigBiomeColors("testbiome", 10);
     public static ConfigWeight seasonalgianttaiga = new ConfigWeight("seasonalgianttaiga", 10);
     public static ConfigWeight seasonaltaiga = new ConfigWeight("seasonaltaiga", 10);
