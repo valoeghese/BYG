@@ -101,8 +101,8 @@ public class BYGBlockRegistry {
         event.getRegistry().registerAll(
 
                 BlockCatalogs.PEAT_GRASSBLOCK = new BlockProperties.BlockGrass("peat_grass"),
-                BlockCatalogs.MUD_BLOCK = new BlockProperties.BlockGrass("mud_block"),
-                BlockCatalogs.MUD_BRICKS = new BlockProperties.BlockGrass("mud_bricks")
+                BlockCatalogs.MUD_BLOCK = new BlockProperties.BlockDirt("mud_block"),
+                BlockCatalogs.MUD_BRICKS = new BlockProperties.BlockStone("mud_bricks")
 
         );
     }
