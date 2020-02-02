@@ -42,6 +42,8 @@ public class BYGFeatureRegistry {
                 FeatureCatalog.BLUETALLTAIGA_TREE.setRegistryName("bluetall_taiga"),
                 FeatureCatalog.SEASONALGIANTTAIGA_TREE.setRegistryName("seasonalgiant_taiga"),
                 FeatureCatalog.BLUEGIANTTAIGA_TREE.setRegistryName("bluegiant_taiga"),
+                FeatureCatalog.BOREALFOREST_TREE.setRegistryName("boreal_forest"),
+
                 FeatureCatalog.SHRUB.setRegistryName("shrub"),
                 FeatureCatalog.PRAIRIEGRASS.setRegistryName("prairie_grass")
 

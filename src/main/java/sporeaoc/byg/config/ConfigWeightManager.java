@@ -14,6 +14,8 @@ public class ConfigWeightManager {
     public static ConfigWeight allliumfields = new ConfigWeight("allliumfields", 10);
     public static ConfigWeight alps = new ConfigWeight("alps", 10);
     public static ConfigWeight amaranthfields = new ConfigWeight("amaranthfields", 10);
+    public static ConfigWeight borealforest = new ConfigWeight("borealforest", 10);
+
     public static ConfigWeight deciduousforest = new ConfigWeight("deciduousforest", 10);
     public static ConfigWeight dunes = new ConfigWeight("dunes", 10);
     public static ConfigWeight grasslandplateau = new ConfigWeight("grasslandplateau", 10);
