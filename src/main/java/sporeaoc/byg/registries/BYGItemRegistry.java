@@ -9,8 +9,6 @@ import sporeaoc.byg.BYG;
 import sporeaoc.byg.catalogs.BlockCatalogs;
 import sporeaoc.byg.catalogs.ItemCatalogs;
 
-import java.util.Objects;
-
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BYGItemRegistry {
 
@@ -26,9 +24,9 @@ public class BYGItemRegistry {
         Item.Properties tab = new Item.Properties().group(BYG.Init.creativeTab);
 
         event.getRegistry().registerAll(
-                //PlankItems
 
-                new BlockItem(BlockCatalogs.ASPEN_PLANKS, tab).setRegistryName(Objects.requireNonNull(BlockCatalogs.ASPEN_PLANKS.getRegistryName())),
+                ItemCatalogs.BYG_LOGO = new Item((new Item.Properties())).setRegistryName("byg_logo"),
+                //PlankItems
 
                 //ItemCatalogs.ASPEN_PLANKS = new BlockItem(BlockCatalogs.ASPEN_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_PLANKS.getRegistryName()),
                 ItemCatalogs.BAOBAB_PLANKS = new BlockItem(BlockCatalogs.BAOBAB_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BAOBAB_PLANKS.getRegistryName()),
