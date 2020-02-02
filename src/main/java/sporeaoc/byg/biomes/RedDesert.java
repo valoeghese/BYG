@@ -4,6 +4,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftConfig;
@@ -37,4 +38,8 @@ public class RedDesert extends Biome {
 
             this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.HUSK, 160, 10, 10));
         }
+    @Override
+    public Biome getRiver() {
+        return Biomes.RIVER;
+    }
     }

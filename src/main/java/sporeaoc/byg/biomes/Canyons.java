@@ -3,6 +3,7 @@ package sporeaoc.byg.biomes;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
@@ -63,6 +64,10 @@ public class Canyons extends Biome {
         this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.STRAY, 160, 10, 10));
 
 
+    }
+    @Override
+    public Biome getRiver() {
+        return Biomes.RIVER;
     }
 }
 

@@ -2,6 +2,7 @@ package sporeaoc.byg.biomes;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.Feature;
@@ -12,6 +13,8 @@ import net.minecraft.world.gen.feature.structure.PillagerOutpostConfig;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import sporeaoc.byg.world.BYGBiomeFeatures;
 
 public class Prairie extends Biome {
@@ -21,7 +24,7 @@ public class Prairie extends Biome {
     static final double DEPTH = 0.1125F;
     static final double SCALE = 0.05F;
     static final float TEMPERATURE = 0.8F;
-    static final float DOWNFALL = 0.4F;
+    static final float DOWNFALL = 0.2F;
     static final int WATER_COLOR = 4159204;
     static final int WATER_FOG_COLOR = 329011;
     static final String PARENT = null;
@@ -59,4 +62,19 @@ public class Prairie extends Biome {
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.WITCH, 5, 1, 1));
 
     }
+    @Override
+    public Biome getRiver() {
+        return this;
+    }
+
+    @OnlyIn(Dist.CLIENT)
+    public int getGrassColor(BlockPos pos) {
+
+        return 16765803;
+    }
+    @OnlyIn(Dist.CLIENT)
+    public int getFoliageColor(BlockPos pos) {
+        return 7048739;
+    }
+
 }

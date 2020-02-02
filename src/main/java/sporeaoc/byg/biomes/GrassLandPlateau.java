@@ -3,6 +3,7 @@ package sporeaoc.byg.biomes;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
@@ -18,7 +19,7 @@ public class GrassLandPlateau extends Biome {
     static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
     static final RainType PRECIPATATION = RainType.RAIN;
     static final Category CATEGORY = Category.PLAINS;
-    static final double DEPTH = 2.0F;
+    static final double DEPTH = 2.2F;
     static final double SCALE = 0.0F;
     static final float TEMPERATURE = 0.7F;
     static final float DOWNFALL = 0.4F;
@@ -60,5 +61,9 @@ public class GrassLandPlateau extends Biome {
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.ENDERMAN, 10, 1, 4));
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.WITCH, 5, 1, 1));
 
+    }
+    @Override
+    public Biome getRiver() {
+        return Biomes.RIVER;
     }
 }

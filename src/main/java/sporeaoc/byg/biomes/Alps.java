@@ -42,4 +42,8 @@ public class Alps extends Biome {
 
 
         }
+    @Override
+    public Biome getRiver() {
+        return this;
+    }
     }

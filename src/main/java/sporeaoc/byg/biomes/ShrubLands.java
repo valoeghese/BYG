@@ -62,6 +62,11 @@ public class ShrubLands extends Biome {
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.WITCH, 5, 1, 1));
 
     }
+    @Override
+    public Biome getRiver() {
+        return this;
+    }
+
     @OnlyIn(Dist.CLIENT)
     public int getGrassColor(BlockPos pos) {
 
