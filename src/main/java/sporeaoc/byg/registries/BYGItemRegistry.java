@@ -72,6 +72,8 @@ public class BYGItemRegistry {
                 ItemCatalogs.WILLOW_FENCE = new BlockItem(BlockCatalogs.WILLOW_FENCE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WILLOW_FENCE.getRegistryName()),
                 ItemCatalogs.WITCH_HAZEL_FENCE = new BlockItem(BlockCatalogs.WITCH_HAZEL_FENCE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WITCH_HAZEL_FENCE.getRegistryName()),
                 ItemCatalogs.ZELKOVA_FENCE = new BlockItem(BlockCatalogs.ZELKOVA_FENCE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_FENCE.getRegistryName()),
+                //GrassItems
+                ItemCatalogs.PEAT_GRASSBLOCK = new BlockItem(BlockCatalogs.PEAT_GRASSBLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PEAT_GRASSBLOCK.getRegistryName()),
 
                 //MushroomItems
                 ItemCatalogs.BLACK_PUFF = new BlockItem(BlockCatalogs.BLACK_PUFF, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLACK_PUFF.getRegistryName()),
@@ -79,9 +81,9 @@ public class BYGItemRegistry {
                 ItemCatalogs.WOOD_BLEWIT = new BlockItem(BlockCatalogs.WOOD_BLEWIT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WOOD_BLEWIT.getRegistryName()),
 
                 //OreItems
-                /*ItemCatalogs.LATHARIUM_ORE = new BlockItem(BlockCatalogs.LATHARIUM_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.LATHARIUM_ORE.getRegistryName()),
+                //ItemCatalogs.LATHARIUM_ORE = new BlockItem(BlockCatalogs.LATHARIUM_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.LATHARIUM_ORE.getRegistryName()),
                 ItemCatalogs.PENDORITE_ORE = new BlockItem(BlockCatalogs.PENDORITE_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PENDORITE_ORE.getRegistryName()),
-                ItemCatalogs.TAMRELITE_ORE = new BlockItem(BlockCatalogs.TAMRELITE_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.TAMRELITE_ORE.getRegistryName()),*/
+                ItemCatalogs.TAMRELITE_ORE = new BlockItem(BlockCatalogs.TAMRELITE_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.TAMRELITE_ORE.getRegistryName()),
 
                 //StoneItems
                 ItemCatalogs.DACITE = new BlockItem(BlockCatalogs.DACITE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.DACITE.getRegistryName()),

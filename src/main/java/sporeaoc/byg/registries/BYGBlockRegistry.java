@@ -100,7 +100,7 @@ public class BYGBlockRegistry {
     public static void registerGrassBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
 
-                BlockCatalogs.PEAT_GRASSBLOCK = new BlockProperties.BlockGrass("peat_grassblock")
+                BlockCatalogs.PEAT_GRASSBLOCK = new BlockProperties.BlockGrass("peat_grass")
         );
     }
 
@@ -214,14 +214,14 @@ public class BYGBlockRegistry {
     }
 
     //OreBlocks
-    /*@SubscribeEvent
+    @SubscribeEvent
     public static void registerOreBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
-                BlockCatalogs.LATHARIUM_ORE = new BlockProperties.BlockOre("latharium_ore"),
+                //BlockCatalogs.LATHARIUM_ORE = new BlockProperties.BlockOre("latharium_ore"),
                 BlockCatalogs.PENDORITE_ORE = new BlockProperties.BlockOre("pendorite_ore"),
                 BlockCatalogs.TAMRELITE_ORE = new BlockProperties.BlockOre("tamrelite_ore")
         );
-    }*/
+    }
 
     //StoneBlocks
     @SubscribeEvent

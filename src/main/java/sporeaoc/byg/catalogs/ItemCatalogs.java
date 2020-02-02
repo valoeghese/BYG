@@ -96,6 +96,10 @@ public class ItemCatalogs {
     public static Item MAGENTA_AMARANTH;
     public static Item PURPLE_AMARANTH;
 
+    //Grass Items
+    public static Item PEAT_GRASSBLOCK;
+
+
     //LeaveItems
     public static Item BAOBAB_LEAVES;
     public static Item BLOOMING_WITCH_HAZEL_LEAVES;

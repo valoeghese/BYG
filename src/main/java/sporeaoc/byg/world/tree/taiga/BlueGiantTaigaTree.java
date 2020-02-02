@@ -333,7 +333,7 @@ public class BlueGiantTaigaTree extends AbstractTreeFeature<NoFeatureConfig> {
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
-            int distance = 4;
+            int distance = 2;
             if (yOffset == -5) {
                 distance = 0;
             }

@@ -43,11 +43,10 @@ public class BYGFeatureRegistry {
                 FeatureCatalog.SEASONALGIANTTAIGA_TREE.setRegistryName("seasonalgiant_taiga"),
                 FeatureCatalog.BLUEGIANTTAIGA_TREE.setRegistryName("bluegiant_taiga"),
                 FeatureCatalog.BOREALFOREST_TREE.setRegistryName("boreal_forest"),
+                FeatureCatalog.BOREALFOREST_TREE2.setRegistryName("boreal_forest2"),
 
                 FeatureCatalog.SHRUB.setRegistryName("shrub"),
                 FeatureCatalog.PRAIRIEGRASS.setRegistryName("prairie_grass")
-
-
         );
         BYG.LOGGER.info("All BYG features registered!");
 

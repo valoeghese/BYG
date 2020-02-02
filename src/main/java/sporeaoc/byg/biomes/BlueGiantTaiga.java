@@ -16,7 +16,7 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import sporeaoc.byg.world.BYGBiomeFeatures;
 
 public class BlueGiantTaiga extends Biome {
-        static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
+        static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.GIANT_TREE_TAIGA, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
         static final RainType PRECIPATATION = RainType.RAIN;
         static final Category CATEGORY = Category.TAIGA;
         static final double DEPTH = 0.2F;
