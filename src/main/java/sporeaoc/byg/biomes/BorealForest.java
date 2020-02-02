@@ -24,7 +24,7 @@ public class BorealForest extends Biome {
         static final Category CATEGORY = Category.FOREST;
         static final double DEPTH = 0.35F;
         static final double SCALE = 0.1F;
-        static final float TEMPERATURE = 0.7F;
+        static final float TEMPERATURE = 1.0F;
         static final float DOWNFALL = 0.5F;
         static final int WATER_COLOR = 0xFF6F8A31;
         static final int WATER_FOG_COLOR = 329011;
