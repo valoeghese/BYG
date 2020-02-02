@@ -31,6 +31,9 @@ public class ConfigWeightManager {
     public static ConfigWeight seasonaltaiga = new ConfigWeight("seasonaltaiga", 10);
     public static ConfigWeight giantbluetaiga = new ConfigWeight("bluegianttaiga", 10);
     public static ConfigWeight bluetaiga = new ConfigWeight("bluetaiga", 10);
+    public static ConfigWeight snowybluetaiga = new ConfigWeight("snowybluetaiga", 10);
+    public static ConfigWeight snowygiantbluetaiga = new ConfigWeight("snowybluegianttaiga", 10);
+
 
 
 
