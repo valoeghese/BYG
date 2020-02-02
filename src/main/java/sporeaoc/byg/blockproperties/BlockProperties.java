@@ -28,6 +28,27 @@ public  class BlockProperties {
             setRegistryName(registryName);
         }
     }
+    public static class TallGrass extends TallGrassBlock {
+        public TallGrass(String registryName) {
+            super(Block.Properties.create(Material.TALL_PLANTS)
+                    .sound(SoundType.PLANT)
+                    .doesNotBlockMovement()
+                    .hardnessAndResistance(0.0f)
+
+            );
+            setRegistryName(registryName);
+        }
+    }
+    public static class BlockGrass extends GrassBlock {
+        public BlockGrass(String registryName) {
+            super(Block.Properties.create(Material.EARTH)
+                    .sound(SoundType.GROUND)
+                    .hardnessAndResistance(0.2f)
+                    .tickRandomly()
+            );
+            setRegistryName(registryName);
+        }
+    }
     public static class BlockLeave extends LeavesBlock {
         public BlockLeave(String registryName) {
             super(Block.Properties.create(Material.LEAVES)

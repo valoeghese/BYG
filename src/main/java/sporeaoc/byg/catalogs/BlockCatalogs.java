@@ -1,7 +1,6 @@
 package sporeaoc.byg.catalogs;
 
 import net.minecraft.block.Block;
-import net.minecraftforge.common.IPlantable;
 
 public class BlockCatalogs {
 
@@ -88,6 +87,10 @@ public class BlockCatalogs {
     public static Block ORANGE_AMARANTH;
     public static Block MAGENTA_AMARANTH;
     public static Block PURPLE_AMARANTH;
+
+    //GrassBlocks
+    public static Block PEAT_GRASSBLOCK;
+
 
     //LeaveBlocks
     public static Block BAOBAB_LEAVES;

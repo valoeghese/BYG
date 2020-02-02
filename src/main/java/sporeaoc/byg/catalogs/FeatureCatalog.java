@@ -8,6 +8,7 @@ import sporeaoc.byg.world.flowers.AlliumFieldFlowers;
 import sporeaoc.byg.world.flowers.AmaranthFieldFlowers;
 import sporeaoc.byg.world.flowers.PrairieGrass;
 import sporeaoc.byg.world.structures.RedDesertPyramidStructure;
+import sporeaoc.byg.world.tree.Shrub;
 import sporeaoc.byg.world.tree.TightTrees;
 import sporeaoc.byg.world.tree.TreeTemplate;
 import sporeaoc.byg.world.tree.cypressswamplands.HugeCypressTree;
@@ -44,6 +45,8 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> BLUETALLTAIGA_TREE = new BlueTallTaigaTree();
     public static final AbstractTreeFeature<NoFeatureConfig> SEASONALGIANTTAIGA_TREE = new SeasonalGiantTaigaTree();
     public static final AbstractTreeFeature<NoFeatureConfig> BLUEGIANTTAIGA_TREE = new BlueGiantTaigaTree();
+    public static final AbstractTreeFeature<NoFeatureConfig> SHRUB = new Shrub();
+
     public static final FlowersFeature ALLIUMFLOWERS = new AlliumFieldFlowers(NoFeatureConfig::deserialize);
     public static final FlowersFeature AMARANTHFLOWERS = new AmaranthFieldFlowers(NoFeatureConfig::deserialize);
     public static final FlowersFeature PRAIRIEGRASS = new PrairieGrass(NoFeatureConfig::deserialize);

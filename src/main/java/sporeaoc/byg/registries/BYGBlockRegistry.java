@@ -96,6 +96,13 @@ public class BYGBlockRegistry {
                 BlockCatalogs.ZELKOVA_FENCE = new BlockProperties.BlockFence("zelkova_fence")
         );
     }
+    @SubscribeEvent
+    public static void registerGrassBlocks(final RegistryEvent.Register<Block> event) {
+        event.getRegistry().registerAll(
+
+                BlockCatalogs.PEAT_GRASSBLOCK = new BlockProperties.BlockGrass("peat_grassblock")
+        );
+    }
 
     // Sapling Blocks
     @SubscribeEvent
@@ -301,6 +308,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.PINK_ANEMONE = new BlockProperties.BlockFlower("pink_anemone"),
                 BlockCatalogs.PINK_DAFFODIL = new BlockProperties.BlockFlower("pink_daffodil"),
                 BlockCatalogs.PINK_ORCHID = new BlockProperties.BlockFlower("pink_orchid"),
+                BlockCatalogs.PRAIRIE_GRASS = new BlockProperties.TallGrass("prairie_grass"),
                 BlockCatalogs.PROTEA_FLOWER = new BlockProperties.BlockFlower("protea_flower"),
                 BlockCatalogs.PURPLE_AMARANTH = new BlockProperties.BlockFlower("purple_amaranth"),
                 BlockCatalogs.PURPLE_ORCHID = new BlockProperties.BlockFlower("purple_orchid"),

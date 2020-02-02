@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree.deciduousforest;
+package sporeaoc.byg.world.tree;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
@@ -10,7 +10,6 @@ import net.minecraft.world.gen.IWorldGenerationBaseReader;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
-import sporeaoc.byg.catalogs.BlockCatalogs;
 
 import java.util.Random;
 import java.util.Set;
@@ -19,24 +18,19 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class DeciduousShrub extends AbstractTreeFeature<NoFeatureConfig> {
+public class Shrub extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
     private static final BlockState LEAVES = Blocks.OAK_LEAVES.getDefaultState();
-    private static final BlockState LEAVES2 = BlockCatalogs.RED_OAK_LEAVES.getDefaultState();
-    private static final BlockState LEAVES3 = BlockCatalogs.BROWN_OAK_LEAVES.getDefaultState();
-    private static final BlockState LEAVES4 = BlockCatalogs.ORANGE_OAK_LEAVES.getDefaultState();
-    private static final BlockState LEAVES5 = BlockCatalogs.YELLOW_BIRCH_LEAVES.getDefaultState();
 
 
 
 
-    public DeciduousShrub(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public Shrub(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public DeciduousShrub() {
+    public Shrub() {
         super(null, true);
     } //
 
@@ -159,7 +153,7 @@ public class DeciduousShrub extends AbstractTreeFeature<NoFeatureConfig> {
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
-            int distance = 0;
+            int distance = 5;
             if (yOffset == -5) {
                 distance = 0;
             }
@@ -192,34 +186,6 @@ public class DeciduousShrub extends AbstractTreeFeature<NoFeatureConfig> {
         BlockPos blockpos = new BlockPos(x, y, z);
         if (isAir(reader, blockpos)) {
             this.setLogState(blockPos, reader, blockpos, LEAVES, boundingBox);
-        }
-
-    }
-    private void leafs2(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
-        BlockPos blockpos = new BlockPos(x, y, z);
-        if (isAir(reader, blockpos)) {
-            this.setLogState(blockPos, reader, blockpos, LEAVES2, boundingBox);
-        }
-
-    }
-    private void leafs3(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
-        BlockPos blockpos = new BlockPos(x, y, z);
-        if (isAir(reader, blockpos)) {
-            this.setLogState(blockPos, reader, blockpos, LEAVES3, boundingBox);
-        }
-
-    }
-    private void leafs4(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
-        BlockPos blockpos = new BlockPos(x, y, z);
-        if (isAir(reader, blockpos)) {
-            this.setLogState(blockPos, reader, blockpos, LEAVES4, boundingBox);
-        }
-
-    }
-    private void leafs5(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
-        BlockPos blockpos = new BlockPos(x, y, z);
-        if (isAir(reader, blockpos)) {
-            this.setLogState(blockPos, reader, blockpos, LEAVES5, boundingBox);
         }
 
     }

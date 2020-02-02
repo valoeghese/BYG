@@ -232,6 +232,7 @@ public class BYGItemRegistry {
                 ItemCatalogs.PINK_ANEMONE = new BlockItem(BlockCatalogs.PINK_ANEMONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PINK_ANEMONE.getRegistryName()),
                 ItemCatalogs.PINK_DAFFODIL = new BlockItem(BlockCatalogs.PINK_DAFFODIL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PINK_DAFFODIL.getRegistryName()),
                 ItemCatalogs.PINK_ORCHID = new BlockItem(BlockCatalogs.PINK_ORCHID, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PINK_ORCHID.getRegistryName()),
+                ItemCatalogs.PRAIRIE_GRASS = new BlockItem(BlockCatalogs.PRAIRIE_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PRAIRIE_GRASS.getRegistryName()),
                 ItemCatalogs.PROTEA_FLOWER = new BlockItem(BlockCatalogs.PROTEA_FLOWER, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PROTEA_FLOWER.getRegistryName()),
                 ItemCatalogs.PURPLE_ORCHID = new BlockItem(BlockCatalogs.PURPLE_ORCHID, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PURPLE_ORCHID.getRegistryName()),
                 ItemCatalogs.PURPLE_SAGE = new BlockItem(BlockCatalogs.PURPLE_SAGE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PURPLE_SAGE.getRegistryName()),

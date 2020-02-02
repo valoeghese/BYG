@@ -2,6 +2,7 @@ package sporeaoc.byg.biomes;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.Feature;
@@ -12,6 +13,8 @@ import net.minecraft.world.gen.feature.structure.PillagerOutpostConfig;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import sporeaoc.byg.world.BYGBiomeFeatures;
 
 public class ShrubLands extends Biome {
@@ -59,4 +62,14 @@ public class ShrubLands extends Biome {
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.WITCH, 5, 1, 1));
 
     }
+    @OnlyIn(Dist.CLIENT)
+    public int getGrassColor(BlockPos pos) {
+
+        return 16765803;
+    }
+    @OnlyIn(Dist.CLIENT)
+    public int getFoliageColor(BlockPos pos) {
+        return 7048739;
+    }
+
 }
