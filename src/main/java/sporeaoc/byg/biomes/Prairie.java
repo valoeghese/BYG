@@ -70,7 +70,7 @@ public class Prairie extends Biome {
     @OnlyIn(Dist.CLIENT)
     public int getGrassColor(BlockPos pos) {
 
-        return 16765803;
+        return -5916870;
     }
     @OnlyIn(Dist.CLIENT)
     public int getFoliageColor(BlockPos pos) {
