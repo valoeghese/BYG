@@ -97,10 +97,13 @@ public class BYGBlockRegistry {
         );
     }
     @SubscribeEvent
-    public static void registerGrassBlocks(final RegistryEvent.Register<Block> event) {
+    public static void registerDirtBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
 
-                BlockCatalogs.PEAT_GRASSBLOCK = new BlockProperties.BlockGrass("peat_grass")
+                BlockCatalogs.PEAT_GRASSBLOCK = new BlockProperties.BlockGrass("peat_grass"),
+                BlockCatalogs.MUD_BLOCK = new BlockProperties.BlockGrass("mud_block"),
+                BlockCatalogs.MUD_BRICKS = new BlockProperties.BlockGrass("mud_bricks")
+
         );
     }
 

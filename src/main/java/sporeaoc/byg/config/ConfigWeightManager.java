@@ -15,12 +15,12 @@ public class ConfigWeightManager {
     public static ConfigWeight alps = new ConfigWeight("alps", 10);
     public static ConfigWeight amaranthfields = new ConfigWeight("amaranthfields", 10);
     public static ConfigWeight borealforest = new ConfigWeight("borealforest", 10);
-
     public static ConfigWeight deciduousforest = new ConfigWeight("deciduousforest", 10);
     public static ConfigWeight dunes = new ConfigWeight("dunes", 10);
     public static ConfigWeight grasslandplateau = new ConfigWeight("grasslandplateau", 10);
     public static ConfigWeight jacarandaforest = new ConfigWeight("jacarandaforest", 10);
     public static ConfigWeight prairie = new ConfigWeight("prairie", 10);
+    public static ConfigWeight quagmire = new ConfigWeight("quagmire", 10);
     public static ConfigWeight reddesert = new ConfigWeight("reddesert", 10);
     public static ConfigWeight reddesertdunes = new ConfigWeight("reddesertdunes", 10);
     public static ConfigWeight redoakforest = new ConfigWeight("redoakforest", 10);

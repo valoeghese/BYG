@@ -88,8 +88,10 @@ public class BlockCatalogs {
     public static Block MAGENTA_AMARANTH;
     public static Block PURPLE_AMARANTH;
 
-    //GrassBlocks
+    //Dirt Blocks
     public static Block PEAT_GRASSBLOCK;
+    public static Block MUD_BLOCK;
+    public static Block MUD_BRICKS;
 
 
     //LeaveBlocks

@@ -1,0 +1,29 @@
+package sporeaoc.byg.world.surfacebuilders;
+
+import com.mojang.datafixers.Dynamic;
+import net.minecraft.block.BlockState;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.chunk.IChunk;
+import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
+import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
+import sporeaoc.byg.catalogs.BYGSurfaceBuilderCatalog;
+
+import java.util.Random;
+import java.util.function.Function;
+
+public class QuagmireSB extends SurfaceBuilder<SurfaceBuilderConfig> {
+    public QuagmireSB(Function<Dynamic<?>, ? extends SurfaceBuilderConfig> p_i51312_1_) {
+        super(p_i51312_1_);
+    }
+
+    public void buildSurface(Random random, IChunk chunkIn, Biome biomeIn, int x, int z, int startHeight, double noise, BlockState defaultBlock, BlockState defaultFluid, int seaLevel, long seed, SurfaceBuilderConfig config) {
+        if (noise > 1.75D) {
+            SurfaceBuilder.DEFAULT.buildSurface(random, chunkIn, biomeIn, x, z, startHeight, noise, defaultBlock, defaultFluid, seaLevel, seed, BYGSurfaceBuilderCatalog.PEAT_DIRT);
+        } else if (noise > -0.95D) {
+            SurfaceBuilder.DEFAULT.buildSurface(random, chunkIn, biomeIn, x, z, startHeight, noise, defaultBlock, defaultFluid, seaLevel, seed, BYGSurfaceBuilderCatalog.QUAGMIREMUD);
+        } else {
+            SurfaceBuilder.DEFAULT.buildSurface(random, chunkIn, biomeIn, x, z, startHeight, noise, defaultBlock, defaultFluid, seaLevel, seed, BYGSurfaceBuilderCatalog.QUAGMIREMUDBRICK);
+        }
+
+    }
+}
