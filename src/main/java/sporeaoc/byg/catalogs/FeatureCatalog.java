@@ -50,7 +50,6 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> BOREALFOREST_TREE = new BorealForestTree1();
     public static final AbstractTreeFeature<NoFeatureConfig> BOREALFOREST_TREE2 = new BorealForestTree2();
 
-
     public static final AbstractTreeFeature<NoFeatureConfig> SHRUB = new Shrub();
 
     public static final FlowersFeature ALLIUMFLOWERS = new AlliumFieldFlowers(NoFeatureConfig::deserialize);
