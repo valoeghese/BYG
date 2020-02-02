@@ -79,9 +79,9 @@ public class BYGItemRegistry {
                 ItemCatalogs.WOOD_BLEWIT = new BlockItem(BlockCatalogs.WOOD_BLEWIT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WOOD_BLEWIT.getRegistryName()),
 
                 //OreItems
-                ItemCatalogs.LATHARIUM_ORE = new BlockItem(BlockCatalogs.LATHARIUM_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.LATHARIUM_ORE.getRegistryName()),
+                /*ItemCatalogs.LATHARIUM_ORE = new BlockItem(BlockCatalogs.LATHARIUM_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.LATHARIUM_ORE.getRegistryName()),
                 ItemCatalogs.PENDORITE_ORE = new BlockItem(BlockCatalogs.PENDORITE_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PENDORITE_ORE.getRegistryName()),
-                ItemCatalogs.TAMRELITE_ORE = new BlockItem(BlockCatalogs.TAMRELITE_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.TAMRELITE_ORE.getRegistryName()),
+                ItemCatalogs.TAMRELITE_ORE = new BlockItem(BlockCatalogs.TAMRELITE_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.TAMRELITE_ORE.getRegistryName()),*/
 
                 //StoneItems
                 ItemCatalogs.DACITE = new BlockItem(BlockCatalogs.DACITE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.DACITE.getRegistryName()),

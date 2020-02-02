@@ -42,6 +42,7 @@ public class ShrubLands extends Biome {
         DefaultBiomeFeatures.addStoneVariants(this);
         DefaultBiomeFeatures.addOres(this);
         DefaultBiomeFeatures.addSedimentDisks(this);
+        DefaultBiomeFeatures.addGrass(this);
         DefaultBiomeFeatures.addMushrooms(this);
         BYGBiomeFeatures.addReeds(this);
         DefaultBiomeFeatures.addFreezeTopLayer(this);
@@ -70,7 +71,7 @@ public class ShrubLands extends Biome {
     @OnlyIn(Dist.CLIENT)
     public int getGrassColor(BlockPos pos) {
 
-        return 16765803;
+        return 9874031;
     }
     @OnlyIn(Dist.CLIENT)
     public int getFoliageColor(BlockPos pos) {
