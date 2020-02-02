@@ -10,11 +10,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import sporeaoc.byg.catalogs.ItemCatalogs;
 import sporeaoc.byg.config.ConfigWeightManager;
+import sporeaoc.byg.worldtype.BYGWorldType;
 
 @Mod("byg")
 public class BYG {
     public static Logger LOGGER = LogManager.getLogger();
-
     public static final String MOD_ID = "byg";
     public static final Init setup = new Init();
 
@@ -39,6 +39,7 @@ public class BYG {
 
     private void setup(final FMLCommonSetupEvent event) {
         setup.init();
-    }
+        new BYGWorldType("example");
 
+    }
 }
