@@ -32,7 +32,7 @@ public class ConfigOreStoneGenerationManager {
         COMMON_CONFIG = COMMON_BUILDER.build();
     }
 
-    public static void LoadConfig2(ForgeConfigSpec spec2, Path path2) {
+    public static void LoadConfig(ForgeConfigSpec spec2, Path path2) {
         CommentedFileConfig configData2 = CommentedFileConfig.builder(path2).sync().autosave().writingMode(WritingMode.REPLACE).build();
         configData2.load();
         spec2.setConfig(configData2);

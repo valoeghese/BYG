@@ -9,6 +9,7 @@ import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import sporeaoc.byg.catalogs.ItemCatalogs;
+import sporeaoc.byg.config.oregen.ConfigOreStoneGenerationManager;
 import sporeaoc.byg.config.weight.ConfigWeightManager;
 
 @Mod("byg")
@@ -21,8 +22,10 @@ public class BYG {
     public BYG() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
+        ConfigOreStoneGenerationManager.LoadConfig(ConfigOreStoneGenerationManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-weights-common.toml"));
         ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-weights-common.toml"));
     }
+
     public static class Init {
         public static ItemGroup creativeTab = new ItemGroup("byg") {
             @Override
