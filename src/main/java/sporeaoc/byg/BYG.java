@@ -22,9 +22,8 @@ public class BYG {
     public BYG() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
-        ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "weights-common.toml"));
-        //ConfigBiomeColorsManager.LoadConfig(ConfigBiomeColorsManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "biome-colors-common.toml"));
-        ConfigOreStoneGenerationManager.LoadConfig(ConfigOreStoneGenerationManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "ores-stones-common.toml"));
+        ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "=weights-common.toml"));
+        ConfigOreStoneGenerationManager.LoadConfig2(ConfigOreStoneGenerationManager.COMMON_CONFIG2, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-ores-stones-common.toml"));
 
     }
     public static class Init {
@@ -41,6 +40,5 @@ public class BYG {
 
     private void setup(final FMLCommonSetupEvent event) {
         setup.init();
-
     }
 }

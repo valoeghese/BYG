@@ -20,8 +20,6 @@ public class ConfigOreStoneGenerationManager {
     public static ConfigStoneGeneration SCORIA_STONE = new ConfigStoneGeneration("dacite", 25, 10, 256);
     public static ConfigStoneGeneration SOAPSTONE = new ConfigStoneGeneration("dacite", 25, 10, 256);
 
-
-
     public static ForgeConfigSpec COMMON_CONFIG;
     private static ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
 
@@ -29,16 +27,14 @@ public class ConfigOreStoneGenerationManager {
         ORES.forEach(o -> o.apply(COMMON_BUILDER));
         COMMON_CONFIG = COMMON_BUILDER.build();
     }
-    public static ForgeConfigSpec COMMON_CONFIG2;
-    private static ForgeConfigSpec.Builder COMMON_BUILDER2 = new ForgeConfigSpec.Builder();
     static {
-        STONES.forEach(o -> o.apply(COMMON_BUILDER2));
-        COMMON_CONFIG2 = COMMON_BUILDER2.build();
+        STONES.forEach(o -> o.apply(COMMON_BUILDER));
+        COMMON_CONFIG = COMMON_BUILDER.build();
     }
 
-    public static void LoadConfig(ForgeConfigSpec spec, Path path) {
-        CommentedFileConfig configData = CommentedFileConfig.builder(path).sync().autosave().writingMode(WritingMode.REPLACE).build();
-        configData.load();
-        spec.setConfig(configData);
+    public static void LoadConfig2(ForgeConfigSpec spec2, Path path2) {
+        CommentedFileConfig configData2 = CommentedFileConfig.builder(path2).sync().autosave().writingMode(WritingMode.REPLACE).build();
+        configData2.load();
+        spec2.setConfig(configData2);
     }
 }

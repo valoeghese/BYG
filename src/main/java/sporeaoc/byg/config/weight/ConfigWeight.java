@@ -33,4 +33,5 @@ public class ConfigWeight {
         configWeight = builder.comment("weight of the biome (set to 0 to disable generation). \ndefault is 10").defineInRange("weight", weight, 0, 256);
         builder.pop();
     }
+
 }
