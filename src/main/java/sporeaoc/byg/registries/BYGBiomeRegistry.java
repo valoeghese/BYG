@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.IForgeRegistry;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.catalogs.BiomeCatalog;
-import sporeaoc.byg.config.ConfigWeightManager;
+import sporeaoc.byg.config.weight.ConfigWeightManager;
 
 @Mod.EventBusSubscriber(modid = BYG.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BYGBiomeRegistry {

@@ -220,7 +220,7 @@ public class BYGBlockRegistry {
     @SubscribeEvent
     public static void registerOreBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
-                //BlockCatalogs.LATHARIUM_ORE = new BlockProperties.BlockOre("latharium_ore"),
+                BlockCatalogs.LATHARIUM_ORE = new BlockProperties.BlockOre("latharium_ore"),
                 BlockCatalogs.PENDORITE_ORE = new BlockProperties.BlockOre("pendorite_ore"),
                 BlockCatalogs.TAMRELITE_ORE = new BlockProperties.BlockOre("tamrelite_ore")
         );
