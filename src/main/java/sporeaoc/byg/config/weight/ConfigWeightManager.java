@@ -1,4 +1,4 @@
-package sporeaoc.byg.config;
+package sporeaoc.byg.config.weight;
 
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import com.electronwill.nightconfig.core.io.WritingMode;
@@ -36,6 +36,17 @@ public class ConfigWeightManager {
     public static ConfigWeight snowybluetaiga = new ConfigWeight("snowybluetaiga", 10);
     public static ConfigWeight snowygiantbluetaiga = new ConfigWeight("snowybluegianttaiga", 10);
 
+//    public static List<ConfigOreGeneration> ORES = new ArrayList<>();
+//    public static ConfigOreGeneration LATHARIUM_ORE = new ConfigOreGeneration("latharium ore", 8, 4, 32);
+//    public static ConfigOreGeneration TAMRELITE_ORE = new ConfigOreGeneration("tamrelite ore", 8, 4, 32);
+//    public static ConfigOreGeneration PENDORITE_ORE = new ConfigOreGeneration("pendorite ore", 8, 4, 32);
+//
+//    public static List<ConfigStoneGeneration> STONES = new ArrayList<>();
+//    public static ConfigStoneGeneration DACITE_STONE = new ConfigStoneGeneration("dacite", 25, 10, 256);
+//    public static ConfigStoneGeneration ROCKY_STONE = new ConfigStoneGeneration("rocky stone", 25, 10, 256);
+//    public static ConfigStoneGeneration SCORIA_STONE = new ConfigStoneGeneration("dacite", 25, 10, 256);
+//    public static ConfigStoneGeneration SOAPSTONE = new ConfigStoneGeneration("dacite", 25, 10, 256);
+
 
 
 
@@ -44,6 +55,8 @@ public class ConfigWeightManager {
 
     static {
         BIOMES.forEach(o -> o.apply(COMMON_BUILDER));
+//        ORES.forEach(o -> o.apply(COMMON_BUILDER));
+//        STONES.forEach(o -> o.apply(COMMON_BUILDER));
         COMMON_CONFIG = COMMON_BUILDER.build();
     }
 

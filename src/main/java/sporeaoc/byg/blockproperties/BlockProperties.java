@@ -49,6 +49,16 @@ public  class BlockProperties {
             setRegistryName(registryName);
         }
     }
+    public static class BlockDirt extends Block {
+        public BlockDirt(String registryName) {
+            super(Block.Properties.create(Material.EARTH)
+                    .sound(SoundType.GROUND)
+                    .hardnessAndResistance(0.2f)
+                    .tickRandomly()
+            );
+            setRegistryName(registryName);
+        }
+    }
     public static class BlockLeave extends LeavesBlock {
         public BlockLeave(String registryName) {
             super(Block.Properties.create(Material.LEAVES)

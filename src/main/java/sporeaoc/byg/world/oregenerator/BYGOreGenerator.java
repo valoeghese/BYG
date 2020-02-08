@@ -20,24 +20,24 @@ public class BYGOreGenerator {
     @SubscribeEvent
     public static void bygRegisterOreGenerator(final RegistryEvent.Register<Feature<?>> event) {
         ForgeRegistries.BIOMES.forEach(biome ->
-                        biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.TAMRELITE_ORE.getDefaultState(), 8), Placement.COUNT_RANGE, new CountRangeConfig(6, 0, 0, 32)))
+                        biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.PENDORITE_ORE.getDefaultState(),8), Placement.COUNT_RANGE, new CountRangeConfig(8, 0, 0, 32)))
         );
-        /*ForgeRegistries.BIOMES.forEach(biome ->
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.LATHARIUM_ORE.getDefaultState(), 8), Placement.COUNT_RANGE, new CountRangeConfig(6, 0, 0, 32)))
-
-        );*/
         ForgeRegistries.BIOMES.forEach(biome ->
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.PENDORITE_ORE.getDefaultState(), 8), Placement.COUNT_RANGE, new CountRangeConfig(6, 0, 0, 32)))
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.TAMRELITE_ORE.getDefaultState(),8), Placement.COUNT_RANGE, new CountRangeConfig(8, 0, 0, 32)))
+
+        );
+        ForgeRegistries.BIOMES.forEach(biome ->
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.LATHARIUM_ORE.getDefaultState(),8), Placement.COUNT_RANGE, new CountRangeConfig(8, 0, 0, 32)))
         );
 
         ForgeRegistries.BIOMES.forEach(biome ->
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.DACITE.getDefaultState(), 25), Placement.COUNT_RANGE, new CountRangeConfig(8, 0, 0, 256)))
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.DACITE.getDefaultState(), 25), Placement.COUNT_RANGE, new CountRangeConfig(8, 0, 0,256)))
         );ForgeRegistries.BIOMES.forEach(biome ->
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.ROCKY_STONE.getDefaultState(), 25), Placement.COUNT_RANGE, new CountRangeConfig(8, 0, 0, 256)))
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.ROCKY_STONE.getDefaultState(),  25), Placement.COUNT_RANGE, new CountRangeConfig(8, 0, 0,256)))
         );ForgeRegistries.BIOMES.forEach(biome ->
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.SCORIA_STONE.getDefaultState(), 25), Placement.COUNT_RANGE, new CountRangeConfig(10, 0, 0, 256)))
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.SCORIA_STONE.getDefaultState(), 25), Placement.COUNT_RANGE, new CountRangeConfig(8, 0, 0,256)))
         );ForgeRegistries.BIOMES.forEach(biome ->
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.SOAPSTONE.getDefaultState(), 25), Placement.COUNT_RANGE, new CountRangeConfig(10, 0, 0, 256)))
+                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.SOAPSTONE.getDefaultState(),  25), Placement.COUNT_RANGE, new CountRangeConfig(8, 0, 0,256)))
         );
     }
 }

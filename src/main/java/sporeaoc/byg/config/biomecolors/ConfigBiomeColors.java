@@ -1,4 +1,4 @@
-package sporeaoc.byg.config;
+package sporeaoc.byg.config.biomecolors;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 

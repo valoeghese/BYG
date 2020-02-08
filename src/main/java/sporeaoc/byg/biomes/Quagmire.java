@@ -20,9 +20,9 @@ import sporeaoc.byg.world.BYGBiomeFeatures;
 public class Quagmire extends Biome {
     static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(BYGSurfaceBuilderCatalog.QUAGMIRE, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
     static final RainType PRECIPATATION = RainType.RAIN;
-    static final Category CATEGORY = Category.PLAINS;
-    static final double DEPTH = -0.15F;
-    static final double SCALE = 0.1F;
+    static final Category CATEGORY = Category.SWAMP;
+    static final double DEPTH = -0.1274F;
+    static final double SCALE = 0.05F;
     static final float TEMPERATURE = 0.8F;
     static final float DOWNFALL = 0.2F;
     static final int WATER_COLOR = 9127187;
@@ -43,7 +43,6 @@ public class Quagmire extends Biome {
         DefaultBiomeFeatures.addSedimentDisks(this);
         DefaultBiomeFeatures.addMushrooms(this);
         BYGBiomeFeatures.addReeds(this);
-        DefaultBiomeFeatures.addFreezeTopLayer(this);
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));
