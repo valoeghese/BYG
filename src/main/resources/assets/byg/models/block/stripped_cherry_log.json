@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_column",
   "textures": {
-    "down": "byg:blocks/stripped_cherry_log_top",
-    "up": "byg:blocks/stripped_cherry_log_top",
-    "north": "byg:blocks/stripped_cherry_log",
-    "east": "byg:blocks/stripped_cherry_log",
-    "south": "byg:blocks/stripped_cherry_log",
-    "west": "byg:blocks/stripped_cherry_log",
-    "particle": "byg:blocks/stripped_cherry_log_top"
+    "end": "byg:blocks/stripped_cherry_log_top",
+    "side": "byg:blocks/stripped_cherry_log"
   }
 }
