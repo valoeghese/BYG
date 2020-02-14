@@ -9,10 +9,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConfigOreStoneGenerationManager {
+    private static ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
+
     public static List<ConfigOreGeneration> ORES = new ArrayList<>();
     public static ConfigOreGeneration LATHARIUM_ORE = new ConfigOreGeneration("latharium ore", 8, 4, 32);
     public static ConfigOreGeneration TAMRELITE_ORE = new ConfigOreGeneration("tamrelite ore", 8, 4, 32);
     public static ConfigOreGeneration PENDORITE_ORE = new ConfigOreGeneration("pendorite ore", 8, 4, 32);
+    public static ForgeConfigSpec COMMON_CONFIG;
+
+    private static ForgeConfigSpec.Builder COMMON_BUILDER2 = new ForgeConfigSpec.Builder();
 
     public static List<ConfigStoneGeneration> STONES = new ArrayList<>();
     public static ConfigStoneGeneration DACITE_STONE = new ConfigStoneGeneration("dacite", 25, 10, 256);
@@ -20,16 +25,15 @@ public class ConfigOreStoneGenerationManager {
     public static ConfigStoneGeneration SCORIA_STONE = new ConfigStoneGeneration("dacite", 25, 10, 256);
     public static ConfigStoneGeneration SOAPSTONE = new ConfigStoneGeneration("dacite", 25, 10, 256);
 
-    public static ForgeConfigSpec COMMON_CONFIG;
-    private static ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
+    public static ForgeConfigSpec COMMON_CONFIG2;
 
     static {
         ORES.forEach(o -> o.apply(COMMON_BUILDER));
         COMMON_CONFIG = COMMON_BUILDER.build();
     }
     static {
-        STONES.forEach(o -> o.apply(COMMON_BUILDER));
-        COMMON_CONFIG = COMMON_BUILDER.build();
+        STONES.forEach(o -> o.apply(COMMON_BUILDER2));
+        COMMON_CONFIG2 = COMMON_BUILDER2.build();
     }
 
     public static void LoadConfig(ForgeConfigSpec spec2, Path path2) {

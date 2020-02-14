@@ -1,6 +1,5 @@
 package sporeaoc.byg.world.tree.borealforest;
 
-import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -16,7 +15,6 @@ import sporeaoc.byg.catalogs.BlockCatalogs;
 
 import java.util.Random;
 import java.util.Set;
-import java.util.function.Function;
 
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
@@ -26,12 +24,6 @@ public class BorealForestTree1 extends AbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LOG = Blocks.BIRCH_LOG.getDefaultState();
     private static final BlockState LEAVES = BlockCatalogs.YELLOW_BIRCH_LEAVES.getDefaultState();
     private static final BlockState LEAVES2 = Blocks.BIRCH_LEAVES.getDefaultState();
-
-
-    public BorealForestTree1(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
-        super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
-    }
 
     public BorealForestTree1() {
         super(null, true);
@@ -72,14 +64,6 @@ public class BorealForestTree1 extends AbstractTreeFeature<NoFeatureConfig> {
                     //This Int is responsible for the Y coordinate of the trunk BlockPos'.
                     int logplacer = posY + groundUpLogRemover;
                     BlockPos blockpos1 = new BlockPos(posX1, logplacer, posZ1);
-                    //These BlockPos' allow you to make trunks thicker than 2x2,
-                    BlockPos blockposwest1 = new BlockPos(posX1 - 1, logplacer, posZ1);
-                    BlockPos blockposnorth1 = new BlockPos(posX1, logplacer, posZ1 - 1);
-                    BlockPos blockposnorthwest1 = new BlockPos(posX1 - 1, logplacer, posZ1 - 1);
-
-
-                    //Sets Logs
-
                         this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
                         this.treelog(changedBlocks, worldIn, blockpos1.up(1), boundsIn);
                         this.treelog(changedBlocks, worldIn, blockpos1.up(2), boundsIn);
@@ -253,17 +237,10 @@ public class BorealForestTree1 extends AbstractTreeFeature<NoFeatureConfig> {
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
             int distance = 2;
-            if (yOffset == -5) {
-                distance = 0;
-            }
 
-            if (yOffset >= height - 1) {
-                distance = 1;
-            }
-
-            for (int xOffset = -distance; xOffset <= distance; ++xOffset) {
-                for (int zOffset = -distance; zOffset <= distance; ++zOffset) {
-                    if (!canTreeReplace(reader, position.setPos(x + xOffset, y + yOffset, z + zOffset))) {
+            for (int xDistance = -distance; xDistance <= distance; ++xDistance) {
+                for (int zDistance = -distance; zDistance <= distance; ++zDistance) {
+                    if (!canTreeReplace(reader, position.setPos(x + xDistance, y + yOffset, z + zDistance))) {
                         return false;
                     }
                 }
