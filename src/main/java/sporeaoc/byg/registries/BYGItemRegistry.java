@@ -28,7 +28,7 @@ public class BYGItemRegistry {
                 ItemCatalogs.BYG_LOGO = new Item((new Item.Properties())).setRegistryName("byg_logo"),
                 //PlankItems
 
-                //ItemCatalogs.ASPEN_PLANKS = new BlockItem(BlockCatalogs.ASPEN_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_PLANKS.getRegistryName()),
+                ItemCatalogs.ASPEN_PLANKS = new BlockItem(BlockCatalogs.ASPEN_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_PLANKS.getRegistryName()),
                 ItemCatalogs.BAOBAB_PLANKS = new BlockItem(BlockCatalogs.BAOBAB_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BAOBAB_PLANKS.getRegistryName()),
                 ItemCatalogs.BLUE_ENCHANTED_PLANKS = new BlockItem(BlockCatalogs.BLUE_ENCHANTED_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLUE_ENCHANTED_PLANKS.getRegistryName()),
                 ItemCatalogs.CHERRY_PLANKS = new BlockItem(BlockCatalogs.CHERRY_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.CHERRY_PLANKS.getRegistryName()),
@@ -74,6 +74,7 @@ public class BYGItemRegistry {
                 ItemCatalogs.ZELKOVA_FENCE = new BlockItem(BlockCatalogs.ZELKOVA_FENCE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_FENCE.getRegistryName()),
                 //GrassItems
                 ItemCatalogs.PEAT_GRASSBLOCK = new BlockItem(BlockCatalogs.PEAT_GRASSBLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PEAT_GRASSBLOCK.getRegistryName()),
+                ItemCatalogs.MEADOW_GRASSBLOCK = new BlockItem(BlockCatalogs.MEADOW_GRASSBLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.MEADOW_GRASSBLOCK.getRegistryName()),
 
                 //MushroomItems
                 ItemCatalogs.BLACK_PUFF = new BlockItem(BlockCatalogs.BLACK_PUFF, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLACK_PUFF.getRegistryName()),
@@ -94,6 +95,7 @@ public class BYGItemRegistry {
                 ItemCatalogs.SOAPSTONE = new BlockItem(BlockCatalogs.SOAPSTONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SOAPSTONE.getRegistryName()),
 
                 //StrippedLogItems
+                ItemCatalogs.STRIPPED_ASPEN_LOG = new BlockItem(BlockCatalogs.STRIPPED_ASPEN_LOG, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.STRIPPED_ASPEN_LOG.getRegistryName()),
                 ItemCatalogs.STRIPPED_BAOBAB_LOG = new BlockItem(BlockCatalogs.STRIPPED_BAOBAB_LOG, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.STRIPPED_BAOBAB_LOG.getRegistryName()),
                 ItemCatalogs.STRIPPED_BLUE_ENCHANTED_LOG = new BlockItem(BlockCatalogs.STRIPPED_BLUE_ENCHANTED_LOG, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.STRIPPED_BLUE_ENCHANTED_LOG.getRegistryName()),
                 ItemCatalogs.STRIPPED_CHERRY_LOG = new BlockItem(BlockCatalogs.STRIPPED_CHERRY_LOG, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.STRIPPED_CHERRY_LOG.getRegistryName()),
@@ -132,6 +134,7 @@ public class BYGItemRegistry {
                             ItemCatalogs = new BlockItem(BlockCatalogs, new Item.Properties().group(BYG.creativetab)).setRegistryName(BlockCatalogs.getRegistryName()),
                             */
                 //LeaveItems
+                ItemCatalogs.ASPEN_LEAVES = new BlockItem(BlockCatalogs.ASPEN_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_LEAVES.getRegistryName()),
                 ItemCatalogs.BAOBAB_LEAVES = new BlockItem(BlockCatalogs.BAOBAB_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BAOBAB_LEAVES.getRegistryName()),
                 ItemCatalogs.BLOOMING_WITCH_HAZEL_LEAVES = new BlockItem(BlockCatalogs.BLOOMING_WITCH_HAZEL_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLOOMING_WITCH_HAZEL_LEAVES.getRegistryName()),
                 ItemCatalogs.BLUE_ENCHANTED_LEAVES = new BlockItem(BlockCatalogs.BLUE_ENCHANTED_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLUE_ENCHANTED_LEAVES.getRegistryName()),
@@ -166,6 +169,7 @@ public class BYGItemRegistry {
                 ItemCatalogs.RIPE_ORCHARD_LEAVES = new BlockItem(BlockCatalogs.RIPE_ORCHARD_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.RIPE_ORCHARD_LEAVES.getRegistryName()),
                 ItemCatalogs.SILVER_MAPLE_LEAVES = new BlockItem(BlockCatalogs.SILVER_MAPLE_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SILVER_MAPLE_LEAVES.getRegistryName()),
                 ItemCatalogs.SKYRIS_LEAVES_GREEN_APPLE = new BlockItem(BlockCatalogs.SKYRIS_LEAVES_GREEN_APPLE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SKYRIS_LEAVES_GREEN_APPLE.getRegistryName()),
+                ItemCatalogs.SKYRIS_LEAVES = new BlockItem(BlockCatalogs.SKYRIS_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SKYRIS_LEAVES.getRegistryName()),
                 ItemCatalogs.WHITE_CHERRY_LEAVES = new BlockItem(BlockCatalogs.WHITE_CHERRY_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WHITE_CHERRY_LEAVES.getRegistryName()),
                 ItemCatalogs.WILLOW_LEAVES = new BlockItem(BlockCatalogs.WILLOW_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WILLOW_LEAVES.getRegistryName()),
                 ItemCatalogs.WITCH_HAZEL_LEAVES = new BlockItem(BlockCatalogs.WITCH_HAZEL_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WITCH_HAZEL_LEAVES.getRegistryName()),

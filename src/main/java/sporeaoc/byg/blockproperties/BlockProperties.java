@@ -4,6 +4,7 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.potion.Effects;
+import sporeaoc.byg.catalogs.SnowyLeavesBlock;
 
 public  class BlockProperties {
     public static class BlockFence extends FenceBlock {
@@ -59,7 +60,7 @@ public  class BlockProperties {
             setRegistryName(registryName);
         }
     }
-    public static class BlockLeave extends LeavesBlock {
+    public static class BlockLeave extends SnowyLeavesBlock {
         public BlockLeave(String registryName) {
             super(Block.Properties.create(Material.LEAVES)
                     .sound(SoundType.PLANT)
@@ -120,8 +121,8 @@ public  class BlockProperties {
     public static class BlockStrippedLog extends LogBlock {
         public BlockStrippedLog(String registryName) {
             super(
-                    MaterialColor.OBSIDIAN,
-                    Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN)
+                    MaterialColor.WOOD,
+                    Block.Properties.create(Material.WOOD, MaterialColor.WOOD)
                             .sound(SoundType.WOOD)
                             .hardnessAndResistance(2.0f)
             );

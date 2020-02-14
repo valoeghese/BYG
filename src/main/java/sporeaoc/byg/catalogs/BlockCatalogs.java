@@ -1,6 +1,7 @@
 package sporeaoc.byg.catalogs;
 
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 
 public class BlockCatalogs {
 
@@ -88,8 +89,52 @@ public class BlockCatalogs {
     public static Block MAGENTA_AMARANTH;
     public static Block PURPLE_AMARANTH;
 
-    //Dirt Blocks
+    //Grass Blocks
+    public static Block MEADOW_GRASSBLOCK;
+   // public static Block SNOWY_MEADOW_GRASSBLOCK;
     public static Block PEAT_GRASSBLOCK;
+
+    //Sand Blocks
+    public static Block BLUE_SAND;
+    public static Block BLACK_SAND;
+    public static Block WHITE_SAND;
+    public static Block PINK_SAND;
+    public static Block PURPLE_SAND;
+    public static Block CRACKED_SAND;
+    public static Block RED_CRACKED_SAND;
+
+
+
+    //Sandstone Items
+    public static Block BLUE_SANDSTONE;
+    public static Block BLUE_CHISELED_SANDSTONE;
+    public static Block BLUE_CUT_SANDSTONE;
+    public static Block BLUE_SMOOTH_SANDSTONE;
+
+    public static Block BLACK_SANDSTONE;
+    public static Block BLACK_CHISELED_SANDSTONE;
+    public static Block BLACK_CUT_SANDSTONE;
+    public static Block BLACK_SMOOTH_SANDSTONE;
+
+    public static Block WHITE_SANDSTONE;
+    public static Block WHITE_CHISELED_SANDSTONE;
+    public static Block WHITE_CUT_SANDSTONE;
+    public static Block WHITE_SMOOTH_SANDSTONE;
+
+    public static Block PINK_SANDSTONE;
+    public static Block PINK_CHISELED_SANDSTONE;
+    public static Block PINK_CUT_SANDSTONE;
+    public static Block PINK_SMOOTH_SANDSTONE;
+
+    public static Block PURPLE_SANDSTONE;
+    public static Block PURPLE_CHISELED_SANDSTONE;
+    public static Block PURPLE_CUT_SANDSTONE;
+    public static Block PURPLE_SMOOTH_SANDSTONE;
+
+
+    //Dirt Blocks
+    public static Block PEAT_BLOCK;
+    public static Block MEADOW_DIRT;
     public static Block MUD_BLOCK;
     public static Block MUD_BRICKS;
 
@@ -107,7 +152,7 @@ public class BlockCatalogs {
     public static Block FIR_LEAVES;
     public static Block FLOWERING_ORCHARD_LEAVES;
     public static Block FLOWERING_PALO_VERDE_LEAVES;
-    public static Block APPLE_SKYRIS_LEAVES;
+    public static Block ASPEN_LEAVES;
     public static Block GREEN_ENCHANTED_LEAVES;
     public static Block HOLLY_BERRY_LEAVES;
     public static Block HOLLY_LEAVES;
@@ -130,6 +175,7 @@ public class BlockCatalogs {
     public static Block RIPE_ORCHARD_LEAVES;
     public static Block SILVER_MAPLE_LEAVES;
     public static Block SKYRIS_LEAVES_GREEN_APPLE;
+    public static Block SKYRIS_LEAVES;
     public static Block WHITE_CHERRY_LEAVES;
     public static Block WILLOW_LEAVES;
     public static Block WITCH_HAZEL_LEAVES;
@@ -165,10 +211,38 @@ public class BlockCatalogs {
     public static Block WEEPING_MILKCAP;
     public static Block WOOD_BLEWIT;
 
+    //GemBlocks
+    public static Block PENDORITE_BLOCK;
+    public static Block TAMRELITE_BLOCK;
+    public static Block LATHARIUM_BLOCK;
+
     //OreBlocks
     public static Block PENDORITE_ORE;
     public static Block TAMRELITE_ORE;
     public static Block LATHARIUM_ORE;
+
+    //PlankBlocks
+    public static Block ASPEN_BOOKSHELF;
+    public static Block BAOBAB_BOOKSHELF;
+    public static Block BLUE_ENCHANTED_BOOKSHELF;
+    public static Block CHERRY_BOOKSHELF;
+    public static Block CIKA_BOOKSHELF;
+    public static Block CYPRESS_BOOKSHELF;
+    public static Block EBONY_BOOKSHELF;
+    public static Block FIR_BOOKSHELF;
+    public static Block GREEN_ENCHANTED_BOOKSHELF;
+    public static Block HOLLY_BOOKSHELF;
+    public static Block JACARANDA_BOOKSHELF;
+    public static Block MAHOGONY_BOOKSHELF;
+    public static Block MANGROVE_BOOKSHELF;
+    public static Block MAPLE_BOOKSHELF;
+    public static Block PINE_BOOKSHELF;
+    public static Block RAINBOW_EUCALYPTUS_BOOKSHELF;
+    public static Block REDWOOD_BOOKSHELF;
+    public static Block SKYRIS_BOOKSHELF;
+    public static Block WILLOW_BOOKSHELF;
+    public static Block WITCH_HAZEL_BOOKSHELF;
+    public static Block ZELKOVA_BOOKSHELF;
 
     //PlankBlocks
     public static Block ASPEN_PLANKS;
@@ -193,6 +267,14 @@ public class BlockCatalogs {
     public static Block WITCH_HAZEL_PLANKS;
     public static Block ZELKOVA_PLANKS;
 
+    //PetalBlocks
+    public static Block WHITE_PETAL;
+    public static Block RED_PETAL;
+    public static Block YELLOW_PETAL;
+    public static Block PURPLE_PETAL;
+    public static Block LIGHT_BLUE_PETAL;
+    public static Block BLUE_PETAL;
+
     //PlantBlocks
     public static Block CATTAIL;
     public static Block REEDS;
@@ -211,6 +293,8 @@ public class BlockCatalogs {
     public static Block PRAIRIE_GRASS;
     public static Block PINK_GLOWCANE;
     public static Block PURPLE_GLOWCANE;
+    public static Block WEEPING_VINES;
+
 
     //SaplingBlocks
     public static Block BAOBAB_SAPLING;
@@ -301,14 +385,29 @@ public class BlockCatalogs {
 
     //StoneBlocks
     public static Block DACITE;
+    public static Block DACITE_COBBLESTONE;
+    public static Block DACITE_PILLAR;
+    public static Block DACITE_TILE;
+    public static Block DACITE_BRICKS;
+
     public static Block SOAPSTONE;
+    public static Block POLISHED_DACITE;
+    public static Block SOAPSTONE_PILLAR;
+    public static Block SOAPSTONE_TILE;
+    public static Block SOAPSTONE_BRICKS;
+
     public static Block SCORIA_STONE;
+    public static Block SCORIA_COBBLESTONE;
+    public static Block SCORIA_PILLAR;
+    public static Block SCORIA_STONEBRICKS;
+
     public static Block MOSSY_STONE;
     public static Block ROCKY_STONE;
     public static Block OVERGROWN_STONE;
 
     //StrippedLogBlocks
     public static Block STRIPPED_BAOBAB_LOG;
+    public static Block STRIPPED_ASPEN_LOG;
     public static Block STRIPPED_BLUE_ENCHANTED_LOG;
     public static Block STRIPPED_CHERRY_LOG;
     public static Block STRIPPED_CIKA_LOG;

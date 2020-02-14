@@ -101,6 +101,8 @@ public class BYGBlockRegistry {
         event.getRegistry().registerAll(
 
                 BlockCatalogs.PEAT_GRASSBLOCK = new BlockProperties.BlockGrass("peat_grass"),
+                BlockCatalogs.MEADOW_GRASSBLOCK = new BlockProperties.BlockGrass("meadow_grass_block"),
+                //BlockCatalogs.SNOWY_MEADOW_GRASSBLOCK = new BlockProperties.BlockGrass("meadow_grass_block_snowy"),
                 BlockCatalogs.MUD_BLOCK = new BlockProperties.BlockDirt("mud_block"),
                 BlockCatalogs.MUD_BRICKS = new BlockProperties.BlockStone("mud_bricks")
 
@@ -123,6 +125,7 @@ public class BYGBlockRegistry {
     @SubscribeEvent
     public static void registerLeaveBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
+                BlockCatalogs.ASPEN_LEAVES = new BlockProperties.BlockLeave("aspen_leaves"),
                 BlockCatalogs.BAOBAB_LEAVES = new BlockProperties.BlockLeave("baobab_leaves"),
                 BlockCatalogs.BLOOMING_WITCH_HAZEL_LEAVES = new BlockProperties.BlockLeave("blooming_witch_hazel_leaves"),
                 BlockCatalogs.BLUE_ENCHANTED_LEAVES = new BlockProperties.BlockLeave("blue_enchanted_leaves"),
@@ -157,6 +160,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.RIPE_ORCHARD_LEAVES = new BlockProperties.BlockLeave("ripe_orchard_leaves"),
                 BlockCatalogs.SILVER_MAPLE_LEAVES = new BlockProperties.BlockLeave("silver_maple_leaves"),
                 BlockCatalogs.SKYRIS_LEAVES_GREEN_APPLE = new BlockProperties.BlockLeave("green_apple_skyris_leaves"),
+                BlockCatalogs.SKYRIS_LEAVES = new BlockProperties.BlockLeave("skyris_leaves"),
                 BlockCatalogs.WHITE_CHERRY_LEAVES = new BlockProperties.BlockLeave("white_cherry_leaves"),
                 BlockCatalogs.WILLOW_LEAVES = new BlockProperties.BlockLeave("willow_leaves"),
                 BlockCatalogs.WITCH_HAZEL_LEAVES = new BlockProperties.BlockLeave("witch_hazel_leaves"),
@@ -243,6 +247,7 @@ public class BYGBlockRegistry {
     @SubscribeEvent
     public static void registerStrippedLogBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
+                BlockCatalogs.STRIPPED_ASPEN_LOG = new BlockProperties.BlockStrippedLog("stripped_aspen_log"),
                 BlockCatalogs.STRIPPED_BAOBAB_LOG = new BlockProperties.BlockStrippedLog("stripped_baobab_log"),
                 BlockCatalogs.STRIPPED_BLUE_ENCHANTED_LOG = new BlockProperties.BlockStrippedLog("stripped_blue_enchanted_log"),
                 BlockCatalogs.STRIPPED_CHERRY_LOG = new BlockProperties.BlockStrippedLog("stripped_cherry_log"),

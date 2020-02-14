@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "byg:block/fir_leaves"
-    }
+    "snowy=false": [
+      { "model": "byg:block/fir_leaves" }
+    ],
+    "snowy=true":  { "model": "byg:block/fir_leaves_snowy" }
   }
 }
