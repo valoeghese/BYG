@@ -211,10 +211,26 @@ public class ItemCatalogs {
     public static Item WITCH_HAZEL_LOG;
     public static Item ZELKOVA_LOG;
 
-    //MushroomItems
+    //GlowshroomsBlocks
+    public static Item PURPLE_GLOWSHROOM_BLOCK;
+    public static Item BLUE_GLOWSHROOM_BLOCK;
+    public static Item RED_GLOWSHROOM_STEM;
+    public static Item YELLOW_GLOWSHROOM_STEM;
+
+    //MushroomsItems
+    public static Item PUFF_MUSHROOM_BLOCK;
+    public static Item MILKCAP_MUSHROOM_BLOCK;
+    public static Item BLEWIT_MUSHROOM_BLOCK;
+    public static Item GREEN_MUSHROOM_BLOCK;
+
+
+    //MushroomPlantItems
     public static Item BLACK_PUFF;
     public static Item WEEPING_MILKCAP;
     public static Item WOOD_BLEWIT;
+    public static Item GREEN_MUSHSHROOM;
+    public static Item PURPLE_GLOWSHROOM;
+    public static Item BLUE_GLOWSHROOM;
 
     //GemItems
     public static Item PENDORITE_BLOCK;

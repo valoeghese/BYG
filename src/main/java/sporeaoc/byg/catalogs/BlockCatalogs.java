@@ -206,10 +206,28 @@ public class BlockCatalogs {
     public static Block WITCH_HAZEL_LOG;
     public static Block ZELKOVA_LOG;
 
-    //MushroomBlocks
+    //GlowshroomsBlocks
+    public static Block PURPLE_GLOWSHROOM_BLOCK;
+    public static Block BLUE_GLOWSHROOM_BLOCK;
+    public static Block RED_GLOWSHROOM_STEM;
+    public static Block YELLOW_GLOWSHROOM_STEM;
+
+    //MushroomsBlocks
+    public static Block PUFF_MUSHROOM_BLOCK;
+    public static Block MILKCAP_MUSHROOM_BLOCK;
+    public static Block BLEWIT_MUSHROOM_BLOCK;
+    public static Block GREEN_MUSHROOM_BLOCK;
+    public static Block WHITE_MUSHROOM_STEM;
+    public static Block BROWN_MUSHROOM_STEM;
+
+    //MushroomPlantBlocks
     public static Block BLACK_PUFF;
     public static Block WEEPING_MILKCAP;
     public static Block WOOD_BLEWIT;
+    public static Block PURPLE_GLOWSHROOM;
+    public static Block BLUE_GLOWSHROOM;
+    public static Block GREEN_MUSHSHROOM;
+
 
     //GemBlocks
     public static Block PENDORITE_BLOCK;
