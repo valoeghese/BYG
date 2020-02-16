@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "byg:block/green_apple_skyris_leaves"
-    }
+    "snowy=false": [
+      { "model": "byg:block/green_apple_skyris_leaves" }
+    ],
+    "snowy=true":  { "model": "byg:block/green_apple_skyris_leaves_snowy" }
   }
 }

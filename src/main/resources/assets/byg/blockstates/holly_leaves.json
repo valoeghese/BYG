@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "byg:block/holly_leaves"
-    }
+    "snowy=false": [
+      { "model": "byg:block/holly_leaves" }
+    ],
+    "snowy=true":  { "model": "byg:block/holly_leaves_snowy" }
   }
 }
