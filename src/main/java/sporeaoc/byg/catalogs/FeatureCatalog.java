@@ -52,9 +52,6 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> BOREALFOREST_TREE = new BorealForestTree1();
     public static final AbstractTreeFeature<NoFeatureConfig> BOREALFOREST_TREE2 = new BorealForestTree2();
     public static final AbstractTreeFeature<NoFeatureConfig> TREENAME = new TreeName();
-    //public static final AbstractTreeFeature<NoFeatureConfig> TREENAME2 = new HugeCypressTree2();
-    //public static final WorldCarver<ProbabilityConfig> Yes = new CanyonWorldCarver2(ProbabilityConfig::deserialize);
-
 
     public static final AbstractTreeFeature<NoFeatureConfig> SHRUB = new DeciduousShrub();
 
@@ -62,34 +59,8 @@ public class FeatureCatalog {
     public static final FlowersFeature AMARANTHFLOWERS = new AmaranthFieldFlowers(NoFeatureConfig::deserialize);
     public static final FlowersFeature PRAIRIEGRASS = new PrairieGrass(NoFeatureConfig::deserialize);
 
-
-
-
-
-
-
-
-
-
-
-
-
     public static final Structure<NoFeatureConfig> REDDESERTPYRAMID = new RedDesertPyramidStructure(NoFeatureConfig::deserialize);
 
-
-
-
-
-
-
     public static final Feature<NoFeatureConfig> DEADSEA_SPIRE = new DeadSeaSpires(null);
-    //public static final Feature<NoFeatureConfig> DEADSEA_SPIRE2 = new DeadSeaSpires2(null);
-    /*
-     * TODO: Implement methods
-     */
-
-    // public static final AbstractTreeFeature<NoFeatureConfig> MYT = new MyFirstTree();
-    // public static final AbstractTreeFeature<NoFeatureConfig> FIR_TREE = new FirTree();
-
 }
 

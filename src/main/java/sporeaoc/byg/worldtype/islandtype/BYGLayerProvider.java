@@ -21,7 +21,7 @@ public class BYGLayerProvider {
         survivalIslandFactory = ZoomLayer.NORMAL.apply(contextFactory.apply(1000L), survivalIslandFactory);
         survivalIslandFactory = ZoomLayer.NORMAL.apply(contextFactory.apply(1000L), survivalIslandFactory);
         survivalIslandFactory = ZoomLayer.NORMAL.apply(contextFactory.apply(1000L), survivalIslandFactory);
-        //survivalIslandFactory = ZoomLayer.NORMAL.apply(contextFactory.apply(1000L), survivalIslandFactory);
+        survivalIslandFactory = ZoomLayer.NORMAL.apply(contextFactory.apply(1000L), survivalIslandFactory);
 
 
         IAreaFactory<T> iareafactory5 = VoroniZoomLayer.INSTANCE.apply(contextFactory.apply(1000L), survivalIslandFactory);
