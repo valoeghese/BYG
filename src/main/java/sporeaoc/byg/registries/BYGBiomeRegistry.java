@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.IForgeRegistry;
 import sporeaoc.byg.BYG;
+import sporeaoc.byg.biomes.DeadSea;
 import sporeaoc.byg.catalogs.BiomeCatalog;
 import sporeaoc.byg.config.weight.ConfigWeightManager;
 
@@ -41,6 +42,7 @@ public class BYGBiomeRegistry {
         registerBiome(registry, BiomeCatalog.SNOWYBLUEGIANTTAIGA, "snowygiantbluetaiga", ConfigWeightManager.snowygiantbluetaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS);
         registerBiome(registry, BiomeCatalog.SEASONALGIANTTAIGA, "giantseasonalsprucetaiga", ConfigWeightManager.seasonalgianttaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS);
         registerBiome(registry, BiomeCatalog.SEASONALTAIGA, "seasonaltaiga", ConfigWeightManager.seasonaltaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS);
+        registerBiome(registry, new DeadSea(), "deadman", ConfigWeightManager.seasonaltaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS);
 
 
         BYG.LOGGER.info("All BYG biomes registered!");
@@ -57,5 +59,4 @@ public class BYGBiomeRegistry {
             BiomeDictionary.addTypes(biome, types);
         }
     }
-
 }

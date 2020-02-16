@@ -1,6 +1,5 @@
 package sporeaoc.byg.world.tree;
 
-import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.Direction;
@@ -13,7 +12,6 @@ import net.minecraft.world.gen.feature.NoFeatureConfig;
 
 import java.util.Random;
 import java.util.Set;
-import java.util.function.Function;
 
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
@@ -23,10 +21,7 @@ public class TreeTemplate extends AbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
     private static final BlockState LEAVES = Blocks.OAK_LEAVES.getDefaultState();
 
-    public TreeTemplate(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
-        super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
-    }
+
 
     public TreeTemplate() {
         super(null, true);
@@ -40,24 +35,25 @@ public class TreeTemplate extends AbstractTreeFeature<NoFeatureConfig> {
         int posY = position.getY();
         int posZ = position.getZ();
         if (posY >= 1 && posY + randTreeHeight + 1 < 256) {
-            BlockPos blockpos = position.down();
-            if (!isSoil(worldIn, blockpos, getSapling())) {
+            BlockPos checkGround = position.down();
+            if (!isSoil(worldIn, checkGround, getSapling())) {
                 return false;
             } else if (!this.doesTreeFit(worldIn, position, randTreeHeight)) {
                 return false;
-            } else {
+            }
+            else {
                 //Places dirt under logs where/when necessary.
-                this.setDirtAt(worldIn, blockpos, position);
+                this.setDirtAt(worldIn, checkGround, position);
                 //Uncommenting this will allow for a 2x2 dirt patch under the tree.
-                /*this.setDirtAt(worldIn, blockpos.east(), position);
-                this.setDirtAt(worldIn, blockpos.south(), position);
-                this.setDirtAt(worldIn, blockpos.south().east(), position);*/
+                /*this.setDirtAt(worldIn, checkGround.east(), position);
+                this.setDirtAt(worldIn, checkGround.south(), position);
+                this.setDirtAt(worldIn, checkGround.south().east(), position);*/
                 //Uncommenting this will allow for a 3x3 dirt patch under the tree.
-                /*this.setDirtAt(worldIn, blockpos.west(), position);
-                this.setDirtAt(worldIn, blockpos.south().west(), position);
-                this.setDirtAt(worldIn, blockpos.north(), position);
-                this.setDirtAt(worldIn, blockpos.north().east(), position);
-                this.setDirtAt(worldIn, blockpos.north().west(), position);*/
+                /*this.setDirtAt(worldIn, checkGround.west(), position);
+                this.setDirtAt(worldIn, checkGround.south().west(), position);
+                this.setDirtAt(worldIn, checkGround.north(), position);
+                this.setDirtAt(worldIn, checkGround.north().east(), position);
+                this.setDirtAt(worldIn, checkGround.north().west(), position);*/
 
 
                 Direction direction = Direction.Plane.HORIZONTAL.random(rand);
@@ -77,37 +73,9 @@ public class TreeTemplate extends AbstractTreeFeature<NoFeatureConfig> {
                     //This Int is responsible for the Y coordinate of the trunk BlockPos'.
                     int logplacer = posY + groundUpLogRemover;
                     BlockPos blockpos1 = new BlockPos(posX1, logplacer, posZ1);
-                    //These BlockPos' allow you to make trunks thicker than 2x2,
-                    BlockPos blockposwest1 = new BlockPos(posX1 - 1, logplacer, posZ1);
-                    BlockPos blockposnorth1 = new BlockPos(posX1, logplacer, posZ1 - 1);
-                    BlockPos blockposnorthwest1 = new BlockPos(posX1 - 1, logplacer, posZ1 - 1);
-
 
                     //Sets Logs
-                    if (isAirOrLeaves(worldIn, blockpos1)) {
                         this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
-                        //Uncommenting this will create a 2x2 tree trunk.
-                        /*this.treelog(changedBlocks, worldIn, blockpos1.south(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockpos1.south().east(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockpos1.east(), boundsIn);*/
-                        //Uncommenting this will create a 3x3 tree trunk.
-                        /*this.treelog(changedBlocks, worldIn, blockpos1.west(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockpos1.south().west(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockpos1.north(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockpos1.north().east(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockpos1.north().west(), boundsIn);*/
-                        //Uncommenting this will create a 4x4 tree trunk.
-                        /*this.treelog(changedBlocks, worldIn, blockposwest1, boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockposwest1.west(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockposwest1.north().west(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockposwest1.south().west(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockposnorth1, boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockposnorth1.north().west(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockposnorth1.north(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockposnorth1.north().east(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockposnorth1.west(), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockposnorthwest1.north().west(), boundsIn);*/
-                    }
                 }
                 //This allows a random rotation between 3 differently leave Presets in the same class. Optimizes Performance instead of the loading of several classes.
                 int leavePreset = rand.nextInt(3) + 1;
@@ -338,7 +306,8 @@ public class TreeTemplate extends AbstractTreeFeature<NoFeatureConfig> {
 
             return true;
             //}
-        } else {
+        }
+        else {
             return false;
         }
     }
@@ -351,18 +320,11 @@ public class TreeTemplate extends AbstractTreeFeature<NoFeatureConfig> {
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
-            int distance = 25;
-            if (yOffset == -5) {
-                distance = 0;
-            }
-
-            if (yOffset >= height - 1) {
-                distance = 1;
-            }
+            int distance = 5;
 
             for (int xOffset = -distance; xOffset <= distance; ++xOffset) {
                 for (int zOffset = -distance; zOffset <= distance; ++zOffset) {
-                    if (!canTreeReplace(reader, position.setPos(x + xOffset, y + yOffset, z + zOffset))) {
+                    if (!canTreePlace(reader, position.setPos(x + xOffset, y + yOffset, z + zOffset))) {
                         return false;
                     }
                 }
@@ -373,7 +335,7 @@ public class TreeTemplate extends AbstractTreeFeature<NoFeatureConfig> {
 
     //Log Placement
     private void treelog(Set<BlockPos> setlogblock, IWorldGenerationReader reader, BlockPos pos, MutableBoundingBox boundingBox) {
-        if (canTreeReplace(reader, pos)) {
+        if (canTreePlace(reader, pos)) {
             this.setLogState(setlogblock, reader, pos, LOG, boundingBox);
         }
 
@@ -381,14 +343,14 @@ public class TreeTemplate extends AbstractTreeFeature<NoFeatureConfig> {
 
     //Leaves Placement
     private void leafs(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
-        BlockPos blockpos = new BlockPos(x, y, z);
-        if (isAir(reader, blockpos)) {
-            this.setLogState(blockPos, reader, blockpos, LEAVES, boundingBox);
+        BlockPos leafpos = new BlockPos(x, y, z);
+        if (isAir(reader, leafpos)) {
+            this.setLogState(blockPos, reader, leafpos, LEAVES, boundingBox);
         }
 
     }
 
-    protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
+    protected static boolean canTreePlace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
         return func_214587_a(
                 genBaseReader, blockPos
         );
