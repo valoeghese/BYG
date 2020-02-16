@@ -56,7 +56,7 @@ public class FeatureCatalog {
     //public static final WorldCarver<ProbabilityConfig> Yes = new CanyonWorldCarver2(ProbabilityConfig::deserialize);
 
 
-    //public static final AbstractTreeFeature<NoFeatureConfig> SHRUB = new Shrub();
+    public static final AbstractTreeFeature<NoFeatureConfig> SHRUB = new DeciduousShrub();
 
     public static final FlowersFeature ALLIUMFLOWERS = new AlliumFieldFlowers(NoFeatureConfig::deserialize);
     public static final FlowersFeature AMARANTHFLOWERS = new AmaranthFieldFlowers(NoFeatureConfig::deserialize);

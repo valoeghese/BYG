@@ -429,5 +429,6 @@
   "item.byg.green_apple": "Green Apple",
   "item.byg.hollyberry": "Holly Berry",
   "item.byg.mud": "Mud",
-  "itemGroup.byg": "Biomes You Go"
+  "itemGroup.byg": "Biomes You Go",
+  "generator.byg_island": "BYG Islands"
 }
