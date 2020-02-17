@@ -1,8 +1,8 @@
 {
   "variants": {
     "snowy=false": [
-      { "model": "byg:block/mahogany_leaves" }
+      { "model": "byg:block/blue_spruce_leaves" }
     ],
-    "snowy=true":  { "model": "byg:block/mahogany_leaves_snowy" }
+    "snowy=true":  { "model": "byg:block/blue_spruce_leaves_snowy" }
   }
 }
