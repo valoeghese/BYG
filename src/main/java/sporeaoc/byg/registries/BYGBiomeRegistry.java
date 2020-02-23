@@ -8,8 +8,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.IForgeRegistry;
 import sporeaoc.byg.BYG;
-import sporeaoc.byg.biomes.DeadSea;
-import sporeaoc.byg.biomes.DoverMountains;
+import sporeaoc.byg.biomes.bygbiomes.DeadSea;
+import sporeaoc.byg.biomes.bygbiomes.DoverMountains;
 import sporeaoc.byg.catalogs.BiomeCatalog;
 import sporeaoc.byg.config.weight.ConfigWeightManager;
 
@@ -45,8 +45,6 @@ public class BYGBiomeRegistry {
         registerBiome(registry, BiomeCatalog.SEASONALTAIGA, "seasonaltaiga", ConfigWeightManager.seasonaltaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS);
         registerBiome(registry, new DeadSea(), "deadman", ConfigWeightManager.seasonaltaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS);
         registerBiome(registry, new DoverMountains(), "dovermountain", ConfigWeightManager.seasonaltaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS);
-
-
         BYG.LOGGER.info("All BYG biomes registered!");
 
     }

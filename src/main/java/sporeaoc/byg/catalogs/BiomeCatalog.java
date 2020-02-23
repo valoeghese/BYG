@@ -1,7 +1,7 @@
 package sporeaoc.byg.catalogs;
 
 import net.minecraft.world.biome.Biome;
-import sporeaoc.byg.biomes.*;
+import sporeaoc.byg.biomes.bygbiomes.*;
 
 public class BiomeCatalog {
     public static Biome ALLIUMFIELDS = new AlliumFields();
