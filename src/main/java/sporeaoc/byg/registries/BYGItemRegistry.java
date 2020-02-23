@@ -50,6 +50,18 @@ public class BYGItemRegistry {
                 ItemCatalogs.WITCH_HAZEL_PLANKS = new BlockItem(BlockCatalogs.WITCH_HAZEL_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WITCH_HAZEL_PLANKS.getRegistryName()),
                 ItemCatalogs.ZELKOVA_PLANKS = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
 
+                //PlantItems
+                ItemCatalogs.BLUEBERRY_BUSH = new BlockItem(BlockCatalogs.BLUEBERRY_BUSH, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLUEBERRY_BUSH.getRegistryName()),
+                ItemCatalogs.GREEN_MUSHROOM_BLOCK = new BlockItem(BlockCatalogs.GREEN_MUSHROOM_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.GREEN_MUSHROOM_BLOCK.getRegistryName()),
+                ItemCatalogs.MILKCAP_MUSHROOM_BLOCK = new BlockItem(BlockCatalogs.MILKCAP_MUSHROOM_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.MILKCAP_MUSHROOM_BLOCK.getRegistryName()),
+                ItemCatalogs.BLEWIT_MUSHROOM_BLOCK = new BlockItem(BlockCatalogs.BLEWIT_MUSHROOM_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLEWIT_MUSHROOM_BLOCK.getRegistryName()),
+                ItemCatalogs.PUFF_MUSHROOM_BLOCK = new BlockItem(BlockCatalogs.PUFF_MUSHROOM_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PUFF_MUSHROOM_BLOCK.getRegistryName()),
+                ItemCatalogs.WHITE_MUSHROOM_STEM = new BlockItem(BlockCatalogs.WHITE_MUSHROOM_STEM, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WHITE_MUSHROOM_STEM.getRegistryName()),
+                ItemCatalogs.BROWN_MUSHROOM_STEM = new BlockItem(BlockCatalogs.BROWN_MUSHROOM_STEM, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BROWN_MUSHROOM_STEM.getRegistryName()),
+
+
+
+
                 //FenceItems
                 ItemCatalogs.ASPEN_FENCE = new BlockItem(BlockCatalogs.ASPEN_FENCE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_FENCE.getRegistryName()),
                 ItemCatalogs.BAOBAB_FENCE = new BlockItem(BlockCatalogs.BAOBAB_FENCE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BAOBAB_FENCE.getRegistryName()),
@@ -80,6 +92,8 @@ public class BYGItemRegistry {
                 ItemCatalogs.BLACK_PUFF = new BlockItem(BlockCatalogs.BLACK_PUFF, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLACK_PUFF.getRegistryName()),
                 ItemCatalogs.WEEPING_MILKCAP = new BlockItem(BlockCatalogs.WEEPING_MILKCAP, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WEEPING_MILKCAP.getRegistryName()),
                 ItemCatalogs.WOOD_BLEWIT = new BlockItem(BlockCatalogs.WOOD_BLEWIT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WOOD_BLEWIT.getRegistryName()),
+                ItemCatalogs.GREEN_MUSHSHROOM = new BlockItem(BlockCatalogs.GREEN_MUSHSHROOM, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.GREEN_MUSHSHROOM.getRegistryName()),
+
 
                 //OreItems
                 ItemCatalogs.LATHARIUM_ORE = new BlockItem(BlockCatalogs.LATHARIUM_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.LATHARIUM_ORE.getRegistryName()),

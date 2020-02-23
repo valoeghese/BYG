@@ -173,12 +173,18 @@ public class BYGBlockRegistry {
     // Plant Blocks
     @SubscribeEvent
     public static void registerPlantBlocks(final RegistryEvent.Register<Block> event) {
+        event.getRegistry().registerAll(
+                BlockCatalogs.BLUEBERRY_BUSH = new BlockProperties.BlockBerryBush("blueberry_bush"),
+              //BlockCatalogs.STRAWBERRY_BUSH = new BlockProperties.BlockCrop("strawberry_bush"),
+                BlockCatalogs.GREEN_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("green_mushroom_block"),
+               BlockCatalogs.MILKCAP_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("weeping_milkcap_mushroom_block"),
+                BlockCatalogs.BLEWIT_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("wood_blewit_mushroom_block"),
+                BlockCatalogs.PUFF_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("black_puff_mushroom_block"),
+                BlockCatalogs.WHITE_MUSHROOM_STEM = new BlockProperties.BlockHugeMushroom("white_mushroom_stem"),
+                BlockCatalogs.BROWN_MUSHROOM_STEM = new BlockProperties.BlockHugeMushroom("brown_mushroom_stem")
 
-        /*
-         * TODO: Add Plant Blocks
-         */
 
-        //BlockCatalogs = new Reed
+        );
     }
 
     // Log Blocks
@@ -216,7 +222,9 @@ public class BYGBlockRegistry {
         event.getRegistry().registerAll(
                 BlockCatalogs.BLACK_PUFF = new BlockProperties.BlockMushroom("black_puff"),
                 BlockCatalogs.WEEPING_MILKCAP = new BlockProperties.BlockMushroom("weeping_milkcap"),
-                BlockCatalogs.WOOD_BLEWIT = new BlockProperties.BlockMushroom("wood_blewit")
+                BlockCatalogs.WOOD_BLEWIT = new BlockProperties.BlockMushroom("wood_blewit"),
+                BlockCatalogs.GREEN_MUSHSHROOM = new BlockProperties.BlockMushroom("green_mushroom")
+
         );
     }
 

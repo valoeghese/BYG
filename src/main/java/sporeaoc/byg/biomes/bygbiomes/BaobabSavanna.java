@@ -13,11 +13,11 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 
 public class BaobabSavanna extends Biome {
     static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.PODZOL.getDefaultState(), Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState()));
-    static final RainType PRECIPATATION = RainType.RAIN;
-    static final Category CATEGORY = Category.TAIGA;
+    static final RainType PRECIPATATION = RainType.NONE;
+    static final Category CATEGORY = Category.SAVANNA;
     static final double DEPTH = 0.2F;
     static final double SCALE = 0.1F;
-    static final float TEMPERATURE = 0.5F;
+    static final float TEMPERATURE = 1.2F;
     static final float DOWNFALL = 0.0F;
     static final int WATER_COLOR = 4159204;
     static final int WATER_FOG_COLOR = 329011;

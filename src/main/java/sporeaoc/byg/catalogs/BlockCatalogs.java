@@ -239,7 +239,7 @@ public class BlockCatalogs {
     public static Block TAMRELITE_ORE;
     public static Block LATHARIUM_ORE;
 
-    //PlankBlocks
+    //BookshelvesBlocks
     public static Block ASPEN_BOOKSHELF;
     public static Block BAOBAB_BOOKSHELF;
     public static Block BLUE_ENCHANTED_BOOKSHELF;

@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "byg:blocks/bush_blueberry_stage1"
+  }
+}

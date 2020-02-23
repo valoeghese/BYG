@@ -221,6 +221,8 @@ public class ItemCatalogs {
     public static Item MILKCAP_MUSHROOM_BLOCK;
     public static Item BLEWIT_MUSHROOM_BLOCK;
     public static Item GREEN_MUSHROOM_BLOCK;
+    public static Item WHITE_MUSHROOM_STEM;
+    public static Item BROWN_MUSHROOM_STEM;
 
 
     //MushroomPlantItems
@@ -241,7 +243,7 @@ public class ItemCatalogs {
     public static Item TAMRELITE_ORE;
     public static Item LATHARIUM_ORE;
 
-    //PlankBlocks
+    //BookshelvesItems
     public static Item ASPEN_BOOKSHELF;
     public static Item BAOBAB_BOOKSHELF;
     public static Item BLUE_ENCHANTED_BOOKSHELF;

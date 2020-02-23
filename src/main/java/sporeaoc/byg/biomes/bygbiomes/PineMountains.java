@@ -17,8 +17,8 @@ public class PineMountains extends Biome {
     static final Category CATEGORY = Category.TAIGA;
     static final double DEPTH = 2.0F;
     static final double SCALE = 0.55F;
-    static final float TEMPERATURE = 0.5F;
-    static final float DOWNFALL = 0.0F;
+    static final float TEMPERATURE = 0.25F;
+    static final float DOWNFALL = 0.8F;
     static final int WATER_COLOR = 4159204;
     static final int WATER_FOG_COLOR = 329011;
     static final String PARENT = null;

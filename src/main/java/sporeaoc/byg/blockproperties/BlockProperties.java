@@ -100,6 +100,33 @@ public  class BlockProperties {
             setRegistryName(registryName);
         }
     }
+    public static class BlockCrop extends CropsBlock {
+        public BlockCrop(String registryName) {
+            super(Block.Properties.create(Material.PLANTS)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(1.5f, 6.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
+    public static class BlockBerryBush extends SweetBerryBushBlock {
+        public BlockBerryBush(String registryName) {
+            super(Block.Properties.create(Material.PLANTS)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(1.5f, 6.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
+    public static class BlockHugeMushroom extends HugeMushroomBlock {
+        public BlockHugeMushroom(String registryName) {
+            super(Block.Properties.create(Material.PLANTS, MaterialColor.DIRT)
+                    .sound(SoundType.WOOD)
+                    .hardnessAndResistance(1.5f, 6.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
     public static class BlockPlanks extends Block {
         public BlockPlanks(String registryName) {
             super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)

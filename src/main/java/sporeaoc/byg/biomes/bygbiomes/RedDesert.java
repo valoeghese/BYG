@@ -22,7 +22,7 @@ public class RedDesert extends Biome {
         static final Category CATEGORY = Category.DESERT;
         static final double DEPTH = 0.125F;
         static final double SCALE = 0.05F;
-        static final float TEMPERATURE = 2.00F;
+        static final float TEMPERATURE = 2.0F;
         static final float DOWNFALL = 0.0F;
         static final int WATER_COLOR = 4159204;
         static final int WATER_FOG_COLOR = 329011;
