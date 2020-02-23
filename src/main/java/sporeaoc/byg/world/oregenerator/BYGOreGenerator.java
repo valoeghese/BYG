@@ -28,7 +28,6 @@ public class BYGOreGenerator {
             biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.ROCKY_STONE.getDefaultState(), OreStoneConfig.RockyStoneSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(OreStoneConfig.RockyStoneChance.get(), 0, 0, OreStoneConfig.RockyStoneMaxY.get())));
             biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.SCORIA_STONE.getDefaultState(), OreStoneConfig.ScoriaStoneSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(OreStoneConfig.ScoriaStoneChance.get(), 0, 0, OreStoneConfig.ScoriaStoneMaxY.get())));
             biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.SOAPSTONE.getDefaultState(), OreStoneConfig.SoapStoneSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(OreStoneConfig.SoapStoneChance.get(), 0, 0, OreStoneConfig.SoapStoneMaxY.get())));
-
         });
     }
 }

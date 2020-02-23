@@ -2,7 +2,6 @@ package sporeaoc.byg;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.world.WorldType;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -14,13 +13,12 @@ import org.apache.logging.log4j.Logger;
 import sporeaoc.byg.catalogs.ItemCatalogs;
 import sporeaoc.byg.config.orestones.OreStoneConfig;
 import sporeaoc.byg.config.weight.ConfigWeightManager;
-import sporeaoc.byg.worldtype.islandtype.BYGIslandWorldType;
 
 @Mod("byg")
 public class BYG {
     public static Logger LOGGER = LogManager.getLogger();
 
-    public static final WorldType BYGISLANDTYPE = new BYGIslandWorldType();
+    //public static final WorldType BYGISLANDTYPE = new BYGIslandWorldType();
 
 
     public static final String MOD_ID = "byg";
@@ -46,5 +44,6 @@ public class BYG {
 
     private void setup(final FMLCommonSetupEvent event) {
         setup.init();
+
     }
 }
