@@ -15,7 +15,7 @@ import java.util.function.LongFunction;
 
 public class BYGLayerProvider {
     public static <T extends IArea, C extends IExtendedNoiseRandom<T>> ImmutableList<IAreaFactory<T>> buildArchipelagoProcedure(WorldType worldTypeIn, OverworldGenSettings settings, LongFunction<C> contextFactory) {
-        IAreaFactory<T> survivalIslandFactory = BYGArchipelagoLayer.INSTANCE.apply(contextFactory.apply(1000L));
+        IAreaFactory<T> survivalIslandFactory = BYGIslandLayer.INSTANCE.apply(contextFactory.apply(1000L));
         survivalIslandFactory = ZoomLayer.FUZZY.apply(contextFactory.apply(1000L), survivalIslandFactory);
         survivalIslandFactory = ZoomLayer.NORMAL.apply(contextFactory.apply(1000L), survivalIslandFactory);
         survivalIslandFactory = ZoomLayer.NORMAL.apply(contextFactory.apply(1000L), survivalIslandFactory);

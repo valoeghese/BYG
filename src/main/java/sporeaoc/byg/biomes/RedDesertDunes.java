@@ -34,7 +34,6 @@ public class RedDesertDunes extends Biome {
             this.addStructure(FeatureCatalog.REDDESERTPYRAMID, IFeatureConfig.NO_FEATURE_CONFIG);
             this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
             this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
-
             this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.HUSK, 160, 10, 10));
         }
     }

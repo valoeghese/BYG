@@ -49,8 +49,8 @@ public class BYGBiomeGetter {
     public static final int SNOWYBLUETAIGA = BiomeRegistry.getID(BiomeCatalog.SNOWYBLUETAIGA);
     public static final int ICESPIKES = BiomeRegistry.getID(Biomes.ICE_SPIKES);
 
-
     //Deserts(Hot)
+    public static final int DUNES = BiomeRegistry.getID(BiomeCatalog.DUNES);
     public static final int REDDESERTDUNES = BiomeRegistry.getID(BiomeCatalog.REDDESERTDUNES);
     public static final int REDDESERT = BiomeRegistry.getID(BiomeCatalog.REDDESERT);
 
@@ -65,6 +65,10 @@ public class BYGBiomeGetter {
 
     //Mountains
     public static final int ALPS = BiomeRegistry.getID(BiomeCatalog.ALPS);
+
+    //Plateaus
+    public static final int GPLATEAU = BiomeRegistry.getID(BiomeCatalog.GRASSLANDPLATEAU);
+
 
     public static int[] RandomArray = {
             ALLIUMFIELDS,
