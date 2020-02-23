@@ -15,45 +15,50 @@ public class OreStoneConfig {
     private static final ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
     public static ForgeConfigSpec COMMON_CONFIG;
 
+    public static ForgeConfigSpec.BooleanValue AmplifiedBiomes;
+
     public static ForgeConfigSpec.IntValue lathariumOreSize;
     public static ForgeConfigSpec.IntValue LathariumOreChance;
     public static ForgeConfigSpec.IntValue LathariumOreMaxY;
-    public static ForgeConfigSpec.IntValue LathariumOreMinY;
+   // public static ForgeConfigSpec.IntValue LathariumOreMinY;
 
     public static ForgeConfigSpec.IntValue PendoriteOreSize;
     public static ForgeConfigSpec.IntValue PendoriteOreChance;
     public static ForgeConfigSpec.IntValue PendoriteOreMaxY;
-    public static ForgeConfigSpec.IntValue PendoriteOreMinY;
+   // public static ForgeConfigSpec.IntValue PendoriteOreMinY;
 
     public static ForgeConfigSpec.IntValue TamreliteOreSize;
     public static ForgeConfigSpec.IntValue TamreliteOreChance;
     public static ForgeConfigSpec.IntValue TamreliteOreMaxY;
-    public static ForgeConfigSpec.IntValue TamreliteOreMinY;
+    //public static ForgeConfigSpec.IntValue TamreliteOreMinY;
 
 
     public static ForgeConfigSpec.IntValue DaciteSize;
     public static ForgeConfigSpec.IntValue DaciteChance;
     public static ForgeConfigSpec.IntValue DaciteMaxY;
-    public static ForgeConfigSpec.IntValue DaciteMinY;
+   // public static ForgeConfigSpec.IntValue DaciteMinY;
 
     public static ForgeConfigSpec.IntValue RockyStoneSize;
     public static ForgeConfigSpec.IntValue RockyStoneChance;
     public static ForgeConfigSpec.IntValue RockyStoneMaxY;
-    public static ForgeConfigSpec.IntValue RockyStoneMinY;
+   // public static ForgeConfigSpec.IntValue RockyStoneMinY;
 
     public static ForgeConfigSpec.IntValue ScoriaStoneSize;
     public static ForgeConfigSpec.IntValue ScoriaStoneChance;
     public static ForgeConfigSpec.IntValue ScoriaStoneMaxY;
-    public static ForgeConfigSpec.IntValue ScoriaStoneMinY;
+   // public static ForgeConfigSpec.IntValue ScoriaStoneMinY;
 
     public static ForgeConfigSpec.IntValue SoapStoneSize;
     public static ForgeConfigSpec.IntValue SoapStoneChance;
     public static ForgeConfigSpec.IntValue SoapStoneMaxY;
-    public static ForgeConfigSpec.IntValue SoapStoneMinY;
+    //public static ForgeConfigSpec.IntValue SoapStoneMinY;
 
 
     static {
-        COMMON_BUILDER.comment("BYG Config").push("Ores");
+        COMMON_BUILDER.comment("BYG Config").push("Biome Settings");
+        AmplifiedBiomes = COMMON_BUILDER.define("AmplifiedBiomes", false);
+        COMMON_BUILDER.pop();
+        COMMON_BUILDER.push("Ores");
         COMMON_BUILDER.push("LathariumOre");
         lathariumOreSize = COMMON_BUILDER.defineInRange("LathariumSize", 4, 1, 100);
         LathariumOreChance = COMMON_BUILDER.defineInRange("LathariumChance", 4, 1, 100);
