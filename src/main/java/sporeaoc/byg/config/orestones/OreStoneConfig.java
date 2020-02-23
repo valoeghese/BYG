@@ -73,8 +73,6 @@ public class OreStoneConfig {
         //  TamreliteOreMinY = COMMON_BUILDER.defineInRange("TamreliteMinY", 12, 1, 256);
         COMMON_BUILDER.pop();
         COMMON_BUILDER.pop();
-
-
         COMMON_BUILDER.push("Stones");
         COMMON_BUILDER.push("DaciteStone");
         DaciteSize = COMMON_BUILDER.defineInRange("DaciteSize", 12, 1, 100);
@@ -99,6 +97,7 @@ public class OreStoneConfig {
         SoapStoneChance = COMMON_BUILDER.defineInRange("SoapStoneChance", 4, 1, 100);
         SoapStoneMaxY = COMMON_BUILDER.defineInRange("SoapStoneMaxY", 256, 1, 256);
         // SoapStoneMinY = COMMON_BUILDER.defineInRange("SoapStoneMinY", 1, 1, 256);
+        COMMON_BUILDER.pop();
         COMMON_BUILDER.pop();
         COMMON_CONFIG = COMMON_BUILDER.build();
     }
