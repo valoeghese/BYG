@@ -3,7 +3,6 @@ package sporeaoc.byg.world;
 import com.google.common.collect.Lists;
 import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
@@ -12,7 +11,7 @@ import net.minecraft.world.gen.placement.Placement;
 import sporeaoc.byg.catalogs.BlockCatalogs;
 import sporeaoc.byg.catalogs.FeatureCatalog;
 
-public class BYGBiomeFeatures extends DefaultBiomeFeatures {
+public class BYGBiomeFeatures {
     public static void addAlliumFieldFlowers(Biome biome) {
         biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.ALLIUMFLOWERS, IFeatureConfig.NO_FEATURE_CONFIG, Placement.COUNT_HEIGHTMAP_32, new FrequencyConfig(200)));
     }
