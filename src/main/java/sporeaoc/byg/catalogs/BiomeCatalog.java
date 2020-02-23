@@ -1,6 +1,7 @@
 package sporeaoc.byg.catalogs;
 
 import net.minecraft.world.biome.Biome;
+import sporeaoc.byg.biomes.bygamplifiedbiomes.*;
 import sporeaoc.byg.biomes.bygbiomes.*;
 
 public class BiomeCatalog {
@@ -69,10 +70,45 @@ public class BiomeCatalog {
     public static Biome WOODLANDS = new WoodLands();
     public static Biome ZELKOVAFOREST = new ZelkovaForest();
 
-
-
-
-
-
-
+    //Amplified Biomes
+    public static Biome aASPENFOREST = new AmplifiedAspenForest();
+    public static Biome aBAOBABSAVANNA = new AmplifiedBaobabSavanna();
+    public static Biome aBLUEGIANTAIGA = new AmplifiedBlueGiantTaiga();
+    public static Biome aBLUETAIGA = new AmplifiedBlueTaiga();
+    public static Biome aBLUFFMOUNTAINS = new AmplifiedBluffMountains();
+    public static Biome aBOREALFOREST = new AmplifiedBorealForest();
+    public static Biome aCHAPPARALCOASTALS = new AmplifiedChapparalCoastals();
+    public static Biome aCHERRYBLOSSOMFOREST = new AmplifiedCherryBlossomForest();
+    public static Biome aCONIFEROUSFOREST = new AmplifiedConiferousForest();
+    public static Biome aDECIDUOUSFOREST = new AmplifiedDeciduousForest();
+    public static Biome aDOVERMOUNTAINS = new AmplifiedDoverMountains();
+    public static Biome aEBONYWOODS = new AmplifiedEbonyWoods();
+    public static Biome aENCHANTEDFOREST = new AmplifiedEnchantedForest();
+    public static Biome aEVERGREENTAIGA = new AmplifiedEvergreenTaiga();
+    public static Biome aJACARANDAFOREST = new AmplifiedJacarandaForest();
+    public static Biome aMAPLETAIGA = new AmplifiedMapleTaiga();
+    public static Biome aORCHARD = new AmplifiedOrchard();
+    public static Biome aPINEMOUNTAINS = new AmplifiedPineMountains();
+    public static Biome aREDDESERTDUNES = new AmplifiedRedDesertDunes();
+    public static Biome aREDOAKFOREST = new AmplifiedRedOakForest();
+    public static Biome aSAVANNACANOPY = new AmplifiedSavannaCanopy();
+    public static Biome aSEASONALBIRCHFOREST = new AmplifiedSeasonalBirchForest();
+    public static Biome aSEASONALDECIDUOUSFOREST = new AmplifiedSeasonalDeciduousForest();
+    public static Biome aSEASONALFOREST = new AmplifiedSeasonalForest();
+    public static Biome aSEASONALGIANTTAIGA = new AmplifiedSeasonalGiantTaiga();
+    public static Biome aSEASONALTAIGA = new AmplifiedSeasonalTaiga();
+    public static Biome aSHRUBLANDS = new AmplifiedShrubLands();
+    public static Biome aSKYRISHIGHLANDS = new AmplifiedSkyrisHighlands();
+    public static Biome aSNOWYBLUEGIANTTAIGA = new AmplifiedSnowyBlueGiantTaiga();
+    public static Biome aSNOWYCONIFEROUSFOREST = new AmplifiedSnowyConiferousForest();
+    public static Biome aSNOWYDECIDUOUSFOREST = new AmplifiedSnowyDeciduousForest();
+    public static Biome aSNOWYEVERGREENFOREST = new AmplifiedSnowyEvergreenTaiga();
+    public static Biome aSNOWYPINEMOUNTAINS = new AmplifiedSnowyPineMountains();
+    public static Biome aSONORANDESERT = new AmplifiedSonoranDesert();
+    public static Biome aSTONEBRUSHLANDS = new AmplifiedStoneBrushlands();
+    public static Biome aTROPICALFINGALRAINFOREST = new AmplifiedTropicalFungalRainForest();
+    public static Biome aTROPICALRAINFOREST = new AmplifiedTropicalRainForest();
+    public static Biome aWEEPINGWITCHFOREST = new AmplifiedWeepingWitchForest();
+    public static Biome aWOODLANDS = new AmplifiedWoodLands();
+    public static Biome aZELKOVAFOREST = new AmplifiedZelkovaForest();
 }
