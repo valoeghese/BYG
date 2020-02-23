@@ -22,6 +22,7 @@ public class ConfigWeightManager {
     public static ConfigWeight bluffmountains = new ConfigWeight("bluffmountains", 10);
     public static ConfigWeight bog = new ConfigWeight("bog", 10);
     public static ConfigWeight borealforest = new ConfigWeight("borealforest", 10);
+    public static ConfigWeight canyons = new ConfigWeight("canyons", 10);
     public static ConfigWeight cherryblossomforest = new ConfigWeight("cherryblossomforest", 10);
     public static ConfigWeight chapparalcoastals = new ConfigWeight("chapparalcoastals", 10);
     public static ConfigWeight coastalredwoodtropics = new ConfigWeight("coastalredwoodtropics", 10);
@@ -75,27 +76,11 @@ public class ConfigWeightManager {
     public static ConfigWeight zelkovaforest = new ConfigWeight("zelkovaforest", 10);
 
 
-//    public static List<ConfigOreGeneration> ORES = new ArrayList<>();
-//    public static ConfigOreGeneration LATHARIUM_ORE = new ConfigOreGeneration("latharium ore", 8, 4, 32);
-//    public static ConfigOreGeneration TAMRELITE_ORE = new ConfigOreGeneration("tamrelite ore", 8, 4, 32);
-//    public static ConfigOreGeneration PENDORITE_ORE = new ConfigOreGeneration("pendorite ore", 8, 4, 32);
-//
-//    public static List<ConfigStoneGeneration> STONES = new ArrayList<>();
-//    public static ConfigStoneGeneration DACITE_STONE = new ConfigStoneGeneration("dacite", 25, 10, 256);
-//    public static ConfigStoneGeneration ROCKY_STONE = new ConfigStoneGeneration("rocky stone", 25, 10, 256);
-//    public static ConfigStoneGeneration SCORIA_STONE = new ConfigStoneGeneration("dacite", 25, 10, 256);
-//    public static ConfigStoneGeneration SOAPSTONE = new ConfigStoneGeneration("dacite", 25, 10, 256);
-
-
-
-
     public static ForgeConfigSpec COMMON_CONFIG;
     private static ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
 
     static {
         BIOMES.forEach(o -> o.apply(COMMON_BUILDER));
-//        ORES.forEach(o -> o.apply(COMMON_BUILDER));
-//        STONES.forEach(o -> o.apply(COMMON_BUILDER));
         COMMON_CONFIG = COMMON_BUILDER.build();
     }
 

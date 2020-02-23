@@ -40,16 +40,6 @@ public class BiomeCatalog {
     public static Biome SHRUBLANDS = new ShrubLands();
     public static Biome SNOWYBLUEGIANTTAIGA = new SnowyBlueGiantTaiga();
     public static Biome SNOWYBLUETAIGA = new SnowyBlueTaiga();
-    public static Biome ANCIENTFOREST = new AncientForest();
-    public static Biome ASPENFOREST = new AspenForest();
-    public static Biome BAOBABSAVANNA = new BaobabSavanna();
-    public static Biome BAYOU = new Bayou();
-    public static Biome BLUFFMOUNTAINS = new BluffMountains();
-    public static Biome BOG = new Bog();
-    public static Biome CHAPPARALCOASTALS = new ChapparalCoastals();
-    public static Biome CHERRYBLOSSOMFOREST = new CherryBlossomForest();
-    public static Biome COASTALREDWOODTROPICS = new CoastalRedwoodTropics();
-    public static Biome CONIFEROUSFOREST = new ConiferousForest();
     public static Biome DEADSEA = new DeadSea();
     public static Biome DOVERMOUNTAINS = new DoverMountains();
     public static Biome EBONYWOODS = new EbonyWoods();
