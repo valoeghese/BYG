@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree;
+package sporeaoc.byg.world.tree.tropicalrainforest;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.util.Direction;
@@ -16,13 +16,13 @@ import java.util.Set;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class TropicalRainForestTree2 extends AbstractTreeFeature<NoFeatureConfig> {
+public class ShortTropicalRainForestTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = BlockCatalogs.MAHOGANY_LOG.getDefaultState();
     private static final BlockState LEAVES = BlockCatalogs.MAHOGANY_LEAVES.getDefaultState();
 
 
-    public TropicalRainForestTree2() {
+    public ShortTropicalRainForestTree() {
         super(null, true);
     }
 

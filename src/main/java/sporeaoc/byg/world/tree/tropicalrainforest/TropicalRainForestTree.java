@@ -1,6 +1,8 @@
-package sporeaoc.byg.world.tree;
+package sporeaoc.byg.world.tree.tropicalrainforest;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.state.BooleanProperty;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MutableBoundingBox;
@@ -204,6 +206,13 @@ public class TropicalRainForestTree extends AbstractTreeFeature<NoFeatureConfig>
         BlockPos leafpos = new BlockPos(x, y, z);
         if (isAir(reader, leafpos)) {
             this.setLogState(blockPos, reader, leafpos, LEAVES, boundingBox);
+        }
+
+    }
+
+    private void tryPlaceVines(IWorldGenerationReader worldIn, Random random, BlockPos pos, BooleanProperty sideProperty) {
+        if (random.nextInt(3) > 0 && isAir(worldIn, pos)) {
+            this.setBlockState(worldIn, pos, Blocks.VINE.getDefaultState().with(sideProperty, Boolean.valueOf(true)));
         }
 
     }

@@ -17,6 +17,8 @@ import sporeaoc.byg.world.tree.cypressswamplands.HugeCypressTree;
 import sporeaoc.byg.world.tree.deciduousforest.*;
 import sporeaoc.byg.world.tree.oakandbirch.*;
 import sporeaoc.byg.world.tree.taiga.*;
+import sporeaoc.byg.world.tree.tropicalrainforest.TropicalRainForestTree;
+import sporeaoc.byg.world.tree.tropicalrainforest.ShortTropicalRainForestTree;
 
 public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> DECIDUOUS_TREE = new DeciduousTree1();
@@ -50,9 +52,8 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> BOREALFOREST_TREE = new BorealForestTree1();
     public static final AbstractTreeFeature<NoFeatureConfig> BOREALFOREST_TREE2 = new BorealForestTree2();
     public static final AbstractTreeFeature<NoFeatureConfig> TROPICALRAINFORESTTREE = new TropicalRainForestTree();
-    public static final AbstractTreeFeature<NoFeatureConfig> TROPICALRAINFORESTTREE2 = new TropicalRainForestTree2();
+    public static final AbstractTreeFeature<NoFeatureConfig> SHORTTROPICALRAINFORESTTREE = new ShortTropicalRainForestTree();
     public static final AbstractTreeFeature<NoFeatureConfig> TREENAME = new TreeName();
-
     public static final AbstractTreeFeature<NoFeatureConfig> SHRUB = new DeciduousShrub();
 
     public static final FlowersFeature ALLIUMFLOWERS = new AlliumFieldFlowers(NoFeatureConfig::deserialize);

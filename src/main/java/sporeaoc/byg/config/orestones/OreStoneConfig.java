@@ -15,7 +15,7 @@ public class OreStoneConfig {
     private static final ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
     public static ForgeConfigSpec COMMON_CONFIG;
 
-    public static ForgeConfigSpec.BooleanValue AmplifiedBiomes;
+    //public static ForgeConfigSpec.BooleanValue AmplifiedBiomes;
 
     public static ForgeConfigSpec.IntValue lathariumOreSize;
     public static ForgeConfigSpec.IntValue LathariumOreChance;
@@ -56,7 +56,7 @@ public class OreStoneConfig {
 
     static {
         COMMON_BUILDER.comment("BYG Config").push("Biome Settings");
-        AmplifiedBiomes = COMMON_BUILDER.define("AmplifiedBiomes", false);
+        //AmplifiedBiomes = COMMON_BUILDER.define("AmplifiedBiomes", false);
         COMMON_BUILDER.pop();
         COMMON_BUILDER.push("Ores");
         COMMON_BUILDER.push("LathariumOre");
