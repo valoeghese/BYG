@@ -1,4 +1,4 @@
-package sporeaoc.byg.catalogs;
+package sporeaoc.byg.blockproperties;
 
 import java.util.Random;
 

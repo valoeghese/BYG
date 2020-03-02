@@ -4,8 +4,6 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.potion.Effects;
-import sporeaoc.byg.catalogs.SnowyLeavesBlock;
-import net.minecraft.block.SaplingBlock;
 
 public  class BlockProperties {
     public static class BlockFence extends FenceBlock {
@@ -30,12 +28,13 @@ public  class BlockProperties {
             setRegistryName(registryName);
         }
     }
-    public static class BlockSapling extends SaplingBlock {
+
+    public static class BlockSapling extends SaplingsBlock {
         public BlockSapling(String registryName) {
-            super(
-                    .sound(SoundType.PLANT)
-                    .hardnessAndResistance(0.0f)
-                    .doesNotBlockMovement();
+            super(Block.Properties.create(Material.PLANTS)
+                            .sound(SoundType.PLANT)
+                            .hardnessAndResistance(0.0f)
+                            .doesNotBlockMovement()
             );
             setRegistryName(registryName);
         }
