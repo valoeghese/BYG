@@ -59,6 +59,8 @@ public class BYGItemRegistry {
                 ItemCatalogs.WHITE_MUSHROOM_STEM = new BlockItem(BlockCatalogs.WHITE_MUSHROOM_STEM, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WHITE_MUSHROOM_STEM.getRegistryName()),
                 ItemCatalogs.BROWN_MUSHROOM_STEM = new BlockItem(BlockCatalogs.BROWN_MUSHROOM_STEM, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BROWN_MUSHROOM_STEM.getRegistryName()),
 
+                //SaplingItems
+                ItemCatalogs.ASPEN_SAPLING = new BlockItem(BlockCatalogs.ASPEN_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_SAPLING.getRegistryName()),
 
 
 

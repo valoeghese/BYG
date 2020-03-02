@@ -25,8 +25,8 @@ public class TropicalRainForest extends Biome {
     static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
     static final RainType PRECIPATATION = RainType.RAIN;
     static final Category CATEGORY = Category.JUNGLE;
-    static final double DEPTH = 0.5F;
-    static final double SCALE = 0.25F;
+    static final double DEPTH = 0.45F;
+    static final double SCALE = 0.1F;
     static final float TEMPERATURE = 0.95F;
     static final float DOWNFALL = 0.9F;
     static final int WATER_COLOR = 4159204;
@@ -45,14 +45,15 @@ public class TropicalRainForest extends Biome {
         DefaultBiomeFeatures.addOres(this);
         DefaultBiomeFeatures.addSedimentDisks(this);
         DefaultBiomeFeatures.addExtraDefaultFlowers(this);
-        DefaultBiomeFeatures.addJungleGrass(this);
         DefaultBiomeFeatures.addMushrooms(this);
         DefaultBiomeFeatures.addReedsAndPumpkins(this);
         DefaultBiomeFeatures.addSprings(this);
         DefaultBiomeFeatures.addJunglePlants(this);
         DefaultBiomeFeatures.addFreezeTopLayer(this);
         BYGBiomeFeatures.addTropJungleTrees(this);
-        this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.DOUBLE_PLANT, new DoublePlantConfig(Blocks.TALL_GRASS.getDefaultState()), Placement.NOISE_HEIGHTMAP_32, new NoiseDependant(-0.8D, 0, 7)));
+        DefaultBiomeFeatures.addVeryDenseGrass(this);
+        DefaultBiomeFeatures.addJungleTreeForest(this);
+        this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.DOUBLE_PLANT, new DoublePlantConfig(Blocks.TALL_GRASS.getDefaultState()), Placement.NOISE_HEIGHTMAP_32, new NoiseDependant(-0.8D, 0, 85)));
 
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.PIG, 10, 4, 4));

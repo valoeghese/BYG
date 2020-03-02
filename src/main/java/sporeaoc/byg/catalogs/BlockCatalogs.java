@@ -315,6 +315,7 @@ public class BlockCatalogs {
 
 
     //SaplingBlocks
+    public static Block ASPEN_SAPLING;
     public static Block BAOBAB_SAPLING;
     public static Block BLOOMING_WITCH_HAZEL_SAPLING;
     public static Block BLUE_ENCHANTED_SAPLING;

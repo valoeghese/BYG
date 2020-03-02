@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "byg:block/aspensapling"
+      "model": "byg:block/aspen_sapling"
     }
   }
 }

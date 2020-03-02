@@ -38,7 +38,7 @@ public class ConfigWeightManager {
     // public static ConfigWeight glowshroombayou = new ConfigWeight("glowshroombayou", 10);
     public static ConfigWeight grasslandplateau = new ConfigWeight("grasslandplateau", 10);
     //public static ConfigWeight greatlakes = new ConfigWeight("greatlakes", 10);
-    //public static ConfigWeight guianashield = new ConfigWeight("guianashield", 10);
+    public static ConfigWeight guianashield = new ConfigWeight("guianashield", 10);
     public static ConfigWeight jacarandaforest = new ConfigWeight("jacarandaforest", 10);
     //    public static ConfigWeight mangrovemarshes = new ConfigWeight("mangrovemarshes", 10);
 //    public static ConfigWeight mapletaiga = new ConfigWeight("mapletaiga", 10);

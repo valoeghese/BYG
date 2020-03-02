@@ -320,6 +320,7 @@ public class ItemCatalogs {
 
 
     //SaplingItems
+    public static Item ASPEN_SAPLING;
     public static Item BAOBAB_SAPLING;
     public static Item BLOOMING_WITCH_HAZEL_SAPLING;
     public static Item BLUE_ENCHANTED_SAPLING;
