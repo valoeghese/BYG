@@ -101,6 +101,12 @@ public class ItemCatalogs {
     public static Item SNOWY_MEADOW_GRASSBLOCK;
     public static Item PEAT_GRASSBLOCK;
 
+    //Dirt Items
+    public static Item PEAT_BLOCK;
+    public static Item MEADOW_DIRT;
+    public static Item MUD_BLOCK;
+    public static Item MUD_BRICKS;
+
     //Sand Items
     public static Item BLUE_SAND;
     public static Item BLACK_SAND;
@@ -135,13 +141,6 @@ public class ItemCatalogs {
     public static Item PURPLE_CHISELED_SANDSTONE;
     public static Item PURPLE_CUT_SANDSTONE;
     public static Item PURPLE_SMOOTH_SANDSTONE;
-
-    //Dirt Items
-    public static Item PEAT_BLOCK;
-    public static Item MEADOW_DIRT;
-    public static Item MUD_BLOCK;
-    public static Item MUD_BRICKS;
-
 
     //LeaveItems
     public static Item BAOBAB_LEAVES;
@@ -338,7 +337,7 @@ public class ItemCatalogs {
     public static Item HOLLY_BERRY_SAPLING;
     public static Item HOLLY_SAPLING;
     public static Item JACARANDA_SAPLING;
-    public static Item MAHOGNY_SAPLING;
+    public static Item MAHOGONY_SAPLING;
     public static Item MANGROVE_SAPLING;
     public static Item ORANGE_BIRCH_SAPLING;
     public static Item ORANGE_OAK_SAPLING;
@@ -360,6 +359,7 @@ public class ItemCatalogs {
     public static Item WILLOW_SAPLING;
     public static Item WITCH_HAZEL_SAPLING;
     public static Item YELLOW_BIRCH_SAPLING;
+    public static Item YELLOW_SPRUCE_SAPLING;
 
     //SlabItems
     public static Item ASPEN_SLAB;

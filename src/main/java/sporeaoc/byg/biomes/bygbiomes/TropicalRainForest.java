@@ -26,7 +26,7 @@ public class TropicalRainForest extends Biome {
     static final RainType PRECIPATATION = RainType.RAIN;
     static final Category CATEGORY = Category.JUNGLE;
     static final double DEPTH = 0.45F;
-    static final double SCALE = 0.1F;
+    static final double SCALE = 0.25F;
     static final float TEMPERATURE = 0.95F;
     static final float DOWNFALL = 0.9F;
     static final int WATER_COLOR = 4159204;

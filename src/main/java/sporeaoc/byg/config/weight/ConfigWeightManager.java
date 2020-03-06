@@ -68,7 +68,7 @@ public class ConfigWeightManager {
     public static ConfigWeight snowygiantbluetaiga = new ConfigWeight("snowybluegianttaiga", 10);
     //    public static ConfigWeight sonorandesert = new ConfigWeight("sonorandesert", 10);
 //    public static ConfigWeight stonebrushlands = new ConfigWeight("stonebrushlands", 10);
-//    public static ConfigWeight tropicalfungalforest = new ConfigWeight("tropicalfungalforest", 10);
+    public static ConfigWeight tropicalfungalforest = new ConfigWeight("tropicalfungalforest", 10);
 //    public static ConfigWeight tropicalislands = new ConfigWeight("tropicalfungalforest", 10);
     public static ConfigWeight tropicalrainforest = new ConfigWeight("tropicalrainforest", 10);
     // public static ConfigWeight weepingwitchforest = new ConfigWeight("weepingwitchforest", 10);

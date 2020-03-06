@@ -94,6 +94,12 @@ public class BlockCatalogs {
    // public static Block SNOWY_MEADOW_GRASSBLOCK;
     public static Block PEAT_GRASSBLOCK;
 
+    //Dirt Blocks
+    public static Block PEAT_BLOCK;
+    public static Block MEADOW_DIRT;
+    public static Block MUD_BLOCK;
+    public static Block MUD_BRICKS;
+
     //Sand Blocks
     public static Block BLUE_SAND;
     public static Block BLACK_SAND;
@@ -130,13 +136,6 @@ public class BlockCatalogs {
     public static Block PURPLE_CHISELED_SANDSTONE;
     public static Block PURPLE_CUT_SANDSTONE;
     public static Block PURPLE_SMOOTH_SANDSTONE;
-
-
-    //Dirt Blocks
-    public static Block PEAT_BLOCK;
-    public static Block MEADOW_DIRT;
-    public static Block MUD_BLOCK;
-    public static Block MUD_BRICKS;
 
 
     //LeaveBlocks
@@ -333,7 +332,7 @@ public class BlockCatalogs {
     public static Block HOLLY_BERRY_SAPLING;
     public static Block HOLLY_SAPLING;
     public static Block JACARANDA_SAPLING;
-    public static Block MAHOGNY_SAPLING;
+    public static Block MAHOGONY_SAPLING;
     public static Block MANGROVE_SAPLING;
     public static Block ORANGE_BIRCH_SAPLING;
     public static Block ORANGE_OAK_SAPLING;
@@ -355,6 +354,7 @@ public class BlockCatalogs {
     public static Block WILLOW_SAPLING;
     public static Block WITCH_HAZEL_SAPLING;
     public static Block YELLOW_BIRCH_SAPLING;
+    public static Block YELLOW_SPRUCE_SAPLING;
 
     //SlabBlocks
     public static Block ASPEN_SLAB;

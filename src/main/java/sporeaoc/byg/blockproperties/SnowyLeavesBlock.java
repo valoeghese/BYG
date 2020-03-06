@@ -25,8 +25,10 @@ import net.minecraft.world.World;
 import net.minecraft.world.lighting.LightEngine;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.common.IShearable;
 
-public class SnowyLeavesBlock extends LeavesBlock {
+public class SnowyLeavesBlock extends LeavesBlock implements IShearable {
+
     public static final BooleanProperty SNOWY = BlockStateProperties.SNOWY;
 
         protected SnowyLeavesBlock(Block.Properties builder) {
