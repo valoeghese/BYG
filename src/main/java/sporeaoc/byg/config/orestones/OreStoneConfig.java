@@ -67,7 +67,6 @@ public class OreStoneConfig {
         AmetrineOreMaxY = COMMON_BUILDER.defineInRange("AmetrineMaxY", 32, 1, 256);
         //  AmetrineOreMinY = COMMON_BUILDER.defineInRange("AmetrineMinY", 12, 1, 256);
         COMMON_BUILDER.pop();
-        COMMON_BUILDER.pop();
         COMMON_BUILDER.push("Stones");
         COMMON_BUILDER.push("DaciteStone");
         DaciteSize = COMMON_BUILDER.defineInRange("DaciteSize", 12, 1, 100);

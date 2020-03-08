@@ -55,6 +55,8 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> SHORTTROPICALRAINFORESTTREE = new ShortTropicalRainForestTree();
     public static final AbstractTreeFeature<NoFeatureConfig> TREENAME = new TreeName();
     public static final AbstractTreeFeature<NoFeatureConfig> SHRUB = new DeciduousShrub();
+//    public static final AbstractTreeFeature<NoFeatureConfig> ASPENTREE1 = new AspenTree();
+
 
     public static final FlowersFeature ALLIUMFLOWERS = new AlliumFieldFlowers(NoFeatureConfig::deserialize);
     public static final FlowersFeature AMARANTHFLOWERS = new AmaranthFieldFlowers(NoFeatureConfig::deserialize);

@@ -15,8 +15,8 @@ public class ConfigWeightManager {
     public static ConfigWeight alps = new ConfigWeight("alps", 10);
     //public static ConfigWeight ancientForest = new ConfigWeight("ancientForest", 10);
     public static ConfigWeight amaranthfields = new ConfigWeight("amaranthfields", 10);
-    // public static ConfigWeight aspenForest = new ConfigWeight("aspenforest", 10);
-//    public static ConfigWeight baobabsavanna = new ConfigWeight("baoababsavanna", 10);
+    public static ConfigWeight aspenForest = new ConfigWeight("aspenforest", 10);
+    //    public static ConfigWeight baobabsavanna = new ConfigWeight("baoababsavanna", 10);
 //    public static ConfigWeight bayou = new ConfigWeight("bayou", 10);
     public static ConfigWeight bluetaiga = new ConfigWeight("bluetaiga", 10);
     //    public static ConfigWeight bluffmountains = new ConfigWeight("bluffmountains", 10);
