@@ -101,7 +101,6 @@ public class ItemCatalogs {
 
     //Grass Items
     public static Item MEADOW_GRASSBLOCK;
-    public static Item SNOWY_MEADOW_GRASSBLOCK;
     public static Item PEAT_GRASSBLOCK;
 
     //Dirt Items

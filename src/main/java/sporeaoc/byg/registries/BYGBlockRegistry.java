@@ -44,7 +44,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.CIKA_BOOKSHELF = new BlockProperties.BlockPlanks("cika_bookshelf"),
                 BlockCatalogs.CYPRESS_BOOKSHELF = new BlockProperties.BlockPlanks("cypress_bookshelf"),
                 BlockCatalogs.EBONY_BOOKSHELF = new BlockProperties.BlockPlanks("ebony_bookshelf"),
-                BlockCatalogs.FIR_PLANKS = new BlockProperties.BlockPlanks("fir_bookshelf"),
+                BlockCatalogs.FIR_BOOKSHELF = new BlockProperties.BlockPlanks("fir_bookshelf"),
                 BlockCatalogs.GREEN_ENCHANTED_BOOKSHELF = new BlockProperties.BlockPlanks("green_enchanted_bookshelf"),
                 BlockCatalogs.HOLLY_BOOKSHELF = new BlockProperties.BlockPlanks("holly_bookshelf"),
                 BlockCatalogs.JACARANDA_BOOKSHELF = new BlockProperties.BlockPlanks("jacaranda_bookshelf"),
