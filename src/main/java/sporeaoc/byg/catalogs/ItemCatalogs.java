@@ -298,6 +298,7 @@ public class ItemCatalogs {
     public static Item PURPLE_PETAL;
     public static Item LIGHT_BLUE_PETAL;
     public static Item BLUE_PETAL;
+    public static Item PLANT_STEM;
 
     //PlantItems
     public static Item CATTAIL;
@@ -311,9 +312,7 @@ public class ItemCatalogs {
     public static Item BLUE_GLOWCANE;
     public static Item RED_GLOWCANE;
     public static Item BLUEBERRY_BUSH;
-    public static Item STRAWBERRY_BUSH;
-    public static Item RUDO_STALK;
-    public static Item POISION_IVY;
+    public static Item POISON_IVY;
     public static Item PRAIRIE_GRASS;
     public static Item PINK_GLOWCANE;
     public static Item PURPLE_GLOWCANE;
@@ -323,7 +322,6 @@ public class ItemCatalogs {
     //SaplingItems
     public static Item ASPEN_SAPLING;
     public static Item BAOBAB_SAPLING;
-    public static Item BLOOMING_WITCH_HAZEL_SAPLING;
     public static Item BLUE_ENCHANTED_SAPLING;
     public static Item BLUE_SPRUCE_SAPLING;
     public static Item BROWN_BIRCH_SAPLING;
@@ -332,11 +330,7 @@ public class ItemCatalogs {
     public static Item CYPRESS_SAPLING;
     public static Item EBONY_SAPLING;
     public static Item FIR_SAPLING;
-    public static Item FLOWERING_ORCHARD_SAPLING;
-    public static Item FLOWERING_PALO_VERDE_SAPLING;
-    public static Item APPLE_SKYRIS_SAPLING;
     public static Item GREEN_ENCHANTED_SAPLING;
-    public static Item HOLLY_BERRY_SAPLING;
     public static Item HOLLY_SAPLING;
     public static Item JACARANDA_SAPLING;
     public static Item MAHOGONY_SAPLING;
@@ -354,7 +348,6 @@ public class ItemCatalogs {
     public static Item RED_OAK_SAPLING;
     public static Item RED_SPRUCE_SAPLINGS;
     public static Item REDWOOD_SAPLINGS;
-    public static Item RIPE_ORCHARD_SAPLINGS;
     public static Item SILVER_MAPLE_SAPLINGS;
     public static Item SKYRIS_SAPLINGS;
     public static Item WHITE_CHERRY_SAPLING;
@@ -417,7 +410,7 @@ public class ItemCatalogs {
     public static Item DACITE_BRICKS;
 
     public static Item SOAPSTONE;
-    public static Item POLISHED_DACITE;
+    public static Item POLISHED_SOAPSTONE;
     public static Item SOAPSTONE_PILLAR;
     public static Item SOAPSTONE_TILE;
     public static Item SOAPSTONE_BRICKS;

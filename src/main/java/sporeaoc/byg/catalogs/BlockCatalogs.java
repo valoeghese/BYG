@@ -291,6 +291,7 @@ public class BlockCatalogs {
     public static Block PURPLE_PETAL;
     public static Block LIGHT_BLUE_PETAL;
     public static Block BLUE_PETAL;
+    public static Block PLANT_STEM;
 
     //PlantBlocks
     public static Block CATTAIL;
@@ -306,7 +307,7 @@ public class BlockCatalogs {
     public static Block BLUEBERRY_BUSH;
     public static Block STRAWBERRY_BUSH;
     public static Block RUDO_STALK;
-    public static Block POISION_IVY;
+    public static Block POISON_IVY;
     public static Block PRAIRIE_GRASS;
     public static Block PINK_GLOWCANE;
     public static Block PURPLE_GLOWCANE;
@@ -410,7 +411,7 @@ public class BlockCatalogs {
     public static Block DACITE_BRICKS;
 
     public static Block SOAPSTONE;
-    public static Block POLISHED_DACITE;
+    public static Block POLISHED_SOAPSTONE;
     public static Block SOAPSTONE_PILLAR;
     public static Block SOAPSTONE_TILE;
     public static Block SOAPSTONE_BRICKS;

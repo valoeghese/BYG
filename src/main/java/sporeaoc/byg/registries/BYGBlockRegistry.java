@@ -34,7 +34,34 @@ public class BYGBlockRegistry {
                 BlockCatalogs.SKYRIS_PLANKS = new BlockProperties.BlockPlanks("skyris_planks"),
                 BlockCatalogs.WILLOW_PLANKS = new BlockProperties.BlockPlanks("willow_planks"),
                 BlockCatalogs.WITCH_HAZEL_PLANKS = new BlockProperties.BlockPlanks("witch_hazel_planks"),
-                BlockCatalogs.ZELKOVA_PLANKS = new BlockProperties.BlockPlanks("zelkova_planks")
+                BlockCatalogs.ZELKOVA_PLANKS = new BlockProperties.BlockPlanks("zelkova_planks"),
+
+                //Bookshelves
+                BlockCatalogs.ASPEN_BOOKSHELF = new BlockProperties.BlockPlanks("aspen_bookshelf"),
+                BlockCatalogs.BAOBAB_BOOKSHELF = new BlockProperties.BlockPlanks("baobab_bookshelf"),
+                BlockCatalogs.BLUE_ENCHANTED_BOOKSHELF = new BlockProperties.BlockPlanks("blue_enchanted_bookshelf"),
+                BlockCatalogs.CHERRY_BOOKSHELF = new BlockProperties.BlockPlanks("cherry_bookshelf"),
+                BlockCatalogs.CIKA_BOOKSHELF = new BlockProperties.BlockPlanks("cika_bookshelf"),
+                BlockCatalogs.CYPRESS_BOOKSHELF = new BlockProperties.BlockPlanks("cypress_bookshelf"),
+                BlockCatalogs.EBONY_BOOKSHELF = new BlockProperties.BlockPlanks("ebony_bookshelf"),
+                BlockCatalogs.FIR_PLANKS = new BlockProperties.BlockPlanks("fir_bookshelf"),
+                BlockCatalogs.GREEN_ENCHANTED_BOOKSHELF = new BlockProperties.BlockPlanks("green_enchanted_bookshelf"),
+                BlockCatalogs.HOLLY_BOOKSHELF = new BlockProperties.BlockPlanks("holly_bookshelf"),
+                BlockCatalogs.JACARANDA_BOOKSHELF = new BlockProperties.BlockPlanks("jacaranda_bookshelf"),
+                BlockCatalogs.MAHOGONY_BOOKSHELF = new BlockProperties.BlockPlanks("mahogany_bookshelf"),
+                BlockCatalogs.MANGROVE_BOOKSHELF = new BlockProperties.BlockPlanks("mangrove_bookshelf"),
+                BlockCatalogs.MAPLE_BOOKSHELF = new BlockProperties.BlockPlanks("maple_bookshelf"),
+                BlockCatalogs.PINE_BOOKSHELF = new BlockProperties.BlockPlanks("pine_bookshelf"),
+                BlockCatalogs.RAINBOW_EUCALYPTUS_BOOKSHELF = new BlockProperties.BlockPlanks("rainbow_eucalyptus_bookshelf"),
+                BlockCatalogs.REDWOOD_BOOKSHELF = new BlockProperties.BlockPlanks("redwood_bookshelf"),
+                BlockCatalogs.SKYRIS_BOOKSHELF = new BlockProperties.BlockPlanks("skyris_bookshelf"),
+                BlockCatalogs.WILLOW_BOOKSHELF = new BlockProperties.BlockPlanks("willow_bookshelf"),
+                BlockCatalogs.WITCH_HAZEL_BOOKSHELF = new BlockProperties.BlockPlanks("witch_hazel_bookshelf"),
+                BlockCatalogs.ZELKOVA_BOOKSHELF = new BlockProperties.BlockPlanks("zelkova_bookshelf")
+
+
+
+
         );
     }
 
@@ -104,7 +131,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.MEADOW_GRASSBLOCK = new BlockProperties.BlockGrass("meadow_grass_block"),
                 BlockCatalogs.MEADOW_DIRT = new BlockProperties.BlockGrass("meadow_dirt"),
                 BlockCatalogs.MUD_BLOCK = new BlockProperties.BlockDirt("mud_block"),
-                BlockCatalogs.MUD_BRICKS = new BlockProperties.BlockStone("mud_bricks")
+                BlockCatalogs.MUD_BRICKS = new BlockProperties.BlockDirt("mud_bricks")
 
         );
     }
@@ -210,13 +237,40 @@ public class BYGBlockRegistry {
     public static void registerPlantBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
                 BlockCatalogs.BLUEBERRY_BUSH = new BlockProperties.BlockBerryBush("blueberry_bush"),
-              //BlockCatalogs.STRAWBERRY_BUSH = new BlockProperties.BlockCrop("strawberry_bush"),
                 BlockCatalogs.GREEN_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("green_mushroom_block"),
                BlockCatalogs.MILKCAP_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("weeping_milkcap_mushroom_block"),
                 BlockCatalogs.BLEWIT_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("wood_blewit_mushroom_block"),
                 BlockCatalogs.PUFF_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("black_puff_mushroom_block"),
                 BlockCatalogs.WHITE_MUSHROOM_STEM = new BlockProperties.BlockHugeMushroom("white_mushroom_stem"),
-                BlockCatalogs.BROWN_MUSHROOM_STEM = new BlockProperties.BlockHugeMushroom("brown_mushroom_stem")
+                BlockCatalogs.BROWN_MUSHROOM_STEM = new BlockProperties.BlockHugeMushroom("brown_mushroom_stem"),
+
+                BlockCatalogs.CATTAIL = new BlockProperties.BlockFlower("cattail"),
+                BlockCatalogs.REEDS = new BlockProperties.BlockFlower("reeds"),
+                BlockCatalogs.HORSEWEED = new BlockProperties.BlockFlower("horseweed"),
+                BlockCatalogs.MINI_CACTUS = new BlockProperties.BlockFlower("mini_cactus"),
+                BlockCatalogs.PRICKLY_PEAR_CACTUS = new BlockProperties.BlockFlower("prickly_pear_cactus"),
+                BlockCatalogs.WINTER_SUCCULENT = new BlockProperties.BlockFlower("winter_succulent"),
+                BlockCatalogs.DEAD_GRASS = new BlockProperties.BlockFlower("dead_grass"),
+                BlockCatalogs.SHORT_DEAD_GRASS = new BlockProperties.BlockFlower("short_dead_grass"),
+                BlockCatalogs.BLUE_GLOWCANE = new BlockProperties.BlockStalk("blue_glowcane"),
+                BlockCatalogs.RED_GLOWCANE = new BlockProperties.BlockStalk("red_glowcane"),
+                BlockCatalogs.PURPLE_GLOWCANE = new BlockProperties.BlockStalk("purple_glowcane"),
+                BlockCatalogs.PINK_GLOWCANE = new BlockProperties.BlockStalk("pink_glowcane"),
+                BlockCatalogs.POISON_IVY = new BlockProperties.BlockFlower("poison_ivy"),
+
+
+
+
+                //Petal Blocks
+                BlockCatalogs.WHITE_PETAL = new BlockProperties.BlockLeave("white_petal_block"),
+                BlockCatalogs.RED_PETAL = new BlockProperties.BlockLeave("red_petal_block"),
+                BlockCatalogs.PURPLE_PETAL = new BlockProperties.BlockLeave("purple_petal_block"),
+                BlockCatalogs.BLUE_PETAL = new BlockProperties.BlockLeave("blue_petal_block"),
+                BlockCatalogs.LIGHT_BLUE_PETAL = new BlockProperties.BlockLeave("light_blue_petal_block"),
+                BlockCatalogs.YELLOW_PETAL = new BlockProperties.BlockLeave("yellow_petal_block"),
+                BlockCatalogs.PLANT_STEM = new BlockProperties.BlockLeave("plant_stem")
+
+
 
 
         );
@@ -280,12 +334,27 @@ public class BYGBlockRegistry {
     public static void registerStoneBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
                 BlockCatalogs.DACITE = new BlockProperties.BlockStone("dacite"),
+                BlockCatalogs.DACITE_BRICKS = new BlockProperties.BlockStone("dacite_bricks"),
+                BlockCatalogs.DACITE_COBBLESTONE = new BlockProperties.BlockStone("dacite_cobblestone"),
+                BlockCatalogs.DACITE_PILLAR = new BlockProperties.BlockStone("dacite_pillar"),
+                BlockCatalogs.DACITE_TILE = new BlockProperties.BlockStone("dacite_tile"),
+
                 BlockCatalogs.MOSSY_STONE = new BlockProperties.BlockStone("mossy_stone"),
                 BlockCatalogs.OVERGROWN_STONE = new BlockProperties.BlockStone("overgrown_stone"),
                 BlockCatalogs.ROCKY_STONE = new BlockProperties.BlockStone("rocky_stone"),
+
                 BlockCatalogs.SCORIA_STONE = new BlockProperties.BlockStone("scoria_stone"),
-                BlockCatalogs.SOAPSTONE = new BlockProperties.BlockStone("soapstone")
-        );
+                BlockCatalogs.SCORIA_COBBLESTONE = new BlockProperties.BlockStone("scoria_cobblestone"),
+                BlockCatalogs.SCORIA_PILLAR = new BlockProperties.BlockStone("scoria_pillar"),
+                BlockCatalogs.SCORIA_STONEBRICKS = new BlockProperties.BlockStone("scoria_stonebricks"),
+
+                BlockCatalogs.SOAPSTONE = new BlockProperties.BlockStone("soapstone"),
+                BlockCatalogs.POLISHED_SOAPSTONE = new BlockProperties.BlockStone("polished_soapstone"),
+                BlockCatalogs.SOAPSTONE_BRICKS = new BlockProperties.BlockStone("soapstone_bricks"),
+                BlockCatalogs.SOAPSTONE_PILLAR = new BlockProperties.BlockStone("soapstone_pillar"),
+                BlockCatalogs.SOAPSTONE_TILE = new BlockProperties.BlockStone("soapstone_tile")
+
+                );
     }
 
     //Stripped Logs

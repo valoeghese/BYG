@@ -58,6 +58,34 @@ public class BYGItemRegistry {
                 ItemCatalogs.WITCH_HAZEL_PLANKS = new BlockItem(BlockCatalogs.WITCH_HAZEL_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WITCH_HAZEL_PLANKS.getRegistryName()),
                 ItemCatalogs.ZELKOVA_PLANKS = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
 
+                //Bookshelf
+                ItemCatalogs.ASPEN_BOOKSHELF = new BlockItem(BlockCatalogs.ASPEN_BOOKSHELF, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_BOOKSHELF.getRegistryName()),
+                ItemCatalogs.BAOBAB_SAPLING = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.BLUE_ENCHANTED_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.CHERRY_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.CIKA_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.CYPRESS_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.EBONY_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.FIR_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.GREEN_ENCHANTED_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.HOLLY_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.JACARANDA_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.MAHOGONY_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.MANGROVE_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.MAPLE_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.PINE_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.RAINBOW_EUCALYPTUS_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.REDWOOD_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.SKYRIS_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.WILLOW_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.WITCH_HAZEL_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+                ItemCatalogs.ZELKOVA_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_PLANKS.getRegistryName()),
+
+
+
+
+
+
                 //PlantItems
                 ItemCatalogs.BLUEBERRY_BUSH = new BlockItem(BlockCatalogs.BLUEBERRY_BUSH, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLUEBERRY_BUSH.getRegistryName()),
                 ItemCatalogs.GREEN_MUSHROOM_BLOCK = new BlockItem(BlockCatalogs.GREEN_MUSHROOM_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.GREEN_MUSHROOM_BLOCK.getRegistryName()),
@@ -66,6 +94,30 @@ public class BYGItemRegistry {
                 ItemCatalogs.PUFF_MUSHROOM_BLOCK = new BlockItem(BlockCatalogs.PUFF_MUSHROOM_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PUFF_MUSHROOM_BLOCK.getRegistryName()),
                 ItemCatalogs.WHITE_MUSHROOM_STEM = new BlockItem(BlockCatalogs.WHITE_MUSHROOM_STEM, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WHITE_MUSHROOM_STEM.getRegistryName()),
                 ItemCatalogs.BROWN_MUSHROOM_STEM = new BlockItem(BlockCatalogs.BROWN_MUSHROOM_STEM, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BROWN_MUSHROOM_STEM.getRegistryName()),
+
+                ItemCatalogs.CATTAIL = new BlockItem(BlockCatalogs.CATTAIL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.CATTAIL.getRegistryName()),
+                ItemCatalogs.REEDS = new BlockItem(BlockCatalogs.REEDS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.REEDS.getRegistryName()),
+                ItemCatalogs.HORSEWEED = new BlockItem(BlockCatalogs.HORSEWEED, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.HORSEWEED.getRegistryName()),
+                ItemCatalogs.MINI_CACTUS = new BlockItem(BlockCatalogs.MINI_CACTUS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.MINI_CACTUS.getRegistryName()),
+                ItemCatalogs.PRICKLY_PEAR_CACTUS = new BlockItem(BlockCatalogs.PRICKLY_PEAR_CACTUS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PRICKLY_PEAR_CACTUS.getRegistryName()),
+                ItemCatalogs.WINTER_SUCCULENT = new BlockItem(BlockCatalogs.WINTER_SUCCULENT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WINTER_SUCCULENT.getRegistryName()),
+                ItemCatalogs.DEAD_GRASS = new BlockItem(BlockCatalogs.DEAD_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.DEAD_GRASS.getRegistryName()),
+                ItemCatalogs.SHORT_DEAD_GRASS = new BlockItem(BlockCatalogs.SHORT_DEAD_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SHORT_DEAD_GRASS.getRegistryName()),
+                ItemCatalogs.BLUE_GLOWCANE = new BlockItem(BlockCatalogs.BLUE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLUE_GLOWCANE.getRegistryName()),
+                ItemCatalogs.RED_GLOWCANE = new BlockItem(BlockCatalogs.RED_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.RED_GLOWCANE.getRegistryName()),
+                ItemCatalogs.PURPLE_GLOWCANE = new BlockItem(BlockCatalogs.PURPLE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PURPLE_GLOWCANE.getRegistryName()),
+                ItemCatalogs.PINK_GLOWCANE = new BlockItem(BlockCatalogs.PINK_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PINK_GLOWCANE.getRegistryName()),
+                ItemCatalogs.POISON_IVY = new BlockItem(BlockCatalogs.POISON_IVY, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.POISON_IVY.getRegistryName()),
+
+                //Petal Blocks
+                ItemCatalogs.WHITE_PETAL = new BlockItem(BlockCatalogs.WHITE_PETAL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WHITE_PETAL.getRegistryName()),
+                ItemCatalogs.BLUE_PETAL = new BlockItem(BlockCatalogs.BLUE_PETAL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLUE_PETAL.getRegistryName()),
+                ItemCatalogs.LIGHT_BLUE_PETAL = new BlockItem(BlockCatalogs.LIGHT_BLUE_PETAL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.LIGHT_BLUE_PETAL.getRegistryName()),
+                ItemCatalogs.PURPLE_PETAL = new BlockItem(BlockCatalogs.PURPLE_PETAL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PURPLE_PETAL.getRegistryName()),
+                ItemCatalogs.RED_PETAL = new BlockItem(BlockCatalogs.RED_PETAL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.RED_PETAL.getRegistryName()),
+                ItemCatalogs.YELLOW_PETAL = new BlockItem(BlockCatalogs.YELLOW_PETAL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.YELLOW_PETAL.getRegistryName()),
+                ItemCatalogs.PLANT_STEM = new BlockItem(BlockCatalogs.PLANT_STEM, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PLANT_STEM.getRegistryName()),
+
 
                 //SaplingItems
                 ItemCatalogs.ASPEN_SAPLING = new BlockItem(BlockCatalogs.ASPEN_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_SAPLING.getRegistryName()),
@@ -152,11 +204,28 @@ public class BYGItemRegistry {
 
                 //StoneItems
                 ItemCatalogs.DACITE = new BlockItem(BlockCatalogs.DACITE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.DACITE.getRegistryName()),
+                ItemCatalogs.DACITE_BRICKS = new BlockItem(BlockCatalogs.DACITE_BRICKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.DACITE_BRICKS.getRegistryName()),
+                ItemCatalogs.DACITE_COBBLESTONE = new BlockItem(BlockCatalogs.DACITE_COBBLESTONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.DACITE_COBBLESTONE.getRegistryName()),
+                ItemCatalogs.DACITE_PILLAR = new BlockItem(BlockCatalogs.DACITE_PILLAR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.DACITE_PILLAR.getRegistryName()),
+                ItemCatalogs.DACITE_TILE = new BlockItem(BlockCatalogs.DACITE_TILE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.DACITE_TILE.getRegistryName()),
+
+
                 ItemCatalogs.MOSSY_STONE = new BlockItem(BlockCatalogs.MOSSY_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.MOSSY_STONE.getRegistryName()),
                 ItemCatalogs.OVERGROWN_STONE = new BlockItem(BlockCatalogs.OVERGROWN_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.OVERGROWN_STONE.getRegistryName()),
                 ItemCatalogs.ROCKY_STONE = new BlockItem(BlockCatalogs.ROCKY_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ROCKY_STONE.getRegistryName()),
+
+
                 ItemCatalogs.SCORIA_STONE = new BlockItem(BlockCatalogs.SCORIA_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SCORIA_STONE.getRegistryName()),
+                ItemCatalogs.SCORIA_COBBLESTONE = new BlockItem(BlockCatalogs.SCORIA_COBBLESTONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SCORIA_COBBLESTONE.getRegistryName()),
+                ItemCatalogs.SCORIA_PILLAR = new BlockItem(BlockCatalogs.SCORIA_PILLAR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SCORIA_PILLAR.getRegistryName()),
+                ItemCatalogs.SCORIA_STONEBRICKS = new BlockItem(BlockCatalogs.SCORIA_STONEBRICKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SCORIA_STONEBRICKS.getRegistryName()),
+
+
                 ItemCatalogs.SOAPSTONE = new BlockItem(BlockCatalogs.SOAPSTONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SOAPSTONE.getRegistryName()),
+                ItemCatalogs.POLISHED_SOAPSTONE = new BlockItem(BlockCatalogs.POLISHED_SOAPSTONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.POLISHED_SOAPSTONE.getRegistryName()),
+                ItemCatalogs.SOAPSTONE_BRICKS = new BlockItem(BlockCatalogs.SOAPSTONE_BRICKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SOAPSTONE_BRICKS.getRegistryName()),
+                ItemCatalogs.SOAPSTONE_PILLAR = new BlockItem(BlockCatalogs.SOAPSTONE_PILLAR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SOAPSTONE_PILLAR.getRegistryName()),
+                ItemCatalogs.SOAPSTONE_TILE = new BlockItem(BlockCatalogs.SOAPSTONE_TILE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SOAPSTONE_TILE.getRegistryName()),
 
 
                 //StrippedLogItems
