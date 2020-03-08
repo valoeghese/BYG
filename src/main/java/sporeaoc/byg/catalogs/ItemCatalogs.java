@@ -452,4 +452,8 @@ public class ItemCatalogs {
     public static Item STRIPPED_REDWOOD_LOG;
     public static Item STRIPPED_WITCH_HAZEL_LOG;
     public static Item STRIPPED_ZELKOVA_LOG;
+
+    //Gems Items
+    public static Item PENDORITE_GEM;
+    public static Item TAMRELITE_GEM;
 }

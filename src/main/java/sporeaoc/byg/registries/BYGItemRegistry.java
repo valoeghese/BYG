@@ -26,6 +26,10 @@ public class BYGItemRegistry {
         event.getRegistry().registerAll(
 
                 ItemCatalogs.BYG_LOGO = new Item((new Item.Properties())).setRegistryName("byg_logo"),
+                ItemCatalogs.TAMRELITE_GEM = new Item((new Item.Properties())).setRegistryName("tamrelite_gem"),
+                ItemCatalogs.PENDORITE_GEM = new Item((new Item.Properties())).setRegistryName("pendorite_gem"),
+
+
                 //PlankItems
 
                 ItemCatalogs.ASPEN_PLANKS = new BlockItem(BlockCatalogs.ASPEN_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_PLANKS.getRegistryName()),
