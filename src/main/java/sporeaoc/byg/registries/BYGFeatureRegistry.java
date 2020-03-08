@@ -12,9 +12,7 @@ public class BYGFeatureRegistry {
 
 
     @SubscribeEvent
-    public static void bygRegisterFeatures(final RegistryEvent.Register<Feature<?>> event) {
-
-
+    public static void bygRegisterFeatures(RegistryEvent.Register<Feature<?>> event) {
         event.getRegistry().registerAll(
                 FeatureCatalog.DECIDUOUS_TREE.setRegistryName("deciduous_tree"),
                 FeatureCatalog.TIGHT_TREE.setRegistryName("baobab_tree"),

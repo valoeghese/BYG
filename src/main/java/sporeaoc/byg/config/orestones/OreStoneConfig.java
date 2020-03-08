@@ -52,6 +52,7 @@ public class OreStoneConfig {
     public static ForgeConfigSpec.IntValue SoapStoneChance;
     public static ForgeConfigSpec.IntValue SoapStoneMaxY;
     //public static ForgeConfigSpec.IntValue SoapStoneMinY;
+    public static ForgeConfigSpec.BooleanValue EESupport;
 
 
     static {
@@ -104,6 +105,9 @@ public class OreStoneConfig {
         // SoapStoneMinY = COMMON_BUILDER.defineInRange("SoapStoneMinY", 1, 1, 256);
         COMMON_BUILDER.pop();
         COMMON_BUILDER.pop();
+        COMMON_BUILDER.comment("BYG Config").push("EE Settings");
+        EESupport = COMMON_BUILDER.comment("Support for the mod Entombed Ecosystems(https://www.curseforge.com/minecraft/mc-mods/entombed-ecosystems)\nDoes Nothing if EE is not present.Z").define("EESupport", true);
+
         COMMON_CONFIG = COMMON_BUILDER.build();
     }
 
