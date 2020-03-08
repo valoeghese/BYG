@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 import sporeaoc.byg.catalogs.ItemCatalogs;
 import sporeaoc.byg.config.orestones.OreStoneConfig;
 import sporeaoc.byg.config.weight.ConfigWeightManager;
+import sporeaoc.byg.modsupport.EntombedEcosystems;
 
 @Mod("byg")
 public class BYG {
@@ -26,6 +27,7 @@ public class BYG {
 
     public BYG() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(EntombedEcosystems.BYGEETreeAdd::init);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, OreStoneConfig.COMMON_CONFIG);
         ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-weights-common.toml"));
     }
@@ -44,6 +46,5 @@ public class BYG {
 
     private void setup(final FMLCommonSetupEvent event) {
         setup.init();
-
     }
 }
