@@ -230,13 +230,13 @@ public class BlockCatalogs {
 
     //GemBlocks
     public static Block PENDORITE_BLOCK;
-    public static Block TAMRELITE_BLOCK;
-    public static Block LATHARIUM_BLOCK;
+    public static Block AMETRINE_BLOCK;
+
 
     //OreBlocks
     public static Block PENDORITE_ORE;
-    public static Block TAMRELITE_ORE;
-    public static Block LATHARIUM_ORE;
+    public static Block AMETRINE_ORE;
+
 
     //BookshelvesBlocks
     public static Block ASPEN_BOOKSHELF;

@@ -17,19 +17,14 @@ public class OreStoneConfig {
 
     //public static ForgeConfigSpec.BooleanValue AmplifiedBiomes;
 
-    public static ForgeConfigSpec.IntValue lathariumOreSize;
-    public static ForgeConfigSpec.IntValue LathariumOreChance;
-    public static ForgeConfigSpec.IntValue LathariumOreMaxY;
-   // public static ForgeConfigSpec.IntValue LathariumOreMinY;
-
     public static ForgeConfigSpec.IntValue PendoriteOreSize;
     public static ForgeConfigSpec.IntValue PendoriteOreChance;
     public static ForgeConfigSpec.IntValue PendoriteOreMaxY;
    // public static ForgeConfigSpec.IntValue PendoriteOreMinY;
 
-    public static ForgeConfigSpec.IntValue TamreliteOreSize;
-    public static ForgeConfigSpec.IntValue TamreliteOreChance;
-    public static ForgeConfigSpec.IntValue TamreliteOreMaxY;
+    public static ForgeConfigSpec.IntValue AmetrineOreSize;
+    public static ForgeConfigSpec.IntValue AmetrineOreChance;
+    public static ForgeConfigSpec.IntValue AmetrineOreMaxY;
     //public static ForgeConfigSpec.IntValue TamreliteOreMinY;
 
 
@@ -58,13 +53,7 @@ public class OreStoneConfig {
     static {
         COMMON_BUILDER.comment("BYG Config").push("Biome Settings");
         //AmplifiedBiomes = COMMON_BUILDER.define("AmplifiedBiomes", false);
-        COMMON_BUILDER.pop();
-        COMMON_BUILDER.push("Ores");
-        COMMON_BUILDER.push("LathariumOre");
-        lathariumOreSize = COMMON_BUILDER.defineInRange("LathariumSize", 4, 1, 100);
-        LathariumOreChance = COMMON_BUILDER.defineInRange("LathariumChance", 4, 1, 100);
-        LathariumOreMaxY = COMMON_BUILDER.defineInRange("LathariumMaxY", 32, 1, 256);
-        // LathariumOreMinY = COMMON_BUILDER.defineInRange("LathariumMinY", 12, 1, 256);
+
         COMMON_BUILDER.pop();
         COMMON_BUILDER.push("PendoriteOre");
         PendoriteOreSize = COMMON_BUILDER.defineInRange("PendoriteSize", 4, 1, 100);
@@ -72,11 +61,11 @@ public class OreStoneConfig {
         PendoriteOreMaxY = COMMON_BUILDER.defineInRange("PendoriteMaxY", 32, 1, 256);
         //  PendoriteOreMinY = COMMON_BUILDER.defineInRange("PendoriteMinY", 12, 1, 256);
         COMMON_BUILDER.pop();
-        COMMON_BUILDER.push("TamreliteOre");
-        TamreliteOreSize = COMMON_BUILDER.defineInRange("TamreliteSize", 4, 1, 100);
-        TamreliteOreChance = COMMON_BUILDER.defineInRange("TamreliteChance", 4, 1, 100);
-        TamreliteOreMaxY = COMMON_BUILDER.defineInRange("TamreliteMaxY", 32, 1, 256);
-        //  TamreliteOreMinY = COMMON_BUILDER.defineInRange("TamreliteMinY", 12, 1, 256);
+        COMMON_BUILDER.push("AmetrineOre");
+        AmetrineOreSize = COMMON_BUILDER.defineInRange("AmetrineSize", 4, 1, 100);
+        AmetrineOreChance = COMMON_BUILDER.defineInRange("AmetrineChance", 4, 1, 100);
+        AmetrineOreMaxY = COMMON_BUILDER.defineInRange("AmetrineMaxY", 32, 1, 256);
+        //  AmetrineOreMinY = COMMON_BUILDER.defineInRange("AmetrineMinY", 12, 1, 256);
         COMMON_BUILDER.pop();
         COMMON_BUILDER.pop();
         COMMON_BUILDER.push("Stones");

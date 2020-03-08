@@ -1,6 +1,6 @@
 {
-  "parent": "block/crop",
+  "parent": "block/cross",
   "textures": {
-    "crop": "byg:blocks/bush_blueberry_stage1"
+    "cross": "byg:blocks/bush_blueberry_stage1"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "parent": "byg:block/tamrelite_ore",
+  "parent": "byg:block/ametrine_block",
   "display": {
     "thirdperson": {
       "rotation": [

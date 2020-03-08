@@ -12,6 +12,9 @@ public class ItemCatalogs {
 
     //BYG LOGO
     public static Item BYG_LOGO;
+    public static Item BLUE_BERRY;
+    public static Item HOLLY_BERRY;
+    public static Item GREEN_APPLE;
     //FenceItems
     public static Item ASPEN_FENCE;
     public static Item BAOBAB_FENCE;
@@ -234,13 +237,12 @@ public class ItemCatalogs {
 
     //GemItems
     public static Item PENDORITE_BLOCK;
-    public static Item TAMRELITE_BLOCK;
-    public static Item LATHARIUM_BLOCK;
+    public static Item AMETRINE_BLOCK;
 
     //OreItems
     public static Item PENDORITE_ORE;
-    public static Item TAMRELITE_ORE;
-    public static Item LATHARIUM_ORE;
+    public static Item AMETRINE_ORE;
+
 
     //BookshelvesItems
     public static Item ASPEN_BOOKSHELF;
@@ -454,6 +456,6 @@ public class ItemCatalogs {
     public static Item STRIPPED_ZELKOVA_LOG;
 
     //Gems Items
-    public static Item PENDORITE_GEM;
-    public static Item TAMRELITE_GEM;
+    public static Item PENDORITE_SCRAPS;
+    public static Item AMETRINE_GEMS;
 }

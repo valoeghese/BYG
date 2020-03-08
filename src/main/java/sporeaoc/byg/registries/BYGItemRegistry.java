@@ -1,6 +1,7 @@
 package sporeaoc.byg.registries;
 
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,8 +27,11 @@ public class BYGItemRegistry {
         event.getRegistry().registerAll(
 
                 ItemCatalogs.BYG_LOGO = new Item((new Item.Properties())).setRegistryName("byg_logo"),
-                ItemCatalogs.TAMRELITE_GEM = new Item((new Item.Properties())).setRegistryName("tamrelite_gem"),
-                ItemCatalogs.PENDORITE_GEM = new Item((new Item.Properties())).setRegistryName("pendorite_gem"),
+                ItemCatalogs.AMETRINE_GEMS = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("ametrine_gems"),
+                ItemCatalogs.PENDORITE_SCRAPS = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("pendorite_scraps"),
+                ItemCatalogs.BLUE_BERRY = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("blueberries"),
+                ItemCatalogs.HOLLY_BERRY = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("holly_berries"),
+                ItemCatalogs.GREEN_APPLE = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("green_apple"),
 
 
                 //PlankItems
@@ -124,11 +128,12 @@ public class BYGItemRegistry {
                 ItemCatalogs.WILLOW_FENCE = new BlockItem(BlockCatalogs.WILLOW_FENCE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WILLOW_FENCE.getRegistryName()),
                 ItemCatalogs.WITCH_HAZEL_FENCE = new BlockItem(BlockCatalogs.WITCH_HAZEL_FENCE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WITCH_HAZEL_FENCE.getRegistryName()),
                 ItemCatalogs.ZELKOVA_FENCE = new BlockItem(BlockCatalogs.ZELKOVA_FENCE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_FENCE.getRegistryName()),
+
+
                 //GrassItems
                 ItemCatalogs.PEAT_GRASSBLOCK = new BlockItem(BlockCatalogs.PEAT_GRASSBLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PEAT_GRASSBLOCK.getRegistryName()),
                 ItemCatalogs.MEADOW_GRASSBLOCK = new BlockItem(BlockCatalogs.MEADOW_GRASSBLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.MEADOW_GRASSBLOCK.getRegistryName()),
                 ItemCatalogs.MEADOW_DIRT = new BlockItem(BlockCatalogs.MEADOW_DIRT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.MEADOW_DIRT.getRegistryName()),
-
 
 
                 //MushroomItems
@@ -139,9 +144,11 @@ public class BYGItemRegistry {
 
 
                 //OreItems
-                ItemCatalogs.LATHARIUM_ORE = new BlockItem(BlockCatalogs.LATHARIUM_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.LATHARIUM_ORE.getRegistryName()),
                 ItemCatalogs.PENDORITE_ORE = new BlockItem(BlockCatalogs.PENDORITE_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PENDORITE_ORE.getRegistryName()),
-                ItemCatalogs.TAMRELITE_ORE = new BlockItem(BlockCatalogs.TAMRELITE_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.TAMRELITE_ORE.getRegistryName()),
+                ItemCatalogs.AMETRINE_ORE = new BlockItem(BlockCatalogs.AMETRINE_ORE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.AMETRINE_ORE.getRegistryName()),
+                ItemCatalogs.PENDORITE_BLOCK = new BlockItem(BlockCatalogs.PENDORITE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PENDORITE_BLOCK.getRegistryName()),
+                ItemCatalogs.AMETRINE_BLOCK = new BlockItem(BlockCatalogs.AMETRINE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.AMETRINE_BLOCK.getRegistryName()),
+
 
                 //StoneItems
                 ItemCatalogs.DACITE = new BlockItem(BlockCatalogs.DACITE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.DACITE.getRegistryName()),
@@ -150,6 +157,7 @@ public class BYGItemRegistry {
                 ItemCatalogs.ROCKY_STONE = new BlockItem(BlockCatalogs.ROCKY_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ROCKY_STONE.getRegistryName()),
                 ItemCatalogs.SCORIA_STONE = new BlockItem(BlockCatalogs.SCORIA_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SCORIA_STONE.getRegistryName()),
                 ItemCatalogs.SOAPSTONE = new BlockItem(BlockCatalogs.SOAPSTONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SOAPSTONE.getRegistryName()),
+
 
                 //StrippedLogItems
                 ItemCatalogs.STRIPPED_ASPEN_LOG = new BlockItem(BlockCatalogs.STRIPPED_ASPEN_LOG, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.STRIPPED_ASPEN_LOG.getRegistryName()),

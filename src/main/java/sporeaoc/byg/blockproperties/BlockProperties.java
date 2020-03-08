@@ -95,8 +95,8 @@ public  class BlockProperties {
     public static class BlockMushroom extends MushroomBlock {
         public BlockMushroom(String registryName) {
             super(Block.Properties.create(Material.PLANTS, MaterialColor.DIRT)
-                    .sound(SoundType.WOOD)
-                    .hardnessAndResistance(0.2f)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(0.0f)
             );
             setRegistryName(registryName);
         }
@@ -111,6 +111,17 @@ public  class BlockProperties {
             setRegistryName(registryName);
         }
     }
+
+    public static class BlockStalk extends SugarCaneBlock {
+        public BlockStalk(String registryName) {
+            super(Block.Properties.create(Material.PLANTS)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(0.0f, 0.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
+
     public static class BlockCrop extends CropsBlock {
         public BlockCrop(String registryName) {
             super(Block.Properties.create(Material.PLANTS)
@@ -120,7 +131,7 @@ public  class BlockProperties {
             setRegistryName(registryName);
         }
     }
-    public static class BlockBerryBush extends SweetBerryBushBlock {
+    public static class BlockBerryBush extends BlueBerryBush {
         public BlockBerryBush(String registryName) {
             super(Block.Properties.create(Material.PLANTS)
                     .sound(SoundType.PLANT)
