@@ -249,7 +249,7 @@ public class BlockCatalogs {
     public static Block GREEN_ENCHANTED_BOOKSHELF;
     public static Block HOLLY_BOOKSHELF;
     public static Block JACARANDA_BOOKSHELF;
-    public static Block MAHOGONY_BOOKSHELF;
+    public static Block MAHOGANY_BOOKSHELF;
     public static Block MANGROVE_BOOKSHELF;
     public static Block MAPLE_BOOKSHELF;
     public static Block PINE_BOOKSHELF;
@@ -272,7 +272,7 @@ public class BlockCatalogs {
     public static Block GREEN_ENCHANTED_PLANKS;
     public static Block HOLLY_PLANKS;
     public static Block JACARANDA_PLANKS;
-    public static Block MAHOGONY_PLANKS;
+    public static Block MAHOGANY_PLANKS;
     public static Block MANGROVE_PLANKS;
     public static Block MAPLE_PLANKS;
     public static Block PINE_PLANKS;
@@ -325,7 +325,7 @@ public class BlockCatalogs {
     public static Block GREEN_ENCHANTED_SAPLING;
     public static Block HOLLY_SAPLING;
     public static Block JACARANDA_SAPLING;
-    public static Block MAHOGONY_SAPLING;
+    public static Block MAHOGANY_SAPLING;
     public static Block MANGROVE_SAPLING;
     public static Block ORANGE_BIRCH_SAPLING;
     public static Block ORANGE_OAK_SAPLING;
@@ -360,7 +360,7 @@ public class BlockCatalogs {
     public static Block GREEN_ENCHANTED_SLAB;
     public static Block HOLLY_SLAB;
     public static Block JACARANDA_SLAB;
-    public static Block MAHOGONY_SLAB;
+    public static Block MAHOGANY_SLAB;
     public static Block MANGROVE_SLAB;
     public static Block MAPLE_SLAB;
     public static Block PINE_SLAB;
@@ -383,7 +383,7 @@ public class BlockCatalogs {
     public static Block GREEN_ENCHANTED_STAIRS;
     public static Block HOLLY_STAIRS;
     public static Block JACARANDA_STAIRS;
-    public static Block MAHOGONY_STAIRS;
+    public static Block MAHOGANY_STAIRS;
     public static Block MANGROVE_STAIRS;
     public static Block MAPLE_STAIRS;
     public static Block PINE_STAIRS;
