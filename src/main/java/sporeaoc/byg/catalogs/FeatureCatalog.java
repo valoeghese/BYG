@@ -69,10 +69,10 @@ public class FeatureCatalog {
 
 
     //TaigaTrees
-    public static final AbstractTreeFeature<NoFeatureConfig> BLUEGIANTTAIGA_TREE = new GiantBlueSpruceTree(NoFeatureConfig::deserialize, true);
-    public static final AbstractTreeFeature<NoFeatureConfig> TALL_BLUE_SPRUCE = new TallBlueSpruceTree(NoFeatureConfig::deserialize, true);
-    public static final AbstractTreeFeature<NoFeatureConfig> BLUE_SPRUCE = new BlueSpruceTree(NoFeatureConfig::deserialize, false);
-    public static final AbstractTreeFeature<NoFeatureConfig> SMALL_BLUE_SPRUCE = new SmallBlueTaigaTree(NoFeatureConfig::deserialize, false);
+    public static final Feature<NoFeatureConfig> BLUEGIANTTAIGA_TREE = new GiantBlueSpruceTree(NoFeatureConfig::deserialize, false);
+    public static final Feature<NoFeatureConfig> TALL_BLUE_SPRUCE = new TallBlueSpruceTree(NoFeatureConfig::deserialize, false);
+    public static final Feature<NoFeatureConfig> BLUE_SPRUCE = new BlueSpruceTree(NoFeatureConfig::deserialize, false);
+    public static final Feature<NoFeatureConfig> SMALL_BLUE_SPRUCE = new SmallBlueTaigaTree(NoFeatureConfig::deserialize, false);
 
     public static final AbstractTreeFeature<NoFeatureConfig> GIANT_ORANGE_SPRUCE = new GiantOrangeSpruceTree(NoFeatureConfig::deserialize, false);
     public static final AbstractTreeFeature<NoFeatureConfig> TALL_ORANGE_SPRUCE = new TallOrangeSpruceTree(NoFeatureConfig::deserialize, false);
