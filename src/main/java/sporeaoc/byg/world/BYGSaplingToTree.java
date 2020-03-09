@@ -8,6 +8,7 @@ import sporeaoc.byg.world.tree.birch.BrownBirchTree;
 import sporeaoc.byg.world.tree.birch.OrangeBirchTree;
 import sporeaoc.byg.world.tree.birch.RedBirchTree;
 import sporeaoc.byg.world.tree.birch.YellowBirchTree;
+import sporeaoc.byg.world.tree.jacaranda.JacarandaTree;
 import sporeaoc.byg.world.tree.oak.BrownOakTree;
 import sporeaoc.byg.world.tree.oak.OrangeOakTree;
 import sporeaoc.byg.world.tree.oak.RedOakTree;
@@ -50,12 +51,12 @@ public class BYGSaplingToTree {
     public static class OrangeSpruceSaplingToTree extends BigTree {
         @Nullable
         public AbstractTreeFeature<NoFeatureConfig> getBigTreeFeature(Random random) {
-            return new OrangeSpruceTree(NoFeatureConfig::deserialize, false);
+            return new GiantOrangeSpruceTree(NoFeatureConfig::deserialize, false);
         }
 
         @Nullable
         public AbstractTreeFeature<NoFeatureConfig> getTreeFeature(Random random) {
-            return new GiantOrangeSpruceTree(NoFeatureConfig::deserialize, false);
+            return new OrangeSpruceTree(NoFeatureConfig::deserialize, false);
         }
     }
 
@@ -63,12 +64,12 @@ public class BYGSaplingToTree {
     public static class YellowSpruceSaplingToTree extends BigTree {
         @Nullable
         public AbstractTreeFeature<NoFeatureConfig> getBigTreeFeature(Random random) {
-            return new YellowSpruceTree(NoFeatureConfig::deserialize, false);
+            return new GiantYellowSpruceTree(NoFeatureConfig::deserialize, false);
         }
 
         @Nullable
         public AbstractTreeFeature<NoFeatureConfig> getTreeFeature(Random random) {
-            return new GiantYellowSpruceTree(NoFeatureConfig::deserialize, false);
+            return new YellowSpruceTree(NoFeatureConfig::deserialize, false);
         }
     }
 
@@ -131,7 +132,7 @@ public class BYGSaplingToTree {
     public static class JacarandaSaplingToTree extends Tree {
         @Nullable
         public AbstractTreeFeature<NoFeatureConfig> getTreeFeature(Random random) {
-            return new YellowBirchTree(NoFeatureConfig::deserialize, false);
+            return new JacarandaTree(NoFeatureConfig::deserialize, false);
         }
     }
 }

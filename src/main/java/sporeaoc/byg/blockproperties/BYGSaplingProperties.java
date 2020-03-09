@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree;
+package sporeaoc.byg.blockproperties;
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
@@ -18,7 +18,7 @@ import java.util.Random;
 public class BYGSaplingProperties extends SaplingBlock implements IGrowable {
     static VoxelShape SHAPE = Block.makeCuboidShape(2.0D, 0.0D, 2.0D, 14.0D, 12.0D, 14.0D);
     public static final IntegerProperty STAGE = BlockStateProperties.STAGE_0_1;
-    public static Tree tree;
+    private final Tree tree;
 
     public BYGSaplingProperties(Tree tree, String registryName) {
         super(tree, Block.Properties.create(Material.PLANTS)
@@ -27,6 +27,8 @@ public class BYGSaplingProperties extends SaplingBlock implements IGrowable {
                 .doesNotBlockMovement()
                 .tickRandomly()
         );
+        this.tree = tree;
+        this.setDefaultState(this.stateContainer.getBaseState().with(STAGE, Integer.valueOf(0)));
         setRegistryName(registryName);
     }
 

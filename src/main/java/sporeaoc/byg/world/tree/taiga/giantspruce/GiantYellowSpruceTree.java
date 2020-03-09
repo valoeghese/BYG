@@ -22,8 +22,8 @@ import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 public class GiantYellowSpruceTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = Blocks.SPRUCE_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.RED_SPRUCE_LEAVES.getDefaultState();
-    private static final BlockState LEAVES2 = BlockCatalogs.RED_SPRUCE_LEAVES.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.YELLOW_SPRUCE_LEAVES.getDefaultState();
+    private static final BlockState LEAVES2 = BlockCatalogs.YELLOW_SPRUCE_LEAVES.getDefaultState();
 
     public GiantYellowSpruceTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
