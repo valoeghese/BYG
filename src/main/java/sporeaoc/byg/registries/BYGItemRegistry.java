@@ -146,7 +146,7 @@ public class BYGItemRegistry {
                 ItemCatalogs.RED_BIRCH_SAPLING = new BlockItem(BlockCatalogs.RED_BIRCH_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.RED_BIRCH_SAPLING.getRegistryName()),
                 ItemCatalogs.RED_MAPLE_SAPLING = new BlockItem(BlockCatalogs.RED_MAPLE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.RED_MAPLE_SAPLING.getRegistryName()),
                 ItemCatalogs.RED_OAK_SAPLING = new BlockItem(BlockCatalogs.RED_OAK_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.RED_OAK_SAPLING.getRegistryName()),
-                ItemCatalogs.RED_SPRUCE_SAPLINGS = new BlockItem(BlockCatalogs.RED_SPRUCE_SAPLINGS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.RED_SPRUCE_SAPLINGS.getRegistryName()),
+                ItemCatalogs.RED_SPRUCE_SAPLINGS = new BlockItem(BlockCatalogs.RED_SPRUCE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.RED_SPRUCE_SAPLING.getRegistryName()),
                 ItemCatalogs.REDWOOD_SAPLINGS = new BlockItem(BlockCatalogs.REDWOOD_SAPLINGS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.REDWOOD_SAPLINGS.getRegistryName()),
                 ItemCatalogs.SILVER_MAPLE_SAPLINGS = new BlockItem(BlockCatalogs.SILVER_MAPLE_SAPLINGS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SILVER_MAPLE_SAPLINGS.getRegistryName()),
                 ItemCatalogs.SKYRIS_SAPLINGS = new BlockItem(BlockCatalogs.SKYRIS_SAPLINGS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SKYRIS_SAPLINGS.getRegistryName()),

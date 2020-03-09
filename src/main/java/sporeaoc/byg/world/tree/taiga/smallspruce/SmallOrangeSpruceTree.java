@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree.taiga;
+package sporeaoc.byg.world.tree.taiga.smallspruce;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
@@ -19,19 +19,17 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class BlueSmallTaigaTree extends AbstractTreeFeature<NoFeatureConfig> {
+public class SmallOrangeSpruceTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = Blocks.SPRUCE_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.BLUE_SPRUCE_LEAVES.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.ORANGE_SPRUCE_LEAVES.getDefaultState();
+    private static final BlockState LEAVES3 = BlockCatalogs.YELLOW_SPRUCE_LEAVES.getDefaultState();
 
-    public BlueSmallTaigaTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public SmallOrangeSpruceTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
+        setSapling((net.minecraftforge.common.IPlantable) BlockCatalogs.ORANGE_SPRUCE_SAPLING);
     }
 
-    public BlueSmallTaigaTree() {
-        super(null, true);
-    }
 
         protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
             return func_214587_a(
@@ -76,7 +74,8 @@ public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn
                         this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
                     }
                 }
-                int leaveColor = rand.nextInt(1) + 1;
+                int leaveColor = rand.nextInt(2) + 1;
+
 
 
                 if (leaveColor == 1) {
@@ -113,6 +112,43 @@ public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn
                             this.leafs(worldIn, posX1 + 1, topTrunkHeight - 3, posZ1, boundsIn, changedBlocks);
                             this.leafs(worldIn, posX1, topTrunkHeight - 3, posZ1 + 1, boundsIn, changedBlocks);
                             this.leafs(worldIn, posX1, topTrunkHeight - 3, posZ1 - 1, boundsIn, changedBlocks);
+                        }
+                    }
+                }
+                else if (leaveColor == 2) {
+                    int leavessquarespos = rand.nextInt(1) + 1;
+                    for (int posXLeafWidth = (leavessquarespos * -1); posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
+                        for (int posZLeafWidthL0 = (leavessquarespos * -1); posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
+                            this.leafs3(worldIn, posX1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 - 1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 + 1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1, topTrunkHeight + 1, posZ1 + 1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1, topTrunkHeight + 1, posZ1 - 1, boundsIn, changedBlocks);
+
+                            this.leafs3(worldIn, posX1 - 1, topTrunkHeight - 1, posZ1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 + 1, topTrunkHeight - 1, posZ1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1, topTrunkHeight - 1, posZ1 + 1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1, topTrunkHeight - 1, posZ1 - 1, boundsIn, changedBlocks);
+
+                            this.leafs3(worldIn, posX1 + posXLeafWidth, topTrunkHeight - 2, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 + 2, topTrunkHeight - 2, posZ1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 - 2, topTrunkHeight - 2, posZ1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1, topTrunkHeight - 2, posZ1 + 2, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1, topTrunkHeight - 2, posZ1 - 2, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 - 2, topTrunkHeight - 2, posZ1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 + 1, topTrunkHeight - 2, posZ1 - 2, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 - 1, topTrunkHeight - 2, posZ1 - 2, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 + 1, topTrunkHeight - 2, posZ1 + 2, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 - 1, topTrunkHeight - 2, posZ1 + 2, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 + 2, topTrunkHeight - 2, posZ1 + 1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 + 2, topTrunkHeight - 2, posZ1 - 1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 - 2, topTrunkHeight - 2, posZ1 + 1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 - 2, topTrunkHeight - 2, posZ1 - 1, boundsIn, changedBlocks);
+
+                            this.leafs3(worldIn, posX1 - 1, topTrunkHeight - 3, posZ1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1 + 1, topTrunkHeight - 3, posZ1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1, topTrunkHeight - 3, posZ1 + 1, boundsIn, changedBlocks);
+                            this.leafs3(worldIn, posX1, topTrunkHeight - 3, posZ1 - 1, boundsIn, changedBlocks);
                         }
                     }
                 }
@@ -165,5 +201,14 @@ public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn
         if (isAir(reader, blockpos)) {
             this.setLogState(blockPos, reader, blockpos, LEAVES, boundingBox);
         }
+
+    }
+
+    private void leafs3(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
+        BlockPos blockpos = new BlockPos(x, y, z);
+        if (isAir(reader, blockpos)) {
+            this.setLogState(blockPos, reader, blockpos, LEAVES3, boundingBox);
+        }
+
     }
 }

@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree.taiga;
+package sporeaoc.byg.world.tree.taiga.giantspruce;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
@@ -19,19 +19,15 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class SeasonalGiantTaigaTree extends AbstractTreeFeature<NoFeatureConfig> {
+public class GiantYellowSpruceTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = Blocks.SPRUCE_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.ORANGE_SPRUCE_LEAVES.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.RED_SPRUCE_LEAVES.getDefaultState();
     private static final BlockState LEAVES2 = BlockCatalogs.RED_SPRUCE_LEAVES.getDefaultState();
 
-    public SeasonalGiantTaigaTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public GiantYellowSpruceTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
-    }
-
-    public SeasonalGiantTaigaTree() {
-        super(null, true);
+        setSapling((net.minecraftforge.common.IPlantable) BlockCatalogs.YELLOW_SPRUCE_SAPLING);
     }
 
     protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {

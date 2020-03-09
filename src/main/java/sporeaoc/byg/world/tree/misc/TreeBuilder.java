@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree;
+package sporeaoc.byg.world.tree.misc;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -443,7 +443,7 @@ public class TreeBuilder extends AbstractTreeFeature < NoFeatureConfig > {
 
         public Builder generateDirtPatch(boolean generatePatch, boolean large) {
             this.generateDirtPatch = generatePatch;
-            this.generateLargeDirtPatch = generatePatch ? large : false;
+            this.generateLargeDirtPatch = generatePatch && large;
             return this;
         }
 
@@ -467,7 +467,7 @@ public class TreeBuilder extends AbstractTreeFeature < NoFeatureConfig > {
         }
     }
 
-    public static interface TreeBuilderFactory {
-        TreeBuilder of (boolean notify);
+    public interface TreeBuilderFactory {
+        TreeBuilder of(boolean notify);
     }
 }

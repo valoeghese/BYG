@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree.oakandbirch;
+package sporeaoc.byg.world.tree.oak;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
@@ -19,19 +19,16 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class BrownOakTree extends AbstractTreeFeature<NoFeatureConfig> {
+public class OrangeOakTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
-    private static final BlockState LOG = Blocks.DARK_OAK_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.BROWN_OAK_LEAVES.getDefaultState();
+    private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.ORANGE_OAK_LEAVES.getDefaultState();
 
-    public BrownOakTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public OrangeOakTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
+        setSapling((net.minecraftforge.common.IPlantable) BlockCatalogs.ORANGE_OAK_SAPLING);
     }
 
-    public BrownOakTree() {
-        super(null, true);
-    } //
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.

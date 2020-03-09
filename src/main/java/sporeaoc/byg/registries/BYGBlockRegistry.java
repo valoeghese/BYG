@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.blockproperties.BlockProperties;
 import sporeaoc.byg.catalogs.BlockCatalogs;
+import sporeaoc.byg.world.tree.BYGSaplings;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BYGBlockRegistry {
@@ -143,38 +144,38 @@ public class BYGBlockRegistry {
                 BlockCatalogs.ASPEN_SAPLING = new BlockProperties.BlockFlower("aspen_sapling"),
                 BlockCatalogs.BAOBAB_SAPLING = new BlockProperties.BlockFlower("baobab_sapling"),
                 BlockCatalogs.BLUE_ENCHANTED_SAPLING = new BlockProperties.BlockFlower("blue_enchanted_sapling"),
-                BlockCatalogs.BLUE_SPRUCE_SAPLING = new BlockProperties.BlockFlower("blue_spruce_sapling"),
-                BlockCatalogs.BROWN_BIRCH_SAPLING = new BlockProperties.BlockFlower("brown_birch_sapling"),
-                BlockCatalogs.BROWN_OAK_SAPLING = new BlockProperties.BlockFlower("brown_oak_sapling"),
+                BlockCatalogs.BLUE_SPRUCE_SAPLING = new BYGSaplings(new BYGSaplings.BlueSpruceSapling(), "blue_spruce_sapling"),
+                BlockCatalogs.BROWN_BIRCH_SAPLING = new BYGSaplings(new BYGSaplings.BrownBirchSapling(), "brown_birch_sapling"),
+                BlockCatalogs.BROWN_OAK_SAPLING = new BYGSaplings(new BYGSaplings.BrownOakSapling(), "brown_oak_sapling"),
                 BlockCatalogs.CIKA_SAPLING = new BlockProperties.BlockFlower("cika_sapling"),
                 BlockCatalogs.CYPRESS_SAPLING = new BlockProperties.BlockFlower("cypress_sapling"),
                 BlockCatalogs.EBONY_SAPLING = new BlockProperties.BlockFlower("ebony_sapling"),
                 BlockCatalogs.FIR_SAPLING = new BlockProperties.BlockFlower("fir_sapling"),
                 BlockCatalogs.GREEN_ENCHANTED_SAPLING = new BlockProperties.BlockFlower("green_enchanted_sapling"),
                 BlockCatalogs.HOLLY_SAPLING = new BlockProperties.BlockFlower("holly_sapling"),
-                BlockCatalogs.JACARANDA_SAPLING = new BlockProperties.BlockFlower("jacaranda_sapling"),
+                BlockCatalogs.JACARANDA_SAPLING = new BYGSaplings(new BYGSaplings.JacarandaSapling(), "jacaranda_sapling"),
                 BlockCatalogs.MAHOGONY_SAPLING = new BlockProperties.BlockFlower("mahogany_sapling"),
                 BlockCatalogs.MANGROVE_SAPLING = new BlockProperties.BlockFlower("mangrove_sapling"),
-                BlockCatalogs.ORANGE_BIRCH_SAPLING = new BlockProperties.BlockFlower("orange_birch_sapling"),
-                BlockCatalogs.ORANGE_OAK_SAPLING = new BlockProperties.BlockFlower("orange_oak_sapling"),
-                BlockCatalogs.ORANGE_SPRUCE_SAPLING = new BlockProperties.BlockFlower("orange_spruce_sapling"),
+                BlockCatalogs.ORANGE_BIRCH_SAPLING = new BYGSaplings(new BYGSaplings.OrangeBirchSapling(), "orange_birch_sapling"),
+                BlockCatalogs.ORANGE_OAK_SAPLING = new BYGSaplings(new BYGSaplings.OrangeOakSapling(), "orange_oak_sapling"),
+                BlockCatalogs.ORANGE_SPRUCE_SAPLING = new BYGSaplings(new BYGSaplings.OrangeSpruceSapling(), "orange_spruce_sapling"),
                 BlockCatalogs.ORCHARD_SAPLING = new BlockProperties.BlockFlower("orchard_sapling"),
                 BlockCatalogs.PALO_VERDE_SAPLING = new BlockProperties.BlockFlower("palo_verde_sapling"),
                 BlockCatalogs.PINE_SAPLING = new BlockProperties.BlockFlower("pine_sapling"),
                 BlockCatalogs.PINK_CHERRY_SAPLING = new BlockProperties.BlockFlower("pink_cherry_sapling"),
                 BlockCatalogs.RAINBOW_EUCALYPTUS_SAPLING = new BlockProperties.BlockFlower("rainbow_eucalyptus_sapling"),
-                BlockCatalogs.RED_BIRCH_SAPLING = new BlockProperties.BlockFlower("red_birch_sapling"),
+                BlockCatalogs.RED_BIRCH_SAPLING = new BYGSaplings(new BYGSaplings.RedBirchSapling(), "red_birch_sapling"),
                 BlockCatalogs.RED_MAPLE_SAPLING = new BlockProperties.BlockFlower("red_maple_sapling"),
-                BlockCatalogs.RED_OAK_SAPLING = new BlockProperties.BlockFlower("red_oak_sapling"),
-                BlockCatalogs.RED_SPRUCE_SAPLINGS = new BlockProperties.BlockFlower("red_spruce_sapling"),
+                BlockCatalogs.RED_OAK_SAPLING = new BYGSaplings(new BYGSaplings.RedOakSapling(), "red_oak_sapling"),
+                BlockCatalogs.RED_SPRUCE_SAPLING = new BYGSaplings(new BYGSaplings.RedSpruceSapling(), "red_spruce_sapling"),
                 BlockCatalogs.REDWOOD_SAPLINGS = new BlockProperties.BlockFlower("redwood_sapling"),
                 BlockCatalogs.SILVER_MAPLE_SAPLINGS = new BlockProperties.BlockFlower("silver_maple_sapling"),
                 BlockCatalogs.SKYRIS_SAPLINGS = new BlockProperties.BlockFlower("skyris_sapling"),
                 BlockCatalogs.WHITE_CHERRY_SAPLING = new BlockProperties.BlockFlower("white_cherry_sapling"),
                 BlockCatalogs.WILLOW_SAPLING = new BlockProperties.BlockFlower("willow_sapling"),
                 BlockCatalogs.WITCH_HAZEL_SAPLING = new BlockProperties.BlockFlower("witch_hazel_sapling"),
-                BlockCatalogs.YELLOW_BIRCH_SAPLING = new BlockProperties.BlockFlower("yellow_birch_sapling"),
-                BlockCatalogs.YELLOW_SPRUCE_SAPLING = new BlockProperties.BlockFlower("yellow_spruce_sapling")
+                BlockCatalogs.YELLOW_BIRCH_SAPLING = new BYGSaplings(new BYGSaplings.YellowBirchSapling(), "yellow_birch_sapling"),
+                BlockCatalogs.YELLOW_SPRUCE_SAPLING = new BYGSaplings(new BYGSaplings.YellowSpruceSapling(), "yellow_spruce_sapling")
                 /*
                  * TODO: Add Sapling Blocks
                  */

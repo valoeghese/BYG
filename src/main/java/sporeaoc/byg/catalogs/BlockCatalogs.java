@@ -1,7 +1,6 @@
 package sporeaoc.byg.catalogs;
 
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
 
 public class BlockCatalogs {
 
@@ -346,7 +345,7 @@ public class BlockCatalogs {
     public static Block RED_BIRCH_SAPLING;
     public static Block RED_MAPLE_SAPLING;
     public static Block RED_OAK_SAPLING;
-    public static Block RED_SPRUCE_SAPLINGS;
+    public static Block RED_SPRUCE_SAPLING;
     public static Block REDWOOD_SAPLINGS;
     public static Block RIPE_ORCHARD_SAPLINGS;
     public static Block SILVER_MAPLE_SAPLINGS;

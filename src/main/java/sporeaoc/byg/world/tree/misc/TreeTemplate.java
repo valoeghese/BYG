@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree;
+package sporeaoc.byg.world.tree.misc;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;

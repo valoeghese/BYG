@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree;
+package sporeaoc.byg.world.tree.misc;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
@@ -29,7 +29,8 @@ public class TightTrees extends AbstractTreeFeature<NoFeatureConfig> {
 
     public TightTrees() {
         super(null, true);
-    } //
+
+    }
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         int randTreeHeight = rand.nextInt(15) + rand.nextInt(2) + 10; //First value changes height of the trunk.

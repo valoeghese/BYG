@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree.taiga;
+package sporeaoc.byg.world.tree.taiga.spruce;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
@@ -19,19 +19,19 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class SeasonalTaigaTree extends AbstractTreeFeature<NoFeatureConfig> {
+public class YellowSpruceTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = Blocks.SPRUCE_LOG.getDefaultState();
     private static final BlockState LEAVES = BlockCatalogs.YELLOW_SPRUCE_LEAVES.getDefaultState();
-    private static final BlockState LEAVES3 = BlockCatalogs.RED_SPRUCE_LEAVES.getDefaultState();
+    private static final BlockState LEAVES3 = BlockCatalogs.YELLOW_SPRUCE_LEAVES.getDefaultState();
 
 
-    public SeasonalTaigaTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public YellowSpruceTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public SeasonalTaigaTree() {
+    public YellowSpruceTree() {
         super(null, true);
     }
 

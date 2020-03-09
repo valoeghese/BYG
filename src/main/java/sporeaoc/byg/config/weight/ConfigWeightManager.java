@@ -26,14 +26,14 @@ public class ConfigWeightManager {
 //    public static ConfigWeight cherryblossomforest = new ConfigWeight("cherryblossomforest", 10);
 //    public static ConfigWeight chapparalcoastals = new ConfigWeight("chapparalcoastals", 10);
 //    public static ConfigWeight coastalredwoodtropics = new ConfigWeight("coastalredwoodtropics", 10);
-//    public static ConfigWeight coniferousforest = new ConfigWeight("dovermountains", 10);
+    public static ConfigWeight coniferousforest = new ConfigWeight("dovermountains", 10);
     public static ConfigWeight deciduousforest = new ConfigWeight("deciduousforest", 10);
     public static ConfigWeight dovermountains = new ConfigWeight("snowybluetaiga", 10);
     public static ConfigWeight dunes = new ConfigWeight("dunes", 10);
     //    public static ConfigWeight ebonywoods = new ConfigWeight("ebonywoods", 10);
 //    public static ConfigWeight enchantedforest = new ConfigWeight("enchantedforest", 10);
-//    public static ConfigWeight evergreentaiga = new ConfigWeight("evergreentaiga", 10);
-//    public static ConfigWeight floweringplains = new ConfigWeight("floweringplains", 10);
+    public static ConfigWeight evergreentaiga = new ConfigWeight("evergreentaiga", 10);
+    //    public static ConfigWeight floweringplains = new ConfigWeight("floweringplains", 10);
     public static ConfigWeight giantbluetaiga = new ConfigWeight("bluegianttaiga", 10);
     // public static ConfigWeight glowshroombayou = new ConfigWeight("glowshroombayou", 10);
     public static ConfigWeight grasslandplateau = new ConfigWeight("grasslandplateau", 10);
@@ -60,8 +60,8 @@ public class ConfigWeightManager {
     public static ConfigWeight seasonalgianttaiga = new ConfigWeight("seasonalgianttaiga", 10);
     public static ConfigWeight seasonaltaiga = new ConfigWeight("seasonaltaiga", 10);
     //    public static ConfigWeight skyristhighlands = new ConfigWeight("skyrishighlands", 10);
-//    public static ConfigWeight snowyconiferousforest = new ConfigWeight("snowyconiferousforest", 10);
-//    public static ConfigWeight snowydeciduousforest = new ConfigWeight("snowydeciduousforest", 10);
+    public static ConfigWeight snowyconiferousforest = new ConfigWeight("snowyconiferousforest", 10);
+    //    public static ConfigWeight snowydeciduousforest = new ConfigWeight("snowydeciduousforest", 10);
 //    public static ConfigWeight snowyevergreentaiga = new ConfigWeight("snowyevergreentaiga", 10);
 //    public static ConfigWeight snowypinemountains = new ConfigWeight("snowypinemountains", 10);
     public static ConfigWeight snowybluetaiga = new ConfigWeight("snowybluetaiga", 10);
@@ -69,7 +69,7 @@ public class ConfigWeightManager {
     //    public static ConfigWeight sonorandesert = new ConfigWeight("sonorandesert", 10);
 //    public static ConfigWeight stonebrushlands = new ConfigWeight("stonebrushlands", 10);
     public static ConfigWeight tropicalfungalforest = new ConfigWeight("tropicalfungalforest", 10);
-//    public static ConfigWeight tropicalislands = new ConfigWeight("tropicalfungalforest", 10);
+    //    public static ConfigWeight tropicalislands = new ConfigWeight("tropicalfungalforest", 10);
     public static ConfigWeight tropicalrainforest = new ConfigWeight("tropicalrainforest", 10);
     // public static ConfigWeight weepingwitchforest = new ConfigWeight("weepingwitchforest", 10);
     //public static ConfigWeight woodlands = new ConfigWeight("woodlands", 10);

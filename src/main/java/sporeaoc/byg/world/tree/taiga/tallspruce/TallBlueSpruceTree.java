@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree.taiga;
+package sporeaoc.byg.world.tree.taiga.tallspruce;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
@@ -19,28 +19,24 @@ import java.util.function.Function;
 import static net.minecraft.util.math.BlockPos.MutableBlockPos;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class SeasonalTallTaigaTree extends AbstractTreeFeature<NoFeatureConfig> {
+public class TallBlueSpruceTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = Blocks.SPRUCE_LOG.getDefaultState();
-    private static final BlockState LEAVES = BlockCatalogs.ORANGE_SPRUCE_LEAVES.getDefaultState();
-    private static final BlockState LEAVES3 = BlockCatalogs.RED_SPRUCE_LEAVES.getDefaultState();
+    private static final BlockState LEAVES = BlockCatalogs.BLUE_SPRUCE_LEAVES.getDefaultState();
 
-    public SeasonalTallTaigaTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public TallBlueSpruceTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
+        setSapling((net.minecraftforge.common.IPlantable) BlockCatalogs.BLUE_SPRUCE_SAPLING);
     }
 
-    public SeasonalTallTaigaTree() {
-        super(null, true);
+
+    protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
+        return func_214587_a(
+                genBaseReader, blockPos
+        );
     }
 
-        protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
-            return func_214587_a(
-                    genBaseReader, blockPos
-            );
-        }
-
-public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
+    public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
         int randTreeHeight = rand.nextInt(2) + rand.nextInt(3) + 12;
         //Positions
@@ -77,8 +73,7 @@ public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn
                         this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
                     }
                 }
-                int leaveColor = rand.nextInt(2) + 1;
-
+                int leaveColor = rand.nextInt(1) + 1;
 
 
                 if (leaveColor == 1) {
@@ -105,29 +100,6 @@ public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn
                         }
                     }
                 }
-                else if (leaveColor == 2) {
-                    int leavessquarespos = rand.nextInt(1) + 1;
-                    for (int posXLeafWidth = (leavessquarespos * -1); posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
-                        for (int posZLeafWidthL0 = (leavessquarespos * -1); posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
-                            this.leafs3(worldIn, posX1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1 - 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1 - 1, topTrunkHeight - 1, posZ1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1 - 1, topTrunkHeight - 2, posZ1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1 - 1, topTrunkHeight - 3, posZ1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1 + 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1 + 1, topTrunkHeight - 1, posZ1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1 + 1, topTrunkHeight - 2, posZ1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1 + 1, topTrunkHeight - 3, posZ1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1, topTrunkHeight - 1, posZ1 - 1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1, topTrunkHeight - 2, posZ1 - 1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1, topTrunkHeight - 3, posZ1 - 1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1, topTrunkHeight - 1, posZ1 + 1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1, topTrunkHeight - 2, posZ1 + 1, boundsIn, changedBlocks);
-                            this.leafs3(worldIn, posX1, topTrunkHeight - 3, posZ1 + 1, boundsIn, changedBlocks);                        }
-                    }
-                }
             }
         }
         return true;
@@ -143,7 +115,7 @@ public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
-            int distance = 4;
+            int distance = 2;
             if (yOffset == -5) {
                 distance = 0;
             }
@@ -176,14 +148,6 @@ public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn
         BlockPos blockpos = new BlockPos(x, y, z);
         if (isAir(reader, blockpos)) {
             this.setLogState(blockPos, reader, blockpos, LEAVES, boundingBox);
-        }
-
-    }
-
-    private void leafs3(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
-        BlockPos blockpos = new BlockPos(x, y, z);
-        if (isAir(reader, blockpos)) {
-            this.setLogState(blockPos, reader, blockpos, LEAVES3, boundingBox);
         }
 
     }

@@ -29,17 +29,6 @@ public  class BlockProperties {
         }
     }
 
-   // public static class BlockSapling extends SaplingsBlock {
-       // public BlockSapling(String registryName) {
-            //super(Block.Properties.create(Material.PLANTS)
-                          //  .sound(SoundType.PLANT)
-                         //   .hardnessAndResistance(0.0f)
-                           // .doesNotBlockMovement()
-          //  );
-        //    setRegistryName(registryName); //
-      //  }
-   // }
-
     public static class TallGrass extends TallGrassBlock {
         public TallGrass(String registryName) {
             super(Block.Properties.create(Material.TALL_PLANTS)

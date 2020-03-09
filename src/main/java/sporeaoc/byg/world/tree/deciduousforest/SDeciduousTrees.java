@@ -25,7 +25,6 @@ public class SDeciduousTrees extends AbstractTreeFeature<NoFeatureConfig> {
 
     public SDeciduousTrees(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
     public SDeciduousTrees() {
