@@ -450,4 +450,12 @@ public class ItemCatalogs {
     //Gems Items
     public static Item PENDORITE_SCRAPS;
     public static Item AMETRINE_GEMS;
+
+    //Tool Items
+    public static Item AMETRINE_SWORD;
+    public static Item AMETRINE_AXE;
+    public static Item AMETRINE_PICK;
+    public static Item AMETRINE_HOE;
+    public static Item AMETRINE_BATTLEAXE;
+
 }
