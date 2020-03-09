@@ -304,8 +304,6 @@ public class BlockCatalogs {
     public static Block BLUE_GLOWCANE;
     public static Block RED_GLOWCANE;
     public static Block BLUEBERRY_BUSH;
-    public static Block STRAWBERRY_BUSH;
-    public static Block RUDO_STALK;
     public static Block POISON_IVY;
     public static Block PRAIRIE_GRASS;
     public static Block PINK_GLOWCANE;
@@ -316,7 +314,6 @@ public class BlockCatalogs {
     //SaplingBlocks
     public static Block ASPEN_SAPLING;
     public static Block BAOBAB_SAPLING;
-    public static Block BLOOMING_WITCH_HAZEL_SAPLING;
     public static Block BLUE_ENCHANTED_SAPLING;
     public static Block BLUE_SPRUCE_SAPLING;
     public static Block BROWN_BIRCH_SAPLING;
@@ -325,11 +322,7 @@ public class BlockCatalogs {
     public static Block CYPRESS_SAPLING;
     public static Block EBONY_SAPLING;
     public static Block FIR_SAPLING;
-    public static Block FLOWERING_ORCHARD_SAPLING;
-    public static Block FLOWERING_PALO_VERDE_SAPLING;
-    public static Block APPLE_SKYRIS_SAPLING;
     public static Block GREEN_ENCHANTED_SAPLING;
-    public static Block HOLLY_BERRY_SAPLING;
     public static Block HOLLY_SAPLING;
     public static Block JACARANDA_SAPLING;
     public static Block MAHOGONY_SAPLING;
@@ -347,7 +340,6 @@ public class BlockCatalogs {
     public static Block RED_OAK_SAPLING;
     public static Block RED_SPRUCE_SAPLING;
     public static Block REDWOOD_SAPLINGS;
-    public static Block RIPE_ORCHARD_SAPLINGS;
     public static Block SILVER_MAPLE_SAPLINGS;
     public static Block SKYRIS_SAPLINGS;
     public static Block WHITE_CHERRY_SAPLING;

@@ -58,12 +58,37 @@ public class BYGBlockRegistry {
                 BlockCatalogs.SKYRIS_BOOKSHELF = new BlockProperties.BlockPlanks("skyris_bookshelf"),
                 BlockCatalogs.WILLOW_BOOKSHELF = new BlockProperties.BlockPlanks("willow_bookshelf"),
                 BlockCatalogs.WITCH_HAZEL_BOOKSHELF = new BlockProperties.BlockPlanks("witch_hazel_bookshelf"),
-                BlockCatalogs.ZELKOVA_BOOKSHELF = new BlockProperties.BlockPlanks("zelkova_bookshelf")
+                BlockCatalogs.ZELKOVA_BOOKSHELF = new BlockProperties.BlockPlanks("zelkova_bookshelf"),
+
+            //Slabs
+                BlockCatalogs.ASPEN_SLAB = new BlockProperties.BlockPlanks("aspen_slab"),
+                BlockCatalogs.BAOBAB_SLAB = new BlockProperties.BlockPlanks("baobab_slab"),
+                BlockCatalogs.BLUE_ENCHANTED_SLAB = new BlockProperties.BlockPlanks("blue_enchanted_slab"),
+                BlockCatalogs.CHERRY_SLAB = new BlockProperties.BlockPlanks("cherry_slab"),
+                BlockCatalogs.CIKA_SLAB = new BlockProperties.BlockPlanks("cika_slab"),
+                BlockCatalogs.CYPRESS_SLAB = new BlockProperties.BlockPlanks("cypress_slab"),
+                BlockCatalogs.EBONY_SLAB = new BlockProperties.BlockPlanks("ebony_slab"),
+                BlockCatalogs.FIR_SLAB = new BlockProperties.BlockPlanks("fir_slab"),
+                BlockCatalogs.GREEN_ENCHANTED_SLAB = new BlockProperties.BlockPlanks("green_enchanted_slab"),
+                BlockCatalogs.HOLLY_SLAB = new BlockProperties.BlockPlanks("holly_slab"),
+                BlockCatalogs.JACARANDA_SLAB = new BlockProperties.BlockPlanks("jacaranda_slab"),
+                BlockCatalogs.MAHOGONY_SLAB = new BlockProperties.BlockPlanks("mahogany_slab"),
+                BlockCatalogs.MANGROVE_SLAB = new BlockProperties.BlockPlanks("mangrove_slab"),
+                BlockCatalogs.MAPLE_SLAB = new BlockProperties.BlockPlanks("maple_slab"),
+                BlockCatalogs.PINE_SLAB = new BlockProperties.BlockPlanks("pine_slab"),
+                BlockCatalogs.RAINBOW_EUCALYPTUS_SLAB = new BlockProperties.BlockPlanks("rainbow_eucalyptus_slab"),
+                BlockCatalogs.REDWOOD_SLAB = new BlockProperties.BlockPlanks("redwood_slab"),
+                BlockCatalogs.SKYRIS_SLAB = new BlockProperties.BlockPlanks("skyris_slab"),
+                BlockCatalogs.WILLOW_SLAB = new BlockProperties.BlockPlanks("willow_slab"),
+                BlockCatalogs.WITCH_HAZEL_SLAB = new BlockProperties.BlockPlanks("witch_hazel_slab"),
+                BlockCatalogs.ZELKOVA_SLAB = new BlockProperties.BlockPlanks("zelkova_slab")
 
 
 
 
-        );
+
+
+                );
     }
 
     // Stair Blocks
