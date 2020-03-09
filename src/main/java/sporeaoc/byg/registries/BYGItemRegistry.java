@@ -82,13 +82,29 @@ public class BYGItemRegistry {
                 ItemCatalogs.WITCH_HAZEL_BOOKSHELF = new BlockItem(BlockCatalogs.WITCH_HAZEL_BOOKSHELF, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WITCH_HAZEL_BOOKSHELF.getRegistryName()),
                 ItemCatalogs.ZELKOVA_BOOKSHELF = new BlockItem(BlockCatalogs.ZELKOVA_BOOKSHELF, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_BOOKSHELF.getRegistryName()),
 
-
-
-
-
+                //Slabs
+                ItemCatalogs.ASPEN_SLAB = new BlockItem(BlockCatalogs.ASPEN_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_SLAB.getRegistryName()),
+                ItemCatalogs.BAOBAB_SLAB = new BlockItem(BlockCatalogs.BAOBAB_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BAOBAB_SLAB.getRegistryName()),
+                ItemCatalogs.BLUE_ENCHANTED_SLAB = new BlockItem(BlockCatalogs.BLUE_ENCHANTED_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLUE_ENCHANTED_SLAB.getRegistryName()),
+                ItemCatalogs.CHERRY_SLAB = new BlockItem(BlockCatalogs.CHERRY_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.CHERRY_SLAB.getRegistryName()),
+                ItemCatalogs.CIKA_SLAB = new BlockItem(BlockCatalogs.CIKA_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.CIKA_SLAB.getRegistryName()),
+                ItemCatalogs.EBONY_SLAB = new BlockItem(BlockCatalogs.EBONY_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.EBONY_SLAB.getRegistryName()),
+                ItemCatalogs.FIR_SLAB = new BlockItem(BlockCatalogs.FIR_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.FIR_SLAB.getRegistryName()),
+                ItemCatalogs.GREEN_ENCHANTED_SLAB = new BlockItem(BlockCatalogs.GREEN_ENCHANTED_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.GREEN_ENCHANTED_SLAB.getRegistryName()),
+                ItemCatalogs.HOLLY_SLAB = new BlockItem(BlockCatalogs.HOLLY_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.HOLLY_SLAB.getRegistryName()),
+                ItemCatalogs.JACARANDA_SLAB = new BlockItem(BlockCatalogs.JACARANDA_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.JACARANDA_SLAB.getRegistryName()),
+                ItemCatalogs.MAHOGONY_SLAB = new BlockItem(BlockCatalogs.MAHOGONY_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.MAHOGONY_SLAB.getRegistryName()),
+                ItemCatalogs.MANGROVE_SLAB = new BlockItem(BlockCatalogs.MANGROVE_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.MANGROVE_SLAB.getRegistryName()),
+                ItemCatalogs.MAPLE_SLAB = new BlockItem(BlockCatalogs.MAPLE_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.MAPLE_SLAB.getRegistryName()),
+                ItemCatalogs.PINE_SLAB = new BlockItem(BlockCatalogs.PINE_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PINE_SLAB.getRegistryName()),
+                ItemCatalogs.RAINBOW_EUCALYPTUS_SLAB = new BlockItem(BlockCatalogs.RAINBOW_EUCALYPTUS_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.RAINBOW_EUCALYPTUS_SLAB.getRegistryName()),
+                ItemCatalogs.REDWOOD_SLAB = new BlockItem(BlockCatalogs.REDWOOD_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.REDWOOD_SLAB.getRegistryName()),
+                ItemCatalogs.SKYRIS_SLAB = new BlockItem(BlockCatalogs.SKYRIS_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SKYRIS_SLAB.getRegistryName()),
+                ItemCatalogs.WILLOW_SLAB = new BlockItem(BlockCatalogs.WILLOW_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WILLOW_SLAB.getRegistryName()),
+                ItemCatalogs.WITCH_HAZEL_SLAB = new BlockItem(BlockCatalogs.WITCH_HAZEL_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WITCH_HAZEL_SLAB.getRegistryName()),
+                ItemCatalogs.ZELKOVA_SLAB = new BlockItem(BlockCatalogs.ZELKOVA_SLAB, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ZELKOVA_SLAB.getRegistryName()),
 
                 //PlantItems
-                ItemCatalogs.BLUEBERRY_BUSH = new BlockItem(BlockCatalogs.BLUEBERRY_BUSH, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLUEBERRY_BUSH.getRegistryName()),
                 ItemCatalogs.GREEN_MUSHROOM_BLOCK = new BlockItem(BlockCatalogs.GREEN_MUSHROOM_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.GREEN_MUSHROOM_BLOCK.getRegistryName()),
                 ItemCatalogs.MILKCAP_MUSHROOM_BLOCK = new BlockItem(BlockCatalogs.MILKCAP_MUSHROOM_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.MILKCAP_MUSHROOM_BLOCK.getRegistryName()),
                 ItemCatalogs.BLEWIT_MUSHROOM_BLOCK = new BlockItem(BlockCatalogs.BLEWIT_MUSHROOM_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLEWIT_MUSHROOM_BLOCK.getRegistryName()),
