@@ -176,7 +176,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.CIKA_SAPLING = new BlockProperties.BlockFlower("cika_sapling"),
                 BlockCatalogs.CYPRESS_SAPLING = new BlockProperties.BlockFlower("cypress_sapling"),
                 BlockCatalogs.EBONY_SAPLING = new BlockProperties.BlockFlower("ebony_sapling"),
-                BlockCatalogs.FIR_SAPLING = new BlockProperties.BlockFlower("fir_sapling"),
+                BlockCatalogs.FIR_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.FirSaplingToTree(), "fir_sapling"),
                 BlockCatalogs.GREEN_ENCHANTED_SAPLING = new BlockProperties.BlockFlower("green_enchanted_sapling"),
                 BlockCatalogs.HOLLY_SAPLING = new BlockProperties.BlockFlower("holly_sapling"),
                 BlockCatalogs.JACARANDA_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.JacarandaSaplingToTree(), "jacaranda_sapling"),
@@ -265,7 +265,7 @@ public class BYGBlockRegistry {
         event.getRegistry().registerAll(
                 BlockCatalogs.BLUEBERRY_BUSH = new BlockProperties.BlockBerryBush("blueberry_bush"),
                 BlockCatalogs.GREEN_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("green_mushroom_block"),
-               BlockCatalogs.MILKCAP_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("weeping_milkcap_mushroom_block"),
+                BlockCatalogs.MILKCAP_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("weeping_milkcap_mushroom_block"),
                 BlockCatalogs.BLEWIT_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("wood_blewit_mushroom_block"),
                 BlockCatalogs.PUFF_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("black_puff_mushroom_block"),
                 BlockCatalogs.WHITE_MUSHROOM_STEM = new BlockProperties.BlockHugeMushroom("white_mushroom_stem"),

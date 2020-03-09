@@ -1,5 +1,6 @@
 package sporeaoc.byg.world.tree.coniferousforest;
 
+import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
@@ -12,14 +13,17 @@ import sporeaoc.byg.catalogs.BlockCatalogs;
 
 import java.util.Random;
 import java.util.Set;
+import java.util.function.Function;
 
-public class SmallConiferousTree extends AbstractTreeFeature<NoFeatureConfig> {
+public class SmallFirTree extends AbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = BlockCatalogs.FIR_LOG.getDefaultState();
     private static final BlockState LEAVES = BlockCatalogs.FIR_LEAVES.getDefaultState();
 
-    public SmallConiferousTree() {
-        super(null, true);
+    public SmallFirTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+        super(configIn, doBlockNotifyIn);
+        setSapling((net.minecraftforge.common.IPlantable) BlockCatalogs.FIR_SAPLING);
+
     }
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {

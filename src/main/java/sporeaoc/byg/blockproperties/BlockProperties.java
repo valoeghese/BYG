@@ -125,6 +125,7 @@ public  class BlockProperties {
             super(Block.Properties.create(Material.PLANTS)
                     .sound(SoundType.PLANT)
                     .hardnessAndResistance(1.5f, 6.0f)
+                    .doesNotBlockMovement()
             );
             setRegistryName(registryName);
         }

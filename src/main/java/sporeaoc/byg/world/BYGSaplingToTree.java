@@ -8,6 +8,7 @@ import sporeaoc.byg.world.tree.birch.BrownBirchTree;
 import sporeaoc.byg.world.tree.birch.OrangeBirchTree;
 import sporeaoc.byg.world.tree.birch.RedBirchTree;
 import sporeaoc.byg.world.tree.birch.YellowBirchTree;
+import sporeaoc.byg.world.tree.coniferousforest.SmallFirTree;
 import sporeaoc.byg.world.tree.jacaranda.JacarandaTree;
 import sporeaoc.byg.world.tree.oak.BrownOakTree;
 import sporeaoc.byg.world.tree.oak.OrangeOakTree;
@@ -133,6 +134,18 @@ public class BYGSaplingToTree {
         @Nullable
         public AbstractTreeFeature<NoFeatureConfig> getTreeFeature(Random random) {
             return new JacarandaTree(NoFeatureConfig::deserialize, false);
+        }
+    }
+
+    public static class FirSaplingToTree extends BigTree {
+        @Nullable
+        public AbstractTreeFeature<NoFeatureConfig> getBigTreeFeature(Random random) {
+            return new GiantYellowSpruceTree(NoFeatureConfig::deserialize, false);
+        }
+
+        @Nullable
+        public AbstractTreeFeature<NoFeatureConfig> getTreeFeature(Random random) {
+            return new SmallFirTree(NoFeatureConfig::deserialize, false);
         }
     }
 }

@@ -16,7 +16,7 @@ import sporeaoc.byg.world.tree.birch.RedBirchTree;
 import sporeaoc.byg.world.tree.birch.YellowBirchTree;
 import sporeaoc.byg.world.tree.borealforest.BorealForestTree1;
 import sporeaoc.byg.world.tree.borealforest.BorealForestTree2;
-import sporeaoc.byg.world.tree.coniferousforest.SmallConiferousTree;
+import sporeaoc.byg.world.tree.coniferousforest.SmallFirTree;
 import sporeaoc.byg.world.tree.cypressswamplands.HugeCypressTree;
 import sporeaoc.byg.world.tree.deciduousforest.*;
 import sporeaoc.byg.world.tree.jacaranda.JacarandaTree;
@@ -97,7 +97,7 @@ public class FeatureCatalog {
     public static final AbstractTreeFeature<NoFeatureConfig> TREENAME = new TreeName();
     public static final AbstractTreeFeature<NoFeatureConfig> SHRUB = new DeciduousShrub();
     //    public static final AbstractTreeFeature<NoFeatureConfig> ASPENTREE1 = new AspenTree();
-    public static final AbstractTreeFeature<NoFeatureConfig> SMALLCONIFEROUSTREE = new SmallConiferousTree();
+    public static final AbstractTreeFeature<NoFeatureConfig> SMALLCONIFEROUSTREE = new SmallFirTree(NoFeatureConfig::deserialize, false);
 
 
     public static final FlowersFeature ALLIUMFLOWERS = new AlliumFieldFlowers(NoFeatureConfig::deserialize);
