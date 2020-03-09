@@ -1,15 +1,15 @@
 package sporeaoc.byg.registries;
 
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.BlockNamedItem;
-import net.minecraft.item.Food;
-import net.minecraft.item.Item;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.*;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.catalogs.BlockCatalogs;
 import sporeaoc.byg.catalogs.ItemCatalogs;
+import sporeaoc.byg.itemtiers.BYGArmorTiers;
+import sporeaoc.byg.itemtiers.BYGItemTiers;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BYGItemRegistry {
@@ -26,8 +26,27 @@ public class BYGItemRegistry {
         Item.Properties tab = new Item.Properties().group(BYG.Init.creativeTab);
 
         event.getRegistry().registerAll(
+                ItemCatalogs.AMETRINE_AXE = new AxeItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_axe"),
+                ItemCatalogs.AMETRINE_PICK = new PickaxeItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_pickaxe"),
+                ItemCatalogs.AMETRINE_SWORD = new SwordItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_sword"),
+                ItemCatalogs.AMETRINE_BATTLEAXE = new AxeItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_battleaxe"),
+                ItemCatalogs.AMETRINE_HELMET = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.HEAD, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_helmet"),
+                ItemCatalogs.AMETRINE_CHEST = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.CHEST, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_chest"),
+                ItemCatalogs.AMETRINE_LEGGINGS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.LEGS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_leggings"),
+                ItemCatalogs.AMETRINE_BOOTS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.FEET, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_boots"),
+
+                ItemCatalogs.PENDORITE_AXE = new AxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_axe"),
+                ItemCatalogs.PENDORITE_PICK = new PickaxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_pickaxe"),
+                ItemCatalogs.PENDORITE_SWORD = new SwordItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_sword"),
+                ItemCatalogs.PENDORITE_BATTLEAXE = new AxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_battleaxe"),
+                ItemCatalogs.PENDORITE_HELMET = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.HEAD, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_helmet"),
+                ItemCatalogs.PENDORITE_CHEST = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.CHEST, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_chest"),
+                ItemCatalogs.PENDORITE_LEGGINGS = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.LEGS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_leggings"),
+                ItemCatalogs.PENDORITE_BOOTS = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.FEET, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_boots"),
+
 
                 ItemCatalogs.BYG_LOGO = new Item((new Item.Properties())).setRegistryName("byg_logo"),
+
                 ItemCatalogs.AMETRINE_GEMS = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("ametrine_gems"),
                 ItemCatalogs.PENDORITE_SCRAPS = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("pendorite_scraps"),
                 ItemCatalogs.BLUE_BERRY = new BlockNamedItem(BlockCatalogs.BLUEBERRY_BUSH, new Item.Properties().food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("blueberries"),
