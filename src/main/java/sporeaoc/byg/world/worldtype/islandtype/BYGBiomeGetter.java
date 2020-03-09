@@ -1,4 +1,4 @@
-package sporeaoc.byg.worldtype.islandtype;
+package sporeaoc.byg.world.worldtype.islandtype;
 
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;

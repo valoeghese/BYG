@@ -1,4 +1,4 @@
-package sporeaoc.byg.worldtype.noise;
+package sporeaoc.byg.world.worldtype.noise;
 
 /**
  * K.jpg's Fast Simplex-Style noise

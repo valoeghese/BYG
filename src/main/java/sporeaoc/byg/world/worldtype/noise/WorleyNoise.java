@@ -1,4 +1,4 @@
-package sporeaoc.byg.worldtype.noise;
+package sporeaoc.byg.world.worldtype.noise;
 
 /**
  * This is an implementation of Steve Worley's cellular noise function. It is

@@ -1,4 +1,4 @@
-package sporeaoc.byg.worldtype.islandtype;
+package sporeaoc.byg.world.worldtype.islandtype;
 
 import com.google.common.collect.ImmutableList;
 import net.minecraft.world.WorldType;

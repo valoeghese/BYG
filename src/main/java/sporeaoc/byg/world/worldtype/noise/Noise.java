@@ -1,4 +1,4 @@
-package sporeaoc.byg.worldtype.noise;
+package sporeaoc.byg.world.worldtype.noise;
 
 public abstract class Noise {
 	public Noise(long seed) {
