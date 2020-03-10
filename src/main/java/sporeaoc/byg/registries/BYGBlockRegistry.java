@@ -145,7 +145,7 @@ public class BYGBlockRegistry {
 
                 BlockCatalogs.PEAT_GRASSBLOCK = new BlockProperties.BlockGrass("peat_grass"),
                 BlockCatalogs.MEADOW_GRASSBLOCK = new BlockProperties.BlockGrass("meadow_grass_block"),
-                BlockCatalogs.MEADOW_DIRT = new BlockProperties.BlockGrass("meadow_dirt"),
+                BlockCatalogs.MEADOW_DIRT = new BlockProperties.BlockDirt("meadow_dirt"),
                 BlockCatalogs.MUD_BLOCK = new BlockProperties.BlockDirt("mud_block"),
                 BlockCatalogs.MUD_BRICKS = new BlockProperties.BlockDirt("mud_bricks")
 
@@ -271,19 +271,19 @@ public class BYGBlockRegistry {
                 BlockCatalogs.RED_GLOWCANE = new BlockProperties.BlockStalk("red_glowcane"),
                 BlockCatalogs.PURPLE_GLOWCANE = new BlockProperties.BlockStalk("purple_glowcane"),
                 BlockCatalogs.PINK_GLOWCANE = new BlockProperties.BlockStalk("pink_glowcane"),
-                BlockCatalogs.POISON_IVY = new BlockProperties.BlockFlower("poison_ivy"),
+                BlockCatalogs.POISON_IVY = new BlockProperties.BlockVine("poison_ivy"),
 
 
 
 
                 //Petal Blocks
-                BlockCatalogs.WHITE_PETAL = new BlockProperties.BlockLeave("white_petal_block"),
-                BlockCatalogs.RED_PETAL = new BlockProperties.BlockLeave("red_petal_block"),
-                BlockCatalogs.PURPLE_PETAL = new BlockProperties.BlockLeave("purple_petal_block"),
-                BlockCatalogs.BLUE_PETAL = new BlockProperties.BlockLeave("blue_petal_block"),
-                BlockCatalogs.LIGHT_BLUE_PETAL = new BlockProperties.BlockLeave("light_blue_petal_block"),
-                BlockCatalogs.YELLOW_PETAL = new BlockProperties.BlockLeave("yellow_petal_block"),
-                BlockCatalogs.PLANT_STEM = new BlockProperties.BlockLeave("plant_stem")
+                BlockCatalogs.WHITE_PETAL = new BlockProperties.BlockPetal("white_petal_block"),
+                BlockCatalogs.RED_PETAL = new BlockProperties.BlockPetal("red_petal_block"),
+                BlockCatalogs.PURPLE_PETAL = new BlockProperties.BlockPetal("purple_petal_block"),
+                BlockCatalogs.BLUE_PETAL = new BlockProperties.BlockPetal("blue_petal_block"),
+                BlockCatalogs.LIGHT_BLUE_PETAL = new BlockProperties.BlockPetal("light_blue_petal_block"),
+                BlockCatalogs.YELLOW_PETAL = new BlockProperties.BlockPetal("yellow_petal_block"),
+                BlockCatalogs.PLANT_STEM = new BlockProperties.BlockLog("plant_stem")
 
 
 

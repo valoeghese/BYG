@@ -1,5 +1,5 @@
 {
-  "parent": "byg:block/aspenbookshelf",
+  "parent": "byg:block/aspen_bookshelf",
   "display": {
     "thirdperson": {
       "rotation": [

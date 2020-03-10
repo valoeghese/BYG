@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "byg:block/aspenbookshelf"
+      "model": "byg:block/aspen_bookshelf"
     }
   }
 }

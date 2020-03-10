@@ -70,6 +70,28 @@ public  class BlockProperties {
             setRegistryName(registryName);
         }
     }
+    public static class BlockPetal extends LeavesBlock {
+        public BlockPetal(String registryName) {
+            super(Block.Properties.create(Material.LEAVES)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(0.2f)
+                    .tickRandomly()
+            );
+            setRegistryName(registryName);
+        }
+    }
+    public static class BlockVine extends PoisonIvyBlock {
+        public BlockVine(String registryName) {
+            super(Block.Properties.create(Material.LEAVES)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(0.2f)
+                    .tickRandomly()
+                    .doesNotBlockMovement()
+
+            );
+            setRegistryName(registryName);
+        }
+    }
     public static class BlockLog extends LogBlock {
         public BlockLog(String registryName) {
             super(
@@ -86,6 +108,8 @@ public  class BlockProperties {
             super(Block.Properties.create(Material.PLANTS, MaterialColor.DIRT)
                     .sound(SoundType.PLANT)
                     .hardnessAndResistance(0.0f)
+                    .doesNotBlockMovement()
+
             );
             setRegistryName(registryName);
         }
