@@ -1,5 +1,5 @@
 {
-  "parent": "block/slab",
+  "parent": "block/slab_top",
   "textures": {
     "bottom": "byg:blocks/baobab_planks",
     "top": "byg:blocks/baobab_planks",

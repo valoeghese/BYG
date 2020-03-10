@@ -1,5 +1,5 @@
 {
-  "parent": "block/slab",
+  "parent": "block/slab_top",
   "textures": {
     "bottom": "byg:blocks/blue_enchanted_planks",
     "top": "byg:blocks/blue_enchanted_planks_top",

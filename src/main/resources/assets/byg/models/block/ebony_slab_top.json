@@ -1,5 +1,5 @@
 {
-  "parent": "block/slab",
+  "parent": "block/slab_top",
   "textures": {
     "bottom": "byg:blocks/ebony_planks",
     "top": "byg:blocks/ebony_planks",
