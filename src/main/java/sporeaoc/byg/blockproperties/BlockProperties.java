@@ -193,4 +193,7 @@ public  class BlockProperties {
 
         }
     }
+//    public static class BlockStairs extends StairsBlock {
+//
+//    }
 }
