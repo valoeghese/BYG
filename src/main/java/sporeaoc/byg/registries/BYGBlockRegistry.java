@@ -27,7 +27,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.GREEN_ENCHANTED_PLANKS = new BlockProperties.BlockPlanks("green_enchanted_planks"),
                 BlockCatalogs.HOLLY_PLANKS = new BlockProperties.BlockPlanks("holly_planks"),
                 BlockCatalogs.JACARANDA_PLANKS = new BlockProperties.BlockPlanks("jacaranda_planks"),
-                BlockCatalogs.MAHOGONY_PLANKS = new BlockProperties.BlockPlanks("mahogany_planks"),
+                BlockCatalogs.MAHOGANY_PLANKS = new BlockProperties.BlockPlanks("mahogany_planks"),
                 BlockCatalogs.MANGROVE_PLANKS = new BlockProperties.BlockPlanks("mangrove_planks"),
                 BlockCatalogs.MAPLE_PLANKS = new BlockProperties.BlockPlanks("maple_planks"),
                 BlockCatalogs.PINE_PLANKS = new BlockProperties.BlockPlanks("pine_planks"),
@@ -50,7 +50,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.GREEN_ENCHANTED_BOOKSHELF = new BlockProperties.BlockPlanks("green_enchanted_bookshelf"),
                 BlockCatalogs.HOLLY_BOOKSHELF = new BlockProperties.BlockPlanks("holly_bookshelf"),
                 BlockCatalogs.JACARANDA_BOOKSHELF = new BlockProperties.BlockPlanks("jacaranda_bookshelf"),
-                BlockCatalogs.MAHOGONY_BOOKSHELF = new BlockProperties.BlockPlanks("mahogany_bookshelf"),
+                BlockCatalogs.MAHOGANY_BOOKSHELF = new BlockProperties.BlockPlanks("mahogany_bookshelf"),
                 BlockCatalogs.MANGROVE_BOOKSHELF = new BlockProperties.BlockPlanks("mangrove_bookshelf"),
                 BlockCatalogs.MAPLE_BOOKSHELF = new BlockProperties.BlockPlanks("maple_bookshelf"),
                 BlockCatalogs.PINE_BOOKSHELF = new BlockProperties.BlockPlanks("pine_bookshelf"),
@@ -73,7 +73,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.GREEN_ENCHANTED_SLAB = new BlockProperties.BlockPlanks("green_enchanted_slab"),
                 BlockCatalogs.HOLLY_SLAB = new BlockProperties.BlockPlanks("holly_slab"),
                 BlockCatalogs.JACARANDA_SLAB = new BlockProperties.BlockPlanks("jacaranda_slab"),
-                BlockCatalogs.MAHOGONY_SLAB = new BlockProperties.BlockPlanks("mahogany_slab"),
+                BlockCatalogs.MAHOGANY_SLAB = new BlockProperties.BlockPlanks("mahogany_slab"),
                 BlockCatalogs.MANGROVE_SLAB = new BlockProperties.BlockPlanks("mangrove_slab"),
                 BlockCatalogs.MAPLE_SLAB = new BlockProperties.BlockPlanks("maple_slab"),
                 BlockCatalogs.PINE_SLAB = new BlockProperties.BlockPlanks("pine_slab"),
@@ -82,45 +82,34 @@ public class BYGBlockRegistry {
                 BlockCatalogs.SKYRIS_SLAB = new BlockProperties.BlockPlanks("skyris_slab"),
                 BlockCatalogs.WILLOW_SLAB = new BlockProperties.BlockPlanks("willow_slab"),
                 BlockCatalogs.WITCH_HAZEL_SLAB = new BlockProperties.BlockPlanks("witch_hazel_slab"),
-                BlockCatalogs.ZELKOVA_SLAB = new BlockProperties.BlockPlanks("zelkova_slab")
+                BlockCatalogs.ZELKOVA_SLAB = new BlockProperties.BlockPlanks("zelkova_slab"),
 
-
-
+            //Stairs
+                BlockCatalogs.ASPEN_STAIRS = new BlockProperties.BlockPlanks("aspen_stairs"),
+                BlockCatalogs.BAOBAB_STAIRS = new BlockProperties.BlockPlanks("baobab_stairs"),
+                BlockCatalogs.BLUE_ENCHANTED_STAIRS = new BlockProperties.BlockPlanks("blue_enchanted_stairs"),
+                BlockCatalogs.CHERRY_STAIRS = new BlockProperties.BlockPlanks("cherry_stairs"),
+                BlockCatalogs.CIKA_STAIRS = new BlockProperties.BlockPlanks("cika_stairs"),
+                BlockCatalogs.CYPRESS_STAIRS = new BlockProperties.BlockPlanks("cypress_stairs"),
+                BlockCatalogs.EBONY_STAIRS = new BlockProperties.BlockPlanks("ebony_stairs"),
+                BlockCatalogs.FIR_STAIRS = new BlockProperties.BlockPlanks("fir_stairs"),
+                BlockCatalogs.GREEN_ENCHANTED_STAIRS = new BlockProperties.BlockPlanks("green_enchanted_stairs"),
+                BlockCatalogs.HOLLY_STAIRS = new BlockProperties.BlockPlanks("holly_stairs"),
+                BlockCatalogs.JACARANDA_STAIRS = new BlockProperties.BlockPlanks("jacaranda_stairs"),
+                BlockCatalogs.MAHOGANY_STAIRS = new BlockProperties.BlockPlanks("mahogany_stairs"),
+                BlockCatalogs.MANGROVE_STAIRS = new BlockProperties.BlockPlanks("mangrove_stairs"),
+                BlockCatalogs.MAPLE_STAIRS = new BlockProperties.BlockPlanks("maple_stairs"),
+                BlockCatalogs.PINE_STAIRS = new BlockProperties.BlockPlanks("pine_stairs"),
+                BlockCatalogs.RAINBOW_EUCALYPTUS_STAIRS = new BlockProperties.BlockPlanks("rainbow_eucalyptus_stairs"),
+                BlockCatalogs.REDWOOD_STAIRS = new BlockProperties.BlockPlanks("redwood_stairs"),
+                BlockCatalogs.SKYRIS_STAIRS = new BlockProperties.BlockPlanks("skyris_stairs"),
+                BlockCatalogs.WILLOW_STAIRS = new BlockProperties.BlockPlanks("willow_stairs"),
+                BlockCatalogs.WITCH_HAZEL_STAIRS = new BlockProperties.BlockPlanks("witch_hazel_stairs"),
+                BlockCatalogs.ZELKOVA_STAIRS = new BlockProperties.BlockPlanks("zelkova_stairs")
 
 
 
                 );
-    }
-
-    // Stair Blocks
-    @SubscribeEvent
-    public static void registerStairBlocks(final RegistryEvent.Register<Block> event) {
-        event.getRegistry().registerAll(
-
-                /*
-                 * TODO: Add Stair Blocks
-                 */
-
-                    /*
-                    BlockCatalogs.ASPEN_STAIRS = new BYGStairBlocks(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs.BAOBAB_STAIRS = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName(""),
-                    BlockCatalogs = new StairsBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)).setRegistryName("")
-                     */
-        );
     }
 
     // Fence Blocks
@@ -180,7 +169,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.GREEN_ENCHANTED_SAPLING = new BlockProperties.BlockFlower("green_enchanted_sapling"),
                 BlockCatalogs.HOLLY_SAPLING = new BlockProperties.BlockFlower("holly_sapling"),
                 BlockCatalogs.JACARANDA_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.JacarandaSaplingToTree(), "jacaranda_sapling"),
-                BlockCatalogs.MAHOGONY_SAPLING = new BlockProperties.BlockFlower("mahogany_sapling"),
+                BlockCatalogs.MAHOGANY_SAPLING = new BlockProperties.BlockFlower("mahogany_sapling"),
                 BlockCatalogs.MANGROVE_SAPLING = new BlockProperties.BlockFlower("mangrove_sapling"),
                 BlockCatalogs.ORANGE_BIRCH_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.OrangeBirchSaplingToTree(), "orange_birch_sapling"),
                 BlockCatalogs.ORANGE_OAK_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.OrangeOakSaplingToTree(), "orange_oak_sapling"),
@@ -263,7 +252,6 @@ public class BYGBlockRegistry {
     @SubscribeEvent
     public static void registerPlantBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
-                BlockCatalogs.BLUEBERRY_BUSH = new BlockProperties.BlockBerryBush("blueberry_bush"),
                 BlockCatalogs.GREEN_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("green_mushroom_block"),
                 BlockCatalogs.MILKCAP_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("weeping_milkcap_mushroom_block"),
                 BlockCatalogs.BLEWIT_MUSHROOM_BLOCK = new BlockProperties.BlockHugeMushroom("wood_blewit_mushroom_block"),

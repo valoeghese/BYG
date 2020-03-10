@@ -255,7 +255,7 @@ public class ItemCatalogs {
     public static Item GREEN_ENCHANTED_BOOKSHELF;
     public static Item HOLLY_BOOKSHELF;
     public static Item JACARANDA_BOOKSHELF;
-    public static Item MAHOGONY_BOOKSHELF;
+    public static Item MAHOGANY_BOOKSHELF;
     public static Item MANGROVE_BOOKSHELF;
     public static Item MAPLE_BOOKSHELF;
     public static Item PINE_BOOKSHELF;
@@ -279,7 +279,7 @@ public class ItemCatalogs {
     public static Item GREEN_ENCHANTED_PLANKS;
     public static Item HOLLY_PLANKS;
     public static Item JACARANDA_PLANKS;
-    public static Item MAHOGONY_PLANKS;
+    public static Item MAHOGANY_PLANKS;
     public static Item MANGROVE_PLANKS;
     public static Item MAPLE_PLANKS;
     public static Item PINE_PLANKS;
@@ -310,7 +310,6 @@ public class ItemCatalogs {
     public static Item SHORT_DEAD_GRASS;
     public static Item BLUE_GLOWCANE;
     public static Item RED_GLOWCANE;
-    public static Item BLUEBERRY_BUSH;
     public static Item POISON_IVY;
     public static Item PRAIRIE_GRASS;
     public static Item PINK_GLOWCANE;
@@ -367,7 +366,7 @@ public class ItemCatalogs {
     public static Item GREEN_ENCHANTED_SLAB;
     public static Item HOLLY_SLAB;
     public static Item JACARANDA_SLAB;
-    public static Item MAHOGONY_SLAB;
+    public static Item MAHOGANY_SLAB;
     public static Item MANGROVE_SLAB;
     public static Item MAPLE_SLAB;
     public static Item PINE_SLAB;
@@ -390,7 +389,7 @@ public class ItemCatalogs {
     public static Item GREEN_ENCHANTED_STAIRS;
     public static Item HOLLY_STAIRS;
     public static Item JACARANDA_STAIRS;
-    public static Item MAHOGONY_STAIRS;
+    public static Item MAHOGANY_STAIRS;
     public static Item MANGROVE_STAIRS;
     public static Item MAPLE_STAIRS;
     public static Item PINE_STAIRS;
