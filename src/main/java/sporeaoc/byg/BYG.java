@@ -11,8 +11,8 @@ import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import sporeaoc.byg.catalogs.ItemCatalogs;
-import sporeaoc.byg.config.orestones.OreStoneConfig;
-import sporeaoc.byg.config.weight.ConfigWeightManager;
+import sporeaoc.byg.config.BYGConfig;
+import sporeaoc.byg.config.biomeweight.ConfigWeightManager;
 
 @Mod("byg")
 public class BYG {
@@ -27,7 +27,7 @@ public class BYG {
     public BYG() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         //FMLJavaModLoadingContext.get().getModEventBus().addListener(EntombedEcosystems.BYGEETreeAdd::init);
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, OreStoneConfig.COMMON_CONFIG);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BYGConfig.COMMON_CONFIG);
         ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-weights-common.toml"));
     }
 

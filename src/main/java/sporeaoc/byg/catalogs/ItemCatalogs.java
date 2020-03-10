@@ -469,4 +469,9 @@ public class ItemCatalogs {
     public static Item PENDORITE_CHEST;
     public static Item PENDORITE_LEGGINGS;
     public static Item PENDORITE_BOOTS;
+
+    //Shield Items
+    public static Item AMETRINE_SHIELD;
+    public static Item PENDORITE_SHIELD;
+
 }

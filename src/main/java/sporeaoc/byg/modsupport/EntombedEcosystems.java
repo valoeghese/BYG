@@ -19,7 +19,7 @@
 //import net.minecraftforge.registries.ForgeRegistries;
 //import sporeaoc.byg.catalogs.BiomeCatalog;
 //import sporeaoc.byg.catalogs.FeatureCatalog;
-//import sporeaoc.byg.config.orestones.OreStoneConfig;
+//import sporeaoc.byg.config.orestones.BYGConfig;
 //
 //import java.util.ArrayList;
 //import java.util.Objects;
@@ -178,7 +178,7 @@
 //
 //    public static class BYGEETreeAdd {
 //        public static void init(FMLCommonSetupEvent event) {
-//            if (OreStoneConfig.EESupport.get()) {
+//            if (BYGConfig.EESupport.get()) {
 //                if (ModList.get().isLoaded("entombedecosystems")) {
 //
 //                    for (Biome biome : ForgeRegistries.BIOMES) {

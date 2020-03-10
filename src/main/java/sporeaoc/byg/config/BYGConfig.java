@@ -1,4 +1,4 @@
-package sporeaoc.byg.config.orestones;
+package sporeaoc.byg.config;
 
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import com.electronwill.nightconfig.core.io.WritingMode;
@@ -11,7 +11,7 @@ import sporeaoc.byg.BYG;
 import java.nio.file.Path;
 
 @Mod.EventBusSubscriber(modid = BYG.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class OreStoneConfig {
+public class BYGConfig {
     private static final ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
     public static ForgeConfigSpec COMMON_CONFIG;
 
@@ -20,7 +20,7 @@ public class OreStoneConfig {
     public static ForgeConfigSpec.IntValue PendoriteOreSize;
     public static ForgeConfigSpec.IntValue PendoriteOreChance;
     public static ForgeConfigSpec.IntValue PendoriteOreMaxY;
-   // public static ForgeConfigSpec.IntValue PendoriteOreMinY;
+    // public static ForgeConfigSpec.IntValue PendoriteOreMinY;
 
     public static ForgeConfigSpec.IntValue AmetrineOreSize;
     public static ForgeConfigSpec.IntValue AmetrineOreChance;

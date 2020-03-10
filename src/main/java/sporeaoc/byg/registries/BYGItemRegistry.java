@@ -16,13 +16,14 @@ public class BYGItemRegistry {
 
     /**
      * TODO: Change implementation of BlockItem and delete redundant class
-     * @see sporeaoc.byg.catalogs.ItemCatalogs
      *
+     * @see ItemCatalogs
+     * <p>
      * Block Items are made from the Block, not out of seperate defined Items
      */
 
     @SubscribeEvent
-    public static void bygRegisterItems(final RegistryEvent.Register<Item> event) {
+    public static void bygRegisterItems(RegistryEvent.Register<Item> event) {
         Item.Properties tab = new Item.Properties().group(BYG.Init.creativeTab);
 
         event.getRegistry().registerAll(
@@ -34,6 +35,7 @@ public class BYGItemRegistry {
                 ItemCatalogs.AMETRINE_CHEST = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.CHEST, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_chest"),
                 ItemCatalogs.AMETRINE_LEGGINGS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.LEGS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_leggings"),
                 ItemCatalogs.AMETRINE_BOOTS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.FEET, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_boots"),
+                ItemCatalogs.AMETRINE_SHIELD = new ShieldItem(new Item.Properties().maxDamage(1000).group(ItemGroup.COMBAT)).setRegistryName("ametrine_shield"),
 
                 ItemCatalogs.PENDORITE_AXE = new AxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_axe"),
                 ItemCatalogs.PENDORITE_PICK = new PickaxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_pickaxe"),
@@ -43,6 +45,7 @@ public class BYGItemRegistry {
                 ItemCatalogs.PENDORITE_CHEST = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.CHEST, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_chest"),
                 ItemCatalogs.PENDORITE_LEGGINGS = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.LEGS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_leggings"),
                 ItemCatalogs.PENDORITE_BOOTS = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.FEET, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_boots"),
+                ItemCatalogs.PENDORITE_SHIELD = new ShieldItem(new Item.Properties().maxDamage(1000).group(ItemGroup.COMBAT)).setRegistryName("pendorite_shield"),
 
 
                 ItemCatalogs.BYG_LOGO = new Item((new Item.Properties())).setRegistryName("byg_logo"),
@@ -53,7 +56,6 @@ public class BYGItemRegistry {
                 ItemCatalogs.HOLLY_BERRY = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("holly_berries"),
                 ItemCatalogs.GREEN_APPLE = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("green_apple"),
 
-//Yeeet
                 //PlankItems
 
                 ItemCatalogs.ASPEN_PLANKS = new BlockItem(BlockCatalogs.ASPEN_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.ASPEN_PLANKS.getRegistryName()),
