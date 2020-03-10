@@ -16,6 +16,16 @@ public  class BlockProperties {
         }
     }
 
+    public static class BlockSlab extends SlabBlock {
+        public BlockSlab(String registryName) {
+            super(Block.Properties.create(Material.WOOD)
+                    .sound(SoundType.WOOD)
+                    .hardnessAndResistance(2.0f, 3.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
+
     public static class BlockFlower extends FlowerBlock {
         public BlockFlower(String registryName) {
             super(
