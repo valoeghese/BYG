@@ -35,10 +35,10 @@ public class BYGItemRegistry {
                 ItemCatalogs.AMETRINE_CHEST = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.CHEST, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_chest"),
                 ItemCatalogs.AMETRINE_LEGGINGS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.LEGS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_leggings"),
                 ItemCatalogs.AMETRINE_BOOTS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.FEET, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_boots"),
-                ItemCatalogs.AMETRINE_SHIELD = new ShieldItem(new Item.Properties().maxDamage(1000).group(ItemGroup.COMBAT)).setRegistryName("ametrine_shield"),
+                ItemCatalogs.AMETRINE_SHIELD = new ShieldItem(new Item.Properties().maxDamage(1000).group(ItemGroup.COMBAT)).setRegistryName("ametrine_blue_shield"),
 
-                ItemCatalogs.PENDORITE_AXE = new AxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_axe"),
-                ItemCatalogs.PENDORITE_PICK = new PickaxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_pickaxe"),
+                ItemCatalogs.PENDORITE_AXE = new AxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_axe"),
+                ItemCatalogs.PENDORITE_PICK = new PickaxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_pickaxe"),
                 ItemCatalogs.PENDORITE_SWORD = new SwordItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_sword"),
                 ItemCatalogs.PENDORITE_BATTLEAXE = new AxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_battleaxe"),
                 ItemCatalogs.PENDORITE_HELMET = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.HEAD, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_helmet"),
