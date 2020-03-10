@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.catalogs.BlockCatalogs;
-import sporeaoc.byg.config.orestones.OreStoneConfig;
+import sporeaoc.byg.config.BYGConfig;
 
 @Mod.EventBusSubscriber(modid = BYG.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 
@@ -21,12 +21,12 @@ public class BYGOreGenerator {
     @SubscribeEvent
     public static void bygRegisterOreGenerator(final RegistryEvent.Register<Feature<?>> event) {
         ForgeRegistries.BIOMES.forEach(biome -> {
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.PENDORITE_ORE.getDefaultState(), OreStoneConfig.PendoriteOreSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(OreStoneConfig.PendoriteOreChance.get(), 0, 0, OreStoneConfig.PendoriteOreMaxY.get())));
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.AMETRINE_ORE.getDefaultState(), OreStoneConfig.AmetrineOreSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(OreStoneConfig.AmetrineOreChance.get(), 0, 0, OreStoneConfig.AmetrineOreMaxY.get())));
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.DACITE.getDefaultState(), OreStoneConfig.DaciteSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(OreStoneConfig.DaciteChance.get(), 0, 0, OreStoneConfig.DaciteMaxY.get())));
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.ROCKY_STONE.getDefaultState(), OreStoneConfig.RockyStoneSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(OreStoneConfig.RockyStoneChance.get(), 0, 0, OreStoneConfig.RockyStoneMaxY.get())));
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.SCORIA_STONE.getDefaultState(), OreStoneConfig.ScoriaStoneSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(OreStoneConfig.ScoriaStoneChance.get(), 0, 0, OreStoneConfig.ScoriaStoneMaxY.get())));
-            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.SOAPSTONE.getDefaultState(), OreStoneConfig.SoapStoneSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(OreStoneConfig.SoapStoneChance.get(), 0, 0, OreStoneConfig.SoapStoneMaxY.get())));
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.PENDORITE_ORE.getDefaultState(), BYGConfig.PendoriteOreSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(BYGConfig.PendoriteOreChance.get(), 0, 0, BYGConfig.PendoriteOreMaxY.get())));
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.AMETRINE_ORE.getDefaultState(), BYGConfig.AmetrineOreSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(BYGConfig.AmetrineOreChance.get(), 0, 0, BYGConfig.AmetrineOreMaxY.get())));
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.DACITE.getDefaultState(), BYGConfig.DaciteSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(BYGConfig.DaciteChance.get(), 0, 0, BYGConfig.DaciteMaxY.get())));
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.ROCKY_STONE.getDefaultState(), BYGConfig.RockyStoneSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(BYGConfig.RockyStoneChance.get(), 0, 0, BYGConfig.RockyStoneMaxY.get())));
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.SCORIA_STONE.getDefaultState(), BYGConfig.ScoriaStoneSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(BYGConfig.ScoriaStoneChance.get(), 0, 0, BYGConfig.ScoriaStoneMaxY.get())));
+            biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NATURAL_STONE, BlockCatalogs.SOAPSTONE.getDefaultState(), BYGConfig.SoapStoneSize.get()), Placement.COUNT_RANGE, new CountRangeConfig(BYGConfig.SoapStoneChance.get(), 0, 0, BYGConfig.SoapStoneMaxY.get())));
         });
     }
 }

@@ -1,4 +1,4 @@
-package sporeaoc.byg.config.weight;
+package sporeaoc.byg.config.biomeweight;
 
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import com.electronwill.nightconfig.core.io.WritingMode;

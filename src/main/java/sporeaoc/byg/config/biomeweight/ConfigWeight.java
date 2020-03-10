@@ -1,4 +1,4 @@
-package sporeaoc.byg.config.weight;
+package sporeaoc.byg.config.biomeweight;
 
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.ForgeConfigSpec;
