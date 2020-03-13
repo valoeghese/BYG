@@ -8,7 +8,7 @@ import sporeaoc.byg.BYG;
 import sporeaoc.byg.blockproperties.BYGSaplingProperties;
 import sporeaoc.byg.blockproperties.BlockProperties;
 import sporeaoc.byg.catalogs.BlockCatalogs;
-import sporeaoc.byg.world.BYGSaplingToTree;
+import sporeaoc.byg.world.tree.BYGSaplingToTree;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BYGBlockRegistry {

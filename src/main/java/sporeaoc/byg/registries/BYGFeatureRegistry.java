@@ -45,6 +45,7 @@ public class BYGFeatureRegistry {
                 FeatureCatalog.TREENAME.setRegistryName("tree_name"),
 //                FeatureCatalog.ASPENTREE1.setRegistryName("aspen_tree"),
                 FeatureCatalog.SMALLCONIFEROUSTREE.setRegistryName("smallconifer"),
+                FeatureCatalog.WIDECONIFEROUSTREE.setRegistryName("wideconifer"),
 
                 FeatureCatalog.SHRUB.setRegistryName("shrub"),
                 FeatureCatalog.PRAIRIEGRASS.setRegistryName("prairie_grass")
