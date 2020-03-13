@@ -27,6 +27,7 @@
     "#byg:skyris_logs",
     "#byg:willow_logs",
     "#byg:witch_hazel_logs",
-    "#byg:zelkova_logs"
+    "#byg:zelkova_logs",
+    "byg:plant_stem"
   ]
 }

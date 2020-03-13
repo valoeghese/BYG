@@ -11,6 +11,7 @@ public  class BlockProperties {
             super(Block.Properties.create(Material.WOOD)
                     .sound(SoundType.WOOD)
                     .hardnessAndResistance(2.0f, 3.0f)
+
             );
             setRegistryName(registryName);
         }
@@ -175,6 +176,16 @@ public  class BlockProperties {
     }
     public static class BlockPlanks extends Block {
         public BlockPlanks(String registryName) {
+            super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)
+                    .sound(SoundType.WOOD)
+                    .hardnessAndResistance(2.0f, 3.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
+
+    public static class BlockBookshelf extends BookshelfBlock {
+        public BlockBookshelf(String registryName) {
             super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)
                     .sound(SoundType.WOOD)
                     .hardnessAndResistance(2.0f, 3.0f)
