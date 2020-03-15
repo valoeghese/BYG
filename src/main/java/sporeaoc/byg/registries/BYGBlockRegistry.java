@@ -284,7 +284,7 @@ public class BYGBlockRegistry {
                 //Decorations
 
                 BlockCatalogs.REDSTONE_LANTERN = new BlockProperties.BlockGlow("redstone_lantern_block"),
-
+//EEEE
 
                 //Petal Blocks
                 BlockCatalogs.WHITE_PETAL = new BlockProperties.BlockPetal("white_petal_block"),
