@@ -247,16 +247,7 @@ public  class BlockProperties {
             setRegistryName(registryName);
         }
     }
-    public static class BlockLantern extends RedstoneLanternBlock {
-        public BlockLantern(String registryName) {
-            super(Block.Properties.create(Material.IRON)
-                    .sound(SoundType.LANTERN)
-                    .hardnessAndResistance(3.5F)
-                    .lightValue(15)
-            );
-            setRegistryName(registryName);
-        }
-    }
+
     public static class BlockStone extends Block {
         public BlockStone(String registryName) {
             super(Block.Properties.create(Material.ROCK)
