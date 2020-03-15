@@ -37,6 +37,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.WILLOW_PLANKS = new BlockProperties.BlockPlanks("willow_planks"),
                 BlockCatalogs.WITCH_HAZEL_PLANKS = new BlockProperties.BlockPlanks("witch_hazel_planks"),
                 BlockCatalogs.ZELKOVA_PLANKS = new BlockProperties.BlockPlanks("zelkova_planks"),
+                BlockCatalogs.ZELKOVA_PLANKS = new BlockProperties.BYGBushBlock("zelkova_planks"),
 
                 //Bookshelves
                 BlockCatalogs.ASPEN_BOOKSHELF = new BlockProperties.BlockBookshelf("aspen_bookshelf"),

@@ -24,7 +24,6 @@ public class BYGItemRegistry {
 
     @SubscribeEvent
     public static void bygRegisterItems(RegistryEvent.Register<Item> event) {
-        Item.Properties tab = new Item.Properties().group(BYG.Init.creativeTab);
 
         event.getRegistry().registerAll(
                 ItemCatalogs.AMETRINE_AXE = new AxeItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_axe"),
