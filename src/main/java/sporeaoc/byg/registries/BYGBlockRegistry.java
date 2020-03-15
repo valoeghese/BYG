@@ -275,7 +275,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.TINY_LILYPADS = new BlockProperties.BlockLily("tiny_lilypads"),
 
                 //Glowcane Blocks
-
+//
                 BlockCatalogs.BLUE_GLOWCANE_BLOCK = new BlockProperties.BlockGlow("blue_glowcane_block"),
                 BlockCatalogs.RED_GLOWCANE_BLOCK = new BlockProperties.BlockGlow("red_glowcane_block"),
                 BlockCatalogs.PINK_GLOWCANE_BLOCK = new BlockProperties.BlockGlow("pink_glowcane_block"),

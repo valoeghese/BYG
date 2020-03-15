@@ -179,7 +179,7 @@ public class BYGItemRegistry {
                 ItemCatalogs.BLUE_GLOWCANE_BLOCK = new BlockItem(BlockCatalogs.BLUE_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLUE_GLOWCANE_BLOCK.getRegistryName()),
                 ItemCatalogs.PURPLE_GLOWCANE_BLOCK = new BlockItem(BlockCatalogs.PURPLE_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PURPLE_GLOWCANE_BLOCK.getRegistryName()),
                 ItemCatalogs.PINK_GLOWCANE_BLOCK = new BlockItem(BlockCatalogs.PINK_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PINK_GLOWCANE_BLOCK.getRegistryName()),
-
+//
                 //Decorations
                 ItemCatalogs.REDSTONE_LANTERN = new BlockNamedItem(BlockCatalogs.REDSTONE_LANTERN, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("redstone_lantern"),
 
