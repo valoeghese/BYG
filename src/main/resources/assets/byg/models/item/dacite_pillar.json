@@ -1,5 +1,5 @@
 {
-  "parent": "byg:block/scoria_bricks",
+  "parent": "byg:block/dacite_pillar",
   "display": {
     "thirdperson": {
       "rotation": [

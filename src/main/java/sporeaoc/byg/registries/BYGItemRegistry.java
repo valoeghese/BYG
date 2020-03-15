@@ -24,26 +24,27 @@ public class BYGItemRegistry {
 
     @SubscribeEvent
     public static void bygRegisterItems(RegistryEvent.Register<Item> event) {
+        Item.Properties tab = new Item.Properties().group(BYG.Init.creativeTab);
 
         event.getRegistry().registerAll(
                 ItemCatalogs.AMETRINE_AXE = new AxeItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_axe"),
                 ItemCatalogs.AMETRINE_PICK = new PickaxeItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_pickaxe"),
                 ItemCatalogs.AMETRINE_SWORD = new SwordItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_sword"),
                 ItemCatalogs.AMETRINE_BATTLEAXE = new AxeItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_battleaxe"),
-                ItemCatalogs.AMETRINE_HELMET = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.HEAD, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_helmet"),
-                ItemCatalogs.AMETRINE_CHEST = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.CHEST, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_chestplate"),
-                ItemCatalogs.AMETRINE_LEGGINGS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.LEGS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_leggings"),
-                ItemCatalogs.AMETRINE_BOOTS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.FEET, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_boots"),
+               // ItemCatalogs.AMETRINE_HELMET = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.HEAD, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_helmet"),
+                //ItemCatalogs.AMETRINE_CHEST = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.CHEST, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_chestplate"),
+                //ItemCatalogs.AMETRINE_LEGGINGS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.LEGS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_leggings"),
+                //ItemCatalogs.AMETRINE_BOOTS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.FEET, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_boots"),
                 //ItemCatalogs.AMETRINE_SHIELD = new ShieldItem(new Item.Properties().maxDamage(1000).group(ItemGroup.COMBAT)).setRegistryName("ametrine_blue_shields"),
 
                 ItemCatalogs.PENDORITE_AXE = new AxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_axe"),
                 ItemCatalogs.PENDORITE_PICK = new PickaxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_pickaxe"),
                 ItemCatalogs.PENDORITE_SWORD = new SwordItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_sword"),
                 ItemCatalogs.PENDORITE_BATTLEAXE = new AxeItem(BYGItemTiers.PENDORITE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_battleaxe"),
-                ItemCatalogs.PENDORITE_HELMET = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.HEAD, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_helmet"),
-                ItemCatalogs.PENDORITE_CHEST = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.CHEST, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_chestplate"),
-                ItemCatalogs.PENDORITE_LEGGINGS = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.LEGS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_leggings"),
-                ItemCatalogs.PENDORITE_BOOTS = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.FEET, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_boots"),
+                //ItemCatalogs.PENDORITE_HELMET = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.HEAD, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_helmet"),
+                //ItemCatalogs.PENDORITE_CHEST = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.CHEST, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_chestplate"),
+                //ItemCatalogs.PENDORITE_LEGGINGS = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.LEGS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_leggings"),
+                //ItemCatalogs.PENDORITE_BOOTS = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.FEET, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_boots"),
                 //ItemCatalogs.PENDORITE_SHIELD = new ShieldItem(new Item.Properties().maxDamage(1000).group(ItemGroup.COMBAT)).setRegistryName("pendorite_shield"),
 
 
@@ -51,9 +52,16 @@ public class BYGItemRegistry {
 
                 ItemCatalogs.AMETRINE_GEMS = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("ametrine_gems"),
                 ItemCatalogs.PENDORITE_SCRAPS = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("pendorite_scraps"),
-                ItemCatalogs.BLUE_BERRY = new BlockNamedItem(BlockCatalogs.BLUEBERRY_BUSH, new Item.Properties().food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("blueberries"),
+                ItemCatalogs.BLUE_BERRY = new BlockNamedItem(BlockCatalogs.BLUEBERRY_BUSH, new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("blueberries"),
                 ItemCatalogs.HOLLY_BERRY = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("holly_berries"),
                 ItemCatalogs.GREEN_APPLE = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("green_apple"),
+
+                ItemCatalogs.BLUE_GLOWCANE_STALK = new BlockNamedItem(BlockCatalogs.BLUE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("blue_glowcane_stalk"),
+                ItemCatalogs.RED_GLOWCANE_STALK = new BlockNamedItem(BlockCatalogs.RED_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("red_glowcane_stalk"),
+                ItemCatalogs.PINK_GLOWCANE_STALK = new BlockNamedItem(BlockCatalogs.PINK_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("pink_glowcane_stalk"),
+                ItemCatalogs.PURPLE_GLOWCANE_STALK = new BlockNamedItem(BlockCatalogs.PURPLE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("purple_glowcane_stalk"),
+
+
 
                 //PlankItems
 
@@ -165,10 +173,6 @@ public class BYGItemRegistry {
                 ItemCatalogs.WINTER_SUCCULENT = new BlockItem(BlockCatalogs.WINTER_SUCCULENT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WINTER_SUCCULENT.getRegistryName()),
                 ItemCatalogs.DEAD_GRASS = new BlockItem(BlockCatalogs.DEAD_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.DEAD_GRASS.getRegistryName()),
                 ItemCatalogs.SHORT_DEAD_GRASS = new BlockItem(BlockCatalogs.SHORT_DEAD_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SHORT_DEAD_GRASS.getRegistryName()),
-                ItemCatalogs.BLUE_GLOWCANE = new BlockItem(BlockCatalogs.BLUE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLUE_GLOWCANE.getRegistryName()),
-                ItemCatalogs.RED_GLOWCANE = new BlockItem(BlockCatalogs.RED_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.RED_GLOWCANE.getRegistryName()),
-                ItemCatalogs.PURPLE_GLOWCANE = new BlockItem(BlockCatalogs.PURPLE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PURPLE_GLOWCANE.getRegistryName()),
-                ItemCatalogs.PINK_GLOWCANE = new BlockItem(BlockCatalogs.PINK_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PINK_GLOWCANE.getRegistryName()),
                 ItemCatalogs.POISON_IVY = new BlockItem(BlockCatalogs.POISON_IVY, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.POISON_IVY.getRegistryName()),
 
                 //Petal Blocks

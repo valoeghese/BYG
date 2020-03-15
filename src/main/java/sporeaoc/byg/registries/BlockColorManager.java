@@ -37,7 +37,7 @@ public class BlockColorManager
             blockColors.register((unknown1, lightReader, pos, unknown2) ->
             {
                 return lightReader != null && pos != null ? BiomeColors.getGrassColor(lightReader, pos) : GrassColors.get(0.5D, 1.0D);
-            }, BlockCatalogs.MEADOW_GRASSBLOCK, BlockCatalogs.MAHOGANY_LEAVES, BlockCatalogs.POISON_IVY);
+            }, BlockCatalogs.MEADOW_GRASSBLOCK, BlockCatalogs.MAHOGANY_LEAVES, BlockCatalogs.POISON_IVY, BlockCatalogs.OVERGROWN_STONE);
         }
 
 
@@ -57,7 +57,7 @@ public class BlockColorManager
                 return blockColors.getColor(state, null, null, tintIndex);
             };
 
-            itemColors.register(itemBlockColourHandler, ItemCatalogs.MEADOW_GRASSBLOCK, ItemCatalogs.MAHOGANY_LEAVES, ItemCatalogs.POISON_IVY);
+            itemColors.register(itemBlockColourHandler, ItemCatalogs.MEADOW_GRASSBLOCK, ItemCatalogs.MAHOGANY_LEAVES, ItemCatalogs.POISON_IVY, ItemCatalogs.OVERGROWN_STONE);
         }
     }
 }

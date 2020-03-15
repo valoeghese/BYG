@@ -308,12 +308,12 @@ public class ItemCatalogs {
     public static Item WINTER_SUCCULENT;
     public static Item DEAD_GRASS;
     public static Item SHORT_DEAD_GRASS;
-    public static Item BLUE_GLOWCANE;
-    public static Item RED_GLOWCANE;
+    public static Item BLUE_GLOWCANE_STALK;
+    public static Item RED_GLOWCANE_STALK;
     public static Item POISON_IVY;
     public static Item PRAIRIE_GRASS;
-    public static Item PINK_GLOWCANE;
-    public static Item PURPLE_GLOWCANE;
+    public static Item PINK_GLOWCANE_STALK;
+    public static Item PURPLE_GLOWCANE_STALK;
     public static Item WEEPING_VINES;
 
 

@@ -4,11 +4,8 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.potion.Effects;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockReader;
-import sporeaoc.byg.catalogs.BlockCatalogs;
 
-public class BlockProperties {
+public  class BlockProperties {
     public static class BlockFence extends FenceBlock {
         public BlockFence(String registryName) {
             super(Block.Properties.create(Material.WOOD)
@@ -54,7 +51,6 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
     public static class BlockGrass extends GrassBlock {
         public BlockGrass(String registryName) {
             super(Block.Properties.create(Material.EARTH)
@@ -65,7 +61,27 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
+    public static class BlockMeadowGrass extends MeadowGrassBlock {
+        public BlockMeadowGrass(String registryName) {
+            super(Block.Properties.create(Material.EARTH)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(0.2f)
+                    .tickRandomly()
+            );
+            setRegistryName(registryName);
+        }
+    }
+    public static class BlockOvergrownStone extends OvergrownStoneBlock {
+        public BlockOvergrownStone(String registryName) {
+            super(Block.Properties.create(Material.ROCK)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(1.5f, 6.0f)
+                    .tickRandomly()
 
+            );
+            setRegistryName(registryName);
+        }
+    }
     public static class BlockDirt extends Block {
         public BlockDirt(String registryName) {
             super(Block.Properties.create(Material.EARTH)
@@ -76,7 +92,6 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
     public static class BlockLeave extends SnowyLeavesBlock {
         public BlockLeave(String registryName) {
             super(Block.Properties.create(Material.LEAVES)
@@ -87,7 +102,6 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
     public static class BlockPetal extends LeavesBlock {
         public BlockPetal(String registryName) {
             super(Block.Properties.create(Material.LEAVES)
@@ -98,7 +112,6 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
     public static class BlockVine extends PoisonIvyBlock {
         public BlockVine(String registryName) {
             super(Block.Properties.create(Material.LEAVES)
@@ -111,7 +124,6 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
     public static class BlockLog extends LogBlock {
         public BlockLog(String registryName) {
             super(
@@ -123,7 +135,6 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
     public static class BlockMushroom extends MushroomBlock {
         public BlockMushroom(String registryName) {
             super(Block.Properties.create(Material.PLANTS, MaterialColor.DIRT)
@@ -135,7 +146,6 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
     public static class BlockOre extends OreBlock {
         public BlockOre(String registryName) {
             super(
@@ -152,6 +162,8 @@ public class BlockProperties {
             super(Block.Properties.create(Material.PLANTS)
                     .sound(SoundType.PLANT)
                     .hardnessAndResistance(0.0f, 0.0f)
+                    .doesNotBlockMovement()
+
             );
             setRegistryName(registryName);
         }
@@ -166,7 +178,15 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
+    public static class BlockCattail extends SeaGrassBlock {
+        public BlockCattail(String registryName) {
+            super(Block.Properties.create(Material.PLANTS)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(1.5f, 6.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
     public static class BlockBerryBush extends BlueBerryBush {
         public BlockBerryBush(String registryName) {
             super(Block.Properties.create(Material.PLANTS)
@@ -177,7 +197,6 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
     public static class BlockHugeMushroom extends HugeMushroomBlock {
         public BlockHugeMushroom(String registryName) {
             super(Block.Properties.create(Material.PLANTS, MaterialColor.DIRT)
@@ -187,7 +206,6 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
     public static class BlockPlanks extends Block {
         public BlockPlanks(String registryName) {
             super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)
@@ -207,7 +225,6 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
     public static class BlockStone extends Block {
         public BlockStone(String registryName) {
             super(Block.Properties.create(Material.ROCK)
@@ -217,7 +234,15 @@ public class BlockProperties {
             setRegistryName(registryName);
         }
     }
-
+    public static class BlockPillar extends RotatedPillarBlock {
+        public BlockPillar(String registryName) {
+            super(Block.Properties.create(Material.ROCK)
+                    .sound(SoundType.STONE)
+                    .hardnessAndResistance(1.5f, 6.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
     public static class BlockStrippedLog extends LogBlock {
         public BlockStrippedLog(String registryName) {
             super(
@@ -230,20 +255,7 @@ public class BlockProperties {
 
         }
     }
-
-    public static class BYGBushBlock extends BushBlock {
-        public BYGBushBlock(String registryName) {
-            super(
-                    Block.Properties.create(Material.PLANTS)
-                            .sound(SoundType.PLANT).hardnessAndResistance(0.0f)
-            );
-            setRegistryName(registryName);
-        }
-
-        @Override
-        protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
-            Block block = state.getBlock();
-            return block == BlockCatalogs.PRAIRIE_GRASS || block == Blocks.DIRT || block == Blocks.COARSE_DIRT || block == Blocks.PODZOL || block == Blocks.FARMLAND;
-        }
-    }
+//    public static class BlockStairs extends StairsBlock {
+//
+//    }
 }

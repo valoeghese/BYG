@@ -37,7 +37,6 @@ public class BYGBlockRegistry {
                 BlockCatalogs.WILLOW_PLANKS = new BlockProperties.BlockPlanks("willow_planks"),
                 BlockCatalogs.WITCH_HAZEL_PLANKS = new BlockProperties.BlockPlanks("witch_hazel_planks"),
                 BlockCatalogs.ZELKOVA_PLANKS = new BlockProperties.BlockPlanks("zelkova_planks"),
-                BlockCatalogs.ZELKOVA_PLANKS = new BlockProperties.BYGBushBlock("zelkova_planks"),
 
                 //Bookshelves
                 BlockCatalogs.ASPEN_BOOKSHELF = new BlockProperties.BlockBookshelf("aspen_bookshelf"),
@@ -145,7 +144,7 @@ public class BYGBlockRegistry {
         event.getRegistry().registerAll(
 
                 BlockCatalogs.PEAT_GRASSBLOCK = new BlockProperties.BlockGrass("peat_grass"),
-                BlockCatalogs.MEADOW_GRASSBLOCK = new BlockProperties.BlockGrass("meadow_grass_block"),
+                BlockCatalogs.MEADOW_GRASSBLOCK = new BlockProperties.BlockMeadowGrass("meadow_grass_block"),
                 BlockCatalogs.MEADOW_DIRT = new BlockProperties.BlockDirt("meadow_dirt"),
                 BlockCatalogs.MUD_BLOCK = new BlockProperties.BlockDirt("mud_block"),
                 BlockCatalogs.MUD_BRICKS = new BlockProperties.BlockDirt("mud_bricks")
@@ -260,8 +259,8 @@ public class BYGBlockRegistry {
                 BlockCatalogs.WHITE_MUSHROOM_STEM = new BlockProperties.BlockHugeMushroom("white_mushroom_stem"),
                 BlockCatalogs.BROWN_MUSHROOM_STEM = new BlockProperties.BlockHugeMushroom("brown_mushroom_stem"),
 
-                BlockCatalogs.CATTAIL = new BlockProperties.BlockFlower("cattail"),
-                BlockCatalogs.REEDS = new BlockProperties.BlockFlower("reeds"),
+                BlockCatalogs.CATTAIL = new BlockProperties.BlockCattail("cattail"),
+                BlockCatalogs.REEDS = new BlockProperties.BlockCattail("reeds"),
                 BlockCatalogs.HORSEWEED = new BlockProperties.BlockFlower("horseweed"),
                 BlockCatalogs.MINI_CACTUS = new BlockProperties.BlockFlower("mini_cactus"),
                 BlockCatalogs.PRICKLY_PEAR_CACTUS = new BlockProperties.BlockFlower("prickly_pear_cactus"),
@@ -273,6 +272,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.PURPLE_GLOWCANE = new BlockProperties.BlockStalk("purple_glowcane"),
                 BlockCatalogs.PINK_GLOWCANE = new BlockProperties.BlockStalk("pink_glowcane"),
                 BlockCatalogs.POISON_IVY = new BlockProperties.BlockVine("poison_ivy"),
+                BlockCatalogs.BLUEBERRY_BUSH = new BlockProperties.BlockBerryBush("blueberry_bush"),
 
 
 
@@ -352,22 +352,22 @@ public class BYGBlockRegistry {
                 BlockCatalogs.DACITE = new BlockProperties.BlockStone("dacite"),
                 BlockCatalogs.DACITE_BRICKS = new BlockProperties.BlockStone("dacite_bricks"),
                 BlockCatalogs.DACITE_COBBLESTONE = new BlockProperties.BlockStone("dacite_cobblestone"),
-                BlockCatalogs.DACITE_PILLAR = new BlockProperties.BlockStone("dacite_pillar"),
+                BlockCatalogs.DACITE_PILLAR = new BlockProperties.BlockPillar("dacite_pillar"),
                 BlockCatalogs.DACITE_TILE = new BlockProperties.BlockStone("dacite_tile"),
 
                 BlockCatalogs.MOSSY_STONE = new BlockProperties.BlockStone("mossy_stone"),
-                BlockCatalogs.OVERGROWN_STONE = new BlockProperties.BlockStone("overgrown_stone"),
+                BlockCatalogs.OVERGROWN_STONE = new BlockProperties.BlockOvergrownStone("overgrown_stone"),
                 BlockCatalogs.ROCKY_STONE = new BlockProperties.BlockStone("rocky_stone"),
 
                 BlockCatalogs.SCORIA_STONE = new BlockProperties.BlockStone("scoria_stone"),
                 BlockCatalogs.SCORIA_COBBLESTONE = new BlockProperties.BlockStone("scoria_cobblestone"),
-                BlockCatalogs.SCORIA_PILLAR = new BlockProperties.BlockStone("scoria_pillar"),
+                BlockCatalogs.SCORIA_PILLAR = new BlockProperties.BlockPillar("scoria_pillar"),
                 BlockCatalogs.SCORIA_STONEBRICKS = new BlockProperties.BlockStone("scoria_stonebricks"),
 
                 BlockCatalogs.SOAPSTONE = new BlockProperties.BlockStone("soapstone"),
                 BlockCatalogs.POLISHED_SOAPSTONE = new BlockProperties.BlockStone("polished_soapstone"),
                 BlockCatalogs.SOAPSTONE_BRICKS = new BlockProperties.BlockStone("soapstone_bricks"),
-                BlockCatalogs.SOAPSTONE_PILLAR = new BlockProperties.BlockStone("soapstone_pillar"),
+                BlockCatalogs.SOAPSTONE_PILLAR = new BlockProperties.BlockPillar("soapstone_pillar"),
                 BlockCatalogs.SOAPSTONE_TILE = new BlockProperties.BlockStone("soapstone_tile")
 
                 );

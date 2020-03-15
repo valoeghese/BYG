@@ -1,5 +1,5 @@
 {
-  "parent": "byg:block/soapstone_pillars",
+  "parent": "byg:block/scoria_pillar",
   "display": {
     "thirdperson": {
       "rotation": [
