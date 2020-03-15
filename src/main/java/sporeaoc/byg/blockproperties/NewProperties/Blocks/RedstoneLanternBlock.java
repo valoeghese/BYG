@@ -26,7 +26,6 @@ import java.util.Random;
 
 public class RedstoneLanternBlock extends Block {
     public static final BooleanProperty HANGING;
-    public static final BooleanProperty HANGING_LIT;
     protected static final VoxelShape field_220279_b;
     protected static final VoxelShape field_220280_c;
     public static BooleanProperty LIT;
@@ -35,7 +34,7 @@ public class RedstoneLanternBlock extends Block {
         super(p_i49980_1_);
         this.setDefaultState((BlockState)((BlockState)this.stateContainer.getBaseState()).with(HANGING, false));
 
-        this.setDefaultState((BlockState)this.getDefaultState().with(HANGING_LIT, false));
+        this.setDefaultState((BlockState)this.getDefaultState().with(LIT, false));
     }
 
     @Nullable
@@ -56,7 +55,7 @@ public class RedstoneLanternBlock extends Block {
 
     public void neighborChanged(BlockState p_220069_1_, World p_220069_2_, BlockPos p_220069_3_, Block p_220069_4_, BlockPos p_220069_5_, boolean p_220069_6_) {
         if (!p_220069_2_.isRemote) {
-            boolean lvt_7_1_ = (Boolean)p_220069_1_.get(HANGING_LIT);
+            boolean lvt_7_1_ = (Boolean)p_220069_1_.get(LIT);
             if (lvt_7_1_ != p_220069_2_.isBlockPowered(p_220069_3_)) {
                 if (lvt_7_1_) {
                     p_220069_2_.getPendingBlockTicks().scheduleTick(p_220069_3_, this, 4);
@@ -75,7 +74,7 @@ public class RedstoneLanternBlock extends Block {
 
     protected void fillStateContainer(Builder<Block, BlockState> p_206840_1_) {
         p_206840_1_.add(new IProperty[]{HANGING});
-        p_206840_1_.add(new IProperty[]{HANGING_LIT});
+        p_206840_1_.add(new IProperty[]{LIT});
     }
 
     public BlockRenderLayer getRenderLayer() {
@@ -101,7 +100,7 @@ public class RedstoneLanternBlock extends Block {
     }
     
     public int getLightValue(BlockState p_149750_1_) {
-        return (Boolean)p_149750_1_.get(HANGING_LIT) ? super.getLightValue(p_149750_1_) : 0;
+        return (Boolean)p_149750_1_.get(LIT) ? super.getLightValue(p_149750_1_) : 0;
     }
 
     public BlockState updatePostPlacement(BlockState p_196271_1_, Direction p_196271_2_, BlockState p_196271_3_, IWorld p_196271_4_, BlockPos p_196271_5_, BlockPos p_196271_6_) {
@@ -114,7 +113,7 @@ public class RedstoneLanternBlock extends Block {
 
     public void tick(BlockState p_196267_1_, World p_196267_2_, BlockPos p_196267_3_, Random p_196267_4_) {
         if (!p_196267_2_.isRemote) {
-            if ((Boolean)p_196267_1_.get(HANGING_LIT) && !p_196267_2_.isBlockPowered(p_196267_3_)) {
+            if ((Boolean)p_196267_1_.get(LIT) && !p_196267_2_.isBlockPowered(p_196267_3_)) {
                 p_196267_2_.setBlockState(p_196267_3_, (BlockState)p_196267_1_.cycle(LIT), 2);
             }
 
@@ -125,7 +124,7 @@ public class RedstoneLanternBlock extends Block {
         HANGING = BlockStateProperties.HANGING;
         field_220279_b = VoxelShapes.or(Block.makeCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 7.0D, 11.0D), Block.makeCuboidShape(6.0D, 7.0D, 6.0D, 10.0D, 9.0D, 10.0D));
         field_220280_c = VoxelShapes.or(Block.makeCuboidShape(5.0D, 1.0D, 5.0D, 11.0D, 8.0D, 11.0D), Block.makeCuboidShape(6.0D, 8.0D, 6.0D, 10.0D, 10.0D, 10.0D));
-        HANGING_LIT = BYGBlockStateProperties.HANGING_LIT;
+        LIT = RedstoneTorchBlock.LIT;
     }
 
 }
