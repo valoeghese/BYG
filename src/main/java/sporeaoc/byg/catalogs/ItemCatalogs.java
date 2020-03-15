@@ -306,8 +306,7 @@ public class ItemCatalogs {
     public static Item MINI_CACTUS;
     public static Item PRICKLY_PEAR_CACTUS;
     public static Item WINTER_SUCCULENT;
-    public static Item DEAD_GRASS;
-    public static Item SHORT_DEAD_GRASS;
+    public static Item SHORT_GRASS;
     public static Item BLUE_GLOWCANE_STALK;
     public static Item RED_GLOWCANE_STALK;
     public static Item POISON_IVY;
@@ -315,7 +314,18 @@ public class ItemCatalogs {
     public static Item PINK_GLOWCANE_STALK;
     public static Item PURPLE_GLOWCANE_STALK;
     public static Item WEEPING_VINES;
+    public static Item TINY_LILYPADS;
 
+    //Glowcane Block
+
+    public static Item BLUE_GLOWCANE_BLOCK;
+    public static Item RED_GLOWCANE_BLOCK;
+    public static Item PINK_GLOWCANE_BLOCK;
+    public static Item PURPLE_GLOWCANE_BLOCK;
+
+    //Decorations
+
+    public static Item REDSTONE_LANTERN;
 
     //SaplingItems
     public static Item ASPEN_SAPLING;

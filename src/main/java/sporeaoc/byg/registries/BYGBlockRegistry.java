@@ -5,7 +5,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
-import sporeaoc.byg.blockproperties.BYGSaplingProperties;
+import sporeaoc.byg.blockproperties.NewProperties.BYGSaplingProperties;
 import sporeaoc.byg.blockproperties.BlockProperties;
 import sporeaoc.byg.catalogs.BlockCatalogs;
 import sporeaoc.byg.world.tree.BYGSaplingToTree;
@@ -265,16 +265,25 @@ public class BYGBlockRegistry {
                 BlockCatalogs.MINI_CACTUS = new BlockProperties.BlockFlower("mini_cactus"),
                 BlockCatalogs.PRICKLY_PEAR_CACTUS = new BlockProperties.BlockFlower("prickly_pear_cactus"),
                 BlockCatalogs.WINTER_SUCCULENT = new BlockProperties.BlockFlower("winter_succulent"),
-                BlockCatalogs.DEAD_GRASS = new BlockProperties.BlockFlower("dead_grass"),
-                BlockCatalogs.SHORT_DEAD_GRASS = new BlockProperties.BlockFlower("short_dead_grass"),
+                BlockCatalogs.SHORT_GRASS = new BlockProperties.BlockTallGrass("short_grass"),
                 BlockCatalogs.BLUE_GLOWCANE = new BlockProperties.BlockStalk("blue_glowcane"),
                 BlockCatalogs.RED_GLOWCANE = new BlockProperties.BlockStalk("red_glowcane"),
                 BlockCatalogs.PURPLE_GLOWCANE = new BlockProperties.BlockStalk("purple_glowcane"),
                 BlockCatalogs.PINK_GLOWCANE = new BlockProperties.BlockStalk("pink_glowcane"),
                 BlockCatalogs.POISON_IVY = new BlockProperties.BlockVine("poison_ivy"),
                 BlockCatalogs.BLUEBERRY_BUSH = new BlockProperties.BlockBerryBush("blueberry_bush"),
+                BlockCatalogs.TINY_LILYPADS = new BlockProperties.BlockLily("tiny_lilypads"),
 
+                //Glowcane Blocks
 
+                BlockCatalogs.BLUE_GLOWCANE_BLOCK = new BlockProperties.BlockGlow("blue_glowcane_block"),
+                BlockCatalogs.RED_GLOWCANE_BLOCK = new BlockProperties.BlockGlow("red_glowcane_block"),
+                BlockCatalogs.PINK_GLOWCANE_BLOCK = new BlockProperties.BlockGlow("pink_glowcane_block"),
+                BlockCatalogs.PURPLE_GLOWCANE_BLOCK = new BlockProperties.BlockGlow("purple_glowcane_block"),
+
+                //Decorations
+
+                BlockCatalogs.REDSTONE_LANTERN = new BlockProperties.BlockLantern("redstone_lantern_block"),
 
 
                 //Petal Blocks
@@ -446,7 +455,7 @@ public class BYGBlockRegistry {
                 BlockCatalogs.PINK_ANEMONE = new BlockProperties.BlockFlower("pink_anemone"),
                 BlockCatalogs.PINK_DAFFODIL = new BlockProperties.BlockFlower("pink_daffodil"),
                 BlockCatalogs.PINK_ORCHID = new BlockProperties.BlockFlower("pink_orchid"),
-                BlockCatalogs.PRAIRIE_GRASS = new BlockProperties.TallGrass("prairie_grass"),
+                BlockCatalogs.PRAIRIE_GRASS = new BlockProperties.BlockTallGrass("prairie_grass"),
                 BlockCatalogs.PROTEA_FLOWER = new BlockProperties.BlockFlower("protea_flower"),
                 BlockCatalogs.PURPLE_AMARANTH = new BlockProperties.BlockFlower("purple_amaranth"),
                 BlockCatalogs.PURPLE_ORCHID = new BlockProperties.BlockFlower("purple_orchid"),

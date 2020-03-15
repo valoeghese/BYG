@@ -1,15 +1,13 @@
-package sporeaoc.byg.blockproperties;
+package sporeaoc.byg.blockproperties.NewProperties.Blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.DecoratedFeatureConfig;
 import net.minecraft.world.gen.feature.FlowersFeature;
-import net.minecraftforge.common.IPlantable;
 import sporeaoc.byg.catalogs.BlockCatalogs;
 
 

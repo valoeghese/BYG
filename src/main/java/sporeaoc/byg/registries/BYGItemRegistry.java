@@ -1,14 +1,13 @@
 package sporeaoc.byg.registries;
 
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
+import sporeaoc.byg.blockproperties.NewProperties.Items.LilyItem;
 import sporeaoc.byg.catalogs.BlockCatalogs;
 import sporeaoc.byg.catalogs.ItemCatalogs;
-import sporeaoc.byg.itemtiers.BYGArmorTiers;
 import sporeaoc.byg.itemtiers.BYGItemTiers;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -171,9 +170,19 @@ public class BYGItemRegistry {
                 ItemCatalogs.MINI_CACTUS = new BlockItem(BlockCatalogs.MINI_CACTUS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.MINI_CACTUS.getRegistryName()),
                 ItemCatalogs.PRICKLY_PEAR_CACTUS = new BlockItem(BlockCatalogs.PRICKLY_PEAR_CACTUS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PRICKLY_PEAR_CACTUS.getRegistryName()),
                 ItemCatalogs.WINTER_SUCCULENT = new BlockItem(BlockCatalogs.WINTER_SUCCULENT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WINTER_SUCCULENT.getRegistryName()),
-                ItemCatalogs.DEAD_GRASS = new BlockItem(BlockCatalogs.DEAD_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.DEAD_GRASS.getRegistryName()),
-                ItemCatalogs.SHORT_DEAD_GRASS = new BlockItem(BlockCatalogs.SHORT_DEAD_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SHORT_DEAD_GRASS.getRegistryName()),
+                ItemCatalogs.SHORT_GRASS = new BlockItem(BlockCatalogs.SHORT_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.SHORT_GRASS.getRegistryName()),
                 ItemCatalogs.POISON_IVY = new BlockItem(BlockCatalogs.POISON_IVY, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.POISON_IVY.getRegistryName()),
+                ItemCatalogs.TINY_LILYPADS = (new LilyItem(BlockCatalogs.TINY_LILYPADS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.TINY_LILYPADS.getRegistryName())),
+
+                //Glowcane Blocks
+                ItemCatalogs.RED_GLOWCANE_BLOCK = new BlockItem(BlockCatalogs.RED_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.RED_GLOWCANE_BLOCK.getRegistryName()),
+                ItemCatalogs.BLUE_GLOWCANE_BLOCK = new BlockItem(BlockCatalogs.BLUE_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.BLUE_GLOWCANE_BLOCK.getRegistryName()),
+                ItemCatalogs.PURPLE_GLOWCANE_BLOCK = new BlockItem(BlockCatalogs.PURPLE_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PURPLE_GLOWCANE_BLOCK.getRegistryName()),
+                ItemCatalogs.PINK_GLOWCANE_BLOCK = new BlockItem(BlockCatalogs.PINK_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.PINK_GLOWCANE_BLOCK.getRegistryName()),
+
+                //Decorations
+                ItemCatalogs.REDSTONE_LANTERN = new BlockNamedItem(BlockCatalogs.REDSTONE_LANTERN, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("redstone_lantern"),
+
 
                 //Petal Blocks
                 ItemCatalogs.WHITE_PETAL = new BlockItem(BlockCatalogs.WHITE_PETAL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockCatalogs.WHITE_PETAL.getRegistryName()),

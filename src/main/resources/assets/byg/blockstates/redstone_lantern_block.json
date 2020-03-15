@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "hanging=true": { "model": "byg:block/hanging_redstone_lantern"},
+    "hanging=false": { "model": "byg:block/redstone_lantern"},
+    "hanging_lit=true": { "model": "byg:block/hanging_redstone_lantern_on"},
+    "hanging_lit=false": { "model": "byg:block/redstone_lantern_on"}
+  }
+}

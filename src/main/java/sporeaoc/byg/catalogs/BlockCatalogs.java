@@ -299,8 +299,7 @@ public class BlockCatalogs {
     public static Block MINI_CACTUS;
     public static Block PRICKLY_PEAR_CACTUS;
     public static Block WINTER_SUCCULENT;
-    public static Block DEAD_GRASS;
-    public static Block SHORT_DEAD_GRASS;
+    public static Block SHORT_GRASS;
     public static Block BLUE_GLOWCANE;
     public static Block RED_GLOWCANE;
     public static Block BLUEBERRY_BUSH;
@@ -309,7 +308,18 @@ public class BlockCatalogs {
     public static Block PINK_GLOWCANE;
     public static Block PURPLE_GLOWCANE;
     public static Block WEEPING_VINES;
+    public static Block TINY_LILYPADS;
 
+    //Glowcane BLocks
+
+    public static Block BLUE_GLOWCANE_BLOCK;
+    public static Block RED_GLOWCANE_BLOCK;
+    public static Block PINK_GLOWCANE_BLOCK;
+    public static Block PURPLE_GLOWCANE_BLOCK;
+
+    //Decorations
+
+    public static Block REDSTONE_LANTERN;
 
     //SaplingBlocks
     public static Block ASPEN_SAPLING;

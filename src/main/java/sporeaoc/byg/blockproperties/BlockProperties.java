@@ -4,6 +4,7 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.potion.Effects;
+import sporeaoc.byg.blockproperties.NewProperties.Blocks.*;
 
 public  class BlockProperties {
     public static class BlockFence extends FenceBlock {
@@ -40,8 +41,19 @@ public  class BlockProperties {
         }
     }
 
-    public static class TallGrass extends TallGrassBlock {
-        public TallGrass(String registryName) {
+    public static class BlockLily extends LilyPadBlock {
+        public BlockLily(String registryName) {
+            super(
+                    Block.Properties.create(Material.PLANTS)
+                            .sound(SoundType.PLANT)
+                            .hardnessAndResistance(0.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
+
+    public static class BlockTallGrass extends TallGrassBlock {
+        public BlockTallGrass(String registryName) {
             super(Block.Properties.create(Material.TALL_PLANTS)
                     .sound(SoundType.PLANT)
                     .doesNotBlockMovement()
@@ -221,6 +233,26 @@ public  class BlockProperties {
             super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)
                     .sound(SoundType.WOOD)
                     .hardnessAndResistance(2.0f, 3.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
+    public static class BlockGlow extends Block {
+        public BlockGlow(String registryName) {
+            super(Block.Properties.create(Material.GLASS)
+                    .sound(SoundType.GLASS)
+                    .hardnessAndResistance(0.3F)
+                    .lightValue(15)
+            );
+            setRegistryName(registryName);
+        }
+    }
+    public static class BlockLantern extends RedstoneLanternBlock {
+        public BlockLantern(String registryName) {
+            super(Block.Properties.create(Material.IRON)
+                    .sound(SoundType.LANTERN)
+                    .hardnessAndResistance(3.5F)
+                    .lightValue(15)
             );
             setRegistryName(registryName);
         }
