@@ -1,4 +1,4 @@
-//package sporeaoc.byg.world.features;
+//package sporeaoc.sporeaoc.byg.world.features;
 //
 //import net.minecraft.world.gen.carver.WorldCarver;
 //import net.minecraft.world.gen.feature.ProbabilityConfig;

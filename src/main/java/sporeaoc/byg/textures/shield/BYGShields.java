@@ -1,4 +1,4 @@
-//package sporeaoc.byg.textures.shield;
+//package sporeaoc.sporeaoc.byg.textures.shield;
 //
 //import com.mojang.blaze3d.platform.GlStateManager;
 //import net.minecraft.client.Minecraft;
@@ -11,11 +11,11 @@
 //import net.minecraft.item.ShieldItem;
 //import net.minecraft.tileentity.BannerTileEntity;
 //import net.minecraft.util.ResourceLocation;
-//import sporeaoc.byg.catalogs.ItemCatalogs;
+//import sporeaoc.sporeaoc.byg.catalogs.ItemCatalogs;
 //
 //public class BYGShields {
 //    public static class BYGShieldResourceLocations extends BannerTextures {
-//        public static final ResourceLocation AMETHRINE_BLUE_SHIELD_BASE_TEXTURE = new ResourceLocation("assets/byg/textures/shield/shield_base_ametrine_blue_enchanted_log_nopattern.png");
+//        public static final ResourceLocation AMETHRINE_BLUE_SHIELD_BASE_TEXTURE = new ResourceLocation("assets/sporeaoc.byg/textures/shield/shield_base_ametrine_blue_enchanted_log_nopattern.png");
 //    }
 //
 //    public static class BYGShieldEntityRenderer extends ItemStackTileEntityRenderer {

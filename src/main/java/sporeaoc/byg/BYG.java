@@ -14,14 +14,14 @@ import sporeaoc.byg.catalogs.ItemCatalogs;
 import sporeaoc.byg.config.BYGConfig;
 import sporeaoc.byg.config.biomeweight.ConfigWeightManager;
 
-@Mod("byg")
+@Mod("sporeaoc/byg")
 public class BYG {
     public static Logger LOGGER = LogManager.getLogger();
 
     //public static final WorldType BYGISLANDTYPE = new BYGIslandWorldType();
 
 
-    public static final String MOD_ID = "byg";
+    public static final String MOD_ID = "sporeaoc/byg";
     public static final Init setup = new Init();
 
     public BYG() {
@@ -32,7 +32,7 @@ public class BYG {
     }
 
     public static class Init {
-        public static ItemGroup creativeTab = new ItemGroup("byg") {
+        public static ItemGroup creativeTab = new ItemGroup("sporeaoc/byg") {
             @Override
             public ItemStack createIcon() {
                 return new ItemStack(ItemCatalogs.BYG_LOGO);

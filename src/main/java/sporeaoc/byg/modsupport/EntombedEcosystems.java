@@ -1,4 +1,4 @@
-//package sporeaoc.byg.modsupport;
+//package sporeaoc.sporeaoc.byg.modsupport;
 //
 //import com.mojang.datafixers.Dynamic;
 //import net.minecraft.util.math.BlockPos;
@@ -17,9 +17,9 @@
 //import net.minecraftforge.fml.ModList;
 //import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 //import net.minecraftforge.registries.ForgeRegistries;
-//import sporeaoc.byg.catalogs.BiomeCatalog;
-//import sporeaoc.byg.catalogs.FeatureCatalog;
-//import sporeaoc.byg.config.orestones.BYGConfig;
+//import sporeaoc.sporeaoc.byg.catalogs.BiomeCatalog;
+//import sporeaoc.sporeaoc.byg.catalogs.FeatureCatalog;
+//import sporeaoc.sporeaoc.byg.config.orestones.BYGConfig;
 //
 //import java.util.ArrayList;
 //import java.util.Objects;
