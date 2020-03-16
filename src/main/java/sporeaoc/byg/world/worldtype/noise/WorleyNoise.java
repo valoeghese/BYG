@@ -4,7 +4,7 @@ package sporeaoc.byg.world.worldtype.noise;
  * This is an implementation of Steve Worley's cellular noise function. It is
  * derived (heavily) from Matt Pharr's public domain implementation, and in the
  * spirit of that donation this version remains in the public domain.
- * <p>
+ * <PDynamic>
  * Here is the original licensing information:
  *
  * <pre>
@@ -22,7 +22,7 @@ package sporeaoc.byg.world.worldtype.noise;
  * </pre>
  *
  * Some features (like variable density) have been removed for simplicity.
- * <p>
+ * <PDynamic>
  * Instances of this class are immutable and threadsafe.
  *
  * @author saybur
@@ -85,7 +85,7 @@ public class WorleyNoise extends Noise {
 		Point p = new Point(origin.x + 1e-7,  origin.z + 1e-7);
 		// get the coordinate that this point resides at
 		int x = floor(p.x);
-//		int y = floor(p.y);
+//		int y = floor(PDynamic.y);
 		int z = floor(p.z);
 		// create storage to track lowest values
 		double s = Double.MAX_VALUE;
@@ -108,14 +108,14 @@ public class WorleyNoise extends Noise {
 		//We can safely ignore the y value, improving the performance
 
 //		// +y
-//		double dpy2 = p.y >= 0. ? square(1. - frac(p.y)) : square(frac(p.y));
+//		double dpy2 = PDynamic.y >= 0. ? square(1. - frac(PDynamic.y)) : square(frac(PDynamic.y));
 //		if(dpy2 < s) {
-//			s = processVoxel(r, p, s, x, y + 1, z);
+//			s = processVoxel(r, PDynamic, s, x, y + 1, z);
 //		}
 //		// -y
-//		double dny2 = p.y >= 0. ? square(frac(p.y)) : square(1. - frac(p.y));
+//		double dny2 = PDynamic.y >= 0. ? square(frac(PDynamic.y)) : square(1. - frac(PDynamic.y));
 //		if(dny2 < s) {
-//			s = processVoxel(r, p, s, x, y - 1, z);
+//			s = processVoxel(r, PDynamic, s, x, y - 1, z);
 //		}
 
 		// +z

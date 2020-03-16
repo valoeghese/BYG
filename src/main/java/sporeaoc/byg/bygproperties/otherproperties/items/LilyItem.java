@@ -25,7 +25,7 @@
 //import net.minecraft.util.math.RayTraceContext;
 //import net.minecraft.util.math.RayTraceResult;
 //import net.minecraft.world.World;
-//import sporeaoc.byg.catalogs.BlockList;
+//import sporeaoc.byg.catalogs.BYGBlockList;
 //
 //public class LilyItem extends BlockItem {
 //    public LilyItem(Block blockIn, Item.Properties builder) {
@@ -58,7 +58,7 @@
 //
 //                    // special case for handling block placement with water lilies
 //                    net.minecraftforge.common.util.BlockSnapshot blocksnapshot = net.minecraftforge.common.util.BlockSnapshot.getBlockSnapshot(worldIn, blockpos1);
-//                    worldIn.setBlockState(blockpos1, BlockList.TINY_LILYPADS.getDefaultState(), 11);
+//                    worldIn.setBlockState(blockpos1, BYGBlockList.TINY_LILYPADS.getDefaultState(), 11);
 //                    if (net.minecraftforge.event.ForgeEventFactory.onBlockPlace(playerIn, blocksnapshot, net.minecraft.util.Direction.UP)) {
 //                        blocksnapshot.restore(true, false);
 //                        return new ActionResult<ItemStack>(ActionResultType.FAIL, itemstack);

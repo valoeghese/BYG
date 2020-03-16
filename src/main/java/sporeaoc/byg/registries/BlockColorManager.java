@@ -14,7 +14,7 @@
 //import net.minecraftforge.fml.common.Mod;
 //import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 //import sporeaoc.byg.BYG;
-//import sporeaoc.byg.catalogs.BlockList;
+//import sporeaoc.byg.catalogs.BYGBlockList;
 //import sporeaoc.byg.catalogs.ItemCatalogs;
 //
 //
@@ -37,7 +37,7 @@
 //            blockColors.register((unknown1, lightReader, pos, unknown2) ->
 //            {
 //                return lightReader != null && pos != null ? BiomeColors.getGrassColor(lightReader, pos) : GrassColors.get(0.5D, 1.0D);
-//            }, BlockList.MEADOW_GRASSBLOCK, BlockList.MAHOGANY_LEAVES, BlockList.POISON_IVY, BlockList.OVERGROWN_STONE, BlockList.SHORT_GRASS, BlockList.TINY_LILYPADS);
+//            }, BYGBlockList.MEADOW_GRASSBLOCK, BYGBlockList.MAHOGANY_LEAVES, BYGBlockList.POISON_IVY, BYGBlockList.OVERGROWN_STONE, BYGBlockList.SHORT_GRASS, BYGBlockList.TINY_LILYPADS);
 //        }
 //
 //
