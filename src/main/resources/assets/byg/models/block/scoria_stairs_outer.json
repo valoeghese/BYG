@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "byg:blocks/scoria",
+    "top": "byg:blocks/scoria",
+    "side": "byg:blocks/scoria"
+  }
+}

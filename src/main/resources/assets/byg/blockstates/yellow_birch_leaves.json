@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "snowy=false": [
+      { "model": "byg:block/yellow_birch_leaves" }
+    ],
+    "snowy=true":  { "model": "byg:block/yellow_birch_leaves_snowy" }
+  }
+}

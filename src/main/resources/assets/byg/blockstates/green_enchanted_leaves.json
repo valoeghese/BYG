@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "snowy=false": [
+      { "model": "byg:block/green_enchanted_leaves" }
+    ],
+    "snowy=true":  { "model": "byg:block/green_enchanted_leaves_snowy" }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "byg:block/tiny_lily_pads"
+    },
+    "facing=east": {
+      "model": "byg:block/tiny_lily_pads",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "byg:block/tiny_lily_pads",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "byg:block/tiny_lily_pads",
+      "y": 270
+    }
+  }
+}

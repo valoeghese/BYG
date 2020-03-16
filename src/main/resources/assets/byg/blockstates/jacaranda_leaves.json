@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "snowy=false": [
+      { "model": "byg:block/jacaranda_leaves" }
+    ],
+    "snowy=true":  { "model": "byg:block/jacaranda_leaves_snowy" }
+  }
+}
