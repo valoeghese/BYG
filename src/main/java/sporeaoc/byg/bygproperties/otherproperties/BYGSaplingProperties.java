@@ -1,4 +1,4 @@
-package sporeaoc.byg.blockproperties.NewProperties;
+package sporeaoc.byg.bygproperties.otherproperties;
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;

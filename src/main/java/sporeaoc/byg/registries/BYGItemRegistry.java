@@ -5,7 +5,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
-import sporeaoc.byg.blockproperties.NewProperties.Items.LilyItem;
+import sporeaoc.byg.bygproperties.otherproperties.items.LilyItem;
 import sporeaoc.byg.catalogs.BlockCatalogs;
 import sporeaoc.byg.catalogs.ItemCatalogs;
 import sporeaoc.byg.itemtiers.BYGItemTiers;

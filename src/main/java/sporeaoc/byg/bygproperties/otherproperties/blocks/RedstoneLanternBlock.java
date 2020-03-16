@@ -1,8 +1,9 @@
-package sporeaoc.byg.blockproperties.NewProperties.Blocks;
+package sporeaoc.byg.bygproperties.otherproperties.blocks;
 
-import javax.annotation.Nullable;
-
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.RedstoneTorchBlock;
 import net.minecraft.block.material.PushReaction;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.pathfinding.PathType;
@@ -22,6 +23,7 @@ import net.minecraft.world.IWorld;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.Random;
 
 public class RedstoneLanternBlock extends Block {

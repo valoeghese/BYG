@@ -1,10 +1,9 @@
-package sporeaoc.byg.blockproperties.NewProperties.Items;
+package sporeaoc.byg.bygproperties.otherproperties.items;
 
 
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;

@@ -1,4 +1,4 @@
-package sporeaoc.byg.blockproperties.NewProperties.Blocks;
+package sporeaoc.byg.bygproperties.otherproperties.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.util.BlockRenderLayer;

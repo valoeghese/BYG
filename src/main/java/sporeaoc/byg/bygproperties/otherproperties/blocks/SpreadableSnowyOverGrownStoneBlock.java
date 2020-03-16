@@ -1,4 +1,4 @@
-package sporeaoc.byg.blockproperties.NewProperties.Blocks;
+package sporeaoc.byg.bygproperties.otherproperties.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.tags.FluidTags;
@@ -7,7 +7,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
 import net.minecraft.world.lighting.LightEngine;
-import sporeaoc.byg.catalogs.BlockCatalogs;
 
 import java.util.Random;
 

@@ -1,6 +1,4 @@
-package sporeaoc.byg.blockproperties.NewProperties.Blocks;
-
-import java.util.Random;
+package sporeaoc.byg.bygproperties.otherproperties.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -27,6 +25,8 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import sporeaoc.byg.catalogs.ItemCatalogs;
+
+import java.util.Random;
 
 public class BlueBerryBush extends BushBlock implements IGrowable {
     public static final IntegerProperty AGE = BlockStateProperties.AGE_0_3;

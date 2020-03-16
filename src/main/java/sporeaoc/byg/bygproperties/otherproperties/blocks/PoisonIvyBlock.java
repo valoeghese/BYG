@@ -1,4 +1,4 @@
-package sporeaoc.byg.blockproperties.NewProperties.Blocks;
+package sporeaoc.byg.bygproperties.otherproperties.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
@@ -8,7 +8,6 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.StateContainer;
-import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.shapes.ISelectionContext;
