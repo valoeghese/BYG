@@ -7,11 +7,11 @@ import sporeaoc.byg.world.surfacebuilders.BorealForestSB;
 import sporeaoc.byg.world.surfacebuilders.DoverMountainSB;
 import sporeaoc.byg.world.surfacebuilders.QuagmireSB;
 
-public class BYGSurfaceBuilderCatalog {
-    public static final SurfaceBuilderConfig PEAT_DIRT = new SurfaceBuilderConfig(BlockCatalogs.PEAT_GRASSBLOCK.getDefaultState(), Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState());
+public class BYGSBList {
+    public static final SurfaceBuilderConfig PEAT_DIRT = new SurfaceBuilderConfig(BlockList.PEAT_GRASSBLOCK.getDefaultState(), Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState());
     public static final SurfaceBuilder<SurfaceBuilderConfig> BOREAL = new BorealForestSB(SurfaceBuilderConfig::deserialize);
-    public static final SurfaceBuilderConfig QUAGMIREMUD = new SurfaceBuilderConfig(BlockCatalogs.MUD_BLOCK.getDefaultState(), BlockCatalogs.MUD_BLOCK.getDefaultState(), BlockCatalogs.MUD_BLOCK.getDefaultState());
-    public static final SurfaceBuilderConfig QUAGMIREMUDBRICK = new SurfaceBuilderConfig(BlockCatalogs.MUD_BRICKS.getDefaultState(), BlockCatalogs.MUD_BLOCK.getDefaultState(), BlockCatalogs.MUD_BLOCK.getDefaultState());
+    public static final SurfaceBuilderConfig QUAGMIREMUD = new SurfaceBuilderConfig(BlockList.MUD_BLOCK.getDefaultState(), BlockList.MUD_BLOCK.getDefaultState(), BlockList.MUD_BLOCK.getDefaultState());
+    public static final SurfaceBuilderConfig QUAGMIREMUDBRICK = new SurfaceBuilderConfig(BlockList.MUD_BRICKS.getDefaultState(), BlockList.MUD_BLOCK.getDefaultState(), BlockList.MUD_BLOCK.getDefaultState());
     public static final SurfaceBuilderConfig PODZOL = new SurfaceBuilderConfig(Blocks.PODZOL.getDefaultState(), Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState());
 
 

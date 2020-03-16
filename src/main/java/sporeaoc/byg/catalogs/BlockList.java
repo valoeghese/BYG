@@ -2,7 +2,7 @@ package sporeaoc.byg.catalogs;
 
 import net.minecraft.block.Block;
 
-public class BlockCatalogs {
+public class BlockList {
 
     //FenceBlocks
     public static Block ASPEN_FENCE;

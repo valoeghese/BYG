@@ -211,16 +211,16 @@ public  class BYGBlockProperties {
         }
     }
 
-    public static class BlockBerryBush extends BlueBerryBush {
-        public BlockBerryBush(String registryName) {
-            super(Block.Properties.create(Material.PLANTS)
-                    .sound(SoundType.PLANT)
-                    .hardnessAndResistance(1.5f, 6.0f)
-                    .doesNotBlockMovement()
-            );
-            setRegistryName(registryName);
-        }
-    }
+//    public static class BlockBerryBush extends BlueBerryBush {
+//        public BlockBerryBush(String registryName) {
+//            super(Block.Properties.create(Material.PLANTS)
+//                    .sound(SoundType.PLANT)
+//                    .hardnessAndResistance(1.5f, 6.0f)
+//                    .doesNotBlockMovement()
+//            );
+//            setRegistryName(registryName);
+//        }
+
 
     public static class BlockHugeMushroom extends HugeMushroomBlock {
         public BlockHugeMushroom(String registryName) {

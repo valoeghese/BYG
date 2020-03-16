@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.DecoratedFeatureConfig;
 import net.minecraft.world.gen.feature.FlowersFeature;
-import sporeaoc.byg.catalogs.BlockCatalogs;
+import sporeaoc.byg.catalogs.BlockList;
 
 import java.util.List;
 import java.util.Random;
@@ -29,7 +29,7 @@ public class OvergrownStoneBlock extends SpreadableSnowyOverGrownStoneBlock impl
 
     public void grow(World p_176474_1_, Random p_176474_2_, BlockPos p_176474_3_, BlockState p_176474_4_) {
         BlockPos lvt_5_1_ = p_176474_3_.up();
-        BlockState lvt_6_1_ = BlockCatalogs.OVERGROWN_STONE.getDefaultState();
+        BlockState lvt_6_1_ = BlockList.OVERGROWN_STONE.getDefaultState();
 
         label48:
         for(int lvt_7_1_ = 0; lvt_7_1_ < 128; ++lvt_7_1_) {

@@ -17,8 +17,8 @@
 //import net.minecraftforge.fml.ModList;
 //import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 //import net.minecraftforge.registries.ForgeRegistries;
-//import sporeaoc.sporeaoc.byg.catalogs.BiomeCatalog;
-//import sporeaoc.sporeaoc.byg.catalogs.FeatureCatalog;
+//import sporeaoc.sporeaoc.byg.catalogs.BiomeList;
+//import sporeaoc.sporeaoc.byg.catalogs.BYGFeatureList;
 //import sporeaoc.sporeaoc.byg.config.orestones.BYGConfig;
 //
 //import java.util.ArrayList;
@@ -31,97 +31,97 @@
 //public class EntombedEcosystems {
 //    public static class EEFeatureAdder {
 //        public static void EEaddBlueTaigaTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.TALL_BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(1, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(10, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SMALL_BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(15, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.TALL_BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(1, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(10, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SMALL_BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(15, 0.3F, -20)));
 //            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{Feature.PINE_TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.33333334F}, Feature.SPRUCE_TREE, IFeatureConfig.NO_FEATURE_CONFIG), EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.1F, -20)));
 //        }
 //
 //        public static void EEaddBorealTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.BOREALFOREST_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(12, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.BOREALFOREST_TREE2, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(40, 0.3F, -15)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.BOREALFOREST_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(12, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.BOREALFOREST_TREE2, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(40, 0.3F, -15)));
 //
 //        }
 //
 //        public static void EEaddCypressTreeVegetation(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.HUGECYPRESS_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(1, 0.5F, 1)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.HUGECYPRESS_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(1, 0.5F, 1)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.HUGECYPRESS_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(1, 0.5F, 1)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.HUGECYPRESS_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(1, 0.5F, 1)));
 //
 //        }
 //
 //        public static void EEaddDeciduousTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.DECIDUOUS_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(30, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.DECIDUOUS_SHRUBS, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.DECIDUOUS_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(30, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.DECIDUOUS_SHRUBS, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -20)));
 //
 //        }
 //
 //        public static void EEaddGiantBlueTaigaTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.BLUEGIANTTAIGA_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -10)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.BLUEGIANTTAIGA_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -10)));
 //            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{Feature.MEGA_SPRUCE_TREE, Feature.PINE_TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG, IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.33333334F, 0.33333334F}, Feature.SPRUCE_TREE, IFeatureConfig.NO_FEATURE_CONFIG), EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(10, 0.1F, 1)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SMALL_BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.TALL_BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SMALL_BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.TALL_BLUE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
 //            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{Feature.PINE_TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.33333334F}, Feature.SPRUCE_TREE, IFeatureConfig.NO_FEATURE_CONFIG), EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(1, 0.1F, 0)));
 //        }
 //
 //        public static void EEaddGiantSeasonalTaigaTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.GIANT_ORANGE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -10)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.GIANT_ORANGE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -10)));
 //            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{Feature.MEGA_SPRUCE_TREE, Feature.PINE_TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG, IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.33333334F, 0.33333334F}, Feature.SPRUCE_TREE, IFeatureConfig.NO_FEATURE_CONFIG), EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(10, 0.1F, 1)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SEASONALTAIGA_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SMALL_ORANGE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SEASONALTALLTAIGA_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SEASONALTAIGA_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SMALL_ORANGE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SEASONALTALLTAIGA_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -10)));
 //            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{Feature.PINE_TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.33333334F}, Feature.SPRUCE_TREE, IFeatureConfig.NO_FEATURE_CONFIG), EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(1, 0.1F, 0)));
 //        }
 //
 //        public static void EEaddJacarandaTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{FeatureCatalog.JACARANDA_TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.33333334F}, FeatureCatalog.JACARANDA_TREE, IFeatureConfig.NO_FEATURE_CONFIG), EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.5F, 15)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{BYGFeatureList.JACARANDA_TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.33333334F}, BYGFeatureList.JACARANDA_TREE, IFeatureConfig.NO_FEATURE_CONFIG), EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.5F, 15)));
 //        }
 //
 //
 //        public static void EEaddSeasonalBirchForestTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.BROWNBIRCH_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.ORANGEBIRCH_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -15)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.REDBIRCH_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -15)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.YELLOWBIRCH_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(35, 0.3F, -15)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.BROWNBIRCH_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.ORANGEBIRCH_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -15)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.REDBIRCH_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -15)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.YELLOWBIRCH_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(35, 0.3F, -15)));
 //        }
 //
 //        public static void EEaddSeasonalDeciduousTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SDECIDUOUS_TREE1, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SDECIDUOUS_TREE2, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SDECIDUOUS_TREE3, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SDECIDUOUS_TREE5, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SDECIDUOUS_SHRUBS, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SDECIDUOUS_TREE1, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SDECIDUOUS_TREE2, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SDECIDUOUS_TREE3, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SDECIDUOUS_TREE5, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SDECIDUOUS_SHRUBS, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -20)));
 //        }
 //
 //        public static void EEaddSeasonalForestTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.BROWNOAK_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.ORANGEOAK_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.REDOAK_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.YELLOWBIRCH_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.BROWNOAK_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(5, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.ORANGEOAK_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.REDOAK_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.YELLOWBIRCH_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -20)));
 //
 //        }
 //
 //        public static void EEaddSeasonalTaigaTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SEASONALTAIGA_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SMALL_ORANGE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SEASONALTALLTAIGA_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SEASONALTAIGA_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SMALL_ORANGE_SPRUCE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(20, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SEASONALTALLTAIGA_TREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.3F, -20)));
 //            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{Feature.PINE_TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.33333334F}, Feature.SPRUCE_TREE, IFeatureConfig.NO_FEATURE_CONFIG), EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.1F, -20)));
 //        }
 //
 //        public static void EEaddShrubs(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SHRUB, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(2, 0.8F, -2)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SHRUB, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(2, 0.8F, -2)));
 //        }
 //
 //
 //        public static void EEaddRedOakForestTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{Feature.NORMAL_TREE, Feature.FANCY_TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG, IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.2F, 0.1F}, FeatureCatalog.REDOAK_TREE, IFeatureConfig.NO_FEATURE_CONFIG), EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(45, 0.3F, -20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.RANDOM_SELECTOR, new MultipleRandomFeatureConfig(new Feature[]{Feature.NORMAL_TREE, Feature.FANCY_TREE}, new IFeatureConfig[]{IFeatureConfig.NO_FEATURE_CONFIG, IFeatureConfig.NO_FEATURE_CONFIG}, new float[]{0.2F, 0.1F}, BYGFeatureList.REDOAK_TREE, IFeatureConfig.NO_FEATURE_CONFIG), EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(45, 0.3F, -20)));
 //        }
 //
 //
 //        public static void EEaddTropJungleTrees(Biome biome) {
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.TROPICALRAINFORESTTREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(30, 0.5F, 20)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SHORTTROPICALRAINFORESTTREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(45, 0.8F, 45)));
-//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(FeatureCatalog.SHRUB, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.8F, 10)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.TROPICALRAINFORESTTREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(30, 0.5F, 20)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SHORTTROPICALRAINFORESTTREE, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(45, 0.8F, 45)));
+//            biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(BYGFeatureList.SHRUB, DecoratedFeatureConfig.NO_FEATURE_CONFIG, EEPlacerList.EETREEPLACER, new AtSurfaceWithExtraConfig(25, 0.8F, 10)));
 //
 //        }
 //    }
@@ -182,46 +182,46 @@
 //                if (ModList.get().isLoaded("entombedecosystems")) {
 //
 //                    for (Biome biome : ForgeRegistries.BIOMES) {
-//                        if (biome == BiomeCatalog.BLUEGIANTTAIGA) {
+//                        if (biome == BiomeList.BLUEGIANTTAIGA) {
 //                            EEFeatureAdder.EEaddGiantBlueTaigaTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.BLUETAIGA) {
+//                        if (biome == BiomeList.BLUETAIGA) {
 //                            EEFeatureAdder.EEaddBlueTaigaTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.BOREALFOREST) {
+//                        if (biome == BiomeList.BOREALFOREST) {
 //                            EEFeatureAdder.EEaddBorealTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.DECIDUOUSFOREST) {
+//                        if (biome == BiomeList.DECIDUOUSFOREST) {
 //                            EEFeatureAdder.EEaddDeciduousTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.SEASONALGIANTTAIGA) {
+//                        if (biome == BiomeList.SEASONALGIANTTAIGA) {
 //                            EEFeatureAdder.EEaddGiantSeasonalTaigaTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.JACARANDAFOREST) {
+//                        if (biome == BiomeList.JACARANDAFOREST) {
 //                            EEFeatureAdder.EEaddJacarandaTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.DECIDUOUSFOREST) {
+//                        if (biome == BiomeList.DECIDUOUSFOREST) {
 //                            EEFeatureAdder.EEaddDeciduousTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.REDOAKFOREST) {
+//                        if (biome == BiomeList.REDOAKFOREST) {
 //                            EEFeatureAdder.EEaddRedOakForestTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.SEASONALDECIDUOUSFOREST) {
+//                        if (biome == BiomeList.SEASONALDECIDUOUSFOREST) {
 //                            EEFeatureAdder.EEaddSeasonalDeciduousTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.SHRUBLANDS) {
+//                        if (biome == BiomeList.SHRUBLANDS) {
 //                            EEFeatureAdder.EEaddShrubs(biome);
 //                        }
-//                        if (biome == BiomeCatalog.SEASONALFOREST) {
+//                        if (biome == BiomeList.SEASONALFOREST) {
 //                            EEFeatureAdder.EEaddSeasonalForestTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.TROPICALRAINFOREST) {
+//                        if (biome == BiomeList.TROPICALRAINFOREST) {
 //                            EEFeatureAdder.EEaddTropJungleTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.SEASONALTAIGA) {
+//                        if (biome == BiomeList.SEASONALTAIGA) {
 //                            EEFeatureAdder.EEaddSeasonalTaigaTrees(biome);
 //                        }
-//                        if (biome == BiomeCatalog.SEASONALBIRCHFOREST) {
+//                        if (biome == BiomeList.SEASONALBIRCHFOREST) {
 //                            EEFeatureAdder.EEaddSeasonalBirchForestTrees(biome);
 //                        }
 //                    }

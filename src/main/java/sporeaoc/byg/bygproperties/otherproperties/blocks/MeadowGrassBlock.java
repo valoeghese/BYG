@@ -8,7 +8,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.DecoratedFeatureConfig;
 import net.minecraft.world.gen.feature.FlowersFeature;
-import sporeaoc.byg.catalogs.BlockCatalogs;
+import sporeaoc.byg.catalogs.BlockList;
 
 
 import java.util.List;
@@ -29,7 +29,7 @@ public class MeadowGrassBlock extends SpreadableSnowyMeadowDirtBlock implements 
 
     public void grow(World p_176474_1_, Random p_176474_2_, BlockPos p_176474_3_, BlockState p_176474_4_) {
         BlockPos lvt_5_1_ = p_176474_3_.up();
-        BlockState lvt_6_1_ = BlockCatalogs.MEADOW_GRASSBLOCK.getDefaultState();
+        BlockState lvt_6_1_ = BlockList.MEADOW_GRASSBLOCK.getDefaultState();
 
         label48:
         for(int lvt_7_1_ = 0; lvt_7_1_ < 128; ++lvt_7_1_) {
