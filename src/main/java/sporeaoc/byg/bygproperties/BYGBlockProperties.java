@@ -75,28 +75,28 @@ public  class BYGBlockProperties {
         }
     }
 
-    public static class BlockMeadowGrass extends MeadowGrassBlock {
-        public BlockMeadowGrass(String registryName) {
-            super(Block.Properties.create(Material.EARTH)
-                    .sound(SoundType.PLANT)
-                    .hardnessAndResistance(0.2f)
-                    .tickRandomly()
-            );
-            setRegistryName(registryName);
-        }
-    }
+//    public static class BlockMeadowGrass extends MeadowGrassBlock {
+//        public BlockMeadowGrass(String registryName) {
+//            super(Block.Properties.create(Material.EARTH)
+//                    .sound(SoundType.PLANT)
+//                    .hardnessAndResistance(0.2f)
+//                    .tickRandomly()
+//            );
+//            setRegistryName(registryName);
+//        }
+//    }
 
-    public static class BlockOvergrownStone extends OvergrownStoneBlock {
-        public BlockOvergrownStone(String registryName) {
-            super(Block.Properties.create(Material.ROCK)
-                    .sound(SoundType.PLANT)
-                    .hardnessAndResistance(1.5f, 6.0f)
-                    .tickRandomly()
-
-            );
-            setRegistryName(registryName);
-        }
-    }
+//    public static class BlockOvergrownStone extends OvergrownStoneBlock {
+//        public BlockOvergrownStone(String registryName) {
+//            super(Block.Properties.create(Material.ROCK)
+//                    .sound(SoundType.PLANT)
+//                    .hardnessAndResistance(1.5f, 6.0f)
+//                    .tickRandomly()
+//
+//            );
+//            setRegistryName(registryName);
+//        }
+//    }
 
     public static class BlockDirt extends Block {
         public BlockDirt(String registryName) {
@@ -131,18 +131,18 @@ public  class BYGBlockProperties {
         }
     }
 
-    public static class BlockVine extends PoisonIvyBlock {
-        public BlockVine(String registryName) {
-            super(Block.Properties.create(Material.LEAVES)
-                    .sound(SoundType.PLANT)
-                    .hardnessAndResistance(0.2f)
-                    .tickRandomly()
-                    .doesNotBlockMovement()
-
-            );
-            setRegistryName(registryName);
-        }
-    }
+//    public static class BlockVine extends PoisonIvyBlock {
+//        public BlockVine(String registryName) {
+//            super(Block.Properties.create(Material.LEAVES)
+//                    .sound(SoundType.PLANT)
+//                    .hardnessAndResistance(0.2f)
+//                    .tickRandomly()
+//                    .doesNotBlockMovement()
+//
+//            );
+//            setRegistryName(registryName);
+//        }
+//    }
 
     public static class BlockLog extends LogBlock {
         public BlockLog(String registryName) {

@@ -5,7 +5,6 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
-import sporeaoc.byg.bygproperties.otherproperties.items.LilyItem;
 import sporeaoc.byg.catalogs.BlockList;
 import sporeaoc.byg.catalogs.ItemCatalogs;
 import sporeaoc.byg.itemtiers.BYGItemTiers;
@@ -171,8 +170,8 @@ public class BYGItemRegistry {
                 ItemCatalogs.PRICKLY_PEAR_CACTUS = new BlockItem(BlockList.PRICKLY_PEAR_CACTUS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.PRICKLY_PEAR_CACTUS.getRegistryName()),
                 ItemCatalogs.WINTER_SUCCULENT = new BlockItem(BlockList.WINTER_SUCCULENT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.WINTER_SUCCULENT.getRegistryName()),
                 ItemCatalogs.SHORT_GRASS = new BlockItem(BlockList.SHORT_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.SHORT_GRASS.getRegistryName()),
-                ItemCatalogs.POISON_IVY = new BlockItem(BlockList.POISON_IVY, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.POISON_IVY.getRegistryName()),
-                ItemCatalogs.TINY_LILYPADS = (new LilyItem(BlockList.TINY_LILYPADS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName(BlockList.TINY_LILYPADS.getRegistryName())),
+//                ItemCatalogs.POISON_IVY = new BlockItem(BlockList.POISON_IVY, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.POISON_IVY.getRegistryName()),
+//                ItemCatalogs.TINY_LILYPADS = (new LilyItem(BlockList.TINY_LILYPADS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName(BlockList.TINY_LILYPADS.getRegistryName())),
 
                 //Glowcane Blocks
                 ItemCatalogs.RED_GLOWCANE_BLOCK = new BlockItem(BlockList.RED_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.RED_GLOWCANE_BLOCK.getRegistryName()),
@@ -195,41 +194,41 @@ public class BYGItemRegistry {
 
 
                 //SaplingItems
-                ItemCatalogs.ASPEN_SAPLING = new BlockItem(BlockList.ASPEN_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.ASPEN_SAPLING.getRegistryName()),
-                ItemCatalogs.BAOBAB_SAPLING = new BlockItem(BlockList.BAOBAB_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.BAOBAB_SAPLING.getRegistryName()),
-                ItemCatalogs.BLUE_ENCHANTED_SAPLING = new BlockItem(BlockList.BLUE_ENCHANTED_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.BLUE_ENCHANTED_SAPLING.getRegistryName()),
-                ItemCatalogs.BLUE_SPRUCE_SAPLING = new BlockItem(BlockList.BLUE_SPRUCE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.BLUE_SPRUCE_SAPLING.getRegistryName()),
-                ItemCatalogs.BROWN_BIRCH_SAPLING = new BlockItem(BlockList.BROWN_BIRCH_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.BROWN_BIRCH_SAPLING.getRegistryName()),
-                ItemCatalogs.BROWN_OAK_SAPLING = new BlockItem(BlockList.BROWN_OAK_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.BROWN_OAK_SAPLING.getRegistryName()),
-                ItemCatalogs.CIKA_SAPLING = new BlockItem(BlockList.CIKA_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.CIKA_SAPLING.getRegistryName()),
-                ItemCatalogs.CYPRESS_SAPLING = new BlockItem(BlockList.CYPRESS_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.CYPRESS_SAPLING.getRegistryName()),
-                ItemCatalogs.EBONY_SAPLING = new BlockItem(BlockList.EBONY_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.EBONY_SAPLING.getRegistryName()),
-                ItemCatalogs.FIR_SAPLING = new BlockItem(BlockList.FIR_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.FIR_SAPLING.getRegistryName()),
-                ItemCatalogs.GREEN_ENCHANTED_SAPLING = new BlockItem(BlockList.GREEN_ENCHANTED_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.GREEN_ENCHANTED_SAPLING.getRegistryName()),
-                ItemCatalogs.HOLLY_SAPLING = new BlockItem(BlockList.HOLLY_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.HOLLY_SAPLING.getRegistryName()),
-                ItemCatalogs.JACARANDA_SAPLING = new BlockItem(BlockList.JACARANDA_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.JACARANDA_SAPLING.getRegistryName()),
-                ItemCatalogs.MAHOGONY_SAPLING = new BlockItem(BlockList.MAHOGANY_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.MAHOGANY_SAPLING.getRegistryName()),
-                ItemCatalogs.MANGROVE_SAPLING = new BlockItem(BlockList.MANGROVE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.MANGROVE_SAPLING.getRegistryName()),
-                ItemCatalogs.ORANGE_BIRCH_SAPLING = new BlockItem(BlockList.ORANGE_BIRCH_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.ORANGE_BIRCH_SAPLING.getRegistryName()),
-                ItemCatalogs.ORANGE_OAK_SAPLING = new BlockItem(BlockList.ORANGE_OAK_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.ORANGE_OAK_SAPLING.getRegistryName()),
-                ItemCatalogs.ORANGE_SPRUCE_SAPLING = new BlockItem(BlockList.ORANGE_SPRUCE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.ORANGE_SPRUCE_SAPLING.getRegistryName()),
-                ItemCatalogs.ORCHARD_SAPLING = new BlockItem(BlockList.ORCHARD_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.ORCHARD_SAPLING.getRegistryName()),
-                ItemCatalogs.PALO_VERDE_SAPLING = new BlockItem(BlockList.PALO_VERDE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.PALO_VERDE_SAPLING.getRegistryName()),
-                ItemCatalogs.PINE_SAPLING = new BlockItem(BlockList.PINE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.PINE_SAPLING.getRegistryName()),
-                ItemCatalogs.PINK_CHERRY_SAPLING = new BlockItem(BlockList.PINK_CHERRY_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.PINK_CHERRY_SAPLING.getRegistryName()),
-                ItemCatalogs.RAINBOW_EUCALYPTUS_SAPLING = new BlockItem(BlockList.RAINBOW_EUCALYPTUS_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.RAINBOW_EUCALYPTUS_SAPLING.getRegistryName()),
-                ItemCatalogs.RED_BIRCH_SAPLING = new BlockItem(BlockList.RED_BIRCH_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.RED_BIRCH_SAPLING.getRegistryName()),
-                ItemCatalogs.RED_MAPLE_SAPLING = new BlockItem(BlockList.RED_MAPLE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.RED_MAPLE_SAPLING.getRegistryName()),
-                ItemCatalogs.RED_OAK_SAPLING = new BlockItem(BlockList.RED_OAK_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.RED_OAK_SAPLING.getRegistryName()),
-                ItemCatalogs.RED_SPRUCE_SAPLINGS = new BlockItem(BlockList.RED_SPRUCE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.RED_SPRUCE_SAPLING.getRegistryName()),
-                ItemCatalogs.REDWOOD_SAPLINGS = new BlockItem(BlockList.REDWOOD_SAPLINGS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.REDWOOD_SAPLINGS.getRegistryName()),
-                ItemCatalogs.SILVER_MAPLE_SAPLINGS = new BlockItem(BlockList.SILVER_MAPLE_SAPLINGS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.SILVER_MAPLE_SAPLINGS.getRegistryName()),
-                ItemCatalogs.SKYRIS_SAPLINGS = new BlockItem(BlockList.SKYRIS_SAPLINGS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.SKYRIS_SAPLINGS.getRegistryName()),
-                ItemCatalogs.WHITE_CHERRY_SAPLING = new BlockItem(BlockList.WHITE_CHERRY_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.WHITE_CHERRY_SAPLING.getRegistryName()),
-                ItemCatalogs.WILLOW_SAPLING = new BlockItem(BlockList.WILLOW_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.WILLOW_SAPLING.getRegistryName()),
-                ItemCatalogs.WITCH_HAZEL_SAPLING = new BlockItem(BlockList.WITCH_HAZEL_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.WITCH_HAZEL_SAPLING.getRegistryName()),
-                ItemCatalogs.YELLOW_BIRCH_SAPLING = new BlockItem(BlockList.YELLOW_BIRCH_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.YELLOW_BIRCH_SAPLING.getRegistryName()),
-                ItemCatalogs.YELLOW_SPRUCE_SAPLING = new BlockItem(BlockList.YELLOW_SPRUCE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.YELLOW_SPRUCE_SAPLING.getRegistryName()),
+//                ItemCatalogs.ASPEN_SAPLING = new BlockItem(BlockList.ASPEN_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.ASPEN_SAPLING.getRegistryName()),
+//                ItemCatalogs.BAOBAB_SAPLING = new BlockItem(BlockList.BAOBAB_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.BAOBAB_SAPLING.getRegistryName()),
+//                ItemCatalogs.BLUE_ENCHANTED_SAPLING = new BlockItem(BlockList.BLUE_ENCHANTED_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.BLUE_ENCHANTED_SAPLING.getRegistryName()),
+//                ItemCatalogs.BLUE_SPRUCE_SAPLING = new BlockItem(BlockList.BLUE_SPRUCE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.BLUE_SPRUCE_SAPLING.getRegistryName()),
+//                ItemCatalogs.BROWN_BIRCH_SAPLING = new BlockItem(BlockList.BROWN_BIRCH_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.BROWN_BIRCH_SAPLING.getRegistryName()),
+//                ItemCatalogs.BROWN_OAK_SAPLING = new BlockItem(BlockList.BROWN_OAK_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.BROWN_OAK_SAPLING.getRegistryName()),
+//                ItemCatalogs.CIKA_SAPLING = new BlockItem(BlockList.CIKA_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.CIKA_SAPLING.getRegistryName()),
+//                ItemCatalogs.CYPRESS_SAPLING = new BlockItem(BlockList.CYPRESS_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.CYPRESS_SAPLING.getRegistryName()),
+//                ItemCatalogs.EBONY_SAPLING = new BlockItem(BlockList.EBONY_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.EBONY_SAPLING.getRegistryName()),
+//                ItemCatalogs.FIR_SAPLING = new BlockItem(BlockList.FIR_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.FIR_SAPLING.getRegistryName()),
+//                ItemCatalogs.GREEN_ENCHANTED_SAPLING = new BlockItem(BlockList.GREEN_ENCHANTED_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.GREEN_ENCHANTED_SAPLING.getRegistryName()),
+//                ItemCatalogs.HOLLY_SAPLING = new BlockItem(BlockList.HOLLY_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.HOLLY_SAPLING.getRegistryName()),
+//                ItemCatalogs.JACARANDA_SAPLING = new BlockItem(BlockList.JACARANDA_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.JACARANDA_SAPLING.getRegistryName()),
+//                ItemCatalogs.MAHOGONY_SAPLING = new BlockItem(BlockList.MAHOGANY_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.MAHOGANY_SAPLING.getRegistryName()),
+//                ItemCatalogs.MANGROVE_SAPLING = new BlockItem(BlockList.MANGROVE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.MANGROVE_SAPLING.getRegistryName()),
+//                ItemCatalogs.ORANGE_BIRCH_SAPLING = new BlockItem(BlockList.ORANGE_BIRCH_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.ORANGE_BIRCH_SAPLING.getRegistryName()),
+//                ItemCatalogs.ORANGE_OAK_SAPLING = new BlockItem(BlockList.ORANGE_OAK_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.ORANGE_OAK_SAPLING.getRegistryName()),
+//                ItemCatalogs.ORANGE_SPRUCE_SAPLING = new BlockItem(BlockList.ORANGE_SPRUCE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.ORANGE_SPRUCE_SAPLING.getRegistryName()),
+//                ItemCatalogs.ORCHARD_SAPLING = new BlockItem(BlockList.ORCHARD_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.ORCHARD_SAPLING.getRegistryName()),
+//                ItemCatalogs.PALO_VERDE_SAPLING = new BlockItem(BlockList.PALO_VERDE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.PALO_VERDE_SAPLING.getRegistryName()),
+//                ItemCatalogs.PINE_SAPLING = new BlockItem(BlockList.PINE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.PINE_SAPLING.getRegistryName()),
+//                ItemCatalogs.PINK_CHERRY_SAPLING = new BlockItem(BlockList.PINK_CHERRY_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.PINK_CHERRY_SAPLING.getRegistryName()),
+//                ItemCatalogs.RAINBOW_EUCALYPTUS_SAPLING = new BlockItem(BlockList.RAINBOW_EUCALYPTUS_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.RAINBOW_EUCALYPTUS_SAPLING.getRegistryName()),
+//                ItemCatalogs.RED_BIRCH_SAPLING = new BlockItem(BlockList.RED_BIRCH_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.RED_BIRCH_SAPLING.getRegistryName()),
+//                ItemCatalogs.RED_MAPLE_SAPLING = new BlockItem(BlockList.RED_MAPLE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.RED_MAPLE_SAPLING.getRegistryName()),
+//                ItemCatalogs.RED_OAK_SAPLING = new BlockItem(BlockList.RED_OAK_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.RED_OAK_SAPLING.getRegistryName()),
+//                ItemCatalogs.RED_SPRUCE_SAPLINGS = new BlockItem(BlockList.RED_SPRUCE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.RED_SPRUCE_SAPLING.getRegistryName()),
+//                ItemCatalogs.REDWOOD_SAPLINGS = new BlockItem(BlockList.REDWOOD_SAPLINGS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.REDWOOD_SAPLINGS.getRegistryName()),
+//                ItemCatalogs.SILVER_MAPLE_SAPLINGS = new BlockItem(BlockList.SILVER_MAPLE_SAPLINGS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.SILVER_MAPLE_SAPLINGS.getRegistryName()),
+//                ItemCatalogs.SKYRIS_SAPLINGS = new BlockItem(BlockList.SKYRIS_SAPLINGS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.SKYRIS_SAPLINGS.getRegistryName()),
+//                ItemCatalogs.WHITE_CHERRY_SAPLING = new BlockItem(BlockList.WHITE_CHERRY_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.WHITE_CHERRY_SAPLING.getRegistryName()),
+//                ItemCatalogs.WILLOW_SAPLING = new BlockItem(BlockList.WILLOW_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.WILLOW_SAPLING.getRegistryName()),
+//                ItemCatalogs.WITCH_HAZEL_SAPLING = new BlockItem(BlockList.WITCH_HAZEL_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.WITCH_HAZEL_SAPLING.getRegistryName()),
+//                ItemCatalogs.YELLOW_BIRCH_SAPLING = new BlockItem(BlockList.YELLOW_BIRCH_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.YELLOW_BIRCH_SAPLING.getRegistryName()),
+//                ItemCatalogs.YELLOW_SPRUCE_SAPLING = new BlockItem(BlockList.YELLOW_SPRUCE_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.YELLOW_SPRUCE_SAPLING.getRegistryName()),
 
 
 
@@ -259,8 +258,8 @@ public class BYGItemRegistry {
 
                 //GrassItems
                 ItemCatalogs.PEAT_GRASSBLOCK = new BlockItem(BlockList.PEAT_GRASSBLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.PEAT_GRASSBLOCK.getRegistryName()),
-                ItemCatalogs.MEADOW_GRASSBLOCK = new BlockItem(BlockList.MEADOW_GRASSBLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.MEADOW_GRASSBLOCK.getRegistryName()),
-                ItemCatalogs.MEADOW_DIRT = new BlockItem(BlockList.MEADOW_DIRT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.MEADOW_DIRT.getRegistryName()),
+//                ItemCatalogs.MEADOW_GRASSBLOCK = new BlockItem(BlockList.MEADOW_GRASSBLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.MEADOW_GRASSBLOCK.getRegistryName()),
+               ItemCatalogs.MEADOW_DIRT = new BlockItem(BlockList.MEADOW_DIRT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.MEADOW_DIRT.getRegistryName()),
 
 
                 //MushroomItems
@@ -286,7 +285,7 @@ public class BYGItemRegistry {
 
 
                 ItemCatalogs.MOSSY_STONE = new BlockItem(BlockList.MOSSY_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.MOSSY_STONE.getRegistryName()),
-                ItemCatalogs.OVERGROWN_STONE = new BlockItem(BlockList.OVERGROWN_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.OVERGROWN_STONE.getRegistryName()),
+                ItemCatalogs.OVERGROWN_STONE = new BlockItem(BlockList.OVERGROWN_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("yeet"),
                 ItemCatalogs.ROCKY_STONE = new BlockItem(BlockList.ROCKY_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BlockList.ROCKY_STONE.getRegistryName()),
 
 

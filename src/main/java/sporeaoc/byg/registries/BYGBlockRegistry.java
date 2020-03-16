@@ -6,7 +6,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.bygproperties.BYGBlockProperties;
-import sporeaoc.byg.bygproperties.otherproperties.blocks.BYGRedStoneLantern;
 import sporeaoc.byg.catalogs.BlockList;
 
 
@@ -144,7 +143,7 @@ public class BYGBlockRegistry {
         event.getRegistry().registerAll(
 
                 BlockList.PEAT_GRASSBLOCK = new BYGBlockProperties.BlockGrass("peat_grass"),
-                BlockList.MEADOW_GRASSBLOCK = new BYGBlockProperties.BlockMeadowGrass("meadow_grass_block"),
+                //BlockList.MEADOW_GRASSBLOCK = new BYGBlockProperties.BlockMeadowGrass("meadow_grass_block"),
                 BlockList.MEADOW_DIRT = new BYGBlockProperties.BlockDirt("meadow_dirt"),
                 BlockList.MUD_BLOCK = new BYGBlockProperties.BlockDirt("mud_block"),
                 BlockList.MUD_BRICKS = new BYGBlockProperties.BlockDirt("mud_bricks")
@@ -283,7 +282,7 @@ public class BYGBlockRegistry {
 
                 //Decorations
 
-                BlockList.REDSTONE_LANTERN = new BYGRedStoneLantern("redstone_lantern_block"),
+                //BlockList.REDSTONE_LANTERN = new BYGRedStoneLantern("redstone_lantern_block"),
 //EEEE
 
                 //Petal Blocks
@@ -365,7 +364,7 @@ public class BYGBlockRegistry {
                 BlockList.DACITE_TILE = new BYGBlockProperties.BlockStone("dacite_tile"),
 
                 BlockList.MOSSY_STONE = new BYGBlockProperties.BlockStone("mossy_stone"),
-                BlockList.OVERGROWN_STONE = new BYGBlockProperties.BlockOvergrownStone("overgrown_stone"),
+                //BlockList.OVERGROWN_STONE = new BYGBlockProperties.BlockOvergrownStone("overgrown_stone"),
                 BlockList.ROCKY_STONE = new BYGBlockProperties.BlockStone("rocky_stone"),
 
                 BlockList.SCORIA_STONE = new BYGBlockProperties.BlockStone("scoria_stone"),
