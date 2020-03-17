@@ -37,7 +37,7 @@ public class BYGItemRegistry {
                 BYGItemList.BYG_LOGO = new Item((new Item.Properties())).setRegistryName("byg_logo"),
                 BYGItemList.AMETRINE_GEMS = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("ametrine_gems"),
                 BYGItemList.PENDORITE_SCRAPS = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("pendorite_scraps"),
-                //BYGItemList.BLUE_BERRY = new BlockNamedItem(BYGBlockList.BLUEBERRY_BUSH, new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("blueberries"),
+                BYGItemList.BLUE_BERRY = new BlockNamedItem(BYGBlockList.BLUEBERRY_BUSH, new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("blueberries"),
                 BYGItemList.HOLLY_BERRY = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("holly_berries"),
                 BYGItemList.GREEN_APPLE = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("green_apple"),
 

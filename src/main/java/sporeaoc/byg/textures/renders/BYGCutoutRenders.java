@@ -110,5 +110,9 @@ public class BYGCutoutRenders {
         RenderTypeLookup.setRenderLayer(BYGBlockList.WINTER_SCILLA.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.YELLOW_DAFFODIL.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.YELLOW_TULIP.getBlock(), RenderType.getCutoutMipped());
+
+        //Other renders
+        RenderTypeLookup.setRenderLayer(BYGBlockList.BLUEBERRY_BUSH.getBlock(), RenderType.getCutoutMipped());
+
     }
 }
