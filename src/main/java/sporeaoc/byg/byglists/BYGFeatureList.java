@@ -66,7 +66,7 @@ public class BYGFeatureList {
     //Seasonal TaigaTrees
     public static final Feature<NoFeatureConfig> BLUEGIANTSPUCE_TREE = new GiantBlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
     public static final Feature<NoFeatureConfig> TALLBLUESPRUCE_TREE = new TallBlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final Feature<NoFeatureConfig> BLUE_SPRUCE = new BlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final Feature<NoFeatureConfig> BLUESPRUCE_TREE = new BlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
     public static final Feature<NoFeatureConfig> SMALLBLUESPRUCE_TREE = new SmallBlueTaigaTree(NoFeatureConfig::deserialize, false, 0);
 
     public static final BYGAbstractTreeFeature<NoFeatureConfig> GIANTORANGESPRUCE_TREE = new GiantOrangeSpruceTree(NoFeatureConfig::deserialize, false, 0);
@@ -96,16 +96,7 @@ public class BYGFeatureList {
     public static final BYGAbstractTreeFeature<NoFeatureConfig> SHRUB = new BYGShrub(NoFeatureConfig::deserialize, false, 0);
 
     //Coniferous Trees
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALLCONIFEROUSTREE = new SmallFirTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALLCONIFEROUS_TREE = new SmallFirTree(NoFeatureConfig::deserialize, false, 0);
     public static final BYGAbstractTreeFeature<NoFeatureConfig> WIDECONIFEROUS_TREE = new WideFirTree(NoFeatureConfig::deserialize, false, 0);
-
-    //Flower & Grass Features
-//    public static final FlowersFeature ALLIUMFLOWERS = new AlliumFieldFlowers(NoFeatureConfig::deserialize);
-//    public static final FlowersFeature AMARANTHFLOWERS = new AmaranthFieldFlowers(NoFeatureConfig::deserialize);
-//    public static final FlowersFeature PRAIRIEGRASS = new PrairieGrass(NoFeatureConfig::deserialize);
-//
-//    public static final Structure<NoFeatureConfig> REDDESERTPYRAMID = new RedDesertPyramidStructure(NoFeatureConfig::deserialize);
-//
-//    public static final Feature<NoFeatureConfig> DEADSEA_SPIRE = new DeadSeaSpires(null);
 }
 

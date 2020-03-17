@@ -15,7 +15,7 @@ public class BYGFeatureRegistry {
     public static void bygRegisterFeatures(RegistryEvent.Register<Feature<?>> event) {
         event.getRegistry().registerAll(
                 //All BYG Tree Features use 1.14.4 Tree Mappings. See: `world/feature/tree/util`
-                BYGFeatureList.BLUE_SPRUCE.setRegistryName("bluespruce_tree"),
+                BYGFeatureList.BLUESPRUCE_TREE.setRegistryName("bluespruce_tree"),
                 BYGFeatureList.BLUEGIANTSPUCE_TREE.setRegistryName("bluegiantspruce_tree"),
                 BYGFeatureList.BOREAL_TREE.setRegistryName("boreal_tree"),
                 BYGFeatureList.BOREAL_TREE2.setRegistryName("boreal_tree2"),
