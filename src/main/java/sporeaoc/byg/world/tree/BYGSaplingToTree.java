@@ -151,6 +151,5 @@ public class BYGSaplingToTree {
             return new SmallFirTree(NoFeatureConfig::deserialize, false, 0);
         }
     }
-
 }
 
