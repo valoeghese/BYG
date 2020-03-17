@@ -8,16 +8,16 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import sporeaoc.byg.catalogs.ItemCatalogs;
+import sporeaoc.byg.catalogs.BYGItemList;
 
 import java.util.function.Supplier;
 
 public enum BYGArmorTiers implements IArmorMaterial {
     AMETRINE("ametrine", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F, () -> {
-        return Ingredient.fromItems(ItemCatalogs.AMETRINE_GEMS);
+        return Ingredient.fromItems(BYGItemList.AMETRINE_GEMS);
     }),
     PENDORITE("pendorite", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F, () -> {
-        return Ingredient.fromItems(ItemCatalogs.PENDORITE_SCRAPS);
+        return Ingredient.fromItems(BYGItemList.PENDORITE_SCRAPS);
     });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};

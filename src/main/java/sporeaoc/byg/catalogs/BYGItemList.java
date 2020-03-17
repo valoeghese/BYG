@@ -2,13 +2,7 @@ package sporeaoc.byg.catalogs;
 
 import net.minecraft.item.Item;
 
-public class ItemCatalogs {
-
-    /**
-     * TODO: Remove this redundant class and change
-     * @see sporeaoc.byg.registries.BYGItemRegistry#bygRegisterItems
-     * to use { new BlockItem(BLOCK, tab).setRegistryName(Objects.requireNonNull(BLOCK.getRegistryName())) }
-     */
+public class BYGItemList {
 
     //BYG LOGO
     public static Item BYG_LOGO;

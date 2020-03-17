@@ -31,7 +31,7 @@ public class BYG {
 //        public static ItemGroup creativeTab = new ItemGroup("byg") {
 //            @Override
 //            public ItemStack createIcon() {
-//                return new ItemStack(ItemCatalogs.BYG_LOGO);
+//                return new ItemStack(BYGItemList.BYG_LOGO);
 //            }
 //        };
 //

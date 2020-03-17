@@ -6,7 +6,7 @@ import net.minecraft.block.material.MaterialColor;
 import net.minecraft.potion.Effects;
 import sporeaoc.byg.bygproperties.otherproperties.blocks.*;
 
-public  class BYGBlockProperties {
+public class BYGBlockProperties {
     public static class BlockFence extends FenceBlock {
         public BlockFence(String registryName) {
             super(Block.Properties.create(Material.WOOD)
@@ -115,6 +115,7 @@ public  class BYGBlockProperties {
                     .sound(SoundType.PLANT)
                     .hardnessAndResistance(0.2f)
                     .tickRandomly()
+                    .notSolid()
             );
             setRegistryName(registryName);
         }

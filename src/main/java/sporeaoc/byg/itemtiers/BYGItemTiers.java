@@ -3,16 +3,16 @@ package sporeaoc.byg.itemtiers;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
-import sporeaoc.byg.catalogs.ItemCatalogs;
+import sporeaoc.byg.catalogs.BYGItemList;
 
 import java.util.function.Supplier;
 
 public enum BYGItemTiers implements IItemTier {
     AMETRINE(1, 10000, 4.0F, 1.0F, 5, () -> {
-        return Ingredient.fromItems(ItemCatalogs.AMETRINE_GEMS);
+        return Ingredient.fromItems(BYGItemList.AMETRINE_GEMS);
     }),
     PENDORITE(2, 250, 6.0F, 2.0F, 14, () -> {
-        return Ingredient.fromItems(ItemCatalogs.PENDORITE_SCRAPS);
+        return Ingredient.fromItems(BYGItemList.PENDORITE_SCRAPS);
     });
 
     private final int harvestLevel;

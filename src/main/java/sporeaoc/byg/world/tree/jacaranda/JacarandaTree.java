@@ -171,7 +171,7 @@ public class JacarandaTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
                             }
                         }
                     }
-                    //This is the Tree Maker in action. This would be tree leave Preset 3. I'd suggest commenting this out! SHOULD BE USED ONLY ON 1x1 TREE TRUNKS!
+                    //This is the BYGTree Maker in action. This would be tree leave Preset 3. I'd suggest commenting this out! SHOULD BE USED ONLY ON 1x1 TREE TRUNKS!
                     else if (leavePreset == 3) {
                         int leavessquarespos = 2;
                         for (int posXLeafWidth = -leavessquarespos; posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves

@@ -15,7 +15,7 @@
 //import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 //import sporeaoc.byg.BYG;
 //import sporeaoc.byg.catalogs.BYGBlockList;
-//import sporeaoc.byg.catalogs.ItemCatalogs;
+//import sporeaoc.byg.catalogs.BYGItemList;
 //
 //
 //@Mod.EventBusSubscriber(modid = BYG.MOD_ID, bus = Bus.MOD, value = { Dist.CLIENT })
@@ -57,7 +57,7 @@
 //                return blockColors.getColor(state, null, null, tintIndex);
 //            };
 //
-//            itemColors.register(itemBlockColourHandler, ItemCatalogs.MEADOW_GRASSBLOCK, ItemCatalogs.MAHOGANY_LEAVES, ItemCatalogs.POISON_IVY, ItemCatalogs.OVERGROWN_STONE, ItemCatalogs.SHORT_GRASS, ItemCatalogs.TINY_LILYPADS);
+//            itemColors.register(itemBlockColourHandler, BYGItemList.MEADOW_GRASSBLOCK, BYGItemList.MAHOGANY_LEAVES, BYGItemList.POISON_IVY, BYGItemList.OVERGROWN_STONE, BYGItemList.SHORT_GRASS, BYGItemList.TINY_LILYPADS);
 //        }
 //    }
 //}

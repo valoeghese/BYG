@@ -17,7 +17,7 @@
 //import net.minecraftforge.fml.ModList;
 //import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 //import net.minecraftforge.registries.ForgeRegistries;
-//import sporeaoc.sporeaoc.byg.catalogs.BiomeList;
+//import sporeaoc.sporeaoc.byg.catalogs.BYGBiomeList;
 //import sporeaoc.sporeaoc.byg.catalogs.BYGFeatureList;
 //import sporeaoc.sporeaoc.byg.config.orestones.BYGConfig;
 //
@@ -182,46 +182,46 @@
 //                if (ModList.get().isLoaded("entombedecosystems")) {
 //
 //                    for (Biome biome : ForgeRegistries.BIOMES) {
-//                        if (biome == BiomeList.BLUEGIANTTAIGA) {
+//                        if (biome == BYGBiomeList.BLUEGIANTTAIGA) {
 //                            EEFeatureAdder.EEaddGiantBlueTaigaTrees(biome);
 //                        }
-//                        if (biome == BiomeList.BLUETAIGA) {
+//                        if (biome == BYGBiomeList.BLUETAIGA) {
 //                            EEFeatureAdder.EEaddBlueTaigaTrees(biome);
 //                        }
-//                        if (biome == BiomeList.BOREALFOREST) {
+//                        if (biome == BYGBiomeList.BOREALFOREST) {
 //                            EEFeatureAdder.EEaddBorealTrees(biome);
 //                        }
-//                        if (biome == BiomeList.DECIDUOUSFOREST) {
+//                        if (biome == BYGBiomeList.DECIDUOUSFOREST) {
 //                            EEFeatureAdder.EEaddDeciduousTrees(biome);
 //                        }
-//                        if (biome == BiomeList.SEASONALGIANTTAIGA) {
+//                        if (biome == BYGBiomeList.SEASONALGIANTTAIGA) {
 //                            EEFeatureAdder.EEaddGiantSeasonalTaigaTrees(biome);
 //                        }
-//                        if (biome == BiomeList.JACARANDAFOREST) {
+//                        if (biome == BYGBiomeList.JACARANDAFOREST) {
 //                            EEFeatureAdder.EEaddJacarandaTrees(biome);
 //                        }
-//                        if (biome == BiomeList.DECIDUOUSFOREST) {
+//                        if (biome == BYGBiomeList.DECIDUOUSFOREST) {
 //                            EEFeatureAdder.EEaddDeciduousTrees(biome);
 //                        }
-//                        if (biome == BiomeList.REDOAKFOREST) {
+//                        if (biome == BYGBiomeList.REDOAKFOREST) {
 //                            EEFeatureAdder.EEaddRedOakForestTrees(biome);
 //                        }
-//                        if (biome == BiomeList.SEASONALDECIDUOUSFOREST) {
+//                        if (biome == BYGBiomeList.SEASONALDECIDUOUSFOREST) {
 //                            EEFeatureAdder.EEaddSeasonalDeciduousTrees(biome);
 //                        }
-//                        if (biome == BiomeList.SHRUBLANDS) {
+//                        if (biome == BYGBiomeList.SHRUBLANDS) {
 //                            EEFeatureAdder.EEaddShrubs(biome);
 //                        }
-//                        if (biome == BiomeList.SEASONALFOREST) {
+//                        if (biome == BYGBiomeList.SEASONALFOREST) {
 //                            EEFeatureAdder.EEaddSeasonalForestTrees(biome);
 //                        }
-//                        if (biome == BiomeList.TROPICALRAINFOREST) {
+//                        if (biome == BYGBiomeList.TROPICALRAINFOREST) {
 //                            EEFeatureAdder.EEaddTropJungleTrees(biome);
 //                        }
-//                        if (biome == BiomeList.SEASONALTAIGA) {
+//                        if (biome == BYGBiomeList.SEASONALTAIGA) {
 //                            EEFeatureAdder.EEaddSeasonalTaigaTrees(biome);
 //                        }
-//                        if (biome == BiomeList.SEASONALBIRCHFOREST) {
+//                        if (biome == BYGBiomeList.SEASONALBIRCHFOREST) {
 //                            EEFeatureAdder.EEaddSeasonalBirchForestTrees(biome);
 //                        }
 //                    }

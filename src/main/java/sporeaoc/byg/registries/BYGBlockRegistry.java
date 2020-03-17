@@ -6,7 +6,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.bygproperties.BYGBlockProperties;
+import sporeaoc.byg.bygproperties.otherproperties.BYGSaplingProperties;
 import sporeaoc.byg.catalogs.BYGBlockList;
+import sporeaoc.byg.world.tree.BYGSaplingToTree;
 
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -155,41 +157,41 @@ public class BYGBlockRegistry {
     @SubscribeEvent
     public static void registerSaplingBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
-//                BYGBlockList.ASPEN_SAPLING = new BYGBlockProperties.BlockFlower("aspen_sapling"),
-//                BYGBlockList.BAOBAB_SAPLING = new BYGBlockProperties.BlockFlower("baobab_sapling"),
-//                BYGBlockList.BLUE_ENCHANTED_SAPLING = new BYGBlockProperties.BlockFlower("blue_enchanted_sapling"),
-//                BYGBlockList.BLUE_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.BlueSpruceSaplingToTree(), "blue_spruce_sapling"),
-//                BYGBlockList.BROWN_BIRCH_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.BrownBirchSaplingToTree(), "brown_birch_sapling"),
-//                BYGBlockList.BROWN_OAK_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.BrownOakSaplingToTree(), "brown_oak_sapling"),
-//                BYGBlockList.CIKA_SAPLING = new BYGBlockProperties.BlockFlower("cika_sapling"),
-//                BYGBlockList.CYPRESS_SAPLING = new BYGBlockProperties.BlockFlower("cypress_sapling"),
-//                BYGBlockList.EBONY_SAPLING = new BYGBlockProperties.BlockFlower("ebony_sapling"),
-//                BYGBlockList.FIR_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.FirSaplingToTree(), "fir_sapling"),
-//                BYGBlockList.GREEN_ENCHANTED_SAPLING = new BYGBlockProperties.BlockFlower("green_enchanted_sapling"),
-//                BYGBlockList.HOLLY_SAPLING = new BYGBlockProperties.BlockFlower("holly_sapling"),
-//                BYGBlockList.JACARANDA_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.JacarandaSaplingToTree(), "jacaranda_sapling"),
-//                BYGBlockList.MAHOGANY_SAPLING = new BYGBlockProperties.BlockFlower("mahogany_sapling"),
-//                BYGBlockList.MANGROVE_SAPLING = new BYGBlockProperties.BlockFlower("mangrove_sapling"),
-//                BYGBlockList.ORANGE_BIRCH_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.OrangeBirchSaplingToTree(), "orange_birch_sapling"),
-//                BYGBlockList.ORANGE_OAK_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.OrangeOakSaplingToTree(), "orange_oak_sapling"),
-//                BYGBlockList.ORANGE_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.OrangeSpruceSaplingToTree(), "orange_spruce_sapling"),
-//                BYGBlockList.ORCHARD_SAPLING = new BYGBlockProperties.BlockFlower("orchard_sapling"),
-//                BYGBlockList.PALO_VERDE_SAPLING = new BYGBlockProperties.BlockFlower("palo_verde_sapling"),
-//                BYGBlockList.PINE_SAPLING = new BYGBlockProperties.BlockFlower("pine_sapling"),
-//                BYGBlockList.PINK_CHERRY_SAPLING = new BYGBlockProperties.BlockFlower("pink_cherry_sapling"),
-//                BYGBlockList.RAINBOW_EUCALYPTUS_SAPLING = new BYGBlockProperties.BlockFlower("rainbow_eucalyptus_sapling"),
-//                BYGBlockList.RED_BIRCH_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.RedBirchSaplingToTree(), "red_birch_sapling"),
-//                BYGBlockList.RED_MAPLE_SAPLING = new BYGBlockProperties.BlockFlower("red_maple_sapling"),
-//                BYGBlockList.RED_OAK_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.RedOakSaplingToTree(), "red_oak_sapling"),
-//                BYGBlockList.RED_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.RedSpruceSaplingToTree(), "red_spruce_sapling"),
-//                BYGBlockList.REDWOOD_SAPLINGS = new BYGBlockProperties.BlockFlower("redwood_sapling"),
-//                BYGBlockList.SILVER_MAPLE_SAPLINGS = new BYGBlockProperties.BlockFlower("silver_maple_sapling"),
-//                BYGBlockList.SKYRIS_SAPLINGS = new BYGBlockProperties.BlockFlower("skyris_sapling"),
-//                BYGBlockList.WHITE_CHERRY_SAPLING = new BYGBlockProperties.BlockFlower("white_cherry_sapling"),
-//                BYGBlockList.WILLOW_SAPLING = new BYGBlockProperties.BlockFlower("willow_sapling"),
-//                BYGBlockList.WITCH_HAZEL_SAPLING = new BYGBlockProperties.BlockFlower("witch_hazel_sapling"),
-//                BYGBlockList.YELLOW_BIRCH_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.YellowBirchSaplingToTree(), "yellow_birch_sapling"),
-//                BYGBlockList.YELLOW_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.YellowSpruceSaplingToTree(), "yellow_spruce_sapling")
+                BYGBlockList.ASPEN_SAPLING = new BYGBlockProperties.BlockFlower("aspen_sapling"),
+                BYGBlockList.BAOBAB_SAPLING = new BYGBlockProperties.BlockFlower("baobab_sapling"),
+                BYGBlockList.BLUE_ENCHANTED_SAPLING = new BYGBlockProperties.BlockFlower("blue_enchanted_sapling"),
+                BYGBlockList.BLUE_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.BlueSpruceSaplingToTree(), "blue_spruce_sapling"),
+                BYGBlockList.BROWN_BIRCH_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.BrownBirchSaplingToTree(), "brown_birch_sapling"),
+                BYGBlockList.BROWN_OAK_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.BrownOakSaplingToTree(), "brown_oak_sapling"),
+                BYGBlockList.CIKA_SAPLING = new BYGBlockProperties.BlockFlower("cika_sapling"),
+                BYGBlockList.CYPRESS_SAPLING = new BYGBlockProperties.BlockFlower("cypress_sapling"),
+                BYGBlockList.EBONY_SAPLING = new BYGBlockProperties.BlockFlower("ebony_sapling"),
+                BYGBlockList.FIR_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.FirSaplingToTree(), "fir_sapling"),
+                BYGBlockList.GREEN_ENCHANTED_SAPLING = new BYGBlockProperties.BlockFlower("green_enchanted_sapling"),
+                BYGBlockList.HOLLY_SAPLING = new BYGBlockProperties.BlockFlower("holly_sapling"),
+                BYGBlockList.JACARANDA_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.JacarandaSaplingToTree(), "jacaranda_sapling"),
+                BYGBlockList.MAHOGANY_SAPLING = new BYGBlockProperties.BlockFlower("mahogany_sapling"),
+                BYGBlockList.MANGROVE_SAPLING = new BYGBlockProperties.BlockFlower("mangrove_sapling"),
+                BYGBlockList.ORANGE_BIRCH_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.OrangeBirchSaplingToTree(), "orange_birch_sapling"),
+                BYGBlockList.ORANGE_OAK_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.OrangeOakSaplingToTree(), "orange_oak_sapling"),
+                BYGBlockList.ORANGE_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.OrangeSpruceSaplingToTree(), "orange_spruce_sapling"),
+                BYGBlockList.ORCHARD_SAPLING = new BYGBlockProperties.BlockFlower("orchard_sapling"),
+                BYGBlockList.PALO_VERDE_SAPLING = new BYGBlockProperties.BlockFlower("palo_verde_sapling"),
+                BYGBlockList.PINE_SAPLING = new BYGBlockProperties.BlockFlower("pine_sapling"),
+                BYGBlockList.PINK_CHERRY_SAPLING = new BYGBlockProperties.BlockFlower("pink_cherry_sapling"),
+                BYGBlockList.RAINBOW_EUCALYPTUS_SAPLING = new BYGBlockProperties.BlockFlower("rainbow_eucalyptus_sapling"),
+                BYGBlockList.RED_BIRCH_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.RedBirchSaplingToTree(), "red_birch_sapling"),
+                BYGBlockList.RED_MAPLE_SAPLING = new BYGBlockProperties.BlockFlower("red_maple_sapling"),
+                BYGBlockList.RED_OAK_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.RedOakSaplingToTree(), "red_oak_sapling"),
+                BYGBlockList.RED_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.RedSpruceSaplingToTree(), "red_spruce_sapling"),
+                BYGBlockList.REDWOOD_SAPLINGS = new BYGBlockProperties.BlockFlower("redwood_sapling"),
+                BYGBlockList.SILVER_MAPLE_SAPLINGS = new BYGBlockProperties.BlockFlower("silver_maple_sapling"),
+                BYGBlockList.SKYRIS_SAPLINGS = new BYGBlockProperties.BlockFlower("skyris_sapling"),
+                BYGBlockList.WHITE_CHERRY_SAPLING = new BYGBlockProperties.BlockFlower("white_cherry_sapling"),
+                BYGBlockList.WILLOW_SAPLING = new BYGBlockProperties.BlockFlower("willow_sapling"),
+                BYGBlockList.WITCH_HAZEL_SAPLING = new BYGBlockProperties.BlockFlower("witch_hazel_sapling"),
+                BYGBlockList.YELLOW_BIRCH_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.YellowBirchSaplingToTree(), "yellow_birch_sapling"),
+                BYGBlockList.YELLOW_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.YellowSpruceSaplingToTree(), "yellow_spruce_sapling")
                 /*
                  * TODO: Add Sapling Blocks
                  */

@@ -26,7 +26,7 @@
 //import net.minecraft.util.math.shapes.VoxelShape;
 //import net.minecraft.world.IBlockReader;
 //import net.minecraft.world.World;
-//import sporeaoc.byg.catalogs.ItemCatalogs;
+//import sporeaoc.byg.catalogs.BYGItemList;
 //
 //public class BlueBerryBush extends BushBlock implements IGrowable {
 //    public static final IntegerProperty AGE = BlockStateProperties.AGE_0_3;
@@ -39,7 +39,7 @@
 //    }
 //
 //    public ItemStack getItem(IBlockReader worldIn, BlockPos pos, BlockState state) {
-//        return new ItemStack(ItemCatalogs.BLUE_BERRY);
+//        return new ItemStack(BYGItemList.BLUE_BERRY);
 //    }
 //
 //    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
@@ -81,7 +81,7 @@
 //            return false;
 //        } else if (i > 1) {
 //            int j = 1 + worldIn.rand.nextInt(2);
-//            spawnAsEntity(worldIn, pos, new ItemStack(ItemCatalogs.BLUE_BERRY, j + (flag ? 1 : 0)));
+//            spawnAsEntity(worldIn, pos, new ItemStack(BYGItemList.BLUE_BERRY, j + (flag ? 1 : 0)));
 //            worldIn.playSound((PlayerEntity)null, pos, SoundEvents.ITEM_SWEET_BERRIES_PICK_FROM_BUSH, SoundCategory.BLOCKS, 1.0F, 0.8F + worldIn.rand.nextFloat() * 0.4F);
 //            worldIn.setBlockState(pos, state.with(AGE, Integer.valueOf(1)), 2);
 //            return true;

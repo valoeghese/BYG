@@ -4,7 +4,8 @@ import net.minecraft.world.biome.Biome;
 import sporeaoc.byg.biomes.bygamplifiedbiomes.*;
 import sporeaoc.byg.biomes.bygbiomes.*;
 
-public class BiomeList {
+public class BYGBiomeList {
+
     public static Biome ALLIUMFIELDS = new AlliumFields();
     public static Biome ALPS = new Alps();
     public static Biome AMARANTHFIELDS = new AmaranthFields();

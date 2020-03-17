@@ -17,7 +17,7 @@ import java.util.Set;
 import java.util.function.Function;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class DeciduousShrub extends BYGAbstractTreeFeature<NoFeatureConfig> {
+public class BYGShrub extends BYGAbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
     private static final BlockState LEAVES = Blocks.OAK_LEAVES.getDefaultState();
@@ -29,12 +29,12 @@ public class DeciduousShrub extends BYGAbstractTreeFeature<NoFeatureConfig> {
 
 
 
-    public DeciduousShrub(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
+    public BYGShrub(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
         super(configIn, doBlockNotifyIn);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
 
-    public DeciduousShrub() {
+    public BYGShrub() {
         super(null, true);
     } //
 
