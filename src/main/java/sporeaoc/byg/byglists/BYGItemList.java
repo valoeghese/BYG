@@ -467,16 +467,20 @@ public class BYGItemList {
     public static Item AMETRINE_AXE;
     public static Item AMETRINE_PICK;
     public static Item AMETRINE_BATTLEAXE;
+    public static Item AMETRINE_HOE;
+
     public static Item PENDORITE_SWORD;
     public static Item PENDORITE_AXE;
     public static Item PENDORITE_PICK;
     public static Item PENDORITE_BATTLEAXE;
+    public static Item PENDORITE_HOE;
 
     //Armor Items
     public static Item AMETRINE_HELMET;
     public static Item AMETRINE_CHEST;
     public static Item AMETRINE_LEGGINGS;
     public static Item AMETRINE_BOOTS;
+
     public static Item PENDORITE_HELMET;
     public static Item PENDORITE_CHEST;
     public static Item PENDORITE_LEGGINGS;

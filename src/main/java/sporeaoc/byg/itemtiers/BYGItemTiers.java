@@ -8,10 +8,10 @@ import sporeaoc.byg.byglists.BYGItemList;
 import java.util.function.Supplier;
 
 public enum BYGItemTiers implements IItemTier {
-    AMETRINE(1, 10000, 4.0F, 1.0F, 5, () -> {
+    AMETRINE(5, 64, 16.0F, 0.8F, 25, () -> {
         return Ingredient.fromItems(BYGItemList.AMETRINE_GEMS);
     }),
-    PENDORITE(2, 250, 6.0F, 2.0F, 14, () -> {
+    PENDORITE(6, 2551, 6.0F, 5.0F, 14, () -> {
         return Ingredient.fromItems(BYGItemList.PENDORITE_SCRAPS);
     });
 
