@@ -15,7 +15,7 @@ import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import sporeaoc.byg.world.feature.BYGBiomeFeatures;
+import sporeaoc.byg.world.feature.biomefeatures.BYGTreeFeatures;
 
 public class SeasonalBirchForest extends Biome {
         static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
@@ -46,7 +46,7 @@ public class SeasonalBirchForest extends Biome {
             DefaultBiomeFeatures.addGrass(this);
             DefaultBiomeFeatures.addMushrooms(this);
             DefaultBiomeFeatures.addReedsAndPumpkins(this);
-            BYGBiomeFeatures.addSeasonalBirchForestTrees(this);
+            BYGTreeFeatures.addSeasonalBirchForestTrees(this);
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));

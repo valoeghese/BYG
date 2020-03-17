@@ -23,7 +23,7 @@ public class AmplifiedBlueTaiga extends Biome {
 //            this.addStructure(Feature.PILLAGER_OUTPOST, new PillagerOutpostConfig(0.004D));
 //            this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
 //            this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
-//            BYGBiomeFeatures.addBlueTaigaTrees(this);
+//            BYGTreeFeatures.addBlueTaigaTrees(this);
 //            DefaultBiomeFeatures.addTaigaLargeFerns(this);
 //            DefaultBiomeFeatures.addCarvers(this);
 //            DefaultBiomeFeatures.addStructures(this);

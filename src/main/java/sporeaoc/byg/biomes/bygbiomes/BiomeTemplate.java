@@ -23,8 +23,8 @@ public class BiomeTemplate extends Biome {
 //            this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
 //            this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
 //            DefaultBiomeFeatures.addCarvers(this);
-//            BYGBiomeFeatures.addDeciduousTrees(this);
-//            //BYGBiomeFeatures.addBaobabTrees(this);
+//            BYGTreeFeatures.addDeciduousTrees(this);
+//            //BYGTreeFeatures.addBaobabTrees(this);
 //
 //            this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
 //            this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));

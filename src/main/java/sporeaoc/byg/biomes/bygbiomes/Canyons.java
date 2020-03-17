@@ -31,26 +31,26 @@ public class Canyons extends Biome {
 //        DefaultBiomeFeatures.addIcebergs(this);
 //        DefaultBiomeFeatures.addIcebergs(this);
 //        DefaultBiomeFeatures.addCarvers(this);
-//        /*BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);
-//        BYGBiomeFeatures.bygAddCanyons(this);*/
+//        /*BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);
+//        BYGTreeFeatures.bygAddCanyons(this);*/
 //
 //
 //
-//        //BYGBiomeFeatures.addDeciduousTrees(this);
-//        //BYGBiomeFeatures.addBaobabTrees(this);
+//        //BYGTreeFeatures.addDeciduousTrees(this);
+//        //BYGTreeFeatures.addBaobabTrees(this);
 //
 //        this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.STRAY, 160, 10, 10));
 

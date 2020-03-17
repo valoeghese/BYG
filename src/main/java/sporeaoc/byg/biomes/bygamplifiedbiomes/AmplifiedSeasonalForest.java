@@ -37,7 +37,7 @@ public class AmplifiedSeasonalForest extends Biome {
 //            DefaultBiomeFeatures.addGrass(this);
 //            DefaultBiomeFeatures.addMushrooms(this);
 //            DefaultBiomeFeatures.addReedsAndPumpkins(this);
-//            BYGBiomeFeatures.addSeasonalForestTrees(this);
+//            BYGTreeFeatures.addSeasonalForestTrees(this);
 //            DefaultBiomeFeatures.addForestTrees(this);
 //
 //            this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));

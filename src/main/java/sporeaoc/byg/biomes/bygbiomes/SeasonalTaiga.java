@@ -12,7 +12,7 @@ import net.minecraft.world.gen.feature.structure.MineshaftStructure;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import sporeaoc.byg.world.feature.BYGBiomeFeatures;
+import sporeaoc.byg.world.feature.biomefeatures.BYGTreeFeatures;
 
 public class SeasonalTaiga extends Biome {
         static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
@@ -32,7 +32,7 @@ public class SeasonalTaiga extends Biome {
             this.addStructure(Feature.PILLAGER_OUTPOST.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
             this.addStructure(Feature.MINESHAFT.withConfiguration(new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL)));
             this.addStructure(Feature.STRONGHOLD.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-            BYGBiomeFeatures.addSeasonalTaigaTrees(this);
+            BYGTreeFeatures.addSeasonalTaigaTrees(this);
             DefaultBiomeFeatures.addTaigaLargeFerns(this);
             DefaultBiomeFeatures.addCarvers(this);
             DefaultBiomeFeatures.addStructures(this);

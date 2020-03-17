@@ -12,7 +12,7 @@ import net.minecraft.world.gen.feature.structure.MineshaftStructure;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import sporeaoc.byg.world.feature.BYGBiomeFeatures;
+import sporeaoc.byg.world.feature.biomefeatures.BYGTreeFeatures;
 
 public class SeasonalGiantTaiga extends Biome {
         static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.GIANT_TREE_TAIGA, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
@@ -40,7 +40,7 @@ public class SeasonalGiantTaiga extends Biome {
             DefaultBiomeFeatures.addStoneVariants(this);
             DefaultBiomeFeatures.addOres(this);
             DefaultBiomeFeatures.addSedimentDisks(this);
-            BYGBiomeFeatures.addGiantSeasonalTaigaTrees(this);
+            BYGTreeFeatures.addGiantSeasonalTaigaTrees(this);
             DefaultBiomeFeatures.addDefaultFlowers(this);
             DefaultBiomeFeatures.addTaigaGrassDeadBushesMushrooms(this);
             DefaultBiomeFeatures.addMushrooms(this);

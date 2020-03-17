@@ -14,7 +14,7 @@ import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import sporeaoc.byg.world.feature.BYGBiomeFeatures;
+import sporeaoc.byg.world.feature.biomefeatures.BYGTreeFeatures;
 
 public class TropicalRainForest extends Biome {
     static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
@@ -45,7 +45,7 @@ public class TropicalRainForest extends Biome {
         DefaultBiomeFeatures.addSprings(this);
         DefaultBiomeFeatures.addJunglePlants(this);
         DefaultBiomeFeatures.addFreezeTopLayer(this);
-        BYGBiomeFeatures.addTropJungleTrees(this);
+        BYGTreeFeatures.addTropJungleTrees(this);
         DefaultBiomeFeatures.addVeryDenseGrass(this);
         DefaultBiomeFeatures.addJungleTreeForest(this);
         //this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.DOUBLE_PLANT, new DoublePlantConfig(Blocks.TALL_GRASS.getDefaultState()), Placement.NOISE_HEIGHTMAP_32, new NoiseDependant(-0.8D, 0, 85)));

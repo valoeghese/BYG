@@ -24,7 +24,7 @@ public class Quagmire extends Biome {
 //        this.addStructure(Feature.PILLAGER_OUTPOST, new PillagerOutpostConfig(0.004D));
 //        this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
 //        this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
-//        BYGBiomeFeatures.addPrairieGrass(this);
+//        BYGTreeFeatures.addPrairieGrass(this);
 //        DefaultBiomeFeatures.addCarvers(this);
 //        DefaultBiomeFeatures.addStructures(this);
 //        DefaultBiomeFeatures.addMonsterRooms(this);
@@ -32,7 +32,7 @@ public class Quagmire extends Biome {
 //        DefaultBiomeFeatures.addOres(this);
 //        DefaultBiomeFeatures.addSedimentDisks(this);
 //        DefaultBiomeFeatures.addMushrooms(this);
-//        BYGBiomeFeatures.addReeds(this);
+//        BYGTreeFeatures.addReeds(this);
 //        this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
 //        this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
 //        this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));

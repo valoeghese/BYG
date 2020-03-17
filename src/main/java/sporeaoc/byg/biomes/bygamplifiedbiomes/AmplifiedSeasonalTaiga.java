@@ -23,7 +23,7 @@ public class AmplifiedSeasonalTaiga extends Biome {
 //            this.addStructure(Feature.PILLAGER_OUTPOST, new PillagerOutpostConfig(0.004D));
 //            this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
 //            this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
-//            BYGBiomeFeatures.addSeasonalTaigaTrees(this);
+//            BYGTreeFeatures.addSeasonalTaigaTrees(this);
 //            DefaultBiomeFeatures.addTaigaLargeFerns(this);
 //            DefaultBiomeFeatures.addCarvers(this);
 //            DefaultBiomeFeatures.addStructures(this);

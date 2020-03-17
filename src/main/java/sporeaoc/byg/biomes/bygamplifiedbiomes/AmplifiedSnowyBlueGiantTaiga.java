@@ -33,7 +33,7 @@ public class AmplifiedSnowyBlueGiantTaiga extends Biome {
 //            DefaultBiomeFeatures.addStoneVariants(this);
 //            DefaultBiomeFeatures.addOres(this);
 //            DefaultBiomeFeatures.addSedimentDisks(this);
-//            BYGBiomeFeatures.addGiantBlueTaigaTrees(this);
+//            BYGTreeFeatures.addGiantBlueTaigaTrees(this);
 //            DefaultBiomeFeatures.addDefaultFlowers(this);
 //            DefaultBiomeFeatures.addTaigaGrassDeadBushesMushrooms(this);
 //            DefaultBiomeFeatures.addMushrooms(this);

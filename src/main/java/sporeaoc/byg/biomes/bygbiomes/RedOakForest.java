@@ -12,7 +12,7 @@ import net.minecraft.world.gen.feature.structure.MineshaftStructure;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import sporeaoc.byg.world.feature.BYGBiomeFeatures;
+import sporeaoc.byg.world.feature.biomefeatures.BYGTreeFeatures;
 
 public class RedOakForest extends Biome {
         static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.DEFAULT, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
@@ -43,7 +43,7 @@ public class RedOakForest extends Biome {
             DefaultBiomeFeatures.addGrass(this);
             DefaultBiomeFeatures.addMushrooms(this);
             DefaultBiomeFeatures.addReedsAndPumpkins(this);
-            BYGBiomeFeatures.addRedOakForestTrees(this);
+            BYGTreeFeatures.addRedOakForestTrees(this);
             DefaultBiomeFeatures.addForestTrees(this);
             DefaultBiomeFeatures.addForestTrees(this);
 

@@ -31,7 +31,7 @@ public class AmplifiedSeasonalGiantTaiga extends Biome {
 //            DefaultBiomeFeatures.addStoneVariants(this);
 //            DefaultBiomeFeatures.addOres(this);
 //            DefaultBiomeFeatures.addSedimentDisks(this);
-//            BYGBiomeFeatures.addGiantSeasonalTaigaTrees(this);
+//            BYGTreeFeatures.addGiantSeasonalTaigaTrees(this);
 //            DefaultBiomeFeatures.addDefaultFlowers(this);
 //            DefaultBiomeFeatures.addTaigaGrassDeadBushesMushrooms(this);
 //            DefaultBiomeFeatures.addMushrooms(this);

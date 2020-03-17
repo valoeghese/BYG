@@ -34,7 +34,7 @@ public class AmplifiedRedOakForest extends Biome {
 //            DefaultBiomeFeatures.addGrass(this);
 //            DefaultBiomeFeatures.addMushrooms(this);
 //            DefaultBiomeFeatures.addReedsAndPumpkins(this);
-//            BYGBiomeFeatures.addRedOakForestTrees(this);
+//            BYGTreeFeatures.addRedOakForestTrees(this);
 //            DefaultBiomeFeatures.addForestTrees(this);
 //            DefaultBiomeFeatures.addForestTrees(this);
 //

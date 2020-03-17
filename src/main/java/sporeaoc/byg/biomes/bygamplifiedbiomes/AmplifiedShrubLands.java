@@ -25,7 +25,7 @@ public class AmplifiedShrubLands extends Biome {
 //        this.addStructure(Feature.PILLAGER_OUTPOST, new PillagerOutpostConfig(0.004D));
 //        this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
 //        this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
-//        BYGBiomeFeatures.addShrubs(this);
+//        BYGTreeFeatures.addShrubs(this);
 //        DefaultBiomeFeatures.addCarvers(this);
 //        DefaultBiomeFeatures.addStructures(this);
 //        DefaultBiomeFeatures.addMonsterRooms(this);
@@ -34,7 +34,7 @@ public class AmplifiedShrubLands extends Biome {
 //        DefaultBiomeFeatures.addSedimentDisks(this);
 //        DefaultBiomeFeatures.addGrass(this);
 //        DefaultBiomeFeatures.addMushrooms(this);
-//        BYGBiomeFeatures.addReeds(this);
+//        BYGTreeFeatures.addReeds(this);
 //        DefaultBiomeFeatures.addFreezeTopLayer(this);
 //        this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
 //        this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));

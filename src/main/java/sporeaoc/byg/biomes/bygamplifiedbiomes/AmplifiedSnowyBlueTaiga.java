@@ -24,7 +24,7 @@ public class AmplifiedSnowyBlueTaiga extends Biome {
 //            this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
 //            this.addStructure(Feature.STRONGHOLD, IFeatureConfig.NO_FEATURE_CONFIG);
 //            this.addStructure(Feature.IGLOO, IFeatureConfig.NO_FEATURE_CONFIG);
-//            BYGBiomeFeatures.addBlueTaigaTrees(this);
+//            BYGTreeFeatures.addBlueTaigaTrees(this);
 //            DefaultBiomeFeatures.addFreezeTopLayer(this);
 //            DefaultBiomeFeatures.addTaigaLargeFerns(this);
 //            DefaultBiomeFeatures.addCarvers(this);

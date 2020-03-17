@@ -37,7 +37,7 @@ public class AmplifiedDeciduousForest extends Biome {
 //            DefaultBiomeFeatures.addGrass(this);
 //            DefaultBiomeFeatures.addMushrooms(this);
 //            DefaultBiomeFeatures.addReedsAndPumpkins(this);
-//            BYGBiomeFeatures.addDeciduousTrees(this);
+//            BYGTreeFeatures.addDeciduousTrees(this);
 //            this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
 //            this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
 //            this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));
