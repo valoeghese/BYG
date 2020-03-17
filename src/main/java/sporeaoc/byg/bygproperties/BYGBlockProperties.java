@@ -4,7 +4,8 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.potion.Effects;
-import sporeaoc.byg.bygproperties.blocks.*;
+import sporeaoc.byg.bygproperties.blocks.BYGSnowyLeavesBlock;
+import sporeaoc.byg.bygproperties.blocks.BookshelfBlock;
 
 public class BYGBlockProperties {
     public static class BYGFence extends FenceBlock {
