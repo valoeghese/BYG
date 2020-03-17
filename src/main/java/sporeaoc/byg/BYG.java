@@ -14,6 +14,7 @@ import sporeaoc.byg.byglists.BYGItemList;
 import sporeaoc.byg.config.BYGConfig;
 import sporeaoc.byg.config.biomeweight.ConfigWeightManager;
 import sporeaoc.byg.textures.renders.BYGCutoutRenders;
+import sporeaoc.byg.world.feature.BYGFeaturesInVanilla;
 
 @Mod("byg")
 public class BYG {
@@ -21,16 +22,16 @@ public class BYG {
 
     //public static final WorldType BYGISLANDTYPE = new BYGIslandWorldType();
 
-
     public static final String MOD_ID = "byg";
     public static final Init setup = new Init();
     public static final BYGCutoutRenders cutoutRenders = new BYGCutoutRenders();
+    public static final BYGFeaturesInVanilla bygFeaturesInVanilla = new BYGFeaturesInVanilla();
+
 
     public BYG() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(bygFeaturesInVanilla::addFeatures);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(cutoutRenders::renderCutOuts);
-
-        //FMLJavaModLoadingContext.get().getModEventBus().addListener(EntombedEcosystems.BYGEETreeAdd::init);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BYGConfig.COMMON_CONFIG);
         ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-weights-common.toml"));
     }
