@@ -19,7 +19,7 @@ import sporeaoc.byg.byglists.BYGSBList;
 import sporeaoc.byg.world.feature.biomefeatures.BYGTreeFeatures;
 
 public class BorealForest extends Biome {
-    static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(BYGSBList.BOREAL, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
+    static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(BYGSBList.BOREAL_SB, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
         static final RainType PRECIPATATION = RainType.RAIN;
         static final Category CATEGORY = Category.FOREST;
         static final double DEPTH = 0.35F;
