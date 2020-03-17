@@ -1,5 +1,6 @@
 package sporeaoc.byg.world.tree.tropicalrainforest;
 
+import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.state.BooleanProperty;
@@ -10,22 +11,24 @@ import net.minecraft.world.gen.IWorldGenerationBaseReader;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import sporeaoc.byg.catalogs.BYGBlockList;
-import sporeaoc.byg.world.tree.mappings.BYGAbstractTreeFeature;
+import sporeaoc.byg.world.tree.util.BYGAbstractTreeFeature;
 
 import java.util.Random;
 import java.util.Set;
+import java.util.function.Function;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
 public class TropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = BYGBlockList.MAHOGANY_LOG.getDefaultState();
     private static final BlockState LEAVES = BYGBlockList.MAHOGANY_LEAVES.getDefaultState();
+    private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
 
-    public TropicalRainForestTree() {
-        super(null, true);
+    public TropicalRainForestTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+        super(configIn, doBlockNotifyIn, beeHiveChance);
+        setSapling((net.minecraftforge.common.IPlantable) BYGBlockList.MAHOGANY_SAPLING);
     }
-
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
         int randTreeHeight = rand.nextInt(3) + rand.nextInt(3) + 8;

@@ -10,7 +10,7 @@ import net.minecraft.world.gen.IWorldGenerationBaseReader;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import sporeaoc.byg.catalogs.BYGBlockList;
-import sporeaoc.byg.world.tree.mappings.BYGAbstractTreeFeature;
+import sporeaoc.byg.world.tree.util.BYGAbstractTreeFeature;
 
 import java.util.Random;
 import java.util.Set;
@@ -20,15 +20,12 @@ import java.util.function.Function;
 public class OrangeDeciduousTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
     private static final BlockState LEAVES = BYGBlockList.ORANGE_OAK_LEAVES.getDefaultState();
+    private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
-    public OrangeDeciduousTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
-        super(configIn, doBlockNotifyIn);
+    public OrangeDeciduousTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+        super(configIn, doBlockNotifyIn, beeHiveChance);
         //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
     }
-
-    public OrangeDeciduousTree() {
-        super(null, true);
-    } //
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         int randTreeHeight = rand.nextInt(3) + rand.nextInt(3) + 10; //First value changes height of the trunk.

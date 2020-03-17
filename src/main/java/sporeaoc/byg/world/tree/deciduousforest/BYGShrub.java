@@ -10,7 +10,7 @@ import net.minecraft.world.gen.IWorldGenerationBaseReader;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import sporeaoc.byg.catalogs.BYGBlockList;
-import sporeaoc.byg.world.tree.mappings.BYGAbstractTreeFeature;
+import sporeaoc.byg.world.tree.util.BYGAbstractTreeFeature;
 
 import java.util.Random;
 import java.util.Set;
@@ -25,18 +25,12 @@ public class BYGShrub extends BYGAbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LEAVES3 = BYGBlockList.BROWN_OAK_LEAVES.getDefaultState();
     private static final BlockState LEAVES4 = BYGBlockList.ORANGE_OAK_LEAVES.getDefaultState();
     private static final BlockState LEAVES5 = BYGBlockList.YELLOW_BIRCH_LEAVES.getDefaultState();
+    private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
-
-
-
-    public BYGShrub(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
-        super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
+    public BYGShrub(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+        super(configIn, doBlockNotifyIn, beeHiveChance);
     }
 
-    public BYGShrub() {
-        super(null, true);
-    } //
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.

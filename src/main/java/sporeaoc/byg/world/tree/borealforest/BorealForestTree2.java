@@ -13,7 +13,7 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import net.minecraftforge.common.IPlantable;
 import sporeaoc.byg.catalogs.BYGBlockList;
-import sporeaoc.byg.world.tree.mappings.BYGAbstractTreeFeature;
+import sporeaoc.byg.world.tree.util.BYGAbstractTreeFeature;
 
 import java.util.Random;
 import java.util.Set;
@@ -24,15 +24,12 @@ public class BorealForestTree2 extends BYGAbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = Blocks.SPRUCE_LOG.getDefaultState();
     private static final BlockState LEAVES = Blocks.SPRUCE_LEAVES.getDefaultState();
+    private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
-    public BorealForestTree2(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
-        super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
+    public BorealForestTree2(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+        super(configIn, doBlockNotifyIn, beeHiveChance);
     }
 
-    public BorealForestTree2() {
-        super(null, true);
-    }
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.

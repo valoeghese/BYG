@@ -10,7 +10,7 @@ import net.minecraft.world.gen.IWorldGenerationBaseReader;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import sporeaoc.byg.catalogs.BYGBlockList;
-import sporeaoc.byg.world.tree.mappings.BYGAbstractTreeFeature;
+import sporeaoc.byg.world.tree.util.BYGAbstractTreeFeature;
 
 import java.util.Random;
 import java.util.Set;
@@ -20,9 +20,10 @@ import java.util.function.Function;
 public class RedDeciduousTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
     private static final BlockState LEAVES = BYGBlockList.RED_OAK_LEAVES.getDefaultState();
+    private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
-    public RedDeciduousTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
-        super(configIn, doBlockNotifyIn);
+    public RedDeciduousTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+        super(configIn, doBlockNotifyIn, beeHiveChance);
     }
 
 

@@ -9,7 +9,7 @@ import net.minecraft.util.math.MutableBoundingBox;
 import net.minecraft.world.gen.IWorldGenerationBaseReader;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
-import sporeaoc.byg.world.tree.mappings.BYGAbstractTreeFeature;
+import sporeaoc.byg.world.tree.util.BYGAbstractTreeFeature;
 
 import java.util.Random;
 import java.util.Set;
@@ -19,10 +19,10 @@ import java.util.function.Function;
 public class DeciduousTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
     private static final BlockState LEAVES = Blocks.OAK_LEAVES.getDefaultState();
+    private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
-    public DeciduousTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
-        super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
+    public DeciduousTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+        super(configIn, doBlockNotifyIn, beeHiveChance);
     }
 
     protected static boolean canTreeReplace(IWorldGenerationBaseReader p_214587_0_, BlockPos p_214587_1_) {

@@ -2,6 +2,7 @@ package sporeaoc.byg.world.tree.cypressswamplands;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MutableBoundingBox;
@@ -9,7 +10,7 @@ import net.minecraft.world.gen.IWorldGenerationBaseReader;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import sporeaoc.byg.catalogs.BYGBlockList;
-import sporeaoc.byg.world.tree.mappings.BYGAbstractTreeFeature;
+import sporeaoc.byg.world.tree.util.BYGAbstractTreeFeature;
 
 import java.util.Random;
 import java.util.Set;
@@ -20,15 +21,13 @@ public class HugeCypressTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = BYGBlockList.CYPRESS_LOG.getDefaultState();
     private static final BlockState LEAVES = BYGBlockList.CYPRESS_LEAVES.getDefaultState();
+    private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
-    public HugeCypressTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
-        super(configIn, doBlockNotifyIn);
-        //setSapling((net.minecraftforge.common.IPlantable) Blocks.DARK_OAK_SAPLING);
+    public HugeCypressTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+        super(configIn, doBlockNotifyIn, beeHiveChance);
+        setSapling((net.minecraftforge.common.IPlantable) BYGBlockList.CYPRESS_SAPLING);
     }
 
-    public HugeCypressTree() {
-        super(null, true);
-    }
 
     protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
         return func_214587_a(

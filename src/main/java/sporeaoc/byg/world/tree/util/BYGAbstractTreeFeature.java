@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.tree.mappings;
+package sporeaoc.byg.world.tree.util;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
@@ -32,7 +32,7 @@ import java.util.function.Function;
 public abstract class BYGAbstractTreeFeature<T extends IFeatureConfig> extends Feature<T> {
    protected net.minecraftforge.common.IPlantable sapling = (net.minecraftforge.common.IPlantable)net.minecraft.block.Blocks.OAK_SAPLING;
 
-   public BYGAbstractTreeFeature(Function<Dynamic<?>, ? extends T> p_i49920_1_, boolean doBlockNofityOnPlace) {
+   public BYGAbstractTreeFeature(Function<Dynamic<?>, ? extends T> p_i49920_1_, boolean doBlockNofityOnPlace, int beeHiveChance) {
       super(p_i49920_1_);
    }
 

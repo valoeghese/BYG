@@ -1,5 +1,6 @@
 package sporeaoc.byg.world.tree.borealforest;
 
+import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -12,10 +13,11 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import net.minecraftforge.common.IPlantable;
 import sporeaoc.byg.catalogs.BYGBlockList;
-import sporeaoc.byg.world.tree.mappings.BYGAbstractTreeFeature;
+import sporeaoc.byg.world.tree.util.BYGAbstractTreeFeature;
 
 import java.util.Random;
 import java.util.Set;
+import java.util.function.Function;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
 public class BorealForestTree1 extends BYGAbstractTreeFeature<NoFeatureConfig> {
@@ -23,11 +25,11 @@ public class BorealForestTree1 extends BYGAbstractTreeFeature<NoFeatureConfig> {
     private static final BlockState LOG = Blocks.BIRCH_LOG.getDefaultState();
     private static final BlockState LEAVES = BYGBlockList.YELLOW_BIRCH_LEAVES.getDefaultState();
     private static final BlockState LEAVES2 = Blocks.BIRCH_LEAVES.getDefaultState();
+    private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
-    public BorealForestTree1() {
-        super(null, true);
+    public BorealForestTree1(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+        super(configIn, doBlockNotifyIn, beeHiveChance);
     }
-
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
         int randTreeHeight = rand.nextInt(2) + rand.nextInt(2) + 9;

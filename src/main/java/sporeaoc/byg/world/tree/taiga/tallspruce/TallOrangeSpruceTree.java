@@ -10,7 +10,7 @@ import net.minecraft.world.gen.IWorldGenerationBaseReader;
 import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import sporeaoc.byg.catalogs.BYGBlockList;
-import sporeaoc.byg.world.tree.mappings.BYGAbstractTreeFeature;
+import sporeaoc.byg.world.tree.util.BYGAbstractTreeFeature;
 
 import java.util.Random;
 import java.util.Set;
@@ -22,9 +22,9 @@ public class TallOrangeSpruceTree extends BYGAbstractTreeFeature<NoFeatureConfig
     private static final BlockState LOG = Blocks.SPRUCE_LOG.getDefaultState();
     private static final BlockState LEAVES = BYGBlockList.BLUE_SPRUCE_LEAVES.getDefaultState();
 
-    public TallOrangeSpruceTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn) {
-        super(configIn, doBlockNotifyIn);
-        setSapling((net.minecraftforge.common.IPlantable) BYGBlockList.BLUE_SPRUCE_SAPLING);
+    public TallOrangeSpruceTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+        super(configIn, doBlockNotifyIn, beeHiveChance);
+        setSapling((net.minecraftforge.common.IPlantable) BYGBlockList.RED_SPRUCE_SAPLING);
     }
 
 

@@ -7,7 +7,6 @@ import net.minecraft.world.IWorld;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
-import sporeaoc.byg.world.tree.mappings.BYGAbstractTreeFeature;
 
 import javax.annotation.Nullable;
 import java.util.Random;

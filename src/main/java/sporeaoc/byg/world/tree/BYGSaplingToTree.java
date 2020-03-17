@@ -8,7 +8,7 @@ import sporeaoc.byg.world.tree.birch.YellowBirchTree;
 import sporeaoc.byg.world.tree.coniferousforest.SmallFirTree;
 import sporeaoc.byg.world.tree.coniferousforest.WideFirTree;
 import sporeaoc.byg.world.tree.jacaranda.JacarandaTree;
-import sporeaoc.byg.world.tree.mappings.BYGAbstractTreeFeature;
+import sporeaoc.byg.world.tree.util.BYGAbstractTreeFeature;
 import sporeaoc.byg.world.tree.oak.BrownOakTree;
 import sporeaoc.byg.world.tree.oak.OrangeOakTree;
 import sporeaoc.byg.world.tree.oak.RedOakTree;
