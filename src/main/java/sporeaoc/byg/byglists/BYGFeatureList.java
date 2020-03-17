@@ -60,44 +60,44 @@ public class BYGFeatureList {
     public static final BYGAbstractTreeFeature<NoFeatureConfig> ORANGEDECIDUOUS_TREE = new OrangeDeciduousTree(NoFeatureConfig::deserialize, false, 0);
     public static final BYGAbstractTreeFeature<NoFeatureConfig> YELLOWDECIDUOUS_TREE = new YellowDeciduousTree(NoFeatureConfig::deserialize, false, 0);
     public static final BYGAbstractTreeFeature<NoFeatureConfig> REDDECIDUOUS_TREE = new RedDeciduousTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> SEASONALSHRUBS = new ColorfulDeciduousShrubs(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> SEASONAL_SHRUBS = new ColorfulDeciduousShrubs(NoFeatureConfig::deserialize, false, 0);
 
 
     //Seasonal TaigaTrees
-    public static final Feature<NoFeatureConfig> BLUEGIANTTAIGA_TREE = new GiantBlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final Feature<NoFeatureConfig> TALL_BLUE_SPRUCE = new TallBlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final Feature<NoFeatureConfig> BLUEGIANTSPUCE_TREE = new GiantBlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final Feature<NoFeatureConfig> TALLBLUESPRUCE_TREE = new TallBlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
     public static final Feature<NoFeatureConfig> BLUE_SPRUCE = new BlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final Feature<NoFeatureConfig> SMALL_BLUE_SPRUCE = new SmallBlueTaigaTree(NoFeatureConfig::deserialize, false, 0);
+    public static final Feature<NoFeatureConfig> SMALLBLUESPRUCE_TREE = new SmallBlueTaigaTree(NoFeatureConfig::deserialize, false, 0);
 
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> GIANT_ORANGE_SPRUCE = new GiantOrangeSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> TALL_ORANGE_SPRUCE = new TallOrangeSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> ORANGE_SPRUCE = new OrangeSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALL_ORANGE_SPRUCE = new SmallOrangeSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> GIANTORANGESPRUCE_TREE = new GiantOrangeSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> TALLORANGESPRUCE_TREE = new TallOrangeSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> ORANGESPRUCE_TREE = new OrangeSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALLORANGESPRUCE_TREE = new SmallOrangeSpruceTree(NoFeatureConfig::deserialize, false, 0);
 
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> GIANT_RED_SPRUCE = new GiantRedSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> TALL_RED_SPRUCE = new TallRedSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> RED_SPRUCE = new RedSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALL_RED_SPRUCE = new SmallRedSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> GIANTREDSPRUCE_TREE = new GiantRedSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> TALLREDSPRUCE_TREE = new TallRedSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> REDSPRUCE_TREE = new RedSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALLREDSPRUCE_TREE = new SmallRedSpruceTree(NoFeatureConfig::deserialize, false, 0);
 
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> GIANT_YELLOW_SPRUCE = new GiantYellowSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> TALL_YELLOW_SPRUCE = new TallYellowSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> YELLOW_SPRUCE = new YellowSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALL_YELLOW_SPRUCE = new SmallYellowTaigaTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> GIANTYELLOWSPRUCE_TREE = new GiantYellowSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> TALLYELLOWSPRUCE_TREE = new TallYellowSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> YELLOWSPRUCE_TREE = new YellowSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALLYELLOWSPRUCE_TREE = new SmallYellowTaigaTree(NoFeatureConfig::deserialize, false, 0);
 
     //Boreal Trees
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> BOREALFOREST_TREE = new BorealForestTree1(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> BOREALFOREST_TREE2 = new BorealForestTree2(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> BOREAL_TREE = new BorealForestTree1(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> BOREAL_TREE2 = new BorealForestTree2(NoFeatureConfig::deserialize, false, 0);
 
     //Tropical Trees
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> TROPICALRAINFORESTTREE = new TropicalRainForestTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> SHORTTROPICALRAINFORESTTREE = new ShortTropicalRainForestTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> TROPICALRAINFOREST_TREE = new TropicalRainForestTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> SHORTTROPICALRAINFOREST_TREE = new ShortTropicalRainForestTree(NoFeatureConfig::deserialize, false, 0);
 
     //Shrub
     public static final BYGAbstractTreeFeature<NoFeatureConfig> SHRUB = new BYGShrub(NoFeatureConfig::deserialize, false, 0);
 
     //Coniferous Trees
     public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALLCONIFEROUSTREE = new SmallFirTree(NoFeatureConfig::deserialize, false, 0);
-    public static final BYGAbstractTreeFeature<NoFeatureConfig> WIDECONIFEROUSTREE = new WideFirTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> WIDECONIFEROUS_TREE = new WideFirTree(NoFeatureConfig::deserialize, false, 0);
 
     //Flower & Grass Features
 //    public static final FlowersFeature ALLIUMFLOWERS = new AlliumFieldFlowers(NoFeatureConfig::deserialize);
