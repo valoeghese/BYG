@@ -40,6 +40,7 @@ public class BYGBlockProperties {
                             .notSolid()
             );
             setRegistryName(registryName);
+
         }
     }
 
@@ -64,9 +65,8 @@ public class BYGBlockProperties {
                     .notSolid()
             );
             setRegistryName(registryName);
-        }
+            }
     }
-
     public static class BYGGrassBlock extends GrassBlock {
         public BYGGrassBlock(String registryName) {
             super(Block.Properties.create(Material.EARTH)
