@@ -8,7 +8,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.IForgeRegistry;
 import sporeaoc.byg.BYG;
-import sporeaoc.byg.catalogs.BYGBiomeList;
+import sporeaoc.byg.byglists.BYGBiomeList;
 import sporeaoc.byg.config.biomeweight.ConfigWeightManager;
 
 @Mod.EventBusSubscriber(modid = BYG.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)

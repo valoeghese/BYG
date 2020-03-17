@@ -11,7 +11,7 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
-import sporeaoc.byg.world.tree.util.BYGTree;
+import sporeaoc.byg.world.feature.tree.util.BYGTree;
 
 import java.util.Random;
 

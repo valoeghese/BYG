@@ -2,14 +2,14 @@
 //
 //import net.minecraft.block.BlockState;
 //import net.minecraft.block.IGrowable;
-//import net.minecraft.util.BlockRenderLayer;
 //import net.minecraft.util.math.BlockPos;
 //import net.minecraft.world.IBlockReader;
 //import net.minecraft.world.World;
 //import net.minecraft.world.gen.feature.ConfiguredFeature;
 //import net.minecraft.world.gen.feature.DecoratedFeatureConfig;
 //import net.minecraft.world.gen.feature.FlowersFeature;
-//import sporeaoc.byg.catalogs.BYGBlockList;
+//import net.minecraft.world.server.ServerWorld;
+//import sporeaoc.byg.byglists.BYGBlockList;
 //
 //import java.util.List;
 //import java.util.Random;
@@ -27,6 +27,11 @@
 //        return true;
 //    }
 //
+//    @Override
+//    public void grow(ServerWorld p_225535_1_, Random p_225535_2_, BlockPos p_225535_3_, BlockState p_225535_4_) {
+//
+//    }
+//
 //    public void grow(World p_176474_1_, Random p_176474_2_, BlockPos p_176474_3_, BlockState p_176474_4_) {
 //        BlockPos lvt_5_1_ = p_176474_3_.up();
 //        BlockState lvt_6_1_ = BYGBlockList.OVERGROWN_STONE.getDefaultState();
@@ -37,25 +42,25 @@
 //
 //            for(int lvt_9_1_ = 0; lvt_9_1_ < lvt_7_1_ / 16; ++lvt_9_1_) {
 //                lvt_8_1_ = lvt_8_1_.add(p_176474_2_.nextInt(3) - 1, (p_176474_2_.nextInt(3) - 1) * p_176474_2_.nextInt(3) / 2, p_176474_2_.nextInt(3) - 1);
-//                if (p_176474_1_.getBlockState(lvt_8_1_.down()).getBlock() != this || p_176474_1_.getBlockState(lvt_8_1_).func_224756_o(p_176474_1_, lvt_8_1_)) {
+//                if (p_176474_1_.getBlockState(lvt_8_1_.down()).getBlock() != this || p_176474_1_.getBlockState(lvt_8_1_).isOpaqueCube(p_176474_1_, lvt_8_1_)) {
 //                    continue label48;
 //                }
 //            }
 //
 //            BlockState lvt_9_2_ = p_176474_1_.getBlockState(lvt_8_1_);
 //            if (lvt_9_2_.getBlock() == lvt_6_1_.getBlock() && p_176474_2_.nextInt(10) == 0) {
-//                ((IGrowable)lvt_6_1_.getBlock()).grow(p_176474_1_, p_176474_2_, lvt_8_1_, lvt_9_2_);
+//                ((IGrowable)lvt_6_1_.getBlock()).grow((ServerWorld) p_176474_1_, p_176474_2_, lvt_8_1_, lvt_9_2_);
 //            }
 //
 //            if (lvt_9_2_.isAir()) {
 //                BlockState lvt_10_2_;
 //                if (p_176474_2_.nextInt(8) == 0) {
-//                    List<ConfiguredFeature<?>> lvt_11_1_ = p_176474_1_.getBiome(lvt_8_1_).getFlowers();
+//                    List<ConfiguredFeature<?, ?>> lvt_11_1_ = p_176474_1_.getBiome(lvt_8_1_).getFlowers();
 //                    if (lvt_11_1_.isEmpty()) {
 //                        continue;
 //                    }
 //
-//                    lvt_10_2_ = ((FlowersFeature)((DecoratedFeatureConfig)((ConfiguredFeature)lvt_11_1_.get(0)).config).feature.feature).getRandomFlower(p_176474_2_, lvt_8_1_);
+//                    lvt_10_2_ = ((FlowersFeature)((DecoratedFeatureConfig)((ConfiguredFeature)lvt_11_1_.get(0)).config).feature.feature).ge(p_176474_2_, lvt_8_1_);
 //                } else {
 //                    lvt_10_2_ = lvt_6_1_;
 //                }

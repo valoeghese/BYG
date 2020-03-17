@@ -10,7 +10,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import sporeaoc.byg.BYG;
-import sporeaoc.byg.catalogs.BYGBlockList;
+import sporeaoc.byg.byglists.BYGBlockList;
 import sporeaoc.byg.config.BYGConfig;
 
 @Mod.EventBusSubscriber(modid = BYG.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)

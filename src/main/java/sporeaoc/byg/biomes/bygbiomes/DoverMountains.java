@@ -15,7 +15,7 @@ import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import sporeaoc.byg.catalogs.BYGSBList;
+import sporeaoc.byg.byglists.BYGSBList;
 
 public class DoverMountains extends Biome {
     static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(BYGSBList.DOVER, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);

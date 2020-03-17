@@ -50,22 +50,14 @@
 //        }
 //    }
 //
-//    public void tick(BlockState state, World worldIn, BlockPos pos, Random random) {
-//        super.tick(state, worldIn, pos, random);
-//        int i = state.get(AGE);
-//        if (i < 3 && worldIn.getLightSubtracted(pos.up(), 0) >= 9 && net.minecraftforge.common.ForgeHooks.onCropsGrowPre(worldIn, pos, state, random.nextInt(5) == 0)) {
-//            worldIn.setBlockState(pos, state.with(AGE, Integer.valueOf(i + 1)), 2);
-//            net.minecraftforge.common.ForgeHooks.onCropsGrowPost(worldIn, pos, state);
-//        }
 //
-//    }
 //
 //    public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
 //        if (entityIn instanceof LivingEntity && entityIn.getType() != EntityType.FOX) {
 //            entityIn.setMotionMultiplier(state, new Vec3d((double)0.8F, 0.75D, (double)0.8F));
-//            if (!worldIn.isRemote && state.get(AGE) > 0 && (entityIn.lastTickPosX != entityIn.posX || entityIn.lastTickPosZ != entityIn.posZ)) {
-//                double d0 = Math.abs(entityIn.posX - entityIn.lastTickPosX);
-//                double d1 = Math.abs(entityIn.posZ - entityIn.lastTickPosZ);
+//            if (!worldIn.isRemote && state.get(AGE) > 0 && (entityIn.lastTickPosX != entityIn.chunkCoordX || entityIn.lastTickPosZ != entityIn.chunkCoordZ)) {
+//                double d0 = Math.abs(entityIn.chunkCoordX - entityIn.lastTickPosX);
+//                double d1 = Math.abs(entityIn.chunkCoordZ - entityIn.lastTickPosZ);
 //                if (d0 >= (double)0.003F || d1 >= (double)0.003F) {
 //                    entityIn.attackEntityFrom(DamageSource.SWEET_BERRY_BUSH, 1.0F);
 //                }

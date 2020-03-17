@@ -8,7 +8,7 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import sporeaoc.byg.catalogs.BYGItemList;
+import sporeaoc.byg.byglists.BYGItemList;
 
 import java.util.function.Supplier;
 

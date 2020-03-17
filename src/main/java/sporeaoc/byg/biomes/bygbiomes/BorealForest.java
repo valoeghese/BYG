@@ -15,8 +15,8 @@ import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import sporeaoc.byg.catalogs.BYGSBList;
-import sporeaoc.byg.world.tree.BYGBiomeFeatures;
+import sporeaoc.byg.byglists.BYGSBList;
+import sporeaoc.byg.world.feature.BYGBiomeFeatures;
 
 public class BorealForest extends Biome {
     static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(BYGSBList.BOREAL, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);

@@ -3,7 +3,7 @@ package sporeaoc.byg.itemtiers;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
-import sporeaoc.byg.catalogs.BYGItemList;
+import sporeaoc.byg.byglists.BYGItemList;
 
 import java.util.function.Supplier;
 

@@ -5,8 +5,8 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
-import sporeaoc.byg.catalogs.BYGBlockList;
-import sporeaoc.byg.catalogs.BYGItemList;
+import sporeaoc.byg.byglists.BYGBlockList;
+import sporeaoc.byg.byglists.BYGItemList;
 import sporeaoc.byg.itemtiers.BYGItemTiers;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -21,7 +21,7 @@ public class BYGItemRegistry {
                 BYGItemList.AMETRINE_PICK = new PickaxeItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(ItemGroup.DECORATIONS)).setRegistryName("ametrine_pickaxe"),
                 BYGItemList.AMETRINE_SWORD = new SwordItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(ItemGroup.DECORATIONS)).setRegistryName("ametrine_sword"),
                 BYGItemList.AMETRINE_BATTLEAXE = new AxeItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(ItemGroup.DECORATIONS)).setRegistryName("ametrine_battleaxe"),
-               // BYGItemList.AMETRINE_HELMET = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.HEAD, (new Item.Properties()).group(ItemGroup.DECORATIONS)).setRegistryName("ametrine_helmet"),
+                // BYGItemList.AMETRINE_HELMET = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.HEAD, (new Item.Properties()).group(ItemGroup.DECORATIONS)).setRegistryName("ametrine_helmet"),
                 //BYGItemList.AMETRINE_CHEST = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.CHEST, (new Item.Properties()).group(ItemGroup.DECORATIONS)).setRegistryName("ametrine_chestplate"),
                 //BYGItemList.AMETRINE_LEGGINGS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.LEGS, (new Item.Properties()).group(ItemGroup.DECORATIONS)).setRegistryName("ametrine_leggings"),
                 //BYGItemList.AMETRINE_BOOTS = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.FEET, (new Item.Properties()).group(ItemGroup.DECORATIONS)).setRegistryName("ametrine_boots"),
@@ -223,7 +223,6 @@ public class BYGItemRegistry {
                 BYGItemList.YELLOW_SPRUCE_SAPLING = new BlockItem(BYGBlockList.YELLOW_SPRUCE_SAPLING, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.YELLOW_SPRUCE_SAPLING.getRegistryName()),
 
 
-
                 //FenceItems
                 BYGItemList.ASPEN_FENCE = new BlockItem(BYGBlockList.ASPEN_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.ASPEN_FENCE.getRegistryName()),
                 BYGItemList.BAOBAB_FENCE = new BlockItem(BYGBlockList.BAOBAB_FENCE, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.BAOBAB_FENCE.getRegistryName()),
@@ -251,7 +250,7 @@ public class BYGItemRegistry {
                 //GrassItems
                 BYGItemList.PEAT_GRASSBLOCK = new BlockItem(BYGBlockList.PEAT_GRASSBLOCK, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.PEAT_GRASSBLOCK.getRegistryName()),
 //                BYGItemList.MEADOW_GRASSBLOCK = new BlockItem(BYGBlockList.MEADOW_GRASSBLOCK, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.MEADOW_GRASSBLOCK.getRegistryName()),
-               BYGItemList.MEADOW_DIRT = new BlockItem(BYGBlockList.MEADOW_DIRT, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.MEADOW_DIRT.getRegistryName()),
+                BYGItemList.MEADOW_DIRT = new BlockItem(BYGBlockList.MEADOW_DIRT, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.MEADOW_DIRT.getRegistryName()),
 
 
                 //MushroomItems
