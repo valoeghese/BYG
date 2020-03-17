@@ -41,13 +41,18 @@ public class BYGItemRegistry {
                 BYGItemList.HOLLY_BERRY = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("holly_berries"),
                 BYGItemList.GREEN_APPLE = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("green_apple"),
 
-//                BYGItemList.BLUE_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.BLUE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("blue_glowcane_stalk"),
-//                BYGItemList.RED_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.RED_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("red_glowcane_stalk"),
-//                BYGItemList.PINK_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.PINK_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("pink_glowcane_stalk"),
-//                BYGItemList.PURPLE_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.PURPLE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("purple_glowcane_stalk"),
-//
-//
-//
+                BYGItemList.BLUE_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.BLUE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("blue_glowcane_stalk"),
+                BYGItemList.RED_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.RED_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("red_glowcane_stalk"),
+                BYGItemList.PINK_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.PINK_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("pink_glowcane_stalk"),
+                BYGItemList.PURPLE_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.PURPLE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("purple_glowcane_stalk"),
+
+                BYGItemList.BLUE_GLOWCANE_DUST = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("blue_glowcane_dust"),
+                BYGItemList.RED_GLOWCANE_DUST = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("red_glowcane_dust"),
+                BYGItemList.PINK_GLOWCANE_DUST = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("pink_glowcane_dust"),
+                BYGItemList.PURPLE_GLOWCANE_DUST = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("purple_glowcane_dust"),
+
+
+
                 //PlankItems
                 BYGItemList.ASPEN_PLANKS = new BlockItem(BYGBlockList.ASPEN_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.ASPEN_PLANKS.getRegistryName()),
                 BYGItemList.BAOBAB_PLANKS = new BlockItem(BYGBlockList.BAOBAB_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.BAOBAB_PLANKS.getRegistryName()),

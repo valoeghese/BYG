@@ -3,7 +3,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "byg:willow_logs"
+      "tag": "#byg:willow_logs"
     }
   ],
   "result": {

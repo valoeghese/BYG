@@ -3,7 +3,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "byg:ebony_logs"
+      "tag": "#byg:ebony_logs"
     }
   ],
   "result": {

@@ -3,7 +3,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "byg:pine_logs"
+      "tag": "#byg:pine_logs"
     }
   ],
   "result": {

@@ -3,7 +3,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "byg:mangrove_logs"
+      "tag": "#byg:mangrove_logs"
     }
   ],
   "result": {

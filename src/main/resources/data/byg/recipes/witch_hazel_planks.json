@@ -3,7 +3,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "byg:witch_hazel_logs"
+      "tag": "#byg:witch_hazel_logs"
     }
   ],
   "result": {

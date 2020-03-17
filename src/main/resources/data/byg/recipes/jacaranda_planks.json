@@ -3,7 +3,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "byg:jacaranda_logs"
+      "tag": "#byg:jacaranda_logs"
     }
   ],
   "result": {

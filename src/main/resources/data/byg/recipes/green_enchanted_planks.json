@@ -3,7 +3,7 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "byg:green_enchanted_logs"
+      "tag": "#byg:green_enchanted_logs"
     }
   ],
   "result": {

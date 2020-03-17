@@ -313,6 +313,13 @@ public class BYGItemList {
 
     //Glowcane Block
 
+    public static Item BLUE_GLOWCANE_DUST;
+    public static Item RED_GLOWCANE_DUST;
+    public static Item PINK_GLOWCANE_DUST;
+    public static Item PURPLE_GLOWCANE_DUST;
+
+    //Glowcane Block
+
     public static Item BLUE_GLOWCANE_BLOCK;
     public static Item RED_GLOWCANE_BLOCK;
     public static Item PINK_GLOWCANE_BLOCK;
