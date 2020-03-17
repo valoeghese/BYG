@@ -1,4 +1,4 @@
-//package sporeaoc.byg.bygproperties.otherproperties.blocks;
+//package sporeaoc.byg.bygproperties.blocks;
 //
 //import java.util.Random;
 //

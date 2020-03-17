@@ -1,4 +1,4 @@
-//package sporeaoc.byg.bygproperties.otherproperties.items;
+//package sporeaoc.byg.bygproperties.items;
 //
 //
 //import net.minecraft.advancements.CriteriaTriggers;

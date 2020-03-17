@@ -47,6 +47,7 @@ public class SeasonalGiantTaiga extends Biome {
             DefaultBiomeFeatures.addReedsAndPumpkins(this);
             DefaultBiomeFeatures.addSprings(this);
             DefaultBiomeFeatures.addFreezeTopLayer(this);
+
             this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.PIG, 10, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));

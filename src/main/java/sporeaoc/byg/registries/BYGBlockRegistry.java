@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.byglists.BYGBlockList;
 import sporeaoc.byg.bygproperties.BYGBlockProperties;
-import sporeaoc.byg.bygproperties.otherproperties.BYGSaplingProperties;
+import sporeaoc.byg.bygproperties.blocks.BYGSaplingProperties;
 import sporeaoc.byg.world.feature.tree.BYGSaplingToTree;
 
 

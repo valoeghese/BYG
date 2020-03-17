@@ -33,8 +33,6 @@ public class SnowyBlueGiantTaiga extends Biome {
             this.addStructure(Feature.MINESHAFT.withConfiguration(new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL)));
             this.addStructure(Feature.STRONGHOLD.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
             this.addStructure(Feature.PILLAGER_OUTPOST.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-
-
             DefaultBiomeFeatures.addCarvers(this);
             DefaultBiomeFeatures.addStructures(this);
             DefaultBiomeFeatures.addMonsterRooms(this);
@@ -50,6 +48,7 @@ public class SnowyBlueGiantTaiga extends Biome {
             DefaultBiomeFeatures.addReedsAndPumpkins(this);
             DefaultBiomeFeatures.addSprings(this);
             DefaultBiomeFeatures.addFreezeTopLayer(this);
+
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
             this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));

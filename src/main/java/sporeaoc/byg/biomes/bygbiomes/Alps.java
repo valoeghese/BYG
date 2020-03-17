@@ -31,7 +31,6 @@ public class Alps extends Biome {
             this.addStructure(Feature.STRONGHOLD.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
             this.addStructure(Feature.PILLAGER_OUTPOST.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
 
-
         }
     @Override
     public Biome getRiver() {

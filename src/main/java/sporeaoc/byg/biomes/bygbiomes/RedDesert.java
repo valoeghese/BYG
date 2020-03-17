@@ -49,6 +49,7 @@ public class RedDesert extends Biome {
             DefaultBiomeFeatures.addSprings(this);
             DefaultBiomeFeatures.addDesertFeatures(this);
             DefaultBiomeFeatures.addFreezeTopLayer(this);
+
             this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.RABBIT, 4, 2, 3));
             this.addSpawn(EntityClassification.AMBIENT, new Biome.SpawnListEntry(EntityType.BAT, 10, 8, 8));
             this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.SPIDER, 100, 4, 4));

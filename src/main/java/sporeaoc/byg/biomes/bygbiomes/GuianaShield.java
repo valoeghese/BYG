@@ -50,7 +50,6 @@ public class GuianaShield extends Biome {
         BYGTreeFeatures.addTropJungleTrees(this);
         DefaultBiomeFeatures.addVeryDenseGrass(this);
         DefaultBiomeFeatures.addJungleTreeForest(this);
-        //this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Biome.createDecoratedFeature(Feature.DOUBLE_PLANT, new DoublePlantConfig(Blocks.TALL_GRASS.getDefaultState()), Placement.NOISE_HEIGHTMAP_32, new NoiseDependant(-0.8D, 0, 85)));
 
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.PIG, 10, 4, 4));
