@@ -9,6 +9,7 @@ public class BYGItemList {
     public static Item BLUE_BERRY;
     public static Item HOLLY_BERRY;
     public static Item GREEN_APPLE;
+
     //FenceItems
     public static Item ASPEN_FENCE;
     public static Item BAOBAB_FENCE;

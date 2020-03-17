@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "byg:aspen_log",
     "byg:stripped_aspen_log"
