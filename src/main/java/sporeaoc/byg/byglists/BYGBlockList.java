@@ -350,7 +350,7 @@ public class BYGBlockList {
     public static Block RED_OAK_SAPLING;
     public static Block RED_SPRUCE_SAPLING;
     public static Block REDWOOD_SAPLINGS;
-    public static Block SILVER_MAPLE_SAPLINGS;
+    public static Block SILVER_MAPLE_SAPLING;
     public static Block SKYRIS_SAPLINGS;
     public static Block WHITE_CHERRY_SAPLING;
     public static Block WILLOW_SAPLING;

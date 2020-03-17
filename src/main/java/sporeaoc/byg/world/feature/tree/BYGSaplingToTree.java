@@ -8,7 +8,6 @@ import sporeaoc.byg.world.feature.tree.birch.YellowBirchTree;
 import sporeaoc.byg.world.feature.tree.coniferousforest.SmallFirTree;
 import sporeaoc.byg.world.feature.tree.coniferousforest.WideFirTree;
 import sporeaoc.byg.world.feature.tree.jacaranda.JacarandaTree;
-import sporeaoc.byg.world.feature.tree.util.BYGAbstractTreeFeature;
 import sporeaoc.byg.world.feature.tree.oak.BrownOakTree;
 import sporeaoc.byg.world.feature.tree.oak.OrangeOakTree;
 import sporeaoc.byg.world.feature.tree.oak.RedOakTree;
@@ -20,6 +19,9 @@ import sporeaoc.byg.world.feature.tree.taiga.spruce.BlueSpruceTree;
 import sporeaoc.byg.world.feature.tree.taiga.spruce.OrangeSpruceTree;
 import sporeaoc.byg.world.feature.tree.taiga.spruce.RedSpruceTree;
 import sporeaoc.byg.world.feature.tree.taiga.spruce.YellowSpruceTree;
+import sporeaoc.byg.world.feature.tree.tropicalrainforest.ShortTropicalRainForestTree;
+import sporeaoc.byg.world.feature.tree.tropicalrainforest.TropicalRainForestTree;
+import sporeaoc.byg.world.feature.tree.util.BYGAbstractTreeFeature;
 import sporeaoc.byg.world.feature.tree.util.BYGHugeTree;
 import sporeaoc.byg.world.feature.tree.util.BYGTree;
 
@@ -149,6 +151,12 @@ public class BYGSaplingToTree {
         @Nullable
         public BYGAbstractTreeFeature<NoFeatureConfig> getTreeFeature(Random random) {
             return new SmallFirTree(NoFeatureConfig::deserialize, false, 0);
+        }
+    }
+    public static class MahogonySaplingToTree extends BYGTree {
+        @Nullable
+        public BYGAbstractTreeFeature<NoFeatureConfig> getTreeFeature(Random random) {
+            return random.nextInt(2) == 0 ? new TropicalRainForestTree(NoFeatureConfig::deserialize, true, 0) : new ShortTropicalRainForestTree(NoFeatureConfig::deserialize, true, 0);
         }
     }
 }

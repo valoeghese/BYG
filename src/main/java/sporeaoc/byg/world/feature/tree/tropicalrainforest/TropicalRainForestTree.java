@@ -23,8 +23,7 @@ public class TropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatureConf
     private static final BlockState LOG = BYGBlockList.MAHOGANY_LOG.getDefaultState();
     private static final BlockState LEAVES = BYGBlockList.MAHOGANY_LEAVES.getDefaultState();
     private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
-
-
+    
     public TropicalRainForestTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
         super(configIn, doBlockNotifyIn, beeHiveChance);
         setSapling((net.minecraftforge.common.IPlantable) BYGBlockList.MAHOGANY_SAPLING);

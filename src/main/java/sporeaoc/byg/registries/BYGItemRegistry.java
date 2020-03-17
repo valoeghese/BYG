@@ -214,7 +214,7 @@ public class BYGItemRegistry {
                 BYGItemList.RED_OAK_SAPLING = new BlockItem(BYGBlockList.RED_OAK_SAPLING, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.RED_OAK_SAPLING.getRegistryName()),
                 BYGItemList.RED_SPRUCE_SAPLINGS = new BlockItem(BYGBlockList.RED_SPRUCE_SAPLING, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.RED_SPRUCE_SAPLING.getRegistryName()),
                 BYGItemList.REDWOOD_SAPLINGS = new BlockItem(BYGBlockList.REDWOOD_SAPLINGS, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.REDWOOD_SAPLINGS.getRegistryName()),
-                BYGItemList.SILVER_MAPLE_SAPLINGS = new BlockItem(BYGBlockList.SILVER_MAPLE_SAPLINGS, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.SILVER_MAPLE_SAPLINGS.getRegistryName()),
+                BYGItemList.SILVER_MAPLE_SAPLINGS = new BlockItem(BYGBlockList.SILVER_MAPLE_SAPLING, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.SILVER_MAPLE_SAPLING.getRegistryName()),
                 BYGItemList.SKYRIS_SAPLINGS = new BlockItem(BYGBlockList.SKYRIS_SAPLINGS, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.SKYRIS_SAPLINGS.getRegistryName()),
                 BYGItemList.WHITE_CHERRY_SAPLING = new BlockItem(BYGBlockList.WHITE_CHERRY_SAPLING, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.WHITE_CHERRY_SAPLING.getRegistryName()),
                 BYGItemList.WILLOW_SAPLING = new BlockItem(BYGBlockList.WILLOW_SAPLING, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BYGBlockList.WILLOW_SAPLING.getRegistryName()),
