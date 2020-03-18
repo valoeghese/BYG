@@ -13,6 +13,10 @@ public class BYGCutoutRenders {
         RenderTypeLookup.setRenderLayer(BYGBlockList.PRICKLY_PEAR_CACTUS.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.WINTER_SUCCULENT.getBlock(), RenderType.getCutoutMipped());
 
+        //SeaPlant
+        RenderTypeLookup.setRenderLayer(BYGBlockList.CATTAIL.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.REEDS.getBlock(), RenderType.getCutoutMipped());
+
         //GlowCane
         RenderTypeLookup.setRenderLayer(BYGBlockList.BLUE_GLOWCANE.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.PINK_GLOWCANE.getBlock(), RenderType.getCutoutMipped());

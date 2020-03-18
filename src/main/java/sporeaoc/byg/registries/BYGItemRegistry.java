@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.byglists.BYGBlockList;
 import sporeaoc.byg.byglists.BYGItemList;
+import sporeaoc.byg.bygproperties.items.BYGLilyItem;
 import sporeaoc.byg.itemtiers.BYGItemTiers;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -165,7 +166,7 @@ public class BYGItemRegistry {
                 BYGItemList.WINTER_SUCCULENT = new BlockItem(BYGBlockList.WINTER_SUCCULENT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.WINTER_SUCCULENT.getRegistryName()),
                 BYGItemList.SHORT_GRASS = new BlockItem(BYGBlockList.SHORT_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.SHORT_GRASS.getRegistryName()),
                 BYGItemList.POISON_IVY = new BlockItem(BYGBlockList.POISON_IVY, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.POISON_IVY.getRegistryName()),
-                BYGItemList.TINY_LILYPADS = (new LilyPadItem(BYGBlockList.TINY_LILYPADS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.TINY_LILYPADS.getRegistryName())),
+                BYGItemList.TINY_LILYPADS = (new BYGLilyItem(BYGBlockList.TINY_LILYPADS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.TINY_LILYPADS.getRegistryName())),
 
                 //Glowcane Blocks
                 BYGItemList.RED_GLOWCANE_BLOCK = new BlockItem(BYGBlockList.RED_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.RED_GLOWCANE_BLOCK.getRegistryName()),
