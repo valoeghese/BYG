@@ -151,18 +151,18 @@ public class BYGBlockProperties {
         }
     }
 
-//    public static class BlockVine extends PoisonIvyBlock {
-//        public BlockVine(String registryName) {
-//            super(Block.Properties.create(Material.LEAVES)
-//                    .sound(SoundType.PLANT)
-//                    .hardnessAndResistance(0.2f)
-//                    .tickRandomly()
-//                    .doesNotBlockMovement()
-//
-//            );
-//            setRegistryName(registryName);
-//        }
-//    }
+    public static class BYGPoisonIvy extends PoisonIvyBlock {
+        public BYGPoisonIvy(String registryName) {
+            super(Block.Properties.create(Material.LEAVES)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(0.2f)
+                    .tickRandomly()
+                    .doesNotBlockMovement()
+
+            );
+            setRegistryName(registryName);
+        }
+    }
 
     public static class BYGLog extends LogBlock {
         public BYGLog(String registryName) {

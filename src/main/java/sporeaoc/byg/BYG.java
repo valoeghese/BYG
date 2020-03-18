@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 import sporeaoc.byg.byglists.BYGItemList;
 import sporeaoc.byg.config.BYGConfig;
 import sporeaoc.byg.config.biomeweight.ConfigWeightManager;
+import sporeaoc.byg.textures.BlockColorManager;
 import sporeaoc.byg.textures.renders.BYGCutoutRenders;
 import sporeaoc.byg.world.feature.BYGFeaturesInVanilla;
 
@@ -26,10 +27,13 @@ public class BYG {
     public static final Init setup = new Init();
     public static final BYGCutoutRenders cutoutRenders = new BYGCutoutRenders();
     public static final BYGFeaturesInVanilla bygFeaturesInVanilla = new BYGFeaturesInVanilla();
+    public static final BlockColorManager blockColorManager = new BlockColorManager();
 
 
     public BYG() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(blockColorManager::onBlockColorsInit);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(blockColorManager::onItemColorsInit);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(bygFeaturesInVanilla::addFeatures);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(cutoutRenders::renderCutOuts);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BYGConfig.COMMON_CONFIG);

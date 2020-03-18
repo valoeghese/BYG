@@ -165,8 +165,8 @@ public class BYGItemRegistry {
                 BYGItemList.PRICKLY_PEAR_CACTUS = new BlockItem(BYGBlockList.PRICKLY_PEAR_CACTUS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PRICKLY_PEAR_CACTUS.getRegistryName()),
                 BYGItemList.WINTER_SUCCULENT = new BlockItem(BYGBlockList.WINTER_SUCCULENT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.WINTER_SUCCULENT.getRegistryName()),
                 BYGItemList.SHORT_GRASS = new BlockItem(BYGBlockList.SHORT_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.SHORT_GRASS.getRegistryName()),
-//                BYGItemList.POISON_IVY = new BlockItem(BYGBlockList.POISON_IVY, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.POISON_IVY.getRegistryName()),
-//                BYGItemList.TINY_LILYPADS = (new LilyItem(BYGBlockList.TINY_LILYPADS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.TINY_LILYPADS.getRegistryName())),
+                BYGItemList.POISON_IVY = new BlockItem(BYGBlockList.POISON_IVY, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.POISON_IVY.getRegistryName()),
+                BYGItemList.TINY_LILYPADS = (new LilyPadItem(BYGBlockList.TINY_LILYPADS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.TINY_LILYPADS.getRegistryName())),
 
                 //Glowcane Blocks
                 BYGItemList.RED_GLOWCANE_BLOCK = new BlockItem(BYGBlockList.RED_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.RED_GLOWCANE_BLOCK.getRegistryName()),

@@ -269,7 +269,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.RED_GLOWCANE = new BYGBlockProperties.BYGGlowCane("red_glowcane"),
                 BYGBlockList.PURPLE_GLOWCANE = new BYGBlockProperties.BYGGlowCane("purple_glowcane"),
                 BYGBlockList.PINK_GLOWCANE = new BYGBlockProperties.BYGGlowCane("pink_glowcane"),
-                //BYGBlockList.POISON_IVY = new BYGBlockProperties.BlockVine("poison_ivy"),
+                BYGBlockList.POISON_IVY = new BYGBlockProperties.BYGPoisonIvy("poison_ivy"),
                 BYGBlockList.BLUEBERRY_BUSH = new BYGBlockProperties.BYGBerryBush("blueberry_bush"),
                 BYGBlockList.TINY_LILYPADS = new BYGBlockProperties.BYGLily("tiny_lilypads"),
 
