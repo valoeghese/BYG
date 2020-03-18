@@ -13,7 +13,7 @@ import sporeaoc.byg.byglists.BYGFeatureList;
 
 public class BYGFeatures {
     public static void addAlliumFieldFlowers(Biome biome) {
-        biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.FLOWER.withConfiguration(BYGFeatureConfigs.ALLIUMBUSH_CONFIG).withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(200))));
+        biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.FLOWER.withConfiguration(BYGFeatureConfigs.ALLIUMBUSH_CONFIG).withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(200))));
     }
 
     public static void addAmaranthFieldFlowers(Biome biome) {
@@ -22,7 +22,7 @@ public class BYGFeatures {
                 Feature.FLOWER.withConfiguration(BYGFeatureConfigs.CYANAMARANTH_CONFIG).func_227227_a_(0.3F),
                 Feature.FLOWER.withConfiguration(BYGFeatureConfigs.MAGENTAAMARANTH_CONFIG).func_227227_a_(0.3F),
                 Feature.FLOWER.withConfiguration(BYGFeatureConfigs.ORANGEAMARANTH_CONFIG).func_227227_a_(0.3F)),
-                Feature.FLOWER.withConfiguration(BYGFeatureConfigs.PURPLEAMARANTH_CONFIG))).withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(200))));
+                Feature.FLOWER.withConfiguration(BYGFeatureConfigs.PURPLEAMARANTH_CONFIG))).withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(200))));
     }
 
     public static void addPrairieGrass(Biome biome) {

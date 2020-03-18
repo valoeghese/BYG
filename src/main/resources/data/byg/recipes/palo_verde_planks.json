@@ -3,11 +3,11 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "byg:baobab_logs"
+      "tag": "byg:palo_verde_logs"
     }
   ],
   "result": {
-    "item": "byg:baobab_planks",
+    "item": "minecraft:birch_planks",
     "count": 4
   }
 }

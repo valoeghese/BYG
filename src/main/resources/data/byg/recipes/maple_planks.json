@@ -3,11 +3,11 @@
   "group": "planks",
   "ingredients": [
     {
-      "tag": "byg:baobab_logs"
+      "tag": "byg:maple_logs"
     }
   ],
   "result": {
-    "item": "byg:baobab_planks",
+    "item": "byg:maple_planks",
     "count": 4
   }
 }
