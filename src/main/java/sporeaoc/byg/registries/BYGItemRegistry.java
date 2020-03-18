@@ -252,7 +252,7 @@ public class BYGItemRegistry {
 
                 //GrassItems
                 BYGItemList.PEAT_GRASSBLOCK = new BlockItem(BYGBlockList.PEAT_GRASSBLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PEAT_GRASSBLOCK.getRegistryName()),
-//                BYGItemList.MEADOW_GRASSBLOCK = new BlockItem(BYGBlockList.MEADOW_GRASSBLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.MEADOW_GRASSBLOCK.getRegistryName()),
+                BYGItemList.MEADOW_GRASSBLOCK = new BlockItem(BYGBlockList.MEADOW_GRASSBLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.MEADOW_GRASSBLOCK.getRegistryName()),
                 BYGItemList.MEADOW_DIRT = new BlockItem(BYGBlockList.MEADOW_DIRT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.MEADOW_DIRT.getRegistryName()),
 
 
@@ -279,7 +279,7 @@ public class BYGItemRegistry {
 
 
                 BYGItemList.MOSSY_STONE = new BlockItem(BYGBlockList.MOSSY_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.MOSSY_STONE.getRegistryName()),
-                //BYGItemList.OVERGROWN_STONE = new BlockItem(BYGBlockList.OVERGROWN_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("yeet"),
+                BYGItemList.OVERGROWN_STONE = new BlockItem(BYGBlockList.OVERGROWN_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.OVERGROWN_STONE.getRegistryName()),
                 BYGItemList.ROCKY_STONE = new BlockItem(BYGBlockList.ROCKY_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.ROCKY_STONE.getRegistryName()),
 
 

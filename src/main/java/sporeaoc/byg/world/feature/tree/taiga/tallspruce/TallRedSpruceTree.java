@@ -20,7 +20,7 @@ import java.util.function.Function;
 public class TallRedSpruceTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = Blocks.SPRUCE_LOG.getDefaultState();
-    private static final BlockState LEAVES = BYGBlockList.BLUE_SPRUCE_LEAVES.getDefaultState();
+    private static final BlockState LEAVES = BYGBlockList.RED_SPRUCE_LEAVES.getDefaultState();
     private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
     public TallRedSpruceTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {

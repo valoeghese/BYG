@@ -7,10 +7,9 @@ import net.minecraft.potion.Effects;
 import net.minecraft.state.properties.Half;
 import net.minecraft.state.properties.StairsShape;
 import net.minecraft.util.Direction;
-import sporeaoc.byg.bygproperties.blocks.BYGSnowyLeavesBlock;
-import sporeaoc.byg.bygproperties.blocks.BYGStairBlock;
-import sporeaoc.byg.bygproperties.blocks.BlueBerryBush;
-import sporeaoc.byg.bygproperties.blocks.BookshelfBlock;
+import sporeaoc.byg.bygproperties.blocks.*;
+import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGMeadowGrassBlock;
+import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGOverGrownStoneBlock;
 
 public class BYGBlockProperties {
     public static class BYGFence extends FenceBlock {
@@ -94,20 +93,31 @@ public class BYGBlockProperties {
 //        }
 //    }
 
-//    public static class BlockOvergrownStone extends OvergrownStoneBlock {
-//        public BlockOvergrownStone(String registryName) {
-//            super(Block.Properties.create(Material.ROCK)
-//                    .sound(SoundType.PLANT)
-//                    .hardnessAndResistance(1.5f, 6.0f)
-//                    .tickRandomly()
-//
-//            );
-//            setRegistryName(registryName);
-//        }
-//    }
+    public static class BlockOvergrownStoneBlock extends BYGOverGrownStoneBlock {
+        public BlockOvergrownStoneBlock(String registryName) {
+            super(Block.Properties.create(Material.ROCK)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(1.5f, 6.0f)
+                    .tickRandomly()
+
+            );
+            setRegistryName(registryName);
+        }
+    }
 
     public static class BYGDirt extends Block {
         public BYGDirt(String registryName) {
+            super(Block.Properties.create(Material.EARTH)
+                    .sound(SoundType.GROUND)
+                    .hardnessAndResistance(0.2f)
+                    .tickRandomly()
+            );
+            setRegistryName(registryName);
+        }
+    }
+
+    public static class BYGMeadowGrass extends BYGMeadowGrassBlock {
+        public BYGMeadowGrass(String registryName) {
             super(Block.Properties.create(Material.EARTH)
                     .sound(SoundType.GROUND)
                     .hardnessAndResistance(0.2f)

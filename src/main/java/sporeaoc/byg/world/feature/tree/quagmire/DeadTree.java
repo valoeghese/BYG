@@ -1,6 +1,7 @@
-package sporeaoc.byg.world.feature.tree.taiga.tallspruce;
+package sporeaoc.byg.world.feature.tree.quagmire;
 
 import com.mojang.datafixers.Dynamic;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.Direction;
@@ -16,18 +17,15 @@ import java.util.Random;
 import java.util.Set;
 import java.util.function.Function;
 
-//THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class TallOrangeSpruceTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
+public class DeadTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
-    private static final BlockState LOG = Blocks.SPRUCE_LOG.getDefaultState();
-    private static final BlockState LEAVES = BYGBlockList.ORANGE_SPRUCE_LEAVES.getDefaultState();
+    private static final BlockState LOG = Blocks.OAK_LOG.getDefaultState();
+    private static final BlockState LEAVES = Blocks.OAK_LEAVES.getDefaultState();
     private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
-    public TallOrangeSpruceTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+    public DeadTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
         super(configIn, doBlockNotifyIn, beeHiveChance);
-        setSapling((net.minecraftforge.common.IPlantable) BYGBlockList.RED_SPRUCE_SAPLING);
     }
-
 
     protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
         return func_214587_a(
@@ -36,15 +34,13 @@ public class TallOrangeSpruceTree extends BYGAbstractTreeFeature<NoFeatureConfig
     }
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
-        //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
-        int randTreeHeight = rand.nextInt(2) + rand.nextInt(3) + 12;
-        //Positions
+        int randTreeHeight = rand.nextInt(4) + 4;
         int posX = position.getX();
         int posY = position.getY();
         int posZ = position.getZ();
         if (posY >= 1 && posY + randTreeHeight + 1 < 256) {
             BlockPos blockpos = position.down();
-            if (!isSoil(worldIn, blockpos, getSapling())) {
+            if (!isQuagmireSB(worldIn, blockpos, getSapling())) {
                 return false;
             } else if (!this.doesTreeFit(worldIn, position, randTreeHeight)) {
                 return false;
@@ -58,6 +54,7 @@ public class TallOrangeSpruceTree extends BYGAbstractTreeFeature<NoFeatureConfig
                 int posZ1 = posZ;
                 int topTrunkHeight = posY + randTreeHeight - 1;
 
+                //Raising the 'groundUpLogRemover'  will remove all log blocks from the ground up no matter how thick the trunk is based on the value given. 5 would destroy all trunks from 5 up off the ground.
                 for (int groundUpLogRemover = 0; groundUpLogRemover < randTreeHeight; ++groundUpLogRemover) {
                     if (groundUpLogRemover >= randTreeHeight2 && posY1 < 0) { //Unknown
                         posX1 += direction.getXOffset();
@@ -66,45 +63,38 @@ public class TallOrangeSpruceTree extends BYGAbstractTreeFeature<NoFeatureConfig
                     }
                     //This Int is responsible for the Y coordinate of the trunk BlockPos'.
                     int logplacer = posY + groundUpLogRemover;
-                    BlockPos blockpos1 = new BlockPos(posX1, logplacer, posZ1);
+                    int logplacer2 = posY + randTreeHeight;
 
+                    BlockPos blockpos1 = new BlockPos(posX1, logplacer, posZ1);
+                    BlockPos blockpos2 = new BlockPos(posX1, logplacer2, posZ1);
+
+
+
+                    //Sets Logs
                     if (isAirOrLeaves(worldIn, blockpos1)) {
                         this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
+                        this.treelog(changedBlocks, worldIn, blockpos2.west(), boundsIn);
+                        this.treelog(changedBlocks, worldIn, blockpos2.west().up(), boundsIn);
+
+
                     }
                 }
-                int leaveColor = rand.nextInt(1) + 1;
-
-
-                if (leaveColor == 1) {
+                {
                     int leavessquarespos = rand.nextInt(1) + 1;
-                    for (int posXLeafWidth = (leavessquarespos * -1); posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
-                        for (int posZLeafWidthL0 = (leavessquarespos * -1); posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
-                            this.leafs(worldIn, posX1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 - 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 - 1, topTrunkHeight - 1, posZ1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 - 1, topTrunkHeight - 2, posZ1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 - 1, topTrunkHeight - 3, posZ1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 + 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 + 1, topTrunkHeight - 1, posZ1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 + 1, topTrunkHeight - 2, posZ1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1 + 1, topTrunkHeight - 3, posZ1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1, topTrunkHeight - 1, posZ1 - 1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1, topTrunkHeight - 2, posZ1 - 1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1, topTrunkHeight - 3, posZ1 - 1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1, topTrunkHeight - 1, posZ1 + 1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1, topTrunkHeight - 2, posZ1 + 1, boundsIn, changedBlocks);
-                            this.leafs(worldIn, posX1, topTrunkHeight - 3, posZ1 + 1, boundsIn, changedBlocks);
+                    for (int posXLeafWidth = -leavessquarespos; posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
+                        for (int posZLeafWidthL0 = -leavessquarespos; posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
+
                         }
                     }
                 }
             }
-        }
-        return true;
-        //}
-    }
 
+            return true;
+            //}
+        } else {
+            return false;
+        }
+    }
 
     private boolean doesTreeFit(IWorldGenerationBaseReader reader, BlockPos blockPos, int height) {
         int x = blockPos.getX();
@@ -114,7 +104,7 @@ public class TallOrangeSpruceTree extends BYGAbstractTreeFeature<NoFeatureConfig
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
-            int distance = 2;
+            int distance = 0;
             if (yOffset == -5) {
                 distance = 0;
             }
@@ -148,6 +138,11 @@ public class TallOrangeSpruceTree extends BYGAbstractTreeFeature<NoFeatureConfig
         if (isAir(reader, blockpos)) {
             this.setLogState(blockPos, reader, blockpos, LEAVES, boundingBox);
         }
-
+    }
+    public static boolean isQuagmireSB(IWorldGenerationBaseReader worldIn, BlockPos pos, net.minecraftforge.common.IPlantable sapling) {
+        return worldIn.hasBlockState(pos, (p_214582_0_) -> {
+            Block block = p_214582_0_.getBlock();
+            return  block == BYGBlockList.MUD_BLOCK || block == BYGBlockList.PEAT_BLOCK;
+        });
     }
 }

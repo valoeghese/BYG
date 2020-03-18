@@ -77,7 +77,6 @@ public abstract class BYGAbstractTreeFeature<T extends IFeatureConfig> extends F
       else return worldIn.hasBlockState(pos, state -> state.canBeReplacedByLeaves((net.minecraft.world.IWorldReader)worldIn, pos));
    }
 
-   @Deprecated //Forge: moved to isSoil
    protected static boolean isDirtOrGrassBlock(IWorldGenerationBaseReader worldIn, BlockPos pos) {
       return worldIn.hasBlockState(pos, (p_214582_0_) -> {
          Block block = p_214582_0_.getBlock();

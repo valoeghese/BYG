@@ -1,6 +1,5 @@
 package sporeaoc.byg.byglists;
 
-import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import sporeaoc.byg.world.feature.tree.birch.BrownBirchTree;
 import sporeaoc.byg.world.feature.tree.birch.OrangeBirchTree;
@@ -13,10 +12,10 @@ import sporeaoc.byg.world.feature.tree.coniferousforest.WideFirTree;
 import sporeaoc.byg.world.feature.tree.cypressswamplands.HugeCypressTree;
 import sporeaoc.byg.world.feature.tree.deciduousforest.*;
 import sporeaoc.byg.world.feature.tree.jacaranda.JacarandaTree;
-import sporeaoc.byg.world.feature.tree.util.BYGAbstractTreeFeature;
 import sporeaoc.byg.world.feature.tree.oak.BrownOakTree;
 import sporeaoc.byg.world.feature.tree.oak.OrangeOakTree;
 import sporeaoc.byg.world.feature.tree.oak.RedOakTree;
+import sporeaoc.byg.world.feature.tree.quagmire.DeadTree;
 import sporeaoc.byg.world.feature.tree.taiga.giantspruce.GiantBlueSpruceTree;
 import sporeaoc.byg.world.feature.tree.taiga.giantspruce.GiantOrangeSpruceTree;
 import sporeaoc.byg.world.feature.tree.taiga.giantspruce.GiantRedSpruceTree;
@@ -35,6 +34,7 @@ import sporeaoc.byg.world.feature.tree.taiga.tallspruce.TallRedSpruceTree;
 import sporeaoc.byg.world.feature.tree.taiga.tallspruce.TallYellowSpruceTree;
 import sporeaoc.byg.world.feature.tree.tropicalrainforest.ShortTropicalRainForestTree;
 import sporeaoc.byg.world.feature.tree.tropicalrainforest.TropicalRainForestTree;
+import sporeaoc.byg.world.feature.tree.util.BYGAbstractTreeFeature;
 
 public class BYGFeatureList {
     //Seasonal Oaks
@@ -64,10 +64,10 @@ public class BYGFeatureList {
 
 
     //Seasonal TaigaTrees
-    public static final Feature<NoFeatureConfig> BLUEGIANTSPUCE_TREE = new GiantBlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final Feature<NoFeatureConfig> TALLBLUESPRUCE_TREE = new TallBlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final Feature<NoFeatureConfig> BLUESPRUCE_TREE = new BlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
-    public static final Feature<NoFeatureConfig> SMALLBLUESPRUCE_TREE = new SmallBlueTaigaTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> BLUEGIANTSPUCE_TREE = new GiantBlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> TALLBLUESPRUCE_TREE = new TallBlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> BLUESPRUCE_TREE = new BlueSpruceTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALLBLUESPRUCE_TREE = new SmallBlueTaigaTree(NoFeatureConfig::deserialize, false, 0);
 
     public static final BYGAbstractTreeFeature<NoFeatureConfig> GIANTORANGESPRUCE_TREE = new GiantOrangeSpruceTree(NoFeatureConfig::deserialize, false, 0);
     public static final BYGAbstractTreeFeature<NoFeatureConfig> TALLORANGESPRUCE_TREE = new TallOrangeSpruceTree(NoFeatureConfig::deserialize, false, 0);
@@ -98,5 +98,8 @@ public class BYGFeatureList {
     //Coniferous Trees
     public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALLCONIFEROUS_TREE = new SmallFirTree(NoFeatureConfig::deserialize, false, 0);
     public static final BYGAbstractTreeFeature<NoFeatureConfig> WIDECONIFEROUS_TREE = new WideFirTree(NoFeatureConfig::deserialize, false, 0);
+
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> DEAD_TREE = new DeadTree(NoFeatureConfig::deserialize, false, 0);
+
 }
 

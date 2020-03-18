@@ -145,7 +145,7 @@ public class BYGBlockRegistry {
         event.getRegistry().registerAll(
 
                 BYGBlockList.PEAT_GRASSBLOCK = new BYGBlockProperties.BYGGrassBlock("peat_grass"),
-                //BYGBlockList.MEADOW_GRASSBLOCK = new BYGBlockProperties.BlockMeadowGrass("meadow_grass_block"),
+                BYGBlockList.MEADOW_GRASSBLOCK = new BYGBlockProperties.BYGMeadowGrass("meadow_grass_block"),
                 BYGBlockList.MEADOW_DIRT = new BYGBlockProperties.BYGDirt("meadow_dirt"),
                 BYGBlockList.MUD_BLOCK = new BYGBlockProperties.BYGDirt("mud_block"),
                 BYGBlockList.MUD_BRICKS = new BYGBlockProperties.BYGDirt("mud_bricks")
@@ -366,7 +366,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.DACITE_TILE = new BYGBlockProperties.BYGStone("dacite_tile"),
 
                 BYGBlockList.MOSSY_STONE = new BYGBlockProperties.BYGStone("mossy_stone"),
-                //BYGBlockList.OVERGROWN_STONE = new BYGBlockProperties.BlockOvergrownStone("overgrown_stone"),
+                BYGBlockList.OVERGROWN_STONE = new BYGBlockProperties.BlockOvergrownStoneBlock("overgrown_stone"),
                 BYGBlockList.ROCKY_STONE = new BYGBlockProperties.BYGStone("rocky_stone"),
 
                 BYGBlockList.SCORIA_STONE = new BYGBlockProperties.BYGStone("scoria_stone"),

@@ -120,6 +120,7 @@ public class BYGCutoutRenders {
 
         //Other renders
         RenderTypeLookup.setRenderLayer(BYGBlockList.BLUEBERRY_BUSH.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.OVERGROWN_STONE.getBlock(), RenderType.getCutoutMipped());
 
     }
 }
