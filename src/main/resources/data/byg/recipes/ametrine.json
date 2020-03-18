@@ -1,13 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "planks",
   "ingredients": [
     {
-      "tag": "#byg:maple_logs"
+      "item": "byg:ametrine_block"
     }
   ],
   "result": {
-    "item": "byg:maple_planks",
-    "count": 4
+    "item": "byg:ametrine_gems",
+    "count": 9
   }
 }
