@@ -19,7 +19,7 @@ public class BYGItemRegistry {
                 BYGItemList.AMETRINE_PICK = new PickaxeItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_pickaxe"),
                 BYGItemList.AMETRINE_SWORD = new SwordItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_sword"),
                 BYGItemList.AMETRINE_BATTLEAXE = new AxeItem(BYGItemTiers.AMETRINE, 3, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_battleaxe"),
-                BYGItemList.AMETRINE_HOE = new HoeItem(BYGItemTiers.AMETRINE, 3, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_hoe"),
+                //BYGItemList.AMETRINE_HOE = new HoeItem(BYGItemTiers.AMETRINE, 3, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_hoe"),
 
                 //BYGItemList.AMETRINE_HELMET = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.HEAD, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_helmet"),
                 //BYGItemList.AMETRINE_CHEST = new ArmorItem(BYGArmorTiers.AMETRINE, EquipmentSlotType.CHEST, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("ametrine_chestplate"),
@@ -31,7 +31,7 @@ public class BYGItemRegistry {
                 BYGItemList.PENDORITE_PICK = new PickaxeItem(BYGItemTiers.PENDORITE, 2, -2.8F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_pickaxe"),
                 BYGItemList.PENDORITE_SWORD = new SwordItem(BYGItemTiers.PENDORITE, 4, -2.4F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_sword"),
                 BYGItemList.PENDORITE_BATTLEAXE = new AxeItem(BYGItemTiers.PENDORITE, 9.0f, -3.3F, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_battleaxe"),
-                BYGItemList.PENDORITE_HOE = new HoeItem(BYGItemTiers.PENDORITE, 0.5f, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_hoe"),
+                //BYGItemList.PENDORITE_HOE = new HoeItem(BYGItemTiers.PENDORITE, 0.5f, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_hoe"),
 
                 //BYGItemList.PENDORITE_HELMET = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.HEAD, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_helmet"),
                 //BYGItemList.PENDORITE_CHEST = new ArmorItem(BYGArmorTiers.PENDORITE, EquipmentSlotType.CHEST, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pendorite_chestplate"),

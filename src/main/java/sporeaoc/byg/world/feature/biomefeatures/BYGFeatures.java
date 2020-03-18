@@ -12,7 +12,6 @@ import sporeaoc.byg.byglists.BYGFeatureList;
 public class BYGFeatures {
     public static void addAlliumFieldFlowers(Biome biome) {
         biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.FLOWER.withConfiguration(BYGFeatureConfigs.ALLIUM_CONFIG).withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(200))));
-
     }
 
     public static void addAmaranthFieldFlowers(Biome biome) {
