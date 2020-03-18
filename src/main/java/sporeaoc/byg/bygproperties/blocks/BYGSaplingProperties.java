@@ -11,6 +11,7 @@ import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
+import sporeaoc.byg.byglists.BYGBlockList;
 import sporeaoc.byg.world.feature.tree.util.BYGTree;
 
 import java.util.Random;
@@ -30,6 +31,11 @@ public class BYGSaplingProperties extends BushBlock implements IGrowable {
         this.tree = tree;
         this.setDefaultState(this.stateContainer.getBaseState().with(STAGE, Integer.valueOf(0)));
         setRegistryName(registryName);
+    }
+    @Override
+    protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
+        Block block = state.getBlock();
+        return block == Blocks.GRASS_BLOCK || block == Blocks.DIRT || block == Blocks.COARSE_DIRT || block == Blocks.PODZOL || block == Blocks.FARMLAND || block == BYGBlockList.OVERGROWN_STONE;
     }
 
     @Override

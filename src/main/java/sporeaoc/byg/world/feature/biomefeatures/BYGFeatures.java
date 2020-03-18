@@ -13,16 +13,17 @@ import sporeaoc.byg.byglists.BYGFeatureList;
 
 public class BYGFeatures {
     public static void addAlliumFieldFlowers(Biome biome) {
-        biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.FLOWER.withConfiguration(BYGFeatureConfigs.ALLIUMBUSH_CONFIG).withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(200))));
+        biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(BYGFeatureConfigs.ALLIUMBUSH_CONFIG).withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(200))));
     }
 
     public static void addAmaranthFieldFlowers(Biome biome) {
         biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_SELECTOR.withConfiguration(new MultipleRandomFeatureConfig(ImmutableList.of(
-                Feature.FLOWER.withConfiguration(BYGFeatureConfigs.AMARANTH_CONFIG).func_227227_a_(0.3F),
-                Feature.FLOWER.withConfiguration(BYGFeatureConfigs.CYANAMARANTH_CONFIG).func_227227_a_(0.3F),
-                Feature.FLOWER.withConfiguration(BYGFeatureConfigs.MAGENTAAMARANTH_CONFIG).func_227227_a_(0.3F),
-                Feature.FLOWER.withConfiguration(BYGFeatureConfigs.ORANGEAMARANTH_CONFIG).func_227227_a_(0.3F)),
-                Feature.FLOWER.withConfiguration(BYGFeatureConfigs.PURPLEAMARANTH_CONFIG))).withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(200))));
+                Feature.RANDOM_PATCH.withConfiguration(BYGFeatureConfigs.AMARANTH_CONFIG).func_227227_a_(0.3F),
+                Feature.RANDOM_PATCH.withConfiguration(BYGFeatureConfigs.CYANAMARANTH_CONFIG).func_227227_a_(0.3F),
+                Feature.RANDOM_PATCH.withConfiguration(BYGFeatureConfigs.MAGENTAAMARANTH_CONFIG).func_227227_a_(0.3F),
+                Feature.RANDOM_PATCH.withConfiguration(BYGFeatureConfigs.ORANGEAMARANTH_CONFIG).func_227227_a_(0.3F)),
+                Feature.RANDOM_PATCH.withConfiguration(BYGFeatureConfigs.PURPLEAMARANTH_CONFIG))).withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(
+                new FrequencyConfig(300))));
     }
 
     public static void addPrairieGrass(Biome biome) {

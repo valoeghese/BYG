@@ -23,6 +23,7 @@ import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.template.Template;
+import sporeaoc.byg.byglists.BYGBlockList;
 
 import java.util.List;
 import java.util.Random;
@@ -83,7 +84,7 @@ public abstract class BYGAbstractTreeFeature<T extends IFeatureConfig> extends F
     protected static boolean isDirtOrGrassBlock(IWorldGenerationBaseReader worldIn, BlockPos pos) {
         return worldIn.hasBlockState(pos, (p_214582_0_) -> {
             Block block = p_214582_0_.getBlock();
-            return Feature.isDirt(block) || block == Blocks.GRASS_BLOCK;
+            return Feature.isDirt(block) || block == Blocks.GRASS_BLOCK || block == BYGBlockList.OVERGROWN_STONE;
         });
     }
 
