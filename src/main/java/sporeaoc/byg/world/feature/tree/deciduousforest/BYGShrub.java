@@ -152,13 +152,6 @@ public class BYGShrub extends BYGAbstractTreeFeature<NoFeatureConfig> {
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
             int distance = 0;
-            if (yOffset == -5) {
-                distance = 0;
-            }
-
-            if (yOffset >= height - 1) {
-                distance = 1;
-            }
 
             for (int xOffset = -distance; xOffset <= distance; ++xOffset) {
                 for (int zOffset = -distance; zOffset <= distance; ++zOffset) {
@@ -184,34 +177,6 @@ public class BYGShrub extends BYGAbstractTreeFeature<NoFeatureConfig> {
         BlockPos blockpos = new BlockPos(x, y, z);
         if (isAir(reader, blockpos)) {
             this.setLogState(blockPos, reader, blockpos, LEAVES, boundingBox);
-        }
-
-    }
-    private void leafs2(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
-        BlockPos blockpos = new BlockPos(x, y, z);
-        if (isAir(reader, blockpos)) {
-            this.setLogState(blockPos, reader, blockpos, LEAVES2, boundingBox);
-        }
-
-    }
-    private void leafs3(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
-        BlockPos blockpos = new BlockPos(x, y, z);
-        if (isAir(reader, blockpos)) {
-            this.setLogState(blockPos, reader, blockpos, LEAVES3, boundingBox);
-        }
-
-    }
-    private void leafs4(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
-        BlockPos blockpos = new BlockPos(x, y, z);
-        if (isAir(reader, blockpos)) {
-            this.setLogState(blockPos, reader, blockpos, LEAVES4, boundingBox);
-        }
-
-    }
-    private void leafs5(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
-        BlockPos blockpos = new BlockPos(x, y, z);
-        if (isAir(reader, blockpos)) {
-            this.setLogState(blockPos, reader, blockpos, LEAVES5, boundingBox);
         }
 
     }

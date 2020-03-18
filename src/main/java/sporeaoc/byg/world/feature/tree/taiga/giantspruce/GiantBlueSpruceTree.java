@@ -329,14 +329,9 @@ public class GiantBlueSpruceTree extends BYGAbstractTreeFeature<NoFeatureConfig>
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
-            int distance = 2;
-            if (yOffset == -5) {
-                distance = 0;
-            }
+            int distance = 8;
 
-            if (yOffset >= height - 1) {
-                distance = 1;
-            }
+
 
             for (int xOffset = -distance; xOffset <= distance; ++xOffset) {
                 for (int zOffset = -distance; zOffset <= distance; ++zOffset) {

@@ -103,15 +103,7 @@ public class DeadTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
         BlockPos.Mutable position = new BlockPos.Mutable();
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
-            //Distance/Density of trees. Positive Values ONLY
-            int distance = 0;
-            if (yOffset == -5) {
-                distance = 0;
-            }
-
-            if (yOffset >= height - 1) {
-                distance = 1;
-            }
+            int distance = 5;
 
             for (int xOffset = -distance; xOffset <= distance; ++xOffset) {
                 for (int zOffset = -distance; zOffset <= distance; ++zOffset) {

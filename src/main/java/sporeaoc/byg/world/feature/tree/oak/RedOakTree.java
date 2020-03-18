@@ -372,13 +372,6 @@ public class RedOakTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
             int distance = 1;
-            if (yOffset == -5) {
-                distance = 0;
-            }
-
-            if (yOffset >= height - 1) {
-                distance = 1;
-            }
 
             for (int xOffset = -distance; xOffset <= distance; ++xOffset) {
                 for (int zOffset = -distance; zOffset <= distance; ++zOffset) {

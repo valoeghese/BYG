@@ -610,13 +610,6 @@ public class OrangeDeciduousTree extends BYGAbstractTreeFeature<NoFeatureConfig>
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             int distance = 1; //higher the value, lower the density of trees?
-            if (yOffset == -5) { //does nothing?
-                distance = 0; //higher the value, lower the density of trees?
-            }
-
-            if (yOffset >= height - 1) {
-                distance = 1; //higher the value, lower the density of trees?
-            }
 
             for (int xOffset = -distance; xOffset <= distance; ++xOffset) {
                 for (int zOffset = -distance; zOffset <= distance; ++zOffset) {

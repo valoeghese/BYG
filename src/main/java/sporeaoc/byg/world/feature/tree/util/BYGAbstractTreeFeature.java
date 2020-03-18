@@ -36,13 +36,13 @@ public abstract class BYGAbstractTreeFeature<T extends IFeatureConfig> extends F
       super(p_i49920_1_);
    }
 
-   protected static boolean func_214587_a(IWorldGenerationBaseReader p_214587_0_, BlockPos p_214587_1_) {
-      if (!(p_214587_0_ instanceof net.minecraft.world.IWorldReader)) // FORGE: Redirect to state method when possible
-      return p_214587_0_.hasBlockState(p_214587_1_, (p_214573_0_) -> {
-         Block block = p_214573_0_.getBlock();
-         return p_214573_0_.isAir() || p_214573_0_.isIn(BlockTags.LEAVES) || block == Blocks.GRASS_BLOCK || Feature.isDirt(block) || block.isIn(BlockTags.LOGS) || block.isIn(BlockTags.SAPLINGS) || block == Blocks.VINE;
+   protected static boolean func_214587_a(IWorldGenerationBaseReader worldReader, BlockPos blockPos) {
+      if (!(worldReader instanceof net.minecraft.world.IWorldReader)) // FORGE: Redirect to state method when possible
+      return worldReader.hasBlockState(blockPos, (blockPos2) -> {
+         Block block = blockPos2.getBlock();
+         return blockPos2.isAir() || blockPos2.isIn(BlockTags.LEAVES) || block == Blocks.GRASS_BLOCK || Feature.isDirt(block) || block.isIn(BlockTags.LOGS) || block.isIn(BlockTags.SAPLINGS) || block == Blocks.VINE;
       });
-      else return p_214587_0_.hasBlockState(p_214587_1_, state -> state.canBeReplacedByLogs((net.minecraft.world.IWorldReader)p_214587_0_, p_214587_1_)); 
+      else return worldReader.hasBlockState(blockPos, state -> state.canBeReplacedByLogs((net.minecraft.world.IWorldReader) worldReader, blockPos));
    }
 
    protected static boolean isAir(IWorldGenerationBaseReader worldIn, BlockPos pos) {
