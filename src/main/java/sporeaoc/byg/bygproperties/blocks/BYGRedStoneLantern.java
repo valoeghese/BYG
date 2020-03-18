@@ -20,23 +20,24 @@ import javax.annotation.Nullable;
 import java.util.Random;
 
 public class BYGRedStoneLantern extends Block {
-    public static  BooleanProperty LIT = RedstoneTorchBlock.LIT;
-    public static  BooleanProperty HANGING = BlockStateProperties.HANGING;
     protected static final VoxelShape field_220279_b = VoxelShapes.or(Block.makeCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 7.0D, 11.0D), Block.makeCuboidShape(6.0D, 7.0D, 6.0D, 10.0D, 9.0D, 10.0D));
     protected static final VoxelShape field_220280_c = VoxelShapes.or(Block.makeCuboidShape(5.0D, 1.0D, 5.0D, 11.0D, 8.0D, 11.0D), Block.makeCuboidShape(6.0D, 8.0D, 6.0D, 10.0D, 10.0D, 10.0D));
+    public static BooleanProperty LIT = RedstoneTorchBlock.LIT;
+    public static BooleanProperty HANGING = BlockStateProperties.HANGING;
 
 
     public BYGRedStoneLantern(String registryName) {
         super(
                 Block.Properties.create(Material.REDSTONE_LIGHT)
-                .sound(SoundType.LANTERN)
-                .hardnessAndResistance(0.0f)
-                .lightValue(15)
+                        .sound(SoundType.LANTERN)
+                        .hardnessAndResistance(0.0f)
+                        .lightValue(15)
         );
         setRegistryName(registryName);
         this.setDefaultState(this.getDefaultState().with(LIT, Boolean.valueOf(false)));
         this.setDefaultState(this.stateContainer.getBaseState().with(HANGING, Boolean.valueOf(false)));
     }
+
     public int getLightValue(BlockState state) {
         return state.get(LIT) ? super.getLightValue(state) : 0;
     }
@@ -49,6 +50,7 @@ public class BYGRedStoneLantern extends Block {
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         return this.getDefaultState().with(LIT, Boolean.valueOf(context.getWorld().isBlockPowered(context.getPos())));
     }
+
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
         return state.get(HANGING) ? field_220280_c : field_220279_b;
     }

@@ -28,6 +28,12 @@ public class ShortTropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatur
         setSapling((net.minecraftforge.common.IPlantable) BYGBlockList.MAHOGANY_SAPLING);
     }
 
+    protected static boolean canTreePlace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
+        return func_214587_a(
+                genBaseReader, blockPos
+        );
+    }
+
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
         int randTreeHeight = rand.nextInt(2) + rand.nextInt(2) + 3;
@@ -208,11 +214,5 @@ public class ShortTropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatur
             this.setLogState(blockPos, reader, leafpos, LEAVES, boundingBox);
         }
 
-    }
-
-    protected static boolean canTreePlace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
-        return func_214587_a(
-                genBaseReader, blockPos
-        );
     }
 }

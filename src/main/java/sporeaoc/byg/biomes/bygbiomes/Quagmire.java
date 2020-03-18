@@ -57,6 +57,7 @@ public class Quagmire extends Biome {
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.WITCH, 5, 1, 1));
 
     }
+
     @Override
     public Biome getRiver() {
         return this;
@@ -67,10 +68,12 @@ public class Quagmire extends Biome {
 
         return 16765803;
     }
+
     @OnlyIn(Dist.CLIENT)
     public int getFoliageColor(BlockPos pos) {
         return 7048739;
     }
+
     @OnlyIn(Dist.CLIENT)
     public int getSkyColor() {
         return 13789470;

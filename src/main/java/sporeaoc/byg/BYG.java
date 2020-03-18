@@ -19,15 +19,14 @@ import sporeaoc.byg.world.feature.BYGFeaturesInVanilla;
 
 @Mod("byg")
 public class BYG {
-    public static Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "byg";
 
     //public static final WorldType BYGISLANDTYPE = new BYGIslandWorldType();
-
-    public static final String MOD_ID = "byg";
     public static final Init setup = new Init();
     public static final BYGCutoutRenders cutoutRenders = new BYGCutoutRenders();
     public static final BYGFeaturesInVanilla bygFeaturesInVanilla = new BYGFeaturesInVanilla();
     public static final BlockColorManager blockColorManager = new BlockColorManager();
+    public static Logger LOGGER = LogManager.getLogger();
 
 
     public BYG() {
@@ -40,6 +39,10 @@ public class BYG {
         ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-weights-common.toml"));
     }
 
+    private void setup(FMLCommonSetupEvent event) {
+        setup.init();
+    }
+
     public static class Init {
         public static ItemGroup creativeTab = new ItemGroup("byg") {
             @Override
@@ -50,9 +53,5 @@ public class BYG {
 
         public void init() {
         }
-    }
-
-    private void setup( FMLCommonSetupEvent event) {
-        setup.init();
     }
 }

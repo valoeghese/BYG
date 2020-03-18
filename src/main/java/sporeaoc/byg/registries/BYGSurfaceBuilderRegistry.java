@@ -14,9 +14,9 @@ public class BYGSurfaceBuilderRegistry {
     @SubscribeEvent
     public static void bygRegisterSurfaceBuilders(final RegistryEvent.Register<SurfaceBuilder<?>> event) {
         event.getRegistry().registerAll(
-            BYGSBList.BOREAL_SB.setRegistryName("boreal_sb"),
-            BYGSBList.QUAGMIRE_SB.setRegistryName("quagmire_sb"),
-            BYGSBList.DOVER_SB.setRegistryName("dover_sb")
+                BYGSBList.BOREAL_SB.setRegistryName("boreal_sb"),
+                BYGSBList.QUAGMIRE_SB.setRegistryName("quagmire_sb"),
+                BYGSBList.DOVER_SB.setRegistryName("dover_sb")
         );
 
     }

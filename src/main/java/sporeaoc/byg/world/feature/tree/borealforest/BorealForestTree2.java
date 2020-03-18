@@ -30,6 +30,18 @@ public class BorealForestTree2 extends BYGAbstractTreeFeature<NoFeatureConfig> {
         super(configIn, doBlockNotifyIn, beeHiveChance);
     }
 
+    protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
+        return func_214587_a(
+                genBaseReader, blockPos
+        );
+    }
+
+    protected static boolean isDirtOrPeatBlock(IWorldGenerationBaseReader worldIn, BlockPos pos, IPlantable sapling) {
+        return worldIn.hasBlockState(pos, (p_214582_0_) -> {
+            Block block = p_214582_0_.getBlock();
+            return Feature.isDirt(block) || block == BYGBlockList.PEAT_GRASSBLOCK;
+        });
+    }
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
@@ -74,7 +86,7 @@ public class BorealForestTree2 extends BYGAbstractTreeFeature<NoFeatureConfig> {
 
                     //Sets Logs
 
-                        this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
+                    this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
 
 
                 }
@@ -120,8 +132,7 @@ public class BorealForestTree2 extends BYGAbstractTreeFeature<NoFeatureConfig> {
                                     this.leafs(worldIn, posX1 - 2, topTrunkHeight - tHSub7, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight - tHSub7, posZ1 - 2, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight - tHSub7, posZ1 + 2, boundsIn, changedBlocks);
-                                }
-                                else if(leaveRandomizer > 5){
+                                } else if (leaveRandomizer > 5) {
                                     this.leafs(worldIn, posX1 + 1, topTrunkHeight - tHSub7, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1 - 1, topTrunkHeight - tHSub7, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight - tHSub7, posZ1 - 1, boundsIn, changedBlocks);
@@ -148,8 +159,7 @@ public class BorealForestTree2 extends BYGAbstractTreeFeature<NoFeatureConfig> {
                                     this.leafs(worldIn, posX1 - 2, topTrunkHeight - tHSub5, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight - tHSub5, posZ1 - 2, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight - tHSub5, posZ1 + 2, boundsIn, changedBlocks);
-                                }
-                                else if (leaveRandomizer2 < 60 ) {
+                                } else if (leaveRandomizer2 < 60) {
                                     this.leafs(worldIn, posX1 + 1, topTrunkHeight - tHSub5, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1 - 1, topTrunkHeight - tHSub5, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight - tHSub5, posZ1 - 1, boundsIn, changedBlocks);
@@ -175,8 +185,7 @@ public class BorealForestTree2 extends BYGAbstractTreeFeature<NoFeatureConfig> {
                                     this.leafs(worldIn, posX1 - 2, topTrunkHeight - tHSub3, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight - tHSub3, posZ1 - 2, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight - tHSub3, posZ1 + 2, boundsIn, changedBlocks);
-                                }
-                                else if (leaveRandomizer3 == 2) {
+                                } else if (leaveRandomizer3 == 2) {
                                     this.leafs(worldIn, posX1 + 1, topTrunkHeight - tHSub2, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1 - 1, topTrunkHeight - tHSub2, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight - tHSub2, posZ1 - 1, boundsIn, changedBlocks);
@@ -202,17 +211,15 @@ public class BorealForestTree2 extends BYGAbstractTreeFeature<NoFeatureConfig> {
                                     this.leafs(worldIn, posX1 - 2, topTrunkHeight, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight, posZ1 - 2, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight, posZ1 + 2, boundsIn, changedBlocks);
-                                }
-                                else if (leaveRandomizer4 > 19) {
+                                } else if (leaveRandomizer4 > 19) {
                                     this.leafs(worldIn, posX1 + 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1 - 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
                                 }
-                                if(leaveRandomizer5 == 1) {
+                                if (leaveRandomizer5 == 1) {
                                     this.leafs(worldIn, posX1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
-                                }
-                                else if(leaveRandomizer5 == 2) {
+                                } else if (leaveRandomizer5 == 2) {
                                     this.leafs(worldIn, posX1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight + 2, posZ1, boundsIn, changedBlocks);
                                     this.leafs(worldIn, posX1, topTrunkHeight + 2, posZ1, boundsIn, changedBlocks);
@@ -271,17 +278,5 @@ public class BorealForestTree2 extends BYGAbstractTreeFeature<NoFeatureConfig> {
             this.setLogState(blockPos, reader, blockpos, LEAVES, boundingBox);
         }
 
-    }
-
-    protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
-        return func_214587_a(
-                genBaseReader, blockPos
-        );
-    }
-    protected static boolean isDirtOrPeatBlock(IWorldGenerationBaseReader worldIn, BlockPos pos, IPlantable sapling) {
-        return worldIn.hasBlockState(pos, (p_214582_0_) -> {
-            Block block = p_214582_0_.getBlock();
-            return Feature.isDirt(block) || block == BYGBlockList.PEAT_GRASSBLOCK;
-        });
     }
 }

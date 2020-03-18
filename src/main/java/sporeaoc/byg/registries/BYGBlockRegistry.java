@@ -62,7 +62,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.WITCH_HAZEL_BOOKSHELF = new BYGBlockProperties.BlockBookshelf("witch_hazel_bookshelf"),
                 BYGBlockList.ZELKOVA_BOOKSHELF = new BYGBlockProperties.BlockBookshelf("zelkova_bookshelf"),
 
-            //Slabs
+                //Slabs
                 BYGBlockList.ASPEN_SLAB = new BYGBlockProperties.BYGWoodSlab("aspen_slab"),
                 BYGBlockList.BAOBAB_SLAB = new BYGBlockProperties.BYGWoodSlab("baobab_slab"),
                 BYGBlockList.BLUE_ENCHANTED_SLAB = new BYGBlockProperties.BYGWoodSlab("blue_enchanted_slab"),
@@ -85,7 +85,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.WITCH_HAZEL_SLAB = new BYGBlockProperties.BYGWoodSlab("witch_hazel_slab"),
                 BYGBlockList.ZELKOVA_SLAB = new BYGBlockProperties.BYGWoodSlab("zelkova_slab"),
 
-            //Stairs
+                //Stairs
                 BYGBlockList.ASPEN_STAIRS = new BYGBlockProperties.BYGWoodStairs("aspen_stairs"),
                 BYGBlockList.BAOBAB_STAIRS = new BYGBlockProperties.BYGWoodStairs("baobab_stairs"),
                 BYGBlockList.BLUE_ENCHANTED_STAIRS = new BYGBlockProperties.BYGWoodStairs("blue_enchanted_stairs"),
@@ -109,8 +109,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.ZELKOVA_STAIRS = new BYGBlockProperties.BYGWoodStairs("zelkova_stairs")
 
 
-
-                );
+        );
     }
 
     // Fence Blocks
@@ -140,6 +139,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.ZELKOVA_FENCE = new BYGBlockProperties.BYGFence("zelkova_fence")
         );
     }
+
     @SubscribeEvent
     public static void registerDirtBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
@@ -295,8 +295,6 @@ public class BYGBlockRegistry {
                 BYGBlockList.PLANT_STEM = new BYGBlockProperties.BYGLog("plant_stem")
 
 
-
-
         );
     }
 
@@ -378,7 +376,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.SOAPSTONE_PILLAR = new BYGBlockProperties.BYGPillar("soapstone_pillar"),
                 BYGBlockList.SOAPSTONE_TILE = new BYGBlockProperties.BYGStone("soapstone_tile")
 
-                );
+        );
     }
 
     //Stripped Logs

@@ -153,6 +153,7 @@ public class BYGSaplingToTree {
             return new SmallFirTree(NoFeatureConfig::deserialize, false, 0);
         }
     }
+
     public static class MahogonySaplingToTree extends BYGTree {
         @Nullable
         public BYGAbstractTreeFeature<NoFeatureConfig> getTreeFeature(Random random) {

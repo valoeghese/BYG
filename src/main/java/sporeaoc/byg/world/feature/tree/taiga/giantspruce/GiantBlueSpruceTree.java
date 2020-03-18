@@ -332,7 +332,6 @@ public class GiantBlueSpruceTree extends BYGAbstractTreeFeature<NoFeatureConfig>
             int distance = 8;
 
 
-
             for (int xOffset = -distance; xOffset <= distance; ++xOffset) {
                 for (int zOffset = -distance; zOffset <= distance; ++zOffset) {
                     if (!canTreeReplace(reader, position.setPos(x + xOffset, y + yOffset, z + zOffset))) {

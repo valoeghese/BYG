@@ -33,8 +33,8 @@ public abstract class BYGMappedFoilagePlacer implements BYGDynamicSerializable {
     protected void func_227384_a_(IWorldGenerationReader p_227384_1_, Random p_227384_2_, TreeFeatureConfig p_227384_3_, int p_227384_4_, BlockPos p_227384_5_, int p_227384_6_, int p_227384_7_, Set<BlockPos> p_227384_8_) {
         BlockPos.Mutable blockpos$mutable = new BlockPos.Mutable();
 
-        for(int i = -p_227384_7_; i <= p_227384_7_; ++i) {
-            for(int j = -p_227384_7_; j <= p_227384_7_; ++j) {
+        for (int i = -p_227384_7_; i <= p_227384_7_; ++i) {
+            for (int j = -p_227384_7_; j <= p_227384_7_; ++j) {
                 if (!this.func_225572_a_(p_227384_2_, p_227384_4_, i, p_227384_6_, j, p_227384_7_)) {
                     blockpos$mutable.setPos(i + p_227384_5_.getX(), p_227384_6_ + p_227384_5_.getY(), j + p_227384_5_.getZ());
                     this.func_227385_a_(p_227384_1_, p_227384_2_, blockpos$mutable, p_227384_3_, p_227384_8_);

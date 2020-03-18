@@ -109,7 +109,6 @@ public class BYGBlockList {
     public static Block RED_CRACKED_SAND;
 
 
-
     //Sandstone Items
     public static Block BLUE_SANDSTONE;
     public static Block BLUE_CHISELED_SANDSTONE;

@@ -302,8 +302,7 @@ public class DeciduousTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
                                 this.leafs(worldIn, posX1, topTrunkHeight - 7, posZ1 + 1, boundsIn, changedBlocks);
                             }
                         }
-                    }
-                    else if (leavesetting == 3) {
+                    } else if (leavesetting == 3) {
                         int leavessquarespos = rand.nextInt(1) + 1;
                         for (int posXLeafWidth = (leavessquarespos * -1); posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
                             for (int posZLeafWidthL0 = (leavessquarespos * -1); posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {

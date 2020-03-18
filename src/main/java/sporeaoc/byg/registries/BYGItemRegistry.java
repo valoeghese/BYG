@@ -56,7 +56,6 @@ public class BYGItemRegistry {
                 BYGItemList.PURPLE_GLOWCANE_DUST = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("purple_glowcane_dust"),
 
 
-
                 //PlankItems
                 BYGItemList.ASPEN_PLANKS = new BlockItem(BYGBlockList.ASPEN_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.ASPEN_PLANKS.getRegistryName()),
                 BYGItemList.BAOBAB_PLANKS = new BlockItem(BYGBlockList.BAOBAB_PLANKS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.BAOBAB_PLANKS.getRegistryName()),

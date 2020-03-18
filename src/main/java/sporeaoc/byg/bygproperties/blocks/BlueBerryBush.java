@@ -60,11 +60,11 @@ public class BlueBerryBush extends BushBlock implements IGrowable {
 
     public void onEntityCollision(BlockState state, World worldIn, BlockPos pos, Entity entityIn) {
         if (entityIn instanceof LivingEntity && entityIn.getType() != EntityType.FOX && entityIn.getType() != EntityType.BEE) {
-            entityIn.setMotionMultiplier(state, new Vec3d((double)0.8F, 0.75D, (double)0.8F));
+            entityIn.setMotionMultiplier(state, new Vec3d(0.8F, 0.75D, 0.8F));
             if (!worldIn.isRemote && state.get(AGE) > 0 && (entityIn.lastTickPosX != entityIn.getPosX() || entityIn.lastTickPosZ != entityIn.getPosZ())) {
                 double d0 = Math.abs(entityIn.getPosX() - entityIn.lastTickPosX);
                 double d1 = Math.abs(entityIn.getPosZ() - entityIn.lastTickPosZ);
-                if (d0 >= (double)0.003F || d1 >= (double)0.003F) {
+                if (d0 >= (double) 0.003F || d1 >= (double) 0.003F) {
                     entityIn.attackEntityFrom(DamageSource.SWEET_BERRY_BUSH, 1.0F);
                 }
             }
@@ -80,7 +80,7 @@ public class BlueBerryBush extends BushBlock implements IGrowable {
         } else if (i > 1) {
             int j = 1 + worldIn.rand.nextInt(2);
             spawnAsEntity(worldIn, pos, new ItemStack(BYGItemList.BLUE_BERRY, j + (flag ? 1 : 0)));
-            worldIn.playSound((PlayerEntity)null, pos, SoundEvents.ITEM_SWEET_BERRIES_PICK_FROM_BUSH, SoundCategory.BLOCKS, 1.0F, 0.8F + worldIn.rand.nextFloat() * 0.4F);
+            worldIn.playSound(null, pos, SoundEvents.ITEM_SWEET_BERRIES_PICK_FROM_BUSH, SoundCategory.BLOCKS, 1.0F, 0.8F + worldIn.rand.nextFloat() * 0.4F);
             worldIn.setBlockState(pos, state.with(AGE, Integer.valueOf(1)), 2);
             return ActionResultType.SUCCESS;
         } else {

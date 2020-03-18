@@ -32,6 +32,7 @@ public class BlockColorManager {
             return lightReader != null && pos != null ? BiomeColors.getGrassColor(lightReader, pos) : GrassColors.get(0.5D, 1.0D);
         }, BYGBlockList.MEADOW_GRASSBLOCK, BYGBlockList.MAHOGANY_LEAVES, BYGBlockList.POISON_IVY, BYGBlockList.OVERGROWN_STONE, BYGBlockList.SHORT_GRASS, BYGBlockList.TINY_LILYPADS);
     }
+
     /**
      * Register the {@link IItemColor} handlers
      */

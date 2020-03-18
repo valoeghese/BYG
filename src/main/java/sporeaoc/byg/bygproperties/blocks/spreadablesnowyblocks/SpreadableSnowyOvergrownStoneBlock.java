@@ -42,7 +42,7 @@ public class SpreadableSnowyOvergrownStoneBlock extends SnowyDirtBlock {
             if (worldIn.getLight(pos.up()) >= 9) {
                 BlockState blockstate = this.getDefaultState();
 
-                for(int i = 0; i < 4; ++i) {
+                for (int i = 0; i < 4; ++i) {
                     BlockPos blockpos = pos.add(rand.nextInt(3) - 1, rand.nextInt(5) - 3, rand.nextInt(3) - 1);
                     if (worldIn.getBlockState(blockpos).getBlock() == Blocks.STONE && func_220256_c(blockstate, worldIn, blockpos)) {
                         worldIn.setBlockState(blockpos, blockstate.with(SNOWY, Boolean.valueOf(worldIn.getBlockState(blockpos.up()).getBlock() == Blocks.SNOW)));

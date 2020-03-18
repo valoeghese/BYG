@@ -31,6 +31,11 @@ public class ColorfulDeciduousShrubs extends BYGAbstractTreeFeature<NoFeatureCon
         super(configIn, doBlockNotifyIn, beeHiveChance);
     }
 
+    protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
+        return func_214587_a(
+                genBaseReader, blockPos
+        );
+    }
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
@@ -171,8 +176,7 @@ public class ColorfulDeciduousShrubs extends BYGAbstractTreeFeature<NoFeatureCon
                                     this.leafs2(worldIn, posX1 + 1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
                                     this.leafs2(worldIn, posX1 - 1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
                                     this.leafs2(worldIn, posX1 - 1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
-                                }
-                                else if (leafcolor == 3) {
+                                } else if (leafcolor == 3) {
                                     this.leafs3(worldIn, posX1 + posXLeafWidth, topTrunkHeight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
 
                                     this.leafs3(worldIn, posX1 + 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
@@ -197,7 +201,7 @@ public class ColorfulDeciduousShrubs extends BYGAbstractTreeFeature<NoFeatureCon
                                     this.leafs3(worldIn, posX1 - 2, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
                                     this.leafs3(worldIn, posX1 - 2, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
 
-                                    
+
                                     //Y+1
                                     this.leafs3(worldIn, posX1 + 1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
                                     this.leafs3(worldIn, posX1 - 1, topTrunkHeight + 1, posZ1, boundsIn, changedBlocks);
@@ -209,8 +213,7 @@ public class ColorfulDeciduousShrubs extends BYGAbstractTreeFeature<NoFeatureCon
                                     this.leafs3(worldIn, posX1 + 1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
                                     this.leafs3(worldIn, posX1 - 1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
                                     this.leafs3(worldIn, posX1 - 1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
-                                }
-                                else if (leafcolor == 4) {
+                                } else if (leafcolor == 4) {
                                     this.leafs4(worldIn, posX1 + posXLeafWidth, topTrunkHeight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
 
                                     this.leafs4(worldIn, posX1 + 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
@@ -246,8 +249,7 @@ public class ColorfulDeciduousShrubs extends BYGAbstractTreeFeature<NoFeatureCon
                                     this.leafs4(worldIn, posX1 + 1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
                                     this.leafs4(worldIn, posX1 - 1, topTrunkHeight, posZ1 + 1, boundsIn, changedBlocks);
                                     this.leafs4(worldIn, posX1 - 1, topTrunkHeight, posZ1 - 1, boundsIn, changedBlocks);
-                                }
-                                else if (leafcolor == 5) {
+                                } else if (leafcolor == 5) {
                                     //this.leafs5(worldIn, posX1 + posXLeafWidth, topTrunkHeight, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
 
                                     this.leafs5(worldIn, posX1 + 1, topTrunkHeight, posZ1, boundsIn, changedBlocks);
@@ -356,6 +358,7 @@ public class ColorfulDeciduousShrubs extends BYGAbstractTreeFeature<NoFeatureCon
         }
 
     }
+
     private void leafs2(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
         BlockPos blockpos = new BlockPos(x, y, z);
         if (isAir(reader, blockpos)) {
@@ -363,6 +366,7 @@ public class ColorfulDeciduousShrubs extends BYGAbstractTreeFeature<NoFeatureCon
         }
 
     }
+
     private void leafs3(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
         BlockPos blockpos = new BlockPos(x, y, z);
         if (isAir(reader, blockpos)) {
@@ -370,6 +374,7 @@ public class ColorfulDeciduousShrubs extends BYGAbstractTreeFeature<NoFeatureCon
         }
 
     }
+
     private void leafs4(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
         BlockPos blockpos = new BlockPos(x, y, z);
         if (isAir(reader, blockpos)) {
@@ -377,17 +382,12 @@ public class ColorfulDeciduousShrubs extends BYGAbstractTreeFeature<NoFeatureCon
         }
 
     }
+
     private void leafs5(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
         BlockPos blockpos = new BlockPos(x, y, z);
         if (isAir(reader, blockpos)) {
             this.setLogState(blockPos, reader, blockpos, LEAVES5, boundingBox);
         }
 
-    }
-
-    protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
-        return func_214587_a(
-                genBaseReader, blockPos
-        );
     }
 }

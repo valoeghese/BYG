@@ -33,6 +33,13 @@ public class DeadTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
         );
     }
 
+    public static boolean isQuagmireSB(IWorldGenerationBaseReader worldIn, BlockPos pos, net.minecraftforge.common.IPlantable sapling) {
+        return worldIn.hasBlockState(pos, (p_214582_0_) -> {
+            Block block = p_214582_0_.getBlock();
+            return block == BYGBlockList.MUD_BLOCK || block == BYGBlockList.PEAT_BLOCK;
+        });
+    }
+
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         int randTreeHeight = rand.nextInt(4) + 4;
         int posX = position.getX();
@@ -67,7 +74,6 @@ public class DeadTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
 
                     BlockPos blockpos1 = new BlockPos(posX1, logplacer, posZ1);
                     BlockPos blockpos2 = new BlockPos(posX1, logplacer2, posZ1);
-
 
 
                     //Sets Logs
@@ -130,11 +136,5 @@ public class DeadTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
         if (isAir(reader, blockpos)) {
             this.setLogState(blockPos, reader, blockpos, LEAVES, boundingBox);
         }
-    }
-    public static boolean isQuagmireSB(IWorldGenerationBaseReader worldIn, BlockPos pos, net.minecraftforge.common.IPlantable sapling) {
-        return worldIn.hasBlockState(pos, (p_214582_0_) -> {
-            Block block = p_214582_0_.getBlock();
-            return  block == BYGBlockList.MUD_BLOCK || block == BYGBlockList.PEAT_BLOCK;
-        });
     }
 }

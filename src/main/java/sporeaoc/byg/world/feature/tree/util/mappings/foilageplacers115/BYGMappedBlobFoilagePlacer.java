@@ -18,7 +18,7 @@ public class BYGMappedBlobFoilagePlacer extends BYGMappedFoilagePlacer {
     }
 
     public void func_225571_a_(IWorldGenerationReader genReader, Random rand, TreeFeatureConfig treeFeatureConfig, int p_225571_4_, int p_225571_5_, int p_225571_6_, BlockPos blockPos, Set<BlockPos> setBlockPos) {
-        for(int i = p_225571_4_; i >= p_225571_5_; --i) {
+        for (int i = p_225571_4_; i >= p_225571_5_; --i) {
             int j = Math.max(p_225571_6_ - 1 - (i - p_225571_4_) / 2, 0);
             this.func_227384_a_(genReader, rand, treeFeatureConfig, p_225571_4_, blockPos, i, j, setBlockPos);
         }

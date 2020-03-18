@@ -14,9 +14,14 @@ import javax.annotation.Nullable;
 import java.util.Random;
 
 public abstract class BYGHugeTree extends BYGTree {
+    public static boolean canBigTreeSpawnAt(BlockState blockUnder, IBlockReader worldIn, BlockPos pos, int xOffset, int zOffset) {
+        Block block = blockUnder.getBlock();
+        return block == worldIn.getBlockState(pos.add(xOffset, 0, zOffset)).getBlock() && block == worldIn.getBlockState(pos.add(xOffset + 1, 0, zOffset)).getBlock() && block == worldIn.getBlockState(pos.add(xOffset, 0, zOffset + 1)).getBlock() && block == worldIn.getBlockState(pos.add(xOffset + 1, 0, zOffset + 1)).getBlock();
+    }
+
     public boolean spawn(IWorld worldIn, ChunkGenerator<?> chunkGenerator, BlockPos pos, BlockState blockUnder, Random random) {
-        for(int i = 0; i >= -1; --i) {
-            for(int j = 0; j >= -1; --j) {
+        for (int i = 0; i >= -1; --i) {
+            for (int j = 0; j >= -1; --j) {
                 if (canBigTreeSpawnAt(blockUnder, worldIn, pos, i, j)) {
                     return this.spawnBigTree(worldIn, chunkGenerator, pos, blockUnder, random, i, j);
                 }
@@ -49,11 +54,6 @@ public abstract class BYGHugeTree extends BYGTree {
                 return false;
             }
         }
-    }
-
-    public static boolean canBigTreeSpawnAt(BlockState blockUnder, IBlockReader worldIn, BlockPos pos, int xOffset, int zOffset) {
-        Block block = blockUnder.getBlock();
-        return block == worldIn.getBlockState(pos.add(xOffset, 0, zOffset)).getBlock() && block == worldIn.getBlockState(pos.add(xOffset + 1, 0, zOffset)).getBlock() && block == worldIn.getBlockState(pos.add(xOffset, 0, zOffset + 1)).getBlock() && block == worldIn.getBlockState(pos.add(xOffset + 1, 0, zOffset + 1)).getBlock();
     }
 
 }

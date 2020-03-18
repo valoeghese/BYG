@@ -56,6 +56,7 @@ public class Canyons extends Biome {
 
 
     }
+
     @Override
     public Biome getRiver() {
         return Biomes.RIVER;

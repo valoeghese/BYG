@@ -12,21 +12,21 @@ import javax.annotation.Nullable;
 import java.util.Random;
 
 public abstract class BYGTree {
-   @Nullable
-   protected abstract BYGAbstractTreeFeature<NoFeatureConfig> getTreeFeature(Random random);
+    @Nullable
+    protected abstract BYGAbstractTreeFeature<NoFeatureConfig> getTreeFeature(Random random);
 
-   public boolean spawn(IWorld worldIn, ChunkGenerator<?> chunkGenerator, BlockPos pos, BlockState blockUnder, Random random) {
-      BYGAbstractTreeFeature<NoFeatureConfig> abstracttreefeature = this.getTreeFeature(random);
-      if (abstracttreefeature == null) {
-         return false;
-      } else {
-         worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 4);
-         if (abstracttreefeature.place(worldIn, chunkGenerator, random, pos, IFeatureConfig.NO_FEATURE_CONFIG)) {
-            return true;
-         } else {
-            worldIn.setBlockState(pos, blockUnder, 4);
+    public boolean spawn(IWorld worldIn, ChunkGenerator<?> chunkGenerator, BlockPos pos, BlockState blockUnder, Random random) {
+        BYGAbstractTreeFeature<NoFeatureConfig> abstracttreefeature = this.getTreeFeature(random);
+        if (abstracttreefeature == null) {
             return false;
-         }
-      }
-   }
+        } else {
+            worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 4);
+            if (abstracttreefeature.place(worldIn, chunkGenerator, random, pos, IFeatureConfig.NO_FEATURE_CONFIG)) {
+                return true;
+            } else {
+                worldIn.setBlockState(pos, blockUnder, 4);
+                return false;
+            }
+        }
+    }
 }

@@ -32,15 +32,15 @@ public class BYGMeadowGrassBlock extends SpreadableSnowyMeadowDirtBlock implemen
         BlockPos blockpos = blockPos.up();
         BlockState blockstate = BYGBlockList.MEADOW_GRASSBLOCK.getDefaultState();
 
-        for(int i = 0; i < 128; ++i) {
+        for (int i = 0; i < 128; ++i) {
             BlockPos blockpos1 = blockpos;
             int j = 0;
 
-            while(true) {
+            while (true) {
                 if (j >= i / 16) {
                     BlockState blockstate2 = world.getBlockState(blockpos1);
                     if (blockstate2.getBlock() == blockstate.getBlock() && rand.nextInt(10) == 0) {
-                        ((IGrowable)blockstate.getBlock()).grow(world, rand, blockpos1, blockstate2);
+                        ((IGrowable) blockstate.getBlock()).grow(world, rand, blockpos1, blockstate2);
                     }
 
                     if (!blockstate2.isAir()) {
@@ -54,8 +54,8 @@ public class BYGMeadowGrassBlock extends SpreadableSnowyMeadowDirtBlock implemen
                             break;
                         }
 
-                        ConfiguredFeature<?, ?> configuredfeature = ((DecoratedFeatureConfig)(list.get(0)).config).feature;
-                        blockstate1 = ((FlowersFeature)configuredfeature.feature).getFlowerToPlace(rand, blockpos1, configuredfeature.config);
+                        ConfiguredFeature<?, ?> configuredfeature = ((DecoratedFeatureConfig) (list.get(0)).config).feature;
+                        blockstate1 = ((FlowersFeature) configuredfeature.feature).getFlowerToPlace(rand, blockpos1, configuredfeature.config);
                     } else {
                         blockstate1 = blockstate;
                     }

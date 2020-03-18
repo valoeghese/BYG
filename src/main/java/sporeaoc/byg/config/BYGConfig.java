@@ -31,17 +31,17 @@ public class BYGConfig {
     public static ForgeConfigSpec.IntValue DaciteSize;
     public static ForgeConfigSpec.IntValue DaciteChance;
     public static ForgeConfigSpec.IntValue DaciteMaxY;
-   // public static ForgeConfigSpec.IntValue DaciteMinY;
+    // public static ForgeConfigSpec.IntValue DaciteMinY;
 
     public static ForgeConfigSpec.IntValue RockyStoneSize;
     public static ForgeConfigSpec.IntValue RockyStoneChance;
     public static ForgeConfigSpec.IntValue RockyStoneMaxY;
-   // public static ForgeConfigSpec.IntValue RockyStoneMinY;
+    // public static ForgeConfigSpec.IntValue RockyStoneMinY;
 
     public static ForgeConfigSpec.IntValue ScoriaStoneSize;
     public static ForgeConfigSpec.IntValue ScoriaStoneChance;
     public static ForgeConfigSpec.IntValue ScoriaStoneMaxY;
-   // public static ForgeConfigSpec.IntValue ScoriaStoneMinY;
+    // public static ForgeConfigSpec.IntValue ScoriaStoneMinY;
 
     public static ForgeConfigSpec.IntValue SoapStoneSize;
     public static ForgeConfigSpec.IntValue SoapStoneChance;

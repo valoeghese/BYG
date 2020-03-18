@@ -6,19 +6,19 @@ import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 
 public class AmplifiedBlueGiantTaiga extends Biome {
-        static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.GIANT_TREE_TAIGA, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
-        static final RainType PRECIPATATION = RainType.RAIN;
-        static final Category CATEGORY = Category.TAIGA;
-        static final double DEPTH = 0.2F;
-        static final double SCALE = 0.2F;
-        static final float TEMPERATURE = 0.25F;
-        static final float DOWNFALL = 0.8F;
-        static final int WATER_COLOR = 4159204;
-        static final int WATER_FOG_COLOR = 329011;
-        static final String PARENT = null;
+    static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(SurfaceBuilder.GIANT_TREE_TAIGA, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
+    static final RainType PRECIPATATION = RainType.RAIN;
+    static final Category CATEGORY = Category.TAIGA;
+    static final double DEPTH = 0.2F;
+    static final double SCALE = 0.2F;
+    static final float TEMPERATURE = 0.25F;
+    static final float DOWNFALL = 0.8F;
+    static final int WATER_COLOR = 4159204;
+    static final int WATER_FOG_COLOR = 329011;
+    static final String PARENT = null;
 
-        public AmplifiedBlueGiantTaiga() {
-            super(new Builder().surfaceBuilder(SURFACE_BUILDER).precipitation(PRECIPATATION).category(CATEGORY).depth((float) DEPTH).waterColor(WATER_COLOR).scale((float) SCALE).temperature(TEMPERATURE).downfall(DOWNFALL).waterFogColor(WATER_FOG_COLOR).parent(PARENT));
+    public AmplifiedBlueGiantTaiga() {
+        super(new Builder().surfaceBuilder(SURFACE_BUILDER).precipitation(PRECIPATATION).category(CATEGORY).depth((float) DEPTH).waterColor(WATER_COLOR).scale((float) SCALE).temperature(TEMPERATURE).downfall(DOWNFALL).waterFogColor(WATER_FOG_COLOR).parent(PARENT));
 //            this.addStructure(Feature.VILLAGE, new VillageConfig("village/taiga/town_centers", 6));
 //            this.addStructure(Feature.PILLAGER_OUTPOST, new PillagerOutpostConfig(0.004D));
 //            this.addStructure(Feature.MINESHAFT, new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL));
@@ -54,7 +54,8 @@ public class AmplifiedBlueGiantTaiga extends Biome {
 //            this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.SLIME, 100, 4, 4));
 //            this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.ENDERMAN, 10, 1, 4));
 //            this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.WITCH, 5, 1, 1));
-        }
+    }
+
     @Override
     public Biome getRiver() {
         return Biomes.RIVER;

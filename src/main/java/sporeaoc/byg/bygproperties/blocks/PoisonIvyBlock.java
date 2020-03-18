@@ -44,6 +44,15 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
         this.setDefaultState(this.stateContainer.getBaseState().with(UP, Boolean.valueOf(false)).with(NORTH, Boolean.valueOf(false)).with(EAST, Boolean.valueOf(false)).with(SOUTH, Boolean.valueOf(false)).with(WEST, Boolean.valueOf(false)));
     }
 
+    public static boolean canAttachTo(IBlockReader p_196542_0_, BlockPos worldIn, Direction neighborPos) {
+        BlockState blockstate = p_196542_0_.getBlockState(worldIn);
+        return Block.doesSideFillSquare(blockstate.getCollisionShape(p_196542_0_, worldIn), neighborPos.getOpposite());
+    }
+
+    public static BooleanProperty getPropertyFor(Direction side) {
+        return FACING_TO_PROPERTY_MAP.get(side);
+    }
+
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
         VoxelShape voxelshape = VoxelShapes.empty();
         if (state.get(UP)) {
@@ -80,7 +89,7 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
     private int func_208496_w(BlockState p_208496_1_) {
         int i = 0;
 
-        for(BooleanProperty booleanproperty : FACING_TO_PROPERTY_MAP.values()) {
+        for (BooleanProperty booleanproperty : FACING_TO_PROPERTY_MAP.values()) {
             if (p_208496_1_.get(booleanproperty)) {
                 ++i;
             }
@@ -106,11 +115,6 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
         }
     }
 
-    public static boolean canAttachTo(IBlockReader p_196542_0_, BlockPos worldIn, Direction neighborPos) {
-        BlockState blockstate = p_196542_0_.getBlockState(worldIn);
-        return Block.doesSideFillSquare(blockstate.getCollisionShape(p_196542_0_, worldIn), neighborPos.getOpposite());
-    }
-
     private BlockState func_196545_h(BlockState p_196545_1_, IBlockReader p_196545_2_, BlockPos p_196545_3_) {
         BlockPos blockpos = p_196545_3_.up();
         if (p_196545_1_.get(UP)) {
@@ -119,7 +123,7 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
 
         BlockState blockstate = null;
 
-        for(Direction direction : Direction.Plane.HORIZONTAL) {
+        for (Direction direction : Direction.Plane.HORIZONTAL) {
             BooleanProperty booleanproperty = getPropertyFor(direction);
             if (p_196545_1_.get(booleanproperty)) {
                 boolean flag = this.func_196541_a(p_196545_2_, p_196545_3_, direction);
@@ -187,7 +191,7 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
                                 worldIn.setBlockState(blockpos2, this.getDefaultState().with(getPropertyFor(direction1), Boolean.valueOf(true)), 2);
                             } else if (flag1 && worldIn.isAirBlock(blockpos3) && canAttachTo(worldIn, pos.offset(direction4), direction1)) {
                                 worldIn.setBlockState(blockpos3, this.getDefaultState().with(getPropertyFor(direction1), Boolean.valueOf(true)), 2);
-                            } else if ((double)worldIn.rand.nextFloat() < 0.05D && canAttachTo(worldIn, blockpos4.up(), Direction.UP)) {
+                            } else if ((double) worldIn.rand.nextFloat() < 0.05D && canAttachTo(worldIn, blockpos4.up(), Direction.UP)) {
                                 worldIn.setBlockState(blockpos4, this.getDefaultState().with(UP, Boolean.valueOf(true)), 2);
                             }
                         }
@@ -210,7 +214,7 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
 
                         BlockState blockstate4 = state;
 
-                        for(Direction direction2 : Direction.Plane.HORIZONTAL) {
+                        for (Direction direction2 : Direction.Plane.HORIZONTAL) {
                             if (rand.nextBoolean() || !canAttachTo(worldIn, blockpos.offset(direction2), Direction.UP)) {
                                 blockstate4 = blockstate4.with(getPropertyFor(direction2), Boolean.valueOf(false));
                             }
@@ -241,7 +245,7 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
     }
 
     private BlockState func_196544_a(BlockState p_196544_1_, BlockState p_196544_2_, Random p_196544_3_) {
-        for(Direction direction : Direction.Plane.HORIZONTAL) {
+        for (Direction direction : Direction.Plane.HORIZONTAL) {
             if (p_196544_3_.nextBoolean()) {
                 BooleanProperty booleanproperty = getPropertyFor(direction);
                 if (p_196544_1_.get(booleanproperty)) {
@@ -262,7 +266,7 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
         Iterable<BlockPos> iterable = BlockPos.getAllInBoxMutable(p_196539_2_.getX() - 4, p_196539_2_.getY() - 1, p_196539_2_.getZ() - 4, p_196539_2_.getX() + 4, p_196539_2_.getY() + 1, p_196539_2_.getZ() + 4);
         int j = 5;
 
-        for(BlockPos blockpos : iterable) {
+        for (BlockPos blockpos : iterable) {
             if (p_196539_1_.getBlockState(blockpos).getBlock() == this) {
                 --j;
                 if (j <= 0) {
@@ -289,7 +293,7 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
         boolean flag = blockstate.getBlock() == this;
         BlockState blockstate1 = flag ? blockstate : this.getDefaultState();
 
-        for(Direction direction : context.getNearestLookingDirections()) {
+        for (Direction direction : context.getNearestLookingDirections()) {
             if (direction != Direction.DOWN) {
                 BooleanProperty booleanproperty = getPropertyFor(direction);
                 boolean flag1 = flag && blockstate.get(booleanproperty);
@@ -307,7 +311,7 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
     }
 
     public BlockState rotate(BlockState state, Rotation rot) {
-        switch(rot) {
+        switch (rot) {
             case CLOCKWISE_180:
                 return state.with(NORTH, state.get(SOUTH)).with(EAST, state.get(WEST)).with(SOUTH, state.get(NORTH)).with(WEST, state.get(EAST));
             case COUNTERCLOCKWISE_90:
@@ -320,7 +324,7 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
     }
 
     public BlockState mirror(BlockState state, Mirror mirrorIn) {
-        switch(mirrorIn) {
+        switch (mirrorIn) {
             case LEFT_RIGHT:
                 return state.with(NORTH, state.get(SOUTH)).with(SOUTH, state.get(NORTH));
             case FRONT_BACK:
@@ -330,9 +334,8 @@ public class PoisonIvyBlock extends Block implements net.minecraftforge.common.I
         }
     }
 
-    public static BooleanProperty getPropertyFor(Direction side) {
-        return FACING_TO_PROPERTY_MAP.get(side);
+    @Override
+    public boolean isLadder(BlockState state, IWorldReader world, BlockPos pos, net.minecraft.entity.LivingEntity entity) {
+        return true;
     }
-
-    @Override public boolean isLadder(BlockState state, IWorldReader world, BlockPos pos, net.minecraft.entity.LivingEntity entity) { return true; }
 }

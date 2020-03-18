@@ -62,6 +62,7 @@ public class ShrubLands extends Biome {
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.WITCH, 5, 1, 1));
 
     }
+
     @Override
     public Biome getRiver() {
         return this;
@@ -72,6 +73,7 @@ public class ShrubLands extends Biome {
 
         return 9874031;
     }
+
     @OnlyIn(Dist.CLIENT)
     public int getFoliageColor(BlockPos pos) {
         return 7048739;

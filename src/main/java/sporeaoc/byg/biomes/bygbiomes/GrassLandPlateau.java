@@ -62,6 +62,7 @@ public class GrassLandPlateau extends Biome {
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.WITCH, 5, 1, 1));
 
     }
+
     @Override
     public Biome getRiver() {
         return Biomes.RIVER;

@@ -30,6 +30,20 @@ public class BorealForestTree1 extends BYGAbstractTreeFeature<NoFeatureConfig> {
     public BorealForestTree1(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
         super(configIn, doBlockNotifyIn, beeHiveChance);
     }
+
+    protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
+        return func_214587_a(
+                genBaseReader, blockPos
+        );
+    }
+
+    protected static boolean isDirtOrPeatBlock(IWorldGenerationBaseReader worldIn, BlockPos pos, IPlantable sapling) {
+        return worldIn.hasBlockState(pos, (p_214582_0_) -> {
+            Block block = p_214582_0_.getBlock();
+            return Feature.isDirt(block) || block == BYGBlockList.PEAT_GRASSBLOCK;
+        });
+    }
+
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
         int randTreeHeight = rand.nextInt(2) + rand.nextInt(2) + 9;
@@ -65,9 +79,9 @@ public class BorealForestTree1 extends BYGAbstractTreeFeature<NoFeatureConfig> {
                     //This Int is responsible for the Y coordinate of the trunk BlockPos'.
                     int logplacer = posY + groundUpLogRemover;
                     BlockPos blockpos1 = new BlockPos(posX1, logplacer, posZ1);
-                        this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockpos1.up(1), boundsIn);
-                        this.treelog(changedBlocks, worldIn, blockpos1.up(2), boundsIn);
+                    this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
+                    this.treelog(changedBlocks, worldIn, blockpos1.up(1), boundsIn);
+                    this.treelog(changedBlocks, worldIn, blockpos1.up(2), boundsIn);
 
 
                 }
@@ -148,8 +162,7 @@ public class BorealForestTree1 extends BYGAbstractTreeFeature<NoFeatureConfig> {
 
                             }
                         }
-                    }
-                    else if (leaveColor == 2) {
+                    } else if (leaveColor == 2) {
                         int leavessquarespos = 1;
                         for (int posXLeafWidth = -leavessquarespos; posXLeafWidth <= leavessquarespos; ++posXLeafWidth) {//has to do with leaves
                             for (int posZLeafWidthL0 = -leavessquarespos; posZLeafWidthL0 <= leavessquarespos; ++posZLeafWidthL0) {
@@ -266,23 +279,12 @@ public class BorealForestTree1 extends BYGAbstractTreeFeature<NoFeatureConfig> {
         }
 
     }
+
     private void leafs2(IWorldGenerationReader reader, int x, int y, int z, MutableBoundingBox boundingBox, Set<BlockPos> blockPos) {
         BlockPos blockpos = new BlockPos(x, y, z);
         if (isAir(reader, blockpos)) {
             this.setLogState(blockPos, reader, blockpos, LEAVES2, boundingBox);
         }
 
-    }
-
-    protected static boolean canTreeReplace(IWorldGenerationBaseReader genBaseReader, BlockPos blockPos) {
-        return func_214587_a(
-                genBaseReader, blockPos
-        );
-    }
-    protected static boolean isDirtOrPeatBlock(IWorldGenerationBaseReader worldIn, BlockPos pos, IPlantable sapling) {
-        return worldIn.hasBlockState(pos, (p_214582_0_) -> {
-            Block block = p_214582_0_.getBlock();
-            return Feature.isDirt(block) || block == BYGBlockList.PEAT_GRASSBLOCK;
-        });
     }
 }

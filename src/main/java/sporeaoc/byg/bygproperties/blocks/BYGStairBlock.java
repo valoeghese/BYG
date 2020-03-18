@@ -46,8 +46,17 @@ public class BYGStairBlock extends Block implements IWaterLoggable {
     public static final VoxelShape[] SLAB_TOP_SHAPES = makeShapes(AABB_SLAB_TOP, NWD_CORNER, NED_CORNER, SWD_CORNER, SED_CORNER);
     public static final VoxelShape[] SLAB_BOTTOM_SHAPES = makeShapes(AABB_SLAB_BOTTOM, NWU_CORNER, NEU_CORNER, SWU_CORNER, SEU_CORNER);
     public static final int[] field_196522_K = new int[]{12, 5, 3, 10, 14, 13, 7, 11, 13, 7, 11, 14, 8, 4, 1, 2, 4, 1, 2, 8};
+    public static java.util.function.Supplier<BlockState> stateSupplier;
     public Block modelBlock;
     public BlockState modelState;
+
+    public BYGStairBlock(java.util.function.Supplier<BlockState> state, Block.Properties properties) {
+        super(properties);
+        this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH).with(HALF, Half.BOTTOM).with(SHAPE, StairsShape.STRAIGHT).with(WATERLOGGED, Boolean.valueOf(false)));
+        this.modelBlock = Blocks.AIR;
+        this.modelState = Blocks.AIR.getDefaultState();
+        stateSupplier = state;
+    }
 
     private static VoxelShape[] makeShapes(VoxelShape slabShape, VoxelShape nwCorner, VoxelShape neCorner, VoxelShape swCorner, VoxelShape seCorner) {
         return IntStream.range(0, 16).mapToObj((p_199780_5_) -> {
@@ -76,96 +85,6 @@ public class BYGStairBlock extends Block implements IWaterLoggable {
         }
 
         return voxelshape;
-    }
-
-    public BYGStairBlock(java.util.function.Supplier<BlockState> state, Block.Properties properties) {
-        super(properties);
-        this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH).with(HALF, Half.BOTTOM).with(SHAPE, StairsShape.STRAIGHT).with(WATERLOGGED, Boolean.valueOf(false)));
-        this.modelBlock = Blocks.AIR;
-        this.modelState = Blocks.AIR.getDefaultState();
-        stateSupplier = state;
-    }
-
-    public boolean isTransparent(BlockState state) {
-        return true;
-    }
-
-    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
-        return (state.get(HALF) == Half.TOP ? SLAB_TOP_SHAPES : SLAB_BOTTOM_SHAPES)[field_196522_K[this.func_196511_x(state)]];
-    }
-
-    private int func_196511_x(BlockState state) {
-        return state.get(SHAPE).ordinal() * 4 + state.get(FACING).getHorizontalIndex();
-    }
-
-    @OnlyIn(Dist.CLIENT)
-    public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
-        this.modelBlock.animateTick(stateIn, worldIn, pos, rand);
-    }
-
-    public void onBlockClicked(BlockState state, World worldIn, BlockPos pos, PlayerEntity player) {
-        this.modelState.onBlockClicked(worldIn, pos, player);
-    }
-
-    public void onPlayerDestroy(IWorld worldIn, BlockPos pos, BlockState state) {
-        this.modelBlock.onPlayerDestroy(worldIn, pos, state);
-    }
-
-    /**
-     * Returns how much this block can resist explosions from the passed in entity.
-     */
-    public float getExplosionResistance() {
-        return this.modelBlock.getExplosionResistance();
-    }
-
-
-    public int tickRate(IWorldReader worldIn) {
-        return this.modelBlock.tickRate(worldIn);
-    }
-
-    public void onBlockAdded(BlockState state, World worldIn, BlockPos pos, BlockState oldState, boolean isMoving) {
-        if (state.getBlock() != state.getBlock()) {
-            this.modelState.neighborChanged(worldIn, pos, Blocks.AIR, pos, false);
-            this.modelBlock.onBlockAdded(this.modelState, worldIn, pos, oldState, false);
-        }
-    }
-
-    public void onReplaced(BlockState state, World worldIn, BlockPos pos, BlockState newState, boolean isMoving) {
-        if (state.getBlock() != newState.getBlock()) {
-            this.modelState.onReplaced(worldIn, pos, newState, isMoving);
-        }
-    }
-
-    public void onEntityWalk(World worldIn, BlockPos pos, Entity entityIn) {
-        this.modelBlock.onEntityWalk(worldIn, pos, entityIn);
-    }
-
-    public void tick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
-        this.modelBlock.tick(state, worldIn, pos, rand);
-    }
-
-    public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
-        return this.modelState.onBlockActivated(worldIn, player, handIn, hit);
-    }
-
-    public void onExplosionDestroy(World worldIn, BlockPos pos, Explosion explosionIn) {
-        this.modelBlock.onExplosionDestroy(worldIn, pos, explosionIn);
-    }
-
-    public BlockState getStateForPlacement(BlockItemUseContext context) {
-        Direction direction = context.getFace();
-        BlockPos blockpos = context.getPos();
-        IFluidState ifluidstate = context.getWorld().getFluidState(blockpos);
-        BlockState blockstate = this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing()).with(HALF, direction != Direction.DOWN && (direction == Direction.UP || !(context.getHitVec().y - (double)blockpos.getY() > 0.5D)) ? Half.BOTTOM : Half.TOP).with(WATERLOGGED, Boolean.valueOf(ifluidstate.getFluid() == Fluids.WATER));
-        return blockstate.with(SHAPE, getShapeProperty(blockstate, context.getWorld(), blockpos));
-    }
-
-    public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
-        if (stateIn.get(WATERLOGGED)) {
-            worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
-        }
-
-        return facing.getAxis().isHorizontal() ? stateIn.with(SHAPE, getShapeProperty(stateIn, worldIn, currentPos)) : super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
     }
 
     private static StairsShape getShapeProperty(BlockState state, IBlockReader worldIn, BlockPos pos) {
@@ -206,6 +125,87 @@ public class BYGStairBlock extends Block implements IWaterLoggable {
         return state.getBlock() instanceof StairsBlock;
     }
 
+    public boolean isTransparent(BlockState state) {
+        return true;
+    }
+
+    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
+        return (state.get(HALF) == Half.TOP ? SLAB_TOP_SHAPES : SLAB_BOTTOM_SHAPES)[field_196522_K[this.func_196511_x(state)]];
+    }
+
+    private int func_196511_x(BlockState state) {
+        return state.get(SHAPE).ordinal() * 4 + state.get(FACING).getHorizontalIndex();
+    }
+
+    @OnlyIn(Dist.CLIENT)
+    public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
+        this.modelBlock.animateTick(stateIn, worldIn, pos, rand);
+    }
+
+    public void onBlockClicked(BlockState state, World worldIn, BlockPos pos, PlayerEntity player) {
+        this.modelState.onBlockClicked(worldIn, pos, player);
+    }
+
+    public void onPlayerDestroy(IWorld worldIn, BlockPos pos, BlockState state) {
+        this.modelBlock.onPlayerDestroy(worldIn, pos, state);
+    }
+
+    /**
+     * Returns how much this block can resist explosions from the passed in entity.
+     */
+    public float getExplosionResistance() {
+        return this.modelBlock.getExplosionResistance();
+    }
+
+    public int tickRate(IWorldReader worldIn) {
+        return this.modelBlock.tickRate(worldIn);
+    }
+
+    public void onBlockAdded(BlockState state, World worldIn, BlockPos pos, BlockState oldState, boolean isMoving) {
+        if (state.getBlock() != state.getBlock()) {
+            this.modelState.neighborChanged(worldIn, pos, Blocks.AIR, pos, false);
+            this.modelBlock.onBlockAdded(this.modelState, worldIn, pos, oldState, false);
+        }
+    }
+
+    public void onReplaced(BlockState state, World worldIn, BlockPos pos, BlockState newState, boolean isMoving) {
+        if (state.getBlock() != newState.getBlock()) {
+            this.modelState.onReplaced(worldIn, pos, newState, isMoving);
+        }
+    }
+
+    public void onEntityWalk(World worldIn, BlockPos pos, Entity entityIn) {
+        this.modelBlock.onEntityWalk(worldIn, pos, entityIn);
+    }
+
+    public void tick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
+        this.modelBlock.tick(state, worldIn, pos, rand);
+    }
+
+    public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+        return this.modelState.onBlockActivated(worldIn, player, handIn, hit);
+    }
+
+    public void onExplosionDestroy(World worldIn, BlockPos pos, Explosion explosionIn) {
+        this.modelBlock.onExplosionDestroy(worldIn, pos, explosionIn);
+    }
+
+    public BlockState getStateForPlacement(BlockItemUseContext context) {
+        Direction direction = context.getFace();
+        BlockPos blockpos = context.getPos();
+        IFluidState ifluidstate = context.getWorld().getFluidState(blockpos);
+        BlockState blockstate = this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing()).with(HALF, direction != Direction.DOWN && (direction == Direction.UP || !(context.getHitVec().y - (double) blockpos.getY() > 0.5D)) ? Half.BOTTOM : Half.TOP).with(WATERLOGGED, Boolean.valueOf(ifluidstate.getFluid() == Fluids.WATER));
+        return blockstate.with(SHAPE, getShapeProperty(blockstate, context.getWorld(), blockpos));
+    }
+
+    public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
+        if (stateIn.get(WATERLOGGED)) {
+            worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
+        }
+
+        return facing.getAxis().isHorizontal() ? stateIn.with(SHAPE, getShapeProperty(stateIn, worldIn, currentPos)) : super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
+    }
+
     public BlockState rotate(BlockState state, Rotation rot) {
         return state.with(FACING, rot.rotate(state.get(FACING)));
     }
@@ -213,10 +213,10 @@ public class BYGStairBlock extends Block implements IWaterLoggable {
     public BlockState mirror(BlockState state, Mirror mirrorIn) {
         Direction direction = state.get(FACING);
         StairsShape stairsshape = state.get(SHAPE);
-        switch(mirrorIn) {
+        switch (mirrorIn) {
             case LEFT_RIGHT:
                 if (direction.getAxis() == Direction.Axis.Z) {
-                    switch(stairsshape) {
+                    switch (stairsshape) {
                         case INNER_LEFT:
                             return state.rotate(Rotation.CLOCKWISE_180).with(SHAPE, StairsShape.INNER_RIGHT);
                         case INNER_RIGHT:
@@ -232,7 +232,7 @@ public class BYGStairBlock extends Block implements IWaterLoggable {
                 break;
             case FRONT_BACK:
                 if (direction.getAxis() == Direction.Axis.X) {
-                    switch(stairsshape) {
+                    switch (stairsshape) {
                         case INNER_LEFT:
                             return state.rotate(Rotation.CLOCKWISE_180).with(SHAPE, StairsShape.INNER_LEFT);
                         case INNER_RIGHT:
@@ -262,10 +262,10 @@ public class BYGStairBlock extends Block implements IWaterLoggable {
         return false;
     }
 
-    public static java.util.function.Supplier<BlockState> stateSupplier;
     private Block getModelBlock() {
         return getModelState().getBlock();
     }
+
     private BlockState getModelState() {
         return stateSupplier.get();
     }

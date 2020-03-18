@@ -126,7 +126,6 @@ public class HugeCypressTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
                                     BlockPos blockpos6 = new BlockPos(posX1, logplacer6, posZ1);
 
 
-
                                     //Sets Logs
                                     //if (isAirOrLeaves(worldIn, blockpos1)) {
                                     this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
@@ -212,7 +211,7 @@ public class HugeCypressTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).west(12), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).west(13), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).west(14), boundsIn);
-                                    
+
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).north().west(2), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).south().west(2), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).north().east(2), boundsIn);
@@ -221,9 +220,9 @@ public class HugeCypressTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).south(2).west(), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).north(2).east(), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).south(2).east(), boundsIn);
-                                    
-                                    if(isAirOrLeaves(worldIn, blockpos6))
-                                    this.treelog(changedBlocks, worldIn, blockpos6.up(6).north(2).west(2), boundsIn);
+
+                                    if (isAirOrLeaves(worldIn, blockpos6))
+                                        this.treelog(changedBlocks, worldIn, blockpos6.up(6).north(2).west(2), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).south(2).west(2), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).north(2).east(2), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).south(2).east(2), boundsIn);
@@ -259,7 +258,7 @@ public class HugeCypressTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).south(10).west(10), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).north(10).east(10), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos6.up(6).south(10).east(10), boundsIn);
-                                    
+
                                     this.treelog(changedBlocks, worldIn, blockpos1.north(), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos1.south(), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos1.east(), boundsIn);
@@ -297,7 +296,6 @@ public class HugeCypressTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
                                     this.treelog(changedBlocks, worldIn, blockpos5.south(5), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos5.south(4).east(), boundsIn);
                                     this.treelog(changedBlocks, worldIn, blockpos5.south(4).west(), boundsIn);
-
 
 
                                 }
@@ -442,7 +440,7 @@ public class HugeCypressTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
                                 this.leafs(worldIn, posX1 + posXLeafWidth - 8 + 1, topTrunkHeight + 8, posZ1 + posZLeafWidthL0 + 9 - 1, boundsIn, changedBlocks);
                                 this.leafs(worldIn, posX1 + posXLeafWidth - 8 + 1, topTrunkHeight + 8, posZ1 + posZLeafWidthL0 - 9 + 1, boundsIn, changedBlocks);
 
-                            //
+                                //
 
                                 this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight + 6, posZ1 + posZLeafWidthL0, boundsIn, changedBlocks);
                                 this.leafs(worldIn, posX1 + posXLeafWidth, topTrunkHeight + 6, posZ1 + posZLeafWidthL0 - 3 + 1, boundsIn, changedBlocks);

@@ -69,8 +69,9 @@ public class BYGBlockProperties {
                     .notSolid()
             );
             setRegistryName(registryName);
-            }
+        }
     }
+
     public static class BYGGrassBlock extends GrassBlock {
         public BYGGrassBlock(String registryName) {
             super(Block.Properties.create(Material.EARTH)
@@ -96,7 +97,7 @@ public class BYGBlockProperties {
     public static class BlockOvergrownStoneBlock extends BYGOverGrownStoneBlock {
         public BlockOvergrownStoneBlock(String registryName) {
             super(Block.Properties.create(Material.ROCK)
-                    .sound(SoundType.PLANT)
+                    .sound(SoundType.STONE)
                     .hardnessAndResistance(1.5f, 6.0f)
                     .tickRandomly()
 
@@ -246,26 +247,27 @@ public class BYGBlockProperties {
     }
 
 
-        public static class BlockHugeMushroom extends HugeMushroomBlock {
-            public BlockHugeMushroom(String registryName) {
-                super(Block.Properties.create(Material.PLANTS, MaterialColor.DIRT)
-                        .sound(SoundType.WOOD)
-                        .hardnessAndResistance(1.5f, 6.0f)
-                );
-                setRegistryName(registryName);
-                this.setDefaultState(this.stateContainer.getBaseState().with(NORTH, Boolean.valueOf(true)).with(EAST, Boolean.valueOf(true)).with(SOUTH, Boolean.valueOf(true)).with(WEST, Boolean.valueOf(true)).with(UP, Boolean.valueOf(true)).with(DOWN, Boolean.valueOf(true)));
-            }
+    public static class BlockHugeMushroom extends HugeMushroomBlock {
+        public BlockHugeMushroom(String registryName) {
+            super(Block.Properties.create(Material.PLANTS, MaterialColor.DIRT)
+                    .sound(SoundType.WOOD)
+                    .hardnessAndResistance(1.5f, 6.0f)
+            );
+            setRegistryName(registryName);
+            this.setDefaultState(this.stateContainer.getBaseState().with(NORTH, Boolean.valueOf(true)).with(EAST, Boolean.valueOf(true)).with(SOUTH, Boolean.valueOf(true)).with(WEST, Boolean.valueOf(true)).with(UP, Boolean.valueOf(true)).with(DOWN, Boolean.valueOf(true)));
         }
+    }
 
-        public static class BYGPlanks extends Block {
-            public BYGPlanks(String registryName) {
-                super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)
-                        .sound(SoundType.WOOD)
-                        .hardnessAndResistance(2.0f, 3.0f)
-                );
-                setRegistryName(registryName);
-            }
+    public static class BYGPlanks extends Block {
+        public BYGPlanks(String registryName) {
+            super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)
+                    .sound(SoundType.WOOD)
+                    .hardnessAndResistance(2.0f, 3.0f)
+            );
+            setRegistryName(registryName);
         }
+    }
+
     public static class BYGWoodStairs extends BYGStairBlock {
         public BYGWoodStairs(String registryName) {
             super(stateSupplier, Block.Properties.create(Material.WOOD, MaterialColor.BROWN)
@@ -280,57 +282,57 @@ public class BYGBlockProperties {
     }
 
 
-        public static class BlockBookshelf extends BookshelfBlock {
-            public BlockBookshelf(String registryName) {
-                super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)
-                        .sound(SoundType.WOOD)
-                        .hardnessAndResistance(2.0f, 3.0f)
-                );
-                setRegistryName(registryName);
-            }
-        }
-
-        public static class BYGGlowCaneBlock extends Block {
-            public BYGGlowCaneBlock(String registryName) {
-                super(Block.Properties.create(Material.GLASS)
-                        .sound(SoundType.GLASS)
-                        .hardnessAndResistance(0.3F)
-                        .lightValue(15)
-                );
-                setRegistryName(registryName);
-            }
-        }
-
-        public static class BYGStone extends Block {
-            public BYGStone(String registryName) {
-                super(Block.Properties.create(Material.ROCK)
-                        .sound(SoundType.STONE)
-                        .hardnessAndResistance(1.5f, 6.0f)
-                );
-                setRegistryName(registryName);
-            }
-        }
-
-        public static class BYGPillar extends RotatedPillarBlock {
-            public BYGPillar(String registryName) {
-                super(Block.Properties.create(Material.ROCK)
-                        .sound(SoundType.STONE)
-                        .hardnessAndResistance(1.5f, 6.0f)
-                );
-                setRegistryName(registryName);
-            }
-        }
-
-        public static class BYGStrippedLog extends LogBlock {
-            public BYGStrippedLog(String registryName) {
-                super(
-                        MaterialColor.WOOD,
-                        Block.Properties.create(Material.WOOD, MaterialColor.WOOD)
-                                .sound(SoundType.WOOD)
-                                .hardnessAndResistance(2.0f)
-                );
-                setRegistryName(registryName);
-
-            }
+    public static class BlockBookshelf extends BookshelfBlock {
+        public BlockBookshelf(String registryName) {
+            super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)
+                    .sound(SoundType.WOOD)
+                    .hardnessAndResistance(2.0f, 3.0f)
+            );
+            setRegistryName(registryName);
         }
     }
+
+    public static class BYGGlowCaneBlock extends Block {
+        public BYGGlowCaneBlock(String registryName) {
+            super(Block.Properties.create(Material.GLASS)
+                    .sound(SoundType.GLASS)
+                    .hardnessAndResistance(0.3F)
+                    .lightValue(15)
+            );
+            setRegistryName(registryName);
+        }
+    }
+
+    public static class BYGStone extends Block {
+        public BYGStone(String registryName) {
+            super(Block.Properties.create(Material.ROCK)
+                    .sound(SoundType.STONE)
+                    .hardnessAndResistance(1.5f, 6.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
+
+    public static class BYGPillar extends RotatedPillarBlock {
+        public BYGPillar(String registryName) {
+            super(Block.Properties.create(Material.ROCK)
+                    .sound(SoundType.STONE)
+                    .hardnessAndResistance(1.5f, 6.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
+
+    public static class BYGStrippedLog extends LogBlock {
+        public BYGStrippedLog(String registryName) {
+            super(
+                    MaterialColor.WOOD,
+                    Block.Properties.create(Material.WOOD, MaterialColor.WOOD)
+                            .sound(SoundType.WOOD)
+                            .hardnessAndResistance(2.0f)
+            );
+            setRegistryName(registryName);
+
+        }
+    }
+}
