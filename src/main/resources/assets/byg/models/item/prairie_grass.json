@@ -1,7 +1,6 @@
 {
-  "parent": "block/cross",
+  "parent": "item/generated",
   "textures": {
-    "cross": "byg:items/prairie_grass",
-    "particle": "byg:blocks/prairie_grass"
+    "layer0": "byg:blocks/prairie_grass"
   }
 }
