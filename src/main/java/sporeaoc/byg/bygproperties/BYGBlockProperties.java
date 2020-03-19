@@ -142,7 +142,7 @@ public class BYGBlockProperties {
         }
     }
 
-    public static class BYGLeaves extends BYGSnowyLeavesBlock {
+    public static class BYGLeaves extends LeavesBlock {
         public BYGLeaves(String registryName) {
             super(Block.Properties.create(Material.LEAVES)
                     .sound(SoundType.PLANT)
