@@ -142,12 +142,12 @@ public class BYGBlockProperties {
         }
     }
 
-    public static class BYGLeaves extends LeavesBlock {
+    public static class BYGLeaves extends BYGSnowyLeavesBlock {
         public BYGLeaves(String registryName) {
             super(Block.Properties.create(Material.LEAVES)
-                    .sound(SoundType.PLANT)
-                    .hardnessAndResistance(0.2f)
+                    .hardnessAndResistance(0.2F)
                     .tickRandomly()
+                    .sound(SoundType.PLANT)
                     .notSolid()
             );
             setRegistryName(registryName);
