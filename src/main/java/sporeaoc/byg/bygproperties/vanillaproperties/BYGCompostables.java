@@ -128,10 +128,6 @@ public class BYGCompostables {
 
     }
 
-
-
-
-
     public static void compostibleBlocks(float chance, IItemProvider item) {
         ComposterBlock.CHANCES.put(item.asItem(), chance);
     }

@@ -274,12 +274,6 @@ public class BYGFlammables {
         flammableBlock(BYGBlockList.POISON_IVY, 15, 100);
     }
 
-
-
-
-
-
-
     public static void flammableBlock(Block block, int encouragement, int flammability) {
         FireBlock fire = (FireBlock) Blocks.FIRE;
         fire.setFireInfo(block, encouragement, flammability);
