@@ -164,7 +164,7 @@ public class BYGItemList {
     public static Item ORANGE_SPRUCE_LEAVES;
     public static Item ORCHARD_LEAVES;
     public static Item PALO_VERDE_LEAVES;
-    public static Item PINE_lEAVES;
+    public static Item PINE_LEAVES;
     public static Item PINK_CHERRY_LEAVES;
     public static Item RAINBOW_EUCALYPTUS_LEAVES;
     public static Item RED_BIRCH_LEAVES;

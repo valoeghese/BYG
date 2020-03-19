@@ -205,6 +205,73 @@ public class BYGFlammables {
         flammableBlock(BYGBlockList.WITCH_HAZEL_LEAVES, 30, 60);
         flammableBlock(BYGBlockList.YELLOW_BIRCH_LEAVES, 30, 60);
         flammableBlock(BYGBlockList.YELLOW_SPRUCE_LEAVES, 30, 60);
+        
+        //Flowers
+        flammableBlock(BYGBlockList.ALLIUM_FLOWER_BUSH, 60, 100);
+        flammableBlock(BYGBlockList.ALPINE_BELLFLOWER, 60, 100);
+        flammableBlock(BYGBlockList.AMARANTH, 60, 100);
+        flammableBlock(BYGBlockList.ANGELICA, 60, 100);
+        flammableBlock(BYGBlockList.AZALEA, 60, 100);
+        flammableBlock(BYGBlockList.BEGONIA, 60, 100);
+        flammableBlock(BYGBlockList.BISTORT, 60, 100);
+        flammableBlock(BYGBlockList.BLACK_ROSE, 60, 100);
+        flammableBlock(BYGBlockList.BLUE_SAGE, 60, 100);
+        flammableBlock(BYGBlockList.CALIFORNIA_POPPY, 60, 100);
+        flammableBlock(BYGBlockList.CROCUS, 60, 100);
+        flammableBlock(BYGBlockList.CYAN_AMARANTH, 60, 100);
+        flammableBlock(BYGBlockList.CYAN_ROSE, 60, 100);
+        flammableBlock(BYGBlockList.CYAN_TULIP, 60, 100);
+        flammableBlock(BYGBlockList.DAFFODIL, 60, 100);
+        flammableBlock(BYGBlockList.DELPHINIUM, 60, 100);
+        flammableBlock(BYGBlockList.FAIRY_SLIPPER, 60, 100);
+        flammableBlock(BYGBlockList.FIRECRACKER_FLOWER_BUSH, 60, 100);
+        flammableBlock(BYGBlockList.FOXGLOVE, 60, 100);
+        flammableBlock(BYGBlockList.GOLDEN_SPINED_CACTUS, 60, 100);
+        flammableBlock(BYGBlockList.GREEN_TULIP, 60, 100);
+        flammableBlock(BYGBlockList.GUZMANIA, 60, 100);
+        flammableBlock(BYGBlockList.INCAN_LILY, 60, 100);
+        flammableBlock(BYGBlockList.IRIS, 60, 100);
+        flammableBlock(BYGBlockList.JAPANESE_ORCHID, 60, 100);
+        flammableBlock(BYGBlockList.KOVAN_FLOWER, 60, 100);
+        flammableBlock(BYGBlockList.LAZARUS_BELLFLOWER, 60, 100);
+        flammableBlock(BYGBlockList.LOLIPOP_FLOWER, 60, 100);
+        flammableBlock(BYGBlockList.MAGENTA_AMARANTH, 60, 100);
+        flammableBlock(BYGBlockList.MAGENTA_TULIP, 60, 100);
+        flammableBlock(BYGBlockList.ORANGE_DAISY, 60, 100);
+        flammableBlock(BYGBlockList.ORSIRIA_ROSE, 60, 100);
+        flammableBlock(BYGBlockList.PEACH_LEATHER_FLOWER, 60, 100);
+        flammableBlock(BYGBlockList.PINK_ALLIUM, 60, 100);
+        flammableBlock(BYGBlockList.PINK_ALLIUM_FLOWER_BUSH, 60, 100);
+        flammableBlock(BYGBlockList.PINK_ANEMONE, 60, 100);
+        flammableBlock(BYGBlockList.PINK_DAFFODIL, 60, 100);
+        flammableBlock(BYGBlockList.PINK_ORCHID, 60, 100);
+        flammableBlock(BYGBlockList.PRAIRIE_GRASS, 60, 100);
+        flammableBlock(BYGBlockList.PROTEA_FLOWER, 60, 100);
+        flammableBlock(BYGBlockList.PURPLE_AMARANTH, 60, 100);
+        flammableBlock(BYGBlockList.PURPLE_ORCHID, 60, 100);
+        flammableBlock(BYGBlockList.PURPLE_SAGE, 60, 100);
+        flammableBlock(BYGBlockList.PURPLE_TULIP, 60, 100);
+        flammableBlock(BYGBlockList.RED_CORNFLOWER, 60, 100);
+        flammableBlock(BYGBlockList.RED_ORCHID, 60, 100);
+        flammableBlock(BYGBlockList.RICHEA, 60, 100);
+        flammableBlock(BYGBlockList.ROSE, 60, 100);
+        flammableBlock(BYGBlockList.SILVER_VASE_FLOWER, 60, 100);
+        flammableBlock(BYGBlockList.SNOWDROPS, 60, 100);
+        flammableBlock(BYGBlockList.TORCH_GINGER, 60, 100);
+        flammableBlock(BYGBlockList.VIOLET_LEATHER_FLOWER, 60, 100);
+        flammableBlock(BYGBlockList.WHITE_ANEMONE, 60, 100);
+        flammableBlock(BYGBlockList.WHITE_SAGE, 60, 100);
+        flammableBlock(BYGBlockList.WINTER_CYCLAMEN, 60, 100);
+        flammableBlock(BYGBlockList.WINTER_ROSE, 60, 100);
+        flammableBlock(BYGBlockList.WINTER_SCILLA, 60, 100);
+        flammableBlock(BYGBlockList.YELLOW_DAFFODIL, 60, 100);
+        flammableBlock(BYGBlockList.YELLOW_TULIP, 60, 100);
+        
+        //Plants
+        flammableBlock(BYGBlockList.HORSEWEED, 60, 100);
+        flammableBlock(BYGBlockList.WINTER_SUCCULENT, 60, 100);
+        flammableBlock(BYGBlockList.SHORT_GRASS, 60, 200);
+        flammableBlock(BYGBlockList.POISON_IVY, 15, 100);
     }
 
 
