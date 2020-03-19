@@ -48,6 +48,20 @@ public class BYGBlockProperties {
         }
     }
 
+    public static class BYGDesertPlant extends BYGDesertPlants {
+        public BYGDesertPlant(String registryName) {
+            super(
+                    Block.Properties.create(Material.PLANTS)
+                            .sound(SoundType.PLANT)
+                            .hardnessAndResistance(0.0f)
+                            .doesNotBlockMovement()
+                            .notSolid()
+            );
+            setRegistryName(registryName);
+
+        }
+    }
+
     public static class BYGLily extends LilyPadBlock {
         public BYGLily(String registryName) {
             super(
@@ -189,7 +203,7 @@ public class BYGBlockProperties {
         }
     }
 
-    public static class BYGOre extends OreBlock {
+    public static class BYGOre extends BYGOreBlock {
         public BYGOre(String registryName) {
             super(
                     Block.Properties.create(Material.ROCK)

@@ -190,11 +190,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.WITCH_HAZEL_SAPLING = new BYGBlockProperties.BYGFlower("witch_hazel_sapling"),
                 BYGBlockList.YELLOW_BIRCH_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.YellowBirchSaplingToTree(), "yellow_birch_sapling"),
                 BYGBlockList.YELLOW_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.YellowSpruceSaplingToTree(), "yellow_spruce_sapling")
-                /*
-                 * TODO: Add Sapling Blocks
-                 */
 
-                //BYGBlockList.CYPRESS_SAPLING =-props -> new CypressTreeSapling(new CypressTree2(), props))
         );
     }
 
@@ -261,8 +257,8 @@ public class BYGBlockRegistry {
                 BYGBlockList.CATTAIL = new BYGBlockProperties.BlockCattail("cattail"),
                 BYGBlockList.REEDS = new BYGBlockProperties.BlockCattail("reeds"),
                 BYGBlockList.HORSEWEED = new BYGBlockProperties.BYGFlower("horseweed"),
-                BYGBlockList.MINI_CACTUS = new BYGBlockProperties.BYGFlower("mini_cactus"),
-                BYGBlockList.PRICKLY_PEAR_CACTUS = new BYGBlockProperties.BYGFlower("prickly_pear_cactus"),
+                BYGBlockList.MINI_CACTUS = new BYGBlockProperties.BYGDesertPlant("mini_cactus"),
+                BYGBlockList.PRICKLY_PEAR_CACTUS = new BYGBlockProperties.BYGDesertPlant("prickly_pear_cactus"),
                 BYGBlockList.WINTER_SUCCULENT = new BYGBlockProperties.BYGFlower("winter_succulent"),
                 BYGBlockList.SHORT_GRASS = new BYGBlockProperties.BYGTallGrass("short_grass"),
                 BYGBlockList.BLUE_GLOWCANE = new BYGBlockProperties.BYGGlowCane("blue_glowcane"),
@@ -283,7 +279,7 @@ public class BYGBlockRegistry {
                 //Decorations
 
                 //BYGBlockList.REDSTONE_LANTERN = new BYGRedStoneLantern("redstone_lantern_block"),
-//EEEE
+
 
                 //Petal Blocks
                 BYGBlockList.WHITE_PETAL = new BYGBlockProperties.BYGPetal("white_petal_block"),
@@ -305,7 +301,8 @@ public class BYGBlockRegistry {
                 BYGBlockList.ASPEN_LOG = new BYGBlockProperties.BYGLog("aspen_log"),
                 BYGBlockList.BAOBAB_LOG = new BYGBlockProperties.BYGLog("baobab_log"),
                 BYGBlockList.BLUE_ENCHANTED_LOG = new BYGBlockProperties.BYGLog("blue_enchanted_log"),
-                BYGBlockList.CHERRY_LOG = new BYGBlockProperties.BYGLog("cherry_log"),               BYGBlockList.CIKA_LOG = new BYGBlockProperties.BYGLog("cika_log"),
+                BYGBlockList.CHERRY_LOG = new BYGBlockProperties.BYGLog("cherry_log"),
+                BYGBlockList.CIKA_LOG = new BYGBlockProperties.BYGLog("cika_log"),
                 BYGBlockList.CYPRESS_LOG = new BYGBlockProperties.BYGLog("cypress_log"),
                 BYGBlockList.EBONY_LOG = new BYGBlockProperties.BYGLog("ebony_log"),
                 BYGBlockList.FIR_LOG = new BYGBlockProperties.BYGLog("fir_log"),
@@ -429,9 +426,9 @@ public class BYGBlockRegistry {
                 BYGBlockList.DAFFODIL = new BYGBlockProperties.BYGFlower("daffodil"),
                 BYGBlockList.DELPHINIUM = new BYGBlockProperties.BYGFlower("delphinium"),
                 BYGBlockList.FAIRY_SLIPPER = new BYGBlockProperties.BYGFlower("fairy_slipper"),
-                BYGBlockList.FIRECRACKER_FLOWER_BUSH = new BYGBlockProperties.BYGFlower("firecracker_flower_bush"),
+                BYGBlockList.FIRECRACKER_FLOWER_BUSH = new BYGBlockProperties.BYGDesertPlant("firecracker_flower_bush"),
                 BYGBlockList.FOXGLOVE = new BYGBlockProperties.BYGFlower("foxglove"),
-                BYGBlockList.GOLDEN_SPINED_CACTUS = new BYGBlockProperties.BYGFlower("golden_spined_cactus"),
+                BYGBlockList.GOLDEN_SPINED_CACTUS = new BYGBlockProperties.BYGDesertPlant("golden_spined_cactus"),
                 BYGBlockList.GREEN_TULIP = new BYGBlockProperties.BYGFlower("green_tulip"),
                 BYGBlockList.GUZMANIA = new BYGBlockProperties.BYGFlower("guzmania"),
                 BYGBlockList.INCAN_LILY = new BYGBlockProperties.BYGFlower("incan_lily"),

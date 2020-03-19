@@ -59,11 +59,7 @@ public class BYGStairBlock extends Block implements IWaterLoggable {
     }
 
     private static VoxelShape[] makeShapes(VoxelShape slabShape, VoxelShape nwCorner, VoxelShape neCorner, VoxelShape swCorner, VoxelShape seCorner) {
-        return IntStream.range(0, 16).mapToObj((p_199780_5_) -> {
-            return combineShapes(p_199780_5_, slabShape, nwCorner, neCorner, swCorner, seCorner);
-        }).toArray((p_199778_0_) -> {
-            return new VoxelShape[p_199778_0_];
-        });
+        return IntStream.range(0, 16).mapToObj((p_199780_5_) -> combineShapes(p_199780_5_, slabShape, nwCorner, neCorner, swCorner, seCorner)).toArray((p_199778_0_) -> new VoxelShape[p_199778_0_]);
     }
 
     private static VoxelShape combineShapes(int bitfield, VoxelShape slabShape, VoxelShape nwCorner, VoxelShape neCorner, VoxelShape swCorner, VoxelShape seCorner) {
