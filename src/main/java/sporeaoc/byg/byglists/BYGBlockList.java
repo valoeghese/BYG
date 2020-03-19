@@ -16,7 +16,7 @@ public class BYGBlockList {
     public static Block GREEN_ENCHANTED_FENCE;
     public static Block HOLLY_FENCE;
     public static Block JACARANDA_FENCE;
-    public static Block MAHOGONY_FENCE;
+    public static Block MAHOGANY_FENCE;
     public static Block MANGROVE_FENCE;
     public static Block MAPLE_FENCE;
     public static Block PINE_FENCE;
@@ -137,6 +137,7 @@ public class BYGBlockList {
 
 
     //LeaveBlocks
+    public static Block ASPEN_LEAVES;
     public static Block BAOBAB_LEAVES;
     public static Block BLOOMING_WITCH_HAZEL_LEAVES;
     public static Block BLUE_ENCHANTED_LEAVES;
@@ -149,7 +150,6 @@ public class BYGBlockList {
     public static Block FIR_LEAVES;
     public static Block FLOWERING_ORCHARD_LEAVES;
     public static Block FLOWERING_PALO_VERDE_LEAVES;
-    public static Block ASPEN_LEAVES;
     public static Block GREEN_ENCHANTED_LEAVES;
     public static Block HOLLY_BERRY_LEAVES;
     public static Block HOLLY_LEAVES;
@@ -161,7 +161,7 @@ public class BYGBlockList {
     public static Block ORANGE_SPRUCE_LEAVES;
     public static Block ORCHARD_LEAVES;
     public static Block PALO_VERDE_LEAVES;
-    public static Block PINE_lEAVES;
+    public static Block PINE_LEAVES;
     public static Block PINK_CHERRY_LEAVES;
     public static Block RAINBOW_EUCALYPTUS_LEAVES;
     public static Block RED_BIRCH_LEAVES;

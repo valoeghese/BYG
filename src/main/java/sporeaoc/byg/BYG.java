@@ -11,6 +11,7 @@ import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import sporeaoc.byg.byglists.BYGItemList;
+import sporeaoc.byg.bygproperties.vanillaproperties.BYGFlammables;
 import sporeaoc.byg.bygproperties.vanillaproperties.BYGStrippables;
 import sporeaoc.byg.config.BYGConfig;
 import sporeaoc.byg.config.biomeweight.ConfigWeightManager;
@@ -28,6 +29,7 @@ public class BYG {
     public static final BYGFeaturesInVanilla bygFeaturesInVanilla = new BYGFeaturesInVanilla();
     public static final BlockColorManager blockColorManager = new BlockColorManager();
     public static final BYGStrippables strippablesBYG = new BYGStrippables();
+    public static final BYGFlammables flammablesBYG = new BYGFlammables();
     public static Logger LOGGER = LogManager.getLogger();
 
 
@@ -38,7 +40,8 @@ public class BYG {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(bygFeaturesInVanilla::addFeatures);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(cutoutRenders::renderCutOuts);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(strippablesBYG::strippableLogsBYG);
-
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(flammablesBYG::flammableBlocksBYG);
+        //Configs
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BYGConfig.COMMON_CONFIG);
         ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-weights-common.toml"));
     }
