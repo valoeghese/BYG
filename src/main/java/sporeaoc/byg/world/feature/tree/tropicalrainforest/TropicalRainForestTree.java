@@ -3,6 +3,7 @@ package sporeaoc.byg.world.feature.tree.tropicalrainforest;
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.VineBlock;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
@@ -68,8 +69,12 @@ public class TropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatureConf
                     }
                     int logplacer = posY + groundUpLogRemover;
                     int logplacer1 = posY + randTreeHeight;
+                    int logplacer2 = posY + groundUpLogRemover - rand.nextInt(6);
+
                     BlockPos blockpos1 = new BlockPos(posX1, logplacer, posZ1);
                     BlockPos blockpos2 = new BlockPos(posX1, logplacer1, posZ1);
+                    BlockPos blockpos3 = new BlockPos(posX1, logplacer2, posZ1);
+
                     this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
                     this.treelog(changedBlocks, worldIn, blockpos2.west(), boundsIn);
                     this.treelog(changedBlocks, worldIn, blockpos2.east(), boundsIn);
@@ -99,6 +104,13 @@ public class TropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatureConf
                     this.treelog(changedBlocks, worldIn, blockpos2.east(2).up(5), boundsIn);
                     this.treelog(changedBlocks, worldIn, blockpos2.north(2).up(5), boundsIn);
                     this.treelog(changedBlocks, worldIn, blockpos2.south(2).up(5), boundsIn);
+                    if (rand.nextInt(4) == 2) {
+                        this.tryPlaceVines(worldIn, rand, blockpos3.west(), VineBlock.EAST);
+                    }
+                    else if(rand.nextInt(2) == 1) {
+                        this.tryPlaceVines(worldIn, rand, blockpos3.east(), VineBlock.WEST);
+                        this.tryPlaceVines(worldIn, rand, blockpos3.north(), VineBlock.SOUTH);
+                    }
                 }
                 int leavePreset = 1;
                 {

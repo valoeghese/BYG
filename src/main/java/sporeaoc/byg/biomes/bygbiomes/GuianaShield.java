@@ -46,7 +46,7 @@ public class GuianaShield extends Biome {
         DefaultBiomeFeatures.addMushrooms(this);
         DefaultBiomeFeatures.addReedsAndPumpkins(this);
         DefaultBiomeFeatures.addSprings(this);
-        DefaultBiomeFeatures.addJunglePlants(this);
+        //DefaultBiomeFeatures.addJunglePlants(this);
         BYGTreeFeatures.addTropJungleTrees(this);
         DefaultBiomeFeatures.addVeryDenseGrass(this);
 
