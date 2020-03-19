@@ -12,7 +12,8 @@ public class BYGSBList {
     public static final SurfaceBuilder<SurfaceBuilderConfig> BOREAL_SB = new BorealForestSB(SurfaceBuilderConfig::deserialize);
     public static final SurfaceBuilderConfig QUAGMIREMUD = new SurfaceBuilderConfig(BYGBlockList.MUD_BLOCK.getDefaultState(), BYGBlockList.MUD_BLOCK.getDefaultState(), BYGBlockList.MUD_BLOCK.getDefaultState());
     public static final SurfaceBuilderConfig QUAGMIREMUDBRICK = new SurfaceBuilderConfig(BYGBlockList.MUD_BRICKS.getDefaultState(), BYGBlockList.MUD_BLOCK.getDefaultState(), BYGBlockList.MUD_BLOCK.getDefaultState());
-    public static final SurfaceBuilderConfig PODZOL = new SurfaceBuilderConfig(Blocks.PODZOL.getDefaultState(), Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState());
+    public static final SurfaceBuilderConfig PODZOLMOUNTAIN_SB = new SurfaceBuilderConfig(Blocks.PODZOL.getDefaultState(), Blocks.STONE.getDefaultState(), Blocks.STONE.getDefaultState());
+    public static final SurfaceBuilderConfig GRASSMOUNTAIN_SB = new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(), Blocks.STONE.getDefaultState(), Blocks.STONE.getDefaultState());
 
 
     public static final SurfaceBuilder<SurfaceBuilderConfig> DOVER_SB = new DoverMountainSB(SurfaceBuilderConfig::deserialize);

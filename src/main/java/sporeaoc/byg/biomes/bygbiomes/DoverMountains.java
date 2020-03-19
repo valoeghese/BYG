@@ -12,14 +12,13 @@ import net.minecraft.world.gen.feature.structure.MineshaftConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftStructure;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import sporeaoc.byg.byglists.BYGSBList;
 import sporeaoc.byg.world.feature.biomefeatures.BYGTreeFeatures;
 
 public class DoverMountains extends Biome {
-    static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(BYGSBList.DOVER_SB, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
+    static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(BYGSBList.DOVER_SB, BYGSBList.PODZOLMOUNTAIN_SB);
     static final RainType PRECIPATATION = RainType.RAIN;
     static final Category CATEGORY = Category.EXTREME_HILLS;
     static final double DEPTH = 2.0F;

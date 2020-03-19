@@ -16,6 +16,7 @@ import net.minecraft.util.math.shapes.BitSetVoxelShapePart;
 import net.minecraft.util.math.shapes.VoxelShapePart;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IWorldWriter;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.gen.GenerationSettings;
 import net.minecraft.world.gen.IWorldGenerationBaseReader;
@@ -23,6 +24,7 @@ import net.minecraft.world.gen.IWorldGenerationReader;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.template.Template;
+import sporeaoc.byg.byglists.BYGBiomeList;
 import sporeaoc.byg.byglists.BYGBlockList;
 
 import java.util.List;
@@ -32,6 +34,7 @@ import java.util.function.Function;
 
 public abstract class BYGAbstractTreeFeature<T extends IFeatureConfig> extends Feature<T> {
     public static boolean doBlockNotify;
+    static Biome biome;
     protected net.minecraftforge.common.IPlantable sapling = (net.minecraftforge.common.IPlantable) net.minecraft.block.Blocks.OAK_SAPLING;
 
     public BYGAbstractTreeFeature(Function<Dynamic<?>, ? extends T> p_i49920_1_, boolean doBlockNofityOnPlace, int beeHiveChance) {
@@ -42,7 +45,7 @@ public abstract class BYGAbstractTreeFeature<T extends IFeatureConfig> extends F
         if (!(worldReader instanceof net.minecraft.world.IWorldReader)) // FORGE: Redirect to state method when possible
             return worldReader.hasBlockState(blockPos, (blockPos2) -> {
                 Block block = blockPos2.getBlock();
-                return blockPos2.isAir() || blockPos2.isIn(BlockTags.LEAVES) || block == Blocks.GRASS_BLOCK || Feature.isDirt(block) || block.isIn(BlockTags.LOGS) || block.isIn(BlockTags.SAPLINGS) || block == Blocks.VINE;
+                return blockPos2.isAir() || blockPos2.isIn(BlockTags.LEAVES) || block == Blocks.GRASS_BLOCK || Feature.isDirt(block) || block.isIn(BlockTags.LOGS) || block.isIn(BlockTags.SAPLINGS) || block == Blocks.VINE || block == BYGBlockList.OVERGROWN_STONE || block == BYGBlockList.MAHOGANY_LOG || block == BYGBlockList.MAHOGANY_LEAVES;
             });
         else
             return worldReader.hasBlockState(blockPos, state -> state.canBeReplacedByLogs((net.minecraft.world.IWorldReader) worldReader, blockPos));
@@ -118,7 +121,11 @@ public abstract class BYGAbstractTreeFeature<T extends IFeatureConfig> extends F
     @Deprecated //Forge: moved to setDirtAt
     protected void func_214584_a(IWorldGenerationReader p_214584_1_, BlockPos p_214584_2_) {
         if (!isDirt(p_214584_1_, p_214584_2_)) {
+            if (biome == BYGBiomeList.GUIANASHIELD) {
+                this.setBlockState(p_214584_1_, p_214584_2_, BYGBlockList.OVERGROWN_STONE.getDefaultState());
+            }
             this.setBlockState(p_214584_1_, p_214584_2_, Blocks.DIRT.getDefaultState());
+
         }
 
     }

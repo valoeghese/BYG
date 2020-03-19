@@ -32,6 +32,7 @@ import sporeaoc.byg.world.feature.tree.taiga.tallspruce.TallBlueSpruceTree;
 import sporeaoc.byg.world.feature.tree.taiga.tallspruce.TallOrangeSpruceTree;
 import sporeaoc.byg.world.feature.tree.taiga.tallspruce.TallRedSpruceTree;
 import sporeaoc.byg.world.feature.tree.taiga.tallspruce.TallYellowSpruceTree;
+import sporeaoc.byg.world.feature.tree.tropicalrainforest.BYGTropShrub;
 import sporeaoc.byg.world.feature.tree.tropicalrainforest.ShortTropicalRainForestTree;
 import sporeaoc.byg.world.feature.tree.tropicalrainforest.TropicalRainForestTree;
 import sporeaoc.byg.world.feature.tree.util.BYGAbstractTreeFeature;
@@ -91,6 +92,7 @@ public class BYGFeatureList {
     //Tropical Trees
     public static final BYGAbstractTreeFeature<NoFeatureConfig> TROPICALRAINFOREST_TREE = new TropicalRainForestTree(NoFeatureConfig::deserialize, false, 0);
     public static final BYGAbstractTreeFeature<NoFeatureConfig> SHORTTROPICALRAINFOREST_TREE = new ShortTropicalRainForestTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> TROPJUNGLE_SHRUB = new BYGTropShrub(NoFeatureConfig::deserialize, false, 0);
 
     //Shrub
     public static final BYGAbstractTreeFeature<NoFeatureConfig> SHRUB = new BYGShrub(NoFeatureConfig::deserialize, false, 0);

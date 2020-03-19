@@ -186,7 +186,7 @@ public class ShortTropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatur
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
-            int distance = 3;
+            int distance = 0;
 
             for (int xOffset = -distance; xOffset <= distance; ++xOffset) {
                 for (int zOffset = -distance; zOffset <= distance; ++zOffset) {
