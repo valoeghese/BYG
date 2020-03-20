@@ -16,13 +16,13 @@ import java.util.Random;
 import java.util.Set;
 import java.util.function.Function;
 
-public class SmallFirTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
+public class TallFirTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = BYGBlockList.FIR_LOG.getDefaultState();
     private static final BlockState LEAVES = BYGBlockList.FIR_LEAVES.getDefaultState();
     private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
-    public SmallFirTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+    public TallFirTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
         super(configIn, doBlockNotifyIn, beeHiveChance);
         setSapling((net.minecraftforge.common.IPlantable) BYGBlockList.FIR_SAPLING);
 
@@ -36,7 +36,7 @@ public class SmallFirTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
-        int randTreeHeight = rand.nextInt(3) + rand.nextInt(3) + 11;
+        int randTreeHeight = rand.nextInt(5) + rand.nextInt(5) + 14;
         //Positions
         int posX = position.getX();
         int posY = position.getY();
@@ -144,7 +144,7 @@ public class SmallFirTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
 
         for (int yOffset = 0; yOffset <= height + 1; ++yOffset) {
             //Distance/Density of trees. Positive Values ONLY
-            int distance = 0;
+            int distance = 1;
 
             for (int xDistance = -distance; xDistance <= distance; ++xDistance) {
                 for (int zDistance = -distance; zDistance <= distance; ++zDistance) {
