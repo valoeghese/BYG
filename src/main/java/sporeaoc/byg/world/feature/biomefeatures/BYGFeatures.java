@@ -14,7 +14,7 @@ import sporeaoc.byg.byglists.BYGFeatureList;
 public class BYGFeatures {
     public static void addAlliumFieldFlowers(Biome biome) {
         biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_SELECTOR.withConfiguration(new MultipleRandomFeatureConfig(ImmutableList.of(
-                Feature.RANDOM_PATCH.withConfiguration(BYGFeatureConfigs.ALLIUMBUSH_CONFIG).func_227227_a_(0.3F)),
+                Feature.RANDOM_PATCH.withConfiguration(BYGFeatureConfigs.ALLIUMBUSH_CONFIG).func_227227_a_(0.6F)),
                 Feature.RANDOM_PATCH.withConfiguration(BYGFeatureConfigs.PINKALLIUMBUSH_CONFIG))).withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(
                 new FrequencyConfig(200))));
     }

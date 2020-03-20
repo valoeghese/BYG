@@ -45,6 +45,9 @@ public class DoverMountains extends Biome {
         DefaultBiomeFeatures.addSedimentDisks(this);
         DefaultBiomeFeatures.addMushrooms(this);
         DefaultBiomeFeatures.addReedsAndPumpkins(this);
+        DefaultBiomeFeatures.addTaigaGrassDeadBushesMushrooms(this);
+        DefaultBiomeFeatures.addTaigaRocks(this);
+        DefaultBiomeFeatures.addTaigaLargeFerns(this);
         BYGTreeFeatures.addDoverMTrees(this);
         this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SPRING_FEATURE.withConfiguration(DefaultBiomeFeatures.WATER_SPRING_CONFIG).withPlacement(Placement.COUNT_BIASED_RANGE.configure(new CountRangeConfig(50, 8, 8, 256))));
 
@@ -69,7 +72,7 @@ public class DoverMountains extends Biome {
     @Override
     @OnlyIn(Dist.CLIENT)
     public int getGrassColor(double posX, double posZ) {
-        return 2263842;
+        return 5011004;
 
     }
     @Override

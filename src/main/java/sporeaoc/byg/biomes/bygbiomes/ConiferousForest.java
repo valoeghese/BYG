@@ -71,7 +71,7 @@ public class ConiferousForest extends Biome {
     @OnlyIn(Dist.CLIENT)
     public int getGrassColor(double posX, double posZ) {
         int i = super.getGrassColor(posX, posZ);
-        return (i & 2263842);
+        return (i & 5011004);
 
     }
     @Override

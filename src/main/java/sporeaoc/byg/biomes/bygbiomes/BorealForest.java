@@ -26,7 +26,7 @@ public class BorealForest extends Biome {
     static final double SCALE = 0.1F;
     static final float TEMPERATURE = 0.25F;
     static final float DOWNFALL = 0.8F;
-    static final int WATER_COLOR = 0xFF6F8A31;
+    static final int WATER_COLOR = 4159204;
     static final int WATER_FOG_COLOR = 329011;
     static final String PARENT = null;
 
@@ -76,8 +76,11 @@ public class BorealForest extends Biome {
     }
 
     @OnlyIn(Dist.CLIENT)
-    public int getGrassColor(BlockPos pos) {
-        return 5406525;
+    public int getGrassColor(double p_225528_1_, double p_225528_3_) {
+        double lvt_5_1_ = INFO_NOISE.noiseAt(p_225528_1_ * 0.0225D, p_225528_3_ * 0.0225D, false);
+        return lvt_5_1_ < -0.1D ? 5011004 : 5406525;
     }
 }
+
+
 
