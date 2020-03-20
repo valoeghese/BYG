@@ -36,7 +36,7 @@ public class TallFirTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
-        int randTreeHeight = rand.nextInt(5) + rand.nextInt(5) + 14;
+        int randTreeHeight = rand.nextInt(5) + rand.nextInt(5) + 18;
         //Positions
         int posX = position.getX();
         int posY = position.getY();
