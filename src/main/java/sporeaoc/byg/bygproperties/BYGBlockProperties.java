@@ -7,6 +7,7 @@ import net.minecraft.potion.Effects;
 import net.minecraft.state.properties.Half;
 import net.minecraft.state.properties.StairsShape;
 import net.minecraft.util.Direction;
+import sporeaoc.byg.byglists.BYGMaterials;
 import sporeaoc.byg.bygproperties.blocks.*;
 import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGGlowCeliumBlock;
 import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGMeadowGrassBlock;
@@ -153,6 +154,7 @@ public class BYGBlockProperties {
                     .sound(SoundType.GROUND)
                     .hardnessAndResistance(0.2f)
                     .tickRandomly()
+                    .speedFactor(0.4F)
             );
             setRegistryName(registryName);
         }
@@ -171,10 +173,12 @@ public class BYGBlockProperties {
 
     public static class BYGGlowcelium extends BYGGlowCeliumBlock {
         public BYGGlowcelium(String registryName) {
-            super(Block.Properties.create(Material.EARTH)
+            super(Block.Properties.create(BYGMaterials.GLOWCELIUM)
                     .sound(SoundType.GROUND)
                     .hardnessAndResistance(0.2f)
                     .tickRandomly()
+                    .lightValue(10)
+
             );
             setRegistryName(registryName);
         }
@@ -206,7 +210,7 @@ public class BYGBlockProperties {
     public static class BYGPollen extends BYGPollenBlock {
         public BYGPollen(String registryName) {
             super(Block.Properties.create(Material.LEAVES)
-                    .sound(SoundType.PLANT)
+                    .sound(SoundType.CORAL)
                     .hardnessAndResistance(0.2f)
                     .tickRandomly()
                     .notSolid()
@@ -265,9 +269,45 @@ public class BYGBlockProperties {
         }
     }
 
-    public static class BYGGlowCane extends BYGGlowcane {
-        public BYGGlowCane(String registryName) {
-            super(Block.Properties.create(Material.PLANTS)
+    public static class BYGREDGlowCane extends BYGGlowcane {
+        public BYGREDGlowCane(String registryName) {
+            super(Block.Properties.create(BYGMaterials.RED_GLOWCANE)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(0.0f, 0.0f)
+                    .doesNotBlockMovement()
+                    .lightValue(10)
+            );
+            setRegistryName(registryName);
+        }
+    }
+
+    public static class BYGPINKGlowCane extends BYGGlowcane {
+        public BYGPINKGlowCane(String registryName) {
+            super(Block.Properties.create(BYGMaterials.PINK_GLOWCANE)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(0.0f, 0.0f)
+                    .doesNotBlockMovement()
+                    .lightValue(10)
+            );
+            setRegistryName(registryName);
+        }
+    }
+
+    public static class BYGPURPLEGlowCane extends BYGGlowcane {
+        public BYGPURPLEGlowCane(String registryName) {
+            super(Block.Properties.create(BYGMaterials.PURPLE_GLOWCANE)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(0.0f, 0.0f)
+                    .doesNotBlockMovement()
+                    .lightValue(10)
+            );
+            setRegistryName(registryName);
+        }
+    }
+
+    public static class BYGBLUEGlowCane extends BYGGlowcane {
+        public BYGBLUEGlowCane(String registryName) {
+            super(Block.Properties.create(BYGMaterials.BLUE_GLOWCANE)
                     .sound(SoundType.PLANT)
                     .hardnessAndResistance(0.0f, 0.0f)
                     .doesNotBlockMovement()

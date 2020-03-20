@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.byglists.BYGBlockList;
 import sporeaoc.byg.byglists.BYGItemList;
-import sporeaoc.byg.bygproperties.items.BYGLilyItem;
+import sporeaoc.byg.bygproperties.items.*;
 import sporeaoc.byg.itemtiers.BYGItemTiers;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -46,10 +46,13 @@ public class BYGItemRegistry {
                 BYGItemList.HOLLY_BERRY = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("holly_berries"),
                 BYGItemList.GREEN_APPLE = new Item(new Item.Properties().group(BYG.Init.creativeTab).food(new Food.Builder().hunger(2).saturation(0.1f).build())).setRegistryName("green_apple"),
 
-                BYGItemList.BLUE_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.BLUE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("blue_glowcane_stalk"),
-                BYGItemList.RED_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.RED_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("red_glowcane_stalk"),
-                BYGItemList.PINK_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.PINK_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("pink_glowcane_stalk"),
-                BYGItemList.PURPLE_GLOWCANE_STALK = new BlockNamedItem(BYGBlockList.PURPLE_GLOWCANE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("purple_glowcane_stalk"),
+                BYGItemList.RED_GLOWCANE_STALK = (new BYGREDGlowcaneItem(BYGBlockList.RED_GLOWCANE, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("red_glowcane_stalk")),
+                BYGItemList.BLUE_GLOWCANE_STALK = (new BYGBLUEGlowcaneItem(BYGBlockList.BLUE_GLOWCANE, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("blue_glowcane_stalk")),
+                BYGItemList.PINK_GLOWCANE_STALK = (new BYGPINKGlowcaneItem(BYGBlockList.PINK_GLOWCANE, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("pink_glowcane_stalk")),
+                BYGItemList.PURPLE_GLOWCANE_STALK = (new BYGPURPLEGlowcaneItem(BYGBlockList.PURPLE_GLOWCANE, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName("purple_glowcane_stalk")),
+
+
+
 
                 BYGItemList.BLUE_GLOWCANE_DUST = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("blue_glowcane_dust"),
                 BYGItemList.RED_GLOWCANE_DUST = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("red_glowcane_dust"),
