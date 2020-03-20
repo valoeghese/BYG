@@ -261,6 +261,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.PRICKLY_PEAR_CACTUS = new BYGBlockProperties.BYGDesertPlant("prickly_pear_cactus"),
                 BYGBlockList.WINTER_SUCCULENT = new BYGBlockProperties.BYGFlower("winter_succulent"),
                 BYGBlockList.SHORT_GRASS = new BYGBlockProperties.BYGTallGrass("short_grass"),
+                BYGBlockList.TALL_PRAIRIE_GRASS = new BYGBlockProperties.BYGDoublePlant("tall_prairie_grass"),
                 BYGBlockList.BLUE_GLOWCANE = new BYGBlockProperties.BYGGlowCane("blue_glowcane"),
                 BYGBlockList.RED_GLOWCANE = new BYGBlockProperties.BYGGlowCane("red_glowcane"),
                 BYGBlockList.PURPLE_GLOWCANE = new BYGBlockProperties.BYGGlowCane("purple_glowcane"),
@@ -358,6 +359,8 @@ public class BYGBlockRegistry {
                 BYGBlockList.DACITE_TILE = new BYGBlockProperties.BYGStone("dacite_tile"),
 
                 BYGBlockList.MOSSY_STONE = new BYGBlockProperties.BYGStone("mossy_stone"),
+                BYGBlockList.PODZOL_DACITE = new BYGBlockProperties.BYGDirt("podzol_dacite"),
+                BYGBlockList.OVERGROWN_DACITE = new BYGBlockProperties.BlockOvergrownDaciteBlock("overgrown_dacite"),
                 BYGBlockList.OVERGROWN_STONE = new BYGBlockProperties.BlockOvergrownStoneBlock("overgrown_stone"),
                 BYGBlockList.ROCKY_STONE = new BYGBlockProperties.BYGStone("rocky_stone"),
 

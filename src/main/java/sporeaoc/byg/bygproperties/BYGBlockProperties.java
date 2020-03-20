@@ -9,6 +9,7 @@ import net.minecraft.state.properties.StairsShape;
 import net.minecraft.util.Direction;
 import sporeaoc.byg.bygproperties.blocks.*;
 import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGMeadowGrassBlock;
+import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGOverGrownDaciteBlock;
 import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGOverGrownStoneBlock;
 
 public class BYGBlockProperties {
@@ -48,6 +49,19 @@ public class BYGBlockProperties {
         }
     }
 
+    public static class BYGDoublePlant extends DoublePlantBlock {
+        public BYGDoublePlant(String registryName) {
+            super(
+                    Block.Properties.create(Material.PLANTS)
+                            .sound(SoundType.PLANT)
+                            .hardnessAndResistance(0.0f)
+                            .doesNotBlockMovement()
+                            .notSolid()
+            );
+            setRegistryName(registryName);
+
+        }
+    }
     public static class BYGDesertPlant extends BYGDesertPlants {
         public BYGDesertPlant(String registryName) {
             super(
@@ -110,6 +124,18 @@ public class BYGBlockProperties {
 
     public static class BlockOvergrownStoneBlock extends BYGOverGrownStoneBlock {
         public BlockOvergrownStoneBlock(String registryName) {
+            super(Block.Properties.create(Material.ROCK)
+                    .sound(SoundType.STONE)
+                    .hardnessAndResistance(1.5f, 6.0f)
+                    .tickRandomly()
+
+            );
+            setRegistryName(registryName);
+        }
+    }
+
+    public static class BlockOvergrownDaciteBlock extends BYGOverGrownDaciteBlock {
+        public BlockOvergrownDaciteBlock(String registryName) {
             super(Block.Properties.create(Material.ROCK)
                     .sound(SoundType.STONE)
                     .hardnessAndResistance(1.5f, 6.0f)

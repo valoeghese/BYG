@@ -306,6 +306,7 @@ public class BYGItemList {
     public static Item RED_GLOWCANE_STALK;
     public static Item POISON_IVY;
     public static Item PRAIRIE_GRASS;
+    public static Item TALL_PRAIRIE_GRASS;
     public static Item PINK_GLOWCANE_STALK;
     public static Item PURPLE_GLOWCANE_STALK;
     public static Item WEEPING_VINES;
@@ -433,6 +434,8 @@ public class BYGItemList {
     public static Item MOSSY_STONE;
     public static Item ROCKY_STONE;
     public static Item OVERGROWN_STONE;
+    public static Item OVERGROWN_DACITE;
+    public static Item PODZOL_DACITE;
 
     //StrippedLogItems
     public static Item STRIPPED_BAOBAB_LOG;

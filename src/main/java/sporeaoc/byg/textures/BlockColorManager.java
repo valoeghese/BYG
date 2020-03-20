@@ -30,7 +30,7 @@ public class BlockColorManager {
         //registers the colors for blocks that changes colors based on biome
         blockColors.register((unknown, lightReader, pos, unknown2) -> {
             return lightReader != null && pos != null ? BiomeColors.getGrassColor(lightReader, pos) : GrassColors.get(0.5D, 1.0D);
-        }, BYGBlockList.MEADOW_GRASSBLOCK, BYGBlockList.MAHOGANY_LEAVES, BYGBlockList.POISON_IVY, BYGBlockList.OVERGROWN_STONE, BYGBlockList.SHORT_GRASS, BYGBlockList.TINY_LILYPADS);
+        }, BYGBlockList.MEADOW_GRASSBLOCK, BYGBlockList.MAHOGANY_LEAVES, BYGBlockList.POISON_IVY, BYGBlockList.OVERGROWN_STONE, BYGBlockList.SHORT_GRASS, BYGBlockList.TINY_LILYPADS, BYGBlockList.OVERGROWN_DACITE);
     }
 
     /**
@@ -48,6 +48,6 @@ public class BlockColorManager {
             return blockColors.getColor(state, null, null, tintIndex);
         };
 
-        itemColors.register(itemBlockColourHandler, BYGItemList.MEADOW_GRASSBLOCK, BYGItemList.MAHOGANY_LEAVES, BYGItemList.POISON_IVY, BYGItemList.OVERGROWN_STONE, BYGItemList.SHORT_GRASS, BYGItemList.TINY_LILYPADS);
+        itemColors.register(itemBlockColourHandler, BYGItemList.MEADOW_GRASSBLOCK, BYGItemList.MAHOGANY_LEAVES, BYGItemList.POISON_IVY, BYGItemList.OVERGROWN_STONE, BYGItemList.SHORT_GRASS, BYGItemList.TINY_LILYPADS, BYGItemList.OVERGROWN_DACITE);
     }
 }

@@ -90,7 +90,6 @@ public class BYGBlockList {
 
     //Grass Blocks
     public static Block MEADOW_GRASSBLOCK;
-    public static Block SNOWY_MEADOW_GRASSBLOCK;
     public static Block PEAT_GRASSBLOCK;
 
     //Dirt Blocks
@@ -299,6 +298,7 @@ public class BYGBlockList {
     public static Block PRICKLY_PEAR_CACTUS;
     public static Block WINTER_SUCCULENT;
     public static Block SHORT_GRASS;
+    public static Block TALL_PRAIRIE_GRASS;
     public static Block BLUE_GLOWCANE;
     public static Block RED_GLOWCANE;
     public static Block BLUEBERRY_BUSH;
@@ -424,6 +424,8 @@ public class BYGBlockList {
     public static Block MOSSY_STONE;
     public static Block ROCKY_STONE;
     public static Block OVERGROWN_STONE;
+    public static Block OVERGROWN_DACITE;
+    public static Block PODZOL_DACITE;
 
     //StrippedLogBlocks
     public static Block STRIPPED_BAOBAB_LOG;

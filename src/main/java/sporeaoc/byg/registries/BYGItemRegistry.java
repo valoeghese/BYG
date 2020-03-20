@@ -279,6 +279,8 @@ public class BYGItemRegistry {
 
 
                 BYGItemList.MOSSY_STONE = new BlockItem(BYGBlockList.MOSSY_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.MOSSY_STONE.getRegistryName()),
+                BYGItemList.PODZOL_DACITE = new BlockItem(BYGBlockList.PODZOL_DACITE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PODZOL_DACITE.getRegistryName()),
+                BYGItemList.OVERGROWN_DACITE = new BlockItem(BYGBlockList.OVERGROWN_DACITE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.OVERGROWN_DACITE.getRegistryName()),
                 BYGItemList.OVERGROWN_STONE = new BlockItem(BYGBlockList.OVERGROWN_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.OVERGROWN_STONE.getRegistryName()),
                 BYGItemList.ROCKY_STONE = new BlockItem(BYGBlockList.ROCKY_STONE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.ROCKY_STONE.getRegistryName()),
 
@@ -428,6 +430,7 @@ public class BYGItemRegistry {
                 BYGItemList.PINK_DAFFODIL = new BlockItem(BYGBlockList.PINK_DAFFODIL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PINK_DAFFODIL.getRegistryName()),
                 BYGItemList.PINK_ORCHID = new BlockItem(BYGBlockList.PINK_ORCHID, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PINK_ORCHID.getRegistryName()),
                 BYGItemList.PRAIRIE_GRASS = new BlockItem(BYGBlockList.PRAIRIE_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PRAIRIE_GRASS.getRegistryName()),
+                BYGItemList.TALL_PRAIRIE_GRASS = new BlockItem(BYGBlockList.TALL_PRAIRIE_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.TALL_PRAIRIE_GRASS.getRegistryName()),
                 BYGItemList.PROTEA_FLOWER = new BlockItem(BYGBlockList.PROTEA_FLOWER, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PROTEA_FLOWER.getRegistryName()),
                 BYGItemList.PURPLE_AMARANTH = new BlockItem(BYGBlockList.PURPLE_AMARANTH, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PURPLE_AMARANTH.getRegistryName()),
                 BYGItemList.PURPLE_ORCHID = new BlockItem(BYGBlockList.PURPLE_ORCHID, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PURPLE_ORCHID.getRegistryName()),
