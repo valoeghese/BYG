@@ -2,7 +2,6 @@ package sporeaoc.byg.biomes.bygbiomes;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -47,7 +46,6 @@ public class TropicalRainForest extends Biome {
         DefaultBiomeFeatures.addFreezeTopLayer(this);
         BYGTreeFeatures.addTropJungleTrees(this);
         DefaultBiomeFeatures.addVeryDenseGrass(this);
-        //DefaultBiomeFeatures.addJungleTreeForest(this);
 
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.PIG, 10, 4, 4));
@@ -73,15 +71,15 @@ public class TropicalRainForest extends Biome {
         return Biomes.RIVER;
     }
 
+    @Override
     @OnlyIn(Dist.CLIENT)
-    public int getGrassColor(BlockPos pos) {
-
+    public int getGrassColor(double posX, double posZ) {
         return 10145074;
+
     }
 
-    @OnlyIn(Dist.CLIENT)
-    public int getFoliageColor(BlockPos pos) {
+    @Override
+    public int getFoliageColor() {
         return 10145074;
     }
-
 }

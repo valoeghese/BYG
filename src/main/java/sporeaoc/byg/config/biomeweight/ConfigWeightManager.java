@@ -48,7 +48,7 @@ public class ConfigWeightManager {
 //    public static ConfigWeight pinelowlands = new ConfigWeight("pinelowlands", 10);
 //    public static ConfigWeight pinemountains = new ConfigWeight("pinemountains", 10);
     public static ConfigWeight prairie = new ConfigWeight("prairie", 10);
-    public static ConfigWeight quagmire = new ConfigWeight("quagmire", 10);
+    //public static ConfigWeight quagmire = new ConfigWeight("quagmire", 10);
     public static ConfigWeight reddesert = new ConfigWeight("reddesert", 10);
     public static ConfigWeight reddesertdunes = new ConfigWeight("reddesertdunes", 10);
     public static ConfigWeight redoakforest = new ConfigWeight("redoakforest", 10);

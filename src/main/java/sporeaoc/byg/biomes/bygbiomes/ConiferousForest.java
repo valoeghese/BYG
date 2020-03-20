@@ -3,6 +3,7 @@ package sporeaoc.byg.biomes.bygbiomes;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
@@ -62,7 +63,10 @@ public class ConiferousForest extends Biome {
         this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.ENDERMAN, 10, 1, 4));
         this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.WITCH, 5, 1, 1));
     }
-
+    @Override
+    public Biome getRiver() {
+        return Biomes.RIVER;
+    }
     @Override
     @OnlyIn(Dist.CLIENT)
     public int getGrassColor(double posX, double posZ) {

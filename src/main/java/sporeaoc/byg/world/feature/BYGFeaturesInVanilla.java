@@ -1,7 +1,6 @@
 package sporeaoc.byg.world.feature;
 
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.placement.FrequencyConfig;
@@ -13,7 +12,7 @@ import sporeaoc.byg.world.feature.biomefeatures.BYGFeatureConfigs;
 public class BYGFeaturesInVanilla {
     public void addFeatures(FMLCommonSetupEvent e) {
         for (Biome biome : ForgeRegistries.BIOMES) {
-            if (biome == Biomes.FOREST) {
+            if (biome.getCategory() == Biome.Category.FOREST) {
                 biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(BYGFeatureConfigs.ROSE_CONFIG).withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(1))));
 
             }

@@ -17,21 +17,21 @@ public class BYGConfig {
 
     //public static ForgeConfigSpec.BooleanValue AmplifiedBiomes;
 
-    public static ForgeConfigSpec.IntValue PendoriteOreSize;
-    public static ForgeConfigSpec.IntValue PendoriteOreChance;
-    public static ForgeConfigSpec.IntValue PendoriteOreMaxY;
-    // public static ForgeConfigSpec.IntValue PendoriteOreMinY;
-
-    public static ForgeConfigSpec.IntValue AmetrineOreSize;
-    public static ForgeConfigSpec.IntValue AmetrineOreChance;
-    public static ForgeConfigSpec.IntValue AmetrineOreMaxY;
+//    public static ForgeConfigSpec.IntValue PendoriteOreSize;
+//    public static ForgeConfigSpec.IntValue PendoriteOreChance;
+//    public static ForgeConfigSpec.IntValue PendoriteOreMaxY;
+//    // public static ForgeConfigSpec.IntValue PendoriteOreMinY;
+//
+//    public static ForgeConfigSpec.IntValue AmetrineOreSize;
+//    public static ForgeConfigSpec.IntValue AmetrineOreChance;
+//    public static ForgeConfigSpec.IntValue AmetrineOreMaxY;
     //public static ForgeConfigSpec.IntValue TamreliteOreMinY;
 
-
-    public static ForgeConfigSpec.IntValue DaciteSize;
-    public static ForgeConfigSpec.IntValue DaciteChance;
-    public static ForgeConfigSpec.IntValue DaciteMaxY;
-    // public static ForgeConfigSpec.IntValue DaciteMinY;
+//
+//    public static ForgeConfigSpec.IntValue DaciteSize;
+//    public static ForgeConfigSpec.IntValue DaciteChance;
+//    public static ForgeConfigSpec.IntValue DaciteMaxY;
+//    // public static ForgeConfigSpec.IntValue DaciteMinY;
 
     public static ForgeConfigSpec.IntValue RockyStoneSize;
     public static ForgeConfigSpec.IntValue RockyStoneChance;
@@ -53,27 +53,6 @@ public class BYGConfig {
     static {
         COMMON_BUILDER.comment("BYG Config").push("Biome Settings");
         //AmplifiedBiomes = COMMON_BUILDER.define("AmplifiedBiomes", false);
-
-        COMMON_BUILDER.pop();
-        COMMON_BUILDER.push("PendoriteOre");
-        PendoriteOreSize = COMMON_BUILDER.defineInRange("PendoriteSize", 4, 1, 100);
-        PendoriteOreChance = COMMON_BUILDER.defineInRange("PendoriteChance", 4, 1, 100);
-        PendoriteOreMaxY = COMMON_BUILDER.defineInRange("PendoriteMaxY", 32, 1, 256);
-        //  PendoriteOreMinY = COMMON_BUILDER.defineInRange("PendoriteMinY", 12, 1, 256);
-        COMMON_BUILDER.pop();
-        COMMON_BUILDER.push("AmetrineOre");
-        AmetrineOreSize = COMMON_BUILDER.defineInRange("AmetrineSize", 4, 1, 100);
-        AmetrineOreChance = COMMON_BUILDER.defineInRange("AmetrineChance", 4, 1, 100);
-        AmetrineOreMaxY = COMMON_BUILDER.defineInRange("AmetrineMaxY", 32, 1, 256);
-        //  AmetrineOreMinY = COMMON_BUILDER.defineInRange("AmetrineMinY", 12, 1, 256);
-        COMMON_BUILDER.pop();
-        COMMON_BUILDER.push("Stones");
-        COMMON_BUILDER.push("DaciteStone");
-        DaciteSize = COMMON_BUILDER.defineInRange("DaciteSize", 12, 1, 100);
-        DaciteChance = COMMON_BUILDER.defineInRange("DaciteChance", 4, 1, 100);
-        DaciteMaxY = COMMON_BUILDER.defineInRange("DaciteMaxY", 256, 1, 256);
-        //  DaciteMinY = COMMON_BUILDER.defineInRange("DaciteMinY", 1, 1, 256);
-        COMMON_BUILDER.pop();
         COMMON_BUILDER.push("RockyStone");
         RockyStoneSize = COMMON_BUILDER.defineInRange("RockyStoneSize", 12, 1, 100);
         RockyStoneChance = COMMON_BUILDER.defineInRange("RockyStoneChance", 4, 1, 100);
@@ -92,10 +71,8 @@ public class BYGConfig {
         SoapStoneMaxY = COMMON_BUILDER.defineInRange("SoapStoneMaxY", 256, 1, 256);
         // SoapStoneMinY = COMMON_BUILDER.defineInRange("SoapStoneMinY", 1, 1, 256);
         COMMON_BUILDER.pop();
-        COMMON_BUILDER.pop();
-        COMMON_BUILDER.comment("BYG Config").push("EE Settings");
-        EESupport = COMMON_BUILDER.comment("Support for the mod Entombed Ecosystems(https://www.curseforge.com/minecraft/mc-mods/entombed-ecosystems)\nDoes Nothing if EE is not present.Z").define("EESupport", true);
-
+//        COMMON_BUILDER.comment("BYG Config").push("EE Settings");
+//        EESupport = COMMON_BUILDER.comment("Support for the mod Entombed Ecosystems(https://www.curseforge.com/minecraft/mc-mods/entombed-ecosystems)\nDoes Nothing if EE is not present.Z").define("EESupport", true);
         COMMON_CONFIG = COMMON_BUILDER.build();
     }
 

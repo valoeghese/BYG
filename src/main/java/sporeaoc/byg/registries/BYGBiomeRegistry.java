@@ -28,7 +28,7 @@ public class BYGBiomeRegistry {
         registerBiome(registry, BYGBiomeList.BLUETAIGA, "bluetaiga", ConfigWeightManager.bluetaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS, BiomeDictionary.Type.OVERWORLD);
         registerBiome(registry, BYGBiomeList.BLUEGIANTTAIGA, "giantbluesprucetaiga", ConfigWeightManager.giantbluetaiga.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS, BiomeDictionary.Type.OVERWORLD);
         //registerBiome(registry, BYGBiomeList.BLUFFMOUNTAINS, "bluffmountains", ConfigWeightManager.bluffmountains.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.CONIFEROUS, BiomeDictionary.Type.COLD, BiomeDictionary.Type.OVERWORLD);
-        //registerBiome(registry, BYGBiomeList.BOG, "bog", ConfigWeightManager.bog.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.SWAMP, BiomeDictionary.Type.OVERWORLD);
+        //registerBiome(registry, BYGBiomeList.BOG, "bog", 6, true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.SWAMP, BiomeDictionary.Type.OVERWORLD);
         registerBiome(registry, BYGBiomeList.BOREALFOREST, "borealforest", ConfigWeightManager.borealforest.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.OVERWORLD);
         //registerBiome(registry, BYGBiomeList.CANYONS, "canyons", ConfigWeightManager.canyons.getWeight(), true, BiomeManager.BiomeType.DESERT, BiomeDictionary.Type.HOT, BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.OVERWORLD);
         //registerBiome(registry, BYGBiomeList.CHAPPARALCOASTALS, "chapparalcoastals", ConfigWeightManager.chapparalcoastals.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.BEACH, BiomeDictionary.Type.PLAINS, BiomeDictionary.Type.OVERWORLD);
@@ -56,7 +56,7 @@ public class BYGBiomeRegistry {
         //registerBiome(registry, BYGBiomeList.PINELOWANDS, "pinelowlands", ConfigWeightManager.pinelowlands.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS, BiomeDictionary.Type.OVERWORLD);
         //registerBiome(registry, BYGBiomeList.PINEMOUNTAINS, "pinemountains", ConfigWeightManager.pinemountains.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.COLD, BiomeDictionary.Type.CONIFEROUS, BiomeDictionary.Type.MOUNTAIN, BiomeDictionary.Type.OVERWORLD);
         registerBiome(registry, BYGBiomeList.PRAIRIE, "prairie", ConfigWeightManager.prairie.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.PLAINS, BiomeDictionary.Type.DRY, BiomeDictionary.Type.OVERWORLD);
-        registerBiome(registry, BYGBiomeList.QUAGMIRE, "quagmire", ConfigWeightManager.quagmire.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.SWAMP, BiomeDictionary.Type.WASTELAND);
+        //registerBiome(registry, BYGBiomeList.QUAGMIRE, "quagmire", ConfigWeightManager.quagmire.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.SWAMP, BiomeDictionary.Type.WASTELAND);
         registerBiome(registry, BYGBiomeList.REDDESERT, "reddesert", ConfigWeightManager.reddesert.getWeight(), true, BiomeManager.BiomeType.DESERT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.HOT, BiomeDictionary.Type.SANDY, BiomeDictionary.Type.OVERWORLD);
         registerBiome(registry, BYGBiomeList.REDDESERTDUNES, "reddesertdunes", ConfigWeightManager.reddesertdunes.getWeight(), true, BiomeManager.BiomeType.DESERT, BiomeDictionary.Type.DRY, BiomeDictionary.Type.HOT, BiomeDictionary.Type.SANDY, BiomeDictionary.Type.OVERWORLD);
         registerBiome(registry, BYGBiomeList.REDOAKFOREST, "redoakforest", ConfigWeightManager.redoakforest.getWeight(), true, BiomeManager.BiomeType.WARM, BiomeDictionary.Type.FOREST, BiomeDictionary.Type.OVERWORLD);
@@ -90,7 +90,7 @@ public class BYGBiomeRegistry {
     public static void registerAmplifiedBiomes(RegistryEvent.Register<Biome> event) {
         IForgeRegistry<Biome> registry = event.getRegistry();
 
-        BYG.LOGGER.info("All BYG Amplified biomes registered!");
+        //BYG.LOGGER.info("All BYG Amplified biomes registered!");
     }
 
 
@@ -98,7 +98,7 @@ public class BYGBiomeRegistry {
     public static void registersubBiomes(RegistryEvent.Register<Biome> event) {
         IForgeRegistry<Biome> registry = event.getRegistry();
 
-        BYG.LOGGER.info("All BYG subbiomes registered!");
+        //BYG.LOGGER.info("All BYG subbiomes registered!");
     }
 
 
