@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.feature.tree.deciduousforest;
+package sporeaoc.byg.world.feature.tree.deciduous;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;

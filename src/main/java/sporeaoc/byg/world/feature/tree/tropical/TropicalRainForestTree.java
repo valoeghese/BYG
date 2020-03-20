@@ -1,8 +1,10 @@
-package sporeaoc.byg.world.feature.tree.tropicalrainforest;
+package sporeaoc.byg.world.feature.tree.tropical;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.VineBlock;
+import net.minecraft.state.BooleanProperty;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MutableBoundingBox;
@@ -17,13 +19,13 @@ import java.util.Set;
 import java.util.function.Function;
 
 //THIS FEATURE MUST BE REGISTERED & ADDED TO A BIOME!
-public class ShortTropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
+public class TropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
     //Blocks used for the tree.
     private static final BlockState LOG = BYGBlockList.MAHOGANY_LOG.getDefaultState();
     private static final BlockState LEAVES = BYGBlockList.MAHOGANY_LEAVES.getDefaultState();
     private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
-    public ShortTropicalRainForestTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+    public TropicalRainForestTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
         super(configIn, doBlockNotifyIn, beeHiveChance);
         setSapling((net.minecraftforge.common.IPlantable) BYGBlockList.MAHOGANY_SAPLING);
     }
@@ -36,7 +38,7 @@ public class ShortTropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatur
 
     public boolean place(Set<BlockPos> changedBlocks, IWorldGenerationReader worldIn, Random rand, BlockPos position, MutableBoundingBox boundsIn) {
         //This sets heights for trees. Rand.nextint allows for tree height randomization. The final int value sets the minimum for tree Height.
-        int randTreeHeight = rand.nextInt(2) + rand.nextInt(2) + 3;
+        int randTreeHeight = rand.nextInt(3) + rand.nextInt(3) + 8;
         //Positions
         int posX = position.getX();
         int posY = position.getY();
@@ -67,8 +69,12 @@ public class ShortTropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatur
                     }
                     int logplacer = posY + groundUpLogRemover;
                     int logplacer1 = posY + randTreeHeight;
+                    int logplacer2 = posY + groundUpLogRemover - rand.nextInt(6);
+
                     BlockPos blockpos1 = new BlockPos(posX1, logplacer, posZ1);
                     BlockPos blockpos2 = new BlockPos(posX1, logplacer1, posZ1);
+                    BlockPos blockpos3 = new BlockPos(posX1, logplacer2, posZ1);
+
                     this.treelog(changedBlocks, worldIn, blockpos1, boundsIn);
                     this.treelog(changedBlocks, worldIn, blockpos2.west(), boundsIn);
                     this.treelog(changedBlocks, worldIn, blockpos2.east(), boundsIn);
@@ -98,6 +104,13 @@ public class ShortTropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatur
                     this.treelog(changedBlocks, worldIn, blockpos2.east(2).up(5), boundsIn);
                     this.treelog(changedBlocks, worldIn, blockpos2.north(2).up(5), boundsIn);
                     this.treelog(changedBlocks, worldIn, blockpos2.south(2).up(5), boundsIn);
+                    if (rand.nextInt(4) == 2) {
+                        this.tryPlaceVines(worldIn, rand, blockpos3.west(), VineBlock.EAST);
+                    }
+                    else if(rand.nextInt(2) == 1) {
+                        this.tryPlaceVines(worldIn, rand, blockpos3.east(), VineBlock.WEST);
+                        this.tryPlaceVines(worldIn, rand, blockpos3.north(), VineBlock.SOUTH);
+                    }
                 }
                 int leavePreset = 1;
                 {
@@ -212,6 +225,13 @@ public class ShortTropicalRainForestTree extends BYGAbstractTreeFeature<NoFeatur
         BlockPos leafpos = new BlockPos(x, y, z);
         if (isAir(reader, leafpos)) {
             this.setLogState(blockPos, reader, leafpos, LEAVES, boundingBox);
+        }
+
+    }
+
+    private void tryPlaceVines(IWorldGenerationReader worldIn, Random random, BlockPos pos, BooleanProperty sideProperty) {
+        if (random.nextInt(3) > 0 && isAir(worldIn, pos)) {
+            this.setBlockState(worldIn, pos, Blocks.VINE.getDefaultState().with(sideProperty, Boolean.valueOf(true)));
         }
 
     }

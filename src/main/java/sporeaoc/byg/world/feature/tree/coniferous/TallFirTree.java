@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.feature.tree.coniferousforest;
+package sporeaoc.byg.world.feature.tree.coniferous;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;

@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.feature.tree.deciduousforest;
+package sporeaoc.byg.world.feature.tree.deciduous;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
@@ -17,12 +17,12 @@ import java.util.Set;
 import java.util.function.Function;
 
 //Copied and Pasted Dark Oak to try and undertstand the logic and math for tree creation.
-public class BrownDeciduousTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
-    private static final BlockState LOG = Blocks.DARK_OAK_LOG.getDefaultState();
-    private static final BlockState LEAVES = BYGBlockList.BROWN_OAK_LEAVES.getDefaultState();
+public class YellowDeciduousTree extends BYGAbstractTreeFeature<NoFeatureConfig> {
+    private static final BlockState LOG = Blocks.BIRCH_LOG.getDefaultState();
+    private static final BlockState LEAVES = BYGBlockList.YELLOW_BIRCH_LEAVES.getDefaultState();
     private static final BlockState BEENEST = Blocks.BEE_NEST.getDefaultState();
 
-    public BrownDeciduousTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
+    public YellowDeciduousTree(Function<Dynamic<?>, ? extends NoFeatureConfig> configIn, boolean doBlockNotifyIn, int beeHiveChance) {
         super(configIn, doBlockNotifyIn, beeHiveChance);
     }
 

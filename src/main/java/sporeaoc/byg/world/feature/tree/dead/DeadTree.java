@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.feature.tree.quagmire;
+package sporeaoc.byg.world.feature.tree.dead;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.Block;

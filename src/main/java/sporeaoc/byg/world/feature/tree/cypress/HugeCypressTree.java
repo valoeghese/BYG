@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.feature.tree.cypressswamplands;
+package sporeaoc.byg.world.feature.tree.cypress;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;
