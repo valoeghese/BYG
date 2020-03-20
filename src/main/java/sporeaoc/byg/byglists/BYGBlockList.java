@@ -289,6 +289,7 @@ public class BYGBlockList {
     public static Block LIGHT_BLUE_PETAL;
     public static Block BLUE_PETAL;
     public static Block PLANT_STEM;
+    public static Block POLLEN_BLOCK;
 
     //PlantBlocks
     public static Block CATTAIL;

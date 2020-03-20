@@ -146,7 +146,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.PEAT_GRASSBLOCK = new BYGBlockProperties.BYGGrassBlock("peat_grass"),
                 BYGBlockList.MEADOW_GRASSBLOCK = new BYGBlockProperties.BYGMeadowGrass("meadow_grass_block"),
                 BYGBlockList.MEADOW_DIRT = new BYGBlockProperties.BYGDirt("meadow_dirt"),
-                BYGBlockList.MUD_BLOCK = new BYGBlockProperties.BYGDirt("mud_block"),
+                BYGBlockList.MUD_BLOCK = new BYGBlockProperties.BYGMud("mud_block"),
                 BYGBlockList.MUD_BRICKS = new BYGBlockProperties.BYGDirt("mud_bricks")
         );
     }
@@ -289,7 +289,9 @@ public class BYGBlockRegistry {
                 BYGBlockList.BLUE_PETAL = new BYGBlockProperties.BYGPetal("blue_petal_block"),
                 BYGBlockList.LIGHT_BLUE_PETAL = new BYGBlockProperties.BYGPetal("light_blue_petal_block"),
                 BYGBlockList.YELLOW_PETAL = new BYGBlockProperties.BYGPetal("yellow_petal_block"),
-                BYGBlockList.PLANT_STEM = new BYGBlockProperties.BYGLog("plant_stem")
+                BYGBlockList.PLANT_STEM = new BYGBlockProperties.BYGLog("plant_stem"),
+                BYGBlockList.POLLEN_BLOCK = new BYGBlockProperties.BYGPollen("pollen_block")
+
 
 
         );

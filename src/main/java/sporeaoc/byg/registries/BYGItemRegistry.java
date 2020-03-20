@@ -186,6 +186,8 @@ public class BYGItemRegistry {
                 BYGItemList.RED_PETAL = new BlockItem(BYGBlockList.RED_PETAL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.RED_PETAL.getRegistryName()),
                 BYGItemList.YELLOW_PETAL = new BlockItem(BYGBlockList.YELLOW_PETAL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.YELLOW_PETAL.getRegistryName()),
                 BYGItemList.PLANT_STEM = new BlockItem(BYGBlockList.PLANT_STEM, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PLANT_STEM.getRegistryName()),
+                BYGItemList.POLLEN_BLOCK = new BlockItem(BYGBlockList.POLLEN_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.POLLEN_BLOCK.getRegistryName()),
+                BYGItemList.POLLEN_DUST = new Item(new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("pollen_dust"),
 
 
                 //SaplingItems

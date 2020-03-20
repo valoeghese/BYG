@@ -157,6 +157,17 @@ public class BYGBlockProperties {
         }
     }
 
+    public static class BYGMud extends SoulSandBlock {
+        public BYGMud (String registryName) {
+            super(Block.Properties.create(Material.EARTH)
+                    .sound(SoundType.GROUND)
+                    .hardnessAndResistance(0.2f)
+                    .tickRandomly()
+            );
+            setRegistryName(registryName);
+        }
+    }
+
     public static class BYGMeadowGrass extends BYGMeadowGrassBlock {
         public BYGMeadowGrass(String registryName) {
             super(Block.Properties.create(Material.EARTH)
@@ -187,6 +198,20 @@ public class BYGBlockProperties {
                     .hardnessAndResistance(0.2f)
                     .tickRandomly()
                     .notSolid()
+            );
+            setRegistryName(registryName);
+        }
+    }
+
+    public static class BYGPollen extends BYGPollenBlock {
+        public BYGPollen(String registryName) {
+            super(Block.Properties.create(Material.LEAVES)
+                    .sound(SoundType.PLANT)
+                    .hardnessAndResistance(0.2f)
+                    .tickRandomly()
+                    .notSolid()
+                    .doesNotBlockMovement()
+
             );
             setRegistryName(registryName);
         }

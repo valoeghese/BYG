@@ -293,6 +293,8 @@ public class BYGItemList {
     public static Item LIGHT_BLUE_PETAL;
     public static Item BLUE_PETAL;
     public static Item PLANT_STEM;
+    public static Item POLLEN_BLOCK;
+    public static Item POLLEN_DUST;
 
     //PlantItems
     public static Item CATTAIL;
