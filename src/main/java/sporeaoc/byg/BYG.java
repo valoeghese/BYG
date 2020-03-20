@@ -2,6 +2,8 @@ package sporeaoc.byg;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.chunk.IChunk;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -32,6 +34,8 @@ public class BYG {
     public static final BYGStrippables strippablesBYG = new BYGStrippables();
     public static final BYGFlammables flammablesBYG = new BYGFlammables();
     public static final BYGCompostables compostablesBYG = new BYGCompostables();
+    static IChunk chunkIn;
+    static BlockPos blockPos;
 
     public static Logger LOGGER = LogManager.getLogger();
 
@@ -49,6 +53,7 @@ public class BYG {
         //Configs
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BYGConfig.COMMON_CONFIG);
         ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-weights-common.toml"));
+
     }
 
     private void setup(FMLCommonSetupEvent event) {

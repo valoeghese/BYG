@@ -70,8 +70,7 @@ public class SeasonalBirchForest extends Biome {
     @Override
     @OnlyIn(Dist.CLIENT)
     public int getGrassColor(double posX, double posZ) {
-        int i = super.getGrassColor(posX, posZ);
-        return (i & 11697214);
+        return 11697214;
 
     }
     @Override

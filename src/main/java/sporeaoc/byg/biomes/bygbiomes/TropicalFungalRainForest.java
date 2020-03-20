@@ -47,7 +47,6 @@ public class TropicalFungalRainForest extends Biome {
         DefaultBiomeFeatures.addFreezeTopLayer(this);
         BYGTreeFeatures.addTropJungleTrees(this);
         DefaultBiomeFeatures.addVeryDenseGrass(this);
-        DefaultBiomeFeatures.addJungleTreeForest(this);
         DefaultBiomeFeatures.addHugeMushrooms(this);
         DefaultBiomeFeatures.addHugeMushrooms(this);
         DefaultBiomeFeatures.addHugeMushrooms(this);
