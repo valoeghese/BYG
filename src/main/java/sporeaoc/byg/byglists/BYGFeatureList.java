@@ -8,6 +8,7 @@ import sporeaoc.byg.world.feature.tree.birch.YellowBirchTree;
 import sporeaoc.byg.world.feature.tree.borealforest.BorealForestTree1;
 import sporeaoc.byg.world.feature.tree.borealforest.BorealForestTree2;
 import sporeaoc.byg.world.feature.tree.coniferousforest.SmallFirTree;
+import sporeaoc.byg.world.feature.tree.coniferousforest.TallFirTree;
 import sporeaoc.byg.world.feature.tree.coniferousforest.WideFirTree;
 import sporeaoc.byg.world.feature.tree.cypressswamplands.HugeCypressTree;
 import sporeaoc.byg.world.feature.tree.deciduousforest.*;
@@ -99,6 +100,7 @@ public class BYGFeatureList {
 
     //Coniferous Trees
     public static final BYGAbstractTreeFeature<NoFeatureConfig> SMALLCONIFEROUS_TREE = new SmallFirTree(NoFeatureConfig::deserialize, false, 0);
+    public static final BYGAbstractTreeFeature<NoFeatureConfig> TALLCONIFEROUS_TREE = new TallFirTree(NoFeatureConfig::deserialize, false, 0);
     public static final BYGAbstractTreeFeature<NoFeatureConfig> WIDECONIFEROUS_TREE = new WideFirTree(NoFeatureConfig::deserialize, false, 0);
 
     public static final BYGAbstractTreeFeature<NoFeatureConfig> DEAD_TREE = new DeadTree(NoFeatureConfig::deserialize, false, 0);
