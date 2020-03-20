@@ -8,6 +8,7 @@ import net.minecraft.state.properties.Half;
 import net.minecraft.state.properties.StairsShape;
 import net.minecraft.util.Direction;
 import sporeaoc.byg.bygproperties.blocks.*;
+import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGGlowCeliumBlock;
 import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGMeadowGrassBlock;
 import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGOverGrownDaciteBlock;
 import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGOverGrownStoneBlock;
@@ -111,17 +112,6 @@ public class BYGBlockProperties {
         }
     }
 
-//    public static class BlockMeadowGrass extends MeadowGrassBlock {
-//        public BlockMeadowGrass(String registryName) {
-//            super(Block.Properties.create(Material.EARTH)
-//                    .sound(SoundType.PLANT)
-//                    .hardnessAndResistance(0.2f)
-//                    .tickRandomly()
-//            );
-//            setRegistryName(registryName);
-//        }
-//    }
-
     public static class BlockOvergrownStoneBlock extends BYGOverGrownStoneBlock {
         public BlockOvergrownStoneBlock(String registryName) {
             super(Block.Properties.create(Material.ROCK)
@@ -179,6 +169,16 @@ public class BYGBlockProperties {
         }
     }
 
+    public static class BYGGlowcelium extends BYGGlowCeliumBlock {
+        public BYGGlowcelium(String registryName) {
+            super(Block.Properties.create(Material.EARTH)
+                    .sound(SoundType.GROUND)
+                    .hardnessAndResistance(0.2f)
+                    .tickRandomly()
+            );
+            setRegistryName(registryName);
+        }
+    }
     public static class BYGLeaves extends BYGSnowyLeavesBlock {
         public BYGLeaves(String registryName) {
             super(Block.Properties.create(Material.LEAVES)
@@ -265,7 +265,7 @@ public class BYGBlockProperties {
         }
     }
 
-    public static class BYGGlowCane extends SugarCaneBlock {
+    public static class BYGGlowCane extends BYGGlowcane {
         public BYGGlowCane(String registryName) {
             super(Block.Properties.create(Material.PLANTS)
                     .sound(SoundType.PLANT)

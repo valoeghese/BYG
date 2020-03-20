@@ -96,6 +96,7 @@ public class BYGItemList {
 
     //Grass Items
     public static Item MEADOW_GRASSBLOCK;
+    public static Item GLOWCELIUM;
     public static Item PEAT_GRASSBLOCK;
 
     //Dirt Items

@@ -145,6 +145,7 @@ public class BYGBlockRegistry {
         event.getRegistry().registerAll(
                 BYGBlockList.PEAT_GRASSBLOCK = new BYGBlockProperties.BYGGrassBlock("peat_grass_block"),
                 BYGBlockList.MEADOW_GRASSBLOCK = new BYGBlockProperties.BYGMeadowGrass("meadow_grass_block"),
+                BYGBlockList.GLOWCELIUM = new BYGBlockProperties.BYGGlowcelium("glowcelium_block"),
                 BYGBlockList.MEADOW_DIRT = new BYGBlockProperties.BYGDirt("meadow_dirt"),
                 BYGBlockList.MUD_BLOCK = new BYGBlockProperties.BYGMud("mud_block"),
                 BYGBlockList.MUD_BRICKS = new BYGBlockProperties.BYGDirt("mud_bricks")

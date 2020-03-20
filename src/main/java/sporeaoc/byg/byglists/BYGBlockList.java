@@ -90,6 +90,7 @@ public class BYGBlockList {
 
     //Grass Blocks
     public static Block MEADOW_GRASSBLOCK;
+    public static Block GLOWCELIUM;
     public static Block PEAT_GRASSBLOCK;
 
     //Dirt Blocks
