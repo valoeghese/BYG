@@ -143,7 +143,7 @@ public class BYGBlockRegistry {
     @SubscribeEvent
     public static void registerDirtBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
-                BYGBlockList.PEAT_GRASSBLOCK = new BYGBlockProperties.BYGGrassBlock("peat_grass"),
+                BYGBlockList.PEAT_GRASSBLOCK = new BYGBlockProperties.BYGGrassBlock("peat_grass_block"),
                 BYGBlockList.MEADOW_GRASSBLOCK = new BYGBlockProperties.BYGMeadowGrass("meadow_grass_block"),
                 BYGBlockList.MEADOW_DIRT = new BYGBlockProperties.BYGDirt("meadow_dirt"),
                 BYGBlockList.MUD_BLOCK = new BYGBlockProperties.BYGMud("mud_block"),

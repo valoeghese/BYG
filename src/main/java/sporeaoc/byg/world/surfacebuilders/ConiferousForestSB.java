@@ -11,8 +11,8 @@ import sporeaoc.byg.byglists.BYGSBList;
 import java.util.Random;
 import java.util.function.Function;
 
-public class BorealForestSB extends SurfaceBuilder<SurfaceBuilderConfig> {
-    public BorealForestSB(Function<Dynamic<?>, ? extends SurfaceBuilderConfig> p_i51312_1_) {
+public class ConiferousForestSB extends SurfaceBuilder<SurfaceBuilderConfig> {
+    public ConiferousForestSB(Function<Dynamic<?>, ? extends SurfaceBuilderConfig> p_i51312_1_) {
         super(p_i51312_1_);
     }
 
@@ -20,7 +20,7 @@ public class BorealForestSB extends SurfaceBuilder<SurfaceBuilderConfig> {
         if (noise > 1.75D) {
             SurfaceBuilder.DEFAULT.buildSurface(random, chunkIn, biomeIn, x, z, startHeight, noise, defaultBlock, defaultFluid, seaLevel, seed, BYGSBList.PEATGRASS_SB);
         } else if (noise > -0.95D) {
-            SurfaceBuilder.DEFAULT.buildSurface(random, chunkIn, biomeIn, x, z, startHeight, noise, defaultBlock, defaultFluid, seaLevel, seed, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
+            SurfaceBuilder.DEFAULT.buildSurface(random, chunkIn, biomeIn, x, z, startHeight, noise, defaultBlock, defaultFluid, seaLevel, seed, SurfaceBuilder.CORASE_DIRT_DIRT_GRAVEL_CONFIG);
         } else {
             SurfaceBuilder.DEFAULT.buildSurface(random, chunkIn, biomeIn, x, z, startHeight, noise, defaultBlock, defaultFluid, seaLevel, seed, SurfaceBuilder.GRASS_DIRT_GRAVEL_CONFIG);
         }

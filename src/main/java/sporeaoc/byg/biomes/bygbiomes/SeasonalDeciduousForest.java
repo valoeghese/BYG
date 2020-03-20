@@ -2,10 +2,8 @@ package sporeaoc.byg.biomes.bygbiomes;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftConfig;
@@ -35,16 +33,16 @@ public class SeasonalDeciduousForest extends Biome {
         this.addStructure(Feature.PILLAGER_OUTPOST.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
         this.addStructure(Feature.MINESHAFT.withConfiguration(new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL)));
         this.addStructure(Feature.STRONGHOLD.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-        DefaultBiomeFeatures.addCarvers(this);
-        DefaultBiomeFeatures.addStructures(this);
-        DefaultBiomeFeatures.addMonsterRooms(this);
-        DefaultBiomeFeatures.addStoneVariants(this);
-        DefaultBiomeFeatures.addOres(this);
-        DefaultBiomeFeatures.addSedimentDisks(this);
-        DefaultBiomeFeatures.addDefaultFlowers(this);
-        DefaultBiomeFeatures.addGrass(this);
-        DefaultBiomeFeatures.addMushrooms(this);
-        DefaultBiomeFeatures.addReedsAndPumpkins(this);
+//        DefaultBiomeFeatures.addCarvers(this);
+//        DefaultBiomeFeatures.addStructures(this);
+//        DefaultBiomeFeatures.addMonsterRooms(this);
+//        DefaultBiomeFeatures.addStoneVariants(this);
+//        DefaultBiomeFeatures.addOres(this);
+//        DefaultBiomeFeatures.addSedimentDisks(this);
+//        DefaultBiomeFeatures.addDefaultFlowers(this);
+//        DefaultBiomeFeatures.addGrass(this);
+//        DefaultBiomeFeatures.addMushrooms(this);
+//        DefaultBiomeFeatures.addReedsAndPumpkins(this);
         BYGTreeFeatures.addSeasonalDeciduousTrees(this);
         BYGTreeFeatures.addDeciduousTrees(this);
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
@@ -67,18 +65,15 @@ public class SeasonalDeciduousForest extends Biome {
     public Biome getRiver() {
         return Biomes.RIVER;
     }
-
-
+    @Override
     @OnlyIn(Dist.CLIENT)
-    public int getFoliageColor(BlockPos pos) {
-        return 9862973;
+    public int getGrassColor(double posX, double posZ) {
+        int i = super.getGrassColor(posX, posZ);
+        return (i & 11697214);
+
     }
-
-
-    @OnlyIn(Dist.CLIENT)
-    public int getGrassColor(BlockPos pos) {
-        {
-            return 11697214;
-        }
+    @Override
+    public int getFoliageColor() {
+        return 9862973;
     }
 }
