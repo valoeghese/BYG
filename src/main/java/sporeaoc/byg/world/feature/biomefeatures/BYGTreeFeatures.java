@@ -21,11 +21,14 @@ public class BYGTreeFeatures {
     public static void addBlueTaigaTrees(Biome biome) {
         biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_SELECTOR.withConfiguration(new MultipleRandomFeatureConfig(ImmutableList.of(
                 BYGFeatureList.SMALLBLUESPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).func_227227_a_(0.3F),
-                Feature.NORMAL_TREE.withConfiguration(BYGFeatureConfigs.BLUEPINETREE_CONFIG).func_227227_a_(0.3F),
-                Feature.NORMAL_TREE.withConfiguration(BYGFeatureConfigs.BLUESPRUCETREE_CONFIG).func_227227_a_(0.3F),
-                BYGFeatureList.TALLBLUESPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).func_227227_a_(0.1F)),
+                Feature.NORMAL_TREE.withConfiguration(BYGFeatureConfigs.BLUEPINETREE_CONFIG).func_227227_a_(0.2F),
+                Feature.NORMAL_TREE.withConfiguration(BYGFeatureConfigs.BLUESPRUCETREE_CONFIG).func_227227_a_(0.2F),
+                Feature.NORMAL_TREE.withConfiguration(PINE_TREE_CONFIG).func_227227_a_(0.55F),
+                Feature.NORMAL_TREE.withConfiguration(SPRUCE_TREE_CONFIG).func_227227_a_(0.55F),
+                BYGFeatureList.TALLBLUESPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).func_227227_a_(0.2F)),
                 BYGFeatureList.BLUESPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG))).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(
-                new AtSurfaceWithExtraConfig(55, 0.5F, -20))));
+                new AtSurfaceWithExtraConfig(25, 0.1F, 2))));
+
     }
 
     public static void addBorealTrees(Biome biome) {
