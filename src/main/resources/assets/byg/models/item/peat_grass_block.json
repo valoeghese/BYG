@@ -1,5 +1,5 @@
 {
-  "parent": "byg:block/peat_grass",
+  "parent": "byg:block/peat_grass_block",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -2,15 +2,17 @@ package sporeaoc.byg.biomes.bygbiomes;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
+import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftStructure;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
+import net.minecraft.world.gen.placement.CountRangeConfig;
+import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -18,7 +20,7 @@ import sporeaoc.byg.byglists.BYGSBList;
 import sporeaoc.byg.world.feature.biomefeatures.BYGTreeFeatures;
 
 public class DoverMountains extends Biome {
-    static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(BYGSBList.DOVER_SB, BYGSBList.PODZOLMOUNTAIN_SB);
+    static final ConfiguredSurfaceBuilder SURFACE_BUILDER = new ConfiguredSurfaceBuilder<>(BYGSBList.DOVER_SB, BYGSBList.PODZOLDOVERMOUNTAIN_SB);
     static final RainType PRECIPATATION = RainType.RAIN;
     static final Category CATEGORY = Category.EXTREME_HILLS;
     static final double DEPTH = 2.0F;
@@ -43,8 +45,9 @@ public class DoverMountains extends Biome {
         DefaultBiomeFeatures.addSedimentDisks(this);
         DefaultBiomeFeatures.addMushrooms(this);
         DefaultBiomeFeatures.addReedsAndPumpkins(this);
-        DefaultBiomeFeatures.addSprings(this);
         BYGTreeFeatures.addDoverMTrees(this);
+        this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SPRING_FEATURE.withConfiguration(DefaultBiomeFeatures.WATER_SPRING_CONFIG).withPlacement(Placement.COUNT_BIASED_RANGE.configure(new CountRangeConfig(50, 8, 8, 256))));
+
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.CHICKEN, 10, 4, 4));
@@ -64,13 +67,18 @@ public class DoverMountains extends Biome {
     }
 
     @Override
-    public Biome getRiver() {
-        return Biomes.RIVER;
+    @OnlyIn(Dist.CLIENT)
+    public int getGrassColor(double posX, double posZ) {
+        return 2263842;
+
+    }
+    @Override
+    public int getFoliageColor() {
+        return 2263842;
     }
 
-    @OnlyIn(Dist.CLIENT)
-    public int getGrassColor(BlockPos pos) {
-
-        return 25600;
+    @Override
+    public Biome getRiver() {
+        return Biomes.RIVER;
     }
 }

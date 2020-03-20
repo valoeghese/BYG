@@ -2,8 +2,8 @@ package sporeaoc.byg.biomes.bygbiomes;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
@@ -64,18 +64,16 @@ public class Prairie extends Biome {
 
     @Override
     public Biome getRiver() {
-        return this;
+        return Biomes.RIVER;
     }
-
+    @Override
     @OnlyIn(Dist.CLIENT)
-    public int getGrassColor(BlockPos pos) {
+    public int getGrassColor(double posX, double posZ) {
+        return -5916870;
 
-        return 6653696;
     }
-
-    @OnlyIn(Dist.CLIENT)
-    public int getFoliageColor(BlockPos pos) {
+    @Override
+    public int getFoliageColor() {
         return 7048739;
     }
-
 }

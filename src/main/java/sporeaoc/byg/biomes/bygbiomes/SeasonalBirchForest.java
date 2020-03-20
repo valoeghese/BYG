@@ -2,7 +2,6 @@ package sporeaoc.byg.biomes.bygbiomes;
 
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -68,14 +67,15 @@ public class SeasonalBirchForest extends Biome {
     public Biome getRiver() {
         return Biomes.RIVER;
     }
-
+    @Override
     @OnlyIn(Dist.CLIENT)
-    public int getFoliageColor(BlockPos pos) {
-        return 9862973;
+    public int getGrassColor(double posX, double posZ) {
+        int i = super.getGrassColor(posX, posZ);
+        return (i & 11697214);
+
     }
-
-    @OnlyIn(Dist.CLIENT)
-    public int getGrassColor(BlockPos pos) {
-        return 11697214;
+    @Override
+    public int getFoliageColor() {
+        return 9862973;
     }
 }
