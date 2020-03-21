@@ -192,8 +192,8 @@ public class BYGTreeFeatures {
                 BYGFeatureList.SMALLYELLOWSPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).func_227227_a_(0.1F),
                 BYGFeatureList.YELLOWSPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).func_227227_a_(0.1F),
                 BYGFeatureList.TALLYELLOWSPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).func_227227_a_(0.2F),
-                Feature.NORMAL_TREE.withConfiguration(BYGFeatureConfigs.YELLOWPINETREE_CONFIG).func_227227_a_(0.1F)),
-                Feature.NORMAL_TREE.withConfiguration(BYGFeatureConfigs.YELLOWSPRUCETREE_CONFIG))).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(
+                BYGFeatureList.YELLOWSPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).func_227227_a_(0.1F)),
+                BYGFeatureList.YELLOWSPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG))).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(
                 new AtSurfaceWithExtraConfig(15, 0.1F, 3))));
     }
 
