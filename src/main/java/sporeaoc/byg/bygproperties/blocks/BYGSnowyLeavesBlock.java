@@ -2,7 +2,6 @@ package sporeaoc.byg.bygproperties.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
-import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.properties.BlockStateProperties;
@@ -20,7 +19,7 @@ public class BYGSnowyLeavesBlock extends LeavesBlock implements IShearable {
                 .sound(SoundType.PLANT)
                 .notSolid());
         setRegistryName(registryName);
-        this.setDefaultState(this.stateContainer.getBaseState().with(SNOWY, Boolean.valueOf(false)));
+        this.setDefaultState(this.stateContainer.getBaseState().with(DISTANCE, Integer.valueOf(7)).with(PERSISTENT, Boolean.valueOf(false)).with(SNOWY, Boolean.valueOf(false)));
     }
     public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
         if (facing != Direction.UP) {
@@ -31,11 +30,11 @@ public class BYGSnowyLeavesBlock extends LeavesBlock implements IShearable {
         }
     }
 
-    @Override
-    public BlockState getStateForPlacement(BlockItemUseContext context) {
-        Block block = context.getWorld().getBlockState(context.getPos().up()).getBlock();
-        return this.getDefaultState().with(SNOWY, Boolean.valueOf(block == Blocks.SNOW_BLOCK || block == Blocks.SNOW));
-    }
+//    @Override
+//    public BlockState getStateForPlacement(BlockItemUseContext context) {
+//        Block block = context.getWorld().getBlockState(context.getPos().up()).getBlock();
+//        return this.getDefaultState().with(SNOWY, Boolean.valueOf(block == Blocks.SNOW_BLOCK || block == Blocks.SNOW));
+//    }
 
     @Override
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
