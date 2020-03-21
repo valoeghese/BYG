@@ -77,6 +77,7 @@ public class DoverMountains extends Biome {
 
     }
     @Override
+    @OnlyIn(Dist.CLIENT)
     public int getFoliageColor() {
         return 2263842;
     }

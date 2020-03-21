@@ -9,21 +9,21 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.world.GrassColors;
 import net.minecraft.world.biome.BiomeColors;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
-import sporeaoc.byg.BYG;
 import sporeaoc.byg.byglists.BYGBlockList;
 import sporeaoc.byg.byglists.BYGItemList;
 
-
-@Mod.EventBusSubscriber(modid = BYG.MOD_ID, bus = Bus.MOD, value = {Dist.CLIENT})
+@Mod.EventBusSubscriber
 public class BlockColorManager {
     /**
      * Register the {@link IBlockColor} handlers.
      */
+    //@OnlyIn(Dist.DEDICATED_SERVER)
     @SubscribeEvent
+    @OnlyIn(Dist.CLIENT)
     public void onBlockColorsInit(ColorHandlerEvent.Block event) {
         final BlockColors blockColors = event.getBlockColors();
 
@@ -36,7 +36,9 @@ public class BlockColorManager {
     /**
      * Register the {@link IItemColor} handlers
      */
+    //@OnlyIn(Dist.DEDICATED_SERVER)
     @SubscribeEvent
+    @OnlyIn(Dist.CLIENT)
     public void onItemColorsInit(ColorHandlerEvent.Item event) {
         final BlockColors blockColors = event.getBlockColors();
         final ItemColors itemColors = event.getItemColors();
