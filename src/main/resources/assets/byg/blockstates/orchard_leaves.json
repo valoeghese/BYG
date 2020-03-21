@@ -1,8 +1,5 @@
 {
   "variants": {
-    "snowy=false": [
-      { "model": "byg:block/orchard_leaves" }
-    ],
-    "snowy=true":  { "model": "byg:block/orchard_leaves_snowy" }
+    "": { "model": "byg:block/orchard_leaves" }
   }
 }

@@ -12,6 +12,7 @@ import net.minecraft.world.gen.feature.structure.MineshaftStructure;
 import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
+import sporeaoc.byg.world.feature.biomefeatures.BYGFeatures;
 import sporeaoc.byg.world.feature.biomefeatures.BYGTreeFeatures;
 
 public class SeasonalTaiga extends Biome {
@@ -47,6 +48,7 @@ public class SeasonalTaiga extends Biome {
         DefaultBiomeFeatures.addSprings(this);
         DefaultBiomeFeatures.addBerryBushes(this);
         DefaultBiomeFeatures.addFreezeTopLayer(this);
+        BYGFeatures.addBlueberries( this);
 
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.PIG, 10, 4, 4));

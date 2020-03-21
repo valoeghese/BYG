@@ -68,10 +68,11 @@ public class ShrubLands extends Biome {
         return this;
     }
 
+    @Override
     @OnlyIn(Dist.CLIENT)
-    public int getGrassColor(BlockPos pos) {
-
+    public int getGrassColor(double posX, double posZ) {
         return 9874031;
+
     }
 
     @OnlyIn(Dist.CLIENT)

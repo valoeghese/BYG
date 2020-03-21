@@ -1,8 +1,5 @@
 {
-  "variants": {
-    "snowy=false": [
-      { "model": "byg:block/aspen_leaves" }
-    ],
-    "snowy=true":  { "model": "byg:block/aspen_leaves_snowy" }
-  }
+"variants": {
+"": { "model": "byg:block/aspen_leaves" }
+}
 }

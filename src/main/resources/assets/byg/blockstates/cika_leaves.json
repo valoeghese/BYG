@@ -1,8 +1,5 @@
 {
   "variants": {
-    "snowy=false": [
-      { "model": "byg:block/cika_leaves" }
-    ],
-    "snowy=true":  { "model": "byg:block/cika_leaves_snowy" }
+    "": { "model": "byg:block/cika_leaves" }
   }
 }

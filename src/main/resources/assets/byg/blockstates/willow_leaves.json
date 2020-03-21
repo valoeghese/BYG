@@ -1,8 +1,5 @@
 {
   "variants": {
-    "snowy=false": [
-      { "model": "byg:block/willow_leaves" }
-    ],
-    "snowy=true":  { "model": "byg:block/willow_leaves_snowy" }
+    "": { "model": "byg:block/willow_leaves" }
   }
 }

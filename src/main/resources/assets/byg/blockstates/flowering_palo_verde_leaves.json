@@ -1,8 +1,5 @@
 {
   "variants": {
-    "snowy=false": [
-      { "model": "byg:block/flowering_palo_verde_leaves" }
-    ],
-    "snowy=true":  { "model": "byg:block/flowering_palo_verde_leaves_snowy" }
+    "": { "model": "byg:block/flowering_palo_verde_leaves" }
   }
 }

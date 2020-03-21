@@ -102,6 +102,18 @@ public class BYGBlockProperties {
         }
     }
 
+    public static class BYGPrairieGrass extends BYGPrairieGrassBlock {
+        public BYGPrairieGrass(String registryName) {
+            super(Block.Properties.create(Material.TALL_PLANTS)
+                    .sound(SoundType.PLANT)
+                    .doesNotBlockMovement()
+                    .hardnessAndResistance(0.0f)
+                    .notSolid()
+            );
+            setRegistryName(registryName);
+        }
+    }
+
     public static class BYGGrassBlock extends GrassBlock {
         public BYGGrassBlock(String registryName) {
             super(Block.Properties.create(Material.EARTH)

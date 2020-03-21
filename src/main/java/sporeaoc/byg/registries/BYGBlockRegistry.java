@@ -454,7 +454,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.PINK_ANEMONE = new BYGBlockProperties.BYGFlower("pink_anemone"),
                 BYGBlockList.PINK_DAFFODIL = new BYGBlockProperties.BYGFlower("pink_daffodil"),
                 BYGBlockList.PINK_ORCHID = new BYGBlockProperties.BYGFlower("pink_orchid"),
-                BYGBlockList.PRAIRIE_GRASS = new BYGBlockProperties.BYGTallGrass("prairie_grass"),
+                BYGBlockList.PRAIRIE_GRASS = new BYGBlockProperties.BYGPrairieGrass("prairie_grass"),
                 BYGBlockList.PROTEA_FLOWER = new BYGBlockProperties.BYGFlower("protea_flower"),
                 BYGBlockList.PURPLE_AMARANTH = new BYGBlockProperties.BYGFlower("purple_amaranth"),
                 BYGBlockList.PURPLE_ORCHID = new BYGBlockProperties.BYGFlower("purple_orchid"),

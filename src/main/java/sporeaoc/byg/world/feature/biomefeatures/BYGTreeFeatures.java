@@ -182,6 +182,8 @@ public class BYGTreeFeatures {
                 BYGFeatureList.TALLREDSPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).func_227227_a_(0.05f),
                 Feature.NORMAL_TREE.withConfiguration(BYGFeatureConfigs.REDPINETREE_CONFIG).func_227227_a_(0.1F),
                 Feature.NORMAL_TREE.withConfiguration(BYGFeatureConfigs.REDSPRUCETREE_CONFIG).func_227227_a_(0.1F),
+                Feature.NORMAL_TREE.withConfiguration(PINE_TREE_CONFIG).func_227227_a_(0.1F),
+                Feature.NORMAL_TREE.withConfiguration(SPRUCE_TREE_CONFIG).func_227227_a_(0.1F),
                 BYGFeatureList.SMALLORANGESPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).func_227227_a_(0.1F),
                 BYGFeatureList.ORANGESPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).func_227227_a_(0.2F),
                 BYGFeatureList.TALLORANGESPRUCE_TREE.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).func_227227_a_(0.05F),

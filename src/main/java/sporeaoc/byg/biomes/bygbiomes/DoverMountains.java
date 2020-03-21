@@ -16,6 +16,7 @@ import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import sporeaoc.byg.byglists.BYGSBList;
+import sporeaoc.byg.world.feature.biomefeatures.BYGFeatures;
 import sporeaoc.byg.world.feature.biomefeatures.BYGTreeFeatures;
 
 public class DoverMountains extends Biome {
@@ -48,6 +49,7 @@ public class DoverMountains extends Biome {
         DefaultBiomeFeatures.addTaigaRocks(this);
         DefaultBiomeFeatures.addTaigaLargeFerns(this);
         BYGTreeFeatures.addDoverMTrees(this);
+        BYGFeatures.addBlueberries( this);
         this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SPRING_FEATURE.withConfiguration(DefaultBiomeFeatures.WATER_SPRING_CONFIG).withPlacement(Placement.COUNT_BIASED_RANGE.configure(new CountRangeConfig(50, 8, 8, 256))));
 
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));

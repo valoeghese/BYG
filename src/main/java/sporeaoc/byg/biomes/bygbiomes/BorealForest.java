@@ -16,6 +16,7 @@ import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import sporeaoc.byg.byglists.BYGSBList;
+import sporeaoc.byg.world.feature.biomefeatures.BYGFeatures;
 import sporeaoc.byg.world.feature.biomefeatures.BYGTreeFeatures;
 
 public class BorealForest extends Biome {
@@ -48,6 +49,7 @@ public class BorealForest extends Biome {
         DefaultBiomeFeatures.addMushrooms(this);
         DefaultBiomeFeatures.addReedsAndPumpkins(this);
         BYGTreeFeatures.addBorealTrees(this);
+        BYGFeatures.addBlueberries( this);
 
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
