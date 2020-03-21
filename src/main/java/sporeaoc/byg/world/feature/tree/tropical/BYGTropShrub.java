@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.feature.tree.tropicalrainforest;
+package sporeaoc.byg.world.feature.tree.tropical;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.BlockState;

@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.feature.tree.borealforest;
+package sporeaoc.byg.world.feature.tree.boreal;
 
 import com.mojang.datafixers.Dynamic;
 import net.minecraft.block.Block;
