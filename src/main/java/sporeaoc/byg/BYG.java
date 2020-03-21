@@ -27,8 +27,8 @@ public class BYG {
 
     public BYG() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(blockColorManager::onBlockColorsInit);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(blockColorManager::onItemColorsInit);
+//        FMLJavaModLoadingContext.get().getModEventBus().addListener(blockColorManager::onBlockColorsInit);
+//        FMLJavaModLoadingContext.get().getModEventBus().addListener(blockColorManager::onItemColorsInit);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(bygFeaturesInVanilla::addFeatures);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(cutoutRenders::renderCutOuts);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(strippablesBYG::strippableLogsBYG);

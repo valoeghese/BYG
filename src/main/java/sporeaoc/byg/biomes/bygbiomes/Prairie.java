@@ -73,6 +73,7 @@ public class Prairie extends Biome {
 
     }
     @Override
+    @OnlyIn(Dist.CLIENT)
     public int getFoliageColor() {
         return 7048739;
     }

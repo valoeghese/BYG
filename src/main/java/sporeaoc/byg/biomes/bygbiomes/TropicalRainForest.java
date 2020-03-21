@@ -79,6 +79,7 @@ public class TropicalRainForest extends Biome {
     }
 
     @Override
+    @OnlyIn(Dist.CLIENT)
     public int getFoliageColor() {
         return 10145074;
     }
