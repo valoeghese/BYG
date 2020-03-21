@@ -1,3 +1,6 @@
+<p><strong>Beta 0.1.2 Changelog:</strong></p>
+<p>Now Colors work and the server works.</p>
+
 <p><strong>BETA 0.1.1 Changelog:</strong></p>
 <p>- Color Manager Server Fix!</p>
 
