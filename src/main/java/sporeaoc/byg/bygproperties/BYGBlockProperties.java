@@ -183,17 +183,18 @@ public class BYGBlockProperties {
             setRegistryName(registryName);
         }
     }
-//    public static class BYGLeaves extends BYGSnowyLeavesBlock {
-//        public BYGLeaves(String registryName) {
-//            super(Block.Properties.create(Material.LEAVES)
-//                            .hardnessAndResistance(0.2F)
-//                            .tickRandomly()
-//                            .sound(SoundType.PLANT)
-//                            .notSolid()
-//            );
-//            setRegistryName(registryName);
-//        }
-//    }
+    public static class BYGLeaves extends LeavesBlock {
+        public BYGLeaves(String registryName) {
+            super(Block.Properties.create(Material.LEAVES)
+                            .hardnessAndResistance(0.2F)
+                            .tickRandomly()
+                            .sound(SoundType.PLANT)
+                            .notSolid()
+            );
+            setRegistryName(registryName);
+            this.setDefaultState(this.stateContainer.getBaseState().with(DISTANCE, Integer.valueOf(7)).with(PERSISTENT, Boolean.valueOf(false)));
+        }
+    }
 
     public static class BYGPetal extends LeavesBlock {
         public BYGPetal(String registryName) {
