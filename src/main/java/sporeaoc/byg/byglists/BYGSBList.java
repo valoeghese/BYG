@@ -18,6 +18,12 @@ public class BYGSBList {
     public static final SurfaceBuilderConfig PEATGRASS_SB = new SurfaceBuilderConfig(BYGBlockList.PEAT_GRASSBLOCK.getDefaultState(), Blocks.DIRT.getDefaultState(), Blocks.DIRT.getDefaultState());
 
 
+    public static final SurfaceBuilder<SurfaceBuilderConfig> REDDUNE_SB = new RedDunesSB(SurfaceBuilderConfig::deserialize);
+    public static final SurfaceBuilder<SurfaceBuilderConfig> DUNES_SB = new DunesSB(SurfaceBuilderConfig::deserialize);
+    public static final SurfaceBuilderConfig SAND_SB = new SurfaceBuilderConfig(Blocks.SAND.getDefaultState(), Blocks.SAND.getDefaultState(), Blocks.SAND.getDefaultState());
+    public static final SurfaceBuilderConfig REDSAND_SB = new SurfaceBuilderConfig(Blocks.RED_SAND.getDefaultState(), Blocks.RED_SAND.getDefaultState(), Blocks.RED_SAND.getDefaultState());
+
+
     public static final SurfaceBuilderConfig PODZOLDOVERMOUNTAIN_SB = new SurfaceBuilderConfig(BYGBlockList.OVERGROWN_DACITE.getDefaultState(), BYGBlockList.DACITE.getDefaultState(), BYGBlockList.DACITE.getDefaultState());
     public static final SurfaceBuilderConfig COARSEDIRTDOVERMOUNTAIN_SB = new SurfaceBuilderConfig(Blocks.COARSE_DIRT.getDefaultState(), BYGBlockList.DACITE.getDefaultState(), BYGBlockList.DACITE.getDefaultState());
     public static final SurfaceBuilderConfig GRASSDOVERMOUNTAIN_SB = new SurfaceBuilderConfig(BYGBlockList.PODZOL_DACITE.getDefaultState(), BYGBlockList.DACITE.getDefaultState(), BYGBlockList.DACITE.getDefaultState());
