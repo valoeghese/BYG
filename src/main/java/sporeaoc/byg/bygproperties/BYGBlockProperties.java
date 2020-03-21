@@ -183,17 +183,17 @@ public class BYGBlockProperties {
             setRegistryName(registryName);
         }
     }
-    public static class BYGLeaves extends BYGSnowyLeavesBlock {
-        public BYGLeaves(String registryName) {
-            super(Block.Properties.create(Material.LEAVES)
-                    .hardnessAndResistance(0.2F)
-                    .tickRandomly()
-                    .sound(SoundType.PLANT)
-                    .notSolid()
-            );
-            setRegistryName(registryName);
-        }
-    }
+//    public static class BYGLeaves extends BYGSnowyLeavesBlock {
+//        public BYGLeaves(String registryName) {
+//            super(Block.Properties.create(Material.LEAVES)
+//                            .hardnessAndResistance(0.2F)
+//                            .tickRandomly()
+//                            .sound(SoundType.PLANT)
+//                            .notSolid()
+//            );
+//            setRegistryName(registryName);
+//        }
+//    }
 
     public static class BYGPetal extends LeavesBlock {
         public BYGPetal(String registryName) {

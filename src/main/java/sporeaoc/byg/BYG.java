@@ -2,8 +2,6 @@ package sporeaoc.byg;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.chunk.IChunk;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -25,20 +23,7 @@ import sporeaoc.byg.world.feature.BYGFeaturesInVanilla;
 @Mod("byg")
 public class BYG {
     public static final String MOD_ID = "byg";
-
-    //public static final WorldType BYGISLANDTYPE = new BYGIslandWorldType();
-    public static final Init setup = new Init();
-    public static final BYGCutoutRenders cutoutRenders = new BYGCutoutRenders();
-    public static final BYGFeaturesInVanilla bygFeaturesInVanilla = new BYGFeaturesInVanilla();
-    public static final BlockColorManager blockColorManager = new BlockColorManager();
-    public static final BYGStrippables strippablesBYG = new BYGStrippables();
-    public static final BYGFlammables flammablesBYG = new BYGFlammables();
-    public static final BYGCompostables compostablesBYG = new BYGCompostables();
-    static IChunk chunkIn;
-    static BlockPos blockPos;
-
     public static Logger LOGGER = LogManager.getLogger();
-
 
     public BYG() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -71,4 +56,12 @@ public class BYG {
         public void init() {
         }
     }
+    //public static final WorldType BYGISLANDTYPE = new BYGIslandWorldType();
+    public static final Init setup = new Init();
+    public static final BYGCutoutRenders cutoutRenders = new BYGCutoutRenders();
+    public static final BYGFeaturesInVanilla bygFeaturesInVanilla = new BYGFeaturesInVanilla();
+    public static final BlockColorManager blockColorManager = new BlockColorManager();
+    public static final BYGStrippables strippablesBYG = new BYGStrippables();
+    public static final BYGFlammables flammablesBYG = new BYGFlammables();
+    public static final BYGCompostables compostablesBYG = new BYGCompostables();
 }
