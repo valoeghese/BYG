@@ -386,6 +386,15 @@ public class BYGBlockProperties {
         }
     }
 
+    public static class BYGDoors extends DoorBlock {
+        public BYGDoors(String registryName) {
+            super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)
+                    .sound(SoundType.WOOD)
+                    .hardnessAndResistance(2.0f, 3.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
     public static class BYGWoodStairs extends BYGStairBlock {
         public BYGWoodStairs(String registryName) {
             super(stateSupplier, Block.Properties.create(Material.WOOD, MaterialColor.BROWN)

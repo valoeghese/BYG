@@ -24,6 +24,28 @@ public class BYGCutoutRenders {
         RenderTypeLookup.setRenderLayer(BYGBlockList.PURPLE_GLOWCANE.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.RED_GLOWCANE.getBlock(), RenderType.getCutoutMipped());
 
+        //Doors
+        RenderTypeLookup.setRenderLayer(BYGBlockList.ASPEN_DOOR.getBlock(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.BAOBAB_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.BLUE_ENCHANTED_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.CHERRY_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.CIKA_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.CYPRESS_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.EBONY_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.FIR_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.GREEN_ENCHANTED_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.HOLLY_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.JACARANDA_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.MAHOGANY_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.MANGROVE_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.MAPLE_DOOR.getBlock(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.PINE_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.RAINBOW_EUCALYPTUS_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.REDWOOD_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.SKYRIS_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.WILLOW_DOOR.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.WITCH_HAZEL_DOOR.getBlock(), RenderType.getTranslucent());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.ZELKOVA_DOOR.getBlock(), RenderType.getTranslucent());
 
         //Grass
         RenderTypeLookup.setRenderLayer(BYGBlockList.TALL_PRAIRIE_GRASS.getBlock(), RenderType.getCutoutMipped());

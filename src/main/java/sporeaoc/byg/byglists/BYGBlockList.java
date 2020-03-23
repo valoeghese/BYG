@@ -27,6 +27,29 @@ public class BYGBlockList {
     public static Block WITCH_HAZEL_FENCE;
     public static Block ZELKOVA_FENCE;
 
+    //DoorBlocks
+    public static Block ASPEN_DOOR;
+    public static Block BAOBAB_DOOR;
+    public static Block BLUE_ENCHANTED_DOOR;
+    public static Block CHERRY_DOOR;
+    public static Block CIKA_DOOR;
+    public static Block CYPRESS_DOOR;
+    public static Block EBONY_DOOR;
+    public static Block FIR_DOOR;
+    public static Block GREEN_ENCHANTED_DOOR;
+    public static Block HOLLY_DOOR;
+    public static Block JACARANDA_DOOR;
+    public static Block MAHOGANY_DOOR;
+    public static Block MANGROVE_DOOR;
+    public static Block MAPLE_DOOR;
+    public static Block PINE_DOOR;
+    public static Block RAINBOW_EUCALYPTUS_DOOR;
+    public static Block REDWOOD_DOOR;
+    public static Block SKYRIS_DOOR;
+    public static Block WILLOW_DOOR;
+    public static Block WITCH_HAZEL_DOOR;
+    public static Block ZELKOVA_DOOR;
+
     //FlowerBlocks
     public static Block ALPINE_BELLFLOWER;
     public static Block ALLIUM_FLOWER_BUSH;

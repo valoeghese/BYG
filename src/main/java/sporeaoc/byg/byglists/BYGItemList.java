@@ -33,7 +33,31 @@ public class BYGItemList {
     public static Item WITCH_HAZEL_FENCE;
     public static Item ZELKOVA_FENCE;
 
-    //FenceItems
+    //Doors
+    public static Item ASPEN_DOOR;
+    public static Item BAOBAB_DOOR;
+    public static Item BLUE_ENCHANTED_DOOR;
+    public static Item CHERRY_DOOR;
+    public static Item CIKA_DOOR;
+    public static Item CYPRESS_DOOR;
+    public static Item EBONY_DOOR;
+    public static Item FIR_DOOR;
+    public static Item GREEN_ENCHANTED_DOOR;
+    public static Item HOLLY_DOOR;
+    public static Item JACARANDA_DOOR;
+    public static Item MAHOGANY_DOOR;
+    public static Item MANGROVE_DOOR;
+    public static Item MAPLE_DOOR;
+    public static Item PINE_DOOR;
+    public static Item RAINBOW_EUCALYPTUS_DOOR;
+    public static Item REDWOOD_DOOR;
+    public static Item SKYRIS_DOOR;
+    public static Item WILLOW_DOOR;
+    public static Item WITCH_HAZEL_DOOR;
+    public static Item ZELKOVA_DOOR;
+
+
+    //Flowers
     public static Item ALPINE_BELLFLOWER;
     public static Item ALLIUM_FLOWER_BUSH;
     public static Item PINK_ALLIUM_FLOWER_BUSH;

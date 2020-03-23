@@ -176,7 +176,31 @@ public class BYGItemRegistry {
                 BYGItemList.BLUE_GLOWCANE_BLOCK = new BlockItem(BYGBlockList.BLUE_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.BLUE_GLOWCANE_BLOCK.getRegistryName()),
                 BYGItemList.PURPLE_GLOWCANE_BLOCK = new BlockItem(BYGBlockList.PURPLE_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PURPLE_GLOWCANE_BLOCK.getRegistryName()),
                 BYGItemList.PINK_GLOWCANE_BLOCK = new BlockItem(BYGBlockList.PINK_GLOWCANE_BLOCK, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PINK_GLOWCANE_BLOCK.getRegistryName()),
-//
+
+                //Doors
+                BYGItemList.ASPEN_DOOR = new TallBlockItem(BYGBlockList.ASPEN_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.ASPEN_DOOR.getRegistryName()),
+                BYGItemList.BAOBAB_DOOR = new TallBlockItem(BYGBlockList.BAOBAB_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.BAOBAB_DOOR.getRegistryName()),
+                BYGItemList.BLUE_ENCHANTED_DOOR = new TallBlockItem(BYGBlockList.BLUE_ENCHANTED_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.BLUE_ENCHANTED_DOOR.getRegistryName()),
+                BYGItemList.CHERRY_DOOR = new TallBlockItem(BYGBlockList.CHERRY_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.CHERRY_DOOR.getRegistryName()),
+                BYGItemList.CIKA_DOOR = new TallBlockItem(BYGBlockList.CIKA_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.CIKA_DOOR.getRegistryName()),
+                BYGItemList.CYPRESS_DOOR = new TallBlockItem(BYGBlockList.CYPRESS_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.CYPRESS_DOOR.getRegistryName()),
+                BYGItemList.EBONY_DOOR = new TallBlockItem(BYGBlockList.EBONY_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.EBONY_DOOR.getRegistryName()),
+                BYGItemList.FIR_DOOR = new TallBlockItem(BYGBlockList.FIR_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.FIR_DOOR.getRegistryName()),
+                BYGItemList.GREEN_ENCHANTED_DOOR = new TallBlockItem(BYGBlockList.GREEN_ENCHANTED_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.GREEN_ENCHANTED_DOOR.getRegistryName()),
+                BYGItemList.HOLLY_DOOR = new TallBlockItem(BYGBlockList.HOLLY_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.HOLLY_DOOR.getRegistryName()),
+                BYGItemList.JACARANDA_DOOR = new TallBlockItem(BYGBlockList.JACARANDA_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.JACARANDA_DOOR.getRegistryName()),
+                BYGItemList.MAHOGANY_DOOR = new TallBlockItem(BYGBlockList.MAHOGANY_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.MAHOGANY_DOOR.getRegistryName()),
+                BYGItemList.MANGROVE_DOOR = new TallBlockItem(BYGBlockList.MANGROVE_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.MANGROVE_DOOR.getRegistryName()),
+                BYGItemList.MAPLE_DOOR = new TallBlockItem(BYGBlockList.MAPLE_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.MAPLE_DOOR.getRegistryName()),
+                BYGItemList.PINE_DOOR = new TallBlockItem(BYGBlockList.PINE_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PINE_DOOR.getRegistryName()),
+                BYGItemList.RAINBOW_EUCALYPTUS_DOOR = new TallBlockItem(BYGBlockList.RAINBOW_EUCALYPTUS_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.RAINBOW_EUCALYPTUS_DOOR.getRegistryName()),
+                BYGItemList.REDWOOD_DOOR = new TallBlockItem(BYGBlockList.REDWOOD_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.REDWOOD_DOOR.getRegistryName()),
+                BYGItemList.SKYRIS_DOOR = new TallBlockItem(BYGBlockList.SKYRIS_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.SKYRIS_DOOR.getRegistryName()),
+                BYGItemList.WILLOW_DOOR = new TallBlockItem(BYGBlockList.WILLOW_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.WILLOW_DOOR.getRegistryName()),
+                BYGItemList.WITCH_HAZEL_DOOR = new TallBlockItem(BYGBlockList.WITCH_HAZEL_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.WITCH_HAZEL_DOOR.getRegistryName()),
+                BYGItemList.ZELKOVA_DOOR = new TallBlockItem(BYGBlockList.ZELKOVA_DOOR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.ZELKOVA_DOOR.getRegistryName()),
+
+
                 //Decorations
                 //BYGItemList.REDSTONE_LANTERN = new BlockNamedItem(BYGBlockList.REDSTONE_LANTERN, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName("redstone_lantern"),
 
