@@ -6,6 +6,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.byglists.BYGFeatureList;
+import sporeaoc.byg.byglists.BYGStructureList;
 
 @Mod.EventBusSubscriber(modid = BYG.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BYGFeatureRegistry {
@@ -50,8 +51,10 @@ public class BYGFeatureRegistry {
                 BYGFeatureList.WIDECONIFEROUS_TREE.setRegistryName("wideconiferous_tree"),
                 BYGFeatureList.YELLOWBIRCH_TREE.setRegistryName("yellowbirch_tree"),
                 BYGFeatureList.YELLOWDECIDUOUS_TREE.setRegistryName("yellowdeciduous_tree"),
-                BYGFeatureList.YELLOWSPRUCE_TREE.setRegistryName("yellowspruce_tree")
-        );
+                BYGFeatureList.YELLOWSPRUCE_TREE.setRegistryName("yellowspruce_tree"),
+                BYGStructureList.RED_DESERT_PYRAMID.setRegistryName("red_desert_temple")
+
+                );
         BYG.LOGGER.info("All BYG features registered!");
 
     }

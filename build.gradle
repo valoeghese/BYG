@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.1.0-BETA'
+version = '0.1.5-BETA'
 group = 'sporeaoc.byg' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'Biomes_You_Go'
 
@@ -21,7 +21,7 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 
 minecraft {
 
-    mappings channel: 'snapshot', version: '20200317-1.15.1'
+    mappings channel: 'snapshot', version: '20200323-1.15.1'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 
      accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
