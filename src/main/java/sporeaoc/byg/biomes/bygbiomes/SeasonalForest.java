@@ -78,6 +78,6 @@ public class SeasonalForest extends Biome {
     @Override
     @OnlyIn(Dist.CLIENT)
     public int getFoliageColor() {
-        return 11697214;
+        return 12435265;
     }
 }
