@@ -358,6 +358,8 @@ public class BYGBlockProperties {
                     .sound(SoundType.PLANT)
                     .hardnessAndResistance(1.5f, 6.0f)
                     .notSolid()
+                    .doesNotBlockMovement()
+
 
             );
             setRegistryName(registryName);
