@@ -85,6 +85,53 @@ public class BYGBlockRegistry {
                 BYGBlockList.WITCH_HAZEL_DOOR = new BYGBlockProperties.BYGDoors("witch_hazel_door"),
                 BYGBlockList.ZELKOVA_DOOR = new BYGBlockProperties.BYGDoors("zelkova_door"),
 
+
+                //Crafting Tables
+//                BYGBlockList.ASPEN_CRAFTING_TABLE = new BYGBlockProperties.BYGCraftingTable("aspen_crafting_table"),
+//                BYGBlockList.BAOBAB_DOOR = new BYGBlockProperties.BYGDoors("baobab_door"),
+//                BYGBlockList.BLUE_ENCHANTED_DOOR = new BYGBlockProperties.BYGDoors("blue_enchanted_door"),
+//                BYGBlockList.CHERRY_DOOR = new BYGBlockProperties.BYGDoors("cherry_door"),
+//                BYGBlockList.CIKA_DOOR = new BYGBlockProperties.BYGDoors("cika_door"),
+//                BYGBlockList.CYPRESS_DOOR = new BYGBlockProperties.BYGDoors("cypress_door"),
+//                BYGBlockList.EBONY_DOOR= new BYGBlockProperties.BYGDoors("ebony_door"),
+//                BYGBlockList.FIR_DOOR = new BYGBlockProperties.BYGDoors("fir_door"),
+//                BYGBlockList.GREEN_ENCHANTED_DOOR = new BYGBlockProperties.BYGDoors("green_enchanted_door"),
+//                BYGBlockList.HOLLY_DOOR = new BYGBlockProperties.BYGDoors("holly_door"),
+//                BYGBlockList.JACARANDA_DOOR = new BYGBlockProperties.BYGDoors("jacaranda_door"),
+//                BYGBlockList.MAHOGANY_DOOR = new BYGBlockProperties.BYGDoors("mahogany_door"),
+//                BYGBlockList.MANGROVE_DOOR = new BYGBlockProperties.BYGDoors("mangrove_door"),
+//                BYGBlockList.MAPLE_DOOR = new BYGBlockProperties.BYGDoors("maple_door"),
+//                BYGBlockList.PINE_DOOR = new BYGBlockProperties.BYGDoors("pine_door"),
+//                BYGBlockList.RAINBOW_EUCALYPTUS_DOOR = new BYGBlockProperties.BYGDoors("rainbow_eucalyptus_door"),
+//                BYGBlockList.REDWOOD_DOOR = new BYGBlockProperties.BYGDoors("redwood_door"),
+//                BYGBlockList.SKYRIS_DOOR = new BYGBlockProperties.BYGDoors("skyris_door"),
+//                BYGBlockList.WILLOW_DOOR = new BYGBlockProperties.BYGDoors("willow_door"),
+//                BYGBlockList.WITCH_HAZEL_DOOR = new BYGBlockProperties.BYGDoors("witch_hazel_door"),
+//                BYGBlockList.ZELKOVA_DOOR = new BYGBlockProperties.BYGDoors("zelkova_door"),
+
+                //Fence Gates
+                BYGBlockList.ASPEN_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("aspen_fence_gate"),
+                BYGBlockList.BAOBAB_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("baobab_fence_gate"),
+                BYGBlockList.BLUE_ENCHANTED_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("blue_enchanted_fence_gate"),
+                BYGBlockList.CHERRY_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("cherry_fence_gate"),
+                BYGBlockList.CIKA_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("cika_fence_gate"),
+                BYGBlockList.CYPRESS_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("cypress_fence_gate"),
+                BYGBlockList.EBONY_FENCE_GATE= new BYGBlockProperties.BYGFenceGate("ebony_fence_gate"),
+                BYGBlockList.FIR_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("fir_fence_gate"),
+                BYGBlockList.GREEN_ENCHANTED_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("green_enchanted_fence_gate"),
+                BYGBlockList.HOLLY_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("holly_fence_gate"),
+                BYGBlockList.JACARANDA_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("jacaranda_fence_gate"),
+                BYGBlockList.MAHOGANY_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("mahogany_fence_gate"),
+                BYGBlockList.MANGROVE_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("mangrove_fence_gate"),
+                BYGBlockList.MAPLE_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("maple_fence_gate"),
+                BYGBlockList.PINE_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("pine_fence_gate"),
+                BYGBlockList.RAINBOW_EUCALYPTUS_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("rainbow_eucalyptus_fence_gate"),
+                BYGBlockList.REDWOOD_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("redwood_fence_gate"),
+                BYGBlockList.SKYRIS_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("skyris_fence_gate"),
+                BYGBlockList.WILLOW_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("willow_fence_gate"),
+                BYGBlockList.WITCH_HAZEL_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("witch_hazel_fence_gate"),
+                BYGBlockList.ZELKOVA_FENCE_GATE = new BYGBlockProperties.BYGFenceGate("zelkova_fence_gate"),
+
                 //Slabs
                 BYGBlockList.ASPEN_SLAB = new BYGBlockProperties.BYGWoodSlab("aspen_slab"),
                 BYGBlockList.BAOBAB_SLAB = new BYGBlockProperties.BYGWoodSlab("baobab_slab"),
@@ -206,14 +253,15 @@ public class BYGBlockRegistry {
                 BYGBlockList.RED_MAPLE_SAPLING = new BYGBlockProperties.BYGFlower("red_maple_sapling"),
                 BYGBlockList.RED_OAK_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.RedOakSaplingToTree(), "red_oak_sapling"),
                 BYGBlockList.RED_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.RedSpruceSaplingToTree(), "red_spruce_sapling"),
-                BYGBlockList.REDWOOD_SAPLINGS = new BYGBlockProperties.BYGFlower("redwood_sapling"),
+                BYGBlockList.REDWOOD_SAPLING = new BYGBlockProperties.BYGFlower("redwood_sapling"),
                 BYGBlockList.SILVER_MAPLE_SAPLING = new BYGBlockProperties.BYGFlower("silver_maple_sapling"),
-                BYGBlockList.SKYRIS_SAPLINGS = new BYGBlockProperties.BYGFlower("skyris_sapling"),
+                BYGBlockList.SKYRIS_SAPLING = new BYGBlockProperties.BYGFlower("skyris_sapling"),
                 BYGBlockList.WHITE_CHERRY_SAPLING = new BYGBlockProperties.BYGFlower("white_cherry_sapling"),
                 BYGBlockList.WILLOW_SAPLING = new BYGBlockProperties.BYGFlower("willow_sapling"),
                 BYGBlockList.WITCH_HAZEL_SAPLING = new BYGBlockProperties.BYGFlower("witch_hazel_sapling"),
                 BYGBlockList.YELLOW_BIRCH_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.YellowBirchSaplingToTree(), "yellow_birch_sapling"),
-                BYGBlockList.YELLOW_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.YellowSpruceSaplingToTree(), "yellow_spruce_sapling")
+                BYGBlockList.YELLOW_SPRUCE_SAPLING = new BYGSaplingProperties(new BYGSaplingToTree.YellowSpruceSaplingToTree(), "yellow_spruce_sapling"),
+                BYGBlockList.ZELKOVA_SAPLING = new BYGBlockProperties.BYGFlower("zelkova_sapling")
 
         );
     }
@@ -262,7 +310,8 @@ public class BYGBlockRegistry {
                 BYGBlockList.WILLOW_LEAVES = new BYGBlockProperties.BYGLeaves("willow_leaves"),
                 BYGBlockList.WITCH_HAZEL_LEAVES = new BYGBlockProperties.BYGLeaves("witch_hazel_leaves"),
                 BYGBlockList.YELLOW_BIRCH_LEAVES = new BYGBlockProperties.BYGLeaves("yellow_birch_leaves"),
-                BYGBlockList.YELLOW_SPRUCE_LEAVES = new BYGBlockProperties.BYGLeaves("yellow_spruce_leaves")
+                BYGBlockList.YELLOW_SPRUCE_LEAVES = new BYGBlockProperties.BYGLeaves("yellow_spruce_leaves"),
+                BYGBlockList.ZELKOVA_LEAVES = new BYGBlockProperties.BYGLeaves("zelkova_leaves")
 
         );
     }
@@ -462,7 +511,7 @@ public class BYGBlockRegistry {
                 BYGBlockList.GUZMANIA = new BYGBlockProperties.BYGFlower("guzmania"),
                 BYGBlockList.INCAN_LILY = new BYGBlockProperties.BYGFlower("incan_lily"),
                 BYGBlockList.IRIS = new BYGBlockProperties.BYGFlower("iris"),
-                BYGBlockList.JAPANESE_ORCHID = new BYGBlockProperties.BYGFlower("japanese_orchid"),
+                BYGBlockList.JAPANESE_ORCHID = new BYGBlockProperties.BYGDoublePlant("japanese_orchid"),
                 BYGBlockList.KOVAN_FLOWER = new BYGBlockProperties.BYGFlower("kovan_flower"),
                 BYGBlockList.LAZARUS_BELLFLOWER = new BYGBlockProperties.BYGFlower("lazarus_bellflower"),
                 BYGBlockList.LOLIPOP_FLOWER = new BYGBlockProperties.BYGFlower("lolipop_flower"),

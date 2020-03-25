@@ -26,6 +26,17 @@ public class BYGBlockProperties {
         }
     }
 
+    public static class BYGFenceGate extends FenceGateBlock {
+        public BYGFenceGate(String registryName) {
+            super(Block.Properties.create(Material.WOOD)
+                    .sound(SoundType.WOOD)
+                    .hardnessAndResistance(2.0f, 3.0f)
+
+            );
+            setRegistryName(registryName);
+        }
+    }
+
     public static class BYGWoodSlab extends SlabBlock {
         public BYGWoodSlab(String registryName) {
             super(Block.Properties.create(Material.WOOD)
@@ -341,7 +352,7 @@ public class BYGBlockProperties {
         }
     }
 
-    public static class BlockCattail extends SeaGrassBlock {
+    public static class BlockCattail extends TallSeaGrassBlock {
         public BlockCattail(String registryName) {
             super(Block.Properties.create(Material.PLANTS)
                     .sound(SoundType.PLANT)
@@ -386,6 +397,15 @@ public class BYGBlockProperties {
         }
     }
 
+    public static class BYGCraftingTable extends BYGCraftingTableBlock {
+        public BYGCraftingTable(String registryName) {
+            super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)
+                    .sound(SoundType.WOOD)
+                    .hardnessAndResistance(2.0f, 3.0f)
+            );
+            setRegistryName(registryName);
+        }
+    }
     public static class BYGDoors extends DoorBlock {
         public BYGDoors(String registryName) {
             super(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)

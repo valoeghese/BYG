@@ -50,6 +50,52 @@ public class BYGBlockList {
     public static Block WITCH_HAZEL_DOOR;
     public static Block ZELKOVA_DOOR;
 
+    //Fence Gates
+    public static Block ASPEN_FENCE_GATE;
+    public static Block BAOBAB_FENCE_GATE;
+    public static Block BLUE_ENCHANTED_FENCE_GATE;
+    public static Block CHERRY_FENCE_GATE;
+    public static Block CIKA_FENCE_GATE;
+    public static Block CYPRESS_FENCE_GATE;
+    public static Block EBONY_FENCE_GATE;
+    public static Block FIR_FENCE_GATE;
+    public static Block GREEN_ENCHANTED_FENCE_GATE;
+    public static Block HOLLY_FENCE_GATE;
+    public static Block JACARANDA_FENCE_GATE;
+    public static Block MAHOGANY_FENCE_GATE;
+    public static Block MANGROVE_FENCE_GATE;
+    public static Block MAPLE_FENCE_GATE;
+    public static Block PINE_FENCE_GATE;
+    public static Block RAINBOW_EUCALYPTUS_FENCE_GATE;
+    public static Block REDWOOD_FENCE_GATE;
+    public static Block SKYRIS_FENCE_GATE;
+    public static Block WILLOW_FENCE_GATE;
+    public static Block WITCH_HAZEL_FENCE_GATE;
+    public static Block ZELKOVA_FENCE_GATE;
+
+    //Crafting Tables
+    public static Block ASPEN_CRAFTING_TABLE;
+    public static Block BAOBAB_CRAFTING_TABLE;
+    public static Block BLUE_ENCHANTED_CRAFTING_TABLE;
+    public static Block CHERRY_CRAFTING_TABLE;
+    public static Block CIKA_CRAFTING_TABLE;
+    public static Block CYPRESS_CRAFTING_TABLE;
+    public static Block EBONY_CRAFTING_TABLE;
+    public static Block FIR_CRAFTING_TABLE;
+    public static Block GREEN_ENCHANTED_CRAFTING_TABLE;
+    public static Block HOLLY_CRAFTING_TABLE;
+    public static Block JACARANDA_CRAFTING_TABLE;
+    public static Block MAHOGANY_CRAFTING_TABLE;
+    public static Block MANGROVE_CRAFTING_TABLE;
+    public static Block MAPLE_CRAFTING_TABLE;
+    public static Block PINE_CRAFTING_TABLE;
+    public static Block RAINBOW_EUCALYPTUS_CRAFTING_TABLE;
+    public static Block REDWOOD_CRAFTING_TABLE;
+    public static Block SKYRIS_CRAFTING_TABLE;
+    public static Block WILLOW_CRAFTING_TABLE;
+    public static Block WITCH_HAZEL_CRAFTING_TABLE;
+    public static Block ZELKOVA_CRAFTING_TABLE;
+
     //FlowerBlocks
     public static Block ALPINE_BELLFLOWER;
     public static Block ALLIUM_FLOWER_BUSH;
@@ -201,6 +247,7 @@ public class BYGBlockList {
     public static Block WITCH_HAZEL_LEAVES;
     public static Block YELLOW_BIRCH_LEAVES;
     public static Block YELLOW_SPRUCE_LEAVES;
+    public static Block ZELKOVA_LEAVES;
 
     //LogBlocks
     public static Block ASPEN_LOG;
@@ -373,14 +420,15 @@ public class BYGBlockList {
     public static Block RED_MAPLE_SAPLING;
     public static Block RED_OAK_SAPLING;
     public static Block RED_SPRUCE_SAPLING;
-    public static Block REDWOOD_SAPLINGS;
+    public static Block REDWOOD_SAPLING;
     public static Block SILVER_MAPLE_SAPLING;
-    public static Block SKYRIS_SAPLINGS;
+    public static Block SKYRIS_SAPLING;
     public static Block WHITE_CHERRY_SAPLING;
     public static Block WILLOW_SAPLING;
     public static Block WITCH_HAZEL_SAPLING;
     public static Block YELLOW_BIRCH_SAPLING;
     public static Block YELLOW_SPRUCE_SAPLING;
+    public static Block ZELKOVA_SAPLING;
 
     //SlabBlocks
     public static Block ASPEN_SLAB;

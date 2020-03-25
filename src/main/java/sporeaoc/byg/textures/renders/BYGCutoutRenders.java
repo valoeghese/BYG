@@ -79,9 +79,9 @@ public class BYGCutoutRenders {
         RenderTypeLookup.setRenderLayer(BYGBlockList.RED_MAPLE_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.RED_OAK_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.RED_SPRUCE_SAPLING.getBlock(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(BYGBlockList.REDWOOD_SAPLINGS.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.REDWOOD_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.SILVER_MAPLE_SAPLING.getBlock(), RenderType.getCutoutMipped());
-        RenderTypeLookup.setRenderLayer(BYGBlockList.SKYRIS_SAPLINGS.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.SKYRIS_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.WHITE_CHERRY_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.WILLOW_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.WITCH_HAZEL_SAPLING.getBlock(), RenderType.getCutoutMipped());

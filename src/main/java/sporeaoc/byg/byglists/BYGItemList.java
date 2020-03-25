@@ -22,7 +22,7 @@ public class BYGItemList {
     public static Item GREEN_ENCHANTED_FENCE;
     public static Item HOLLY_FENCE;
     public static Item JACARANDA_FENCE;
-    public static Item MAHOGONY_FENCE;
+    public static Item MAHOGANY_FENCE;
     public static Item MANGROVE_FENCE;
     public static Item MAPLE_FENCE;
     public static Item PINE_FENCE;
@@ -56,6 +56,51 @@ public class BYGItemList {
     public static Item WITCH_HAZEL_DOOR;
     public static Item ZELKOVA_DOOR;
 
+    //Fence Gates
+    public static Item ASPEN_FENCE_GATE;
+    public static Item BAOBAB_FENCE_GATE;
+    public static Item BLUE_ENCHANTED_FENCE_GATE;
+    public static Item CHERRY_FENCE_GATE;
+    public static Item CIKA_FENCE_GATE;
+    public static Item CYPRESS_FENCE_GATE;
+    public static Item EBONY_FENCE_GATE;
+    public static Item FIR_FENCE_GATE;
+    public static Item GREEN_ENCHANTED_FENCE_GATE;
+    public static Item HOLLY_FENCE_GATE;
+    public static Item JACARANDA_FENCE_GATE;
+    public static Item MAHOGANY_FENCE_GATE;
+    public static Item MANGROVE_FENCE_GATE;
+    public static Item MAPLE_FENCE_GATE;
+    public static Item PINE_FENCE_GATE;
+    public static Item RAINBOW_EUCALYPTUS_FENCE_GATE;
+    public static Item REDWOOD_FENCE_GATE;
+    public static Item SKYRIS_FENCE_GATE;
+    public static Item WILLOW_FENCE_GATE;
+    public static Item WITCH_HAZEL_FENCE_GATE;
+    public static Item ZELKOVA_FENCE_GATE;
+
+    //Crafting Tables
+    public static Item ASPEN_CRAFTING_TABLE;
+    public static Item BAOBAB_CRAFTING_TABLE;
+    public static Item BLUE_ENCHANTED_CRAFTING_TABLE;
+    public static Item CHERRY_CRAFTING_TABLE;
+    public static Item CIKA_CRAFTING_TABLE;
+    public static Item CYPRESS_CRAFTING_TABLE;
+    public static Item EBONY_CRAFTING_TABLE;
+    public static Item FIR_CRAFTING_TABLE;
+    public static Item GREEN_ENCHANTED_CRAFTING_TABLE;
+    public static Item HOLLY_CRAFTING_TABLE;
+    public static Item JACARANDA_CRAFTING_TABLE;
+    public static Item MAHOGANY_CRAFTING_TABLE;
+    public static Item MANGROVE_CRAFTING_TABLE;
+    public static Item MAPLE_CRAFTING_TABLE;
+    public static Item PINE_CRAFTING_TABLE;
+    public static Item RAINBOW_EUCALYPTUS_CRAFTING_TABLE;
+    public static Item REDWOOD_CRAFTING_TABLE;
+    public static Item SKYRIS_CRAFTING_TABLE;
+    public static Item WILLOW_CRAFTING_TABLE;
+    public static Item WITCH_HAZEL_CRAFTING_TABLE;
+    public static Item ZELKOVA_CRAFTING_TABLE;
 
     //Flowers
     public static Item ALPINE_BELLFLOWER;
@@ -206,6 +251,7 @@ public class BYGItemList {
     public static Item YELLOW_BIRCH_LEAVES;
     public static Item YELLOW_SPRUCE_LEAVES;
     public static Item SKYRIS_LEAVES;
+    public static Item ZELKOVA_LEAVES;
 
     //LogItems
     public static Item ASPEN_LOG;
@@ -371,7 +417,7 @@ public class BYGItemList {
     public static Item GREEN_ENCHANTED_SAPLING;
     public static Item HOLLY_SAPLING;
     public static Item JACARANDA_SAPLING;
-    public static Item MAHOGONY_SAPLING;
+    public static Item MAHOGANY_SAPLING;
     public static Item MANGROVE_SAPLING;
     public static Item ORANGE_BIRCH_SAPLING;
     public static Item ORANGE_OAK_SAPLING;
@@ -384,15 +430,16 @@ public class BYGItemList {
     public static Item RED_BIRCH_SAPLING;
     public static Item RED_MAPLE_SAPLING;
     public static Item RED_OAK_SAPLING;
-    public static Item RED_SPRUCE_SAPLINGS;
-    public static Item REDWOOD_SAPLINGS;
-    public static Item SILVER_MAPLE_SAPLINGS;
-    public static Item SKYRIS_SAPLINGS;
+    public static Item RED_SPRUCE_SAPLING;
+    public static Item REDWOOD_SAPLING;
+    public static Item SILVER_MAPLE_SAPLING;
+    public static Item SKYRIS_SAPLING;
     public static Item WHITE_CHERRY_SAPLING;
     public static Item WILLOW_SAPLING;
     public static Item WITCH_HAZEL_SAPLING;
     public static Item YELLOW_BIRCH_SAPLING;
     public static Item YELLOW_SPRUCE_SAPLING;
+    public static Item ZELKOVA_SAPLING;
 
     //SlabItems
     public static Item ASPEN_SLAB;
