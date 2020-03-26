@@ -76,7 +76,7 @@ public class ClimateBooleans {
     }
 
     public static boolean isWarmOcean(int biome) {
-        return biome == WARM_OCEAN || biome == LUKEWARM_OCEAN || biome == DEEP_WARM_OCEAN || biome == DEEP_LUKEWARM_OCEAN;
+        return biome == WARM_OCEAN || biome == DEEP_WARM_OCEAN;
     }
 
     public static boolean isLukeWarmOcean(int biome) {

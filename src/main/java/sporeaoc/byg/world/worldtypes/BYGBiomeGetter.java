@@ -209,7 +209,7 @@ public class BYGBiomeGetter {
     }
 
     public static int getDeepOcean(INoiseRandom rand) {
-        return getDeepOceanArray[rand.random(getDeepOceanArray.length)];
+        return getDeepOceanArray[rand.random(deepOceanArray.length)];
     }
 
 }
