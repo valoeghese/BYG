@@ -1,7 +1,6 @@
 {
   "variants": {
-    "": {
-      "model": "byg:block/azalea"
-    }
+    "half=lower": { "model": "byg:block/azalea_bottom" },
+    "half=upper":    { "model": "byg:block/azalea_top" }
   }
 }

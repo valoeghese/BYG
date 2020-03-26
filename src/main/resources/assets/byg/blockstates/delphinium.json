@@ -1,7 +1,6 @@
 {
   "variants": {
-    "": {
-      "model": "byg:block/delphinium"
-    }
+    "half=lower": { "model": "byg:block/delphinium_bottom" },
+    "half=upper":    { "model": "byg:block/delphinium_top" }
   }
 }

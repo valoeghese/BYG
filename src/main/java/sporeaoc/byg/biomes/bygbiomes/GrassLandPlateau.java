@@ -44,6 +44,7 @@ public class GrassLandPlateau extends Biome {
         DefaultBiomeFeatures.addSedimentDisks(this);
         DefaultBiomeFeatures.addMushrooms(this);
         DefaultBiomeFeatures.addFreezeTopLayer(this);
+        DefaultBiomeFeatures.addOakTreesFlowersGrass(this);
 
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
