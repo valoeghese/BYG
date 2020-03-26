@@ -89,6 +89,19 @@ public class BYGBlockProperties {
         }
     }
 
+    public static class BYGBeachGrass extends BYGBeachGrassBlock {
+        public BYGBeachGrass(String registryName) {
+            super(
+                    Block.Properties.create(Material.PLANTS)
+                            .sound(SoundType.PLANT)
+                            .hardnessAndResistance(0.0f)
+                            .doesNotBlockMovement()
+                            .notSolid()
+            );
+            setRegistryName(registryName);
+
+        }
+    }
     public static class BYGLily extends LilyPadBlock {
         public BYGLily(String registryName) {
             super(
@@ -100,6 +113,20 @@ public class BYGBlockProperties {
             setRegistryName(registryName);
         }
     }
+
+    public static class BYGLeafPile extends BYGLeafPileBlock {
+        public BYGLeafPile(String registryName) {
+            super(
+                    Block.Properties.create(Material.PLANTS)
+                            .sound(SoundType.PLANT)
+                            .hardnessAndResistance(0.0f)
+                            .doesNotBlockMovement()
+                            .notSolid()
+            );
+            setRegistryName(registryName);
+        }
+    }
+
 
     public static class BYGTallGrass extends TallGrassBlock {
         public BYGTallGrass(String registryName) {

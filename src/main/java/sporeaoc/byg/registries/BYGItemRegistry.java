@@ -470,6 +470,13 @@ public class BYGItemRegistry {
                 BYGItemList.TINY_LILYPADS = (new BYGLilyItem(BYGBlockList.TINY_LILYPADS, (new Item.Properties()).group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.TINY_LILYPADS.getRegistryName())),
                 BYGItemList.WINTER_SUCCULENT = new BlockItem(BYGBlockList.WINTER_SUCCULENT, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.WINTER_SUCCULENT.getRegistryName()),
 
+                BYGItemList.WEED_GRASS = new BlockItem(BYGBlockList.WEED_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.WEED_GRASS.getRegistryName()),
+                BYGItemList.WILTED_GRASS = new BlockItem(BYGBlockList.WILTED_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.WILTED_GRASS.getRegistryName()),
+                BYGItemList.SHORT_BEACH_GRASS = new BlockItem(BYGBlockList.SHORT_BEACH_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.SHORT_BEACH_GRASS.getRegistryName()),
+                BYGItemList.BEACH_GRASS = new BlockItem(BYGBlockList.BEACH_GRASS, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.BEACH_GRASS.getRegistryName()),
+                BYGItemList.LEAF_PILE = new BlockItem(BYGBlockList.LEAF_PILE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.LEAF_PILE.getRegistryName()),
+
+
                 //Petal Blocks
                 BYGItemList.WHITE_PETAL = new BlockItem(BYGBlockList.WHITE_PETAL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.WHITE_PETAL.getRegistryName()),
                 BYGItemList.BLUE_PETAL = new BlockItem(BYGBlockList.BLUE_PETAL, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.BLUE_PETAL.getRegistryName()),

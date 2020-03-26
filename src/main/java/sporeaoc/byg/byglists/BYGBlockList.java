@@ -381,6 +381,13 @@ public class BYGBlockList {
     public static Block WEEPING_VINES;
     public static Block TINY_LILYPADS;
 
+    public static Block WEED_GRASS;
+    public static Block WILTED_GRASS;
+    public static Block SHORT_BEACH_GRASS;
+    public static Block BEACH_GRASS;
+    public static Block LEAF_PILE;
+
+
     //Glowcane BLocks
 
     public static Block BLUE_GLOWCANE_BLOCK;
