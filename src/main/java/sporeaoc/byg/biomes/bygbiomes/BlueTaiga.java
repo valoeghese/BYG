@@ -49,6 +49,7 @@ public class BlueTaiga extends Biome {
         DefaultBiomeFeatures.addBerryBushes(this);
         DefaultBiomeFeatures.addFreezeTopLayer(this);
         BYGFeatures.addBlueberries( this);
+//        this.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(BYGFeatureList.CAVE, new ProbabilityConfig(0.25F)));
 
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 12, 4, 4));
         this.addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.PIG, 10, 4, 4));
