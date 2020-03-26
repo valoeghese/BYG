@@ -567,7 +567,6 @@
   "item.byg.red_glowcane_dust": "Red Glowcane Dust",
   "itemGroup.byg": "Biomes You Go",
 
-
   "block.byg.aspen_fence_gate":"Aspen Fence Gate",
   "block.byg.baobab_fence_gate":"Baobab Fence Gate",
   "block.byg.blue_enchanted_fence_gate":"Blue Enchanted Fence Gate",
@@ -589,5 +588,19 @@
   "block.byg.willow_fence_gate": "Willow Fence Gate",
   "block.byg.witch_hazel_fence_gate": "Witch Hazel Fence Gate",
   "block.byg.zelkova_fence_gate": "Zelkova Fence Gate",
+
+  "block.byg.weed_grass": "Weed Grass",
+  "block.byg.wilted_grass": "Wilted Grass",
+  "block.byg.short_beach_grass": "Short Beach Grass",
+  "block.byg.beach_grass": "Beach Grass",
+  "block.byg.leaf_pile": "Leaf Pile",
+  
+  "block.byg.white_sand": "White Sand",
+  "block.byg.black_sand": "Black Sand",
+  "block.byg.blue_sand": "Blue Sand",
+  "block.byg.purple_sand": "Purple Sand",
+  "block.byg.pink_sand": "Pink Sand",
+
+
   "generator.bygislands": "BYG Islands-BETA"
 }

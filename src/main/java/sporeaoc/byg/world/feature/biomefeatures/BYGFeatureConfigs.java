@@ -36,6 +36,16 @@ public class BYGFeatureConfigs {
     public static final BlockClusterFeatureConfig TINY_LILYPAD_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.TINY_LILYPADS.getDefaultState()), new SimpleBlockPlacer())).tries(10).build();
     public static final BlockClusterFeatureConfig WINTER_SUCCULENT_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.WINTER_SUCCULENT.getDefaultState()), new SimpleBlockPlacer())).tries(10).build();
     public static final BlockClusterFeatureConfig ANGELICA_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.ANGELICA.getDefaultState()), new SimpleBlockPlacer())).tries(10).build();
+    public static final BlockClusterFeatureConfig BEACH_GRASS_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.BEACH_GRASS.getDefaultState()), new SimpleBlockPlacer())).tries(20).build();
+    public static final BlockClusterFeatureConfig SHORT_BEACH_GRASS_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.SHORT_BEACH_GRASS.getDefaultState()), new SimpleBlockPlacer())).tries(20).build();
+    public static final BlockClusterFeatureConfig WILTED_GRASS_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.WILTED_GRASS.getDefaultState()), new SimpleBlockPlacer())).tries(32).build();
+    public static final BlockClusterFeatureConfig LEAF_PILE_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.LEAF_PILE.getDefaultState()), new SimpleBlockPlacer())).tries(14).build();
+
+    public static final BlockClusterFeatureConfig BLACK_PUFF_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.BLACK_PUFF.getDefaultState()), new SimpleBlockPlacer())).tries(18).build();
+    public static final BlockClusterFeatureConfig WEEPING_MILKCAP_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.WEEPING_MILKCAP.getDefaultState()), new SimpleBlockPlacer())).tries(18).build();
+    public static final BlockClusterFeatureConfig WOOD_BLEWIT_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.WOOD_BLEWIT.getDefaultState()), new SimpleBlockPlacer())).tries(18).build();
+    public static final BlockClusterFeatureConfig GREEN_MUSHROOM_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.GREEN_MUSHSHROOM.getDefaultState()), new SimpleBlockPlacer())).tries(18).build();
+
 
     public static final BlockClusterFeatureConfig BEGONIA_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.BEGONIA.getDefaultState()), new SimpleBlockPlacer())).tries(10).build();
     public static final BlockClusterFeatureConfig BISTORT_CONFIG = (new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(BYGBlockList.BISTORT.getDefaultState()), new SimpleBlockPlacer())).tries(10).build();

@@ -369,10 +369,14 @@ public class BYGBlockRegistry {
                 BYGBlockList.LIGHT_BLUE_PETAL = new BYGBlockProperties.BYGPetal("light_blue_petal_block"),
                 BYGBlockList.YELLOW_PETAL = new BYGBlockProperties.BYGPetal("yellow_petal_block"),
                 BYGBlockList.PLANT_STEM = new BYGBlockProperties.BYGLog("plant_stem"),
-                BYGBlockList.POLLEN_BLOCK = new BYGBlockProperties.BYGPollen("pollen_block")
+                BYGBlockList.POLLEN_BLOCK = new BYGBlockProperties.BYGPollen("pollen_block"),
 
-
-
+                //Sands
+                BYGBlockList.BLACK_SAND = new BYGBlockProperties.BYGSand(5197647, "black_sand"),
+                BYGBlockList.WHITE_SAND = new BYGBlockProperties.BYGSand(15395562, "white_sand"),
+                BYGBlockList.BLUE_SAND = new BYGBlockProperties.BYGSand(13559021, "blue_sand"),
+                BYGBlockList.PURPLE_SAND = new BYGBlockProperties.BYGSand(12887002, "purple_sand"),
+                BYGBlockList.PINK_SAND = new BYGBlockProperties.BYGSand(15585004, "pink_sand")
         );
     }
 

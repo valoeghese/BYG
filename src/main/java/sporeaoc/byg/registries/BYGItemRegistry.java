@@ -77,6 +77,13 @@ public class BYGItemRegistry {
                 BYGItemList.SOAPSTONE_PILLAR = new BlockItem(BYGBlockList.SOAPSTONE_PILLAR, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.SOAPSTONE_PILLAR.getRegistryName()),
                 BYGItemList.SOAPSTONE_TILE = new BlockItem(BYGBlockList.SOAPSTONE_TILE, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.SOAPSTONE_TILE.getRegistryName()),
 
+                BYGItemList.BLACK_SAND = new BlockItem(BYGBlockList.BLACK_SAND, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.BLACK_SAND.getRegistryName()),
+                BYGItemList.WHITE_SAND = new BlockItem(BYGBlockList.WHITE_SAND, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.WHITE_SAND.getRegistryName()),
+                BYGItemList.BLUE_SAND = new BlockItem(BYGBlockList.BLUE_SAND, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.BLUE_SAND.getRegistryName()),
+                BYGItemList.PURPLE_SAND = new BlockItem(BYGBlockList.PURPLE_SAND, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PURPLE_SAND.getRegistryName()),
+                BYGItemList.PINK_SAND = new BlockItem(BYGBlockList.PINK_SAND, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.PINK_SAND.getRegistryName()),
+
+
                 //Aspen Woodtype
                 BYGItemList.ASPEN_SAPLING = new BlockItem(BYGBlockList.ASPEN_SAPLING, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.ASPEN_SAPLING.getRegistryName()),
                 BYGItemList.ASPEN_LEAVES = new BlockItem(BYGBlockList.ASPEN_LEAVES, new Item.Properties().group(BYG.Init.creativeTab)).setRegistryName(BYGBlockList.ASPEN_LEAVES.getRegistryName()),
