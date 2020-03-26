@@ -52,6 +52,13 @@ public class BYGCutoutRenders {
         RenderTypeLookup.setRenderLayer(BYGBlockList.PRAIRIE_GRASS.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.SHORT_GRASS.getBlock(), RenderType.getCutoutMipped());
 
+        RenderTypeLookup.setRenderLayer(BYGBlockList.SHORT_BEACH_GRASS.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.BEACH_GRASS.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.WILTED_GRASS.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.WEED_GRASS.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.LEAF_PILE.getBlock(), RenderType.getCutoutMipped());
+
+
         //Saplings
         RenderTypeLookup.setRenderLayer(BYGBlockList.ASPEN_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.BAOBAB_SAPLING.getBlock(), RenderType.getCutoutMipped());
@@ -72,6 +79,7 @@ public class BYGCutoutRenders {
         RenderTypeLookup.setRenderLayer(BYGBlockList.ORANGE_BIRCH_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.ORANGE_OAK_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.ORANGE_SPRUCE_SAPLING.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.ORCHARD_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.PALO_VERDE_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.PINE_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.PINK_CHERRY_SAPLING.getBlock(), RenderType.getCutoutMipped());
@@ -89,6 +97,12 @@ public class BYGCutoutRenders {
         RenderTypeLookup.setRenderLayer(BYGBlockList.ZELKOVA_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.YELLOW_BIRCH_SAPLING.getBlock(), RenderType.getCutoutMipped());
         RenderTypeLookup.setRenderLayer(BYGBlockList.YELLOW_SPRUCE_SAPLING.getBlock(), RenderType.getCutoutMipped());
+
+        //Mushrooms
+        RenderTypeLookup.setRenderLayer(BYGBlockList.BLACK_PUFF.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.WEEPING_MILKCAP.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.WOOD_BLEWIT.getBlock(), RenderType.getCutoutMipped());
+        RenderTypeLookup.setRenderLayer(BYGBlockList.GREEN_MUSHSHROOM.getBlock(), RenderType.getCutoutMipped());
 
 
         //FlowerBlocks

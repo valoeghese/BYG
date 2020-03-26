@@ -1,5 +1,6 @@
 package sporeaoc.byg.byglists;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
 public class BYGItemList {
@@ -384,6 +385,13 @@ public class BYGItemList {
     public static Item PURPLE_GLOWCANE_STALK;
     public static Item WEEPING_VINES;
     public static Item TINY_LILYPADS;
+
+    public static Item WEED_GRASS;
+    public static Item WILTED_GRASS;
+    public static Item SHORT_BEACH_GRASS;
+    public static Item BEACH_GRASS;
+    public static Item LEAF_PILE;
+
 
     //Glowcane Block
 

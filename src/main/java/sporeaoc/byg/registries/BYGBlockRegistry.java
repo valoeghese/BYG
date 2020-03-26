@@ -343,6 +343,12 @@ public class BYGBlockRegistry {
                 BYGBlockList.BLUEBERRY_BUSH = new BYGBlockProperties.BYGBerryBush("blueberry_bush"),
                 BYGBlockList.TINY_LILYPADS = new BYGBlockProperties.BYGLily("tiny_lilypads"),
 
+                BYGBlockList.WEED_GRASS = new BYGBlockProperties.BYGTallGrass("weed_grass"),
+                BYGBlockList.WILTED_GRASS = new BYGBlockProperties.BYGTallGrass("wilted_grass"),
+                BYGBlockList.SHORT_BEACH_GRASS = new BYGBlockProperties.BYGBeachGrass("short_beach_grass"),
+                BYGBlockList.BEACH_GRASS = new BYGBlockProperties.BYGBeachGrass("beach_grass"),
+                BYGBlockList.LEAF_PILE = new BYGBlockProperties.BYGLeafPile("leaf_pile"),
+
                 //Glowcane Blocks
 
                 BYGBlockList.BLUE_GLOWCANE_BLOCK = new BYGBlockProperties.BYGGlowCaneBlock("blue_glowcane_block"),
