@@ -51,6 +51,10 @@ public class ClimateBooleans {
     public static final int TROPICALFUNGALRAINFOREST = biomeRegistry.getID(BYGBiomeList.TROPICALFUNGALRAINFOREST);
     public static final int TROPICALRAINFOREST = biomeRegistry.getID(BYGBiomeList.TROPICALRAINFOREST);
 
+    public static boolean isBaseBiome(int biome) {
+        return biome == ALLIUMFIELDS || biome == AMARANTHFIELDS || biome == BLUEGIANTTAIGA || biome == BLUETAIGA || biome == BOREALFOREST || biome == CONIFEROUSFOREST || biome == DECIDUOUSFOREST || biome == DOVERMOUNTAINS || biome == GRASSLANDPLATEAU || biome == REDOAKFOREST || biome == SEASONALBIRCHFOREST || biome == SEASONALDECIDUOUSFOREST || biome == SEASONALFOREST || biome == SEASONALGIANTTAIGA || biome == SEASONALTAIGA;
+    }
+
     public static boolean isOcean(int biome) {
         return biome == WARM_OCEAN || biome == LUKEWARM_OCEAN || biome == OCEAN || biome == COLD_OCEAN || biome == FROZEN_OCEAN || biome == DEEP_WARM_OCEAN || biome == DEEP_LUKEWARM_OCEAN || biome == DEEP_OCEAN || biome == DEEP_COLD_OCEAN || biome == DEEP_FROZEN_OCEAN;
     }

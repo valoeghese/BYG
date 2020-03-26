@@ -63,6 +63,11 @@ public class BYGBiomeGetter {
     public static final int TROPICALFUNGALRAINFOREST = biomeRegistry.getID(BYGBiomeList.TROPICALFUNGALRAINFOREST);
     public static final int TROPICALRAINFOREST = biomeRegistry.getID(BYGBiomeList.TROPICALRAINFOREST);
 
+    public static final int SNOWYROCKYBLACKBEACH = biomeRegistry.getID(BYGBiomeList.SNOWYROCKYBLACKBEACH);
+    public static final int WHITEBEACH = biomeRegistry.getID(BYGBiomeList.WHITEBEACH);
+    public static final int SNOWYBLACKBEACH = biomeRegistry.getID(BYGBiomeList.SNOWYBLACKBEACH);
+
+
     public static int[] deepOceanArray = {
             DEEP_WARM_OCEAN,
             DEEP_COLD_OCEAN,

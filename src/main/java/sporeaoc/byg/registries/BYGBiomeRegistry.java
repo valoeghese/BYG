@@ -101,8 +101,16 @@ public class BYGBiomeRegistry {
         //BYG.LOGGER.info("All BYG subbiomes registered!");
     }
 
+    @SubscribeEvent
+    public static void registerBYGWorldBiomes(RegistryEvent.Register<Biome> event) {
+        IForgeRegistry<Biome> registry = event.getRegistry();
+        registerBYGBiome(registry, BYGBiomeList.SNOWYROCKYBLACKBEACH, "snowyrockyblackbeach", true, BiomeManager.BiomeType.ICY, BiomeDictionary.Type.BEACH, BiomeDictionary.Type.SNOWY, BiomeDictionary.Type.OVERWORLD);
+        registerBYGBiome(registry, BYGBiomeList.SNOWYBLACKBEACH, "snowyblackbeach", true, BiomeManager.BiomeType.ICY, BiomeDictionary.Type.BEACH, BiomeDictionary.Type.SNOWY, BiomeDictionary.Type.OVERWORLD);
+        registerBYGBiome(registry, BYGBiomeList.WHITEBEACH, "whitebeach", true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.BEACH, BiomeDictionary.Type.OVERWORLD);
 
-        private static void registerBiome(IForgeRegistry<Biome> registry, Biome biome, String name, int weight, boolean spawn, BiomeManager.BiomeType type, BiomeDictionary.Type... types) {
+    }
+
+    private static void registerBiome(IForgeRegistry<Biome> registry, Biome biome, String name, int weight, boolean spawn, BiomeManager.BiomeType type, BiomeDictionary.Type... types) {
         registry.register(biome.setRegistryName(BYG.MOD_ID, name));
         if (weight > 0) {
             BiomeManager.addBiome(type, new BiomeManager.BiomeEntry(biome, weight));
@@ -111,5 +119,13 @@ public class BYGBiomeRegistry {
             }
             BiomeDictionary.addTypes(biome, types);
         }
+    }
+
+    private static void registerBYGBiome(IForgeRegistry<Biome> registry, Biome biome, String name, boolean spawn, BiomeManager.BiomeType type, BiomeDictionary.Type... types) {
+        registry.register(biome.setRegistryName(BYG.MOD_ID, name));
+        if (spawn) {
+            BiomeManager.addSpawnBiome(biome);
+        }
+        BiomeDictionary.addTypes(biome, types);
     }
 }

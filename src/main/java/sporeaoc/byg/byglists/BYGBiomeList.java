@@ -1,6 +1,9 @@
 package sporeaoc.byg.byglists;
 
 import net.minecraft.world.biome.Biome;
+import sporeaoc.byg.biomes.beachbiomes.SnowyBlackBeach;
+import sporeaoc.byg.biomes.beachbiomes.SnowyRockyBlackBeach;
+import sporeaoc.byg.biomes.beachbiomes.WhiteBeach;
 import sporeaoc.byg.biomes.bygamplifiedbiomes.*;
 import sporeaoc.byg.biomes.bygbiomes.*;
 
@@ -112,4 +115,10 @@ public class BYGBiomeList {
     public static Biome aWEEPINGWITCHFOREST = new AmplifiedWeepingWitchForest();
     public static Biome aWOODLANDS = new AmplifiedWoodLands();
     public static Biome aZELKOVAFOREST = new AmplifiedZelkovaForest();
+
+    public static Biome SNOWYROCKYBLACKBEACH = new SnowyRockyBlackBeach();
+    public static Biome SNOWYBLACKBEACH = new SnowyBlackBeach();
+
+    public static Biome WHITEBEACH = new WhiteBeach();
+
 }

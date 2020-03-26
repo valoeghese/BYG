@@ -14,7 +14,7 @@ public enum SnowyIslandAdder implements ICastleTransformer {
     @Override
     public int apply(INoiseRandom rand, int n, int e, int s, int w, int centre) {
         if (ClimateBooleans.isColdFrozenOcean(centre)) {
-            return rand.random(islandRarity + 100) == 0 ? BYGBiomeGetter.getSnowyBiome(rand) : rand.random(10) == 0 ? BYGBiomeGetter.DEEP_FROZEN_OCEAN : BYGBiomeGetter.DEEP_COLD_OCEAN;
+            return rand.random(islandRarity + 100) == 0 ? BYGBiomeGetter.getSnowyBiome(rand) : rand.random(3) == 0 ? BYGBiomeGetter.DEEP_FROZEN_OCEAN : BYGBiomeGetter.DEEP_COLD_OCEAN;
         }
         return centre;
     }

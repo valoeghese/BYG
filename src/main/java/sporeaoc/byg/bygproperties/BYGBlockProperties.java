@@ -26,6 +26,18 @@ public class BYGBlockProperties {
         }
     }
 
+    public static class BYGSand extends SandBlock {
+        public BYGSand(int dustColor, String registryName) {
+            super(dustColor, Block.Properties.create(Material.SAND)
+                    .sound(SoundType.SAND)
+                    .hardnessAndResistance(0.2f)
+
+
+            );
+            setRegistryName(registryName);
+        }
+    }
+
     public static class BYGFenceGate extends FenceGateBlock {
         public BYGFenceGate(String registryName) {
             super(Block.Properties.create(Material.WOOD)
@@ -198,16 +210,6 @@ public class BYGBlockProperties {
         }
     }
 
-    public static class BYGSand extends SandBlock {
-        public BYGSand(int dustColor, String registryName) {
-            super(dustColor, Block.Properties.create(Material.SAND)
-                    .sound(SoundType.SAND)
-                    .hardnessAndResistance(0.2f)
-
-            );
-            setRegistryName(registryName);
-        }
-    }
 
     public static class BYGMud extends SoulSandBlock {
         public BYGMud (String registryName) {
