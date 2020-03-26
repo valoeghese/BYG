@@ -7,16 +7,15 @@ import sporeaoc.byg.world.worldtypes.BYGBiomeGetter;
 import sporeaoc.byg.world.worldtypes.islandtype.ClimateBooleans;
 
 
-public enum SnowyIslandAdder implements ICastleTransformer {
+public enum CoolIslandAdder implements ICastleTransformer {
     INSTANCE;
     public int islandRarity = BYGIslandSettingsConfig.islandChance.get();
 
     @Override
     public int apply(INoiseRandom rand, int n, int e, int s, int w, int centre) {
-        if (ClimateBooleans.isFrozenOcean(centre)) {
-            return rand.random(islandRarity + 100) == 0 ? BYGBiomeGetter.getSnowyBiome(rand) : BYGBiomeGetter.DEEP_COLD_OCEAN;
+        if (ClimateBooleans.isBaseOcean(centre)) {
+            return rand.random(islandRarity + 100) == 0 ? BYGBiomeGetter.getCoolBiome(rand) : BYGBiomeGetter.COLD_OCEAN;
         }
         return centre;
     }
-
 }

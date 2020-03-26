@@ -120,5 +120,6 @@ public class BYGBiomeList {
     public static Biome SNOWYBLACKBEACH = new SnowyBlackBeach();
 
     public static Biome WHITEBEACH = new WhiteBeach();
+    public static Biome DEEPCOOLOCEAN = new DeepCoolOcean();
 
 }

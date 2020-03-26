@@ -127,29 +127,33 @@ public class BYGBiomeGetter {
             SNOWYCONIFEROUSFOREST,
     };
 
-    public static int[] bygNormalArray = {
+    public static int[] bygWarmArray = {
             ALLIUMFIELDS,
             AMARANTHFIELDS,
+            CONIFEROUSFOREST,
+            DECIDUOUSFOREST,
+            GRASSLANDPLATEAU,
+            REDOAKFOREST,
+    };
+    public static int[] bygCoolArray = {
             BLUEGIANTTAIGA,
             BLUETAIGA,
             BOREALFOREST,
-            CONIFEROUSFOREST,
-            DECIDUOUSFOREST,
             DOVERMOUNTAINS,
-            GRASSLANDPLATEAU,
-            REDOAKFOREST,
             SEASONALBIRCHFOREST,
             SEASONALDECIDUOUSFOREST,
             SEASONALFOREST,
             SEASONALGIANTTAIGA,
             SEASONALTAIGA,
     };
+
     public static int[] getDeepOceanArray;
     public static int[] getBYGBiomeArray;
     public static int[] getBYGHotArray;
     public static int[] getBYGTropArray;
     public static int[] getBYGSnowyArray;
-    public static int[] getBYGNormalArray;
+    public static int[] getBYGWarmArray;
+    public static int[] getBYGCoolArray;
 
     static {
         getBYGBiomeArray = new int[bygBiomeArray.length];
@@ -180,9 +184,9 @@ public class BYGBiomeGetter {
     }
 
     static {
-        getBYGNormalArray = new int[bygNormalArray.length];
-        for (int index = 0; index < bygNormalArray.length; ++index) {
-            getBYGNormalArray[index] = bygNormalArray[index];
+        getBYGWarmArray = new int[bygWarmArray.length];
+        for (int index = 0; index < bygWarmArray.length; ++index) {
+            getBYGWarmArray[index] = bygWarmArray[index];
         }
     }
 
@@ -190,6 +194,13 @@ public class BYGBiomeGetter {
         getDeepOceanArray = new int[deepOceanArray.length];
         for (int index = 0; index < deepOceanArray.length; ++index) {
             getDeepOceanArray[index] = deepOceanArray[index];
+        }
+    }
+
+    static {
+        getBYGCoolArray = new int[bygCoolArray.length];
+        for (int index = 0; index < bygCoolArray.length; ++index) {
+            getBYGCoolArray[index] = bygCoolArray[index];
         }
     }
 
@@ -209,8 +220,12 @@ public class BYGBiomeGetter {
         return getBYGSnowyArray[rand.random(getBYGSnowyArray.length)];
     }
 
-    public static int getNormalBiome(INoiseRandom rand) {
-        return getBYGNormalArray[rand.random(getBYGNormalArray.length)];
+    public static int getWarmBiome(INoiseRandom rand) {
+        return getBYGWarmArray[rand.random(getBYGWarmArray.length)];
+    }
+
+    public static int getCoolBiome(INoiseRandom rand) {
+        return getBYGCoolArray[rand.random(getBYGCoolArray.length)];
     }
 
     public static int getDeepOcean(INoiseRandom rand) {

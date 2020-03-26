@@ -7,10 +7,7 @@ import net.minecraft.world.gen.area.IAreaFactory;
 import net.minecraft.world.gen.layer.Layer;
 import net.minecraft.world.gen.layer.ZoomLayer;
 import sporeaoc.byg.world.worldtypes.islandtype.layers.*;
-import sporeaoc.byg.world.worldtypes.islandtype.layers.islandadders.BaseIslandAdder;
-import sporeaoc.byg.world.worldtypes.islandtype.layers.islandadders.HotIslandAdder;
-import sporeaoc.byg.world.worldtypes.islandtype.layers.islandadders.SnowyIslandAdder;
-import sporeaoc.byg.world.worldtypes.islandtype.layers.islandadders.TropIslandAdder;
+import sporeaoc.byg.world.worldtypes.islandtype.layers.islandadders.*;
 
 import java.util.function.LongFunction;
 
@@ -22,12 +19,12 @@ public class IslandLayerProvider {
         for (int oceanBiomeSize = 0; oceanBiomeSize <= 2; oceanBiomeSize++) {
             islandFactory = ZoomLayer.NORMAL.apply(randomProvider.apply(1000L + oceanBiomeSize), islandFactory);
         }
-        islandFactory = BaseIslandAdder.INSTANCE.apply(randomProvider.apply(72421L), islandFactory);
+        islandFactory = CoolIslandAdder.INSTANCE.apply(randomProvider.apply(9355L), islandFactory);
+
+        islandFactory = WarmIslandAdder.INSTANCE.apply(randomProvider.apply(72421L), islandFactory);
         islandFactory = HotIslandAdder.INSTANCE.apply(randomProvider.apply(9355L), islandFactory);
         islandFactory = SnowyIslandAdder.INSTANCE.apply(randomProvider.apply(110293L), islandFactory);
         islandFactory = TropIslandAdder.INSTANCE.apply(randomProvider.apply(90923L), islandFactory);
-        islandFactory = BYGClimateUnmixingLayer.INSTANCE.apply(randomProvider.apply(90923L), islandFactory);
-
         for (int islandSize = 0; islandSize <= 2; islandSize++) {
             islandFactory = IslandSizer.INSTANCE.apply(randomProvider.apply(9123L + islandSize), islandFactory);
         }

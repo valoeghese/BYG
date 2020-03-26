@@ -22,7 +22,7 @@ public enum BYGShoreLayer implements ICastleTransformer {
                 return BYGBiomeGetter.WHITEBEACH;
             }
         }
-        if (biome != null && biome.getCategory() == Biome.Category.ICY) {
+        if (biome != null && biome.getPrecipitation() == Biome.RainType.SNOW) {
             if (ClimateBooleans.isOcean(n) || ClimateBooleans.isOcean(e) || ClimateBooleans.isOcean(s) || ClimateBooleans.isOcean(w)) {
                 return BYGBiomeGetter.SNOWYBLACKBEACH;
             }
