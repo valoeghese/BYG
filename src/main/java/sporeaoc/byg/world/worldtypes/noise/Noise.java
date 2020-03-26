@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.worldtype.noise;
+package sporeaoc.byg.world.worldtypes.noise;
 
 public abstract class Noise {
     private static final int CHAR_BIT = 8;

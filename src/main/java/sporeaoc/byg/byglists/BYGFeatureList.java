@@ -104,5 +104,7 @@ public class BYGFeatureList {
     public static final BYGAbstractTreeFeature<NoFeatureConfig> WIDECONIFEROUS_TREE = new WideFirTree(NoFeatureConfig::deserialize, false, 0);
 
     public static final BYGAbstractTreeFeature<NoFeatureConfig> DEAD_TREE = new DeadTree(NoFeatureConfig::deserialize, false, 0);
+
 }
+
 

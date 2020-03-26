@@ -2,6 +2,7 @@ package sporeaoc.byg;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.WorldType;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -15,9 +16,11 @@ import sporeaoc.byg.bygproperties.vanillaproperties.BYGCompostables;
 import sporeaoc.byg.bygproperties.vanillaproperties.BYGFlammables;
 import sporeaoc.byg.bygproperties.vanillaproperties.BYGStrippables;
 import sporeaoc.byg.config.BYGConfig;
+import sporeaoc.byg.config.BYGIslandSettingsConfig;
 import sporeaoc.byg.config.biomeweight.ConfigWeightManager;
 import sporeaoc.byg.textures.renders.BYGCutoutRenders;
 import sporeaoc.byg.world.feature.BYGFeaturesInVanilla;
+import sporeaoc.byg.world.worldtypes.islandtype.IslandWorldType;
 
 @Mod("byg")
 public class BYG {
@@ -26,9 +29,6 @@ public class BYG {
 
     public BYG() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        //FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup2);
-//        FMLJavaModLoadingContext.get().getModEventBus().addListener(BlockColorManager::onBlockColorsInit);
-//        FMLJavaModLoadingContext.get().getModEventBus().addListener(BlockColorManager::onItemColorsInit);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(bygFeaturesInVanilla::addFeatures);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(cutoutRenders::renderCutOuts);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(strippablesBYG::strippableLogsBYG);
@@ -37,7 +37,7 @@ public class BYG {
         //Configs
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BYGConfig.COMMON_CONFIG);
         ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-weights-common.toml"));
-
+        BYGIslandSettingsConfig.loadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-islandtype-common.toml"));
     }
 
     private void setup(FMLCommonSetupEvent event) {
@@ -59,7 +59,8 @@ public class BYG {
         public void init() {
         }
     }
-    //public static final WorldType BYGISLANDTYPE = new BYGIslandWorldType();
+
+    public static final WorldType BYGISLANDTYPE = new IslandWorldType();
     public static final Init setup = new Init();
     public static final BYGCutoutRenders cutoutRenders = new BYGCutoutRenders();
     public static final BYGFeaturesInVanilla bygFeaturesInVanilla = new BYGFeaturesInVanilla();

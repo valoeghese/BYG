@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.worldtype.noise;
+package sporeaoc.byg.world.worldtypes.noise;
 
 import java.util.Objects;
 import java.util.Random;
