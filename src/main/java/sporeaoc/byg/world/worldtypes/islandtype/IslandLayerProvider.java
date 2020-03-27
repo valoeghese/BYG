@@ -10,6 +10,11 @@ import net.minecraft.world.gen.layer.ZoomLayer;
 import sporeaoc.byg.config.BYGWorldTypesConfig;
 import sporeaoc.byg.world.worldtypes.islandtype.layers.*;
 import sporeaoc.byg.world.worldtypes.islandtype.layers.islandadders.*;
+import sporeaoc.byg.world.worldtypes.islandtype.layers.oceanedges.FrozenOceanEdges;
+import sporeaoc.byg.world.worldtypes.islandtype.layers.oceanedges.LukeWarmOceanEdges;
+import sporeaoc.byg.world.worldtypes.islandtype.layers.oceanedges.WarmOceanEdges;
+import sporeaoc.byg.world.worldtypes.islandtype.layers.shore.BYGShoreLayer;
+import sporeaoc.byg.world.worldtypes.islandtype.layers.shore.BYGShoreXLayer;
 
 import java.util.function.LongFunction;
 
@@ -38,7 +43,7 @@ public class IslandLayerProvider {
 
         if (BYGWorldTypesConfig.beaches.get()) {
             islandFactory = BYGShoreLayer.INSTANCE.apply(randomProvider.apply(9123L), islandFactory);
-            islandFactory = BYGShoreLayer2.INSTANCE.apply(randomProvider.apply(9123L), islandFactory);
+            islandFactory = BYGShoreXLayer.INSTANCE.apply(randomProvider.apply(9123L), islandFactory);
 
         }
         islandFactory = ZoomLayer.FUZZY.apply(randomProvider.apply(11020L), islandFactory);

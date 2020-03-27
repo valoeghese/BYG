@@ -21,8 +21,6 @@ public class BYGWorldTypesConfig {
     public static ForgeConfigSpec.ConfigValue<String> spawnBiome;
     public static ForgeConfigSpec.BooleanValue beaches;
     public static ForgeConfigSpec.BooleanValue survivalIslandMode;
-    //    public static ForgeConfigSpec.BooleanValue blacklist;
-//    public static ForgeConfigSpec.ConfigValue<String> oceanBiomes;
     public static ForgeConfigSpec.IntValue oceanBiomeSize;
 
 
@@ -35,8 +33,7 @@ public class BYGWorldTypesConfig {
         survivalIslandMode = COMMON_BUILDER.comment("Setting this to true will ONLY generate the spawn island.\nDO NOT USE `/locate` OR IT WILL CRASH YOUR GAME IN THIS MODE!\n Default is false.").define("SurvivalIslandMode", false);
         COMMON_BUILDER.pop();
         COMMON_BUILDER.push("Ocean_Settings");
-        //oceanBiomes = COMMON_BUILDER.comment("Add External/Internal Ocean Registry's in a comma seperated list.\nExample: \"minecraft:deep_ocean, minecraft:ocean\"").define("OceanBiomes", "minecraft:deep_lukewarm_ocean");
-        oceanBiomeSize = COMMON_BUILDER.comment("The size of ocean biomes\nEach Size increase is exponential.\nDefault is 2").defineInRange("OceanBiomeSize", 5, 1, 30);
+        oceanBiomeSize = COMMON_BUILDER.comment("The size of ocean biomes/regions.\nEach size increase is exponential.\nDefault is 4").defineInRange("OceanBiomeSize", 4, 1, 30);
         COMMON_BUILDER.pop();
         COMMON_CONFIG = COMMON_BUILDER.build();
     }

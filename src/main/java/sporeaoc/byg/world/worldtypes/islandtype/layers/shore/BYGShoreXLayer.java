@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.worldtypes.islandtype.layers;
+package sporeaoc.byg.world.worldtypes.islandtype.layers.shore;
 
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
@@ -8,7 +8,7 @@ import sporeaoc.byg.byglists.BYGBiomeList;
 import sporeaoc.byg.world.worldtypes.BYGBiomeGetter;
 import sporeaoc.byg.world.worldtypes.islandtype.ClimateBooleans;
 
-public enum BYGShoreLayer2 implements IBishopTransformer {
+public enum BYGShoreXLayer implements IBishopTransformer {
     INSTANCE;
 
     public int apply(INoiseRandom rand, int n, int e, int s, int w, int centre) {

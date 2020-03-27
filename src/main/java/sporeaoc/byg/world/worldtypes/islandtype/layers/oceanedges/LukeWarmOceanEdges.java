@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.worldtypes.islandtype.layers;
+package sporeaoc.byg.world.worldtypes.islandtype.layers.oceanedges;
 
 import net.minecraft.world.gen.INoiseRandom;
 import net.minecraft.world.gen.layer.traits.ICastleTransformer;

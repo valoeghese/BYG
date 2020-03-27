@@ -1,4 +1,4 @@
-package sporeaoc.byg.world.worldtypes.islandtype.layers;
+package sporeaoc.byg.world.worldtypes.islandtype.layers.shore;
 
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
