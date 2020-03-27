@@ -602,5 +602,6 @@
   "block.byg.pink_sand": "Pink Sand",
 
 
-  "generator.bygislands": "BYG Islands-BETA"
+  "generator.bygislands": "BYG Islands-BETA",
+  "generator.byg_only": "BYG Only"
 }

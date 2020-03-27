@@ -90,7 +90,7 @@ public class BiomeGroup {
 		// islands
 		OCEAN_ISLANDS_TROPICAL.addBiome(BYGBiomeList.TROPICALRAINFOREST, 1.0);
 		OCEAN_ISLANDS_TEMPERATE.addBiome(BYGBiomeList.SEASONALFOREST, 1.0);
-		OCEAN_ISLANDS_COOL.addBiome(BYGBiomeList.SNOWYBLUETAIGA, 1.0);
+		OCEAN_ISLANDS_SNOWY.addBiome(BYGBiomeList.SNOWYBLUETAIGA, 1.0);
 	}
 
 	public static final BiomeGroup INLAND_TROPICAL_DESERT = new BiomeGroup();
@@ -114,7 +114,7 @@ public class BiomeGroup {
 
 	public static final BiomeGroup OCEAN_ISLANDS_TROPICAL = new BiomeGroup();
 	public static final BiomeGroup OCEAN_ISLANDS_TEMPERATE = new BiomeGroup();
-	public static final BiomeGroup OCEAN_ISLANDS_COOL = new BiomeGroup();
+	public static final BiomeGroup OCEAN_ISLANDS_SNOWY = new BiomeGroup();
 
 	private static class BiomeEntry {
 		BiomeEntry(Biome biome, double weight) {

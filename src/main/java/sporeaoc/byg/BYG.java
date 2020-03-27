@@ -20,6 +20,7 @@ import sporeaoc.byg.config.BYGWorldTypesConfig;
 import sporeaoc.byg.config.biomeweight.ConfigWeightManager;
 import sporeaoc.byg.textures.renders.BYGCutoutRenders;
 import sporeaoc.byg.world.feature.BYGFeaturesInVanilla;
+import sporeaoc.byg.world.worldtypes.byg.BYGOnlyWorldType;
 import sporeaoc.byg.world.worldtypes.islandtype.IslandWorldType;
 
 @Mod("byg")
@@ -58,6 +59,7 @@ public class BYG {
     }
 
     public static final WorldType BYGISLANDTYPE = new IslandWorldType();
+    public static final WorldType BYG_ONLY_TYPE = new BYGOnlyWorldType();
     public static final Init setup = new Init();
     public static final BYGCutoutRenders cutoutRenders = new BYGCutoutRenders();
     public static final BYGFeaturesInVanilla bygFeaturesInVanilla = new BYGFeaturesInVanilla();

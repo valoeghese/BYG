@@ -63,7 +63,24 @@ public class Simulator extends Application {
 
 					pwr.setColor(x, z, Color.hsb(temp, 1.0, humid));
 					break;
-				case 3: // LAND/SEA
+				case 3: // TEMPERATURE BANDS
+					int tempCategory = manager.getTempCategory(genX, genZ);
+					switch (tempCategory) {
+					case 0:
+						pwr.setColor(x, z, Color.WHITE);
+						break;
+					case 1:
+						pwr.setColor(x, z, Color.LIGHTSEAGREEN);
+						break;
+					case 2:
+						pwr.setColor(x, z, Color.GREEN);
+						break;
+					case 3:
+						pwr.setColor(x, z, Color.YELLOW);
+						break;
+					}
+					break;
+				case 4: // LAND/SEA
 					ContinentSection section = manager.getSection(genX, genZ);
 					Color colour = null;
 					switch (section) {
@@ -102,9 +119,9 @@ public class Simulator extends Application {
 		return value;
 	}
 
-	private static final int MODE = 0;
+	private static final int MODE = 3;
 	static final int WIDTH = 600, HEIGHT = 400;
 	@SuppressWarnings("unused")
-	static final int SCALE_LAYERS_FOR_APPROXIMATION = MODE < 3 ? BiomeGroupManager.CLIMATE_SCALE_LAYER_ADJUSTMENT : BiomeGroupManager.LAND_SEA_SCALE_LAYER_ADJUSTMENT;
+	static final int SCALE_LAYERS_FOR_APPROXIMATION = MODE < 4 ? BiomeGroupManager.CLIMATE_SCALE_LAYER_ADJUSTMENT : BiomeGroupManager.LAND_SEA_SCALE_LAYER_ADJUSTMENT;
 	static final int BLOCKS_PER_PIXEL = 10;
 }

@@ -9,13 +9,13 @@ import net.minecraft.world.gen.layer.Layer;
 public class BYGOnlyBiomeProvider extends BiomeProvider {
 	public BYGOnlyBiomeProvider(Set<Biome> biomes, long seed) {
 		super(biomes);
-		this.layer = BYGOnlyBiomeLayers.stackLayers(seed);
+		this.layer = BYGOnlyBiomeLayers.stackLayerTransformers(seed);
 	}
 
 	private final Layer layer;
 
 	@Override
-	// noiseY is not actually used I think lol
+	// noiseY is not actually used even by mojang I think, only noiseX and noiseZ
 	public Biome getNoiseBiome(int noiseX, int noiseY, int noiseZ) {
 		return layer.func_215738_a(noiseX, noiseZ);
 	}
