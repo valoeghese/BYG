@@ -10,6 +10,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 import sporeaoc.byg.BYG;
 import sporeaoc.byg.byglists.BYGBiomeList;
 import sporeaoc.byg.config.biomeweight.ConfigWeightManager;
+import sporeaoc.byg.world.worldtypes.byg.maths.BiomeGroup;
 
 @Mod.EventBusSubscriber(modid = BYG.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BYGBiomeRegistry {
@@ -83,6 +84,9 @@ public class BYGBiomeRegistry {
         //registerBiome(registry, BYGBiomeList.ZELKOVAFOREST, "zelkovaforest", ConfigWeightManager.zelkovaforest.getWeight(), true, BiomeManager.BiomeType.COOL, BiomeDictionary.Type.CONIFEROUS, BiomeDictionary.Type.COLD, BiomeDictionary.Type.FOREST);
 
         BYG.LOGGER.info("All BYG biomes registered!");
+        
+        BiomeGroup.initDefaultBiomes();
+        BYG.LOGGER.info("Set up BYG world type climates!");
     }
 
 
