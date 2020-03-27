@@ -4,13 +4,13 @@ import net.minecraft.world.gen.INoiseRandom;
 import net.minecraft.world.gen.layer.traits.ICastleTransformer;
 import sporeaoc.byg.world.worldtypes.islandtype.ClimateBooleans;
 
-public enum LukeWarmOceanEdges implements ICastleTransformer {
+public enum FrozenOceanEdges implements ICastleTransformer {
     INSTANCE;
 
     public int apply(INoiseRandom rand, int n, int e, int s, int w, int centre) {
-        if (ClimateBooleans.isLukeWarmOcean(centre)) {
-            if (ClimateBooleans.isFrozenOcean(n) || ClimateBooleans.isFrozenOcean(s) || ClimateBooleans.isFrozenOcean(e) || ClimateBooleans.isFrozenOcean(w)) {
-                return ClimateBooleans.DEEP_OCEAN;
+        if (ClimateBooleans.isFrozenOcean(centre)) {
+            if (ClimateBooleans.isBaseOcean(n) || ClimateBooleans.isBaseOcean(s) || ClimateBooleans.isBaseOcean(e) || ClimateBooleans.isBaseOcean(w)) {
+                return ClimateBooleans.DEEP_COLD_OCEAN;
             }
         }
         return centre;

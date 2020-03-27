@@ -18,7 +18,6 @@ public class ClimateBooleans {
     public static final int DEEP_WARM_OCEAN = Registry.BIOME.getId(Biomes.DEEP_WARM_OCEAN);
     public static final int DEEP_LUKEWARM_OCEAN = Registry.BIOME.getId(Biomes.DEEP_LUKEWARM_OCEAN);
     public static final int DEEP_OCEAN = Registry.BIOME.getId(Biomes.DEEP_OCEAN);
-    public static final int DEEP_COOL_OCEAN = Registry.BIOME.getId(BYGBiomeList.DEEPCOOLOCEAN);
 
     public static final int DEEP_COLD_OCEAN = Registry.BIOME.getId(Biomes.DEEP_COLD_OCEAN);
     public static final int DEEP_FROZEN_OCEAN = Registry.BIOME.getId(Biomes.DEEP_FROZEN_OCEAN);
@@ -90,11 +89,11 @@ public class ClimateBooleans {
     }
 
     public static boolean isColdOcean(int biome) {
-        return biome == COLD_OCEAN || biome == FROZEN_OCEAN || biome == DEEP_COLD_OCEAN || biome == DEEP_FROZEN_OCEAN;
+        return biome == COLD_OCEAN || biome == DEEP_COLD_OCEAN;
     }
 
     public static boolean isFrozenOcean(int biome) {
-        return biome == COLD_OCEAN || biome == FROZEN_OCEAN || biome == DEEP_COLD_OCEAN || biome == DEEP_FROZEN_OCEAN;
+        return biome == FROZEN_OCEAN || biome == DEEP_FROZEN_OCEAN;
     }
 
     public static boolean isBaseOcean(int biome) {

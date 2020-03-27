@@ -3,12 +3,12 @@ package sporeaoc.byg.world.worldtypes.islandtype.layers;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.INoiseRandom;
-import net.minecraft.world.gen.layer.traits.ICastleTransformer;
+import net.minecraft.world.gen.layer.traits.IBishopTransformer;
 import sporeaoc.byg.byglists.BYGBiomeList;
 import sporeaoc.byg.world.worldtypes.BYGBiomeGetter;
 import sporeaoc.byg.world.worldtypes.islandtype.ClimateBooleans;
 
-public enum BYGShoreLayer implements ICastleTransformer {
+public enum BYGShoreLayer2 implements IBishopTransformer {
     INSTANCE;
 
     public int apply(INoiseRandom rand, int n, int e, int s, int w, int centre) {

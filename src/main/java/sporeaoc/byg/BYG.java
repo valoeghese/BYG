@@ -16,7 +16,7 @@ import sporeaoc.byg.bygproperties.vanillaproperties.BYGCompostables;
 import sporeaoc.byg.bygproperties.vanillaproperties.BYGFlammables;
 import sporeaoc.byg.bygproperties.vanillaproperties.BYGStrippables;
 import sporeaoc.byg.config.BYGConfig;
-import sporeaoc.byg.config.BYGIslandSettingsConfig;
+import sporeaoc.byg.config.BYGWorldTypesConfig;
 import sporeaoc.byg.config.biomeweight.ConfigWeightManager;
 import sporeaoc.byg.textures.renders.BYGCutoutRenders;
 import sporeaoc.byg.world.feature.BYGFeaturesInVanilla;
@@ -36,17 +36,14 @@ public class BYG {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(compostablesBYG::compostableBlocksBYG);
         //Configs
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, BYGConfig.COMMON_CONFIG);
-        ConfigWeightManager.LoadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-weights-common.toml"));
-        BYGIslandSettingsConfig.loadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-islandtype-common.toml"));
+        ConfigWeightManager.loadConfig(ConfigWeightManager.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-weights-common.toml"));
+        BYGWorldTypesConfig.loadConfig(BYGWorldTypesConfig.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve(MOD_ID + "-worldtypes-common.toml"));
     }
 
     private void setup(FMLCommonSetupEvent event) {
         setup.init();
     }
-//    private void setup2(FMLClientSetupEvent event) {
-//        FMLJavaModLoadingContext.get().getModEventBus().addListener(BlockColorManager::onBlockColorsInit);
-//        FMLJavaModLoadingContext.get().getModEventBus().addListener(BlockColorManager::onItemColorsInit);
-//    }
+
 
     public static class Init {
         public static ItemGroup creativeTab = new ItemGroup("byg") {

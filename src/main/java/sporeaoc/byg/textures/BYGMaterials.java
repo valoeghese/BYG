@@ -1,9 +1,7 @@
-package sporeaoc.byg.byglists;
+package sporeaoc.byg.textures;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
-import net.minecraft.block.material.PushReaction;
 
 public class BYGMaterials  {
     public static final Material GLOWCELIUM;
@@ -18,7 +16,6 @@ public class BYGMaterials  {
         BLUE_GLOWCANE = (new Material.Builder(MaterialColor.BLUE)).build();
         PURPLE_GLOWCANE = (new Material.Builder(MaterialColor.PURPLE)).build();
         PINK_GLOWCANE = (new Material.Builder(MaterialColor.PINK)).build();
-
     }
 
 }

@@ -9,8 +9,9 @@ public enum WarmOceanEdges implements ICastleTransformer {
 
     public int apply(INoiseRandom rand, int n, int e, int s, int w, int centre) {
         if (ClimateBooleans.isWarmOcean(centre)) {
-            if (ClimateBooleans.isColdFrozenOcean(n) || ClimateBooleans.isColdFrozenOcean(s) || ClimateBooleans.isColdFrozenOcean(e) || ClimateBooleans.isColdFrozenOcean(w))
+            if (ClimateBooleans.isFrozenOcean(n) || ClimateBooleans.isFrozenOcean(s) || ClimateBooleans.isFrozenOcean(e) || ClimateBooleans.isFrozenOcean(w)) {
                 return ClimateBooleans.DEEP_OCEAN;
+            }
         }
         return centre;
     }

@@ -115,11 +115,8 @@ public class BYGBiomeList {
     public static Biome aWEEPINGWITCHFOREST = new AmplifiedWeepingWitchForest();
     public static Biome aWOODLANDS = new AmplifiedWoodLands();
     public static Biome aZELKOVAFOREST = new AmplifiedZelkovaForest();
-
+    //Beaches
     public static Biome SNOWYROCKYBLACKBEACH = new SnowyRockyBlackBeach();
     public static Biome SNOWYBLACKBEACH = new SnowyBlackBeach();
-
     public static Biome WHITEBEACH = new WhiteBeach();
-    public static Biome DEEPCOOLOCEAN = new DeepCoolOcean();
-
 }

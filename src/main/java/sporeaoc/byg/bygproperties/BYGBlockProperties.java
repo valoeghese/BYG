@@ -7,7 +7,7 @@ import net.minecraft.potion.Effects;
 import net.minecraft.state.properties.Half;
 import net.minecraft.state.properties.StairsShape;
 import net.minecraft.util.Direction;
-import sporeaoc.byg.byglists.BYGMaterials;
+import sporeaoc.byg.textures.BYGMaterials;
 import sporeaoc.byg.bygproperties.blocks.*;
 import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGGlowCeliumBlock;
 import sporeaoc.byg.bygproperties.blocks.grassblocks.BYGMeadowGrassBlock;

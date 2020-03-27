@@ -11,7 +11,7 @@ import sporeaoc.byg.BYG;
 import java.nio.file.Path;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class BYGIslandSettingsConfig {
+public class BYGWorldTypesConfig {
     private static final ForgeConfigSpec.Builder COMMON_BUILDER = new ForgeConfigSpec.Builder();
 
     public static ForgeConfigSpec COMMON_CONFIG;
@@ -36,7 +36,7 @@ public class BYGIslandSettingsConfig {
         COMMON_BUILDER.pop();
         COMMON_BUILDER.push("Ocean_Settings");
         //oceanBiomes = COMMON_BUILDER.comment("Add External/Internal Ocean Registry's in a comma seperated list.\nExample: \"minecraft:deep_ocean, minecraft:ocean\"").define("OceanBiomes", "minecraft:deep_lukewarm_ocean");
-        oceanBiomeSize = COMMON_BUILDER.comment("The size of ocean biomes\nEach Size increase is exponential.\nDefault is 2").defineInRange("OceanBiomeSize", 10, 1, 30);
+        oceanBiomeSize = COMMON_BUILDER.comment("The size of ocean biomes\nEach Size increase is exponential.\nDefault is 2").defineInRange("OceanBiomeSize", 5, 1, 30);
         COMMON_BUILDER.pop();
         COMMON_CONFIG = COMMON_BUILDER.build();
     }

@@ -84,7 +84,7 @@ public class ConfigWeightManager {
         COMMON_CONFIG = COMMON_BUILDER.build();
     }
 
-    public static void LoadConfig(ForgeConfigSpec spec, Path path) {
+    public static void loadConfig(ForgeConfigSpec spec, Path path) {
         CommentedFileConfig configData = CommentedFileConfig.builder(path).sync().autosave().writingMode(WritingMode.REPLACE).build();
         configData.load();
         spec.setConfig(configData);

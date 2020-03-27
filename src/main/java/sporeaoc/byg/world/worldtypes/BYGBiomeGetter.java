@@ -8,7 +8,7 @@ import net.minecraft.world.gen.INoiseRandom;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ForgeRegistry;
 import sporeaoc.byg.byglists.BYGBiomeList;
-import sporeaoc.byg.config.BYGIslandSettingsConfig;
+import sporeaoc.byg.config.BYGWorldTypesConfig;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -16,13 +16,14 @@ import java.util.Set;
 @SuppressWarnings("deprecation")
 public class BYGBiomeGetter {
     public static ForgeRegistry<Biome> biomeRegistry = ((ForgeRegistry<Biome>) ForgeRegistries.BIOMES);
-    public static final Biome Spawn = biomeRegistry.getValue(new ResourceLocation(BYGIslandSettingsConfig.spawnBiome.get()));
+    public static final Biome Spawn = biomeRegistry.getValue(new ResourceLocation(BYGWorldTypesConfig.spawnBiome.get()));
     public static final int Spawn2 = biomeRegistry.getID(Spawn);
 
     public static Set<Biome> getBiomeSet() {
         return new HashSet<>(ForgeRegistries.BIOMES.getValues());
     }
 
+    //OceanBiomes
     public static final int WARM_OCEAN = Registry.BIOME.getId(Biomes.WARM_OCEAN);
     public static final int LUKEWARM_OCEAN = Registry.BIOME.getId(Biomes.LUKEWARM_OCEAN);
     public static final int OCEAN = Registry.BIOME.getId(Biomes.OCEAN);
@@ -62,10 +63,11 @@ public class BYGBiomeGetter {
     public static final int SNOWYCONIFEROUSFOREST = biomeRegistry.getID(BYGBiomeList.SNOWYCONIFEROUSFOREST);
     public static final int TROPICALFUNGALRAINFOREST = biomeRegistry.getID(BYGBiomeList.TROPICALFUNGALRAINFOREST);
     public static final int TROPICALRAINFOREST = biomeRegistry.getID(BYGBiomeList.TROPICALRAINFOREST);
-
+    //BeachBiomes
     public static final int SNOWYROCKYBLACKBEACH = biomeRegistry.getID(BYGBiomeList.SNOWYROCKYBLACKBEACH);
     public static final int WHITEBEACH = biomeRegistry.getID(BYGBiomeList.WHITEBEACH);
     public static final int SNOWYBLACKBEACH = biomeRegistry.getID(BYGBiomeList.SNOWYBLACKBEACH);
+    public static final int VANILLABEACH = biomeRegistry.getID(Biomes.BEACH);
 
 
     public static int[] deepOceanArray = {
